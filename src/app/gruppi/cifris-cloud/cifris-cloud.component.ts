@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-cifris-cloud',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CifrisCloudComponent implements OnInit {
 
-  constructor() { }
+  fragment: string;
 
-  ngOnInit(): void {
+  constructor(private route: ActivatedRoute) { }
+
+  ngOnInit() {
+    this.route.fragment.subscribe(fragment => { this.fragment = fragment; });
+  }
+
+  ngAfterViewInit(): void {
+    try {
+      document.querySelector('#' + this.fragment).scrollIntoView({behavior: 'smooth'});
+    } catch (e) { }
   }
 
 }

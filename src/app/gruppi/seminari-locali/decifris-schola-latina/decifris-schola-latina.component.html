@@ -8,12 +8,12 @@
 		</li>
 		<li>
 			<button class="btn btn-outline-info" (click)="goTo('futuri')">
-				Eventi Futuri
+				Seminari Recenti
 			</button>
 		</li>
 		<li>
 			<button class="btn btn-outline-info" (click)="goTo('passati')">
-				Eventi Passati
+				Seminari Passati
 			</button>
 		</li>
 	</ul>
@@ -29,15 +29,29 @@
 				<li> Daniele Venturi, Sapienza Università di Roma, Dipartimento di Infomatica.</li>
 				<li>  Giulio Codogni, Università	Tor Vergata, Dipartimento di Matematica;</li>
 			</ul>
-			<hr>
-			<h4 id="futuri"><a (click)="mostraAttivita('futuri')">Seminari futuri</a></h4>
-			<div *ngIf="attivitaDaMostrare=='futuri'">
+			<hr id="futuri">
+			<h4><a (click)="toggleAttivita('futuri')">Seminari recenti</a></h4>
+			<div *ngIf="mostraFuturi">
 				<p class="warning">Avviso: causa dell'emergenza Coronavirus (Covid-19) organizzeremo i prossimi eventi in webinar. </p>
 			</div>
-			<hr>
-			<h4 id="passati"><a (click)="mostraAttivita('passati')">Seminari passati</a></h4>
-			<div *ngIf="attivitaDaMostrare=='passati'">
+			<hr id="passati">
+			<h4><a (click)="toggleAttivita('passati')">Seminari passati</a></h4>
+			<div *ngIf="mostraPassati">
 				<ul>
+					<li>
+						<b>18 Gennaio 2021</b>
+						<p>Dipartimento di Matematica e Fisica,  Università di Roma Tre</p>
+						<ul>
+							<li>
+								<b>Stefano Alberico</b> -- Skudo:<br>
+								<i>SKUDO-HSM: integrazione tra una PKI ed un chip HSM (FGPA) per 
+									applicazioni spaziali... e non solo</i>.<br>
+								<a href="../../../../assets/attivita/seminariLocali/deCifrisScholaLatina/locandina_Alberico.pdf"> Locandina</a> -- 
+								<a href="../../../../assets/attivita/seminariLocali/deCifrisScholaLatina/slide_Alberico.pdf">Slide</a> -- 
+								<a href="https://www.youtube.com/watch?v=WjG7pqFCubE">Video</a>
+							</li>      
+					  </ul>
+					</li>
 					<li>
 						<b>18 Dicembre 2020</b>
 						<p>Dipartimento di Matematica e Fisica,  Università di Roma Tre</p>
@@ -46,7 +60,9 @@
 								<b>Ilaria Chillotti</b> -- Zama (Paris): 
 								<br>
 								<i>Introduction to FHE and applications to machine learning</i>.<br>
-								<a href="../../../../assets/attivita/seminariLocali/deCifrisScholaLatina/Chillotti_Locandina.pdf"> Locandina</a>
+								<a href="../../../../assets/attivita/seminariLocali/deCifrisScholaLatina/Chillotti_Locandina.pdf"> Locandina</a> -- 
+								<a href="../../../../assets/attivita/seminariLocali/deCifrisScholaLatina/slide_Chillotti.pdf">Slide</a> -- 
+								<a href="https://www.youtube.com/watch?v=tpD_V_i63VI">Video</a>
 							</li>      
 					  </ul>
 					</li>
@@ -59,7 +75,8 @@
 								<b>Edoardo Persichetti</b> -- Florida Atlantic University: <br>
 								<i>Code-based Cryptography and Post-Quantum Standardization</i>.<br>
 								<a href="../../../../assets/attivita/seminariLocali/deCifrisScholaLatina/14.12.2020-Persichetti.pdf"> Locandina</a> --
-								<a href="../../../../assets/attivita/seminariLocali/deCifrisScholaLatina/slide_Persichetti.pdf"> Slide</a>
+								<a href="../../../../assets/attivita/seminariLocali/deCifrisScholaLatina/slide_Persichetti.pdf"> Slide</a> -- 
+								<a href="https://www.youtube.com/watch?v=UNwxzwBzl2w">Video</a>
 							</li>      
 						</ul>
 					</li>

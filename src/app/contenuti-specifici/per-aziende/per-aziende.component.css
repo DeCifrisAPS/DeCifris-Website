@@ -1,0 +1,18 @@
+ng-sidebar-container{
+	position: fixed;
+	right: 0;
+	top: 55px;
+	height: 100%;
+}
+
+::ng-deep .ng-sidebar{
+	background-color: aliceblue;
+	width: 225px;
+	padding: 2em 1em;
+}​
+
+@media screen and (max-width: 799px) {
+	#right-sidebar {
+		 display: none !important;
+	}
+}

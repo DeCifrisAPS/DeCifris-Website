@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-pq-cifris',
@@ -8,10 +9,18 @@ import { Component, OnInit } from '@angular/core';
 export class PqCifrisComponent implements OnInit {
 
   attivitaDaMostrare: string = "";
+  fragment: string;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.route.fragment.subscribe(fragment => { this.fragment = fragment; });
+  }
+
+  ngAfterViewInit(): void {
+    try {
+      document.querySelector('#' + this.fragment).scrollIntoView({behavior: 'smooth'});
+    } catch (e) { }
   }
 
   sleep(ms) {

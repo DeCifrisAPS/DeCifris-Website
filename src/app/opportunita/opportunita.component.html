@@ -56,8 +56,8 @@
 						</p>
 					</div>
 				</div>
-				<hr>
-				<div class="row" id="stageTirocini">
+				<hr id="stageTirocini">
+				<div class="row">
 					<div class="col-md-12">
 						<h4>STAGE E TIROCINI</h4>
 						<p>
@@ -89,8 +89,8 @@
 							nostra pagina LinkedIn dedicata. </p>
 					</div>
 				</div>
-				<hr>
-				<div class="row" id="posiziosiAccademiche">
+				<hr id="posiziosiAccademiche">
+				<div class="row">
 					<div class="col-md-12">
 						<h4>POSIZIONI ACCADEMICHE/RICERCA</h4>
 						<p>In questa pagina ospitiamo anche le posizioni bandite nel settore della Crittografia: </p>
@@ -108,8 +108,8 @@
 						</ul>
 					</div>
 				</div>
-				<hr>
-				<div class="row" id="advisoryBoard">
+				<hr id="advisoryBoard"> 
+				<div class="row">
 					<div class="col-md-12 center">
 						<h4>ADVISORY BOARD "DE CIFRIS"</h4>
 						<p>L'iniziativa De Componendis Cifris si propone di animare la comunità crittografica italiana, 
@@ -150,9 +150,9 @@
 			
 				<div *ngIf="visualizzaNuoveAziendeInteressate;then visualizzare else nonVisualizzare"></div>    
 				<ng-template #visualizzare> <app-nuove-aziende-interessate></app-nuove-aziende-interessate> </ng-template>
-				<ng-template #nonVisualizzare> <hr> </ng-template>
+				<ng-template #nonVisualizzare> <hr id="borseAdvisoryBoard"> </ng-template>
 				
-				<div class="row" id="borseAdvisoryBoard">
+				<div class="row">
 					<div class="col-md-12">
 						<h4>BORSE ADVISORY BOARD "DE CIFRIS"</h4>
 						<p>  I membri del Board instaurano una relazione continuativa con il mondo accademico crittografico, 

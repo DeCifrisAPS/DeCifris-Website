@@ -1,0 +1,46 @@
+
+<ng-sidebar-container>
+	<ng-sidebar opened="true" position="left" id="right-sidebar" mode="push" [autoCollapseWidth]="799">
+		<ul class="noIndent" align="left">
+			<!-- Utilizziamo questo trick per evitare di rendere visibile l'autofocus al lettore. -->
+			<li style="display:none">
+				<button autofocus="autofocus"></button>
+			</li>
+			<li>
+				<button class="btn btn-outline-info" (click)="goTo('home')">
+					Home
+				</button>
+			</li>
+			<li>
+				<button class="btn btn-outline-info" (click)="goTo('about')">
+					About
+				</button>
+			</li>
+			<li>
+				<button class="btn btn-outline-info" (click)="goTo('rules')">
+					Rules
+				</button>
+			</li>
+			<li>
+				<button class="btn btn-outline-info" (click)="goTo('specs')">
+					Specs
+				</button>
+			</li>
+		</ul>
+	</ng-sidebar>
+	<div ng-sidebar-content class="bottomExtra">
+		<br>
+		<div class="row mr-1 ml-1">
+			<div class="col-md-12">
+				<br id="home">
+				<app-counterparty-home></app-counterparty-home>
+				<br id="about">
+				<app-about></app-about>
+				<br id="rules">
+				<app-rules></app-rules>
+				<br id="specs">
+				<app-specs></app-specs>
+			</div>
+		</div>
+	</div>
+</ng-sidebar-container>

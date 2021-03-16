@@ -46,6 +46,17 @@ import { EventiPassatiComponent } from './eventi/eventi-passati/eventi-passati.c
 import { EventiFuturiComponent } from './eventi/eventi-futuri/eventi-futuri.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidebarModule } from 'ng-sidebar';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PerStudentiComponent } from './contenuti-specifici/per-studenti/per-studenti.component';
+import { PerAziendeComponent } from './contenuti-specifici/per-aziende/per-aziende.component';
+import { PerAccademiaComponent } from './contenuti-specifici/per-accademia/per-accademia.component';
+import { PerInsegnantiComponent } from './contenuti-specifici/per-insegnanti/per-insegnanti.component';
+import { PerCuriosiComponent } from './contenuti-specifici/per-curiosi/per-curiosi.component';
+import { CounterpartyComponent } from './counterparty/counterparty.component';
+import { AboutComponent } from './counterparty/about/about.component';
+import { CounterpartyHomeComponent } from './counterparty/counterparty-home/counterparty-home.component';
+import { RulesComponent } from './counterparty/rules/rules.component';
+import { SpecsComponent } from './counterparty/specs/specs.component';
 
 @NgModule({
   declarations: [
@@ -89,6 +100,16 @@ import { SidebarModule } from 'ng-sidebar';
     DidatticaUniversitariaComponent,
     EventiPassatiComponent,
     EventiFuturiComponent,
+    PerStudentiComponent,
+    PerAziendeComponent,
+    PerAccademiaComponent,
+    PerInsegnantiComponent,
+    PerCuriosiComponent,
+    CounterpartyComponent,
+    AboutComponent,
+    CounterpartyHomeComponent,
+    RulesComponent,
+    SpecsComponent
   ],
   imports: [
     BrowserModule,
@@ -97,7 +118,8 @@ import { SidebarModule } from 'ng-sidebar';
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    SidebarModule.forRoot()
+    SidebarModule.forRoot(),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
