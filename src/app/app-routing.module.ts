@@ -27,6 +27,8 @@ import { PerAccademiaComponent } from './contenuti-specifici/per-accademia/per-a
 import { PerStudentiComponent } from './contenuti-specifici/per-studenti/per-studenti.component';
 import { AderentiComponent } from './aderenti/aderenti.component';
 import { CounterpartyComponent } from './counterparty/counterparty.component';
+import { PerCuriosiComponent } from './contenuti-specifici/per-curiosi/per-curiosi.component';
+import { PerInsegnantiComponent } from './contenuti-specifici/per-insegnanti/per-insegnanti.component';
 
 const routes: Routes = [
   {path : "", component : HomeComponent},
@@ -51,6 +53,8 @@ const routes: Routes = [
   {path: "eventi", component: EventiComponent},
   {path: "sessioni", component: SessioniDeCifrisComponent},
   {path: "contatti", component: ContattiComponent},
+  {path: "curiosi", component: PerCuriosiComponent},
+  {path: "scuola", component: PerInsegnantiComponent},
   {path: "studenti", component: PerStudentiComponent},
   {path: "aziende", component: PerAziendeComponent},
   {path: "accademia", component: PerAccademiaComponent},

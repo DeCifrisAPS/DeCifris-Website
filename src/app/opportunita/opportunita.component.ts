@@ -23,7 +23,7 @@ export class OpportunitaComponent implements OnInit {
     try {
       document.querySelector('#' + this.fragment).scrollIntoView({behavior: 'smooth'});
     } catch (e) { }
-  }
+  } 
 
   visualizzaAziendeInteressate(){
     this.visualizzaNuoveAziendeInteressate = !this.visualizzaNuoveAziendeInteressate;
