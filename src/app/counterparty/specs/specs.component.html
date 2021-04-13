@@ -1,7 +1,43 @@
 
 <div class="container">
 	<h4>Specifiche tecniche</h4>
+	<p>
+		Ogni transazione bitcoin da un dato indirizzo (e quindi da una data chiave pubblica) 
+		richiede una firma valida per essere inclusa nella blockchain, 
+		la quale può essere generata solo con la rispettiva chiave privata; pertanto, chiunque abbia una 
+		copia di queste chiavi ha il controllo di quell'account. Le chiavi sono 
+		disponibili in coppie composte da una chiave privata (segreta) e una chiave pubblica.
+		Vediamo il modo in cui è possibile creare un indirizzo bitcoin; in questo modo 
+		trasparirà chiaramente cosa dobbiamo fare per forzare un tale indirizzo.
+	</p>
+	<p>
+		Il punto di partenza è generare una chiave privata, la quale è bene che rimanga conservata
+		segretamente. Una chiave privata è semplicemente un numero di 256 bit.
+	</p>
+	<p>
+		A partire dalla chiave privata deriviamo la chiave pubblica. Questo procedimento è fatto utilizzando
+		la moltiplicazione per scalare definita per curve ellittiche, così come descritto nello standard <i>secp256k1</i>.
+		Tale standard sancisce una curva ellittica e un punto base su essa, per poter effettuare le operazioni sopra descritte.
+		In particolare prenderemo il punto base e lo moltiplicheremo per la chiave privata, ottenendoun altro punto della
+		curva, che fornirà la chiave pubblica associata.
+		Chiaramente una chiave privata può essere convertita in una pubblica, ma il viceversa non vale in quanto
+		la chiave privata per costruzione è protetta dal problema del logaritmo discreto, per il quale classicamente 
+		non sono noti algoritmi	efficienti.
+	</p>
+	<p>
+		Chiave pubblica e indirizzo bitcoin sono due cose distinte. 
+		Vediamo come dalla chiave pubblica è possibile derivare l'indirizzo bitcoin associato.
+		A partire dalla chiave pubblica, vi applichiamo SHA256 e successivamente RIPEMD160,
+		in modo da ottenere una stringa di 160 bit, ovvero 20 byte. 
+		L'intero procedimento è mostrato nella figura sottostante.
+	</p>
+	<br>
 	<img src="../../../assets/derivation.png" alt="keyDerivation" class="center">
 	<br>
+	<p>
+		La codifica della stringa ottenuta concatenando SHA256 e RIPEMD160 avviene in base 58; tale codifica offre un buon equilibrio fra una 
+		rappresentazione compatta e una buona leggibilità dei caratteri (omettendo alcuni caratteri per i
+		quali c'è ambiguità di lettura, ad esempio 'O' e '0', 'I' e 'l').
+	</p>
 	<img src="../../../assets/base58encoding.png" alt="base58CheckEncoding" class="center">
 </div>
