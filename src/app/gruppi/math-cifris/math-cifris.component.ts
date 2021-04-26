@@ -8,7 +8,6 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class MathCifrisComponent implements OnInit {
 
-  attivitaDaMostrare: string = "";
   fragment: string;
 
   constructor(private route: ActivatedRoute) { }
@@ -30,7 +29,6 @@ export class MathCifrisComponent implements OnInit {
   /* Ai posteri: utilizzare del codice asincrono (async/await) mi è sembrato l'unico 
   modo per gestire la transizione della pagina alla sezione "eventi passati".*/
   async goTo(s : string){
-    this.attivitaDaMostrare = s;
     await this.sleep(10);
     document.getElementById(s).scrollIntoView({behavior: 'smooth'});
   }
