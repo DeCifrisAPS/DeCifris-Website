@@ -9,7 +9,7 @@ button{
 	color:rgb(48, 117, 128);
 	/* color:#007bff; */
 }
- 
+
 ng-sidebar-container{
 	position: fixed;
 	right: 0;
@@ -21,7 +21,7 @@ ng-sidebar-container{
 	background-color: aliceblue;
 	width: 300px !important;
 	padding: 2em 1em;
-} ​
+}​
 
 @media screen and (max-width: 799px) {
 	#right-sidebar {

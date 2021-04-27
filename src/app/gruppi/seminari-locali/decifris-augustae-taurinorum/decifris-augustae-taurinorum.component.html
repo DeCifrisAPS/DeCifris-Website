@@ -7,8 +7,13 @@
 			<button autofocus="autofocus"></button>
 		</li>
 		<li>
-			<button class="btn btn-outline-info" (click)="goTo('futuri')">
+			<button class="btn btn-outline-info" (click)="goTo('recenti')">
 				Seminari Recenti
+			</button>
+		</li>
+		<li>
+			<button class="btn btn-outline-info" (click)="goTo('futuri')">
+				Prossimi Seminari
 			</button>
 		</li>
 		<li>
@@ -21,7 +26,7 @@
 	<div ng-sidebar-content class="container bottomExtra">
 		<br>
 		<div class="px-3 py-3">
-			<h3>De Cifris Augustae Taurinorum </h3>
+			<h3>DE CIFRIS AUGUSTAE TAURINORUM</h3>
 			<b>Comitato organizzatore</b>:
 			<ul>
 				<li> Danilo Bazzanella, Politecnico di Torino, Dipartimento di Scienze Matematiche "Giuseppe Luigi Lagrange";</li>
@@ -29,13 +34,13 @@
 				<li> Guglielmo Morgari, Telsy S.p.A.;</li>
 				<li> Fabio Fiori, Quadrans;</li>
 			</ul>
-			<hr id="futuri">
-			<h4><a (click)="toggleAttivita('futuri')">Seminari recenti</a></h4>
-			<div *ngIf="mostraFuturi">
+			<hr id="recenti">
+			<h4>SEMINARI RECENTI</h4>
+			<div>
 				<p class="warning">Avviso: causa dell'emergenza Coronavirus (Covid-19) organizzeremo i prossimi eventi in webinar. </p>
 				<ul>
 					<li>
-						<b>19 Aprile 2021 - 16:00</b>
+						<b style="color: blue;">19 Aprile 2021 - 16:00</b>
 						<ul>
 							<li>
 								<b>Roberto La Scala</b> -- Università di Bari <br>
@@ -47,9 +52,13 @@
 					</li>
 				</ul>
 			</div>
+
+			<hr id="prossimi">
+			<h4>PROSSIMI SEMINARI</h4>
+
 			<hr id="passati">
-			<h4><a (click)="toggleAttivita('passati')">Seminari passati</a></h4>
-			<div *ngIf="mostraPassati">
+			<h4>SEMINARI PASSATI</h4>
+			<div>
 				<ul>
 					<li>
 						<b>26 Marzo 2021:</b>

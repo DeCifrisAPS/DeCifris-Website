@@ -11,8 +11,23 @@
 				</button>
 			</li>
 			<li>
-				<button class="btn btn-outline-info" (click)="goTo('seminari')">
-					Seminari
+				<button class="btn btn-outline-info" (click)="goTo('recenti')">
+					Seminari recenti
+				</button>
+			</li>
+			<li>
+				<button class="btn btn-outline-info" (click)="goTo('prossimi')">
+					Prossimi seminari
+				</button>
+			</li>
+			<li>
+				<button class="btn btn-outline-info" (click)="goTo('passati')">
+					Seminari passati
+				</button>
+			</li>
+			<li>
+				<button class="btn btn-outline-info" (click)="goTo('affini')">
+					Seminari affini
 				</button>
 			</li>
 		</ul>
@@ -66,8 +81,8 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<hr id="seminari">
-					<h4>SEMINARI</h4>
+					<hr id="recenti">
+					<h4>SEMINARI RECENTI</h4>
 					<p>I seminari proposti verranno mostrati in questa sezione.</p>
 				</div>
 			</div>
@@ -75,15 +90,10 @@
 				<div class="col-md-12">
 					<ul>
 						<li>
-							<b>19 Aprile 2021</b>
+							<b style="color: blue;">5 Maggio 2021</b>
 							<ul>
 								<li>
-									<b>Roberto La Scala</b> <br>
-									<i>"Cifrari ed equazioni alle differenze"</i>.<br>
-									<a href="../../../assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/LaScala.pdf">Locandina</a>
-									<!-- <a href="">Slide</a> -  -->
-									<!-- <a href="">Link al video</a> -->
-									<br>
+									<b>Luca de Feo</b> -- Université de Versailles – Saint-Quentin e IBM Zurich <br>
 								</li>
 							</ul>
 						</li>
@@ -100,32 +110,54 @@
 								</li>
 							</ul>
 						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<hr id="prossimi">
+					<h4>PROSSIMI SEMINARI</h4>
+					<ul>
 						<li>
-							<b>26 Marzo 2021</b>
+							9 Giugno
 							<ul>
 								<li>
-									<b>Francesco Stocco</b> <br>
-									<i>"A theoretical approach to Shor’s Algorithm and Quantum Bits"</i>.<br>
-									<a href="../../../assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/Stocco.pdf">Locandina</a>
-									<!-- <a href="">Slide</a> - 
-									<a href="">Link al video</a> -->
-									<br>
+									<b>Alberto Ravagnani</b> -- Eindhoven University of Technology <br>
 								</li>
 							</ul>
 						</li>
 						<li>
-							<b>5 Febbraio 2021</b>
+							Luglio
 							<ul>
 								<li>
-									<b>Carlo Sanna</b> <br>
-									<i>"Introduction to Multivariate Cryptography"</i>.<br>
-									<a href="../../../assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/locandina_Sanna.pdf">Locandina</a> -- 
-									<a href="../../../assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/Sanna_Intro_MVC.pdf">Slide</a> -- 
-									<a href="https://youtu.be/v5su7blRrHk">Video</a>
-									<br>
+									<b>Roberto La Scala</b> -- Università di Bari <br>
 								</li>
 							</ul>
 						</li>
+						<li>
+							Settembre
+							<ul>
+								<li>
+									<b>Ilaria Zappatore</b> -- INRIA Paris <br>
+								</li>
+							</ul>
+						</li>
+						<li>
+							6 Ottobre
+							<ul>
+								<li>
+									<b>Alessandro Neri</b> -- Max Planck Institute for Mathematics in the Sciences, Lipsia <br>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<hr id="passati">
+					<h4>SEMINARI PASSATI</h4>
+					<ul>
 						<li>
 							<b>10 Dicembre 2020</b>
 							<ul>
@@ -144,6 +176,57 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12">
+					<hr id="affini">
+					<h4>SEMINARI AFFINI</h4>
+					<p>I membri di MathCifris segnalano, oltre a quanto proposto sopra, 
+						altri seminari, organizzati da altre realtà della DeCifris, di carattere
+						affine a quello di questa pagina. </p>
+					<ul>
+						<li>
+							<b>19 Aprile 2021</b> (<a [routerLink]="['/deCifrisAugustaeTaurinorum']">DeCifris Augustae Taurinorum</a>)
+							<ul>
+								<li>
+									<b>Roberto La Scala</b> <br>
+									<i>"Cifrari ed equazioni alle differenze"</i>.<br>
+									<a href="../../../assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/LaScala.pdf">Locandina</a>
+									<!-- <a href="">Slide</a> -  -->
+									<!-- <a href="">Link al video</a> -->
+									<br>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<b>26 Marzo 2021</b> (<a [routerLink]="['/deCifrisAugustaeTaurinorum']">DeCifris Augustae Taurinorum</a>)
+							<ul>
+								<li>
+									<b>Francesco Stocco</b> <br>
+									<i>"A theoretical approach to Shor’s Algorithm and Quantum Bits"</i>.<br>
+									<a href="../../../assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/Stocco.pdf">Locandina</a>
+									<!-- <a href="">Slide</a> - 
+									<a href="">Link al video</a> -->
+									<br>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<b>5 Febbraio 2021</b> (<a [routerLink]="['/deCifrisAugustaeTaurinorum']">DeCifris Augustae Taurinorum</a>)
+							<ul>
+								<li>
+									<b>Carlo Sanna</b> <br>
+									<i>"Introduction to Multivariate Cryptography"</i>.<br>
+									<a href="../../../assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/locandina_Sanna.pdf">Locandina</a> -- 
+									<a href="../../../assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/Sanna_Intro_MVC.pdf">Slide</a> -- 
+									<a href="https://youtu.be/v5su7blRrHk">Video</a>
+									<br>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<hr>
 					<h4>VIDEO</h4>
 					<p>I video di crittografia relativi a questo argomento sono disponibili sul nostro <a href="https://www.youtube.com/
 						watch?v=S3ZpmcjRDKk&list=PLu4yxTVzRRMWZ_ALuKt8bC5Iopu_PXaw3">canale YouTube.</a></p>
