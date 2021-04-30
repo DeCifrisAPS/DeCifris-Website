@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 export class CifrisChainComponent implements OnInit {
 
   sezioneDaMostrare: string = "";
-  fragment: string;
+  fragment: string = "";
 
   constructor(private route: ActivatedRoute) { }
 
@@ -20,7 +20,9 @@ export class CifrisChainComponent implements OnInit {
   ngAfterViewInit(): void {
     try {
       document.querySelector('#' + this.fragment).scrollIntoView({behavior: 'smooth'});
-    } catch (e) { }
+    } catch (e) { 
+      this.goTo('recenti');
+    }
   }
   
   sleep(ms) {

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core'; 
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-decifris-athesis',
@@ -10,10 +11,20 @@ export class DecifrisAthesisComponent implements OnInit {
   /* attivitaDaMostrare : string = ""; */
   mostraFuturi: boolean = true;
   mostraPassati: boolean = true;
+  fragment: string;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.route.fragment.subscribe(fragment => { this.fragment = fragment; });
+  }
+
+  ngAfterViewInit(): void {
+    try {
+      document.querySelector('#' + this.fragment).scrollIntoView({behavior: 'smooth'});
+    } catch (e) {
+      this.goTo('recenti');
+    }
   }
 
   toggleAttivita(s: string){

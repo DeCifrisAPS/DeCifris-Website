@@ -20,7 +20,9 @@ export class PqCifrisComponent implements OnInit {
   ngAfterViewInit(): void {
     try {
       document.querySelector('#' + this.fragment).scrollIntoView({behavior: 'smooth'});
-    } catch (e) { }
+    } catch (e) {
+      this.goTo('recenti');
+    }
   }
 
   sleep(ms) {

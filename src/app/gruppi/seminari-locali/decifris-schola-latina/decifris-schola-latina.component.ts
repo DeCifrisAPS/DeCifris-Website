@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-decifris-schola-latina',
@@ -6,23 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./decifris-schola-latina.component.css']
 })
 export class DecifrisScholaLatinaComponent implements OnInit {
-  /* attivitaDaMostrare: string = "";
-  mostraFuturi: boolean = true;
-  mostraPassati: boolean = true; */
+  
+  fragment: string;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
-  ngOnInit(): void {
-  }
- 
-  /* toggleAttivita(s: string){
-    s == 'futuri' ? this.mostraFuturi = !this.mostraFuturi : this.mostraPassati = !this.mostraPassati;
+  ngOnInit() {
+    this.route.fragment.subscribe(fragment => { this.fragment = fragment; });
   }
 
-  mostraAttivita(s : string){
-    this.attivitaDaMostrare == s ? this.attivitaDaMostrare = "" : this.attivitaDaMostrare = s;
-    s == 'futuri' ? this.mostraFuturi = true : this.mostraPassati = true;
-  }  */
+  ngAfterViewInit(): void {
+    try {
+      document.querySelector('#' + this.fragment).scrollIntoView({behavior: 'smooth'});
+    } catch (e) {
+      this.goTo('recenti');
+    }
+  }
 
   sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));

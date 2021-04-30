@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-decifris-augustae-taurinorum',
@@ -6,23 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./decifris-augustae-taurinorum.component.css']
 })
 export class DecifrisAugustaeTaurinorumComponent implements OnInit {
-  /* attivitaDaMostrare: string = "";
-  mostraFuturi: boolean = true;
-  mostraPassati: boolean = true; */
+  
+  fragment: string;
 
-  constructor( ) { }
+  constructor(private route: ActivatedRoute) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.route.fragment.subscribe(fragment => { this.fragment = fragment; });
   }
 
-  /* toggleAttivita(s: string){
-    s == 'futuri' ? this.mostraFuturi = !this.mostraFuturi : this.mostraPassati = !this.mostraPassati;
-  } */
-
-  /* mostraAttivita(s : string){
-    this.attivitaDaMostrare == s ? this.attivitaDaMostrare = "" : this.attivitaDaMostrare = s;
-    s == 'futuri' ? this.mostraFuturi = true : this.mostraPassati = true;
-  }  */
+  ngAfterViewInit(): void {
+    try {
+      document.querySelector('#' + this.fragment).scrollIntoView({behavior: 'smooth'});
+    } catch (e) {
+      this.goTo('recenti');
+    }
+  }
 
   sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
