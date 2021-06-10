@@ -57,6 +57,14 @@ import { AboutComponent } from './counterparty/about/about.component';
 import { CounterpartyHomeComponent } from './counterparty/counterparty-home/counterparty-home.component';
 import { RulesComponent } from './counterparty/rules/rules.component';
 import { SpecsComponent } from './counterparty/specs/specs.component';
+import { CryptowarsComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars.component';
+import { Cryptowars2020Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2020/cryptowars2020.component';
+import { Cryptowars2019Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2019/cryptowars2019.component';
+import { Cryptowars2018Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2018/cryptowars2018.component';
+import { Cryptowars2016Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2016/cryptowars2016.component';
+import { Cryptowars2015Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2015/cryptowars2015.component';
+import { Cryptowars2014Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2014/cryptowars2014.component';
+import { Cryptowars2011Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/cryptowars2011.component';
 
 @NgModule({
   declarations: [
@@ -109,7 +117,15 @@ import { SpecsComponent } from './counterparty/specs/specs.component';
     AboutComponent,
     CounterpartyHomeComponent,
     RulesComponent,
-    SpecsComponent
+    SpecsComponent,
+    CryptowarsComponent,
+    Cryptowars2020Component,
+    Cryptowars2019Component,
+    Cryptowars2018Component,
+    Cryptowars2016Component,
+    Cryptowars2015Component,
+    Cryptowars2014Component,
+    Cryptowars2011Component
   ],
   imports: [
     BrowserModule,

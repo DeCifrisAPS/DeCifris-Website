@@ -29,6 +29,14 @@ import { AderentiComponent } from './aderenti/aderenti.component';
 import { CounterpartyComponent } from './counterparty/counterparty.component';
 import { PerCuriosiComponent } from './contenuti-specifici/per-curiosi/per-curiosi.component';
 import { PerInsegnantiComponent } from './contenuti-specifici/per-insegnanti/per-insegnanti.component';
+import { CryptowarsComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars.component';
+import { Cryptowars2020Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2020/cryptowars2020.component';
+import { Cryptowars2019Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2019/cryptowars2019.component';
+import { Cryptowars2018Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2018/cryptowars2018.component';
+import { Cryptowars2016Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2016/cryptowars2016.component';
+import { Cryptowars2015Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2015/cryptowars2015.component';
+import { Cryptowars2014Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2014/cryptowars2014.component';
+import { Cryptowars2011Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/cryptowars2011.component';
 
 const routes: Routes = [
   {path : "", component : HomeComponent},
@@ -58,7 +66,16 @@ const routes: Routes = [
   {path: "studenti", component: PerStudentiComponent},
   {path: "aziende", component: PerAziendeComponent},
   {path: "accademia", component: PerAccademiaComponent},
-  {path: "counterparty", component: CounterpartyComponent}
+  {path: "counterparty", component: CounterpartyComponent},
+  {path: "cryptowars", component: CryptowarsComponent, children:  [
+    {path: "2020", component: Cryptowars2020Component},
+    {path: "2019", component: Cryptowars2019Component},
+    {path: "2018", component: Cryptowars2018Component},
+    {path: "2016", component: Cryptowars2016Component},
+    {path: "2015", component: Cryptowars2015Component},
+    {path: "2014", component: Cryptowars2014Component},
+    {path: "2011", component: Cryptowars2011Component}
+  ]}
 ];
 
 @NgModule({

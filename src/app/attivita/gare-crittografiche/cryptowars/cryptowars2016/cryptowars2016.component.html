@@ -1,0 +1,751 @@
+<div id="2016">
+	<h2>EDIZIONE 2016 (Digital Signature Awareness Contest)</h2>
+	<p>
+		Il CryptoLabTN (Laboratory of Industrial Mathematics and Cryptography at University of Trento), 
+		in collaborazione con Clusit (The Italian Association for Computer Security), ha organizzato il
+		"Digital Signature Awareness Contest".
+	</p>
+	<div id="programmaGenerale">
+		<h5>Programma generale</h5>
+		<ul>
+			<li>Lunedì 10 ottobre alle ore 10:00 (ora di Trento) abbiamo pubblicato un set di file, 
+				chiavi pubbliche e le relative <a href="https://en.wikipedia.org/wiki/Digital_signa
+				ture">firme digitali</a>.</li>
+			<li>I partecipanti hanno avuto tempo fino a venerdì 14 ottobre alle 14:00 per falsificare 
+				le firme di queste chiavi pubbliche su un file specifico, e inviare i loro risultati.</li>
+			<li>I partecipanti sono stati classificati in base al numero di firme contraffatte 
+				e all'ora dell'ultima presentazione.</li>
+			<li>I premi vengono assegnati ai primi tre gruppi classificati.</li>
+		</ul>
+	</div>
+	<div id="news">
+		<h5>News</h5>
+		<ul>
+			<li>[2016/11/15] Abbiamo aggiornato la sezione Feedback dove descriviamo come abbiamo progettato 
+				il concorso, inoltre abbiamo pubblicato alcuni feedback che abbiamo ricevuto dai partecipanti. </li>
+			<li> [2016/10/15] <strong>La classifica finale è pubblica!</strong> </li>
+			<li> [2016/10/14, 14:00] <font color=red>Il contest è concluso!</font> Grazie per la partecipazione! 
+				Le statistiche finali e la classifica saranno pubblicate a breve. </li>
+			<li> [2016/10/10, 10:00] È iniziato il contest! Controlla le istruzioni per scaricare il materiale del contest.
+				<strong>Abbiamo aggiornato le istruzioni per l'invio delle soluzioni</strong>.</li>
+			<li> [2016/10/07] Abbiamo reso noti i premi! Abbiamo aggiunto alcune regole sulla partecipazione di gruppo.
+				Nuove informazioni disponibili sull'utilizzo delle funzioni hash. Controlla le sezioni dedicate.</li>
+			<li> [2016/10/06] Le istruzioni sono state aggiornate con maggiori dettagli ed è disponibile un file 
+				campione per testare i tuoi strumenti e prepararti per la gara.</li>
+			<li> [2016/09/09] Le istruzioni sono state aggiornate con maggiori dettagli sugli algoritmi 
+				crittografici e alcune basi matematiche. </li>
+			<li> [2016/08/26] È stata creata una mail di contatto per il concorso! Puoi scriverci all'indirizzo 
+				<a href="mailto:contest.cryptolabtn@gmail.com">contest.cryptolabtn@gmail.com</a> </li> 
+		</ul>
+	</div>
+	<div id="contest">
+		<h5>Contest</h5>
+		<p>
+			Abbiamo pubblicato chiavi pubbliche per vari tipi di firme digitali: RSA, 
+			DSA, ECDSA. Un partecipante doveva falsificare le firme su un determinato 
+			file che corrispondono a queste chiavi pubbliche.
+		</p>
+		<h5>Materiale</h5>
+		<p>Fare clic sui link seguenti per scaricare il <a href="../../../../assets/
+			attivita/cryptowars/contest2016.zip">set di chiavi e firme pubbliche</a>. 
+			Le chiavi private sono ora <a href="../../../../assets/attivita/cryptowars/
+			contest_2016.private-keys.txt">disponibili</a>.</p>
+		<p>
+			Forniamo un <a href="../../../../assets/attivita/cryptowars/example_2016.zip">
+			file campione</a> (con un esempio di firma digitale), insieme a una 
+			<a href="../../../../assets/attivita/cryptowars/example_2016.solution.txt">
+			soluzione corrispondente</a> (si noti che la soluzione 
+			non è necessariamente univoca), nel formato che dovrebbe essere 
+			utilizzato per inviare i risultati.
+		</p>
+		<p>Il formato per il materiale del concorso è un archivio zip. Nell'archivio 
+			è presente un file denominato content.txt che descrive il contenuto:</p>
+		<ul>
+			<li> La prima riga contiene il nome del file di destinazione, cioè il file 
+				per il quale devono essere contraffatte le firme;</li>
+			<li>La seconda riga contiene un intero che dice quante chiavi pubbliche ci 
+				sono nell'archivio;</li>
+			<li>Per ogni chiave pubblica c'è una riga con due voci: il nome della chiave 
+				(una singola lettera maiuscola) e una lettera che ne rappresenta il tipo 
+				(cioè l'algoritmo di firma digitale corrispondente): "r" per RSA, "d" per 
+				DSA, "e" per ECDSA.</li>
+		</ul>
+		<p>Poi c'è il file di destinazione e una cartella per ogni chiave pubblica 
+			(con il nome corrispondente). In ogni cartella c'è un file txt:</p>
+		<ul>
+			<li>La sua prima riga è la lettera che identifica il tipo di chiave 
+				("r" per RSA, "d" per DSA, "e" per ECDSA);</li>
+			<li>La seconda riga contiene una lettera che identifica l'algoritmo hash 
+				utilizzato: "m" per MD5, "s" per SHA1;</li>
+			<li>La terza riga contiene un numero intero che dice quanti file (e firme 
+				corrispondenti) ci sono all'interno della cartella;</li>
+			<li>Poi c'è una riga vuota;</li>
+			<li>Le prossime due o quattro righe (a seconda del tipo di chiave) descrivono 
+				la chiave pubblica (vedi la sezione <i>Framework</i> di seguito per i 
+				dettagli sugli algoritmi e la notazione):
+				<ul>
+					 <li>Per le chiavi RSA c'è una linea con l'intero 
+						<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;n"/>
+						 e una con l'intero <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;e."/>
+					 </li>
+					 <li>Per le chiavi DSA ci sono tre linee contenenti i parametri
+						<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;p,q,g"/>
+						 e una quarta linea con la chiave pubblica <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;y."/>
+					 </li>
+					 <li>Per le chiavi ECDSA c'è una linea con la cardinalità del campo base
+						<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;q,"/>
+						 una linea contenente i coefficienti <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;A,B"/> 
+						 di una curva ellittica <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;E"/> della forma
+						 <img src="https://latex.codecogs.com/png.latex?\large&amp;space;y^2&amp;space;=&amp;space;x^3&amp;space;
+						 &amp;plus;&amp;space;A&amp;space;\cdot&amp;space;x&amp;space;&amp;plus;&amp;space;B"/>
+						 definita su <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;\mathbb{F}_q."/>
+					 Le due righe successive rappresentano il punto base <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;G"/> 
+					 e la chiave pubblica data dal punto <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;Q"/> 
+					 tramite le sue coordinate <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;(X,Y)."/>
+					 </li>
+				</ul>
+			</li>
+			<li>Seguono poi le firme (una per file), con il seguente formato:
+				<ul>
+					<li>Una linea bianca;
+					</li>
+					<li>Il nome del file firmato;
+					</li>
+					<li> La firma: nel caso di RSA è una singola linea contenente <img src="https://latex.codecogs.
+						com/gif.latex?\large&amp;space;\sigma,"/> mentre per DSA e ECDSA ci saranno due linee 
+						contenenti <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;r"/> e
+						<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;s."/>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<p>
+			I partecipanti sono tenuti a falsificare una firma del file di destinazione 
+			per ogni chiave pubblica fornita.
+	  	</p>
+	  	<p>
+			<em>Avviso per gli utenti Windows:</em> Se apri i file (cioè in blocco note) potresti 
+			vedere tutto su una singola riga. Non dovrebbe essere troppo difficile elaborarli 
+			manualmente o automaticamente per avere ogni chiave pubblica nel formato appropriato.
+		</p>
+	  	<p> Per quanto riguarda l'implementazione dei due algoritmi di hash utilizzati nel contest, 
+		  si fa riferimento ai seguenti strumenti standard da riga di comando:</p>
+			<ul>
+				 <li><strong>Linux</strong>: <em>md5sum pathtofile</em>, <em>sha1sum pathtofile</em>;
+				 </li>
+				 <li><strong>OSX</strong>: <em>openssl md5 pathtofile</em> , <em>openssl sha1 pathtofile</em>;
+				 </li>
+				 <li><strong>Windows</strong>: <em>CertUtil -hashfile pathtofile MD5</em>, <em>CertUtil -hashfile pathtofile SHA1</em>;
+				 </li>
+			</ul>
+			I risultati devono essere interpretati come numeri interi esadecimali.
+	  	<p> Leggi le istruzioni di seguito per ulteriori informazioni.</p>
+		<h5>Invio delle risposte</h5>
+		<p> Un partecipante è identificato da un indirizzo e-mail univoco.
+			Un partecipante può presentare una o più soluzioni al concorso su
+			in qualsiasi momento tra la pubblicazione del Materiale del Concorso e la fine
+			del contesto, che è fissato venerdì 14 ottobre alle 14:00.
+		</p>
+		<p> Invii una soluzione per il concorso inviando una mail a 
+			<a href="mailto:contest.cryptolabtn@gmail.com">contest.cryptolabtn@gmail.com</a>.</p>
+		<p>
+			Un invio può consistere in una o più soluzioni (dovresti includere
+			ogni soluzione per cui hai trovato un sottoinsieme delle chiavi pubbliche proposte.
+			<strong>Sono consentiti più invii ma solo l'ultimo invio è considerato.</strong>
+			<strong>Il formato per l'invio è un file di testo. Il file della soluzione dovrebbe essere nel seguente formato</strong>:
+		</p>
+		<ul>
+			<li>Una riga con il numero di soluzioni nel file seguita da una riga vuota</li>
+			<li>Poi per ogni soluzione:</li>
+				<ul>
+						<li>Una linea con il nome della chiave pubblica</li>
+						<li>Una riga per ogni elemento della firma contraffatta:
+						per RSA una singola riga contenente <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;s,"/>
+						per DSA e ECDSA due righe contenenti <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;r"/> 
+							e <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;s."/>
+						</li>
+						<li>Una riga vuota per separare dalla soluzione successiva</li>
+				</ul>
+		</ul>
+		<p>Ogni elemento delle firme dovrebbe essere un numero scritto in base decimale.</p>
+	</div>
+	<div id="coding">
+		<h5>Coding</h5>
+		<p>Devo scrivere un mio programma per trovare le soluzioni? La risposta breve è: no, ma sì. </p>
+		<p>
+			La risposta lunga è: non abbiamo modo di verificare se hai scritto del codice tuo per risolvere i problemi 
+			del nostro concorso (non ti chiediamo di mostrare il codice e puoi lavorare con il linguaggio di 
+			programmazione che preferisci). E probabilmente sarà più facile cercare qualche programma già esistente 
+			che faccia tutto il lavoro. Ma il punto centrale di questo concorso è sfidare te stesso a comprendere 
+			un problema crittografico, cercare soluzioni possibili, scrivere codice che implementa le soluzioni 
+			e cercare di renderlo sempre più efficiente.
+		</p>
+		<br>
+		<p> Devo creare i miei algoritmi per trovare le soluzioni? Assolutamente no!</p>
+		<p>Ci sono tonnellate di buoni algoritmi che potrebbero rompere chiavi corte o deboli. 
+			Guardati intorno e trova un algoritmo che sei in grado di capire. Quindi prova a 
+			implementarlo. Questa sembra già una buona strategia per divertirsi al concorso.
+		</p>
+	</div>
+	<div id="framework">
+		<h5>Framework</h5>
+		<p>Cos'è uno schema di firma digitale?</p>
+		<p>
+			Gli schemi di firma digitale sono progettati per fornire la controparte digitale alle firme scritte a mano.
+			La firma digitale è uno o più numeri interi dipendenti dal messaggio e da qualche segreto noto solo al 
+			firmatario, ovvero la chiave privata del firmatario, ma tutti possono comunque verificare la validità 
+			della firma utilizzando un dato pubblico: la chiave pubblica del firmatario.
+		</p>
+		<p>Esistono moltissimi schemi di firma digitale, ma in questo concorso ci concentriamo sui più famosi: firma basata su RSA, DSA ed ECDSA. </p>
+		<p>Sebbene abbastanza diversi, tutti e tre gli algoritmi hanno la stessa struttura generale.
+			Il firmatario genera una coppia di chiavi <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;(PK,SK)"/> 
+			dove <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;PK"/> è la chiave pubblica che viene distribuita,
+			e <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;SK"/> è la chiave segreta, che viene tenuta privata.
+			Il messaggio <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;m"/> che deve essere firmato diventa l'input di una
+			funzione di hash <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;H"/> per diventare un intero di
+			lunghezza opportuna: <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;H(m)."/>
+			A questo punto il firmatario usa il valore di hash <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;H(m)"/> 
+			e la sua chiave segreta <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;SK"/> per calcolare una fimra 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;\sigma"/> da allegare al messaggio per poterlo autenticare. 
+			Infine, chiunque in possesso della chiave pubblica <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;PK"/> 
+			può verificare la validità della firma utilizzando una funzione <img src="https://latex.codecogs.com/gif.latex?\large
+			&amp;space;V(\sigma,m,PK)"/> che restituisce "True" se la firma è verificata, confermando così l'autenticità del messaggio 
+			e del suo mittente, o "False"	se la firma non è valida.
+	  	</p>
+	  	<p class="lead">RSA-based signing</p>
+  		<p>
+			Le firme RSA funzionano quasi esattamente come la crittografia RSA, la differenza principale è l'ordine in cui vengono 
+			utilizzate le chiavi private e pubbliche.	Infatti dove nella crittografia RSA il messaggio viene cifrato utilizzando 
+			la chiave pubblica e poi decifrato con la chiave segreta, mentre nella firma il messaggio viene prima firmato con la 
+			chiave privata e poi la firma viene verificata con la chiave pubblica.
+		</p>
+ 	 	<p>
+			Siano <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;p,q"/> due primi distinti e
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;n=p\cdot q."/>
+			Dato <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;(n) = (p-1)(q-1)"/> 
+			(<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;\varphi"/> è
+			<a href="https://en.wikipedia.org/wiki/Euler%27s_totient_function" title="Euler's totient function">la phi di Eulero</a>), 
+			il firmatario sceglie un numero random <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;1&lt;e&lt;n"/> 
+			tale per cui <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;gcd(e,\varphi(n))=1,"/> i.e. 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;e"/> e 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;\varphi(n)"/> siano coprimi.
+			La coppia <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;(n,e)"/> sarà pubblicata come chiave pubblica del firmatario.
+			La chiave privata <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;d"/> è quindi calcolata come
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;d=e^{-1}\mod{\varphi(n)}."/> 
+		</p>
+  		<p>
+			Una volta che le chiavi sono state generate e la chiave pubblica è stata distribuita a
+			destinatari previsti, può iniziare la firma vera e propria.
+			Sia <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;m"/> il messaggio da firmare.
+			la rispettiva firma <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;\sigma"/> è calcolata come: 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;\sigma=H(m)^d\mod{n}"/> dove l'esponente
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;d"/> è la chiave privata.
+			Infine, qualsiasi destinatario può controllare questa firma calcolado
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;y=\sigma^e\mod{n}"/> 
+			(usando i valori della chiave pubblica), e controllando se <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;y=H(m)."/> 
+			Questo vale per una firma valida poiché per il piccolo teorema di Fermat
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;ed=1\mod{\varphi(n)}\Rightarrow x^{ed}=x\mod{n}">.
+		</p>
+		<p>
+			Facciamo riferimento a <a hfref="https://en.wikipedia.org/wiki/RSA_(cryptosystem)">Wikipedia</a> per 
+			una panoramica più dettagliata su RSA.
+		</p>
+  		<p class="lead">DSA</p>
+		<p>
+			DSA è un acronimo per <em>Digital Signature Algorithm</em>, un algoritmo sviluppato dal NIST nel 1991.
+			Come RSA funziona con numeri interi e aritmetica modulare.
+		</p>
+		<p>
+			Il primo passo è scegliere i parametri da utilizzare.
+			Siano <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;p,q"/> due numeri primi casuali tali che 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;p-1"/> è un multiplo di 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;q."/> 
+			Sia quindi <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;g"/> un intero il cui 
+			<a href="https://en.wikipedia.org/wiki/Multiplicative_order" title="Multiplicative order">ordine moltiplicativo</a> modulo 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;p"/> sia <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;q."/> 
+		</p>
+		<p>
+			Una volta fissati i parametri <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;(p,q,g),"/>  
+			il firmatario imposta le proprie chiavi scegliendo una chiave segreta casuale 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;x,"/>  
+			con <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;0&lt;x&lt;q,"/>   
+			e calcola la rispettiva chiave pubblica <img src="https://latex.codecogs.com/gif.
+			latex?\large&amp;space;y=g^x\mod{p}."/> 
+		</p>
+		<p>
+			Per firmare un messaggio <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;m"/> 
+			è necessario generare anticipatamente un valore random <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;0&lt;k&lt;q,"/>  
+			quindi i due valori della firma <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;(r,s)"/> sono calcolati 
+			come segue: 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;r=(g^k\mod{p})\mod{q},"/>  
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;s=k^{-1}(H(m) + x r)\mod{q}."/> 
+			Nel caso improbabile che <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;r=0"/> 
+			oppure <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;s=0"/> bisogna scegliere 
+			un nuovo <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;k"/> e ripetere il processo.
+		</p>
+		<p>
+			Per verificare una firma <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;(r,s)"/> 
+			per un messaggio <span class="math">m</span> dapprima controlliamo che 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;0&lt;r&lt;q,"/>  e 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;0&lt;s&lt;q,"/>  in caso contrario la rifiutiamo.
+			Calcoliamo quindi <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;w=s^{-1}\mod{q},"/> 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;u_1=(H(m) w)\mod{q},"/>
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;u_2=(r w)\mod{q},"/> e 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;v=((g^{u_1}y^{u_2})\mod{p})\mod{q}."/>
+			La firma è valida se e solo se <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;v=r."/>
+		</p>
+		<p>
+			Si faccia riferimento a <a hfref="https://en.wikipedia.org/wiki/Digital_Signature_Algorithm">Wikipedia</a> 
+			per una descrizione più specifica riguardo DSA.
+		</p>
+		<p class="lead">ECDSA</p>
+		<p>
+			L'algoritmo ``Elliptic Curve Digital Signature Algorithm'' (ECDSA) offre una variante, 
+			applicata alle curve ellittiche, del DSA.
+		</p>
+		<p>
+			Data una curva ellittica <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;E"/> definita 
+			su un campo finito <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;\mathbb{F}_q"/> e un 
+			punto base <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;G\in E(\mathbb{F}_q)"/> di 
+			ordine un primo <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;n,"/>  il firmatario 
+			sceglie la propria chiave segreta come un intero casuale <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;1\leq d\leq n-1"/> e calcola la corrispondente chiave pubblica , cioè è il punto 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;Q=d\cdot G."/> 
+		</p>
+		<p>
+			Come in DSA per firmare un messaggio <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;m"/> 
+			viene selezionato per ogni messaggio un intero casuale <img src="https://latex.codecogs.com/gif.latex?\large
+			&amp;space;1\leq k\leq n-1,"/>  quindi viene calcolato il punto <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;(x,y)=k\cdot G"/> della curva. Successivamente la firma viene calcolata come la coppia 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;(r,s)"/> dove <img src="https://latex.codecogs.
+			com/gif.latex?\large&amp;space;r=x\mod{n}"/> (tecnicamente <img src="https://latex.codecogs.com/gif.latex?\large
+			&amp;space;x\in\mathbb{F}_q,"/>  ma può essere tranquillamente visto come un intero), e 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;s = k-1 (H(m) + rd) \mod{n}."/> 
+			Se <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;r=0"/> o <img src="https://latex.codecogs.com/
+			gif.latex?\large&amp;space;s=0"/> si sceglie un altro valore per <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;k"/> e si ripete la procedura.
+		</p>
+		<p>
+			Per verificare una firma <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;(r,s)"/> sul messaggio 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;m"/> prima controlliamo che sia 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;r"/> che <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;s"/> risiedano nell'intervallo <img src="https://latex.codecogs.com/gif.latex?\large
+			&amp;space;\[1,...,n-1\],"/>  altrimenti rifiutiamo la firma. Quindi calcoliamo 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;w=s-1\mod{n},u1=(H(m)w)\mod{n},u2=(rw)\mod{n}"/>
+			e il punto della curva <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;(x,y)=u1\cdot G+u2\cdot Q."/> 
+			La firma è valida se e solo se <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;r=x\mod{n}."/> 
+		</p>
+		<p>
+			Facciamo riferimento a <a hfref="https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm">Wikipedia</a> 
+			per maggiori dettagli riguardo ECDSA.
+		</p>
+		<p class="lead">Hash Functions</p>
+		<p>
+			Una funzione hash è una funzione che mappa dati di dimensioni arbitrarie su una stringa di bit di dimensione fissa. 
+			In crittografia sono desiderate funzioni di hash crittografiche: una funzione di hash è detta crittografica se è 
+			progettata per essere una funzione unidirezionale (cioè è facile calcolare immagini ma non è possibile calcolare pre-immagini).
+		</p>
+		<p>
+			Quindi, una funzione hash crittografica ideale ha queste proprietà principali:</p>
+		<ul>
+			<li>è facile calcolare il valore hash per qualsiasi input;</li>
+			<li>è estremamente difficile recuperare un dato dal suo valore hash se non provando tutti i valori possibili;</li>
+			<li>una piccola modifica a un dato cambia radicalmente il valore hash;</li>
+			<li>è impossibile trovare due dati diversi con lo stesso valore hash.</li>
+		</ul>
+		<p>
+			<em>MD5</em> è una funzione hash progettata da Ronald Rivest nel 1991 che produce stringhe 
+			di bit di lunghezza fissa di 128 bit (16 byte).
+		</p>
+		<p>
+			<em>SHA1</em> è una funzione hash progettata dalla National Security Agency che emette 
+			stringhe di bit di lunghezza fissa di 160 bit (20 byte).</p>
+		<p>
+			Si faccia riferimento alle pagine relative a  <a href="https://en.wikipedia.org/wiki/MD5">
+				MD5</a> e <a href="https://en.wikipedia.org/wiki/SHA-1">SHA1</a> per una discussione
+				più approfondita a riguardo.
+		</p>
+	</div>
+	
+		
+		<!-- Ranking -->
+		<h5>Classifica</h5>
+		<table class="table">
+			<thead>
+				 <tr class="header">
+					  <th style="text-align: center"> Rk </th>
+					  <th style="text-align: center"> Partecipanti </th>
+					  <th style="text-align: center"> Ora dell'ultima soluzione inviata</th>
+					  <th style="text-align: center"> Firme valide </th>
+				 </tr>
+			</thead>
+			<tbody>
+				 
+				 <tr class="odd" style="background-color: LIGHTYELLOW">
+					  <td align="center">1</td>
+					  <td align="center"> Cryptoresearch * </td>
+					  <td align="center"> 13/10/2016 00:22 </td>
+					  <td align="center"> 15 </td>
+				 </tr>
+				 <tr class="even" style="background-color: WHITESMOKE">
+					  <td align="center">2</td>
+					  <td align="center"> Cryptostage * </td>
+					  <td align="center"> 14/10/2016 12:36 </td>
+					  <td align="center"> 13 </td>
+				 </tr>
+				 <tr class="odd" style="background-color: ANTIQUEWHITE">
+					  <td align="center">3</td>
+					  <td align="center"> TGL * </td>
+					  <td align="center"> 14/10/2016 08:25 </td>
+					  <td align="center"> 10 </td>
+				 </tr>
+				 <tr class="even">
+					  <td align="center">4</td>
+					  <td align="center"> Alessandro De Piccoli </td>
+					  <td align="center"> 14/10/2016 13:49 </td>
+					  <td align="center"> 7.5 ** </td>
+				 </tr>
+				 <tr class="odd">
+					  <td align="center"> 5 </td>
+					  <td align="center"> Francesco Romeo </td>
+					  <td align="center"> 13/10/2016 21:10 </td>
+					  <td align="center"> 7 </td>
+				 </tr>
+				 </tbody>
+			</table>
+			<p> Notes: <br>
+				*:  gruppo di più persone. <br>
+				**: firme valide per 8 chiavi pubbliche, ma una firma è stata scritta sbagliata. <br>
+			</p>
+		<h5>Statistiche</h5>
+		<ul>
+			<li>Partecipanti: 5 (11 persone)</li>
+				  <li>Submissions: 16</li>
+				  <li>Firme falsificate: 15</li>
+				  <li>Unforged Signatures: 2</li>
+			</ul>
+		<!-- Premi -->
+		<h5>Premi</h5>
+		<p>
+			Il vero premio che ottieni partecipando a questo concorso è divertirti
+			imparando e facendo le cose da soli!
+		</p>
+		<p>
+			Al vincitore verrà assegnata l'iscrizione gratuita a <a href="http://www.clusit.it/">Clusit</a>. 
+			Coloro che si classificheranno nelle prime tre posizioni saranno invitati a partecipare (gratuitamente) 
+			a tutti gli eventi che il CryptoLabTN ospiterà durante tutto il 2016 e il 2017. 
+			Inoltre li inviteremo a pranzo il giorno della premiazione.
+		</p>
+		<p>
+			E' possibile partecipare a gruppi, ma verranno assegnati premi ad un massimo di 
+			tre componenti. I singoli partecipanti non possono gareggiare anche in un gruppo.
+	  </p>
+	  <p>
+		I premi verranno assegnati il ​​16 novembre 2016 durante il Cryptography Workshop
+		<a href="http://www.science.unitn.it/~sala/events2016/BunnyTN7.html">BunnyTN7 2016</a>
+		organizzato presso l'Università di Trento e in collaborazione con altre università italiane.
+		</p>
+		<!-- Ranking -->
+		<h5>Classifica</h5>
+		<p>
+			La graduatoria tra i partecipanti viene effettuata considerando quanto segue
+			due semplici regole che si applicano a tutte le presentazioni valide.
+		</p>
+		<ol>
+			<li>Un partecipante si classifica più in alto di un altro partecipante se ha falsificato più firme.</li>
+			<li>Un partecipante si classifica più in alto di un altro partecipante con lo stesso numero di firme contraffatte
+				se il loro ultimo invio valido è stato effettuato in anticipo.</li>
+		</ol>
+		<h5> Come abbiamo pensato il contest? </h5> <hr>
+		<p>
+			Innanzitutto, utilizzando Magma abbiamo selezionato chiavi che potevano essere violate in 10 minuti 
+			(una per la firma basata su RSA, una per DSA e una per ECDSA), in 60 minuti (una per la firma basata 
+			su RSA, una per DSA e una per ECDSA) e in circa 1 giorno (uno per DSA e uno per ECDSA), eseguendo 
+			algoritmi di uso generale per fattorizzare o risolvere il problema del logaritmo discreto.
+			Tuttavia, volevamo un concorso in cui il solo utilizzo di algoritmi generici per fattorizzare o 
+			risolvere il problema del logaritmo discreto non fosse sufficiente per eccellere nella competizione. 
+			Quindi avevamo bisogno di generare chiavi deboli. Cosa sono le chiavi deboli? Queste possono essere 
+			definite in modo informale come classi di chiavi in ​​cui esistono algoritmi per scopi speciali, 
+			che funzionano meglio del più noto algoritmo per scopi generali.
+			<br>
+			Abbiamo selezionato diverse classi di chiavi deboli, sia per la firma basata 
+			su RSA che per ECDSA. In particolare abbiamo scelto:
+		</p>
+		<ul>
+			<li>Firme basate su RSA:
+				<ul>
+					<li>
+						Chiavi deboli di Wiener: chiavi con piccolo esponente privato 
+						<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;d&lt;1/3\cdot N^{1/4}"/>
+						che possono essere rotte con l'<a href="https://en.wikipedia.org/wiki/Wiener%27s_attack">
+							attacco di Wiener</a>, basato su frazioni continue;</li>
+					<li>
+						Una coppia di chiavi con un fattore primo comune, che può essere decifrato molto 
+						facilmente calcolando il massimo comun divisore mediante l'algoritmo di Euclide, 
+						che richiede solo ripetute sottrazioni. Nel famoso articolo <a href="https://eprint.
+						iacr.org/2012/064.pdf">“Ron was wrong, Whit is right (2012)”</a>, Lenstra et al. hanno 
+						studiato alcuni milioni di chiavi RSA pubbliche disponibili e ha scoperto che molte 
+						di esse erano vulnerabili a un attacco a fattore comune.
+					</li>
+				</ul>
+			</li>
+			<li>ECDSA:
+				<ul>
+					<li>
+						chiavi curve anomale, per sensibilizzare sulla vulnerabilità delle curve anomale, 
+						che sono curve definite su un campo primo di <img src="https://latex.codecogs.com/
+						gif.latex?\large&amp;space;p"/> elementi e aventi <img src="https://latex.codecogs.
+						com/gif.latex?\large&amp;space;p"/> punti razionali 
+						(abbiamo usato una curva anomala tratta da <a href="https://safecurves.cr.yp.to/">
+						safecurves.cr.yp.to</a>);
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<p>
+			Vorremmo anche evidenziare che implementazioni approssimative di schemi crittografici sicuri 
+			potrebbero portare a debolezze fatali, come dimostrano esempi famosi. Infatti, firmando tramite 
+			DSA o ECDSA è fondamentale scegliere un <img src="https://latex.codecogs.com/gif.latex?\large
+			&amp;space;k"/> casuale poiché se i <img src="https://latex.codecogs.com/gif.latex?\large&amp;
+			space;k"/> sono generati utilizzando un generatore congruenziale lineare, allora è possibile 
+			attaccare con successo il protocollo di firma. Per raggiungere tale obiettivo abbiamo proposto:
+		</p>
+		<ul>
+			<li>DSA
+				<ul>
+					<li>Per una data chiave, due firme digitali ottenute utilizzando lo stesso 
+						<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;k."/>  
+						Date due firme <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;(r,s_1)"/> e 
+						<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;(r,s_2)"/> per due diversi 
+						file <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;m_1"/> e <img src="https:
+						//latex.codecogs.com/gif.latex?\large&amp;space;m_2,"/>  ottenuti usando lo stesso <img src=
+						"https://latex.codecogs.com/gif.latex?\large&amp;space;k"/> , dall'espressione di <img src=
+						"https://latex.codecogs.com/gif.latex?\large&amp;space;s_1-s_2"/> si può recuperare <img src=
+						"https://latex.codecogs.com/gif.latex?\large&amp;space;k"/> risolvendo una congruenza lineare. 
+						Conoscendo <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;k"/> , la chiave 
+						privata <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;x"/> può essere 
+						recuperata dall'espressione <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;
+						s_1'."/> </li>
+					<li>Per una data chiave, due firme digitali ottenute utilizzando <img src="https://latex.codecogs.
+						com/gif.latex?\large&amp;space;k"/> consecutivi. Date due firme <img src="https://latex.codecogs.
+						com/gif.latex?\large&amp;space;(r_1,s_1)"/> e <img src="https://latex.codecogs.com/gif.latex?\
+						large&amp;space;(r_2,s_2)"/> per due diversi file <img src="https://latex.codecogs.com/gif.latex?\
+						large&amp;space;m_1"/> e <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;m_2,"/>  
+						ottenute utilizzando rispettivamente <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;k_1"/> 
+						e <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;k_2=k_1+1"/> è possibile eseguire 
+						una attacco che recupera facilmente la chiave privata <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;x."/>  
+						Infatti, da 
+						<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;s_1\cdot\;k\equiv\;hash(m_1)+x\cdot\;r_1\mod{q}"/> e
+						<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;s_2\cdot\;k\equiv\;hash(m_2)+x\cdot\:r_2\mod{q},"/>  
+						si può ricavare <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;x"/> risolvendo un sistema di congruenza lineare.</li>
+				</ul>
+			</li>
+			<li>ECDSA
+				<ul>
+					<li>Per una data curva, due firme digitali ottenute utilizzando lo stesso <img src=
+						"https://latex.codecogs.com/gif.latex?\large&amp;space;k."/>  Date due firme 
+						<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;(r,s_1)"/> e 
+						<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;(r,s_2)"/>
+						per due diversi file <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;m_1"/> e 
+						<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;m_2,"/>  ottenute utilizzando 
+						lo stesso <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;k,"/>  la procedura per 
+						recuperare <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;k"/> è analoga a quella 
+						sopra riportata per DSA. Questo errore di implementazione è stato sfruttato per rubare le chiavi 
+						di firma private utilizzate per PlayStation 3.</li>
+				</ul>
+			</li>
+		</ul>
+		<p>Infine abbiamo incluso due easter eggs.</p>
+		<p>
+			Per una chiave di firma basata su RSA, abbiamo fornito una firma digitale per un file con lo stesso 
+			hash MD5 del file di destinazione, ovvero abbiamo sfruttato una collisione della funzione hash MD5. 
+			Una collisione si verifica quando due diversi file <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;m_1"/> 
+			e <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;m_2"/> sono tali che hash(<img src="https://latex.
+			codecogs.com/gif.latex?\large&amp;space;m_1"/>) = hash(<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;m_2"/>). 
+			È risaputo che le due famosissime funzioni hash, MD5 e SHA-1, non soddisfano la proprietà di resistenza alla collisione. 
+			Per questo motivo non vengono più utilizzate per le firme digitali, anche se vengono ancora utilizzati per altri scopi 
+			(come l'hashing delle password). È possibile ottenere una collisione per MD5 con un algoritmo che richiede solo pochi 
+			secondi su un normale computer.
+		</p>
+		<p>Una delle curve ellittiche proposte è la curva P-256, raccomandata dal NIST e considerata sicura. Quindi è impossibile 
+			risolvere il problema del logaritmo discreto utilizzando algoritmi classici. Tuttavia, scegliamo una <img src="https://
+			latex.codecogs.com/gif.latex?\large&amp;space;d"/> molto piccola, per mostrare che a volte un attacco di forza bruta 
+			può portare alla risposta.</p>
+			
+<h5 class="color"> Feedback </h5> 
+<hr>
+<p> Dopo il concorso porremo ai partecipanti le seguenti domande: </p>
+<ul><em>
+<li> Sei uno studente?</li>
+<li> Da dove vieni?</li>
+<li> Hai implementato qualche algoritmo per partecipare? In quale linguaggio? 
+	Quali algoritmi hai implementato?</li>
+<li> Hai utilizzato alcuni strumenti esistenti? Quali?</li>
+<li> Avevi accesso a un cluster o utilizzavi solo desktop/laptop personali?</li>
+<li> Hai imparato qualcosa di nuovo riguardo a ECC?</li>
+</em></ul>
+<p>Riportiamo di seguito le risposte dei partecipanti.</p>
+<hr>
+<h6>Alfarano Gianira, Cotardo Giuseppe and Zaninelli Marco (Cyptoresearch, primi classificati)</h6>
+<ul>
+<li> 
+	<em>Siete studenti?</em>
+	<p> Sì, siamo tre studenti dell'Università di Trento, che attualmente frequentano il Master in Teoria dei codici e crittografia.</p>
+</li>
+<li>
+	<em>Da dove venite?</em>
+	<p> Gianira e Giuseppe provengono rispettivamente dalla Puglia, dal Bari e dal Lecce. Marco è di Verona. </p>
+</li>
+<li>
+	<em> Hai implementato qualche algoritmo per partecipare? In quale linguaggio? 
+		Quali algoritmi hai implementato?</em>
+	<p> Sì. Abbiamo implementato in MAGMA l'attacco di Wiener, utile per rompere una firma RSA. 
+		Inoltre abbiamo utilizzato un'implementazione SAGE per un attacco alle cosiddette “Curve Ellittiche Anomale”. </p>
+</li>
+<li>
+	<em>Hai utilizzato alcuni strumenti esistenti? Quali?</em>
+	<p> Abbiamo utilizzato alcune funzioni MAGMA come "Log", "GreatestCommonDivisor" e 
+		"Factorization" e abbiamo verificato sul sito "factordb.com" alcune fattorizzazioni degli interi RSA.</p>
+</li>
+<li>
+	<em>Avevi accesso a un cluster o utilizzavi solo desktop/laptop personali?</em>
+	<p> Avevamo accesso a un cluster (Windows Azure) e un Mac-Pro e li usiamo per rompere le chiavi più deboli. 
+		Poi abbiamo lavorato sui nostri laptop e abbiamo fatto alcuni calcoli con carta e penna.</p>
+</li>
+<li>
+	<em>Hai imparato qualcosa di nuovo riguardo a ECC?</em>
+	<p> Sì, abbiamo appreso molti dettagli sugli schemi di firma digitale, in particolare sulla 
+		debolezza e sugli attacchi a tali protocolli.</p>
+</li>
+</ul>
+<hr>
+<h6>Elena Canali, Cristian Mirto and Fulvio Rizzardini (Cryptostage, secondi classificati)</h6>
+<ul>
+<li> 
+	<em>Sei uno studente?</em>
+	<p>Sì, siamo tre studenti dell'Università di Trento. </p>
+</li>
+<li>
+	<em>Da dove vieni?</em>
+	<p>Cristian è di Lecce, Elena di Trento e Fulvio di Manerba del Garda. </p>
+</li>
+<li>
+	<em> Hai implementato qualche algoritmo per partecipare? In quale linguaggio? 
+		Quali algoritmi hai implementato?</em>
+	<p>Sì, ma erano quasi inutili. Abbiamo scritto alcune funzioni in Magma.  </p>
+</li>
+<li>
+	<em>Hai utilizzato alcuni strumenti esistenti? Quali?</em>
+	<p> Sì, abbiamo usato Magma.</p>
+</li>
+<li>
+	<em>Avevi accesso a un cluster o utilizzavi solo desktop/laptop personali?</em>
+	<p> I nostri personal computer e un computer desktop.</p>
+</li>
+<li>
+	<em>Hai imparato qualcosa di nuovo riguardo a ECC?</em>
+	<p> Sì, è stata un'esperienza formativa e divertente.</p>
+</li>
+</ul>
+<hr>
+<h6>Luca Girardi, Tommaso Parise and Gaetano Russo (TGL, terzi classificati)</h6>
+<ul>
+	<li> 
+		<em>Sei uno studente?</em>
+		<p>Sì, siamo al primo anno del curriculum in Teoria dei codici e crittografia dell'Università di Trento.</p>
+	</li>
+	<li>
+		<em>Da dove vieni?</em>
+		<p>Luca è di Trento, Tommaso è di Bassano Del Grappa (Vicenza) e Gaetano è di Salerno.</p>
+	</li>
+	<li>
+		<em> Hai implementato qualche algoritmo per partecipare? In quale linguaggio? 
+			Quali algoritmi hai implementato?</em>
+		<p> Abbiamo scritto degli algoritmi per facilitare i calcoli, abbiamo provato ad 
+			implementare il rho-Pollard sia nella fattorizzazione che nel logaritmo discreto, 
+			ma abbiamo finito utilizzando le funzioni già esistenti in Magma. </p>
+	</li>
+	<li>
+		<em>Hai utilizzato alcuni strumenti esistenti? Quali?</em>
+		<p>Sì, abbiamo usato il software Magma.</p>
+	</li>
+	<li>
+		<em>Avevi accesso a un cluster o utilizzavi solo desktop/laptop personali?</em>
+		<p>Abbiamo usato unicamente i nostri laptop.</p>
+	</li>
+	<li>
+		<em>Hai imparato qualcosa di nuovo riguardo a ECC?</em>
+		<p> Eravamo completamente nuovi sull'argomento (ad eccezione della crittografia RSA),
+			quindi abbiamo imparato molto solo per sapere cosa stavamo affrontando. Abbiamo 
+			deciso di partecipare per divertirci e imparare qualcosa di nuovo e possiamo dire 
+			che i nostri obiettivi sono stati raggiunti.</p>
+	</li>
+</ul>
+<hr>
+<h6>Alessandro De Piccoli (quarto classificato)</h6>
+<ul>
+	<li> 
+			<em>Sei uno studente?</em>
+			<p>Sì.</p>
+	</li>
+	<li>
+			<em>Da dove vieni?</em>
+			<p>Vengo da Varedo (MB).</p>
+	</li>
+	<li>
+			<em> Hai implementato qualche algoritmo per partecipare? In quale linguaggio? 
+			Quali algoritmi hai implementato?</em>
+			<p> Ho implementato due famosi attacchi a RSA ed ECC per casi particolari. Ho anche implementato 
+				vari attacchi a DSA ed ECDSA da un articolo di Draziotis e Poulakis senza successo. 
+				Tutti questi algoritmi sono stati implementati tramite la libreria PARI. </p>
+	</li>
+	<li>
+			<em>Hai utilizzato alcuni strumenti esistenti? Quali?</em>
+			<p>Sì, ho usato il calcolatore GP.</p>
+	</li>
+	<li>
+			<em>Avevi accesso a un cluster o utilizzavi solo desktop/laptop personali?</em>
+			<p>Ho usato il mio desktop e il mio laptop. Ho falsificato tutte le mie firme in 3 ore 
+				e ho dedicato molto altro tempo cercando di falsificare le altre.</p>
+	</li>
+	<li>
+			<em>Hai imparato qualcosa di nuovo riguardo a ECC?</em>
+			<p> Sapevo che c'era qualcosa chiamato Firma Digitale, ma non sapevo nient'altro. 
+				Ho scoperto un nuovo lato della crittografia.</p>
+	</li>
+</ul>
+<hr>
+<h6>Francesco Romeo (quinto classificato)</h6>
+<ul>
+	<li> 
+		<em>Sei uno studente?</em>
+		<p>Sì, studio all'università degli Studi di Trento.</p>
+	</li>
+	<li>
+		<em>Da dove vieni?</em>
+		<p>Vengo da Messina.</p>
+	</li>
+	<li>
+		<em>Hai implementato qualche algoritmo per partecipare? In quale linguaggio? 
+			Quali algoritmi hai implementato?</em>
+		<p>Sì, ho programmato algoritmi in Magma. C'era un algoritmo per rompere RSA, 
+			che restituiva una firma RSA valida, 2 algoritmi per rompere DSA ed ECDSA 
+			e due algoritmi per verificare che i risultati fossero corretti.
+		</p>
+	</li>
+	<li>
+		<em>Hai utilizzato alcuni strumenti esistenti? Quali?</em>
+		<p> Ho usato un software online per recuperare l'hash dal 
+			documento di destinazione.</p>
+	</li>
+	<li>
+		<em>Avevi accesso a un cluster o utilizzavi solo desktop/laptop personali?</em>
+		<p>Ho usato solo il mio laptop.</p>
+	</li>
+	<li>
+		<em>Hai imparato qualcosa di nuovo riguardo a ECC?</em>
+		<p>Mi è piaciuta questa esperienza e ho visto come applicare 
+			ciò che, fino ad ora, sapevo solo teoricamente.</p>
+	</li>
+</ul>
+
