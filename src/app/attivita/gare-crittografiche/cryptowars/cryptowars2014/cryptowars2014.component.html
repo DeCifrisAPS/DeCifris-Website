@@ -1,1 +1,617 @@
-<h2>EDIZIONE 2014</h2>
+<div id="2014">
+	<h2>EDIZIONE 2014 (RSA Awareness Contest)</h2>
+	<p>
+		Il CryptoLabTN (Laboratory of Industrial Mathematics and Cryptography at University of Trento), 
+		in collaborazione con Clusit (The Italian Association for Computer Security), ha organizzato l'
+		"RSA Awareness Contest".
+		L'evento è organizzato nell'ambito del mese europeo della sicurezza informatica (ECSM) e si 
+		rivolge agli studenti con nozioni di programmazione. Il nostro concorso mira a sensibilizzare 
+		sul fatto che gli algoritmi crittografici invecchiano e dovrebbero essere continuamente testati, 
+		mantenuti, migliorati (che è ciò che i crittografi, tra le altre cose, fanno).
+	</p>
+	<div id="programmaGenerale">
+		<h5>Programma generale</h5>
+		<ul>
+			<li>Lunedì 13 ottobre alle ore 13:00 (ora di Trento) abbiamo pubblicato un set di
+				<a href="http://en.wikipedia.org/wiki/RSA_(cryptosystem)">chiavi pubbliche</a>
+				(moduli e relativi esponenti) per RSA.				
+			<li>I partecipanti hanno avuto tempo fino a venerdì 17 ottobre alle 17:00 per rompere
+				queste chiavi (ovvero trovare le rispettive chiavi private) e inviare i loro risultati.</li>
+			<li>I partecipanti sono stati classificati in base al numero di chiavi rotte
+				e all'ora dell'ultima submission.</li>
+			<li>I premi vengono assegnati ai primi tre gruppi classificati.</li>
+		</ul>
+	</div>
+	<div id="news">
+		<h5>News</h5>
+		<ul>
+			<li>[24/11/2014] Abbiamo organizzato un evento per le premiazioni durante un Workshop 
+				sulla Crittografia che si terrà a Trento il 22 dicembre (maggiori dettagli 
+				<a href="http://www.science.unitn.it/~sala/events2014/BunnyTN5.html">qui</a>). </li>
+			<li> [24/10/2014] Abbiamo una nuova sezione feedback dove descriviamo come abbiamo progettato 
+				il concorso e pubblichiamo alcuni dei feedback che abbiamo ricevuto dai partecipanti. Controlla! </li>
+			<li> [20/10/2014] Pubblicata la classifica finale! Controlla i premi e la classifica.</li>
+			<li> [17/10/14, circa 18:00] Il concorso è terminato! Grazie per la partecipazione! 
+				Le statistiche finali sono state pubblicate. A breve (lunedì?) pubblicheremo la classifica finale.</li>
+			<li> [17/10/14] Statistiche aggiornate.</li>
+			<li> [16/10/14] Stats updated.</li>
+			<li> [15/10/14] Abbiamo pubblicato alcune statistiche della gara in corso. 
+				Controlla la sezione dedicata!</li>
+			<li> [13/10/14] Il concorso è iniziato! Controlla le istruzioni per scaricare il materiale del concorso.</li> 
+			<li> [3/10/14] Abbiamo un nuovo riassunto del concorso, sono state pubblicate le istruzioni e definiti i premi! 
+				Controlla le schede appropriate.</li>
+			<li>[3/10/14] È stata creata una mail di contatto per il concorso! Puoi raggiungerci all'indirizzo
+				<a href="mailto:contest.cryptolabtn@gmail.com">contest.cryptolabtn@gmail.com</a>.
+			</li>
+		</ul>
+	</div>
+	<!-- <div id="contest">
+		<h5>Contest</h5>
+		<p>
+			Abbiamo pubblicato un set di chiavi pubbliche ECC. Un partecipante doveva trovare la 
+			chiave privata corrispondente di ciascuna chiave pubblica risolvendo un ECDLP 
+			(Elliptic Curve Discrete Logarithm Problem).
+		</p>
+	</div> -->
+	<div id="materiale">
+		<h5>Materiale</h5>
+		<p>
+			Il set di chiavi pubbliche RSA è <a href="../../../../../assets/attivita/cryptowars/
+			2014RSAcontest.publicKeys.txt">pubblico</a> (sebbene il concorso sia ora chiuso).
+		<p>
+			Il formato per il materiale del concorso è un file di testo. Ogni riga rappresenta 
+			una singola chiave pubblica e contiene tre numeri scritti in base decimale e separati 
+			da uno spazio: un contatore che identifica la chiave pubblica 
+			<img src="https://latex.codecogs.com/gif.latex?\
+				large&amp;space;(1,2,3,...)"/>, un modulo e un esponente pubblico.
+		</p>
+	  	<p>
+			<em>Avviso per gli utenti Windows:</em> Se apri i file (cioè in blocco note) potresti 
+			vedere tutto su una singola riga. Non dovrebbe essere troppo difficile elaborarli 
+			manualmente o automaticamente per avere ogni chiave pubblica nel formato appropriato.
+		</p>
+	</div>
+	<div id="risposte">
+		<h5>Invio delle risposte</h5>
+		<p> Un partecipante è identificato da un indirizzo e-mail univoco.
+			Un partecipante può presentare una o più soluzioni al concorso su
+			in qualsiasi momento tra la pubblicazione del Materiale del Concorso e la fine
+			del contesto, che è fissato venerdì 17 ottobre alle 17:00.
+		</p>
+		<p> Invii una soluzione per il concorso inviando una mail a 
+			<a href="mailto:contest.cryptolabtn@gmail.com">contest.cryptolabtn@gmail.com</a>.</p>
+		<p>
+			Un invio può consistere in una o più soluzioni.
+			Sono consentiti invii multipli ma saranno considerati validi solo i primi tre invii per ogni 
+			chiave pubblica. Ulteriori invii verranno scartati. Il formato per l'invio è un file di testo. 
+			Ogni riga rappresenterà una soluzione per una singola chiave pubblica e conterrà due numeri 
+			scritti in base decimale e separati da uno spazio: un contatore che identifica la chiave 
+			pubblica <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;(1, 2, 3, ...)"/>,
+			i due fattori primi e l'esponente privato.
+		</p>
+	</div>
+	<div id="coding">
+		<h5>Coding</h5>
+		<p>Devo scrivere un mio programma per trovare le soluzioni? La risposta breve è: no, ma sì. </p>
+		<p>
+			La risposta lunga è: non abbiamo modo di verificare se hai scritto del codice tuo per risolvere i problemi 
+			del nostro concorso (non ti chiediamo di mostrare il codice e puoi lavorare con il linguaggio di 
+			programmazione che preferisci). E probabilmente sarà più facile cercare qualche programma già esistente 
+			che faccia tutto il lavoro. Ma il punto centrale di questo concorso è sfidare te stesso a comprendere 
+			un problema crittografico, cercare soluzioni possibili, scrivere codice che implementa le soluzioni 
+			e cercare di renderlo sempre più efficiente.
+		</p>
+		<br>
+		<p> Devo creare i miei algoritmi per trovare le soluzioni? Assolutamente no!</p>
+		<p>Ci sono tonnellate di buoni algoritmi che potrebbero rompere chiavi corte o deboli. 
+			Guardati intorno e trova un algoritmo che sei in grado di capire. Quindi prova a 
+			implementarlo. Questa sembra già una buona strategia per divertirsi al concorso.
+		</p>
+	</div>
+	<div id="istruzioni">
+		<h5>Istruzioni</h5>
+		<p>
+			Una chiave pubblica RSA <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;(N,e)"/> è data da due interi <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;N"/> (il modulo) ed <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;e"/> (l'esponente pubblico). 
+			Il modulo è il prodotto di due numeri primi <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;p,q"/>:
+		</p>
+		<p style="text-align: center;">
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;N=pq."/>
+		</p>
+		<p>
+			Un messaggio è rappresentato come un intero <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;m"/> (testo in chiaro) tale che <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;0&lt;m&lt;N"/>. 
+			La crittografia produce un intero <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;c"/> (testo cifrato) attraverso l'elevamento a 
+			potenza dell'esponente pubblico modulo <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;N"/>:
+		</p>
+		<p style="text-align: center;">
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;c \equiv me \mod{N}."/>
+		</p>
+		<p>
+			La chiave privata RSA associata <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;(N,d)"/> è data dal modulo <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;e"/> da un intero <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;d"/> (esponente privato). 
+			L'esponente privato è legato all'esponente pubblico dalla seguente relazione:
+		</p>
+		<p style="text-align: center;">
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;de \equiv 1 \mod{(p-1)(q-1)}."/>
+		</p>
+		<p>
+			La decifratura data un testo cifrato <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;c"/> recupera il messaggio <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;m"/> attraverso l'elevamento a potenza dell'esponente privato modulo 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;N"/>:
+		</p>
+		<p style="text-align: center;">
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;m \equiv c^d \mod{N}"/>
+		</p>
+		<p>
+			La correttezza dell'algoritmo può essere dimostrata dal teorema di Eulero. 
+			Rompere una chiave pubblica RSA significa trovare <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;d"/> o fattorizzare <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;N"/> in <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;p"/> e <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;q"/>. Trovare la fattorizzazione del modulo o dell'esponente privato equivale a un 
+			calcolo efficiente (vedi, ad esempio <a href="http://www.ams.org/notices/199902/boneh.pdf">qui</a>).
+		</p>
+		<p>
+			Il materiale del concorso è un insieme di chiavi pubbliche RSA. Non ti 
+			forniremo messaggi crittografati da decifrare. Una soluzione contest 
+			per una singola chiave pubblica è costituita sia dai fattori primi 
+			del modulo che dall'esponente privato.
+		</p>
+	</div>
+	<div id="classificaFinale">
+		<!-- Ranking -->
+		<h5>Classifica finale</h5>
+		<table class="table">
+			<thead>
+				 <tr class="header">
+					  <th style="text-align: center"> Rk </th>
+					  <th style="text-align: center"> Partecipanti </th>
+					  <th style="text-align: center"> Ora dell'ultima soluzione inviata</th>
+					  <th style="text-align: center"> Chiavi valide </th>
+				 </tr>
+			</thead>
+			<tbody>
+				<tr style="background-color: LIGHTYELLOW">
+					<td>1</td>
+					<td> Lorenzo Felice Cameroni </td>
+					<td> 00:55, 17/10/2014 </td>
+					<td> 45 </td>
+				</tr>
+				<tr style="background-color: WHITESMOKE">
+					<td>2</td>
+					<td> CryptoBriscola* </td>
+					<td> 15:10, 17/10/2014 </td>
+					<td> 45 </td>
+				</tr>
+				<tr style="background-color: ANTIQUEWHITE">
+					<td>3</td>
+					<td> CryptoBO** </td>
+					<td> 11:17, 17/10/2014 </td>
+					<td> 44 </td>
+				</tr>
+				<tr class="even">
+					<td align="right">4</td>
+					<td align="right">Mauro Piva</td>
+					<td align="right">11:50, 17/10/2014</td>
+					<td align="right">44</td>
+					</tr>
+					<tr class="odd">
+					<td align="right">5</td>
+					<td align="right">Francesco Mantovani</td>
+					<td align="right">12:20, 17/10/2014</td>
+					<td align="right">44</td>
+					</tr>
+					<tr class="even">
+					<td align="right">6</td>
+					<td align="right">Nanni Bassetti</td>
+					<td align="right">10:33, 17/10/2014</td>
+					<td align="right">43</td>
+					</tr>
+					<tr class="odd">
+					<td align="right">7</td>
+					<td align="right">Luca Chiodini</td>
+					<td align="right">16:52, 17/10/2014</td>
+					<td align="right">43</td>
+					</tr>
+					<tr class="even">
+					<td align="right">8</td>
+					<td align="right">Alessandro Sebastian Podda</td>
+					<td align="right">12:35, 14/10/2014</td>
+					<td align="right">36</td>
+					</tr>
+					<tr class="odd">
+					<td align="right">9</td>
+					<td align="right">Cristiano Sgaravato</td>
+					<td align="right">10:57, 17/10/2014</td>
+					<td align="right">36</td>
+					</tr>
+					<tr class="even">
+					<td align="right">10</td>
+					<td align="right">Luciano Giuseppe</td>
+					<td align="right">15:05, 17/10/2014</td>
+					<td align="right">36</td>
+					</tr>
+					<tr class="odd">
+					<td align="right">11</td>
+					<td align="right">Alessio Serraino</td>
+					<td align="right">16:57, 17/10/2014</td>
+					<td align="right">36</td>
+					</tr>
+					<tr class="even">
+					<td align="right">12</td>
+					<td align="right">Matteo Rizzo</td>
+					<td align="right">13:20, 17/10/2014</td>
+					<td align="right">34</td>
+					</tr>
+					<tr class="odd">
+					<td align="right">13</td>
+					<td align="right">Flavio Santoro</td>
+					<td align="right">16:59, 15/10/2014</td>
+					<td align="right">33</td>
+					</tr>
+					<tr class="even">
+					<td align="right">14</td>
+					<td align="right">John Johnson</td>
+					<td align="right">20:29, 15/10/2014</td>
+					<td align="right">33</td>
+					</tr>
+					<tr class="odd">
+					<td align="right">15</td>
+					<td align="right">Cristiano Regni</td>
+					<td align="right">18:16, 15/10/2014</td>
+					<td align="right">30</td>
+					</tr>
+					<tr class="even">
+					<td align="right">16</td>
+					<td align="right">Amedeo Sgueglia</td>
+					<td align="right">23:55, 15/10/2014</td>
+					<td align="right">30</td>
+					</tr>
+					<tr class="odd">
+					<td align="right">17</td>
+					<td align="right">Luca Di Stefano</td>
+					<td align="right">20:33, 15/10/2014</td>
+					<td align="right">28</td>
+					</tr>
+				</tbody>
+			</table>
+			<p> Notes: <br>
+				*: Gruppo formato da Carlo Brunetta, Andrea Vinci, Jacopo di Bonito and Alessandro Melloni.<br>
+				**: Gruppo formato da Andrea Dari and Claudio Costa. <br>
+				La classifica include solo i gruppi che hanno rotto più di 20 chiavi.
+			</p>
+	</div>
+	<div id="statistiche">
+		<h5>Statistiche</h5>
+		<ul>
+			<li>Gruppi partecipanti: 21</li>
+			<li>Submissions: 52</li>
+			<li>NUmero di chiavi inviate: 677</li>
+			<li>Chiavi valide: 657</li>
+			<li>Chiavi rotte: 46</li>
+			<li>Chiavi non rotte: 2</li>
+			</ul>
+		<p>Identificatore chiavi non rotte: 37, 43.</p>
+	</div>
+	<div id="premi">
+		<!-- Premi -->
+		<h5>Premi</h5>
+		<p>
+			Il vero premio che ottieni partecipando a questo concorso è divertirti
+			imparando e facendo le cose da soli!
+		</p>
+		<p>
+			Al vincitore verrà assegnata l'iscrizione gratuita a <a href="http://www.clusit.it/">Clusit</a>. 
+			Coloro che si classificheranno nelle prime tre posizioni saranno invitati a partecipare (gratuitamente) 
+			a tutti gli eventi che il CryptoLabTN ospiterà durante tutto il 2015 e il 2016. 
+			Inoltre li inviteremo a pranzo il giorno della premiazione.
+		</p>
+		<p>
+			I premi verranno assegnati durante uno dei prossimi eventi
+			organizzati presso l'Università di Trento. Seguiranno aggiornamenti.
+		</p>
+	</div>
+	<div id="classifica">
+		<!-- Ranking -->
+		<h5>Classifica</h5>
+		<p>
+			La graduatoria tra i partecipanti viene effettuata considerando quanto segue
+			due semplici regole che si applicano a tutte le presentazioni valide.
+		</p>
+		<ol>
+			<li>Un partecipante si classifica più in alto di un altro partecipante se ha falsificato più firme.</li>
+			<li>Un partecipante si classifica più in alto di un altro partecipante con lo stesso numero di firme contraffatte
+				se il loro ultimo invio valido è stato effettuato in anticipo.</li>
+		</ol>
+		<h5> Come abbiamo pensato il contest? </h5> <hr>
+		<p>
+			Abbiamo utilizzato il software Magma per generare molte curve con parametri 
+			casuali e poi le abbiamo selezionate in base a vari parametri come volevamo:
+		</p>
+		<ul>
+			<li> Alcune curve con parametri apparentemente sicuri (ad esempio un grande 
+				campo primo, un ampio insieme di punti razionali, ecc.) ma in realtà non sicuri.</li>
+			<li>Qualche curva debole che è più forte di come sembra.</li>
+			<li>Alcune curve medie.</li>
+		</ul>
+		<p>
+			In questa luce, il trucco principale utilizzato per scegliere le curve è stato 
+			quello di fattorizzare l'ordine dei generatori di curve ellittiche. Infatti, le 
+			curve definite su grandi campi primi il cui ordine del generatore fattorizza in 
+			molti numeri primi sono molto vulnerabili all'attacco Pollard-Rho. D'altra parte, 
+			se l'ordine è primo, questa vulnerabilità non esiste e quindi una curva definita 
+			su un campo primo più piccolo potrebbe effettivamente essere più sicura di curve 
+			definite su campi primi più grandi. Inoltre, abbiamo proceduto a testare ogni 
+			curva con l'algoritmo del logaritmo discreto di Magma (che implementa Pollard-Rho 
+			e varie ottimizzazioni) per verificare i tempi necessari per romperle.
+		</p>
+		<p>
+			Alla fine abbiamo selezionato curve che abbiamo rotto in pochi secondi, 
+			pochi minuti, poche ore e una brutta curva che nonostante fosse definita 
+			su un campo primo di soli 75 bit, ha impiegato quasi 3 giorni per essere rotta.
+		</p>
+		<p>
+			Inoltre abbiamo aggiunto una curva anomala, presa da <a href="http://safecurves.cr.yp.to/">
+			safecurves.cr.yp.to, </a> per aumentare la consapevolezza su questa vulnerabilità. Consigliamo 
+			vivamente di controllare il sito Web per saperne di più sulla sicurezza delle curve in ECC.
+		</p>
+	</div>
+	<div id="feedback">
+		<h5> Feedback </h5> 
+		<hr>
+		<p> Dopo il concorso porremo ai partecipanti le seguenti domande: </p>
+		<ul><em>
+		<li> Sei uno studente?</li>
+		<li> Da dove vieni?</li>
+		<li> Hai implementato qualche algoritmo per partecipare? In quale linguaggio? 
+			Quali algoritmi hai implementato?</li>
+		<li> Hai utilizzato alcuni strumenti esistenti? Quali?</li>
+		<li> Avevi accesso a un cluster o utilizzavi solo desktop/laptop personali?</li>
+		<li> Hai imparato qualcosa di nuovo riguardo a ECC?</li>
+		</em></ul>
+		<p>Riportiamo di seguito le risposte dei partecipanti.</p>
+		<hr>
+		<h6>Crypto Terroni Team (primi classificati)</h6>
+		<p>
+			Invece di rispondere direttamente alle domande proposte, abbiamo deciso di raccontarvi 
+			la nostra storia. In questo modo speriamo di trasmettere insieme alle informazioni richieste 
+			le nostre sensazioni durante l'intera competizione, dal momento in cui ne abbiamo sentito 
+			l'avviso fino alla fine.
+			<br>
+			Lunedì mattina Abate e Cotardo hanno ricevuto una telefonata da Vitto: "Ragazzi del secondo anno 
+			(studiamo Crittografia e Teoria dei Codifiche a Trento) mi hanno parlato di un concorso di 
+			crittografia. Mi hanno suggerito di partecipare per gioco. Ma non ne ho idea cosa sono le 
+			curve ellittiche". Così ci siamo incontrati e abbiamo iniziato a cercare alcune note sulle 
+			curve ellittiche. Il nostro primo tentativo di violare le chiavi di esempio è stato sviluppare 
+			uno script magma per un attacco di forza bruta. Sebbene sapessimo che non era efficiente, 
+			abbiamo iniziato a occuparci delle strutture di gruppo delle curve ellittiche su un campo 
+			finito. Ovviamente non abbiamo avuto successo con questo approccio e abbiamo iniziato a 
+			studiare l'algoritmo baby-step a passo gigante. Abbiamo trovato un'implementazione Python 
+			di questo e sul nostro laptop ha funzionato per le chiavi di esempio. Così abbiamo iniziato 
+			ad applicare quell'algoritmo alle chiavi del contest. Sebbene sia un buon algoritmo, G-s B-s 
+			ha bisogno di molta RAM e il calcolo ha iniziato a essere irrealizzabile. Quindi abbiamo 
+			studiato l'algoritmo Rho di Pollard che richiede una quantità costante di memoria e abbiamo 
+			trovato un'implementazione Python di questo. Abbiamo rotto con queste 4 chiavi dell'algoritmo 
+			ma la loro implementazione non è stata così efficiente e ha funzionato bene solo per curve "minuscole".
+			<br>
+			Abbiamo capito che la chiave era la potenza di calcolo (a questo punto avevamo solo 3 giorni rimasti) 
+			e abbiamo iniziato a implementare uno script Magma in cui viene calcolato un logaritmo discreto 
+			(Magma utilizza una versione molto efficiente dell'algoritmo rho di Pollard). L'abbiamo eseguito 
+			su una macchina virtuale Microsoft Azure con 20 CPU @ 2,5 Ghz con 60 GB di RAM e abbiamo rotto 
+			15 chiavi aggiuntive in 2 giorni. La diciannovesima chiave è stata l'ultima rimasta intatta: ci serviva un'idea.
+			<br>
+			Giovedì mattina, durante la ricerca dell'algoritmo probabilistico, dell'accelerazione dell'algoritmo 
+			di Pollard-rho e così via, Vitto ha notato che l'ordine della curva era la caratteristica del 
+			campo, ma non sapevamo come utilizzare questa informazione. Quella sera Vitto ha rotto l'ultima 
+			chiave: ha appena scoperto che la curva appartiene alla famiglia delle "Curve Ellittiche Anomale" 
+			per cui il sollevamento della curva sul campo p-adico riduce il problema ECDLP originale al 
+			problema DLP sul gruppo additivo di ordine p (che ha costo polinomiale); con uno script Sage 
+			eseguito su un server cloud Sage le ultime chiavi sono state calcolate istantaneamente!
+			<br>
+			Tutti i membri del team concordano sul fatto che questo concorso è stato molto formativo: 
+			abbiamo imparato non solo l'algebra e gli algoritmi che potrebbero essere inutili senza una 
+			buona base teorica, ma abbiamo anche capito l'importanza del lavoro di squadra, dove idee e 
+			approcci diversi erano la chiave per vincere questa competizione.
+			<br>
+			CryptoTerroni Team - Giuseppe Vitto, Carmine Abate, Giuseppe Cotardo"
+			<br>
+			PS: Siamo tutti del sud Italia: Bari, Lecce, Salerno. Per questo motivo ci chiamiamo 
+			con orgoglio CryptoTerroni: Terroni è il modo in cui le persone del nord Italia chiamano le persone del sud.
+		</p>
+		<hr>
+		<h6>Luca Chiodini (secondo classificato)</h6>
+		<ul>
+			<li> 
+				<em>Sei uno studente?</em>
+				<p>Sì, sto studiando informatica all'Università degli Studi di Milano - Bicocca.</p>
+			</li>
+			<li>
+				<em>Da dove vieni?</em>
+				<p> Vivo vicino a Bergamo.</p>
+			</li>
+			<li>
+				<em> Hai implementato qualche algoritmo per partecipare? In quale linguaggio? 
+					Quali algoritmi hai implementato?</em>
+				<p> Ho scritto uno script in SageMath per eseguire i calcoli di base (ad esempio, 
+					per calcolare l'ordine di un punto nella data curva ellittica).
+				</p>
+			</li>
+			<li>
+				<em>Hai utilizzato alcuni strumenti esistenti? Quali?</em>
+				<p>Ho usato la piattaforma cloud di SageMath e il solutore ECDLP, che a sua volta 
+					utilizza una versione dell'algoritmo Pollard Rho per rompere le chiavi.</p>
+			</li>
+			<li>
+				<em>Avevi accesso a un cluster o utilizzavi solo desktop/laptop personali?</em>
+				<p>Ho usato solo il mio computer desktop.</p>
+			</li>
+			<li>
+				<em>Hai imparato qualcosa di nuovo riguardo a ECC?</em>
+				<p> Ho appreso tutti i dettagli dell'ECC solo per questo concorso.</p>
+			</li>
+		</ul>
+		<hr>
+		<h6>Lorenzo Cameroni (terzo classificato)</h6>
+		<ul>
+		<li> 
+			<em>Sei uno studente?</em>
+			<p>Sono uno studente di matematica di 27 anni. </p>
+		</li>
+		<li>
+			<em>Da dove vieni?</em>
+			<p>Studio a Milano, ma sono di Quarona (VC). </p>
+		</li>
+		<li>
+			<em> Hai implementato qualche algoritmo per partecipare? In quale linguaggio? 
+				Quali algoritmi hai implementato?</em>
+			<p>
+				Sì, ho provato a codificare (con PARI/GP) un attacco alla curva 19 che è anomalo 
+				(cioè il numero di punti razionali di <img src="https://latex.codecogs.com/gif.latex?\
+				large&amp;space;E"/> su <img src="https://latex.codecogs.com/gif.latex?\
+				large&amp;space;\mathbb{F}_p"/> è <img src="https://latex.codecogs.com/gif.latex?\
+				large&amp;space;p"/>), ma il mio codice non ha 
+				funzionato come previsto (beh, ora funziona , ma ora è troppo tardi); i dettagli 
+				dell'algoritmo che ho codificato sono in Silverman, "The Arithmetic of Elliptic Curves", 
+				pagine 389-390. Non ho provato a codificare l'algoritmo rho di Pollard perché sapevo 
+				che la funzione elllog PARI/GP utilizzava già questo algoritmo. Non ho provato a 
+				codificare l'algoritmo passo-passo Baby-step perché ha bisogno di troppa memoria.
+			</p>
+		</li>
+		<li>
+			<em>Hai utilizzato alcuni strumenti esistenti? Quali?</em>
+			<p> Sì, la funzione elllog PARI/GP e altre funzioni relative alle curve ellittiche in PARI/GP.</p>
+		</li>
+		<li>
+			<em>Avevi accesso a un cluster o utilizzavi solo desktop/laptop personali?</em>
+			<p> Ho utilizzato solo il mio laptop.</p>
+		</li>
+		<li>
+			<em>Hai imparato qualcosa di nuovo riguardo a ECC?</em>
+			<p> Sì certo: ho imparato a conoscere le curve supersingolari (ma non c'erano in gara), 
+				le curve anomale e ho imparato l'algoritmo del baby-step giant-step 
+				(anche se non ho provato ad implementarlo).</p>
+		</li>
+		</ul>
+		<hr>
+		<h6>Alessandro De Piccoli (terzo classificato)</h6>
+		<ul>
+			<li> 
+				<em>Sei uno studente?</em>
+				<p>Sì.</p>
+			</li>
+			<li>
+				<em>Da dove vieni?</em>
+				<p> Sono di Varedo (MB).</p>
+			</li>
+			<li>
+				<em> Hai implementato qualche algoritmo per partecipare? In quale linguaggio? 
+					Quali algoritmi hai implementato?</em>
+				<p> Ho codificato baby-step giant-step e pollard rho usando pari/gp. 
+					Il primo era semplice ma era costoso in termini di memoria, quindi ho 
+					pensato di archiviare i risultati in un file .txt ma alla dimensione 
+					di 300 Mb ho interrotto il processo. Ho codificato pollard rho ma 
+					quando ho scoperto che pari usa pollard rho per chiavi di grandi 
+					dimensioni ho deciso di usare direttamente la funzione pari.</p>
+			</li>
+			<li>
+				<em>Hai utilizzato alcuni strumenti esistenti? Quali?</em>
+				<p>Sì, ho usato il software pari/gp.</p>
+			</li>
+			<li>
+				<em>Avevi accesso a un cluster o utilizzavi solo desktop/laptop personali?</em>
+				<p>Ho usato solo i miei personal computer, ma io e il mio amico abbiamo notato che 
+					ci sono differenze importanti. Ad esempio, con il mio computer, io ero più 
+					veloce di un'ora in un tempo totale di 4 ore, ma lui era più veloce di 50 
+					secondi in un tempo totale di un minuto.</p>
+			</li>
+			<li>
+				<em>Hai imparato qualcosa di nuovo riguardo a ECC?</em>
+				<p>In generale, ho rivisto le mie conoscenze sull'ECC. Ho studiato nuovi algoritmi come 
+					baby-step giant-step e pollard rho per DLP. Questi algoritmi mi erano sconosciuti. 
+					Ho scoperto l'attacco MOV che era inutile in gara. Ho provato anche a studiare un 
+					articolo di hp che usa l'alzata dei punti in <img src="https://latex.codecogs.com/gif.latex?\
+					large&amp;space;E(Qp)"/> e il mio amico mi ha detto 
+					che il suggerimento di Silverman era di usare <img src="https://latex.codecogs.com/gif.latex?\
+					large&amp;space;E(\mathbb{Z}_{p^2})"/> con un'altra forma dell'equazione 
+					della curva e così abbiamo provato in questo modo.</p>
+			</li>
+		</ul>
+		<hr>
+		<h6>Carlo Brunetta (Anomalous Marty with Deloran, quarto classificato) </h6>
+		<ul>
+			<li> 
+					<em>Sei uno studente?</em>
+					<p>Sì.</p>
+			</li>
+			<li>
+					<em>Da dove vieni?</em>
+					<p> Trento.</p>
+			</li>
+			<li>
+					<em> Hai implementato qualche algoritmo per partecipare? In quale linguaggio? 
+					Quali algoritmi hai implementato?</em>
+					<p> Solo un po' di codice per rendere più facile il calcolo algebrico. 
+						È stato scritto in Python/Sage. L'algoritmo è un attacco particolare su 
+						una famiglia speciale di curve deboli.</p>
+			</li>
+			<li>
+					<em>Hai utilizzato alcuni strumenti esistenti? Quali?</em>
+					<p>Carta e penna e un Delorean DMC-12 con un condensatore di flusso 
+						per inviare la risposta nel 1985.</p>
+			</li>
+			<li>
+					<em>Avevi accesso a un cluster o utilizzavi solo desktop/laptop personali?</em>
+					<p>Bastano 0 secondi del portatile e alcuni giorni sulla carta per 
+						capire perché funziona.</p>
+			</li>
+			<li>
+					<em>Hai imparato qualcosa di nuovo riguardo a ECC?</em>
+					<p> Si, direi molte.</p>
+			</li>
+		</ul>
+		<hr>
+		<h6>Francesco Romeo (quinto classificato)</h6>
+		<ul>
+			<li> 
+				<em>Sei uno studente?</em>
+				<p>Sì, studio all'università degli Studi di Trento.</p>
+			</li>
+			<li>
+				<em>Da dove vieni?</em>
+				<p>Vengo da Messina.</p>
+			</li>
+			<li>
+				<em>Hai implementato qualche algoritmo per partecipare? In quale linguaggio? 
+					Quali algoritmi hai implementato?</em>
+				<p>Sì, ho programmato algoritmi in Magma. C'era un algoritmo per rompere RSA, 
+					che restituiva una firma RSA valida, 2 algoritmi per rompere DSA ed ECDSA 
+					e due algoritmi per verificare che i risultati fossero corretti.
+				</p>
+			</li>
+			<li>
+				<em>Hai utilizzato alcuni strumenti esistenti? Quali?</em>
+				<p> Ho usato un software online per recuperare l'hash dal 
+					documento di destinazione.</p>
+			</li>
+			<li>
+				<em>Avevi accesso a un cluster o utilizzavi solo desktop/laptop personali?</em>
+				<p>Ho usato solo il mio laptop.</p>
+			</li>
+			<li>
+				<em>Hai imparato qualcosa di nuovo riguardo a ECC?</em>
+				<p>Mi è piaciuta questa esperienza e ho visto come applicare 
+					ciò che, fino ad ora, sapevo solo teoricamente.</p>
+			</li>
+		</ul>
+	</div>		
+</div>

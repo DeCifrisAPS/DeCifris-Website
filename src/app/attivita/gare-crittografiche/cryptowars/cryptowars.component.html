@@ -6,37 +6,37 @@
 				<button autofocus="autofocus"></button>
 			</li>
 			<li>
-				<button class="btn btn-outline-info" (click)="goTo('2020')" routerLink="2020">
+				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2020">
 					Edizione 2020
 				</button>
 			</li>
 			<li>
-				<button class="btn btn-outline-info" (click)="goTo('2019')" routerLink="2019">
+				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2019">
 					Edizione 2019
 				</button>
 			</li>
 			<li>
-				<button class="btn btn-outline-info" (click)="goTo('2018')" routerLink="2018">
+				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2018">
 					Edizione 2018
 				</button>
 			</li>
 			<li>
-				<button class="btn btn-outline-info" (click)="goTo('2016')" routerLink="2016">
+				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2016">
 					Edizione 2016
 				</button>
 			</li>
 			<li>
-				<button class="btn btn-outline-info" (click)="goTo('2015')" routerLink="2015">
+				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2015">
 					Edizione 2015
 				</button>
 			</li>
 			<li>
-				<button class="btn btn-outline-info" (click)="goTo('2014')" routerLink="2014">
+				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2014">
 					Edizione 2014
 				</button>
 			</li>
 			<li>
-				<button class="btn btn-outline-info" (click)="goTo('2011')" routerLink="2011">
+				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2011">
 					Edizione 2011
 				</button>
 			</li>
@@ -66,9 +66,13 @@
 					ti sembra semplice da capire, implementalo e mandalo in esecuzione!</li>
 			</ul>
 			<p>Le edizioni precedenti
-				delle cryptowars si sono svolte nel <a routerLink="2020">2020</a>, <a routerLink="2019">2019</a>,
-				<a routerLink="2018">2018</a>, <a routerLink="2016">2016</a>, <a routerLink="2015">2015</a>,
-				<a routerLink="2014">2014</a> e <a routerLink="2011">2011</a>.</p>
+				delle cryptowars si sono svolte nel <a (click)="goTo('edizioneScelta')" routerLink="2020">2020</a>, 
+				<a (click)="goTo('edizioneScelta')" routerLink="2019">2019</a>,
+				<a (click)="goTo('edizioneScelta')" routerLink="2018">2018</a>, 
+				<a (click)="goTo('edizioneScelta')" routerLink="2016">2016</a>, 
+				<a (click)="goTo('edizioneScelta')" routerLink="2015">2015</a>,
+				<a (click)="goTo('edizioneScelta')" routerLink="2014">2014</a> e 
+				<a (click)="goTo('edizioneScelta')" routerLink="2011">2011</a>.</p>
 		</div>
 		<!-- <div id="2020">
 			<app-cryptowars2020></app-cryptowars2020>
@@ -91,7 +95,7 @@
 		<div id="2011">
 			<app-cryptowars2011></app-cryptowars2011>
 		</div> -->
-		<hr>
+		<hr id="edizioneScelta">
 		<router-outlet></router-outlet>
 	</div>
 </ng-sidebar-container>
