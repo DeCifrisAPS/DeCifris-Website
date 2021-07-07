@@ -65,6 +65,9 @@ import { Cryptowars2016Component } from './attivita/gare-crittografiche/cryptowa
 import { Cryptowars2015Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2015/cryptowars2015.component';
 import { Cryptowars2014Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2014/cryptowars2014.component';
 import { Cryptowars2011Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/cryptowars2011.component';
+import { ClassicaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/classica/classica.component';
+import { PubblicaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/pubblica/pubblica.component';
+import { SimmetricaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/simmetrica/simmetrica.component';
 
 @NgModule({
   declarations: [
@@ -125,7 +128,10 @@ import { Cryptowars2011Component } from './attivita/gare-crittografiche/cryptowa
     Cryptowars2016Component,
     Cryptowars2015Component,
     Cryptowars2014Component,
-    Cryptowars2011Component
+    Cryptowars2011Component,
+    ClassicaComponent,
+    PubblicaComponent,
+    SimmetricaComponent
   ],
   imports: [
     BrowserModule,

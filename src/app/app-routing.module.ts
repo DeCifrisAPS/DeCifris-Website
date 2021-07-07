@@ -37,6 +37,9 @@ import { Cryptowars2016Component } from './attivita/gare-crittografiche/cryptowa
 import { Cryptowars2015Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2015/cryptowars2015.component';
 import { Cryptowars2014Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2014/cryptowars2014.component';
 import { Cryptowars2011Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/cryptowars2011.component';
+import { SimmetricaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/simmetrica/simmetrica.component';
+import { ClassicaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/classica/classica.component';
+import { PubblicaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/pubblica/pubblica.component';
 
 const routes: Routes = [
   {path : "", component : HomeComponent},
@@ -74,7 +77,12 @@ const routes: Routes = [
     {path: "2016", component: Cryptowars2016Component},
     {path: "2015", component: Cryptowars2015Component},
     {path: "2014", component: Cryptowars2014Component},
-    {path: "2011", component: Cryptowars2011Component}
+    {path: "2011", component: Cryptowars2011Component, children: [
+      {path: "classica", component: ClassicaComponent},
+      {path: "pubblica", component: PubblicaComponent},
+      {path: "simmetrica", component: SimmetricaComponent}
+    ]
+  }
   ]}
 ];
 

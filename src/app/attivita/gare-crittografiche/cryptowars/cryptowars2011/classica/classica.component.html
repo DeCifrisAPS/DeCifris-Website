@@ -1,0 +1,279 @@
+<h5>Categoria classica</h5>
+		<h6>Regolamento</h6>
+		<p>
+			Questa gara è composta da 3 fasi: una fase di preparazione dell'algoritmo di crittazione, una fase di crittazione del messaggio in chiaro e da una fase competitiva vera e propria.
+			Nella prima fase ciascuna squadra deve decidere quale algoritmo usare.
+			L'algoritmo deve rispettare determinate caratteristiche e proprietà che verranno descritte qui e deve essere mandato all'indizzo di posta elettronica mathnow.unitn@gmail.com entro il 20 ottobre 2011.
+			A questo punto a ciascuna squadra verrà mandato il testo in chiaro da cifrare tramite il proprio algoritmo. Il testo in chiaro presenterà solo i simboli presenti nell'alfabeto, gli accenti saranno sostituiti dall'apostrofo, non saranno presenti numeri e sarà tutto in caratteri minuscoli. Comunque tutti i testi saranno relativi al medesimo argomento, che verrà reso noto sul sito.
+			Una volta che il testo è stato cifrato dalla squadra, questo deve essere spedito all'indirizzo mathnow.unitn@gmail.com entro il 31 ottobre 2011.
+			Dal 31 ottobre 2011 al 12 marzo 2012 si svolgerà l'ultima fase della gara: ciascun team deve cercare di ricostruire il testo cifrato delle altre squadre, che saranno reperibili sul sito.
+		</p>
+		<h6>Submission</h6>
+		<p>
+			Entro il 20 ottobre 2011 ciascuna squadra deve mandare all'email
+			mathnow.unitn@gmail.com le caratteristiche del proprio algoritmo:
+		</p>
+		<ul>
+			<li>nome della squadra (completamente libero);</li>
+			<li>le 5 permutazioni dell'alfabeto usate;</li>
+			<li>i gruppi di lettere corrispondenti ai numero 1-9;</li>
+			<li>il significato del numero 0;</li>			
+		</ul>
+		<p>
+    		A questo punto gli organizzatori provvederanno a spedite il testo in chiaro a ciascuna squadra.
+			Entro il 31 ottobre 2011, ciascuna squadra deve spedire il proprio testo cifrato.
+		</p>
+		<h6>Punteggio</h6>
+		<p>
+			Dal 31 ottobre 2011 comincia la fase di attacco dei vari algoritmi.
+			Sul sito saranno messi a disposizione i testi cifrati di tutte le squadre partecipanti che devono essere decifrati.
+			Ogni volta che un codice viene "rotto", la squadra deve comunicarlo all'indirizzo mathnow.unitn@gmail.com mandando il testo decifrato. Tale codice verrà quindi rimosso dalla lista di quelli ancora possibili da attaccare.
+			Sul sito verranno messi inoltre a disposizione delle semplici "sfide".
+			Ogni squadra parte con un punteggio iniziale di 20 punti.
+			Quando la squadra X riesce a decifrare il testo cifrato della squadra Y, X guadagna 10 punti, Y ne perde 20.
+			Ogni squadra può risolvere una sola "sfida" ottenendo da 2 a 9 punti.
+			Il vincitore è il team che ha totalizzato il punteggio maggiore. In caso di pareggio, verrà considerata vincitrice la squadra che per prima ha raggiunto tale punteggio.
+		</p>
+		<h6>Algoritmo</h6>
+		<p> 
+			Ogni squadra deve creare un algoritmo polialfabetico, eventualmente con varianti, per crittare un messaggio in chiaro.
+			L'alfabeto da utilizzare corrisponde a quello inglese, con l'aggiunta dei simboli di punteggiatura: </p>
+		<p style="text-align: center;">a b c d e f g h i j k l m n o p q r s t u v w x y z (space) . , ; : ' ! ?</p>
+		<p>per un totale di 34 simboli. Quindi il testo da cifrare conterrà solo ed esclusivamente questi 34 simboli (senza considerare la distinzione lettere maiuscole e minuscole).
+			Una permutazione dell'alfabeto è un riarrangiamento dei simboli.</p>	
+		<h6>Esempio (1)</h6>
+		<p> Una semplice permutazione è shiftare i simboli dell'alfabeto di una posizione verso sinistra. Alla lettera a corrisponde la sua successiva b, a b corrisponde c e cosi via. </p>
+		<table border="1" width="1000" align="center">
+			<tr>
+				<td>a</td>
+				<td>b</td>
+				<td>c</td>
+				<td>d</td>
+				<td>e</td>
+				<td>f</td>
+				<td>g</td>
+				<td>h</td>
+				<td>i</td>
+				<td>j</td>
+				<td>k</td>
+				<td>l</td>
+				<td>m</td>
+				<td>n</td>
+				<td>o</td>
+				<td>p</td>
+				<td>q</td>
+				<td>r</td>
+				<td>s</td>
+				<td>t</td>
+				<td>u</td>
+				<td>v</td>
+				<td>w</td>
+				<td>x</td>
+				<td>y</td>
+				<td>z</td>
+				<td>(space)</td>
+				<td>.</td>
+				<td>,</td>
+				<td>;</td>
+				<td>:</td>
+				<td>'</td>
+			  	<td>!</td>
+		  		<td>?</td>
+		  </tr>
+		  <tr>
+	  			<td>b</td>
+				<td>c</td>
+				<td>d</td>
+				<td>e</td>
+				<td>f</td>
+				<td>g</td>
+				<td>h</td>
+				<td>i</td>
+				<td>j</td>
+		  		<td>k</td>
+				<td>l</td>
+				<td>m</td>
+				<td>n</td>
+				<td>o</td>
+				<td>p</td>
+				<td>q</td>
+				<td>r</td>
+				<td>s</td>
+				<td>t</td>
+				<td>u</td>
+				<td>v</td>
+				<td>w</td>
+		  		<td>x</td>
+				<td>y</td>
+				<td>z</td>
+				<td>(space)</td>
+				<td>.</td>
+				<td>,</td>
+				<td>;</td>
+				<td>:</td>
+				<td>'</td>
+			  	<td>!</td>
+				<td>?</td>
+				<td>a</td>
+		  </tr>
+	  	</table>
+		<br>
+	  	<p>Ogni squadra deve scegliere 5 permutazione dell'alfabeto (tutte le permutazioni sono permesse, in totale 34 fattoriale).
+			Il testo da cifrare viene diviso in blocchi di 5 simboli, chiamati word. La prima lettera di ogni blocco viene sostituita usando la prima permutazione, la seconda lettera del blocco viene sostituita usando la seconda permutazione, e cosi via.
+		</p>
+		<h6>Esempio (2)</h6>
+		<p> Le permutazioni numero 1, 3 e 5 sono la stessa e corrispondono alla shift verso sinistra di una posizione dell'alfabeto: </p>
+		<table border="1" width="1000" align="center">
+			<tr>
+				<td>a</td>
+				<td>b</td>
+				<td>c</td>
+				<td>d</td>
+				<td>e</td>
+				<td>f</td>
+				<td>g</td>
+				<td>h</td>
+				<td>i</td>
+				<td>j</td>
+				<td>k</td>
+				<td>l</td>
+				<td>m</td>
+				<td>n</td>
+				<td>o</td>
+				<td>p</td>
+				<td>q</td>
+				<td>r</td>
+				<td>s</td>
+				<td>t</td>
+				<td>u</td>
+				<td>v</td>
+				<td>w</td>
+				<td>x</td>
+				<td>y</td>
+				<td>z</td>
+				<td>(space)</td>
+				<td>.</td>
+				<td>,</td>
+				<td>;</td>
+				<td>:</td>
+				<td>'</td>
+			  	<td>!</td>
+		  		<td>?</td>
+		  </tr>
+		  <tr>
+	  			<td>b</td>
+				<td>c</td>
+				<td>d</td>
+				<td>e</td>
+				<td>f</td>
+				<td>g</td>
+				<td>h</td>
+				<td>i</td>
+				<td>j</td>
+		  		<td>k</td>
+				<td>l</td>
+				<td>m</td>
+				<td>n</td>
+				<td>o</td>
+				<td>p</td>
+				<td>q</td>
+				<td>r</td>
+				<td>s</td>
+				<td>t</td>
+				<td>u</td>
+				<td>v</td>
+				<td>w</td>
+		  		<td>x</td>
+				<td>y</td>
+				<td>z</td>
+				<td>(space)</td>
+				<td>.</td>
+				<td>,</td>
+				<td>;</td>
+				<td>:</td>
+				<td>'</td>
+			  	<td>!</td>
+				<td>?</td>
+				<td>a</td>
+		  </tr>
+	  	</table>
+		<br>
+		<p>
+			Le permutazioni numero 2 e numero 4 corrispondono invece all'identita'(ovvero la permutazione che lascia tutto fisso).
+			Il testo in chiaro da crittare è il seguente:
+		</p>
+		<p style="text-align: center;">BUONA FORTUNA A TUTTE LE SQUADRE CHE PARTECIPANO ALLA GARA.</p>
+		<p>
+			Questo testo viene diviso in word da 5 lettere ciascuno:
+			BUONA|(space)FORT|UNA(space)A|(space)TUTT|E(space)LE(space)|SQUAD|RE(space)CH|E(space)PAR|TECIP|ANO(space)A|LLA(space)G|ARA.
+			quindi crittato diventa:
+			CUPNB|.FPRU|VNB(space)B|.TVTU|F(space)ME(space)|TQVAE|SE.CI|F(space)QAS|UEDIQ|BNP(space)B|MLB(SPACE)H|BRB,
+			Osserviamo che l'ultimo blocco non è composto da 5 lettere, in quanto il testo in chiaro non ha lunghezza multiplo di 5.
+		</p>
+		<p>
+			Ribadiamo che nel testo in chiaro non saranno presenti numeri, eventuali accenti verranno sostituiti dal simbolo apostrofo ( ' ) e non ci sarà alcuna distinzione tra lettere maiuscole e minuscole.
+			A ciascuna squadra è permesso applicare delle varianti al polialfabetico semplice utilizzando fino ad un massimo di 9 simboli speciali, che devono essere indicati con i numeri dall'1 al 9.
+			Gruppi di lettere consecutive (possono anche essere parole) vengono sostituiti tramite uno di questi simboli. All'interno di ciascun word questi simboli speciali non vengono sostituiti dalle permutazione e quindi vengono saltati (CI1AOU è una word anche se ha 6 simboli, ma solo 5 fanno parte dell'alfabeto delle permutazioni).
+		</p>
+		<h6>Esempio (3)</h6>
+		<p>
+			Decidiamo che 1 corrisponde al gruppo di lettere AO.
+			CIAO(space)A(space)TUTTI
+			viene diviso in word sostituendo ad AO il numero 1, ma poi non contando tale simbolo nel raggruppamento:
+			CI1(space)A(space)|TUTTI
+			a questo punto in fase di codifica il numero 1 non subisce alcuna sostituzione.
+		</p>
+		<h6>ESEMPIO PRATICO DI CODICE (con varianti)</h6>
+		<p>
+			Riprendiamo le permutazioni citate nell'ESEMPIO (2).
+			Definiamo i simboli speciali: 
+		</p>
+		<ul>
+			<li>1 = GLI</li>
+			<li>2 = RA</li>
+			<li>3 = RE</li>
+			<li>4 = "" (la stringa vuota, da non confondere con lo spazio)</li>
+			<li>5 = CIAO COME STAI</li>
+			<li>6 = PC</li>
+			<li>7 = GN</li>
+			<li>8 = ZZ</li>
+			<li>9 = TT</li>
+		</ul>
+		<p>
+			Riprendiamo il messaggio in chiaro dell'ESEMPIO (2):
+		</p>
+		<p style="text-align: center;">"BUONA FORTUNA A TUTTE LE SQUADRE CHE PARTECIPANO ALLA GARA."</p>
+		<p>
+			Questo testo viene diviso in blocchi tenendo conto dei simboli speciali:
+			BUONA|(space)FORT|UNA(space)A|(space)TU9E(space)|LE(space)SQ|UAD3(space)C|HE(space)PA|RTECI|PANO(space)|ALLA(space)|GA2.
+			quindi crittato diventa:
+			CUPNB|.FPRU|VNB(space)B|.TV9E.|ME.SR|VAE3(space)D|IE.PB|RTFCJ|QAOO.|BLMA.|HA2,
+		</p>
+		<p>
+			Ogni squadra ha inoltre la libertà di inserire un ulteriore simbolo speciale, che deve essere indicato con il numero 0, per rappresentare un ulteriore regola a piacimento. Ad esempio, mettere 0 davanti ad un word può semplicemente indicare che tale gruppo di lettere è stato invertito (0ITTUT sta ad indicare TUTTI).
+			Lo zero potrà essere usato fino ad un massimo di 10 volte nel testo cifrato.
+			Per evitare abusi, l'uso particolare dello zero deve essere approvato dagli organizzatori. Comunque nell'ultima fase della gara (l'attacco ai testi cifrati delle varie squadre) saranno resi noti i diversi possibili significati di tale simbolo (senza dire quale squadra usa quel significato).
+		</p>
+		<h6>ALGORITMO: Esempi di 0 leciti e non leciti</h6>
+		<p>
+			Immaginate di essere in una torre medievale al servizio del vostro signorotto e di avere il compito di cifrare e decifrare i suoi messaggi. Avete a disposizione solo la vostra fantasia e non gli strumenti di algebra astratta. Lo zero deve essere usato per indicare un regola semplice, che possa essere eseguita anche a mano su un foglio di carta oppure a mente.
+			Ricordiamo che con P1, P2, P3, P4 e P5 indichiamo le 5 permutazioni usate per cifrare i word. 
+		</p>
+		<b>Uso lecito del simbolo 0</b> <br>
+		<ul>
+			<li>0 agiste solo su un word già crittato;</li>
+			<li>0 può indicare la stringa vuota;</li>
+			<li>(A1) dato il cifrato XBCDE, lo 0 può indicare che B viene nuovamente sostituito con una permutazione (di quelle già usate) a seconda della lettera che lo predece:
+				Ad esempio, se X < Y sostituisco B con la permutazione P1 altrimenti con P2;</li>
+			<li>(A2) dato il cifrato XYZTW, lo 0 può indicare che il word viene duplicato nel seguente modo 0XXYYZZTTWW (si ottengono due word).
+				X indica X sostituito con P1,
+				Y indica Y sostituito con P2,
+				Z indica Z sostituito con P3,
+				T indica T sostituito con P4,
+				W indica W sostituito con P5. </li>
+		</ul>
+		<b>Uso NON lecito del simbolo 0</b> <br>
+		<ul>
+			<li>La regola 0 non deve essere vista come un'operazione di gruppo sulle lettere.
+				Ad esempio non vale usare lo 0 per trasformare il word ABCDE in 0(A+B)(A-B)CDE </li>
+		</ul>
