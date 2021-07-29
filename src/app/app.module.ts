@@ -68,6 +68,16 @@ import { Cryptowars2011Component } from './attivita/gare-crittografiche/cryptowa
 import { ClassicaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/classica/classica.component';
 import { PubblicaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/pubblica/pubblica.component';
 import { SimmetricaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/simmetrica/simmetrica.component';
+import { Crypto2020ItaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2020/crypto2020-ita/crypto2020-ita.component';
+import { Crypto2020EngComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2020/crypto2020-eng/crypto2020-eng.component';
+import { Crypto2019ItaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2019/crypto2019-ita/crypto2019-ita.component';
+import { Crypto2019EngComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2019/crypto2019-eng/crypto2019-eng.component';
+import { Crypto2018ItaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2018/crypto2018-ita/crypto2018-ita.component';
+import { Crypto2018EngComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2018/crypto2018-eng/crypto2018-eng.component';
+import { Crypto2016ItaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2016/crypto2016-ita/crypto2016-ita.component';
+import { Crypto2016EngComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2016/crypto2016-eng/crypto2016-eng.component';
+import { Crypto2015ItaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2015/crypto2015-ita/crypto2015-ita.component';
+import { Crypto2015EngComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2015/crypto2015-eng/crypto2015-eng.component';
 
 @NgModule({
   declarations: [
@@ -131,7 +141,17 @@ import { SimmetricaComponent } from './attivita/gare-crittografiche/cryptowars/c
     Cryptowars2011Component,
     ClassicaComponent,
     PubblicaComponent,
-    SimmetricaComponent
+    SimmetricaComponent,
+    Crypto2020ItaComponent,
+    Crypto2020EngComponent,
+    Crypto2019ItaComponent,
+    Crypto2019EngComponent,
+    Crypto2018ItaComponent,
+    Crypto2018EngComponent,
+    Crypto2016ItaComponent,
+    Crypto2016EngComponent,
+    Crypto2015ItaComponent,
+    Crypto2015EngComponent
   ],
   imports: [
     BrowserModule,

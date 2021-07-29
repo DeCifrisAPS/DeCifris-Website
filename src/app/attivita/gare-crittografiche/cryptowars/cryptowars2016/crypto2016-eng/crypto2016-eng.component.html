@@ -1,0 +1,774 @@
+<h2>2016 EDITION (Digital Signature Awareness Contest)</h2>
+	<p>
+		The CryptoLabTN (Laboratory of Industrial Mathematics and Cryptography at 
+		University of Trento), in collaboration with Clusit (The Italian Association 
+		for Computer Security), organizes the "Digital Signature Awareness Contest". 
+		The event is organized within the framework of the ECSM (European Cyber Security 
+		Month) and targets students with coding activities. 
+		<br>
+		Our contest aims to raise awareness of the fact that cryptographic algorithms 
+		get old and they should be countinously tested, maintained, improved (which is 
+		what cryptographers - among other things - do). 
+	</p>
+	<hr>
+	<div id="programmaGenerale">
+		<h5>General program</h5>
+		<ul>
+			<li>On Monday, 10th of October at 10:00 (hours of Trento) we published a set of 
+				files, public keys and the corresponding <a href="https://en.wikipedia.org/wiki/Digital_signa
+				ture">fdigital signatures</a>.</li>
+			<li>Participants had time until Friday, 14th of October at 14:00 to forge the signatures of 
+				these public keys on a target file and submit their results. </li>
+			<li>Participants have been ranked according to the number of forged signatures and time of last submission.</li>
+			<li>Prizes are be awarded to the participants ranked in the first three places.</li>
+		</ul>
+	</div>
+	<hr>
+	<div id="FAQ">
+		<h5>FAQ</h5>
+			<ul>
+				<li>Do I have to personally implement some code to solve the questions? <br>
+					It is not required to send the used code, so an easy way is to
+					look for some code already implemented. The fact remains that, as the race has above all
+					meant to lead to deep understanding of cryptographic problems, it is advised
+					to work independently on their own code and its optimization. <br>
+				</li>
+				<li>Do I need to think about and implement new attacks?<br>
+					Not necessarily. There are many known attacks in the literature, so look for one that
+					it seems easy to understand, implement it and get it running!
+				</li>
+			</ul>
+	</div>
+	<hr>
+	<div id="news">
+		<h5>News</h5>
+		<ul>
+			<li>[2016/11/15]  We updated the Feedback section where we describe how we designed the contest and 
+				have published some nice feedback we received from the participants. Check it out!  </li>
+			<li> [2016/10/15] <strong>Final Ranking is published! </strong> Check Prizes & Ranking. </li>
+			<li> [2016/10/14, 14:00] <font color=red>Contest is now closed!</font> Thanks for participation! 
+				Final stats and ranking will be published shortly.</li>
+			<li> [2016/10/10, 10:00] The contest has started! Check Instructions to download contest material. 
+				<strong>Submission instructions have been updated.</strong>.</li>
+			<li> [2016/10/07]  Prizes have been defined! Rules about group partecipation added. 
+				New info available on the usage of hash functions. Check the appropriate tabs. </li>
+			<li> [2016/10/06] Instructions have been updated with more details and there is a 
+				specimen file available to test your tools and get ready for the constest. </li>
+			<li> [2016/09/09]  Instructions have been updated with more details about the cryptographic 
+				algorithms and some mathematical background.  </li>
+			<li> [2016/08/26] A contact mail for the contest has been created! You can reach us at
+				<a href="mailto:contest.cryptolabtn@gmail.com">contest.cryptolabtn@gmail.com</a> </li> 
+		</ul>
+	</div>
+	<hr>
+	<div id="contest">
+		<h5>Contest</h5>
+		<p>
+			We published public keys for various types of digital signatures: RSA, DSA, ECDSA. A participant had to forge signatures on a given file that correspond to these public keys. 
+		</p>
+		<hr>
+		<h5>Contest Material </h5>
+		<p>
+			Click the button below to download the set of <a href="../../../../assets/
+			attivita/cryptowars/contest2016.zip">public keys and signatures.</a>. 
+			<a href="../../../../assets/attivita/cryptowars/contest_2016.private-keys.txt">
+				Private keys</a> are now available. .</p>
+		<p>
+			We provide a  <a href="../../../../assets/attivita/cryptowars/example_2016.zip">
+				specimen file</a> (with one example per digital signature scheme), alongside a
+				<a href="../../../../assets/attivita/cryptowars/example_2016.solution.txt">
+				corresponding solution</a> (note that the solution is not necessarily unique), 
+				in the format that should be used to submit the results. 
+		</p>
+		<p>The format for the contest material is a zip archive. In the archive 
+			there is a file named content.txt that describes the content:</p>
+		<ul>
+			<li> its first line is the name of the target file, that is the 
+				file for which the signatures should be forged;</li>
+			<li>the second line contains an integer that says how many public 
+				keys there are in the archive; </li>
+			<li>then for every public key there is a line with two entries: the name 
+				of the key (a single capital letter), and a letter representing its 
+				type (that is the corresponding digital signature algorithm): "r" 
+				for RSA, "d" for DSA, "e" for ECDSA. </li>
+		</ul>
+		<p>Then there is the target file and a folder for every public key (with the corresponding name).
+			In each folder there is a file txt:</p>
+		<ul>
+			<li>its first line is the letter that identifies the key 
+				type ("r" for RSA, "d" for DSA, "e" for ECDSA);</li>
+			<li>the second line contains a letter that identifies the 
+				hash algorithm used: "m" for MD5, "s" for SHA1; </li>
+			<li>the third line contains an integer that says how many 
+				files (and corresponding signatures) there are inside the folder;</li>
+			<li>then there is a blank line; </li>
+			<li>he next two or four lines (depending on the key type) describe the public key 
+				(see the Mathematical Framework section below for details on the algorithms 
+				and the notation): 
+				<ul>
+					 <li>For RSA keys there is a line with the integer
+						<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;n"/>
+						 and one with the integer <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;e."/>
+					 </li>
+					 <li>for DSA keys there are three lines containing the parameters 
+						<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;p,q,g"/>
+						and a fourth one with the public key <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;y."/>
+					 </li>
+					 <li>for ECDSA keys there's a line with the cardinality of the base field 
+						<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;q,"/>
+						a line containing the coefficients <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;A,B"/> 
+						of an elliptic curve <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;E"/> of the form
+						<img src="https://latex.codecogs.com/png.latex?\large&amp;space;y^2&amp;space;=&amp;space;x^3&amp;space;
+						&amp;plus;&amp;space;A&amp;space;\cdot&amp;space;x&amp;space;&amp;plus;&amp;space;B"/>
+						defined over <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;\mathbb{F}_q."/>
+						The next two lines represent the base point <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;G"/> 
+						and the public key point <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;Q"/> 
+						via their coordinates  <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;(X,Y)."/>
+					 </li>
+				</ul>
+			</li>
+			<li>then the signatures (one per file) follow, with the following format: 
+				<ul>
+					<li>A blank line; 
+					</li>
+					<li>the name of the signed file; 
+					</li>
+					<li> the signature: for RSA is a single line containing <img src="https://latex.codecogs.
+						com/gif.latex?\large&amp;space;\sigma,"/> for DSA and ECDSA two lines containing 
+						<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;r"/> and
+						<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;s."/>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<p>
+			Participants are required to forge a signature of the target file for each public key given. 
+	  	</p>
+	  	<p>
+			<em>Warning for Windows users:</em> If you open the files (i.e. in bloc notes) 
+			you might see everything on a single line. It should not be too difficult to 
+			process them manually or automatically to have each public key in the appropriate format. 
+		</p>
+	  	<p> Concerning the implementation of the two hash algorithms used in the contest, 
+			  we refer to the following standard command line tools: </p>
+			<ul>
+				 <li><strong>Linux</strong>: <em>md5sum pathtofile</em>, <em>sha1sum pathtofile</em>;
+				 </li>
+				 <li><strong>OSX</strong>: <em>openssl md5 pathtofile</em> , <em>openssl sha1 pathtofile</em>;
+				 </li>
+				 <li><strong>Windows</strong>: <em>CertUtil -hashfile pathtofile MD5</em>, <em>CertUtil -hashfile pathtofile SHA1</em>;
+				 </li>
+			</ul>
+			The results should be interpreted as hexadecimal integers.
+	  	<p> Read the Instructions below for further info. </p>
+		<hr>
+		<h5> Submission of Contest Solutions</h5>
+		<p> A participant is identified by a unique email address. A 
+			participant may submit one or more solutions to the contest 
+			at any time between the publication of Contest Material and 
+			the end of the context, which is set on Friday, 14th October at 14:00.
+		</p>
+		<p>  You submit a Contest Solution sending a mail to 
+			<a href="mailto:contest.cryptolabtn@gmail.com">contest.cryptolabtn@gmail.com</a>.</p>
+		<p>
+			A submission may consist of one or more solutions (you should include every 
+			solution you found) for a subset of the proposed public keys. <strong> Multiple 
+			submissions were allowed but only the last submission have been considered. 
+			Format for submission is a text file. The solution file should be in the following format: </strong>
+		</p>
+		<ul>
+			<li>A line with the number of solutions in the file followed by a blank line</li>
+			<li>Then for each solution: </li>
+				<ul>
+						<li>a line with the name of the public key </li>
+						<li>a line for each element of the forged signature: for RSA a single line containing <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;s,"/>
+							for DSA and ECDSA two lines containing <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;r"/> 
+							and <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;s."/>
+						</li>
+						<li>a blank line to separate from the next solution</li>
+				</ul>
+		</ul>
+		<p> Every element of the signatures should be a number written in decimal base.</p>
+	</div>
+	<hr>
+	<div id="coding">
+		<h5>Coding</h5>
+		<p>Do I have to code my own program to find the solutions? Short answer is: No, but Yes. </p>
+		<p>
+			Long answer is: we have no way of checking if you have written your code to solve 
+			our contest (we are not asking to show the code and you can work in whichever 
+			programming language you prefer). And it will probably be easier to look around 
+			for some already existing program which does all the work. But the whole point 
+			of this contest is to challenge yourself to understand a cryptographic problem, 
+			look out for possible solutions, write code that implements the solutions and 
+			try to make it more and more efficient. 
+		</p>
+		<br>
+		<p>Do I have to cook my own algorithms to find the solutions? Absolutely not!</p>
+		<p>There are tons of good algorithms which might break short or weak keys. 
+			Look around and find an algorithm that you are able to understand. Then 
+			try to implement it. This already looks like a good strategy to have fun in the contest. 
+		</p>
+	</div>
+	<hr>
+	<div id="framework">
+		<h5>Framework</h5>
+		<p> What is a digital signature scheme?</p>
+		<p>
+			Digital signature schemes are designed to provide the digital counterpart to 
+			handwritten signatures. The digital signature is one or more integers dependent 
+			on the message and some secret known only to the signer, i.e. the signer's private 
+			key, but everyone is still able to check the validity of the signature using public 
+			data: the signer's public key. 
+		</p>
+		<p>There are plenty of digital signature schemes out there, but in this contest 
+			we focus on the most famous ones: RSA-based signing, DSA and ECDSA. </p>
+		<p>Although quite different, all three algorithms have the same general structure. 
+			The signer generates a pair of keys  <img src="https://latex.codecogs.com/
+			gif.latex?\large&amp;space;(PK,SK)"/> where <img src="https://latex.codecogs.com/
+			gif.latex?\large&amp;space;PK"/> where PK is the public key, that is distributed, 
+			and <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;SK"/>  is the 
+			secret key, kept private. The message <img src="https://latex.codecogs.com/
+			gif.latex?\large&amp;space;m"/> o be signed is mapped via an hash function 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;H"/> to an integer 
+			of appropriate length: <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;H(m)."/>
+			At this point the signer uses this hash <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;H(m)"/> and their secret key <img src="https://latex.codecogs.com/
+			gif.latex?\large&amp;space;SK"/> to compute a signature <img src="https://
+			latex.codecogs.com/gif.latex?\large&amp;space;\sigma"/> that attaches to the message 
+			for its authentication. Finally anyone in possess of the public key <img src="https://
+			latex.codecogs.com/gif.latex?\large&amp;space;PK"/> can verify the validity of the 
+			signature using a function <img src="https://latex.codecogs.com/gif.latex?\large
+			&amp;space;V(\sigma,m,PK)"/> that outputs "True" if the signature checks out, thus 
+			confirming the authencity of the message and its sender, or "False" if the 
+			signature is invalid. 
+	  	</p>
+	  	<p class="lead">RSA-based signing</p>
+  		<p>
+			RSA signatures work almost exactly the same as RSA encryption, the main difference 
+			being the order in which private and public keys are used. In fact where in RSA 
+			encryption the message is encrypted using the public key and then decrypted with 
+			the secret key, whereas in signing the message is first signed with the private 
+			key and then the signature is checked with the public key. 
+		</p>
+ 	 	<p>
+			Let <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;p,q"/> be two distinct prime numbers and
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;n=p\cdot q."/>
+			Given <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;(n) = (p-1)(q-1)"/> 
+			(<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;\varphi"/> is
+			<a href="https://en.wikipedia.org/wiki/Euler%27s_totient_function" title="Euler's totient function">Euler's totient function</a>), 
+			the signer chooses a random integer <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;1&lt;e&lt;n"/> 
+			such that <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;gcd(e,\varphi(n))=1,"/> i.e. 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;e"/> and 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;\varphi(n)"/> are coprime.
+			The pair <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;(n,e)"/> will be published as the public key of the signer. 
+			Then the private key exponent <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;d"/> is computed as
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;d=e^{-1}\mod{\varphi(n)}."/> 
+		</p>
+  		<p>
+			Once the keys have been generated and the public key has been distributed to 
+			the intended recipients, the actual signing may begin. 
+			Let <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;m"/> be the message to be signed. 
+			Its signature <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;\sigma"/> is computed as:
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;\sigma=H(m)^d\mod{n}"/> where
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;d"/> is the secret key exponent. 
+			Finally any recipient may check this signature by computing
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;y=\sigma^e\mod{n}"/> 
+			(using the values of the public key), and checking wether <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;y=H(m)."/> 
+			Qhis holds for a valid signature since for Fermat's little theorem
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;ed=1\mod{\varphi(n)}\Rightarrow x^{ed}=x\mod{n}">.
+		</p>
+		<p>
+			We refer to <a hfref="https://en.wikipedia.org/wiki/RSA_(cryptosystem)">Wikipedia</a>
+			for a more detailed view of RSA.
+		</p>
+  		<p class="lead">DSA</p>
+		<p>
+			DSA is the acronym of Digital Signature Algorithm, an algorithm 
+			developed by NIST in 1991. Like RSA it works with integers and modular arithmetic.
+		</p>
+		<p>
+			The first step is to choose the parameters to be used.
+			Let <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;p,q"/> be two random primes such that
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;p-1"/> is a multiple of 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;q."/> 
+			Then let <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;g"/> be an integer whose
+			<a href="https://en.wikipedia.org/wiki/Multiplicative_order" title="Multiplicative order">multiplicative order</a> modulo 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;p"/> is <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;q."/> 
+		</p>
+		<p>
+			Once the parameters <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;(p,q,g),"/>  
+			are fixed, the signer sets their own keys choosing a random secret key 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;x,"/>  
+			with <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;0&lt;x&lt;q,"/>   
+			and computing the correspondig public key <img src="https://latex.codecogs.com/gif.
+			latex?\large&amp;space;y=g^x\mod{p}."/> 
+		</p>
+		<p>
+			To sign a message <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;m"/> 
+			it is necessary to generate a random per-message value 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;0&lt;k&lt;q,"/>  
+			then the two values of the signature <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;(r,s)"/> are computed this way:
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;r=(g^k\mod{p})\mod{q},"/>  
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;s=k^{-1}(H(m) + x r)\mod{q}."/> 
+			In the unlikely case that <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;r=0"/> 
+			or <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;s=0"/> a new 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;k"/> must be 
+			chosen and the process repeated.
+		</p>
+		<p>
+			To verify a signature <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;(r,s)"/> 
+			on the message <span class="math">m</span> first check that
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;0&lt;r&lt;q,"/> and
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;0&lt;s&lt;q,"/>, reject it otherwise.
+			Then calculate <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;w=s^{-1}\mod{q},"/> 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;u_1=(H(m) w)\mod{q},"/>
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;u_2=(r w)\mod{q},"/> and the curve point 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;v=((g^{u_1}y^{u_2})\mod{p})\mod{q}."/>
+			The signature is valid if and only if <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;v=r."/>
+		</p>
+		<p>
+			We refer to <a hfref="https://en.wikipedia.org/wiki/Digital_Signature_Algorithm">Wikipedia</a> 
+			for a more detailed view of ECDSA.
+		</p>
+		<p class="lead">ECDSA</p>
+		<p>
+			The ``Elliptic Curve Digital Signature Algorithm'' (ECDSA) offers a variant, applied to elliptic curves, of DSA. 
+		</p>
+		<p>
+			Given an elliptic curve <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;E"/> defined
+			over a finite field <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;\mathbb{F}_q"/> and a base point 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;G\in E(\mathbb{F}_q)"/> of prime order 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;n,"/> the signer chooses 
+			their secret key that is a random integer <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;1\leq d\leq n-1"/> and computes the corresponding public key, that is the point 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;Q=d\cdot G."/> 
+		</p>
+		<p>
+			As in DSA to sign a message <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;m"/> 
+			a random, per-message integer <img src="https://latex.codecogs.com/gif.latex?\large
+			&amp;space;1\leq k\leq n-1,"/>  is selected, then the curve point <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;(x,y)=k\cdot G"/> is computed.  Subsequently the signature is computed as the pair
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;(r,s)"/> where <img src="https://latex.codecogs.
+			com/gif.latex?\large&amp;space;r=x\mod{n}"/> (thechnically <img src="https://latex.codecogs.com/gif.latex?\large
+			&amp;space;x\in\mathbb{F}_q,"/>  but it can be safely seen as an integer), and 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;s = k-1 (H(m) + rd) \mod{n}."/> 
+			If <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;r=0"/> or <img src="https://latex.codecogs.com/
+			gif.latex?\large&amp;space;s=0"/> another value for <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;k"/> is chosen and the procedure repeated.
+		</p>
+		<p>
+			To verify a signature <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;(r,s)"/> on the message 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;m"/> first check that both
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;r"/> and <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;s"/> lie in the interval <img src="https://latex.codecogs.com/gif.latex?\large
+			&amp;space;\[1,...,n-1\],"/>  reject it otherwise. Then calculate
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;w=s-1\mod{n},u1=(H(m)w)\mod{n},u2=(rw)\mod{n}"/>
+			and the curve point <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;(x,y)=u1\cdot G+u2\cdot Q."/> 
+			The signature is valid if and only if <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;r=x\mod{n}."/> 
+		</p>
+		<p>
+			We refer to <a hfref="https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm">Wikipedia</a> 
+			for a more detailed view of ECDSA.
+		</p>
+		<p class="lead">Hash Functions</p>
+		<p>
+			An hash function is a function that maps data of arbitrary size to a bit string of a fixed size. 
+			In cryptography, cryptographic hash functions are desired: an hash function is said cryptographic 
+			if it is designed to be a one-way function (i.e. it is easy to compute images but infeasible to compute pre-images). 
+		</p>
+		<p>
+			Hence, an ideal cryptographic hash function has these main properties:</p>
+			<ul>
+				<li>it is easy to compute the hash value for any input;
+				</li>
+				<li>it is extremely difficult to recover a data from its hash value except by trying all possible values;
+				</li>
+				<li>a small change to a data changes radically the hash value;
+				</li>
+				<li>it is impossible to find two different data with the same hash value.
+				</li>
+		  </ul>
+		<p>
+			<em>MD5</em> is a hash function designed by Ronald Rivest in 1991 
+			that outputs bit-strings of fixed length 128 bits (16 bytes).
+		</p>
+		<p>
+			<em>SHA1</em> is a hash function designed by the National Security 
+			Agency that outputs bit-strings of fixed length 160 bits (20 bytes).</p>
+		<p>
+			A contest solution for a single public key <span class="math">PK</span> 
+			consists of a signature <span class="math">&sigma;</span> such that 
+			<span class="math">V(&sigma;, m, PK) = True</span>, where <span class="math">
+			m</span> is the target message. That is, without having the secret key, 
+			try to forge a signature for <span class="math">m</span>.
+		</p>
+	</div>
+	<!-- Ranking -->
+	<hr>
+	<h5>Ranking</h5>
+	<p>
+		Ranking among participants is done considering the following two simple rules applying to all valid submissions.
+	</p>
+	<ol>
+		<li>A participant ranks higher than another participant if they has forged more signatures.</li>
+		<li>A participant ranks higher than another participant with the same number of forged 
+			signatures if their last valid submission was done earlier in time. </li>
+	</ol>
+	<table class="table">
+		<thead>
+				<tr class="header">
+					<th style="text-align: center"> Rk </th>
+					<th style="text-align: center"> Participant </th>
+					<th style="text-align: center"> Time of Last Submission</th>
+					<th style="text-align: center"> Valid Signatures </th>
+				</tr>
+		</thead>
+		<tbody>
+				
+				<tr class="odd" style="background-color: LIGHTYELLOW">
+					<td align="center">1</td>
+					<td align="center"> Cryptoresearch * </td>
+					<td align="center"> 13/10/2016 00:22 </td>
+					<td align="center"> 15 </td>
+				</tr>
+				<tr class="even" style="background-color: WHITESMOKE">
+					<td align="center">2</td>
+					<td align="center"> Cryptostage * </td>
+					<td align="center"> 14/10/2016 12:36 </td>
+					<td align="center"> 13 </td>
+				</tr>
+				<tr class="odd" style="background-color: ANTIQUEWHITE">
+					<td align="center">3</td>
+					<td align="center"> TGL * </td>
+					<td align="center"> 14/10/2016 08:25 </td>
+					<td align="center"> 10 </td>
+				</tr>
+				<tr class="even">
+					<td align="center">4</td>
+					<td align="center"> Alessandro De Piccoli </td>
+					<td align="center"> 14/10/2016 13:49 </td>
+					<td align="center"> 7.5 ** </td>
+				</tr>
+				<tr class="odd">
+					<td align="center"> 5 </td>
+					<td align="center"> Francesco Romeo </td>
+					<td align="center"> 13/10/2016 21:10 </td>
+					<td align="center"> 7 </td>
+				</tr>
+			</tbody>
+	</table>
+	<p> Note: <br>
+		*:  marks group entries. <br>
+		**: valid signatures for 8 public keys, but one signature was mislabeled. <br>
+	</p>
+	<hr>
+	<h5>Stats</h5>
+	<ul>
+		<li>Participants: 5 (11 persone)</li>
+		<li>Submissions: 16</li>
+		<li>Forged Signatures: 15</li>
+		<li>Unforged Signatures: 2</li>
+	</ul>
+	<!-- Premi -->
+	<hr>
+	<h5>Prizes</h5>
+	<p>
+		The real prize you get from participating in this contest is having fun learning and doing things by yourself! 
+	</p>
+	<p>
+		The winner will be awarded free membership to Clusit. Those who will rank in the 
+		first three positions will be invited to attend (for free) all the events the 
+		CryptoLabTN will host during all 2016 and 2017. Moreover we will treat them 
+		to lunch the day of the award ceremony. 
+	</p>
+	<p>
+		It is possible to participate in groups, however prizes will be awarded 
+		to a maximum of three components. Individual participants can not compete in a group also. 
+	</p>
+	<p>
+		Prizes will be awarded November 16th 2016 during the Cryptography Workshop 
+	<a href="http://www.science.unitn.it/~sala/events2016/BunnyTN7.html">BunnyTN7 2016</a>
+	organized at University of Trento jointly with other Italian universities.
+	</p>
+	<hr>
+	<h5> How have we designed the contest? </h5>
+	<p>
+		First of all, using Magma we selected keys that could be broken in 10 minutes 
+		(one for RSA-based signing, one for DSA and one for ECDSA), in 60 minutes (one 
+		for RSA-based signing, one for DSA and one for ECDSA) and in about 1 day (one 
+		for DSA and one for ECDSA), running general purpose algorithms to factorize 
+		or to solve the discrete logarithm problem. However, we wanted a contest where 
+		just using general purpose algorithms to factorize or to solve the discrete 
+		logarithm problem would not be enough to excel in the competition. So we needed 
+		to generate weak keys. What are weak keys? These can be defined in an informal 
+		way as classes of keys where special purpose algorithms exist, which perform 
+		better than the best known general purpose algorithm. 
+		<br>
+		We selected different classes of weak keys we would want to generate, 
+		both for RSA-based signing and ECDSA. In particular we chose: 
+	</p>
+	<ul>
+		<li>RSA-based signing: 
+			<ul>
+				<li>
+					Wiener weak keys: keys with small private exponent
+					<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;d&lt;1/3\cdot N^{1/4}"/>
+					which can be broken with the Wiener's attack, based on continued fractions; 
+				<li>
+					a couple of keys with a common prime factor, which can be broken very easily by computing 
+					Greatest Common Divisor by means of Euclid's algorithm, which just requires repeated 
+					subtractions. In the famous paper  <a href="https://eprint.
+					iacr.org/2012/064.pdf">“Ron was wrong, Whit is right (2012)”</a>, Lenstra et al. 
+					studied some millions of public available RSA keys and discovered that many 
+					of them were vulnerable to a common factor attack. 
+				</li>
+			</ul>
+		<li>ECDSA:
+			<ul>
+				<li>
+					Anomalous curve keys, to raise awareness on the vulnerability of anomalous curves, 
+					which are curves defined over a prime field of <img src="https://latex.codecogs.com/
+					gif.latex?\large&amp;space;p"/> elements and having <img src="https://latex.codecogs.
+					com/gif.latex?\large&amp;space;p"/> rational points (we used an anomalous curve taken from
+					 <a href="https://safecurves.cr.yp.to/">
+					safecurves.cr.yp.to</a>);
+				</li>
+			</ul>
+		</li>
+	</ul>
+	<p>
+		We would like also to highlight that rough implementations of secure cryptographic schemes 
+		could lead to fatal weaknesses, as famous examples prove. In fact, signing via DSA or 
+		ECDSA it is fundamental to choose a random <img src="https://latex.codecogs.com/gif.latex?\large
+		&amp;space;k"/> since if the <img src="https://latex.codecogs.com/gif.latex?\large&amp;
+		space;k"/>s are generated using a linear congruential generator, then it is possible 
+		to successfully attack the signing protocol. In order to reach such a goal we proposed: 
+	</p>
+	<ul>
+		<li>DSA
+			<ul>
+				<li>For a given key, two digital signatures obtained using the same
+					<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;k."/>  
+					Given two signatures <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;(r,s_1)"/> and
+					<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;(r,s_2)"/> for two different files 
+					<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;m_1"/> and <img src="https:
+					//latex.codecogs.com/gif.latex?\large&amp;space;m_2,"/>  achieved using the same <img src=
+					"https://latex.codecogs.com/gif.latex?\large&amp;space;k"/>, from the expression of <img src=
+					"https://latex.codecogs.com/gif.latex?\large&amp;space;s_1-s_2"/> one can recover <img src=
+					"https://latex.codecogs.com/gif.latex?\large&amp;space;k"/> solving a linear congruence. Knowing  
+					<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;k"/> , the private key 
+					<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;x"/> can be retrieved from 
+					<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;
+					s_1'"/> expression. </li>
+				<li>For a given key, two digital signatures obtained using consecutive  <img src="https://latex.codecogs.
+					com/gif.latex?\large&amp;space;k"/>s. Given two signatures <img src="https://latex.codecogs.
+					com/gif.latex?\large&amp;space;(r_1,s_1)"/> and <img src="https://latex.codecogs.com/gif.latex?\
+					large&amp;space;(r_2,s_2)"/> for two different files <img src="https://latex.codecogs.com/gif.latex?\
+					large&amp;space;m_1"/> e <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;m_2,"/>  
+					achieved using <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;k_1"/> 
+					and <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;k_2=k_1+1"/> respectively it 
+					is possible to perform an attack that recovers easily the private key  
+					<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;x."/>  
+					Indeed, from <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;s_1\cdot\;k\equiv\;hash(m_1)+x\cdot\;r_1\mod{q}"/>
+					and <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;s_2\cdot\;k\equiv\;hash(m_2)+x\cdot\:r_2\mod{q},"/>  
+					one can retrieve <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;x"/> solving a linear congruence system.</li>
+			</ul>
+		</li>
+		<li>ECDSA
+			<ul>
+				<li>For a given curve, two digital signatures obtained using the same <img src=
+					"https://latex.codecogs.com/gif.latex?\large&amp;space;k."/>  Given two signatures
+					<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;(r,s_1)"/> and 
+					<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;(r,s_2)"/>
+					for two different files <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;m_1"/> and
+					<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;m_2,"/>  achieved using the same
+					<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;k,"/>  the procedure to recover 
+					<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;k"/> is analogous to the one 
+					reported above for DSA. This implementation failure was exploited to stole private signing 
+					keys used for PlayStation 3.</li>
+			</ul>
+		</li>
+	</ul>
+	<p>Finally we included two easter eggs.</p>
+	<p>
+		For a RSA-based signing key, we provided a digital signature for a file with the same MD5 hash of the target file, 
+		i.e. we exploited a collision of the hash function MD5. A collision is when two different files 
+		<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;m_1"/> 
+		and <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;m_2"/> are such that (<img src="https://latex.
+		codecogs.com/gif.latex?\large&amp;space;m_1"/>) = hash(<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;m_2)"/>. 
+		It is well known that the two very famous hash functions, MD5 and SHA-1, do not satisfy the collision 
+		resistance property. For this reason they are no more used for digital signatures, even if they are 
+		still used for other purposes (like password hashing). It is possible to obtain a collision for 
+		MD5 with an algorithm which takes just a few seconds on a regular computer. 
+	</p>
+	<p>One of the elliptic curves proposed is the P-256 curve, recommended by NIST and considered secure. So it is 
+		impossible to solve the discrete logarithm problem over it using classical algorithms. 
+		However, we choose a very small  <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;d"/>, 
+		to show that sometimes a brute force attack can lead to <a href="https://www.youtube.com/watch?v=SmanVIJ80EY">The Answer</a>. </p>
+	<hr>
+	<h5 class="color"> Feedback </h5> 
+	<p>  After the contest we will ask the participants the following questions: </p>
+	<ul><em>
+	<li> Are you a student? </li>
+	<li> Where are you from? </li>
+	<li> Did you code some algorithm to participate? In which language? Which algorithms did you code? </li>
+	<li> Did you use some existing tools? which ones? </li>
+	<li> Did you have access to a cluster or you just used personal desktops/laptops? </li>
+	<li> Did you learn something new on Digital Signatures? </li>
+	</em></ul>
+	<p> We will report here the answers from the participants.</p>
+	<hr>
+	<h6>Alfarano Gianira, Cotardo Giuseppe and Zaninelli Marco (Cyptoresearch, ranked 1st)</h6>
+	<ul>
+	<li> 
+		<em>Are you students? </em>
+		<p> Yes, we are three students from University of Trento, currently attending the Master's Degree in Coding Theory and Cryptography.</p>
+	</li>
+	<li>
+		<em>Where are you from? </em>
+		<p> Gianira and Giuseppe come from Apulia, Bari and Lecce respectively. Marco comes from Verona. </p>
+	</li>
+	<li>
+		<em> Did you code some algorithm to participate? In which language? Which algorithms did you code? </em>
+		<p> Yes. We implemented in MAGMA the Wiener's attack, useful to break one RSA signature. 
+			Moreover we used a SAGE implementation for an attack on the so called “Anomalous Elliptic Curves”. </p>
+	</li>
+	<li>
+		<em>Did you use some existing tools? Which ones? </em>
+		<p> We used some MAGMA functions as "Log", "GreatestCommonDivisor" and "Factorization" 
+			and we checked on the website "factordb.com" some factorizations of the RSA integers. </p>
+	</li>
+	<li>
+		<em>Did you have access to a cluster or you just used personal desktops/laptops? </em>
+		<p> We had access to a cluster (Windows Azure) and a Mac-Pro and we use them in order 
+			to break the weakest keys. Then we worked on our laptops and did some computations with pen and papers. </p>
+	</li>
+	<li>
+		<em>Did you learn something new on ECC? </em>
+		<p> Yes,we learned a lot of details on Digital Signature Schemes, 
+			in particular about weakness and attacks on such protocols. </p>
+	</li>
+	</ul>
+	<hr>
+	<h6>Elena Canali, Cristian Mirto and Fulvio Rizzardini (Cryptostage, ranked 2nd)</h6>
+	<ul>
+		<li> 
+			<em>Are you students? </em>
+			<p> Yes, we are students from the University of Trento.</p>
+		</li>
+		<li>
+			<em>Where are you from? </em>
+			<p>Cristian is from Lecce, Elena from Trento and Fulvio from Manerba del Garda. </p>
+		</li>
+		<li>
+			<em> Did you code some algorithm to participate? In which language? Which algorithms did you code? </em>
+			<p> Yes, but they were almost useless. We code some functions in Magma. </p>
+		</li>
+		<li>
+			<em>Did you use some existing tools? Which ones? </em>
+			<p> Yes, we used Magma. </p>
+		</li>
+		<li>
+			<em>Did you have access to a cluster or you just used personal desktops/laptops? </em>
+			<p> Our personal computers and one desktop computer. </p>
+		</li>
+		<li>
+			<em>Did you learn something new on ECC? </em>
+			<p> Yes, it was a formative and enjoyable experience. </p>
+		</li>
+	</ul>
+	<hr>
+	<h6>Luca Girardi, Tommaso Parise and Gaetano Russo (TGL, ranked 3rd)</h6>
+	<ul>
+		<li> 
+			<em>Are you students? </em>
+			<p> Yes, we are in the first year of the curriculum in Coding Theory and Cryptography by University of Trento. </p>
+		</li>
+		<li>
+			<em>Where are you from? </em>
+			<p>Luca is from Trento, Tommaso is from Bassano Del Grappa (Vicenza) and Gaetano is from Salerno.  </p>
+		</li>
+		<li>
+			<em> Did you code some algorithm to participate? In which language? Which algorithms did you code? </em>
+			<p> We wrote some algorithms to ease calculations, we tried implementing the rho-pollard both in the 
+				factorization and discrete logarithm form, but we ended using the functions already existing in Magma. </p>
+		</li>
+		<li>
+			<em>Did you use some existing tools? Which ones? </em>
+			<p> We used the Magma software.  </p>
+		</li>
+		<li>
+			<em>Did you have access to a cluster or you just used personal desktops/laptops? </em>
+			<p> We just used our personal laptops. </p>
+		</li>
+		<li>
+			<em>Did you learn something new on ECC? </em>
+			<p> We were completely new to the subject (except for RSA encryption), 
+				so we learned a lot just to know what we were facing. We decided to 
+				partecipate in order to have fun and learn something new and we can 
+				say that our objectives were accomplished.  </p>
+		</li>
+	</ul>
+	<hr>
+	<h6>Alessandro De Piccoli (ranked 4th)</h6>
+	<ul>
+		<li> 
+			<em>Are you students? </em>
+			<p> Yes, I am.  </p>
+		</li>
+		<li>
+			<em>Where are you from? </em>
+			<p>I'm from Varedo (MB).  </p>
+		</li>
+		<li>
+			<em> Did you code some algorithm to participate? In which language? Which algorithms did you code? </em>
+			<p> I coded two famous attacks to rsa and ecc for particular cases. I also coded various 
+				attacks to dsa and ecdsa from an article of Draziotis and Poulakis without successful. 
+				All of this algorithms were coded using pari library.  </p>
+		</li>
+		<li>
+			<em>Did you use some existing tools? Which ones? </em>
+			<p> Yes, I did. I used the gp calculator.  </p>
+		</li>
+		<li>
+			<em>Did you have access to a cluster or you just used personal desktops/laptops? </em>
+			<p> I used my desktop and my laptop. I forged all my signatures in 3 hours and a lot of time trying to forge the others.  </p>
+		</li>
+		<li>
+			<em>Did you learn something new on ECC? </em>
+			<p> I knew that there were something called Digital Signature, but 
+				I didn't know anything else. I discovered a new side of cryptography.  </p>
+		</li>
+	</ul>
+	<hr>
+	<h6>Francesco Romeo (ranked 5th)</h6>
+	<ul>
+		<li> 
+			<em>Are you students? </em>
+			<p> Yes, I study at University of Trento.   </p>
+		</li>
+		<li>
+			<em>Where are you from? </em>
+			<p>I’m from Messina.  </p>
+		</li>
+		<li>
+			<em> Did you code some algorithm to participate? In which language? Which algorithms did you code? </em>
+			<p> Yes I coded by myself algorithms in Magma. There were One algorithm to break RSA, 
+				returning a valid RSA Signature, 2 algorithms to break DSA and ECDSA, and two algorithms 
+				to verify that the outputs were right.  </p>
+		</li>
+		<li>
+			<em>Did you use some existing tools? Which ones? </em>
+			<p> I used an online software to recover the Hash from the target Document. </p>
+		</li>
+		<li>
+			<em>Did you have access to a cluster or you just used personal desktops/laptops? </em>
+			<p> I only used my laptop. </p>
+		</li>
+		<li>
+			<em>Did you learn something new on ECC? </em>
+			<p> I enjoyed this experience and I’ve seen how to apply what, until now, I knew only theoretically. </p>
+		</li>
+	</ul>

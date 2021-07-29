@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CryptowarsServiceService } from 'src/app/servizi/cryptowars-service.service';
 
 @Component({
   selector: 'app-cryptowars',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CryptowarsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private cryptoService: CryptowarsServiceService) { }
+
+  lingua: string = "";
 
   ngOnInit(): void {
+    this.lingua = this.cryptoService.getLanguage();
+    this.cryptoService.notifyLanguage.subscribe({
+      next: (s) => this.lingua=s
+    });
+  }
+
+  impostaLingua(s: string){
+    this.cryptoService.setLanguage(s);
   }
 
   sleep(ms) {

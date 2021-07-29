@@ -1,0 +1,533 @@
+<h2>2015 EDITION (ECC Awareness Contest)</h2>
+	<p>
+		The CryptoLabTN (Laboratory of Cryptography at University of Trento), 
+		in collaboration with Clusit (The Italian Association for Computer Security) 
+		organizes an "ECC Awareness Contest". The event is organized within the 
+		framework of the European Cyber Security Month (ECSM) and targets students 
+		with coding activities.
+		Our contest aims to raise awareness of the fact that cryptographic algorithms 
+		get old and they should be countinously tested, maintained, improved (which 
+		is what cryptographers - among other things - do).
+	</p>
+	<hr>
+	<div id="programmaGenerale">
+		<h5>General program</h5>
+		<ul>
+			<li>On <strong>Monday, 19th of October at 12:00</strong> (hours of Trento) we published a set of <a href="https://en.wikipedia.org/wiki/Elliptic_curve_cryptography">ECC</a>
+			 	public keys.</li>
+			<li>Participants had time until <strong>Friday, 23th of October at 17:00</strong> to break the keys (i.e. find the correspondent private keys) and submit your results.</li>
+			<li>Participants have been ranked according to the number of keys broken and time of last submission.</li>
+			<li>Prizes will be awarded to the submissions ranked in the first three places.</li>
+		</ul>
+	</div>
+	<hr>
+	<div id="news">
+		<h5>News</h5>
+		<ul>
+			<li> [2015/11/09] We updated the <a href="#feedback" data-toggle="tab">
+				Feedback</a> section where we describe how we designed the contest 
+				and have published some nice feedback we received from the participants. 
+				Check it out! </li>
+			<li> [2015/10/27] <strong>Final Ranking is published!</strong> 
+				Check <a href="#results" data-toggle="tab">Prizes & Ranking</a>. </li>
+			<li> [2015/10/23, 17:00] Contest is now closed! Thanks for participation! 
+				Final stats and ranking will be published shortly, solutions are already available. </li>
+			<li> [2015/10/19] The contest has started! Check <a href="#contest" data-toggle="tab">
+				Instructions</a> to download contest material. </li> 
+			<li> [2015/10/18] The format of the contest material has been slightely 
+				 changed (some blank spaces have been added after the numbers that 
+				 describe the rational points), check the specimen file. </li>
+			<li> [2015/10/16] <a href="#contest" data-toggle="tab">Instructions</a> have been 
+				updated with more details and there is a specimen file available to test your 
+				tools and get ready for the constest. Furthermore, prizes have been defined! 
+				Check the appropriate tabs.</li>
+			<li> [2015/09/28] A contact mail for the contest has been created! You can reach us at
+			 	<span class="glyphicon glyphicon-envelope"></span> <samp>contest.cryptolabtn at gmail.com</samp></li> 
+		</ul>
+	</div>
+	<hr>
+	<div id="contest">
+		<h5>Contest</h5>
+		<p>
+			We have published a set of ECC public keys. A participant 
+			had to find the corresponding private key of each public 
+			key solving an ECDLP (Elliptic Curve Discrete Logarithm Problem).
+		</p>
+	</div>
+	<hr>
+	<div id="materiale">
+		<h5>Contest Material</h5>
+		<p>
+			Click the following link to download the <a href="../../../../assets/
+			attivita/cryptowars/2015contest.publicKeys.txt">set of ECC public keys</a>. 
+			The corresponding solutions are now <a href="../../../../assets/attivita/cryptowars/
+			2015contest.solution.txt">available</a>.</p>
+		<p>
+			We also provide a <a href="../../../../assets/attivita/cryptowars/2015example.publicKeys.txt">
+			specimen file</a> (with two simple keys to attack), alongside the
+			<a href="../../../../assets/attivita/cryptowars/2015example.solution.txt">
+			corresponding solution</a>, in the format you should use to submit your results.
+		</p>
+		<p>The format for Contest Material is a text file. Each public key 
+			is represented by 5 lines, and is separated from the next with a blank line.
+		</p>
+		<ul>
+			<li> The first line contains a counter identifying the public key
+				<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;(1, 2, 3, ...)."/></li>
+			<li>The second line contains a prime number <img src="https://latex.codecogs.com/gif.latex?\
+				large&amp;space;p"/> that is the cardinality of the base field.</li>
+			<li>The third line contains two elements of <img src="https://latex.codecogs.com/gif.latex?\
+				large&amp;space;\mathbb{F}_p:A,B"/> that describe an elliptic curve
+				ellittica <img src="https://latex.codecogs.com/gif.latex?\
+				large&amp;space;E"/> of the form <img src="https://latex.codecogs.com/gif.latex?\
+				large&amp;space;y^2=x^3+A\cdot x+B"/>, defined over <img src="https://latex.codecogs.com/gif.latex?\
+				large&amp;space;\mathbb{F}_p"/>.</li>
+			<li>The fourth line represents a rational point <img src="https://latex.codecogs.com/gif.latex?\
+				large&amp;space;P"/> of <img src="https://latex.codecogs.com/gif.latex?\
+				large&amp;space;E"/> via its coordinates <img src="https://latex.codecogs.com/gif.latex?\
+				large&amp;space;(X,Y)"/>.</li>
+			<li>Finally the fifth line describes the actual public key, that is a rational point
+				<img src="https://latex.codecogs.com/gif.latex?\
+				large&amp;space;Q"/> of <img src="https://latex.codecogs.com/gif.latex?\
+				large&amp;space;E"/> that is a multiple of <img src="https://latex.codecogs.com/gif.latex?\
+				large&amp;space;P"/> (<img src="https://latex.codecogs.com/gif.latex?\
+				large&amp;space;Q=kP"/> for some <img src="https://latex.codecogs.com/gif.latex?\
+				large&amp;space;k"/>)</li>
+		</ul>
+		<p>
+			Participants are required to the find the integer <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;k"/> for each public key given.
+	  	</p>
+	  	<p>
+			<em>Warning for Windows users:</em> If you open the file (i.e. in bloc notes) 
+			you might see all public keys on a single line. It should not be too difficult 
+			to process them manually or automatically to have each public key in the appropriate format.
+		</p>
+		<hr>
+		<h5>Submission of Contest Solutions</h5>
+		<p> A participant is identified by a unique email address. A participant may submit 
+			one or more solutions to the contest at any time between the publication of Contest 
+			Material and the end of the context, which is set on Friday, 23th October at 17:00.
+		</p>
+		<p> You submit a Contest Solution sending a mail to
+			<a href="mailto:contest.cryptolabtn@gmail.com">contest.cryptolabtn@gmail.com</a>.</p>
+		<p>
+			A submission may consist of one or more solution for a subset of the proposed 
+			ECC public keys. Multiple submissions are allowed but only the first three 
+			submission for each public key will be considered valid. Further submissions 
+			will be discarded. Format for submission is a text file. Each line will represent
+			a contest solution for a single public key and it will contain two numbers 
+			written in decimal base and separated by a space: a counter identifying the 
+			public key <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;
+			(1, 2, 3, ...)"/> and the corresponding private key.
+		</p>
+	</div>
+	<hr>
+	<div id="coding">
+		<h5>Coding</h5>
+		<p>Do I have to code my own program to solve ECDLP (Elliptic Curve Discrete 
+			Logarithm Problem) and find the private key? Short answer is: No, but Yes.</p>
+		<p>
+			Long answer is: we have no way of checking if you have written your code 
+			to solve our contest (we are not asking to show the code and you can work 
+			in whichever programming language you prefer). And it will be probably be 
+			easier to look around for some already existing program which does all 
+			the work. But the whole point of this contest is to challenge yourself to 
+			understand a cryptographic problem, look out for possible solutions, write 
+			code that implements the solutions and try to make it more and more efficient.
+		</p>
+		<br>
+		<p> Do I have to cook my own algorithms to solve ECDLP (Elliptic Curve 
+			Discrete Logarithm Problem) and find the private key? Absolutely not!</p>
+		<p>There are tons of good algorithms which might break short or weak keys. 
+			Look around and find an algorithm that you are able to understand. Then 
+			try to implement it. This already looks like a good strategy to have fun 
+			in the contest.
+		</p>
+	</div>
+	<hr>
+	<div id="framework">
+		<h5>Framework</h5>
+		<p class="lead">What is the ECDLP?</p>
+		<p>
+			Given an elliptic curve <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;E"/> defined over a finite field <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;\mathbb{F}_q"/>, a point <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;P\in E(\mathbb{F}_q)"/> of order <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;n"/> and a point <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;Q=kP"/>, where <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;1\leq k \leq n-1,"/> the ECDLP consists in determining
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;k"/>. The point
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;Q"/> is called public key, 
+			while <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;k"/> is called
+			private key. A contest solution for a single public key <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;Q"/> consists of the integer <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;k"/> such that <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;kP=Q"/>.
+		</p>
+  		<p class="lead">Why are we interested in ECDLP?	</p>
+		<p>
+			The computational intractability of the Elliptic Curve Discrete Logarithm 
+			Problem underlies most elliptic curve cryptography.
+			An example of ECC cryptography is the Elliptic Curve Digital Signature Algorithm 
+			(ECDSA), an algorithm for digital signature. It offers a variant applied to 
+			elliptic curves of the Digital Signature Algorithm (DSA) and his security is 
+			based on the difficulty of ECDLP under certain hypothesis.
+			Digital signature schemes are designed to provide the digital counterpart to 
+			handwritten signatures. The digital signature is a number dependent on some 
+			secret known only to the signer, the signer's private key, but everyone is 
+			still able to check the signature using public data: the signer's public key.
+		</p>
+		<p>We refer to Wikipedia for a more detailed view of ECDSA.</p>
+		<p>The contest material is a set of ECC public keys. We will not give you 
+			encrypted messages to be decrypted.</p>
+	</div>
+	<hr>
+	<div id="classificaFinale">
+		<!-- Ranking -->
+		<h5>Final ranking</h5>
+		<table class="table">
+			<thead>
+				 <tr class="header">
+					  <th style="text-align: center"> Rk </th>
+					  <th style="text-align: center"> Participant </th>
+					  <th style="text-align: center"> Time of Last Submission</th>
+					  <th style="text-align: center"> Valid Keys </th>
+				 </tr>
+			</thead>
+			<tbody>
+				 
+				 <tr class="odd" style="background-color: LIGHTYELLOW">
+					  <td align="center">1</td>
+					  <td align="center"> Crypto Terroni Team(*) * </td>
+					  <td align="center"> 2015/10/22 19:19 </td>
+					  <td align="center"> 20 </td>
+				 </tr>
+				 <tr class="even" style="background-color: WHITESMOKE">
+					  <td align="center">2</td>
+					  <td align="center"> Luca Chiodini </td>
+					  <td align="center"> 2015/10/21 21:24 </td>
+					  <td align="center"> 14 </td>
+				 </tr>
+				 <tr class="odd" style="background-color: ANTIQUEWHITE">
+					  <td align="center">3</td>
+					  <td align="center"> Lorenzo Cameroni - Alessandro De Piccoli </td>
+					  <td align="center"> 2015/10/23 16:32 </td>
+					  <td align="center"> 14 </td>
+				 </tr>
+				 <tr class="even">
+					  <td align="center">4</td>
+					  <td align="center"> Anomalous Marty with Delorean </td>
+					  <td align="center"> 1985/10/21 15:26 </td>
+					  <td align="center"> 1 </td>
+				 </tr>
+				 </tbody>
+			</table>
+			<p> Notes: <br>
+				*: Team formed by Giuseppe Vitto, Carmine Abate, Giuseppe Cotardo.<br>
+			</p>
+	</div>
+	<hr>
+	<div id="statistiche">
+		<h5>Stats</h5>
+		<ul>
+			<li>Participants: 4</li>
+			<li>Submissions: 32</li>
+			<li>Broken Keys: 20</li>
+			<li>Unbroken Keys: 0</li>
+			</ul>
+	</div>
+	<hr>
+	<div id="premi">
+		<!-- Premi -->
+		<h5>Prizes</h5>
+		<p>
+			The real prize you get from participating in this contest is having 
+			fun learning and doing things by yourself!
+		</p>
+		<p>
+			o give an additional incentive, the winner will be awarded free membership to 
+			<a href="http://www.clusit.it/">Clusit</a>. Those who will rank in the 
+			first three positions will be invited to attend (for free) all the events the 
+			CryptoLabTN will host during all 2015 and 2016. Moreover we will treat them to 
+			lunch the day of the award ceremony.
+		</p>
+		<p>
+			Prizes will be awarded during an event organized at University of Trento 
+			(updates will follow).
+		</p>
+	</div>
+	<hr>
+	<div id="classifica">
+		<!-- Ranking -->
+		<h5>Ranking</h5>
+		<p>
+			Ranking among participants is done considering the following 
+			two simple rules applying to all valid submissions.
+		</p>
+		<ol>
+			<li>A participant ranks higher than another participant if it has broken more 
+				public keys.</li>
+			<li>A participant ranks higher than another participant with the same number of 
+				broken public keys if his/her last valid submission for a broken public 
+				key was done earlier in time.</li>
+		</ol>
+		<hr>
+		<h5> How did we design the contest? </h5> 
+		<p>
+			We used Magma software to generate a lot of curves with random parameters and 
+			then we selected them according to various parameters as we wanted:
+		</p>
+		<ul>
+			<li> a few curves with supposedly secure parameters (for example large prime 
+				field, large set of rational points, etc) but actually insecure,</li>
+			<li>some weak curve that is stronger than how it looks,</li>
+			<li>some "average" curve.</li>
+		</ul>
+		<p>
+			In this light, the main trick used to choose the curves was to factorize the 
+			order of the elliptic curve generators. In fact, curves defined over large prime 
+			fields whose generator's order factorizes in many primes are very vulnerable to 
+			the Pollard-Rho attack. On the other hand if the order is prime this 
+			vulnerability does not exist and so a curve defined over a smaller prime-field 
+			might actually be more secure than curves defined over larger prime fields. 
+			Furthermore, we proceeded to test every curve with the discrete logarithm 
+			algorithm of Magma (that implements Pollard-Rho and various optimizations) to 
+			check out the amounts of time required to break them.
+		</p>
+		<p>
+			Finally we selected curves that we broke in few seconds, few minutes, few hours 
+			and a nasty curve that despite being defined over a prime field of only 75 bits, 
+			took almost 3 days to be broken.
+		</p>
+		<p>
+			On top of that we added an anomalous curve, taken from <a href="http://safecur
+			ves.cr.yp.to/">safecurves.cr.yp.to</a>, to raise awareness on this vulnerability. 
+			We strongly suggest to check out the website to learn more about the security of 
+			the curves in ECC.
+		</p>
+	</div>
+	<hr>
+	<div id="feedback">
+		<h5> Feedback </h5>  
+		<hr>
+		<p>  After the contest we will ask the participants the following questions: </p>
+		<ul>
+			<em>
+				<li> Are you a student? </li>
+				<li> Where are you from? </li>
+				<li> Did you code some algorithm to participate? In which language? Which algorithms did you code? </li>
+				<li> Did you use some existing tools? which ones? </li>
+				<li> Did you have access to a cluster or you just used personal desktops/laptops? </li>
+				<li> Did you learn something new on Digital Signatures? </li>
+			</em>
+		</ul>
+		<p> We will report here the answers from the participants.</p>
+		<hr>
+		<h6>Crypto Terroni Team (ranked 1st)</h6>
+		<p>
+			Instead of just answering directly to questions proposed, we decided to tell you 
+			our story. This way we hope to transmit together with the required information 
+			our feelings during the whole competition, from the moment we heard the notice 
+			of it to the end.
+			<br><br>
+			On monday morning Abate and Cotardo received a phone call from Vitto : "Guys 
+			from second year (we are studying Cryptography and Coding Theory in Trento) told 
+			me something about a cryptography contest. They suggested to take part for fun. 
+			But i have no idea what elliptic curves are". So we met and started looking for 
+			some notes on elliptic curves.
+			<br><br>
+			Our first attempt to break the example keys was by developing a magma script for 
+			a brute-force attack. Although we knew that it was not efficient, we started to 
+			deal with the group structures of elliptic curves over a finite field. Obviously 
+			we had no success with this approach and we started to study the baby-step 
+			giant-step algorithm. We found a python implementation of that and on our laptop 
+			it worked for the example keys. So we started applying that algorithm to the keys 
+			of the contest. Although it is a good algorithm, G-s B-s needs lots of RAM and 
+			the computation started to be unfeasible. So we studied the Pollard's Rho 
+			algorithm that requires a constant amount of memory and we found a python 
+			implementation of this. We broke with these algorithm 4 keys but their 
+			implementation was not so efficient and worked well only for "tiny" curves.
+			<br><br>
+			We understand that the key was the computation power (at this point we had only 
+			3 days left) and we started to implement a Magma script where a discrete 
+			logarithm is computed (Magma uses a very efficient version of the Pollard's rho 
+			algorithm). We ran it on a Microsoft Azure Virtual Machine with 20 CPU @ 2,5Ghz 
+			with 60GB of RAM and we broke 15 additional keys in 2 days. The 19th key was the 
+			last one that remained unbroken: we needed an idea.
+			<br><br>
+			On thursday morning, while looking for probabilistic algorithm, speed up of 
+			Pollard-rho algorithm and so on, Vitto noticed that the order of the curve was 
+			the characteristic of the field, but we did not know how to use this information. 
+			On that evening, Vitto broke the last key: he just found that the curve belongs 
+			to the family of "Anomalous Elliptic Curves" for which the lifting of the curve 
+			over the p-adic field reduces the original ECDLP problem to the DLP problem over 
+			the additive group of order p (that has polynomial cost); with a Sage script ran 
+			on a Sage cloud server the last keys was instantly computed!
+			<br><br>
+			All members of the team agree that this contest was very formative: we learned 
+			not only algebra and algorithms that could be useless without a good theoretical 
+			background, but we also understand the importance of team working, where 
+			different ideas and approaches were the key to win this competition.
+			<br><br>
+			CryptoTerroni Team - Giuseppe Vitto, Carmine Abate, Giuseppe Cotardo"
+			<br><br>
+			PS: We are all from the south of Italy: Bari, Lecce, Salerno. For this reason we 
+			are proudly called CryptoTerroni: Terroni is how people from the north of Italy 
+			call people from the south.
+		</p>
+		<hr>
+		<h6>Luca Chiodini (ranked 2nd)</h6>
+		<ul>
+			<li> 
+				<em>Are you a student? </em>
+				<p> Yes, I am studying computer science at the University of Milano - Bicocca.</p>
+			</li>
+			<li>
+				<em>Where are you from? </em>
+				<p> I live near Bergamo. </p>
+			</li>
+			<li>
+				<em> Did you code some algorithm to participate? In which language? Which 
+					algorithms did you code? </em>
+				<p> I wrote a script in SageMath for doing the basic calculations (for 
+					instance, to calculate the order of a point in the given elliptic curve).
+				</p>
+			</li>
+			<li>
+				<em>Did you use some existing tools? Which ones? </em>
+				<p> I used the cloud platform of SageMath and ECDLP solver, which in turn 
+					uses a version of Pollard Rho algorithm to break keys. </p>
+			</li>
+			<li>
+				<em>Did you have access to a cluster or you just used personal desktops/laptops? </em>
+				<p> I used only my personal desktop. </p>
+			</li>
+			<li>
+				<em>Did you learn something new on ECC? </em>
+				<p> I learned all the details of ECC just for this contest.	</p>
+			</li>
+		</ul>
+		<hr>
+		<h6>Lorenzo Cameroni (ranked 3rd)</h6>
+		<ul>
+		<li> 
+			<em>Are you a student?</em>
+			<p>I'm a 27 years old Math student. </p>
+		</li>
+		<li>
+			<em>Where are you from?</em>
+			<p>I study in Milano, but I'm from Quarona (VC).</p>
+		</li>
+		<li>
+			<em> Did you code some algorithm to participate? In which language? Which 
+				algorithms did you code?</em>
+			<p>
+				Yes, I tried to code (with PARI/GP) an attack on curve 19 which is anomalous 
+				(i.e. the number of rational point of <img src="https://latex.codecogs.com/gif.latex?\
+				large&amp;space;E"/> over <img src="https://latex.codecogs.com/gif.latex?\
+				large&amp;space;\mathbb{F}_p"/> is <img src="https://latex.codecogs.com/gif.latex?\
+				large&amp;space;p"/>), but my code didn't work as expected (well, now it 
+				works, but now is too late); the details of the algorithm I've coded are in 
+				Silverman, "The Arithmetic of Elliptic Curves", pages 389-390. I didn't try 
+				to code Pollard's rho algorithm because i knew that PARI/GP elllog function 
+				already use this algorithm. I didn't try to code Baby-step giant-step 
+				algorithm because it needs too much memory.
+			</p>
+		</li>
+		<li>
+			<em>Did you use some existing tools? Which ones?</em>
+			<p> Yes, the PARI/GP elllog function and other elliptic curves related funcion 
+				in PARI/GP.</p>
+		</li>
+		<li>
+			<em>Did you have access to a cluster or you just used personal desktops/laptops?</em>
+			<p> Only my laptop.</p>
+		</li>
+		<li>
+			<em>Did you learn something new on ECC?</em>
+			<p> Yes of course: I've learned about supersingular curves (but there wasn't 
+				in the contest), anomalous curves and I've learned the Baby-step giant-step 
+				algorithm (even if I didn't tried to implement it).</p>
+		</li>
+		</ul>
+		<hr>
+		<h6>Alessandro De Piccoli (ranked 3rd)</h6>
+		<ul>
+			<li> 
+				<em>Are you a student?</em>
+				<p>Yes, I am.</p>
+			</li>
+			<li>
+				<em>Where are you from?</em>
+				<p> I'm from Varedo (MB), Lombardia, Italy.</p>
+			</li>
+			<li>
+				<em> Did you code some algorithm to participate? In which language? Which 
+					algorithms did you code?</em>
+				<p> I coded baby step giant step and pollard rho using pari/gp. The first was 
+					simple but it was expensive in terms of memory, so I thought to store 
+					results in a .txt file but at the size of 300Mb I stopped the process. I 
+					coded pollard rho but when I discovered that pari uses pollard rho for big 
+					sizes of keys I decided to use directly the function of pari.</p>
+			</li>
+			<li>
+				<em>Did you use some existing tools? Which ones?</em>
+				<p>Yes, I did. I used pari/gp.</p>
+			</li>
+			<li>
+				<em>Did you have access to a cluster or you just used personal 
+					desktops/laptops?	</em>
+				<p>I only used my personal computers but me and my friend have observed that 
+					there are important differences. For example, with my computer, I was 
+					faster than an hour in a total time of 4 hours, but he was faster of 50 
+					seconds in a total time of a minute.</p>
+			</li>
+			<li>
+				<em>Did you learn something new on ECC?</em>
+				<p>
+					In general, I reviewed my knowledge about ECC. I studied new algorithms 
+					such as babystep-giantstep and pollard rho for dlp. These algorithms were 
+					unknown to me. I discovered Mov attack that was unuseful in contest. I 
+					tried also to study an article of hp that uses the lift of points in 
+					<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;E(Qp)"/> 
+					and my friend said to me that the Silverman hint was to use <img src="
+					https://latex.codecogs.com/gif.latex?\large&amp;space;E(\mathbb{Z}_{p^2})"/> 
+					with another form of the equation of curve and so we tried that way.
+			</li>
+		</ul>
+		<hr>
+		<h6>Carlo Brunetta (Anomalous Marty with Deloran, ranked 4th) </h6>
+		<ul>
+			<li> 
+					<em>Are you a student?</em>
+					<p>Yes.</p>
+			</li>
+			<li>
+					<em>Where are you from?</em>
+					<p> Trento.</p>
+			</li>
+			<li>
+					<em> Did you code some algorithm to participate? In which language? 
+						Which algorithms did you code?</em>
+					<p> Just some code for make algebraic calculus easier. It was written 
+						in Python/Sage. The algorithm is a particular attack over a special 
+						family of weak curves.</p>
+			</li>
+			<li>
+					<em>Did you use some existing tools? Which ones?</em>
+					<p>Pen and paper and a Delorean DMC-12 with a flux capacitor to 
+						send the answer in 1985. </p>
+			</li>
+			<li>
+					<em>Did you have access to a cluster or you just used personal 
+						desktops/laptops?	</em>
+					<p>ust 0 second of the laptop and some days on paper to understand 
+						why it works. </p>
+			</li>
+			<li>
+					<em>Did you learn something new on ECC? </em>
+					<p> Yes, quite a lot. </p>
+			</li>
+		</ul>
+		<hr>
+	</div>		

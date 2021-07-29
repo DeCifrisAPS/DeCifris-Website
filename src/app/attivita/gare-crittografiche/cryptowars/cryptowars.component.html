@@ -45,56 +45,55 @@
 	<div ng-sidebar-content class="container bottomExtra">
 		<br>
 		<div class="mt-3">
-			<h2>CRYPTOWARS</h2>
-			<p>
-				Ogni anno, in concomitanza dell'ECSM (European Cyber ​​Security Month), la DeCifris, in
-				collaborazione con il gruppo di crittografia (<a href="http://club.di.unimi.it/">CLUB</a>) 
-				dell'Università degli Studi di Milano e <a href="https://clusit.it/">Clusit</a>,
-				l'Associazione Italiana per la Sicurezza Informatica, organizza le cryptowars, ovvero
-				delle gare a tema crittografico rivolte agli studenti universitari.
-			</p>
-			<h5>FAQ</h5>
-			<ul>
-				<li>Devo personalmente implementare del codice per risolvere i quesiti? <br>
-					Non è richiesto di inviare il codice usato, quindi una via semplice è quella di 
-					cercare del codice già implementato. Resta il fatto che, siccome la gara ha soprattutto 
-					lo scopo di portare alla comprensione profonda di problemi crittografici, si consiglia 
-					di lavorare in maniera autonoma al proprio codice e alla sua ottimizzazione.<br>
-				</li>
-				<li>Devo pensare e implementare nuovi attacchi?<br>
-					Non necessariamente. Esistono molti attacchi noti in letteratura, quindi cercane uno che 
-					ti sembra semplice da capire, implementalo e mandalo in esecuzione!</li>
-			</ul>
-			<p>Le edizioni precedenti
-				delle cryptowars si sono svolte nel <a (click)="goTo('edizioneScelta')" routerLink="2020">2020</a>, 
-				<a (click)="goTo('edizioneScelta')" routerLink="2019">2019</a>,
-				<a (click)="goTo('edizioneScelta')" routerLink="2018">2018</a>, 
-				<a (click)="goTo('edizioneScelta')" routerLink="2016">2016</a>, 
-				<a (click)="goTo('edizioneScelta')" routerLink="2015">2015</a>,
-				<a (click)="goTo('edizioneScelta')" routerLink="2014">2014</a> e 
-				<a (click)="goTo('edizioneScelta')" routerLink="2011">2011</a>.</p>
+			<h2 style="display: inline;">CRYPTOWARS</h2>
+			<a>
+				<button 
+					type="button" 
+					class="pull-right btn btn-info"
+					(click)="impostaLingua('ita')">
+					ITA</button>
+				<button 
+					type="button" 
+					class="pull-right btn btn-info"
+					(click)="impostaLingua('eng')">
+					ENG</button>
+			</a>
+			<div *ngIf="lingua=='ita'">
+				<p>
+					Ogni anno organizziamo le cryptowars, ovvero
+					delle gare crittografiche rivolte agli studenti.
+					Alcune di queste sono realizzate in collaborazione con altri enti,
+					come <a href="https://clusit.it/">CLUSIT</a> ed <a href="https://www.enisa.europa.eu/">ENISA</a>.
+				</p>
+				<p>Le edizioni precedenti
+					delle cryptowars si sono svolte nel 
+					<a (click)="goTo('edizioneScelta')" routerLink="2020">2020</a>, 
+					<a (click)="goTo('edizioneScelta')" routerLink="2019">2019</a>,
+					<a (click)="goTo('edizioneScelta')" routerLink="2018">2018</a>, 
+					<a (click)="goTo('edizioneScelta')" routerLink="2016">2016</a>, 
+					<a (click)="goTo('edizioneScelta')" routerLink="2015">2015</a>,
+					<a (click)="goTo('edizioneScelta')" routerLink="2014">2014</a> e 
+					<a (click)="goTo('edizioneScelta')" routerLink="2011">2011</a>.
+				</p>
+			</div>
+			<div *ngIf="lingua=='eng'">
+				<p>
+					Every year we organize the cryptowars, that is cryptographic competitions 
+					aimed to students. Some of these are carried out in collaboration 
+					with other entities, such as <a href="https://clusit.it/">CLUSIT</a> and 
+					<a href="https://www.enisa.europa.eu/">ENISA</a>.
+				</p>
+				<p>Previous editions of cryptowars took place in
+					<a (click)="goTo('edizioneScelta')" routerLink="2020">2020</a>, 
+					<a (click)="goTo('edizioneScelta')" routerLink="2019">2019</a>,
+					<a (click)="goTo('edizioneScelta')" routerLink="2018">2018</a>, 
+					<a (click)="goTo('edizioneScelta')" routerLink="2016">2016</a>, 
+					<a (click)="goTo('edizioneScelta')" routerLink="2015">2015</a>,
+					<a (click)="goTo('edizioneScelta')" routerLink="2014">2014</a> e 
+					<a (click)="goTo('edizioneScelta')" routerLink="2011">2011</a>.
+				</p>
+			</div>
 		</div>
-		<!-- <div id="2020">
-			<app-cryptowars2020></app-cryptowars2020>
-		</div>
-		<div id="2019">
-			<app-cryptowars2019></app-cryptowars2019>
-		</div>
-		<div id="2018">
-			<app-cryptowars2018></app-cryptowars2018>
-		</div>
-		<div id="2016">
-			<app-cryptowars2016></app-cryptowars2016>
-		</div>
-		<div id="2015">
-			<app-cryptowars2015></app-cryptowars2015>
-		</div>
-		<div id="2014">
-			<app-cryptowars2014></app-cryptowars2014>
-		</div>
-		<div id="2011">
-			<app-cryptowars2011></app-cryptowars2011>
-		</div> -->
 		<hr id="edizioneScelta">
 		<router-outlet></router-outlet>
 	</div>
