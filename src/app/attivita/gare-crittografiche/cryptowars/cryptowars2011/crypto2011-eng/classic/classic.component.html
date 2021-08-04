@@ -1,0 +1,332 @@
+<h3>Classic category</h3>
+		<h6>Rules</h6>
+		<p>
+			This competition consists of 3 phases: a phase of preparation of the encryption 
+			algorithm, a phase of encryption of the message in clear text and a real 
+			competitive phase. In the first phase, each team has to decide which algorithm 
+			to use. The algorithm must respect certain characteristics and properties that 
+			will be described here and must be sent to the e-mail address 
+			mathnow.unitn@gmail.com by October 20, 2011. At this point each team will be 
+			sent the plaintext to be encrypted using their own algorithm. The plain text will 
+			show only the symbols present in the alphabet, the accents will be replaced by 
+			the apostrophe, there will be no numbers and it will all be in lowercase 
+			characters. However, all texts will be related to the same topic, which will be 
+			announced on the site. Once the text has been encrypted by the team, it must be 
+			sent to mathnow.unitn@gmail.com by October 31, 2011. The last phase of the 
+			competition will take place from 31 October 2011 to 12 March 2012: each team 
+			must try to reconstruct the cipher text of the other teams, which will be 
+			available on the site.
+		</p>
+		<h6>Submission</h6>
+		<p>
+			By 20 October 2011 each team must send the email
+			mathnow.unitn@gmail.com the characteristics of its algorithm:
+		</p>
+		<ul>
+			<li>Group name (completely free);</li>
+			<li>the 5 permutations of the alphabet used;</li>
+			<li>the groups of letters corresponding to numbers 1-9;</li>
+			<li>the meaning of the number 0;</li>			
+		</ul>
+		<p>
+			At this point the organizers will send the plain text to each team.
+			By October 31, 2011, each team must send their own ciphertext.			
+		</p>
+		<h6>Score</h6>
+		<p>
+			The attack phase of the various algorithms begins on October 31, 2011.
+			The encrypted texts of all participating teams will be made available on the 
+			site and must be decrypted.
+			Whenever a code is "broken", the team must report it to mathnow.unitn@gmail.com 
+			by sending the decrypted text. This code will then be removed from the list of 
+			those still possible to attack.
+			Simple "challenges" will also be made available on the site.
+			Each team starts with an initial score of 20 points.
+			When Team X manages to decrypt Team Y's ciphertext, X gains 10 points, Y loses 20.
+			Each team can solve only one "challenge" by obtaining from 2 to 9 points.
+			The winner is the team with the highest score. In the event of a tie, the 
+			team that first reached this score will be considered the winner.
+		</p>
+		<h6>Algorithm</h6>
+		<p> 
+			Each team must create a polyalphabetic algorithm, possibly with variants, 
+			to encrypt a clear message. The alphabet to be used corresponds to the English 
+			one, with the addition of punctuation symbols: </p>
+		<p style="text-align: center;">a b c d e f g h i j k l m n o p q r s t u v w x y z 
+			(space) . , ; : ' ! ?</p>
+		<p>for a total of 34 symbols. Therefore the text to be encrypted will contain only 
+			and exclusively these 34 symbols (without considering the distinction between 
+			upper and lower case letters). A permutation of the alphabet is a rearrangement 
+			of symbols.
+		</p>	
+		<h6>Example (1)</h6>
+		<p> A simple permutation is to shift the symbols of the alphabet one position to 
+			the left. The letter a corresponds to its next b, a b corresponds to c and so on.
+		</p>
+		<table border="1" width="1000" align="center">
+			<tr>
+				<td>a</td>
+				<td>b</td>
+				<td>c</td>
+				<td>d</td>
+				<td>e</td>
+				<td>f</td>
+				<td>g</td>
+				<td>h</td>
+				<td>i</td>
+				<td>j</td>
+				<td>k</td>
+				<td>l</td>
+				<td>m</td>
+				<td>n</td>
+				<td>o</td>
+				<td>p</td>
+				<td>q</td>
+				<td>r</td>
+				<td>s</td>
+				<td>t</td>
+				<td>u</td>
+				<td>v</td>
+				<td>w</td>
+				<td>x</td>
+				<td>y</td>
+				<td>z</td>
+				<td>(space)</td>
+				<td>.</td>
+				<td>,</td>
+				<td>;</td>
+				<td>:</td>
+				<td>'</td>
+			  	<td>!</td>
+		  		<td>?</td>
+		  </tr>
+		  <tr>
+	  			<td>b</td>
+				<td>c</td>
+				<td>d</td>
+				<td>e</td>
+				<td>f</td>
+				<td>g</td>
+				<td>h</td>
+				<td>i</td>
+				<td>j</td>
+		  		<td>k</td>
+				<td>l</td>
+				<td>m</td>
+				<td>n</td>
+				<td>o</td>
+				<td>p</td>
+				<td>q</td>
+				<td>r</td>
+				<td>s</td>
+				<td>t</td>
+				<td>u</td>
+				<td>v</td>
+				<td>w</td>
+		  		<td>x</td>
+				<td>y</td>
+				<td>z</td>
+				<td>(space)</td>
+				<td>.</td>
+				<td>,</td>
+				<td>;</td>
+				<td>:</td>
+				<td>'</td>
+			  	<td>!</td>
+				<td>?</td>
+				<td>a</td>
+		  </tr>
+	  	</table>
+		<br>
+	  	<p>Each team must choose 5 permutation of the alphabet (all permutations are 
+			allowed, in total 34 factorial). The text to be encrypted is divided into blocks 
+			of 5 symbols, called words. The first letter of each block is replaced using the 
+			first permutation, the second letter of the block is replaced using the second 
+			permutation, and so on.
+		</p>
+		<h6>Example (2)</h6>
+		<p> The permutations number 1, 3 and 5 are the same and correspond to the shift 
+			to the left of a position of the alphabet: </p>
+		<table border="1" width="1000" align="center">
+			<tr>
+				<td>a</td>
+				<td>b</td>
+				<td>c</td>
+				<td>d</td>
+				<td>e</td>
+				<td>f</td>
+				<td>g</td>
+				<td>h</td>
+				<td>i</td>
+				<td>j</td>
+				<td>k</td>
+				<td>l</td>
+				<td>m</td>
+				<td>n</td>
+				<td>o</td>
+				<td>p</td>
+				<td>q</td>
+				<td>r</td>
+				<td>s</td>
+				<td>t</td>
+				<td>u</td>
+				<td>v</td>
+				<td>w</td>
+				<td>x</td>
+				<td>y</td>
+				<td>z</td>
+				<td>(space)</td>
+				<td>.</td>
+				<td>,</td>
+				<td>;</td>
+				<td>:</td>
+				<td>'</td>
+			  	<td>!</td>
+		  		<td>?</td>
+		  </tr>
+		  <tr>
+	  			<td>b</td>
+				<td>c</td>
+				<td>d</td>
+				<td>e</td>
+				<td>f</td>
+				<td>g</td>
+				<td>h</td>
+				<td>i</td>
+				<td>j</td>
+		  		<td>k</td>
+				<td>l</td>
+				<td>m</td>
+				<td>n</td>
+				<td>o</td>
+				<td>p</td>
+				<td>q</td>
+				<td>r</td>
+				<td>s</td>
+				<td>t</td>
+				<td>u</td>
+				<td>v</td>
+				<td>w</td>
+		  		<td>x</td>
+				<td>y</td>
+				<td>z</td>
+				<td>(space)</td>
+				<td>.</td>
+				<td>,</td>
+				<td>;</td>
+				<td>:</td>
+				<td>'</td>
+			  	<td>!</td>
+				<td>?</td>
+				<td>a</td>
+		  </tr>
+	  	</table>
+		<br>
+		<p>
+			The permutations number 2 and number 4 correspond instead to the identity (i.e. 
+			the permutation that leaves everything fixed). The plaintext to be encrypted 
+			is as follows:</p>
+		<p style="text-align: center;">GOOD LUCK TO ALL THE TEAMS THAT PARTICIPATE 
+			IN THE RACE.</p>
+		<p>
+			This text is divided into words of 5 letters each:
+			BUONA|(space)FORT|UNA(space)A|(space)TUTT|E(space)LE(space)|SQUAD|RE(space)CH|E
+			(space)PAR|TECIP|ANO(space)A|LLA(space)G|ARA.
+			quindi crittato diventa:
+			CUPNB|.FPRU|VNB(space)B|.TVTU|F(space)ME(space)|TQVAE|SE.CI|F(space)QAS|UEDIQ|
+			BNP(space)B|MLB(SPACE)H|BRB,
+			We observe that the last block is not composed of 5 letters, as the plaintext 
+			does not have a length that is a multiple of 5.
+		</p>
+		<p>
+			We stress that in the plain text there will be no numbers, any accents will be 
+			replaced by the apostrophe symbol (') and there will be no distinction between 
+			uppercase and lowercase letters. Each team is allowed to apply variations to the 
+			simple polyalphabetic using up to a maximum of 9 special symbols, which must be 
+			indicated with the numbers from 1 to 9. Groups of consecutive letters (can 
+			also be words) are replaced by one of these symbols. Within each word these 
+			special symbols are not replaced by the permutation and therefore are skipped 
+			(CI1AOU is a word even if it has 6 symbols, but only 5 are part of the 
+			permutation alphabet).
+		</p>
+		<h6>Example (3)</h6>
+		<p>
+			We decide that 1 corresponds to the group of letters AO.
+			CIAO(space)A(space)TUTTI
+			it is divided into words by replacing AO with the number 1, 
+			but then not counting this symbol in the grouping:
+			CI1(space)A(space)|TUTTI
+			at this point the number 1 does not undergo any substitution during 
+			the encoding phase.
+		</p>
+		<h6>PRACTICAL CODE EXAMPLE (with variants)</h6>
+		<p>
+			Let's go back to the permutations mentioned in EXAMPLE (2).
+			Let's define the special symbols:
+		</p>
+		<ul>
+			<li>1 = GLI</li>
+			<li>2 = RA</li>
+			<li>3 = RE</li>
+			<li>4 = "" (the empty string, not to be confused with the space)</li>
+			<li>5 = CIAO COME STAI</li>
+			<li>6 = PC</li>
+			<li>7 = GN</li>
+			<li>8 = ZZ</li>
+			<li>9 = TT</li>
+		</ul>
+		<p>
+			Let's go back to the clear message of EXAMPLE (2):
+		</p>
+		<p style="text-align: center;">"BUONA FORTUNA A TUTTE LE SQUADRE CHE PARTECIPANO 
+			ALLA GARA."</p>
+		<p>
+			This text is divided into blocks taking into account the special symbols:
+			BUONA|(space)FORT|UNA(space)A|(space)TU9E(space)|LE(space)SQ|UAD3(space)C|
+			HE(space)PA|RTECI|PANO(space)|ALLA(space)|GA2.
+			then encrypted it becomes:
+			CUPNB|.FPRU|VNB(space)B|.TV9E.|ME.SR|VAE3(space)D|IE.PB|RTFCJ|QAOO.|BLMA.|HA2,
+		</p>
+		<p>
+			Each team also has the freedom to insert an additional special symbol, which 
+			must be indicated with the number 0, to represent an additional rule at will. 
+			For example, putting 0 in front of a word can simply indicate that this group 
+			of letters has been inverted (0ITTUT stands for ALL). The zero can be used up 
+			to a maximum of 10 times in the ciphertext. To avoid abuse, the particular 
+			use of zero must be approved by the organizers. However, in the last phase 
+			of the match (the attack on the coded texts of the various teams) the 
+			different possible meanings of this symbol will be made known (without 
+			saying which team uses that meaning).
+		</p>
+		<h6>ALGORITHM: Examples of legal and illegal 0s </h6>
+		<p>
+			Imagine being in a medieval tower at the service of your squire and having the 
+			task of encrypting and decrypting his messages. You have only your imagination 
+			and not the tools of abstract algebra. The zero must be used to indicate a 
+			simple rule, which can also be done by hand on a sheet of paper or in mind.
+			Recall that with P1, P2, P3, P4 and P5 we indicate the 5 permutations used to 
+			encrypt the words.
+		</p>
+		<b>Lawful use of the symbol 0</b> <br>
+		<ul>
+			<li>0 acts only on an already encrypted word;</li>
+			<li>0 can indicate the empty string;</li>
+			<li>(A1) given the XBCDE cipher, 0 can indicate that B is again replaced with 
+				a permutation (of those already used) depending on the letter that predicted 
+				it: for example, if X < Y I replace B with the permutation P1 otherwise with 
+				P2;</li>
+			<li>(A2) given the XYZTW cipher, 0 can indicate that the word is duplicated 
+				as follows 0XXYYZZTTWW (two words are obtained).
+				X indicates X replaced with P1,
+				Y indicates Y replaced with P2,
+				Z indicates Z replaced with P3,
+				T indicates T replaced with P4,
+				W indicates W replaced with P5.</li>
+		</ul>
+		<b>NOT lawful use of the symbol 0</b> <br>
+		<ul>
+			<li>Rule 0 should not be seen as a group letter operation.
+				For example, it is not valid to use 0 to transform the word ABCDE into 
+				0 (A + B) (A-B) CDE
+			</li>
+		</ul>

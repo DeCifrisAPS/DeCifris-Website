@@ -65,9 +65,9 @@ import { Cryptowars2016Component } from './attivita/gare-crittografiche/cryptowa
 import { Cryptowars2015Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2015/cryptowars2015.component';
 import { Cryptowars2014Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2014/cryptowars2014.component';
 import { Cryptowars2011Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/cryptowars2011.component';
-import { ClassicaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/classica/classica.component';
-import { PubblicaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/pubblica/pubblica.component';
-import { SimmetricaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/simmetrica/simmetrica.component';
+import { SimmetricaComponent} from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-ita/simmetrica/simmetrica.component';
+import { ClassicaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-ita/classica/classica.component';
+import { PubblicaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-ita//pubblica/pubblica.component';
 import { Crypto2020ItaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2020/crypto2020-ita/crypto2020-ita.component';
 import { Crypto2020EngComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2020/crypto2020-eng/crypto2020-eng.component';
 import { Crypto2019ItaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2019/crypto2019-ita/crypto2019-ita.component';
@@ -78,6 +78,13 @@ import { Crypto2016ItaComponent } from './attivita/gare-crittografiche/cryptowar
 import { Crypto2016EngComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2016/crypto2016-eng/crypto2016-eng.component';
 import { Crypto2015ItaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2015/crypto2015-ita/crypto2015-ita.component';
 import { Crypto2015EngComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2015/crypto2015-eng/crypto2015-eng.component';
+import { Crypto2014ItaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2014/crypto2014-ita/crypto2014-ita.component';
+import { Crypto2014EngComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2014/crypto2014-eng/crypto2014-eng.component';
+import { Crypto2011ItaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-ita/crypto2011-ita.component';
+import { Crypto2011EngComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-eng/crypto2011-eng.component';
+import { ClassicComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-eng/classic/classic.component';
+import { PublicComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-eng/public/public.component';
+import { SymmetricComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-eng/symmetric/symmetric.component';
 
 @NgModule({
   declarations: [
@@ -151,7 +158,14 @@ import { Crypto2015EngComponent } from './attivita/gare-crittografiche/cryptowar
     Crypto2016ItaComponent,
     Crypto2016EngComponent,
     Crypto2015ItaComponent,
-    Crypto2015EngComponent
+    Crypto2015EngComponent,
+    Crypto2014ItaComponent,
+    Crypto2014EngComponent,
+    Crypto2011ItaComponent,
+    Crypto2011EngComponent,
+    ClassicComponent,
+    PublicComponent,
+    SymmetricComponent
   ],
   imports: [
     BrowserModule,

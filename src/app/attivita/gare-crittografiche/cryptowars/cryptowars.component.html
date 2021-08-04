@@ -1,6 +1,6 @@
 <ng-sidebar-container>
 	<ng-sidebar opened="true" position="left" id="right-sidebar" mode="push" [autoCollapseWidth]="799"> 
-		<ul class="noIndent" align="left">
+		<ul *ngIf="lingua=='ita'" class="noIndent" align="left">
 			<!-- Utilizziamo questo trick per evitare di rendere visibile l'autofocus al lettore. -->
 			<li style="display:none">
 				<button autofocus="autofocus"></button>
@@ -38,6 +38,47 @@
 			<li>
 				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2011">
 					Edizione 2011
+				</button>
+			</li>
+		</ul>
+		<ul *ngIf="lingua=='eng'" class="noIndent" align="left">
+			<!-- Utilizziamo questo trick per evitare di rendere visibile l'autofocus al lettore. -->
+			<li style="display:none">
+				<button autofocus="autofocus"></button>
+			</li>
+			<li>
+				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2020">
+					2020 Edition
+				</button>
+			</li>
+			<li>
+				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2019">
+					2019 Edition
+				</button>
+			</li>
+			<li>
+				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2018">
+					2018 Edition
+				</button>
+			</li>
+			<li>
+				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2016">
+					2016 Edition
+				</button>
+			</li>
+			<li>
+				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2015">
+					2015 Edition
+				</button>
+			</li>
+			<li>
+				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2014">
+					2014 Edition
+				</button>
+			</li>
+			<li>
+				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2011">
+					2011 Edition
 				</button>
 			</li>
 		</ul>

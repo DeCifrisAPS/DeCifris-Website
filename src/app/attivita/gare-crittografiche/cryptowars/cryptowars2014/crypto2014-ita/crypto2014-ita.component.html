@@ -1,0 +1,740 @@
+<h2>EDIZIONE 2014 (RSA Awareness Contest)</h2>
+	<p>
+		Il CryptoLabTN (Laboratory of Industrial Mathematics and Cryptography at University of Trento), 
+		in collaborazione con Clusit (The Italian Association for Computer Security), ha organizzato l'
+		"RSA Awareness Contest".
+		L'evento è organizzato nell'ambito del mese europeo della sicurezza informatica (ECSM) e si 
+		rivolge agli studenti con nozioni di programmazione. Il nostro concorso mira a sensibilizzare 
+		sul fatto che gli algoritmi crittografici invecchiano e dovrebbero essere continuamente testati, 
+		mantenuti, migliorati (che è ciò che i crittografi, tra le altre cose, fanno).
+	</p>
+	<div id="programmaGenerale">
+		<h3>Programma generale</h3>
+		<ul>
+			<li>Lunedì 13 ottobre alle ore 13:00 (ora di Trento) abbiamo pubblicato un set di
+				<a href="http://en.wikipedia.org/wiki/RSA_(cryptosystem)">chiavi pubbliche</a>
+				(moduli e relativi esponenti) per RSA.				
+			<li>I partecipanti hanno avuto tempo fino a venerdì 17 ottobre alle 17:00 per rompere
+				queste chiavi (ovvero trovare le rispettive chiavi private) e inviare i loro risultati.</li>
+			<li>I partecipanti sono stati classificati in base al numero di chiavi rotte
+				e all'ora dell'ultima submission.</li>
+			<li>I premi vengono assegnati ai primi tre gruppi classificati.</li>
+		</ul>
+	</div>
+	<div id="news">
+		<h3>News</h3>
+		<ul>
+			<li>[24/11/2014] Abbiamo organizzato un evento per le premiazioni durante un Workshop 
+				sulla Crittografia che si terrà a Trento il 22 dicembre (maggiori dettagli 
+				<a href="http://www.science.unitn.it/~sala/events2014/BunnyTN5.html">qui</a>). </li>
+			<li> [24/10/2014] Abbiamo una nuova sezione feedback dove descriviamo come abbiamo progettato 
+				il concorso e pubblichiamo alcuni dei feedback che abbiamo ricevuto dai partecipanti. Controlla! </li>
+			<li> [20/10/2014] Pubblicata la classifica finale! Controlla i premi e la classifica.</li>
+			<li> [17/10/14, circa 18:00] Il concorso è terminato! Grazie per la partecipazione! 
+				Le statistiche finali sono state pubblicate. A breve (lunedì?) pubblicheremo la classifica finale.</li>
+			<li> [17/10/14] Statistiche aggiornate.</li>
+			<li> [16/10/14] Stats updated.</li>
+			<li> [15/10/14] Abbiamo pubblicato alcune statistiche della gara in corso. 
+				Controlla la sezione dedicata!</li>
+			<li> [13/10/14] Il concorso è iniziato! Controlla le istruzioni per scaricare il materiale del concorso.</li> 
+			<li> [3/10/14] Abbiamo un nuovo riassunto del concorso, sono state pubblicate le istruzioni e definiti i premi! 
+				Controlla le schede appropriate.</li>
+			<li>[3/10/14] È stata creata una mail di contatto per il concorso! Puoi raggiungerci all'indirizzo
+				<a href="mailto:contest.cryptolabtn@gmail.com">contest.cryptolabtn@gmail.com</a>.
+			</li>
+		</ul>
+	</div>
+	<!-- <div id="contest">
+		<h3>Contest</h3>
+		<p>
+			Abbiamo pubblicato un set di chiavi pubbliche ECC. Un partecipante doveva trovare la 
+			chiave privata corrispondente di ciascuna chiave pubblica risolvendo un ECDLP 
+			(Elliptic Curve Discrete Logarithm Problem).
+		</p>
+	</div> -->
+	<div id="materiale">
+		<h3>Materiale</h3>
+		<p>
+			Il set di chiavi pubbliche RSA è <a href="../../../../../assets/attivita/cryptowars/
+			2014RSAcontest.publicKeys.txt">pubblico</a> (sebbene il concorso sia ora chiuso).
+		<p>
+			Il formato per il materiale del concorso è un file di testo. Ogni riga rappresenta 
+			una singola chiave pubblica e contiene tre numeri scritti in base decimale e separati 
+			da uno spazio: un contatore che identifica la chiave pubblica 
+			<img src="https://latex.codecogs.com/gif.latex?\
+				large&amp;space;(1,2,3,...)"/>, un modulo e un esponente pubblico.
+		</p>
+	  	<p>
+			<em>Avviso per gli utenti Windows:</em> Se apri i file (cioè in blocco note) potresti 
+			vedere tutto su una singola riga. Non dovrebbe essere troppo difficile elaborarli 
+			manualmente o automaticamente per avere ogni chiave pubblica nel formato appropriato.
+		</p>
+	</div>
+	<div id="risposte">
+		<h3>Invio delle risposte</h3>
+		<p> Un partecipante è identificato da un indirizzo e-mail univoco.
+			Un partecipante può presentare una o più soluzioni al concorso su
+			in qualsiasi momento tra la pubblicazione del Materiale del Concorso e la fine
+			del contesto, che è fissato venerdì 17 ottobre alle 17:00.
+		</p>
+		<p> Invii una soluzione per il concorso inviando una mail a 
+			<a href="mailto:contest.cryptolabtn@gmail.com">contest.cryptolabtn@gmail.com</a>.</p>
+		<p>
+			Un invio può consistere in una o più soluzioni.
+			Sono consentiti invii multipli ma saranno considerati validi solo i primi tre invii per ogni 
+			chiave pubblica. Ulteriori invii verranno scartati. Il formato per l'invio è un file di testo. 
+			Ogni riga rappresenterà una soluzione per una singola chiave pubblica e conterrà due numeri 
+			scritti in base decimale e separati da uno spazio: un contatore che identifica la chiave 
+			pubblica <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;(1, 2, 3, ...)"/>,
+			i due fattori primi e l'esponente privato.
+		</p>
+	</div>
+	<div id="coding">
+		<h3>Coding</h3>
+		<p>Devo scrivere un mio programma per trovare le soluzioni? La risposta breve è: no, ma sì. </p>
+		<p>
+			La risposta lunga è: non abbiamo modo di verificare se hai scritto del codice tuo per risolvere i problemi 
+			del nostro concorso (non ti chiediamo di mostrare il codice e puoi lavorare con il linguaggio di 
+			programmazione che preferisci). E probabilmente sarà più facile cercare qualche programma già esistente 
+			che faccia tutto il lavoro. Ma il punto centrale di questo concorso è sfidare te stesso a comprendere 
+			un problema crittografico, cercare soluzioni possibili, scrivere codice che implementa le soluzioni 
+			e cercare di renderlo sempre più efficiente.
+		</p>
+		<br>
+		<p> Devo creare i miei algoritmi per trovare le soluzioni? Assolutamente no!</p>
+		<p>Ci sono tonnellate di buoni algoritmi che potrebbero rompere chiavi corte o deboli. 
+			Guardati intorno e trova un algoritmo che sei in grado di capire. Quindi prova a 
+			implementarlo. Questa sembra già una buona strategia per divertirsi al concorso.
+		</p>
+	</div>
+	<div id="istruzioni">
+		<h3>Istruzioni</h3>
+		<p>
+			Una chiave pubblica RSA <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;(N,e)"/> è data da due interi <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;N"/> (il modulo) ed <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;e"/> (l'esponente pubblico). 
+			Il modulo è il prodotto di due numeri primi <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;p,q"/>:
+		</p>
+		<p style="text-align: center;">
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;N=pq."/>
+		</p>
+		<p>
+			Un messaggio è rappresentato come un intero <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;m"/> (testo in chiaro) tale che <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;0&lt;m&lt;N"/>. 
+			La crittografia produce un intero <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;c"/> (testo cifrato) attraverso l'elevamento a 
+			potenza dell'esponente pubblico modulo <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;N"/>:
+		</p>
+		<p style="text-align: center;">
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;c \equiv me \mod{N}."/>
+		</p>
+		<p>
+			La chiave privata RSA associata <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;(N,d)"/> è data dal modulo <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;e"/> da un intero <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;d"/> (esponente privato). 
+			L'esponente privato è legato all'esponente pubblico dalla seguente relazione:
+		</p>
+		<p style="text-align: center;">
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;de \equiv 1 \mod{(p-1)(q-1)}."/>
+		</p>
+		<p>
+			La decifratura data un testo cifrato <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;c"/> recupera il messaggio <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;m"/> attraverso l'elevamento a potenza dell'esponente privato modulo 
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;N"/>:
+		</p>
+		<p style="text-align: center;">
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;m \equiv c^d \mod{N}"/>
+		</p>
+		<p>
+			La correttezza dell'algoritmo può essere dimostrata dal teorema di Eulero. 
+			Rompere una chiave pubblica RSA significa trovare <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;d"/> o fattorizzare <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;N"/> in <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;p"/> e <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;q"/>. Trovare la fattorizzazione del modulo o dell'esponente privato equivale a un 
+			calcolo efficiente (vedi, ad esempio <a href="http://www.ams.org/notices/199902/boneh.pdf">qui</a>).
+		</p>
+		<p>
+			Il materiale del concorso è un insieme di chiavi pubbliche RSA. Non ti 
+			forniremo messaggi crittografati da decifrare. Una soluzione contest 
+			per una singola chiave pubblica è costituita sia dai fattori primi 
+			del modulo che dall'esponente privato.
+		</p>
+	</div>
+	<div id="classificaFinale">
+		<!-- Ranking -->
+		<h3>Classifica finale</h3>
+		<table class="table">
+			<thead>
+				 <tr class="header">
+					  <th style="text-align: center"> Rk </th>
+					  <th style="text-align: center"> Partecipanti </th>
+					  <th style="text-align: center"> Ora dell'ultima soluzione inviata</th>
+					  <th style="text-align: center"> Chiavi valide </th>
+				 </tr>
+			</thead>
+			<tbody>
+				<tr style="background-color: LIGHTYELLOW">
+					<td>1</td>
+					<td> Lorenzo Felice Cameroni </td>
+					<td> 00:55, 17/10/2014 </td>
+					<td> 45 </td>
+				</tr>
+				<tr style="background-color: WHITESMOKE">
+					<td>2</td>
+					<td> CryptoBriscola* </td>
+					<td> 15:10, 17/10/2014 </td>
+					<td> 45 </td>
+				</tr>
+				<tr style="background-color: ANTIQUEWHITE">
+					<td>3</td>
+					<td> CryptoBO** </td>
+					<td> 11:17, 17/10/2014 </td>
+					<td> 44 </td>
+				</tr>
+				<tr class="even">
+					<td align="right">4</td>
+					<td align="right">Mauro Piva</td>
+					<td align="right">11:50, 17/10/2014</td>
+					<td align="right">44</td>
+					</tr>
+					<tr class="odd">
+					<td align="right">5</td>
+					<td align="right">Francesco Mantovani</td>
+					<td align="right">12:20, 17/10/2014</td>
+					<td align="right">44</td>
+					</tr>
+					<tr class="even">
+					<td align="right">6</td>
+					<td align="right">Nanni Bassetti</td>
+					<td align="right">10:33, 17/10/2014</td>
+					<td align="right">43</td>
+					</tr>
+					<tr class="odd">
+					<td align="right">7</td>
+					<td align="right">Luca Chiodini</td>
+					<td align="right">16:52, 17/10/2014</td>
+					<td align="right">43</td>
+					</tr>
+					<tr class="even">
+					<td align="right">8</td>
+					<td align="right">Alessandro Sebastian Podda</td>
+					<td align="right">12:35, 14/10/2014</td>
+					<td align="right">36</td>
+					</tr>
+					<tr class="odd">
+					<td align="right">9</td>
+					<td align="right">Cristiano Sgaravato</td>
+					<td align="right">10:57, 17/10/2014</td>
+					<td align="right">36</td>
+					</tr>
+					<tr class="even">
+					<td align="right">10</td>
+					<td align="right">Luciano Giuseppe</td>
+					<td align="right">15:05, 17/10/2014</td>
+					<td align="right">36</td>
+					</tr>
+					<tr class="odd">
+					<td align="right">11</td>
+					<td align="right">Alessio Serraino</td>
+					<td align="right">16:57, 17/10/2014</td>
+					<td align="right">36</td>
+					</tr>
+					<tr class="even">
+					<td align="right">12</td>
+					<td align="right">Matteo Rizzo</td>
+					<td align="right">13:20, 17/10/2014</td>
+					<td align="right">34</td>
+					</tr>
+					<tr class="odd">
+					<td align="right">13</td>
+					<td align="right">Flavio Santoro</td>
+					<td align="right">16:59, 15/10/2014</td>
+					<td align="right">33</td>
+					</tr>
+					<tr class="even">
+					<td align="right">14</td>
+					<td align="right">John Johnson</td>
+					<td align="right">20:29, 15/10/2014</td>
+					<td align="right">33</td>
+					</tr>
+					<tr class="odd">
+					<td align="right">15</td>
+					<td align="right">Cristiano Regni</td>
+					<td align="right">18:16, 15/10/2014</td>
+					<td align="right">30</td>
+					</tr>
+					<tr class="even">
+					<td align="right">16</td>
+					<td align="right">Amedeo Sgueglia</td>
+					<td align="right">23:55, 15/10/2014</td>
+					<td align="right">30</td>
+					</tr>
+					<tr class="odd">
+					<td align="right">17</td>
+					<td align="right">Luca Di Stefano</td>
+					<td align="right">20:33, 15/10/2014</td>
+					<td align="right">28</td>
+					</tr>
+				</tbody>
+			</table>
+			<p> Notes: <br>
+				*: Gruppo formato da Carlo Brunetta, Andrea Vinci, Jacopo di Bonito and Alessandro Melloni.<br>
+				**: Gruppo formato da Andrea Dari and Claudio Costa. <br>
+				La classifica include solo i gruppi che hanno rotto più di 20 chiavi.
+			</p>
+	</div>
+	<div id="statistiche">
+		<h3>Statistiche</h3>
+		<ul>
+			<li>Gruppi partecipanti: 21</li>
+			<li>Submissions: 52</li>
+			<li>Numero di chiavi inviate: 677</li>
+			<li>Chiavi valide: 657</li>
+			<li>Chiavi rotte: 46</li>
+			<li>Chiavi non rotte: 2</li>
+			</ul>
+		<p>Identificatore chiavi non rotte: 37, 43.</p>
+	</div>
+	<div id="premi">
+		<!-- Premi -->
+		<h3>Premi</h3>
+		<p>
+			Il vero premio che ottieni partecipando a questo concorso è divertirti
+			imparando e facendo le cose da soli!
+		</p>
+		<p>
+			Al vincitore verrà assegnata l'iscrizione gratuita a <a href="http://www.clusit.it/">Clusit</a>. 
+			Coloro che si classificheranno nelle prime tre posizioni saranno invitati a partecipare (gratuitamente) 
+			a tutti gli eventi che il CryptoLabTN ospiterà durante tutto il 2015 e il 2016. 
+			Inoltre li inviteremo a pranzo il giorno della premiazione.
+		</p>
+		<p>
+			I premi verranno assegnati durante uno dei prossimi eventi
+			organizzati presso l'Università di Trento. Seguiranno aggiornamenti.
+		</p>
+	</div>
+	<div id="classifica">
+		<!-- Ranking -->
+		<h3>Classifica</h3>
+		<p>
+			La graduatoria tra i partecipanti viene effettuata considerando quanto segue
+			due semplici regole che si applicano a tutte le presentazioni valide.
+		</p>
+		<ol>
+			<li>Un partecipante si classifica più in alto di un altro partecipante se ha falsificato più firme.</li>
+			<li>Un partecipante si classifica più in alto di un altro partecipante con lo stesso numero di firme contraffatte
+				se il loro ultimo invio valido è stato effettuato in anticipo.</li>
+		</ol>
+		<h3> Come abbiamo pensato il contest? </h3> <hr>
+		<p>
+			Sapevamo di volere un concorso in cui il solo utilizzo di algoritmi di 
+			fattorizzazione generici non sarebbe stato sufficiente per eccellere nella 
+			competizione. Quindi avevamo bisogno di generare chiavi deboli. Cosa sono 
+			le chiavi deboli? Queste possono essere definite in modo informale come 
+			classi di chiavi per ​​cui esiste un algoritmo per scopi speciali, che ha 
+			prestazioni migliori del miglior algoritmo per la fattorizzazione del modulo.
+		</p>
+		<p>
+			Innanzitutto, abbiamo selezionato la classe di chiavi deboli che vorremmo 
+			generare. Abbiamo scelto:
+		</p>
+		<ul>
+			<li>
+			<em>chiavi deboli a wiener</em>: chiavi con esponente privato piccolo
+			(<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;d>\frac{1}{3}N^{1/4}"/>)
+			 che possono essere rotte implementando l'
+			<a href="http://en.wikipedia.org/wiki/Wiener's_attack">attacco di Wiener</a>, 
+			basato sulle frazioni continue;
+			</li>
+			<li>
+			<em>chiavi deboli a Fermat</em>: chiavi dove il modulo è il prodotto di numeri 
+			primi molto vicini tra loro
+			(i.e. <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;| p - q | \leq N^{1/4}"/>),
+			quale può essere rotto facilmente con la <a href="http://en.wikipedia.org/wiki/
+			Fermat's_factorization_method">fattorizzazione di Fermat</a>;
+			</li>
+			<li>
+			<em>chiavi deboli a Pollard <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;p-1"/></em>: chiavi dove il modulo ha un fattore primo <img 
+			src="https://latex.codecogs.com/gif.latex?\large&amp;space;p"/> per cui
+			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;p-1"/> è
+			<a href="http://en.wikipedia.org/wiki/Smooth_number"> <img src="https://latex.
+				codecogs.com/gif.latex?\large&amp;space;B"/>-smooth</a> per qualche valore 
+				piccolo di <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;B">. 
+				Queste chiavi possono essere rotte con	l' <a href="http://en.wikipedia.org/wiki/
+				Pollard's_p_%E2%88%92_1_algorithm">attacco di Pollard <img src="https://latex.
+				codecogs.com/gif.latex?\large&amp;space;p-1"/> </a>.
+			</li>
+			</ul>
+		<p>
+			A queste tre classi abbiamo aggiunto un paio di chiavi con un fattore primo 
+			comune, che può essere facilmente rotto calcolando Greates Common Divisors 
+			(queste possono essere pensate come chiavi deboli di casualità).
+		</p>
+		<p>
+			Successivamente, abbiamo selezionato alcune lunghezze di chiave 
+			(60,80,100,150,200,300,512,1024) e per ogni lunghezza di chiave abbiamo generato 
+			5 chiavi deboli secondo i metodi sopra* e una sesta chiave forte, una chiave 
+			generata casualmente senza forzare alcun tipo di debolezza precedentemente nota. 
+			Questo processo ha generato 48 chiavi che sono state ordinate per lunghezza della 
+			chiave e metodo di generazione (chiave forte, coppia di chiavi prime comuni, 
+			chiave wiener, chiave fermat, chiave pollard).
+		</p>
+		<p>
+			*tutta la nostra codifica è stata fatta nel linguaggio Magma. Sfortunatamente, 
+			un bug nella nostra implementazione della generazione di chiavi deboli pollard 
+			ha portato a chiavi che, solo per le lunghezze di chiave più lunghe, avevano 
+			un fattore primo molto piccolo. Ne siamo venuti a conoscenza solo quando il 
+			concorso era già iniziato. 
+		</p>
+	</div>
+	<div id="feedback">
+		<h3> Feedback </h3> 
+		<hr>
+		<p> Dopo il concorso porremo ai partecipanti le seguenti domande: </p>
+		<ul><em>
+		<li> Sei uno studente?</li>
+		<li> Da dove vieni?</li>
+		<li> Hai implementato qualche algoritmo per partecipare? In quale linguaggio? 
+			Quali algoritmi hai implementato?</li>
+		<li> Hai utilizzato alcuni strumenti esistenti? Quali?</li>
+		<li> Avevi accesso a un cluster o utilizzavi solo desktop/laptop personali?</li>
+		<li> Hai imparato qualcosa di nuovo riguardo a ECC?</li>
+		</em></ul>
+		<p>Riportiamo di seguito le risposte dei partecipanti.</p>
+		<hr>
+		<h5>Nanni Bassetti (6° classificato)</h5>
+		<ul>
+			<li> 
+				<em>Sei uno studente?</em>
+				<p> No, sono un esperto di digital forensics e ho 44 anni, sono laureato in Informatica presso l'Università degli Studi di Bari.</p>
+			</li>
+			<li>
+				<em>Da dove vieni?</em>
+				<p> Bari, Italia.</p>
+			</li>
+			<li>
+				<em> Hai implementato qualche algoritmo per partecipare? In quale linguaggio? 
+					Quali algoritmi hai implementato?</em>
+				<p> Sì, ho codificato uno script bash e uno script python che possono 
+					fattorizzare il modulo N e trovare l'esponente privato "d", 
+					ma sono troppo lenti.
+				</p>
+			</li>
+			<li>
+				<em>Hai utilizzato alcuni strumenti esistenti? Quali?</em>
+				<p>Sì, ho utilizzato una combinazione di strumenti rsatool.py e il sito Web
+					<a href="http://www.factordb.com/">http://www.factordb.com/</a>.
+				</p>
+			</li>
+			<li>
+				<em>Avevi accesso a un cluster o utilizzavi solo desktop/laptop personali?</em>
+				<p>Ho usato il mio laptop e un sito web <a href="http://www.factordb.com/">http://www.factordb.com/</a>.
+				</p>
+			</li>
+			<li>
+				<em>Hai imparato qualcosa di nuovo riguardo a ECC?</em>
+				<p> Sì, è stato molto formativo.</p>
+			</li>
+		</ul>
+		<hr>
+		<h5>Luca Chiodini (7° classificato)</h5>
+		<ul>
+			<li> 
+				<em>Sei uno studente?</em>
+				<p>Sì, quinto anno di scuola superiore.</p>
+			</li>
+			<li>
+				<em>Da dove vieni?</em>
+				<p> Vivo vicino a Bergamo.</p>
+			</li>
+			<li>
+				<em> Hai implementato qualche algoritmo per partecipare? In quale linguaggio? 
+					Quali algoritmi hai implementato?</em>
+				<p>
+					Sono stati utilizzati C++ (con boost::multiprecision per gestire grandi 
+					numeri) e python. Tra le altre piccole cose, ho scritto un checker 
+					(dato un output pronto per essere inviato, ha accertato che le chiavi 
+					RSA erano valide).
+				</p>
+			</li>
+			<li>
+				<em>Hai utilizzato alcuni strumenti esistenti? Quali?</em>
+				<br>
+				Molti! Ad esempio:
+				<ul>
+					<li>
+						<a href="https://github.com/ius/rsatool">https://github.com/ius/rsatool</a>,
+					</li>
+					<li>
+						<a href="https://github.com/pablocelayes/rsa-wiener-attack">https://github.com/pablocelayes/rsa-wiener-attack</a>,
+					</li>
+					<li>
+						<a href="http://gilchrist.ca/jeff/factoring/nfs_beginners_guide.html">http://gilchrist.ca/jeff/factoring/nfs_beginners_guide.html</a>
+					</li>
+				</ul>
+				<br>
+			</li>
+			<li>
+				<em>Avevi accesso a un cluster o utilizzavi solo desktop/laptop personali?</em>
+				<p>Ho usato il mio desktop (non un cluster, anche se abbastanza potente).</p>
+			</li>
+			<li>
+				<em>Hai imparato qualcosa di nuovo riguardo a ECC?</em>
+				<p> Ho imparato l'algoritmo giusto per questa competizione.</p>
+			</li>
+		</ul>
+		<hr>
+		<h5>Luca Di Stefano (17° classificato)</h5>
+		<ul>
+		<li> 
+			<em>Sei uno studente? Da dove vieni?</em>
+			<p>Sono uno studente dell'Università degli Studi dell'Aquila, attualmente 
+				frequento il corso di Laurea Magistrale in Ingegneria Informatica e Automatica.
+			</p>
+		</li>
+		<li>
+			<em> Hai implementato qualche algoritmo per partecipare? In quale linguaggio? 
+				Quali algoritmi hai implementato?</em>
+			<p>
+				Ho iniziato utilizzando un'implementazione Python dell'attacco di Wiener 
+				che ho scritto alcuni mesi fa. Il codice è disponibile su <a href="
+				https://github.com/lou1306/PythonRSA">gitHub</a>.
+			</p>
+		</li>
+		<li>
+			<em>Hai utilizzato alcuni strumenti esistenti? Quali?</em>
+			<p> Quindi ho forzato le prime 24 chiavi applicando la funzione MATLAB factor() 
+				sui loro moduli. La funzione era inutile per moduli più lunghi perché era 
+				basata su un semplice algoritmo di setaccio. Stavo per implementare un 
+				quadratic sieve ma il tempo è scaduto...</p>
+		</li>
+		<li>
+			<em>Avevi accesso a un cluster o utilizzavi solo desktop/laptop personali?</em>
+			<p> Ho utilizzato solo il mio laptop.</p>
+		</li>
+		<li>
+			<em>Hai imparato qualcosa di nuovo riguardo a ECC?</em>
+			<p> Avevo già una discreta conoscenza di RSA, ma ho sicuramente imparato 
+				qualcosa sulla fattorizzazione di interi e sul crivello quadratico!</p>
+		</li>
+		</ul>
+		<hr>
+		<h5>Luciano Giuseppe (10° classificato)</h5>
+		<ul>
+			<li> 
+				<em>Sei uno studente?</em>
+				<p>Sono uno studente magistrale dell'università di Salerno.</p>
+			</li>
+			<li>
+				<em>Da dove vieni?</em>
+				<p> Sono della provincia di Avellino.</p>
+			</li>
+			<li>
+				<em> Hai implementato qualche algoritmo per partecipare? In quale linguaggio? 
+					Quali algoritmi hai implementato?</em>
+				<p> No.</p>
+			</li>
+			<li>
+				<em>Hai utilizzato alcuni strumenti esistenti? Quali?</em>
+				<p>Ho usato yafu (<a href="http://sourceforge.net/projects/yafu/">qui</a>) 
+					per i numeri sotto le 90 cifre, GGNFS e MSIEVE per altri numeri come letto 
+					<a href="http://gilchrist.ca/jeff/factoring/nfs_beginners_guide.html">qui</a>.
+				</p>
+			</li>
+			<li>
+				<em>Avevi accesso a un cluster o utilizzavi solo desktop/laptop personali?</em>
+				<p>Ho usato il mio PC desktop (pentium D, dual core)</p>
+			</li>
+		</ul>
+		<hr>
+		<h5>CryptoBriscola (2° classificati) </h5>
+		<ul>
+			<li> 
+					<em>Siete studenti?</em>
+					<p>Tutti della magistrale di Critto (NdR: all from MSc of Cryptography at University of Trento).</p>
+			</li>
+			<li>
+					<em>Da dove venite?</em>
+					<p>  Misto Italia.</p>
+			</li>
+			<li>
+					<em> Hai implementato qualche algoritmo per partecipare? In quale linguaggio? 
+					Quali algoritmi hai implementato?</em>
+					<p> [...] siamo andati per la via più rapida. Magma, C++, Python. 
+						Alcuni eran già scritti, altri son stati adattati per il nostro scopo. </p>
+			</li>
+			<li>
+					<em>Hai utilizzato alcuni strumenti esistenti? Quali?</em>
+					<p> Algoritmi pre-fatti per fattorizzare con algoritmi tipo GNFS </p>
+			</li>
+			<li>
+					<em>Avevi accesso a un cluster o utilizzavi solo desktop/laptop personali?</em>
+					<p>Un portatile windows 8 per le prime chiavi piccole e quelle deboli ad 
+						attacchi particolari. (circa 29 chiavi) Un macbook pro per chiavi 
+						che sopra creavano problemi di memoria su windows. (circa 10 chiavi) 
+						Carta e penna per un attacco pigro facendo i gcd tra i vari n e così 
+						son uscite un paio di chiavi. (6 chiavi) Così siamo rimaste alle 3 
+						che non abbiam potuto fare. In nottata abbiam fatto partire un piccolo 
+						server con qualche gpu e il GNFS Python che però non ha fruttato 
+						risultati. [...] </p>
+			</li>
+			<li>
+					<em>Hai imparato qualcosa di nuovo riguardo a ECC?</em>
+					<p> Abbiamo testato un po' quel che abbiam visto a lezione!</p>
+			</li>
+		</ul>
+		<hr>
+		<h5>Francesco Mantovani (5° classificato)</h5>
+		<ul>
+			<li> 
+				<em>Sei uno studente?</em>
+				<p> Non sono uno studente, sono un web developer ma negli ultimi mesi ho lavorato in Corea come aiuto cuoco. </p>
+			</li>
+			<li>
+				<em>Da dove vieni?</em>
+				<p> Seoul, Auckland (NdR: moved during the contest) </p>
+			</li>
+			<li>
+				<em>Hai implementato qualche algoritmo per partecipare? In quale linguaggio? 
+					Quali algoritmi hai implementato?</em>
+				<p>Non ho scritto nemmeno una riga di codice, ho solo utilizzato python e perl per tradurre alcuni risultati che erano in esadecimale in decimale. 
+				</p>
+			</li>
+			<li>
+				<em>Hai utilizzato alcuni strumenti esistenti? Quali?</em>
+				<p> mi sono imbattuto in <a href="http://m0x39.blogspot.it/2012/12/0x00-intro
+					duction-this-post-is-going-to.html">questo post</a> che spiega per filo e 
+					per segno come aprire una chiave RSA avendo questi dati. Mi sono quindi 
+					collegato a <a href="http://www.factordb.com/">http://www.factordb.com/</a> 
+					e ho incominciato a trovare i numeri primi avendo solo i moduli. Trovati i 
+					numeri primi e stato poi facile grazie a rsatool <a href="https://github.
+					com/ius/rsatool">https://github.com/ius/rsatool</a> trovare "d". Non tutti 
+					i numeri però erano presenti nel DB. Il giorno seguente, avendo commesso 
+					alcuni errori, ho rivisto il lavoro e sono tornato a fare delle query sul 
+					database; mi sono accorto che alcuni dei numeri che il giorno prima non 
+					erano presenti nel db, il giorno seguente erano presenti. Forse, avendo 
+					ricevuto più richieste per quel dato numero, dall'altra parte si sono 
+					messi a cercare i numeri primi di quei moduli. </p>
+			</li>
+			<li>
+				<em>Hai imparato qualcosa di nuovo riguardo a ECC?</em>
+				<p>Ho imparato qualcosa di nuovo? Un sacco di cose, soprattutto come funziona 
+					la vulnerabilità Heartbleed <a href="http://countuponsecurity.com/tag/
+					extract-rsa-key/">http://countuponsecurity.com/tag/extract-rsa-key/</a></p>
+			</li>
+		</ul>
+		<hr>
+		<h5>Lorenzo Cameroni (1° classificato) </h5>
+		<ul>
+			<li> 
+					<em>Sei uno studente?</em>
+					<p>Sono uno studente lavoratore di 26 anni (beh, onestamente più lavoratore che studente, sono un programmatore Java a tempo pieno e uno studente di matematica).</p>
+			</li>
+			<li>
+					<em>Da dove venite?</em>
+					<p> Lavoro e studio a Milano.</p>
+			</li>
+			<li>
+					<em> Hai implementato qualche algoritmo per partecipare? In quale linguaggio? 
+					Quali algoritmi hai implementato?</em>
+					<p> Lavorare a tempo pieno non mi lascia molto tempo per codificare 
+						qualche algoritmo intelligente, l'unico che ho scritto non è così smart: 
+						una ricerca di forza bruta per un fattore molto vicino alla radice 
+						quadrata di n, ma era troppo lento per la chiave fornita eccetto che per i primi casi. 
+						Ho scritto questo con PARI/GP. Non ho provato a codificare il rho 
+						di Pollard (che penso sia l'algoritmo di fattorizzazione serio più 
+						semplice) perché sapevo che la funzione del fattore PARI/GP utilizzava 
+						già questo algoritmo (si spera meglio di come potrei codificare in 
+						poche ore). </p>
+			</li>
+			<li>
+					<em>Hai utilizzato alcuni strumenti esistenti? Quali?</em>
+					<p> Sì, la maggior parte del mio lavoro è stato trovare lo strumento 
+						giusto per la chiave giusta, indovinare che tipo di "errore" è stato 
+						fatto quando sono state create le chiavi. Qui il più utile che ho trovato: </p>
+					<ul>
+						<li>PARI/GP per calcoli generali e per fattorizzare numeri "piccoli" 
+							(o grandi con fattori piccoli) utilizzando la funzione standard 
+							"fattore".</li>
+						<li>Questa applet java del browser per la fattorizzazione della curva ellittica (e per
+							Self Initializing Quadratic Sieve) (conoscevo già l'idea alla base
+							fattorizzazione della curva ellittica ma non ho avuto abbastanza tempo per studiare
+							dettaglio il setaccio quadratico). Con questa applet ho calcolato circa 90
+							cifre in circa 4 ore ciascuno, sebbene altri (anche più grandi)
+							il numero è stato scomposto in pochi secondi.</li>
+						<li>Una versione modificata di <a href="https://github.com/wihoho/
+							Wiener-s-Attack">questo codice</a> per l'attacco di Wiener.
+							La mia modifica mi ha permesso di leggere i dati di input in un 
+							formato diverso.</li>
+					</ul>
+			</li>
+			<li>
+					<em>Avevi accesso a un cluster o utilizzavi solo desktop/laptop personali?</em>
+					<p>Solo il mio laptop (e qualche volta il mio computer di lavoro).</p>
+			</li>
+			<li>
+					<em>Hai imparato qualcosa di nuovo riguardo a ECC?</em>
+					<p> Certo: prima di questa competizione non avevo mai sentito parlare 
+						di attacchi a RSA come quello di Wiener, né potevo immaginare che 
+						(come ho letto <a href="http://arstechnica.com/business/2012/02/
+						crypto-shocker-four-of-every-1000-public-keys-provide-no-security/">qui
+						</a> ) nel mondo reale diverse chiavi RSA a 1024 o 2048 bit non correlate 
+						potessero condividere un fattore primo (sebbene questo accada per lo più
+						 quando tali chiavi vengono generate su dispositivi embedded con 
+						 generatori di numeri pseudo-casuali scadenti)
+					</p>
+			</li>
+		</ul>
+		<hr>
+		<h5>CryptoBO (3° classificati) </h5>
+		<ul>
+			<li> 
+					<em>Siete studenti?</em>
+					<p>Siamo 2 studenti universitari.</p>
+			</li>
+			<li>
+					<em>Da dove venite?</em>
+					<p> Siamo due studenti di Bologna.</p>
+			</li>
+			<li>
+					<em> Hai implementato qualche algoritmo per partecipare? In quale linguaggio? 
+					Quali algoritmi hai implementato?</em>
+					<p> Abbiamo scritto vari algoritmi per fattorizzare il modulo, tra cui 
+						Fermat e Pollard rho oltre a quello a forza bruta. Sono stati scritti 
+						in Java ed utilizzando la programmazione multi-threaded. </p>
+					<p style="color: red;">
+						NOTA AGGIUNTA NEL 2017 <br>
+						Andrea Dari ha pubblicato su GitHub la libreria creata in Java per il contest RSA 
+						awareness 2014, che poi ha utilizzato per fattorizzare molte delle
+						chiavi pubbliche che venivano date. Link: https://github.com/cybernova/RSAbreaker
+					</p>
+			</li>
+			<li>
+					<em>Hai utilizzato alcuni strumenti esistenti? Quali?</em>
+					<p> Abbiamo utilizzato per alcune chiavi, quelle più semplici, WolframAlpha  </p>
+			</li>
+			<li>
+					<em>Avevi accesso a un cluster o utilizzavi solo desktop/laptop personali?</em>
+					<p> Abbiamo utilizzato i nostri laptop personali.  </p>
+			</li>
+			<li>
+					<em>Hai imparato qualcosa di nuovo riguardo a ECC?</em>
+					<p> Sicuramente abbiamo imparato che esistono algoritmi più o meno validi 
+						per cercare di fattorizzare un modulo anche abbastanza grande. </p>
+					<p>
+						Fatto curioso: il mio amico che mi ha aiutato per il contest man mano 
+						che fattorizzavamo i moduli delle chiavi le pubblicava su factordb, 
+						chissà se qualcuno che si è piazzato prima di noi, ha cercato li 
+						dentro e ha trovato subito la soluzione... </p>
+			</li>
+		</ul>
+		<hr>
+	</div>	
