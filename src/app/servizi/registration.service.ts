@@ -21,6 +21,8 @@ export class RegistrationService {
   indirizzoEmail : string = "&emailAddress=";
   requestURL : string = "";
 
+  /* stringaFinale: string = "fvv=1&draftResponse=&pageHistory=0&fbzx=0"; */
+  
   constructor(private http: HttpClient) { }
 
   register(userData){
@@ -35,9 +37,14 @@ export class RegistrationService {
       this.ente + userData.ente +
       this.telefono + userData.telefono +
       this.citta + userData.citta +
-      this.occupazione + userData.occupazione +
       this.indirizzoEmail + userData.indirizzoEmail;
+    console.log(this.requestURL);
     return this.http.get(this.requestURL);
   } 
 }
 
+
+/* fvv=1
+draftResponse=[null,null,"-4926194360090489268"]
+pageHistory=0
+fbzx=-4926194360090489268 */

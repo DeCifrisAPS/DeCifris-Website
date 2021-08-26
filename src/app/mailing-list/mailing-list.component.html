@@ -9,17 +9,33 @@
 					La DeCifris propone diverse mailing-list: esiste infatti una mailing-list principale,
 					così come molte specializzate, fra le quali riportiamo:
 					<ul>
-						<li><h6>Eruditorum</h6>, annunci di seminari su temi di ampia portata e cultura generale, come ad esempio la Storia della crittografia, l’interazione della crittografia con la Società, gli aspetti Legali e Giuridici, etc. </li>
-						<li><h6>Historiae</h6>, annunci di seminari inerenti la storia della crittografia.</li>
-						<li><h6>Athesis</h6>, annunci sui seminari che teniamo a Trento (in questo periodo sono online), circa uno al mese</li>
-						<li><h6>Taurinorum</h6>, annunci sui seminari che teniamo a Torino (in questo periodo sono online), circa uno al mese</li>
-						<li><h6>Latina</h6>, annunci sui seminari che teniamo a Roma (in questo periodo sono online), circa uno al mese</li>
-						<li><h6>Mediolanensibus</h6>, annunci sui seminari che teniamo a Milano (in questo periodo sono online), circa uno al mese</li>
-						<li><h6>CifrisChain</h6>, annunci su eventi e progetti specifici per CifrisChain (il nostro team interno che lavora su blockchain)</li>
-						<li><h6>PQCifris</h6>, annunci su eventi e progetti specifici per PQCifris (il nostro team interno che lavora su cifrari post-quantum)</li>
-						<li><h6>QuantumCifris</h6>, annunci su eventi e progetti specifici per QuantumCifris (il nostro team interno che lavora su Quantum Cryptography)</li>
-						<li><h6>CloudCifris</h6>, annunci su eventi e progetti specifici per CloudCifris (il nostro team interno che lavora sui cifrari per il Cloud Computing)</li>
-						<li><h6>MathCifris</h6>, annunci sul gruppo specificatamente matematico che stiamo costituendo in collaborazione con l'UMI (Unione Matematica Italiana)</li>
+						<li><h6>Eruditorum</h6>, annunci di seminari su temi di ampia portata e 
+							cultura generale, come ad esempio la Storia della crittografia, 
+							l’interazione della crittografia con la Società, gli aspetti Legali e
+							Giuridici, etc. </li>
+						<li><h6>Historiae</h6>, annunci di seminari inerenti la storia della 
+							crittografia.</li>
+						<li><h6>Athesis</h6>, annunci sui seminari che teniamo a Trento (in 
+							questo periodo sono online), circa uno al mese</li>
+						<li><h6>Taurinorum</h6>, annunci sui seminari che teniamo a Torino (in 
+							questo periodo sono online), circa uno al mese</li>
+						<li><h6>Latina</h6>, annunci sui seminari che teniamo a Roma (in questo 
+							periodo sono online), circa uno al mese</li>
+						<li><h6>Mediolanensibus</h6>, annunci sui seminari che teniamo a Milano 
+							(in questo periodo sono online), circa uno al mese</li>
+						<li><h6>CifrisChain</h6>, annunci su eventi e progetti specifici per 
+							CifrisChain (il nostro team interno che lavora su blockchain)</li>
+						<li><h6>PQCifris</h6>, annunci su eventi e progetti specifici per 
+							PQCifris (il nostro team interno che lavora su cifrari post-quantum)</li>
+						<li><h6>QuantumCifris</h6>, annunci su eventi e progetti specifici per 
+							QuantumCifris (il nostro team interno che lavora su Quantum 
+							Cryptography)</li>
+						<li><h6>CloudCifris</h6>, annunci su eventi e progetti specifici per 
+							CloudCifris (il nostro team interno che lavora sui cifrari per il 
+							Cloud Computing)</li>
+						<li><h6>MathCifris</h6>, annunci sul gruppo specificatamente matematico 
+							che stiamo costituendo in collaborazione con l'UMI (Unione 
+							Matematica Italiana)</li>
 					</ul>
 				</div>
 			</div>
@@ -37,18 +53,25 @@
 			</div>
 		</div>
 		<br>
-		<!-- <p>NOTA: Il seguente form è ancora in aggiornamento. Nel frattempo raccomandiamo l'iscizione 
-			tramite il googleForm presente a questo <a href="https://docs.google.com/forms/d/e/1FAIpQLSd
-			XRs-olyfl9OGrg54QJ1VmF061Xb_yvahto34mPjCTz9jvig/viewform?embedded=true">link</a>.</p> -->
+		
 		<div class="my-3" *ngIf="!submitted">
 			<div class="row">
 				<div class="col-md-auto" style="margin: auto;">
 					<h2>Form di registrazione</h2>
-					<form [formGroup]="registrationForm" style="display: block;" (ngSubmit)="onSubmit()">
+					
+					<p>NOTA: Il seguente form è ancora in aggiornamento. Nel frattempo raccomandiamo l'iscrizione 
+						tramite il Google Form presente a questo <a href="https://docs.google.com/forms/d/e/1FAIpQLSd
+						XRs-olyfl9OGrg54QJ1VmF061Xb_yvahto34mPjCTz9jvig/viewform?embedded=true">link</a>.</p>
+						
+					<form [formGroup]="registrationForm" 
+						style="display: block;" 
+						(ngSubmit)="onSubmit()">
 						<div class="form-group">
 							<label>Indirizzo Email</label>
 							<input [class.is-invalid]="registrationForm.get('indirizzoEmail').invalid && registrationForm.get('indirizzoEmail').touched"
-									formControlName="indirizzoEmail" type="text" class="form-control">
+									formControlName="indirizzoEmail" 
+									type="text" 
+									class="form-control">
 							<!-- <small [class.d-none]="!(registrationForm.get('indirizzoEmail').invalid && registrationForm.get('indirizzoEmail').touched)"
 									class="text-danger">Parametro obbligatorio</small> -->
 							<div *ngIf="registrationForm.get('indirizzoEmail').invalid && registrationForm.get('indirizzoEmail').touched">
@@ -112,7 +135,9 @@
 		
 						<div class="form-group">
 							<label>Occupazione</label>
-							<select class="form-select" formControlName="occupazione" class="form-control" 
+							<select class="form-select" 
+							formControlName="occupazione" 
+							class="form-control" 
 								[class.is-invalid]="registrationForm.get('occupazione').invalid && registrationForm.get('occupazione').touched">
 								<option selected></option>
 								<option *ngFor="let occupazione of occupazioni">{{occupazione}}</option>

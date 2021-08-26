@@ -31,14 +31,15 @@ export class MailingListComponent implements OnInit {
     ente: ['', [Validators.required]],
     telefono: [''],
     citta: ['', [Validators.required]],
-    occupazione: ['', [Validators.required]],
+    occupazione: ["", [Validators.required]],
   });
 
   sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
-
+ 
   async onSubmit(){
+    /* console.log(this.registrationForm.value); */
     this.servizioRegistratione.register(this.registrationForm.value)
       .subscribe(
         (res) => { },

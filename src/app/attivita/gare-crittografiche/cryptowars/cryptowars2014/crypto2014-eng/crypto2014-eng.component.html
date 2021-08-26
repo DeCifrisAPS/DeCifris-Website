@@ -16,11 +16,11 @@
 			<li> On <strong>Monday, 13th of October at 13:00</strong> (hours of Trento) 
 				we have published	a set of <a href="http://en.wikipedia.org/wiki/RSA_
 				(cryptosystem)">RSA</a> public keys (moduli and public exponent).</li>
-			<li> You had time until <strong>Friday, 17th of October at 17:00</strong> 
+			<li> You have time until <strong>Friday, 17th of October at 17:00</strong> 
 				to break the keys and submit your results. </li>
-			<li> You will be ranked according to the number of keys broken and	time of last 
+			<li> You are ranked according to the number of keys broken and	time of last 
 				submission. </li>
-			<li> Prizes will be awarded to the submissions ranked in the first three places.</li>
+			<li> Prizes are awarded to the submissions ranked in the first three places.</li>
 		</ul>
 	</div>
 	<div id="news">
@@ -29,7 +29,7 @@
 			<li>
 			[24/11/2014]
 			We have organized a Prize event during a Workshop on Cryptography
-			that will take place in Trento on 22nd of December (more details
+			that takes place in Trento on 22nd of December (more details
 			<a href="http://www.science.unitn.it/~sala/events2014/BunnyTN5.html">here</a>).
 		  </li>
 		  <li>
@@ -44,7 +44,6 @@
 		  <li>
 			[17/10/14, circa 18:00]
 			Contest is now closed! Thanks for participation! Final stats are published.
-			Soon (monday?) we will publish the final ranking.
 		  </li>
 		  <li>
 			[17/10/14]
@@ -64,7 +63,8 @@
 			</li> 
 			<li>
 			[3/10/14]
-			We have a new summary of the contest, instructions have been published and prizes defined! Check the appropriate tabs.
+			We have a new summary of the contest, instructions have been published and 
+			prizes defined! Check the appropriate tabs.
 			</li> 
 			<li>
 			[3/10/14]
@@ -102,7 +102,7 @@
 	</div>
 	<div id="risposte">
 		<h3> Submission of Contest Solutions </h3>
-		<p> A participant will be identified by a unique email address. A participant may 
+		<p> A participant is identified by a unique email address. A participant may 
 			submit one or more solutions to the contest at any time between the publication 
 			of Contest Material and the end of the context, which is set on Friday, 
 			17th October at 17:00. 
@@ -113,7 +113,7 @@
 			A submission may consists of one or more solution for a subset of the proposed 
 			RSA public keys. Multiple submissions are allowed but only the first three 
 			submission for each public key will be considered valid. Further submissions 
-			will be discarded. Format for submission is a text file. Each line will 
+			are discarded. Format for submission is a text file. Each line will 
 			represent a contest solution for a single public key and it will contain four 
 			numbers written in decimal base and separated by a space: a counter identifying 
 			the public key <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;
@@ -122,20 +122,31 @@
 	</div>
 	<div id="coding">
 		<h3>Coding</h3>
-		<p>Do I have to code my own program to factorize an integer or find the private exponent? Short answer is: No, but Yes.</p>
+		<p>Do I have to code my own program to factorize an integer or find the private 
+			exponent? Short answer is: No, but Yes.</p>
 		<p>
-			Long answer is: we have no way of checking if you have written your code to solve our contest (we are not asking to show the code and you can work in whichever programming language you prefer). And it will be probably be easier to look around for some already existing program which does all the work. But the whole point of this contest is to challenge yourself to understand a cryptographic problem, look out for possible solutions, write code that implements the solutions and try to make it more and more efficient. 
+			Long answer is: we have no way of checking if you have written your code to 
+			solve our contest (we are not asking to show the code and you can work in 
+			whichever programming language you prefer). And it will be probably be easier 
+			to look around for some already existing program which does all the work. But 
+			the whole point of this contest is to challenge yourself to understand a 
+			cryptographic problem, look out for possible solutions, write code that 
+			implements the solutions and try to make it more and more efficient. 
 		</p>
 		<br>
-		<p> Do I have to cook my own algorithms to factorize an integer or find the private exponent? Absolutely not!</p>
-		<p>There are tons of good algorithms which might break short or weak keys. Look around (did I already mention this?) and find an algorithm that you are able to understand. Then try to implement it. This already looks like a good strategy to have fun in the contest. 
+		<p> Do I have to cook my own algorithms to factorize an integer or find the 
+			private exponent? Absolutely not!</p>
+		<p>There are tons of good algorithms which might break short or weak keys. Look 
+			around (did I already mention this?) and find an algorithm that you are able 
+			to understand. Then try to implement it. This already looks like a good strategy 
+			to have fun in the contest. 
 		</p>
 	</div>
 	<div id="istruzioni">
 		<h3>Instructions</h3>
 		<p>
 			An RSA public key <img src="https://latex.codecogs.com/gif.latex?\
-			large&amp;space;(N,e)"/> 	is given by two integers <img src="https://latex.codecogs.com/gif.latex?\
+			large&amp;space;(N,e)"/> is given by two integers <img src="https://latex.codecogs.com/gif.latex?\
 			large&amp;space;N"/> (the modulus) and <img src="https://latex.codecogs.com/gif.latex?\
 			large&amp;space;e"/> (the public exponent). 
 			The modulus is the product of two prime integers <img src="https://latex.codecogs.com/gif.latex?\
@@ -175,11 +186,14 @@
 			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;m \equiv c^d \mod{N}"/>
 		</p>
 		<p>
-			The correctness of the algorithm can be proved by Euler's Theorem. Breaking an RSA public key means finding either  <img src="https://latex.codecogs.com/gif.latex?\
+			The correctness of the algorithm can be proved by Euler's Theorem. Breaking an 
+			RSA public key means finding either  <img src="https://latex.codecogs.com/gif.latex?\
 			large&amp;space;d"/> or factorize <img src="https://latex.codecogs.com/gif.latex?\
 			large&amp;space;N"/> into <img src="https://latex.codecogs.com/gif.latex?\
 			large&amp;space;p"/> and <img src="https://latex.codecogs.com/gif.latex?\
-			large&amp;space;q"/>. 	Finding the factorization of the modulus or the private exponent is equivalent up to an efficient computation (see, for example <a href="http://www.ams.org/notices/199902/boneh.pdf">here</a>).
+			large&amp;space;q"/>. 	Finding the factorization of the modulus or the 
+			private exponent is equivalent up to an efficient computation (see, for 
+			example <a href="http://www.ams.org/notices/199902/boneh.pdf">here</a>).
 		</p>
 		<!-- <p>
 			Il materiale del concorso è un insieme di chiavi pubbliche RSA. Non ti 
@@ -306,7 +320,8 @@
 				</tbody>
 			</table>
 			<p> Notes: <br>
-				*: group composed by Carlo Brunetta, Andrea Vinci, Jacopo di Bonito and Alessandro Melloni. <br>
+				*: group composed by Carlo Brunetta, Andrea Vinci, Jacopo di Bonito and 
+				Alessandro Melloni. <br>
 				**: group composed by Andrea Dari and Claudio Costa. <br>
 				Ranking published only for participants with more than 20 valid keys. 
 			</p>
@@ -332,56 +347,69 @@
 			symbolic prizes for those who rank in the first three positions . 
 		</p>
 		<ul>
-			<li>The first of the ranking will receive a free annual subscription to Clusit, and the equivalent of 30€ in Bitcoin. </li>
-			<li> The second of the ranking will receive the equivalent of 20€ in Bitcoin. </li>
-			<li> The third of the ranking will receive the equivalent of 10€ in Bitcoin. </li>
+			<li>The first of the ranking receive a free annual subscription to Clusit, 
+				and the equivalent of 30€ in Bitcoin. </li>
+			<li> The second of the ranking receive the equivalent of 20€ in Bitcoin. </li>
+			<li> The third of the ranking receive the equivalent of 10€ in Bitcoin. </li>
 		</ul>
 		<p>
-			Prizes will be awarded on 22nd of December during an event organized at University of Trento. 
+			Prizes are awarded on 22nd of December during an event organized at University of Trento. 
 		</p>
 	</div>
 	<div id="classifica">
 		<!-- Ranking -->
 		<h3>Ranking</h3>
 		<p>
-			Ranking among participants is done considering the following two simple rules applying to all valid submissions. 
+			Ranking among participants is done considering the following two simple rules 
+			applying to all valid submissions. 
 		</p>
 		<ol>
-			<li>A participant ranks higher than another participant if it has broken more public keys. </li>
-			<li>A participant ranks higher than another participant with the same number of broken public keys if his/her last valid submission for a broken public key was done earlier in time. </li>
+			<li>A participant ranks higher than another participant if it has broken more 
+				public keys. </li>
+			<li>A participant ranks higher than another participant with the same number 
+				of broken public keys if his/her last valid submission for a broken 
+				public key was done earlier in time. </li>
 		</ol>
 		<h3> How did we think the contest? </h3> <hr>
 		<p>
-			We knew we wanted a contest where just using general purpose factorization algoritms would not be enough to excel in the competition. So we needed to generate weak keys. What are weak keys? These can be defined in an informal way as classes of keys where a special purpose algorithm exists, which perform better than best algorithm for modulus factorization. 
+			We knew we wanted a contest where just using general purpose factorization 
+			algoritms would not be enough to excel in the competition. So we needed to 
+			generate weak keys. What are weak keys? These can be defined in an informal way 
+			as classes of keys where a special purpose algorithm exists, which perform better 
+			than best algorithm for modulus factorization. 
 		</p>
 		<p>
 			First, we selected the class of weak keys we would want to generate. We chose: 
 		</p>
 		<ul>
 			<li>
-			<em>wiener weak</em> keys: keys with small private exponent 
-			(<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;d>\frac{1}{3}N^{1/4}"/>)
-			 which can be broken with an implementation of
-			<a href="http://en.wikipedia.org/wiki/Wiener's_attack">Wiener's attack</a>, based on continued fractions;
+				<em>wiener weak</em> keys: keys with small private exponent 
+				(<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;d>\frac{1}{3}N^{1/4}"/>)
+				which can be broken with an implementation of
+				<a href="http://en.wikipedia.org/wiki/Wiener's_attack">Wiener's attack</a>, 
+				based on continued fractions;
 			</li>
 			<li>
-			<em>fermat weak</em> keys: keys where the modulus is the product of primes very near to each other
-			(i.e. <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;| p - q | \leq N^{1/4}"/>),
-			which can be
-			broken easily with <a href="http://en.wikipedia.org/wiki/Fermat's_factorization_method">Fermat's factorization</a>;
+				<em>fermat weak</em> keys: keys where the modulus is the product of primes very near to each other
+				(i.e. <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;| p - q | \leq N^{1/4}"/>),
+				which can be
+				broken easily with <a href="http://en.wikipedia.org/wiki/Fermat's_factorization_method">Fermat's factorization</a>;
 			</li>
 			<li>
-			<em>pollard <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;p-1"/> weak</em> keys: 
-			keys where the modulus has one prime factor <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;p"/> for which 
-			<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;p-1"/> is
-			<a href="http://en.wikipedia.org/wiki/Smooth_number"> <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;B"/>-smooth</a> for some
-			low value of <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;B">. These keys can be broken with
-			<a href="http://en.wikipedia.org/wiki/Pollard's_p_%E2%88%92_1_algorithm">Pollard's <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;p-1"/> attack</a>.
+				<em>pollard <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;p-1"/> weak</em> keys: 
+				keys where the modulus has one prime factor <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;p"/> for which 
+				<img src="https://latex.codecogs.com/gif.latex?\large&amp;space;p-1"/> is
+				<a href="http://en.wikipedia.org/wiki/Smooth_number"> <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;B"/>-smooth</a> for some
+				low value of <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;B">. These keys can be broken with
+				<a href="http://en.wikipedia.org/wiki/Pollard's_p_%E2%88%92_1_algorithm">Pollard's <img src="https://latex.codecogs.com/gif.latex?\large&amp;space;p-1"/> attack</a>.
 			</li>
-			</ul>
+		</ul>
 		<p>
-			To these three classes we added a couple of <em>keys with a common prime factor</em>, which can be broken very easily by
-            computing Greates Common Divisors (these can be thought as <a href="http://en.wikipedia.org/wiki/RSA_(cryptosystem)#Importance_of_strong_random_number_generation">randomness</a> weak keys).
+			To these three classes we added a couple of <em>keys with a common prime 
+			factor</em>, which can be broken very easily by computing Greates Common 
+			Divisors (these can be thought as <a href="http://en.wikipedia.org/wiki/RSA_
+			(cryptosystem)#Importance_of_strong_random_number_generation">randomness</a> 
+			weak keys).
 		</p>
 		<p>
 			Next, we selected some key lengths (60,80,100,150,200,300,512,1024) and for each 
@@ -406,36 +434,46 @@
 			<em>
 				<li> are you a student? high school or university?</li>
 				<li>which city are you from?</li>
-				<li>did you code some algorithm to participate? in which language? which algorithms did you code?</li>
+				<li>did you code some algorithm to participate? in which language? which 
+					algorithms did you code?</li>
 				<li>did you use some existing tools? which ones?</li>
-				<li>did you have access to a cluster or you just used personal desktops/laptops?</li>
+				<li>did you have access to a cluster or you just used personal 
+					desktops/laptops?</li>
 				<li>did you learn something new on RSA?</li>
 			</em>
 		</ul>
-		<p>We report here (with little editing) some of the answers from the participants. Sometimes these were in italian, and we left them that way.
-			Note the curious twist in the challenge given by the use of a factorization database...</p>
+		<p>We report here (with little editing) some of the answers from the participants. 
+			Sometimes these were in italian, and we left them that way.
+			Note the curious twist in the challenge given by the use of a factorization 
+			database...</p>
 		<hr>
 		<h5> Nanni Bassetti (ranked 6th)</h5>
       	<ul>
 				<li>
 					<em>are you a student? high school or university?</em>
-					<p>no, I'm a digital forensics expert and I'm 44 years old, I'm graduate in Computer Science at University of Bari.</p>
+					<p>no, I'm a digital forensics expert and I'm 44 years old, I'm graduate 
+						in Computer Science at University of Bari.</p>
 				</li>
 				<li>
 					<em>which city are you from?</em>
 					<p>Bari - Italy</p>
 				</li>
 				<li>
-					<em>did you code some algorithm to participate? in which language? which algorithms did you code?</em>
-					<p>Yes, I coded a bash script and a python script they can factorize the module N and find the private exponent "d", but they are too slow.</p>
+					<em>did you code some algorithm to participate? in which language? which 
+						algorithms did you code?</em>
+					<p>Yes, I coded a bash script and a python script they can factorize the 
+						module N and find the private exponent "d", but they are too slow.</p>
 				</li>
 				<li>
 					<em>did you use some existing tools? which ones?</em>
-					<p>Yes, I used a combination of tools rsatool.py and the website: <a href="http://www.factordb.com/">http://www.factordb.com/</a>.</p>
+					<p>Yes, I used a combination of tools rsatool.py and the website: 
+						<a href="http://www.factordb.com/">http://www.factordb.com/</a>.</p>
 				</li>
 				<li>
-					<em>did you have access to a cluster or you just used personal desktops/laptops?</em>
-					<p>I used my laptop and a website (<a href="http://www.factordb.com/">http://www.factordb.com/</a>)</p>
+					<em>did you have access to a cluster or you just used personal 
+						desktops/laptops?</em>
+					<p>I used my laptop and a website (<a href="http://www.factordb.com/">
+						http://www.factordb.com/</a>)</p>
 				</li>
 				<li>
 					<em>did you learn something new on RSA?</em>
@@ -478,7 +516,8 @@
 					</ul>
 				</li>
 				<li>
-					<em>did you have access to a cluster or you just used personal desktops/laptops?</em>
+					<em>did you have access to a cluster or you just used personal 
+						desktops/laptops?</em>
 					<p>I used my desktop (not a cluster, although quite powerful).</p>
 				</li>
 				<li>
@@ -571,8 +610,8 @@
 					<em>did you code some algorithm to participate? in which language? 
 						which algorithms did you code?</em>
 					<p>
-						[...] siamo andati per la via pi&ugrave; rapida.
-						Magma, C++, Python. Alcuni eran gi&agrave; scritti, 
+						[...] siamo andati per la via più rapida.
+						Magma, C++, Python. Alcuni eran già scritti, 
 						altri son stati adattati per il nostro scopo.
 					</p>
 				</li>
@@ -591,10 +630,10 @@
 						Un macbook pro per chiavi che sopra creavano problemi di memoria su 
 						windows. (circa 10 chiavi)
 						Carta e penna per un attacco pigro facendo i gcd tra i vari n e 
-						cos&igrave; son uscite un paio di chiavi. (6 chiavi)
-						Cos&igrave; siamo rimaste alle 3 che non abbiam potuto fare.
+						così son uscite un paio di chiavi. (6 chiavi)
+						Così siamo rimaste alle 3 che non abbiam potuto fare.
 						In nottata abbiam fatto partire un piccolo server con qualche gpu 
-						e il GNFS Python che per&ograve; non ha fruttato risultati.
+						e il GNFS Python che però non ha fruttato risultati.
 						[...]
 					</p>
 				</li>
@@ -626,33 +665,46 @@
 					<em>did you code some algorithm to participate? in which language? 
 						which algorithms did you code?</em>
 					<p>
-						Non ho scritto nemmeno una riga di codice, ho solo utilizzato python e perl per tradurre alcuni risultati che erano in esadecimale in decimale.
+						Non ho scritto nemmeno una riga di codice, ho solo utilizzato python e 
+						perl per tradurre alcuni risultati che erano in esadecimale in decimale.
 					</p>
 				</li>
 				<li>
 					<em>did you use some existing tools? which ones?</em>
 					<p>
-						mi sono imbattuto in <a href="http://m0x39.blogspot.it/2012/12/0x00-introduction-this-post-is-going-to.html">questo post</a>  che spiega per filo e per segno come aprire una chiave RSA avendo questi dati. Mi sono quindi collegato a <a href="http://www.factordb.com/">http://www.factordb.com/</a> e ho incominciato a trovare i numeri primi avendo solo i modulus. Trovati i numeri primi e stato poi facile grazie a rsatool <a href="https://github.com/ius/rsatool">https://github.com/ius/rsatool</a> trovare "d". Non tutti i numeri per&ograve; erano presenti nel DB.
-						Il giorno seguente, avendo commesso alcuni errori, ho rivisto il lavoro e sono tornato a fare delle query sul database; mi sono accorto che alcuni dei numeri che il giorno prima non erano presenti nel db, il giorno seguente erano presenti. Forse, avendo ricevuto pi&ugrave; richieste per quel dato numero, dall'altra parte si sono messi a cercare i numeri primi di quei moduli. </p>
+						mi sono imbattuto in <a href="http://m0x39.blogspot.it/2012/12/0x00-
+						introduction-this-post-is-going-to.html">questo post</a>  che spiega 
+						per filo e per segno come aprire una chiave RSA avendo questi dati. Mi 
+						sono quindi collegato a <a href="http://www.factordb.com/">
+							http://www.factordb.com/</a> e ho incominciato a trovare i numeri 
+							primi avendo solo i modulus. Trovati i numeri primi e stato poi 
+							facile grazie a rsatool <a href="https://github.com/ius/rsatool">
+							https://github.com/ius/rsatool</a> trovare "d". Non tutti i numeri 
+							però erano presenti nel DB. Il giorno seguente, avendo commesso 
+							alcuni errori, ho rivisto il lavoro e sono tornato a fare delle query 
+							sul database; mi sono accorto che alcuni dei numeri che il giorno 
+							prima non erano presenti nel db, il giorno seguente erano presenti. 
+							Forse, avendo ricevuto più;richieste per quel dato numero, dall'altra 
+							parte si sono messi a cercare i numeri primi di quei moduli. </p>
 				</li>
 				<li>
 					<em>did you learn something new on RSA?</em>
 					<p>
-						Ho imparato qualcosa di nuovo? Un sacco di cose, soprattutto come funziona la vulnerabilità Heartbleed
-						<a href="http://countuponsecurity.com/tag/extract-rsa-key/">http://countuponsecurity.com/tag/extract-rsa-key/</a>
+						Ho imparato qualcosa di nuovo? Un sacco di cose, soprattutto come 
+						funziona la vulnerabilità Heartbleed
+						<a href="http://countuponsecurity.com/tag/extract-rsa-key/">
+							http://countuponsecurity.com/tag/extract-rsa-key/</a>
 					</p>
 				</li>
 			</ul>
-
-
 			<hr>
 			<h5> Lorenzo Cameroni (ranked 1st)</h5>
-
 			<ul>
 				<li> 
 					<em>are you a student? high school or university?</em>
 					<p>
-						I'm a 26 years old working student (well, honestly more working than student, I'm a full time java programmer and a Math student).
+						I'm a 26 years old working student (well, honestly more working than 
+						student, I'm a full time java programmer and a Math student).
 					</p>
 				</li>
 				<li>
@@ -662,31 +714,52 @@
 					</p>
 				</li>
 				<li>
-					<em>did you code some algorithm to participate? in which language? which algorithms did you code?</em>
+					<em>did you code some algorithm to participate? in which language? which 
+						algorithms did you code?</em>
 					<p>
-						Working full time leave me no much time for coding some smart algorithm, the only one I code is not so smart: a brute force search for a factor very close to the square root of n, but it was too slow for the key provided except first ones. I code this with PARI/GP.
-						I didn't try to code Pollard's rho (which I think is the simpler serious factoring algorithm) because i knew that PARI/GP factor function <a href="http://pari.math.u-bordeaux.fr/dochtml/html.stable/Arithmetic_functions.html#factorint">already</a> use this algorithm (hopefully better than how i could code in few hours).
+						Working full time leave me no much time for coding some smart algorithm, 
+						the only one I code is not so smart: a brute force search for a factor 
+						very close to the square root of n, but it was too slow for the key 
+						provided except first ones. I code this with PARI/GP.
+						I didn't try to code Pollard's rho (which I think is the simpler serious 
+						factoring algorithm) because i knew that PARI/GP factor function 
+						<a href="http://pari.math.u-bordeaux.fr/dochtml/html.stable/Arithmetic_
+						functions.html#factorint">already</a> use this algorithm (hopefully 
+						better than how i could code in few hours).
 					</p>
 				</li>
 				<li>
 					<em>did you use some existing tools? which ones?</em>
 					<p>
-						Yes, most of my work was finding the right tool for the right key, guessing what kind of "error" was done when the keys were created. Here the most useful I found:
+						Yes, most of my work was finding the right tool for the right key, 
+						guessing what kind of "error" was done when the keys were created. Here 
+						the most useful I found:
 					</p>
 					<ul>
 						<li>
-							<a href="http://pari.math.u-bordeaux.fr/">PARI/GP</a> for general computations and for factoring "small" numbers (or big numbers with small factors) using the "factor" standard function.
+							<a href="http://pari.math.u-bordeaux.fr/">PARI/GP</a> for general 
+							computations and for factoring "small" numbers (or big numbers with 
+							small factors) using the "factor" standard function.
 						</li>
 						<li>
-							<a href="http://www.alpertron.com.ar/ECM.HTM">This</a> browser java applet for Elliptic Curve Factorization (and for Self Initializing Quadratic Sieve) (I already knew the idea behind elliptic curve factoring but I didn't had enought time to study in detail the Quadratic Sieve). With this applet I factored some 90 digit numbers in roughly 4 hours each, although others (even larger) number were factored in few seconds.
+							<a href="http://www.alpertron.com.ar/ECM.HTM">This</a> browser java 
+							applet for Elliptic Curve Factorization (and for Self Initializing 
+							Quadratic Sieve) (I already knew the idea behind elliptic curve 
+							factoring but I didn't had enought time to study in detail the 
+							Quadratic Sieve). With this applet I factored some 90 digit numbers 
+							in roughly 4 hours each, although others (even larger) number were 
+							factored in few seconds.
 						</li>
 						<li>
-							A modified version of <a href="https://github.com/wihoho/Wiener-s-Attack">this code</a> for the Wiener attack. My modification allowed me to read input data in a different format.
+							A modified version of <a href="https://github.com/wihoho/
+							Wiener-s-Attack">this code</a> for the Wiener attack. My modification 
+							allowed me to read input data in a different format.
 						</li>
 					</ul>
 				</li>
 				<li>
-					<em>did you have access to a cluster or you just used personal desktops/laptops?</em>
+					<em>did you have access to a cluster or you just used personal 
+						desktops/laptops?</em>
 					<p>
 						Only my laptop (and sometimes my work laptop)
 					</p>
@@ -694,7 +767,13 @@
 				<li>
 					<em>did you learn something new on RSA?</em>
 					<p>
-						Of course: before this competition I never heard about attack on RSA such as Wiener's one, nor I could imagine that (as I read <a href="http://arstechnica.com/business/2012/02/crypto-shocker-four-of-every-1000-public-keys-provide-no-security/">here</a>) in real world different unrelated 1024 or 2048 bit RSA keys colud share a prime factor (altough this mostly happen when such keys are generated on embedded device with poor pseudo-random number generators)
+						Of course: before this competition I never heard about attack on RSA 
+						such as Wiener's one, nor I could imagine that (as I read 
+						<a href="http://arstechnica.com/business/2012/02/crypto-shocker-
+						four-of-every-1000-public-keys-provide-no-security/">here</a>) in real 
+						world different unrelated 1024 or 2048 bit RSA keys colud share a prime 
+						factor (altough this mostly happen when such keys are generated on 
+						embedded device with poor pseudo-random number generators)
 					</p>
 				</li>
 			</ul>
@@ -708,24 +787,26 @@
 				<li> 
 					<em>are you a student? high school or university?</em>
 					<p>
-						Siamo 2 studenti universitari
+						We study at university
 					</p>
 				</li>
 				<li>
 					<em>which city are you from?</em>
 					<p>
-						Siamo di Bologna
+						Bologna
 					</p>
 				</li>
 				<li>
 					<em>did you code some algorithm to participate? in which language? which algorithms did you code?</em>
 					<p>
-						Abbiamo scritto vari algoritmi per fattorizzare il modulo, tra cui Fermat e Pollard rho oltre a quello a forza bruta. Sono stati scritti in Java ed utilizzando la programmazione multi-threaded.
+						We have written various algorithms to factor the module, including 
+						Fermat and Pollard rho in addition to the brute force one. They were 
+						written in Java and using multi-threaded programming.
 					</p>
-					<font color="red"> NOTA AGGIUNTA NEL 2017 <br>
-						Andrea Dari ha pubblicato su GitHub la libreria creata in Java 
-						per il contest RSA awareness 2014, che poi ha utilizzato 
-						per fattorizzare molte delle chiavi pubbliche che venivano date.
+					<font color="red"> NOTE ADDED IN 2017 <br>
+						Andrea Dari has published the library created in Java on GitHub
+						for the RSA awareness 2014 contest, which he then used
+						to factor many of the public keys that were given.
 						Link: https://github.com/cybernova/RSAbreaker
 					</font>
 					<br>
@@ -734,19 +815,20 @@
 				<li>
 					<em>did you use some existing tools? which ones?</em>
 					<p>
-						Abbiamo utilizzato per alcune chiavi, quelle più semplici, WolframAlpha
+						We have used WolframAlpha for some keys, the simpler ones.
 					</p>
 				</li>
 				<li>
 					<em>did you have access to a cluster or you just used personal desktops/laptops?</em>
 					<p>
-						Abbiamo utilizzato i nostri laptop personali.
+						Just our personal laptop.
 					</p>
 				</li>
 				<li>
 					<em>did you learn something new on RSA?</em>
 					<p>
-						Sicuramente abbiamo imparato che esistono algoritmi più o meno validi per cercare di fattorizzare un modulo anche abbastanza grande.
+						Surely we have learned that there are more or less valid algorithms to 
+						try to factor even a fairly large module.
 					</p>
 				</li>
 			</ul>
