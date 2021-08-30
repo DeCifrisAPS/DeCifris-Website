@@ -30,13 +30,13 @@
 	<div id="FAQ">
 		<h3>FAQ</h3>
 			<ul>
-				<li>Devo personalmente implementare del codice per risolvere i quesiti? <br>
+				<li><i>Devo personalmente implementare del codice per risolvere i quesiti? </i><br>
 					Non è richiesto di inviare il codice usato, quindi una via semplice è quella di 
 					cercare del codice già implementato. Resta il fatto che, siccome la gara ha soprattutto 
 					lo scopo di portare alla comprensione profonda di problemi crittografici, si consiglia 
 					di lavorare in maniera autonoma al proprio codice e alla sua ottimizzazione.<br>
 				</li>
-				<li>Devo pensare e implementare nuovi attacchi?<br>
+				<li><i>Devo pensare e implementare nuovi attacchi? </i><br>
 					Non necessariamente. Esistono molti attacchi noti in letteratura, quindi cercane uno che 
 					ti sembra semplice da capire, implementalo e mandalo in esecuzione!</li>
 			</ul>
@@ -58,3 +58,16 @@
 			<li>[01/10/2018] Aperte le iscrizioni alla competizione CRYPTOWARS 2018. </li>
 		</ul>
 	</div>
+
+	<div style="display: block">
+		<canvas mdbChart
+				  [chartType]="chartType"
+				  [datasets]="chartDatasets"
+				  [labels]="chartLabels"
+				  [colors]="chartColors"
+				  [options]="chartOptions"
+				  [legend]="true"
+				  (chartHover)="chartHovered($event)"
+				  (chartClick)="chartClicked($event)">
+		</canvas>
+	 </div>
