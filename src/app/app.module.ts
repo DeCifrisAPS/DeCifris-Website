@@ -85,6 +85,7 @@ import { Crypto2011EngComponent } from './attivita/gare-crittografiche/cryptowar
 import { ClassicComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-eng/classic/classic.component';
 import { PublicComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-eng/public/public.component';
 import { SymmetricComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-eng/symmetric/symmetric.component';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 @NgModule({
   declarations: [
@@ -175,7 +176,8 @@ import { SymmetricComponent } from './attivita/gare-crittografiche/cryptowars/cr
     HttpClientModule,
     BrowserAnimationsModule,
     SidebarModule.forRoot(),
-    NgbModule
+    NgbModule,
+    MDBBootstrapModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

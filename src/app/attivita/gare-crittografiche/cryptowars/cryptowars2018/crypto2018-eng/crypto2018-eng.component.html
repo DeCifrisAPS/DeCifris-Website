@@ -58,3 +58,62 @@
 			<li>[01/10/2018] Registration for the CRYPTOWARS 2018 competition is open.</li>
 		</ul>
 	</div>
+	<div id="classifica">
+		<h3>Cryptowars 2018 - Final Ranking</h3>
+		<br>
+		<div style="display: block">
+			<canvas mdbChart
+					[chartType]="chartType"
+					[datasets]="chartDatasets"
+					[labels]="chartLabels"
+					[colors]="chartColors"
+					[options]="chartOptions"
+					[legend]="true"
+					(chartHover)="chartHovered($event)"
+					(chartClick)="chartClicked($event)">
+			</canvas>
+		</div>
+		<p>Note:</p>
+		<ul>
+			<li>You can interact with the legend by clicking on the appropriate color for
+				show the partial ranking of the two modes;</li>
+			<li>Results of teams who have delivered beyond the deadline 
+				date have been reported in a lighter color for completeness.</li>
+		</ul>	
+		<p>Here the final ranking: </p>
+		<table class="tg" align="center">
+			<tr>
+				<th class="tg-c3ow"></th>
+				<th class="tg-7btt">MAT</th>
+				<th class="tg-7btt">INF</th>
+				<th class="tg-7btt">TOT</th>
+			</tr>
+			<tr>
+				<td class="tg-uys7">#1 🥇</td>
+				<td class="tg-0pky">Syntax Error</td>
+				<td class="tg-0pky">Pings with Things</td>
+				<td class="tg-0pky">CryptoTeamUNITN</td>
+			</tr>
+			<tr>
+				<td class="tg-c3ow">#2 🥈</td>
+				<td class="tg-0pky">CryptoTeamUNITN</td>
+				<td class="tg-0pky">CryptoTeamUNITN</td>
+				<td class="tg-0pky">pwnthem0le</td>
+			</tr>
+			<tr>
+				<td class="tg-c3ow">#3 🥉</td>
+				<td class="tg-0pky">pwnthem0le</td>
+				<td class="tg-0pky">pwnthem0le</td>
+				<td class="tg-0pky">Syntax Error</td>
+			</tr>
+		</table>
+	</div>
+	<hr>
+	<div id="statistiche">
+		<h3>Stats</h3>
+		<ul>
+			<li><b>Partecipants</b>: 64 (17 team)</li>
+			<li><b>Received file</b>: 48 [MAT] & 15 [INF]</li>
+			<li><b>Problems solved</b>: 24/32 [MAT] & 3/9 [INF]</li>
+		</ul>
+	</div>

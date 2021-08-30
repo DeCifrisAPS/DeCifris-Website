@@ -1,3 +1,21 @@
 h2{
 	color:rgb(23, 162, 184);
 }
+
+.tg{
+	border-color: inherit;
+	text-align: left;
+	vertical-align: top;
+	border-spacing: 1em;
+}
+
+.tg td {
+	padding: 10px 5px;
+	border-style: solid;
+	border-width: 1px;
+	overflow: hidden;
+	word-break: normal;
+	border-color: #bbb;
+	color: #594F4F;
+	background-color: #E0FFEB;
+}
