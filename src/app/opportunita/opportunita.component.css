@@ -19,7 +19,7 @@ a{
 }
 
 .toggleText{
-	color: #1976D2;
+	color: #1976D2 !important;
 }
 
 ng-sidebar-container{

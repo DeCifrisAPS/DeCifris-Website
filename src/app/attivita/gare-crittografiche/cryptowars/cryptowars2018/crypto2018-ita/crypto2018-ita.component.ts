@@ -22,42 +22,42 @@ export class Crypto2018ItaComponent implements OnInit {
   public chartColors: Array<any> = [
     {
       backgroundColor: [
-        'rgb(179, 255, 255)',
-        'rgb(179, 255, 255)',
-        'rgb(179, 255, 255)',
-        'rgb(179, 255, 255)',
-        'rgb(179, 255, 255)',
+        '#e0f1ff',
+        '#e0f1ff',
+        '#e0f1ff',
+        '#e0f1ff',
+        '#e0f1ff',
         'rgb(230, 249, 255)',
         'rgb(230, 249, 255)',
         'rgb(230, 249, 255)',
-        'rgb(179, 255, 255)',
-        'rgb(179, 255, 255)',
-        'rgb(179, 255, 255)',
-        'rgb(179, 255, 255)',
-        'rgb(179, 255, 255)',
-        'rgb(179, 255, 255)',
-        'rgb(179, 255, 255)',
-        'rgb(179, 255, 255)',
+        '#e0f1ff',
+        '#e0f1ff',
+        '#e0f1ff',
+        '#e0f1ff',
+        '#e0f1ff',
+        '#e0f1ff',
+        '#e0f1ff',
+        '#e0f1ff',
         'rgb(230, 249, 255)'
       ],
       borderColor: [
-        'rgba(126, 243, 243, 1)',
-        'rgba(126, 243, 243, 1)',
-        'rgba(126, 243, 243, 1)',
-        'rgba(126, 243, 243, 1)',
-        'rgba(126, 243, 243, 1)',
-        'rgba(126, 243, 243, 1)',
-        'rgba(126, 243, 243, 1)',
-        'rgba(126, 243, 243, 1)',
-        'rgba(126, 243, 243, 1)',
-        'rgba(126, 243, 243, 1)',
-        'rgba(126, 243, 243, 1)',
-        'rgba(126, 243, 243, 1)',
-        'rgba(126, 243, 243, 1)',
-        'rgba(126, 243, 243, 1)',
-        'rgba(126, 243, 243, 1)',
-        'rgba(126, 243, 243, 1)',
-        'rgba(126, 243, 243, 1)'
+        '#96c9eb',
+        '#96c9eb',
+        '#96c9eb',
+        '#96c9eb',
+        '#96c9eb',
+        '#96c9eb',
+        '#96c9eb',
+        '#96c9eb',
+        '#96c9eb',
+        '#96c9eb',
+        '#96c9eb',
+        '#96c9eb',
+        '#96c9eb',
+        '#96c9eb',
+        '#96c9eb',
+        '#96c9eb',
+        '#96c9eb'
       ],
       borderWidth: 2,
     },
@@ -102,7 +102,7 @@ export class Crypto2018ItaComponent implements OnInit {
       ],
       borderWidth: 2,
     },
-    ];
+  ];
 
     public chartOptions: any = {
       responsive: true,
@@ -117,12 +117,13 @@ export class Crypto2018ItaComponent implements OnInit {
         ]
       }
     };
-    public chartClicked(e: any): void { }
-    public chartHovered(e: any): void { }
+
+  public chartClicked(e: any): void { }
+  public chartHovered(e: any): void { }
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-}
+  }

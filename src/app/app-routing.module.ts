@@ -42,6 +42,7 @@ import { ClassicaComponent } from './attivita/gare-crittografiche/cryptowars/cry
 import { PubblicaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-ita//pubblica/pubblica.component';
 
 const routes: Routes = [
+  {path: 'advisoryboard/borse', redirectTo: 'opportunita', pathMatch: 'full' },
   {path : "", component : HomeComponent},
   {path: "obiettivi", component: ObiettiviComponent},
   {path: "aderenti", component: AderentiComponent},
@@ -83,7 +84,7 @@ const routes: Routes = [
       {path: "simmetrica", component: SimmetricaComponent}
     ]
   }
-  ]}
+]}
 ];
 
 @NgModule({

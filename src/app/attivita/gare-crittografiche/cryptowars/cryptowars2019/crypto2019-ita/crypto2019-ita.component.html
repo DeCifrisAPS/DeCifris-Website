@@ -21,9 +21,14 @@
 				Viene tenuta in considerazione solo l'ultima e-mail ricevuta. </li>
 			<li> Le soluzioni devono essere inviate all’indirizzo cryptowars19@gmail.com 
 				nel formato specificato nel file della challenge. Solitamente in formato .TXT. </li>
-			<li> <a href="../../../../assets/attivita/cryptowars/Cryptowars2019.zip">Sfide 2019</a>.</li>
+			<li> Di seguito le <a href="../../../../assets/attivita/cryptowars/Cryptowars2019
+				.zip">sfide</a> della gara. Nel 2019 abbiamo posto quesiti
+				di varia natura, i quali spaziavano dalla rottura di alcune chiavi RSA
+				ad alcuni cifrari pensati ad hoc, come Makwa. Abbiamo inoltre posto alcuni
+				quesiti legati al mondo delle curve ellittiche. </li>
 		</ul>
 	</div>
+	<hr>
 	<div id="FAQ">
 		<h3>FAQ</h3>
 			<ul>
@@ -38,16 +43,65 @@
 					ti sembra semplice da capire, implementalo e mandalo in esecuzione!</li>
 			</ul>
 	</div>
+	<hr>
 	<div id="news">
 		<h3>News</h3>
 		<ul>
 			<li>[29/10/2019] I risultati delle cryptowars 2019 sono stati 
-				pubblicati <a target="_blank" rel="noopener noreferrer" 
-				href="http://www.club.di.unimi.it/rank_2019.html">qui</a>.</li>
+				pubblicati.</li>
 			<li>[27/10/2019] Ore 23:59, abbiamo chiuso la competizione.</li>
 			<li>[21/10/2019] Ore 14, abbiamo dato il via alla competizione.</li>
 			<li>[21/10/2019] I team iscritti alla competizione sono 13 + 1. 
 				Un team ha partecipato fuori competizione.</li>
 			<li>[01/10/2019] Aperte le iscrizioni alla competizione CRYPTOWARS 2019. </li>
 		</ul>
+	</div>
+	<hr>
+	<div id="classificaFinale">
+		<h3>Final Ranking</h3>
+		<div style="display: block">
+			<canvas mdbChart
+				 [chartType]="chartType"
+				 [datasets]="chartDatasets"
+				 [labels]="chartLabels"
+				 [colors]="chartColors"
+				 [options]="chartOptions"
+				 [legend]="false"
+				 (chartHover)="chartHovered($event)"
+				 (chartClick)="chartClicked($event)">
+			</canvas>
+		 </div>
+		 <p align="justify">Note:</p>
+		<ul align="justify">
+			<li> È possibile interagire con la legenda del grafico superiore, cliccando sul 
+				colore relativo ad ogni team per gestirne la visualizzazione.</li>
+			<li> Il grafico superiore è stato realizzato tenendo traccia delle soluzioni 
+				inviate durante la gara:<br>
+			- in caso di soluzione corretta, il punteggio accumulato (posto inizialmente a 0) 
+			è stato incrementato;<br>
+			- in caso di soluzione errata, il punteggio accumulato è rimasto invariato;<br>
+			- in caso di soluzione errata (avendo già consegnato precedentemente una 
+			soluzione corretta), il punteggio accumulato è stato decrementato.</li>
+			<li> Per completezza, sono stati riportati in colore più chiaro i risultati dei 
+				team che non hanno rispettato il protocollo di iscrizione.</li>
+		</ul>
+		<p align="justify"> Ecco la classifica finale: </p>
+		<table class="tg" align="center">
+			<tr>
+				<th class="tg-7btt">PODIO</th>
+				<th class="tg-7btt">TEAM</th>
+			</tr>
+			<tr>
+				<td class="tg-uys7">#1</td>
+				<td class="tg-0pky">pwnthem0le</td>
+			</tr>
+			<tr>
+				<td class="tg-c3ow">#2</td>
+				<td class="tg-0pky">Critto Tanto</td>
+			</tr>
+			<tr>
+				<td class="tg-c3ow">#3</td>
+				<td class="tg-0pky">Canederlo Trentuno</td>
+			</tr>
+		</table>
 	</div>

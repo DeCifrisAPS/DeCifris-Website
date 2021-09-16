@@ -20,9 +20,14 @@
 			<li> The solutions must be sent to cryptowars19@gmail.com in the format specified in the file
 				of the challenge. Usually in .TXT format.
 			</li>
-			<li> <a href="../../../../assets/attivita/cryptowars/Cryptowars2019.zip">2019 Challenge</a>.</li>
+			<li> Here the <a href="../../../../assets/attivita/cryptowars/Cryptowars2019.
+				zip">file</a> of the competition.
+				In 2019 we asked questions	of various kinds, which ranged from breaking some RSA keys
+				to some specially designed ciphers, such as Makwa. We have also placed a few
+				questions related to the world of elliptic curves.</li>
 		</ul>
 	</div>
+	<hr>
 	<div id="FAQ">
 		<h3>FAQ</h3>
 			<ul>
@@ -38,16 +43,64 @@
 				</li>
 			</ul>
 	</div>
+	<hr>
 	<div id="news">
 		<h3>News</h3>
 		<ul>
-			<li>[29/10/2019] The results of the cryptowars have been published
-				<a target="_blank" rel="noopener noreferrer" 
-				href="http://www.club.di.unimi.it/rank_2019.html">here</a>.</li>
+			<li>[29/10/2019] The results of the cryptowars have been published</li>
 			<li>[27/10/2019] 23:59, we closed the competition.</li>
 			<li>[21/10/2019] 14:00, we started the competition.</li>
 			<li>[21/10/2019] The teams registered for the competition are 13 + 1.
 				A team participated out of competition.</li>
 			<li>[01/10/2019] Registration for the CRYPTOWARS 2019 competition is open. </li>
 		</ul>
+	</div>
+	<hr>
+	<div id="classificaFinale">
+		<h3>Final Ranking</h3>
+		<div style="display: block">
+			<canvas mdbChart
+				 [chartType]="chartType"
+				 [datasets]="chartDatasets"
+				 [labels]="chartLabels"
+				 [colors]="chartColors"
+				 [options]="chartOptions"
+				 [legend]="false"
+				 (chartHover)="chartHovered($event)"
+				 (chartClick)="chartClicked($event)">
+			</canvas>
+		 </div>
+		 <p align="justify">Note:</p>
+		<ul align="justify">
+			<li> È possibile interagire con la legenda del grafico superiore, cliccando sul 
+				colore relativo ad ogni team per gestirne la visualizzazione.</li>
+			<li> Il grafico superiore è stato realizzato tenendo traccia delle soluzioni 
+				inviate durante la gara:<br>
+			- in caso di soluzione corretta, il punteggio accumulato (posto inizialmente a 0) 
+			è stato incrementato;<br>
+			- in caso di soluzione errata, il punteggio accumulato è rimasto invariato;<br>
+			- in caso di soluzione errata (avendo già consegnato precedentemente una 
+			soluzione corretta), il punteggio accumulato è stato decrementato.</li>
+			<li> Per completezza, sono stati riportati in colore più chiaro i risultati dei 
+				team che non hanno rispettato il protocollo di iscrizione.</li>
+		</ul>
+		<p align="justify"> Ecco la classifica finale: </p>
+		<table class="tg" align="center">
+			<tr>
+				<th class="tg-7btt">PODIO</th>
+				<th class="tg-7btt">TEAM</th>
+			</tr>
+			<tr>
+				<td class="tg-uys7">#1</td>
+				<td class="tg-0pky">pwnthem0le</td>
+			</tr>
+			<tr>
+				<td class="tg-c3ow">#2</td>
+				<td class="tg-0pky">Critto Tanto</td>
+			</tr>
+			<tr>
+				<td class="tg-c3ow">#3</td>
+				<td class="tg-0pky">Canederlo Trentuno</td>
+			</tr>
+		</table>
 	</div>
