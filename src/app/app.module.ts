@@ -86,6 +86,12 @@ import { ClassicComponent } from './attivita/gare-crittografiche/cryptowars/cryp
 import { PublicComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-eng/public/public.component';
 import { SymmetricComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-eng/symmetric/symmetric.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { DecifrisEruditorumComponent } from './gruppi/seminari-locali/decifris-eruditorum/decifris-eruditorum.component';
+import { QuantumCifrisComponent } from './gruppi/quantum-cifris/quantum-cifris.component';
+import { Cryptowars2021Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2021/cryptowars2021.component';
+import { Crypto2021EngComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2021/crypto2021-eng/crypto2021-eng.component';
+import { Crypto2021ItaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2021/crypto2021-ita/crypto2021-ita.component';
+import { DecifrisHistoriaeComponent } from './gruppi/seminari-locali/decifris-historiae/decifris-historiae.component';
 
 @NgModule({
   declarations: [
@@ -166,7 +172,13 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     Crypto2011EngComponent,
     ClassicComponent,
     PublicComponent,
-    SymmetricComponent
+    SymmetricComponent,
+    DecifrisEruditorumComponent,
+    QuantumCifrisComponent,
+    Cryptowars2021Component,
+    Crypto2021EngComponent,
+    Crypto2021ItaComponent,
+    DecifrisHistoriaeComponent
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,9 @@
 				<button autofocus="autofocus"></button>
 			</li>
 			<li>
+				<button class="btn btn-outline-info" routerLink="/eruditorum">Eruditorum</button>
+			</li>
+			<li>
 				<button class="btn btn-outline-info" routerLink="/deCifrisAthesis">Athesis</button>
 			</li>
 			<li>
@@ -17,16 +20,22 @@
 				<button class="btn btn-outline-info" routerLink="/deCifrisMediolanensibus">Mediolanensibus</button>
 			</li>
 			<li>
-				<button class="btn btn-outline-info" [routerLink]="['/cifrisChain']" fragment="seminari">CifrisChain</button>
+				<button class="btn btn-outline-info" [routerLink]="['/cifrisChain']" fragment="seminari">Cifris Chain</button>
 			</li>
 			<li>
 				<button class="btn btn-outline-info" [routerLink]="['/PQCifris']" fragment="seminari">PQCifris</button>
 			</li>
 			<li>
+				<button class="btn btn-outline-info" [routerLink]="['/quantumCifris']" fragment="seminari">QuantumCifris</button>
+			</li>
+			<li>
 				<button class="btn btn-outline-info" [routerLink]="['/cifrisCloud']" fragment="seminari">CifrisCloud</button>
 			</li>
 			<li>
-				<button class="btn btn-outline-info" [routerLink]="['/mathCifris']" fragment="seminari">MathCifris</button>
+				<button class="btn btn-outline-info" [routerLink]="['/mathCifris']" fragment="seminari">Math Cifris</button>
+			</li>
+			<li>
+				<button class="btn btn-outline-info" [routerLink]="['/deCifrisHistoriae']" fragment="seminari">De Cifris Historiae</button>
 			</li>
 		</ul>
 	</ng-sidebar>
@@ -45,6 +54,9 @@
 			<div class="row">
 				<div class="col-md-12">
 					<ul>
+						<li><a routerLink="/eruditorum">De Cifris Eruditorum</a>: annunci di seminari su 
+							temi di ampia portata e cultura generale, come ad esempio
+							l’interazione della crittografia con la Società, gli aspetti Legali e Giuridici, etc.</li>
 						<li><a routerLink="/deCifrisAthesis">De Cifris Athesis</a>: annunci sui seminari che 
 							teniamo a Trento (in questo periodo sono online), circa uno al mese.</li>
 						<li><a routerLink="/deCifrisAugustaeTaurinorum">De Cifris Augustae Taurinorum</a>: annunci 
@@ -53,15 +65,19 @@
 							che teniamo a Roma (in questo periodo sono online), circa uno al mese.</li>
 						<li><a routerLink="/deCifrisMediolanensibus">De Cifris Mediolanensibus</a>: annunci sui 
 							seminari che teniamo a Milano (in questo periodo sono online), circa uno al mese.</li>
-						<li><a [routerLink]="['/cifrisChain']" fragment="seminari">CifrisChain</a>:
+						<li><a [routerLink]="['/cifrisChain']" fragment="seminari">Cifris Chain</a>:
 							seminari incentrati sugli aspetti crittografici della tecnologia blockchain e 
 							del concetto di cryptocurrency.</li>
+						<li><a [routerLink]="['/quantumCifris']" fragment="seminari">QuantumCifris</a>:
+							annunci di eventi e progetti specifici per QuantumCifris (il nostro 
+							team interno che lavora su Quantum Cryptography)</li>
 						<li><a [routerLink]="['/PQCifris']" fragment="seminari">PQCifris</a>: seminari
 							incentrati sulla crittografia Post-Quantum.</li>
 						<li><a [routerLink]="['/cifrisCloud']" fragment="seminari">CifrisCloud</a>:
 						annunci su seminari riguardo le interazioni tra la crittografia e il cloud computing.</li>
-						<li><a [routerLink]="['/mathCifris']" fragment="seminari">MathCifris</a>: annunci sui seminari
+						<li><a [routerLink]="['/mathCifris']" fragment="seminari">Math Cifris</a>: annunci sui seminari
 						incentrati sugli aspetti più matematici della crittografia.</li>
+						<li><a [routerLink]="['/deCifrisHistoriae']" fragment="seminari">De Cifris Historiae</a>.</li>
 					</ul>
 				</div>
 			</div>
@@ -71,9 +87,139 @@
 			<hr>
 			<div class="row">
 				<div class="col-md-12">
+					<h4>PROSSIMI SEMINARI</h4>
+					<p style="color: crimson;">Avviso: causa dell'emergenza Coronavirus 
+						(Covid-19) organizzeremo i prossimi eventi in webinar.</p>
+					<ul>
+						<li>
+							<b style="color: blue;">30 Novembre 2021 -- 14:30</b>
+							<ul>
+								<li>
+									<b>Federico Pintore</b> -- Università di Bari <br>
+									<i>"Collision on isogeny graphs and the security of the
+										SIDH-based identification protocol"</i><br>
+									<a href="../../../assets/attivita/seminariLocali/deCifrisSchola
+									Latina/Pintore_Locandina_11.2021.pdf">Locandina</a>
+									<br>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<b>1 Dicembre 2021</b>
+							<ul>
+								<li>
+									<b>Daniele Bartoli</b> -- Università degli Studi di Perugia <br>
+									<i>"Teoremi di tipo Hasse-Weil e classi rilevanti di funzioni 
+										polinomiali"</i><br>
+									<a href="../../../assets/attivita/gruppi/mathCifris/Bartoli_Locandina.pdf">Locandina</a>
+									<br>
+								</li>
+								<li>
+									<b>Andrea Gangemi e Alessandro Guggino</b> -- Politecnico di Torino <br>
+									<i>"Schnorr and Taproot: an overview of the new Bitcoin update"</i><br>
+									<a href="../../../assets/attivita/seminariLocali/deCifrisAugust
+									aeTaurinorum/12.2021-Gangemi-Guggino.pdf">Locandina</a>
+									<br>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<b>7 Dicembre 2021</b>
+							<ul>
+								<li>
+									<b>Cecilia Boschini</b> -- Technion‌<br>
+									<i>"How to do Efficient Signature Verification without Leakage"</i><br>
+									<a href=".././../../assets/attivita/gruppi/PQCifris/12.2021_Boschini.pdf">Locandina</a>
+									<br>
+								</li>
+							</ul>
+						</li>
+					</ul>
 					<h4>SEMINARI RECENTI</h4>
 					<p style="color: crimson;">Avviso: causa dell'emergenza Coronavirus (Covid-19) organizzeremo i prossimi eventi in webinar.</p>
 					<ul>
+						<li>
+							<b>9 Novembre 2021</b> -- 15:00
+							<ul>
+								<li>
+									<b>Valentina De Cian</b> -- TriNANDable‌ <br>
+									<i>"LDPC‌ ‌codes‌ ‌for‌ ‌storage‌ ‌applications‌"</i><br>
+									<a href="../../../assets/attivita/seminariLocali/
+									deCifrisAthesis/11.2021_DeCian.pdf">Locandina</a>
+									<br>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<b>6 Novembre 2021</b>
+							<ul>
+								<li>
+									<b>Marco Moraglio</b> <br>
+									<i>"Scrivere per nascondere, leggere per scoprire.
+										La crittografia nella Roma antica"</i><br>
+									<a href="../../../assets/attivita/seminariLocali/deCifris
+									Historiae/Moraglio_Locandina.pdf">Locandina</a> -- 
+									<a href="../../../assets/attivita/seminariLocali/deCifris
+									Historiae/MORAGLIO-slide.pdf">Slide</a> -- 
+									<a href="https://www.youtube.com/watch?v=v3jGrVNa4H8&authuser=
+									1">Video</a>
+									<br>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<b>3 Novembre 2021 -- 16:30</b>
+							<ul>
+								<li>
+									<b>Ilaria Zappatore</b> -- INRIA Paris <br>
+									<i>"Una tecnica per costruire algoritmi resistenti agli errori 
+										per la risoluzione di sistemi lineari polinomiali"</i><br>
+									<a href="../../../assets/attivita/gruppi/mathCifris/
+										11.2021_Ilaria_Zappatore.pdf">Locandina</a> -- 
+									<a href="../../../assets/attivita/gruppi/mathCifris/Zappatore_
+									Slide.pdf">Slide</a>
+									<br>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<b>2 Novembre 2021</b>
+							<ul>
+								<li>
+									<b>Paolo Santini</b> -- Università‌ ‌Politecnica‌ ‌delle‌ ‌Marche<br>
+									<i>" Recent advances in code-based encryption and digital signatures"</i><br>
+									<a href="../../../assets/attivita/gruppi/PQCifris/11.2021_Santini.pdf">Locandina</a> -- 
+									<a href="../../../assets/attivita/gruppi/PQCifris/11.2021-SantiniSlide.pdf">Slide</a> -- 
+									<a href="https://www.youtube.com/watch?v=KBTKdT4IP84&t=6s">Video</a>
+									<br>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<b>12 Ottobre 2021</b> -- 15:00
+							<ul>
+								<li>
+									<b>Enrico Zimuel</b> -- Principal Software Engineer, Elastic <br>
+									<i>"Introduzione alle problematiche nell'implementazione dei sistemi crittografici"</i><br>
+									<a href="../../../assets/attivita/seminariLocali/deCifrisMediolanensibus/EnricoZimuel.pdf">Locandina</a> -- 
+									<a href="../../../assets/attivita/seminariLocali/deCifrisMediolanensibus/Zimuel12102021.pdf">Slide</a>
+									<br>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<b>5 Ottobre 2021</b> -- 15:00
+							<ul>
+								<li>
+									<b>Luca Nizzardo</b> -- Protocol Labs <br>
+									<i>"Filecoin: From Proof of Space to Decentralised Storage"</i><br>
+									<a href="../../../assets/attivita/gruppi/cifrisChain/LucaNizzardoLocandina.pdf">Locandina</a> -- 
+									<a href="../../../assets/attivita/gruppi/cifrisChain/Filecoin_Luca_CifrisChain 2021Slide.pdf">Slide</a> -- 
+									<a href="https://mega.nz/file/rJcTgC4a#nn79u9pbp4WRq7xiG0-AGjjCHw17qvWbR9KJEvdj5C8">Video</a>
+									<br>
+								</li>
+							</ul>
+						</li>
 						<li>
 							<b>7 Luglio 2021 - 16:00</b>
 							<ul>
@@ -104,7 +250,10 @@
 									<b>Roberto Civino</b> -- University of L’Aquila. <br>
 									<i>"On invariant subspaces in the Lai-Massey scheme
 										and a primitivity reduction"</i><br>
-									<a href="../../../assets/attivita/seminariLocali/deCifrisScholaLatina/RobertoCivino-ScholaLatina.pdf">Locandina</a> -- 
+									<a href="../../../assets/attivita/seminariLocali/deCifrisSchola
+									Latina/RobertoCivino-ScholaLatina.pdf">Locandina</a> -- 
+									<a href="../../../../assets/attivita/seminariLocali/deCifrisSch
+									olaLatina/Civino_Sinopsi.pdf">Sinopsi</a> -- 
 									<a href="https://www.youtube.com/watch?v=TcqHqtTB-fY">Video</a>
 									<br>
 								</li>
@@ -129,7 +278,8 @@
 									<b>Marco Calderini</b> -- University of Bergen <br>
 									<i>"Permutation groups and security of block ciphers"</i><br>
 									<a href="../../../../assets/attivita/seminariLocali/deCifrisAthesis/CalderiniLocandina.pdf">Locandina</a> -- 
-									<a href="../../../../assets/attivita/seminariLocali/deCifrisAthesis/calderiniSlide.pdf">Slide</a>
+									<a href="../../../../assets/attivita/seminariLocali/deCifrisAthesis/calderiniSlide.pdf">Slide</a> -- 
+									<a href="https://youtu.be/Zd2AqqA2UVM">Video</a>
 									<br>
 								</li>
 							</ul>
@@ -152,7 +302,8 @@
 									<b>Annamaria Iezzi</b> -- Université de la Polynésie Française. <br>
 									<i>"Strumenti per fare crittoanalisi nei grafi di isogenie supersingolari"</i><br>
 									<a href="../../../assets/attivita/seminariLocali/deCifrisAthesis/Iezzi.pdf">Locandina</a> --
-									<a href="../../../assets/attivita/seminariLocali/deCifrisAthesis/IezziIsogeny.pdf">Slide</a>
+									<a href="../../../assets/attivita/seminariLocali/deCifrisAthesis/IezziIsogeny.pdf">Slide</a> -- 
+									<a href="https://youtu.be/b9YU-UNgVSs">Video</a>
 									<br>
 								</li>
 							</ul>

@@ -6,6 +6,11 @@
 				<button autofocus="autofocus"></button>
 			</li>
 			<li>
+				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2021">
+					Edizione 2021
+				</button>
+			</li>
+			<li>
 				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2020">
 					Edizione 2020
 				</button>
@@ -45,6 +50,11 @@
 			<!-- Utilizziamo questo trick per evitare di rendere visibile l'autofocus al lettore. -->
 			<li style="display:none">
 				<button autofocus="autofocus"></button>
+			</li>
+			<li>
+				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2021">
+					2021 Edition
+				</button>
 			</li>
 			<li>
 				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2020">
@@ -106,6 +116,7 @@
 					Alcune di queste sono realizzate in collaborazione con altri enti,
 					come <a href="https://clusit.it/">CLUSIT</a> ed <a href="https://www.enisa.europa.eu/">ENISA</a>.
 				</p>
+				<p>Controlla <a (click)="goTo('edizioneScelta')" routerLink="2021">qua</a> i dettagli della gara di quest'anno!</p>
 				<p>Le edizioni precedenti
 					delle cryptowars si sono svolte nel 
 					<a (click)="goTo('edizioneScelta')" routerLink="2020">2020</a>, 
@@ -124,6 +135,8 @@
 					with other entities, such as <a href="https://clusit.it/">CLUSIT</a> and 
 					<a href="https://www.enisa.europa.eu/">ENISA</a>.
 				</p>
+				<p>Click <a (click)="goTo('edizioneScelta')" routerLink="2020">here</a> for 
+					more details of this year's competition</p>
 				<p>Previous editions of cryptowars took place in
 					<a (click)="goTo('edizioneScelta')" routerLink="2020">2020</a>, 
 					<a (click)="goTo('edizioneScelta')" routerLink="2019">2019</a>,

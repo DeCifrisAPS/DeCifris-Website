@@ -55,3 +55,9 @@ ng-sidebar-container{
 	margin-bottom: 3em;
 	padding-bottom: 3em;
 }
+
+b {
+	/* Su richiesta dall'alto modifico il tag <b> in quanto nella 
+	sua versione standard risulta all'occhio un po' "slavato" */
+	font-weight: 500;
+}

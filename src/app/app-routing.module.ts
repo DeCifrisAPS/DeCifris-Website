@@ -40,6 +40,10 @@ import { Cryptowars2011Component } from './attivita/gare-crittografiche/cryptowa
 import { SimmetricaComponent} from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-ita/simmetrica/simmetrica.component';
 import { ClassicaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-ita/classica/classica.component';
 import { PubblicaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-ita//pubblica/pubblica.component';
+import { DecifrisEruditorumComponent } from './gruppi/seminari-locali/decifris-eruditorum/decifris-eruditorum.component';
+import { QuantumCifrisComponent } from './gruppi/quantum-cifris/quantum-cifris.component';
+import { Cryptowars2021Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2021/cryptowars2021.component';
+import { DecifrisHistoriaeComponent } from './gruppi/seminari-locali/decifris-historiae/decifris-historiae.component';
 
 const routes: Routes = [
   {path: 'advisoryboard/borse', redirectTo: 'opportunita', pathMatch: 'full' },
@@ -49,11 +53,14 @@ const routes: Routes = [
   {path: "mailingList", component: MailingListComponent},
   {path: "attivita", component: AttivitaComponent},
   {path: "seminariLocali", component: SeminariLocaliComponent},
+  {path: "eruditorum", component: DecifrisEruditorumComponent},
+  {path: "deCifrisHistoriae", component: DecifrisHistoriaeComponent},
   {path: "deCifrisAthesis", component: DecifrisAthesisComponent},
   {path: "deCifrisAugustaeTaurinorum", component: DecifrisAugustaeTaurinorumComponent},
   {path: "deCifrisScholaLatina", component: DecifrisScholaLatinaComponent},
   {path: "deCifrisMediolanensibus", component: DecifrisScholaMediolanensibusComponent},
   {path: 'cifrisChain', component: CifrisChainComponent},
+  {path: 'quantumCifris', component: QuantumCifrisComponent },
   {path: 'cifrisCloud', component: CifrisCloudComponent},
   {path: 'mathCifris', component: MathCifrisComponent},
   {path: 'PQCifris', component: PqCifrisComponent},
@@ -72,6 +79,7 @@ const routes: Routes = [
   {path: "accademia", component: PerAccademiaComponent},
   {path: "counterparty", component: CounterpartyComponent},
   {path: "cryptowars", component: CryptowarsComponent, children:  [
+    {path: "2021", component: Cryptowars2021Component},
     {path: "2020", component: Cryptowars2020Component},
     {path: "2019", component: Cryptowars2019Component},
     {path: "2018", component: Cryptowars2018Component},
