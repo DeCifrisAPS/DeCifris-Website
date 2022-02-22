@@ -42,3 +42,7 @@ ng-sidebar-container{
 .noIndent ul li {
 	margin: 10px 0;
 }
+
+b {
+	font-weight: 500;
+}
