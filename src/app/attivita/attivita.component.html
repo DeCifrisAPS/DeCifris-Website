@@ -37,13 +37,21 @@
 			<div class="row">
 				<div class="col-md-12">
 					<ul>
-						<!-- <li>La <a routerLink="/counterparty">competizione Bitcoin</a>, che inizia il 29 Marzo.</li> -->
-						<li>La stesura del libro: <a class="toggleText" (click)="mostraTesi()">100 tesi di Crittografia e Codici in Italia 2008-2017.</a>
+						<li>
+							"De Cifris Trends in Modern Cryptography", una serie di seminari online, 
+							coinvolge le maggiori università italiane. 20 lezioni da 25 minuti 
+							l'una che si svolgeranno sulla piattaforma Zoom dal 02 al 27 maggio 
+							2022. Scopri di più nella <a [routerLink]="['/decifrisTrend']">sezione dedicata</a>.
+						</li>
+						<li>La stesura del libro: <a class="toggleText" (click)="mostraTesi()">
+							100 tesi di Crittografia e Codici in Italia 2008-2017.</a>
 							<div *ngIf="tesiVisibili">
 								<app-cento-tesi></app-cento-tesi>
 							</div>
 						</li>
-						<li>Il finanziamento di <a [routerLink]="['/opportunita']" fragment="borseAdvisoryBoard">borse</a> per la crittografia, da assegnare in maniera competitiva su base nazionale: </li>
+						<li>Il finanziamento di <a [routerLink]="['/opportunita']" 
+							fragment="borseAdvisoryBoard">borse</a> per la crittografia, da 
+							assegnare in maniera competitiva su base nazionale: </li>
 						<ul>
 							<li>borse per studenti triennali o magistrali.</li>
 							<li>borse di dottorato.</li>
