@@ -1,4 +1,4 @@
-h3, h4{
+h3, h4, h5 {
 	color:rgb(23, 162, 184);
 }
 
@@ -31,6 +31,8 @@ ng-sidebar-container{
 .bottomExtra{
 	margin-bottom: 3em;
 	padding-bottom: 3em;
+	margin-top: 1em;
+	padding-top: 1em;
 }
 
 .noIndent {
