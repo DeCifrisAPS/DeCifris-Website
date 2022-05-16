@@ -93,6 +93,7 @@ import { Crypto2021EngComponent } from './attivita/gare-crittografiche/cryptowar
 import { Crypto2021ItaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2021/crypto2021-ita/crypto2021-ita.component';
 import { DecifrisHistoriaeComponent } from './gruppi/seminari-locali/decifris-historiae/decifris-historiae.component';
 import { AComponent } from './a/a.component';
+import { DecifrisTrendComponent } from './attivita/decifris-trend/decifris-trend.component';
 
 @NgModule({
   declarations: [
@@ -180,7 +181,8 @@ import { AComponent } from './a/a.component';
     Crypto2021EngComponent,
     Crypto2021ItaComponent,
     DecifrisHistoriaeComponent,
-    AComponent
+    AComponent,
+    DecifrisTrendComponent
   ],
   imports: [
     BrowserModule,

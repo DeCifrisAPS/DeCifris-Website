@@ -45,8 +45,10 @@ import { QuantumCifrisComponent } from './gruppi/quantum-cifris/quantum-cifris.c
 import { Cryptowars2021Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2021/cryptowars2021.component';
 import { DecifrisHistoriaeComponent } from './gruppi/seminari-locali/decifris-historiae/decifris-historiae.component';
 import { AComponent } from './a/a.component';
+import { DecifrisTrendComponent } from './attivita/decifris-trend/decifris-trend.component';
 
 const routes: Routes = [
+  {path: 'trends', component: DecifrisTrendComponent},
   {path: 'advisoryboard/borse', redirectTo: 'opportunita', pathMatch: 'full' },
   {path: "a.html", component: AComponent},
   {path : "", component : HomeComponent},

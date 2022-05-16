@@ -46,8 +46,59 @@
 			<h4><a (click)="toggleAttivita('recenti')">SEMINARI RECENTI</a></h4>
 			<div *ngIf="mostraFuturi==true"> 
 				<p>POVO 1, Università di Trento, <b>Trento</b></p>
-				<p class="warning">Avviso: causa dell'emergenza Coronavirus (Covid-19) organizzeremo i prossimi eventi in webinar.</p>
+				<p class="warning">Avviso: causa dell'emergenza Coronavirus (Covid-19) 
+					organizzeremo i prossimi eventi in webinar.</p>
 				<ul>
+					<li>
+						<b> 12 Aprile 2022</b>
+						<ul>
+							<li>
+								<b>Lorenzo Zaccagnini</b> -- Devoleum<br>
+								<i>"Vulnerabilità note di Solidity"</i><br>
+								<a href="../../../../assets/attivita/seminariLocali/deCifrisAthesis/
+								04.2022 Zaccagnini.pdf">Locandina</a> -- 
+								<a href="../../../../assets/attivita/seminariLocali/deCifris
+									Athesis/Allegato1_Athesis_Zaccagnini.pdf">Slide</a> -- 
+								<a href="https://www.youtube.com/watch?v=4lnw7_uVhTA">Video</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			
+			<hr id="futuri"> 
+			<h4><a (click)="toggleAttivita('futuri')">PROSSIMI SEMINARI</a></h4>
+			<ul>
+				<li>
+					<b> 10 Maggio 2022 - 16:00</b>
+					<ul>
+						<li>
+							<b>Marco Martinoli</b> -- Proton AG <br>
+							<i>"Cryptography vs Real World"</i><br>
+							<a href="../../../../assets/attivita/seminariLocali/deCifrisAthesis/
+							05.2022 Martinoli.pdf">Locandina</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+			<hr id="passati">
+			<h4><a (click)="toggleAttivita('passati')">SEMINARI PASSATI</a></h4>
+			<div *ngIf="mostraPassati==true">
+				<ul>
+					<li>
+						<b> 8 Febbraio 2022</b>
+						<ul>
+							<li>
+								<b>Michele Orrù</b> -- UC Berkeley (US)<br>
+								<i>"Breaking 20 years of Schnorr-like blind signatures"</i><br>
+								<a href="../../../assets/attivita/seminariLocali/deCifris
+								Athesis/OrruLocandina.pdf">Locandina</a> -- 
+								<a href="../../../assets/attivita/seminariLocali/deCifris
+								Athesis/orru-athesis.pdf">Slide</a>
+							</li>
+						</ul>
+					</li>
 					<li>
 						<b> 12 Gennaio 2022</b>
 						<ul>
@@ -59,8 +110,8 @@
 								Athesis/SCIARRETTA.pdf">Locandina</a> -- 
 								<a href="../../../assets/attivita/seminariLocali/deCifris
 									Athesis/SciarrettaSlide.pdf">Slide</a> -- 
-								<a href="https://mega.nz/file/KOQ2kDrA#Yvug6FTe1eGA2b9bpam5p8M
-								VzKbavNFePPy7i6m1WXE">Video</a>
+								<a href="https://mega.nz/file/qc1QwARa#DtfKxWqDj_6ka5KP8DJrzm
+								cipx3by1IrWI80wHhjVKg">Video</a>
 								<br>
 							</li>
 						</ul>
@@ -80,31 +131,6 @@
 							</li>
 						</ul>
 					</li>
-				</ul>
-			</div>
-			
-			<hr id="futuri"> 
-			<h4><a (click)="toggleAttivita('futuri')">PROSSIMI SEMINARI</a></h4>
-			<ul>
-				<li>
-					<b> 8 Febbraio 2022</b>
-					<ul>
-						<li>
-							<b>Michele Orrù</b> -- UC Berkeley (US)<br>
-							<i>"Breaking 20 years of Schnorr-like blind signatures"</i><br>
-							<a href="../../../assets/attivita/seminariLocali/deCifris
-							Athesis/OrruLocandina.pdf">Locandina</a> -- 
-							<a href="../../../assets/attivita/seminariLocali/deCifris
-							Athesis/orru-athesis.pdf">Slide</a>
-						</li>
-					</ul>
-				</li>
-			</ul>
-
-			<hr id="passati">
-			<h4><a (click)="toggleAttivita('passati')">SEMINARI PASSATI</a></h4>
-			<div *ngIf="mostraPassati==true">
-				<ul>
 					<li>
 						<b>7 Giugno 2021 - 10:00</b>
 						<ul>

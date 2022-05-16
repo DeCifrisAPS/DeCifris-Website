@@ -1,3 +1,20 @@
+<!-- <ng-template #content let-modal>
+	<div class="modal-header">
+	  <h4 class="modal-title" id="modal-basic-title">Trends in Modern Cryptography</h4>
+	  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	</div>
+	<div class="modal-body">
+	  <p > "De Cifris Trends in Modern Cryptography”: un evento on line di rilevanza 
+		  nazionale tenuto da 20 università italiane. </p>
+		  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+			<button class="btn btn-primary me-md-2" type="button" 
+				(click)="modal.close('Save click')">Chiudi e prosegui la navigazione</button>
+  			<button type="button" class="btn btn-outline-primary" 
+				routerLink="/trends" (click)="modal.close('Save click')">Vai all'evento</button>
+		  </div>  
+	</div>
+ </ng-template> -->
+
 <ng-sidebar-container>
 	<ng-sidebar opened="true" position="left" id="right-sidebar" mode="push" [autoCollapseWidth]="799"> 
 		<p>
@@ -48,20 +65,6 @@
 					Fai ricerca?</button>
 			</li>
 		</ul>
-		<!-- <ul class="noIndent" align="left">
-			<li style="display:none">
-				<button autofocus="autofocus"></button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" (click)="goTo('news')">News</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" (click)="goTo('aderenti')">Aderenti</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" (click)="goTo('organizzazione')">Organizzazione</button>
-			</li>
-		</ul> -->
 	</ng-sidebar>
 	<div ng-sidebar-content class="container bottomExtra">
 		<br>
@@ -71,6 +74,9 @@
 					<img src="../../assets/logo.jpg" alt="Logo De Cifris" width="40%">
 				</div>
 			</div>
+			<!-- <div class="row">
+				<button id="openModalButton" class="btn btn-lg btn-outline-primary" [hidden]="true" (click)="open(content)">Launch demo modal</button>
+			</div> -->
 			<div class="row">
 				<div class="col-md-12" align="center">
 						<p>
