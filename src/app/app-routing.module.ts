@@ -46,6 +46,7 @@ import { Cryptowars2021Component } from './attivita/gare-crittografiche/cryptowa
 import { DecifrisHistoriaeComponent } from './gruppi/seminari-locali/decifris-historiae/decifris-historiae.component';
 import { AComponent } from './a/a.component';
 import { DecifrisTrendComponent } from './attivita/decifris-trend/decifris-trend.component';
+import { SummerSchoolComponent } from './eventi/eventi-pubblici/summer-school/summer-school.component';
 
 const routes: Routes = [
   {path: 'trends', component: DecifrisTrendComponent},
@@ -82,6 +83,7 @@ const routes: Routes = [
   {path: "aziende", component: PerAziendeComponent},
   {path: "accademia", component: PerAccademiaComponent},
   {path: "counterparty", component: CounterpartyComponent},
+  {path: "summerSchool2022", component: SummerSchoolComponent},
   {path: "cryptowars", component: CryptowarsComponent, children:  [
     {path: "2021", component: Cryptowars2021Component},
     {path: "2020", component: Cryptowars2020Component},
