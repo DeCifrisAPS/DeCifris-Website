@@ -95,6 +95,7 @@ import { DecifrisHistoriaeComponent } from './gruppi/seminari-locali/decifris-hi
 import { AComponent } from './a/a.component';
 import { DecifrisTrendComponent } from './attivita/decifris-trend/decifris-trend.component';
 import { SummerSchoolComponent } from './eventi/eventi-pubblici/summer-school/summer-school.component';
+import { ConvegnoUmiComponent } from './eventi/eventi-pubblici/convegno-umi/convegno-umi.component';
 
 @NgModule({
   declarations: [
@@ -184,7 +185,8 @@ import { SummerSchoolComponent } from './eventi/eventi-pubblici/summer-school/su
     DecifrisHistoriaeComponent,
     AComponent,
     DecifrisTrendComponent,
-    SummerSchoolComponent
+    SummerSchoolComponent,
+    ConvegnoUmiComponent
   ],
   imports: [
     BrowserModule,

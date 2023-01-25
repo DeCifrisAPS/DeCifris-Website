@@ -47,6 +47,7 @@ import { DecifrisHistoriaeComponent } from './gruppi/seminari-locali/decifris-hi
 import { AComponent } from './a/a.component';
 import { DecifrisTrendComponent } from './attivita/decifris-trend/decifris-trend.component';
 import { SummerSchoolComponent } from './eventi/eventi-pubblici/summer-school/summer-school.component';
+import { ConvegnoUmiComponent } from './eventi/eventi-pubblici/convegno-umi/convegno-umi.component';
 
 const routes: Routes = [
   {path: 'trends', component: DecifrisTrendComponent},
@@ -81,6 +82,7 @@ const routes: Routes = [
   {path: "scuola", component: PerInsegnantiComponent},
   {path: "studenti", component: PerStudentiComponent},
   {path: "aziende", component: PerAziendeComponent},
+  {path: "convegnoUmi", component: ConvegnoUmiComponent},
   {path: "accademia", component: PerAccademiaComponent},
   {path: "counterparty", component: CounterpartyComponent},
   {path: "summerSchool2022", component: SummerSchoolComponent},

@@ -1,0 +1,216 @@
+<ng-sidebar-container> 	
+	<ng-sidebar opened="true" position="left" id="right-sidebar" mode="push" [autoCollapseWidth]="799">
+	<!-- Ai posteri: in caso voleste inserire nuovo contenuto nella sidebar, questo è il posto -->
+	<ul class="noIndent" align="left">
+		<!-- Utilizziamo questo trick per evitare di rendere visibile l'autofocus al lettore. -->
+		<li style="display:none">
+			<button autofocus="autofocus"></button>
+		</li>
+		<li>
+			<button class="btn btn-outline-info" (click)="goTo('presentazione')">
+				Presentazione
+			</button>
+		</li>
+		<li>
+			<button class="btn btn-outline-info" (click)="goTo('programma')">
+				Programma
+			</button>
+		</li>
+	</ul>
+	</ng-sidebar>
+	<div ng-sidebar-content class="container bottomExtra"> 
+		<br>
+		<div class="mt-3">
+			<div class="row">
+				<div class="col-md-12">
+					<h3>CONVEGNO UMI 2021</h3>
+					<p>
+						Il convegno, in memoria del professor Michele Elia, è organizzato dal 
+						gruppo CRITTOGRAFIA E CODICI (Unione Matematica Italiana) e 
+						dall’iniziativa nazionale De Componendis Cifris e si svolgerà 
+						virtualmente il 21-22 settembre 2021.
+					</p>
+				</div>
+			</div>
+			<hr id="presentazione">
+			<div class="row">
+				<div class="col-md-12">
+					<h4>PRESENTAZIONE</h4>
+					<p>
+						I servizi IT sono sempre più pervasivi nella società e veicolano la maggior parte dei dati che vengono archiviati ed elaborati da individui, aziende e amministrazioni. Di conseguenza, la riservatezza e la sicurezza di tutti gli aspetti coinvolti sono diventate un requisito essenziale. La scienza risponde a questa esigenza con diverse discipline che indagano gli aspetti tecnologici e teorici della sicurezza.
+						<br><br>
+						La crittografia e la teoria dei codici sono campi di studio e ricerca, che trovano ampia applicazione in questo settore e che ricevono molta attenzione in questo periodo storico. Hanno anche un carattere trasversale in vari campi della matematica, che vanno dall'algebra alla geometria, alla teoria dei numeri, alla teoria degli algoritmi, alla teoria dei codici a blocchi e flusso, e coinvolgono i loro aspetti computazionali.
+						<br><br>
+						La conferenza mira a fornire un'opportunità ai ricercatori, che lavorano sugli aspetti matematici della crittografia e sulla teoria dei codici, per mostrare i loro interessi di ricerca. Le aziende prenderanno parte alla conferenza in modo da mettere in luce come i codici e i sistemi crittografici giochino un ruolo centrale nelle tecnologie alla base dell’attuale società dell’informazione. Infine anche i docenti saranno coinvolti nella conferenza per condividere idee e suggerimenti su attività didattiche e laboratori di matematica, legati alla teoria dei codici e alla crittografia, rivolti agli studenti.
+					</p>
+				</div>
+			</div>
+			<hr id="programma">
+			<div class="row">
+				<div class="col-md-12">
+					<h4>PROGRAMMA</h4>
+					<ul>
+						<li>
+							<h6>Martedì 21 Settembre</h6>
+							<ul>
+								<li>
+									<b>Welcome Greetings</b>
+									<p>09:00 - Guido Proietti - Director of DISIM department - University of L'Aquila.<br>
+										09:10 - Massimiliano Sala - Acting Director of national initiative De Componendis Cifris.<br>
+										09:20 - Norberto Gavioli - Coordinator of Cryptography and Codes Group - Italian Mathematical Union.<br>
+									</p>
+								</li>
+								<li>
+									<b>Research Session 1</b>
+									<p>
+										09:30 - Joachim Rosenthal - The work of Michele Elia on continued fractions and factoring. (<a href="https://www.youtube.com/watch?v=B1ZjZUcfYyc&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=50">Video</a>) <br>
+										10:20 - Elena Berardini - Riemann–Roch spaces and algebraic geometry codes. (<a href="https://www.youtube.com/watch?v=4W6tT489MYc&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=2">Video</a>)  <br>
+										10:40	- Martino Borello - On short minimal codes and related combinatorial structures. (<a href="https://www.youtube.com/watch?v=Q0EaUlcX0Jg&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=8">Video</a>)  <br>
+										11:00	- Gianira Alfarano - Roos-like bound for skew-cyclic codes in Hamming and (sum-)rank metric. (<a href="https://www.youtube.com/watch?v=XH0gF0g1ELI&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=1">Video</a>)  <br>
+										11:20 - Break.
+									</p>
+								</li>
+								<li>
+									<b>Research Session 2</b>
+									<p>
+										11:50 - Alessio Caminata - Degrees of regularity. (<a href="https://www.youtube.com/watch?v=Wz4UEeCaBq4&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=12">Video</a>)  <br>
+										12:40 - Christopher Battarbee - Cryptanalysis of Semidirect Product Key Exchange Using Matrices Over Non-Commutative Rings. (<a href="https://www.youtube.com/watch?v=NFMPoqf0Ims&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=4">Video</a>)  <br>
+										13:00	- Leyla Işık Lavrauw - On the Index of the Diffie-Hellman Mapping. (<a href="https://www.youtube.com/watch?v=4yqN3SfxIr0&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=40">Video</a>)  <br>
+										13:20	- Marco Calderini - On existence of certain APN functions over F_2^(3m). (<a href="https://www.youtube.com/watch?v=wOJMXp6wJWU&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=9">Video</a>)  <br>
+										13:40	- Lunch.
+									</p>
+								</li>
+								<li>
+									<b>Educational Session</b>
+									<p>
+										14:45 - Saluti - Francesca Tovena - Claudio Bernardi (Gruppo UMI Licei Matematici). (<a href="https://www.youtube.com/watch?v=3az8oZLrf6Y&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=22">Video</a>)  <br>
+										15:05 - Michael Lodi - Marco Sbaraglia e Simone Martini - Crittografia a blocchi al Liceo Matematico. (<a href="https://www.youtube.com/watch?v=DLhUKj9B-ek&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=41">Video</a>)  <br>
+										15:25 - Carola Manolino e Matteo Torre - L’arte di nascondere i messaggi: dalla scitala  alle macchine cifranti, passando per il disco  di Alberti. (<a href="https://www.youtube.com/watch?v=Dak4N8zwJw0&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=18">Video</a>)  <br>
+										15:45 - Paola Morando e Silvia Pagani - Errori di trasmissione: un bit per trovarli, tre bit per incatenarli (correggendoli). (<a href="https://www.youtube.com/watch?v=Z0dLfaPox3M&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=45">Video</a>)  <br>
+										16:05 - Alexander Saltuari - Opportunità didattiche offerte dalla Crittografia al Liceo Matematico. (<a href="https://www.youtube.com/watch?v=jUMY3cVw_dc&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=19">Video</a>)  <br>
+										16:25 - Manuela Saponaro - Tra passato e futuro : la crittografia nella scuola secondaria di primo grado. (<a href="https://www.youtube.com/watch?v=bwl2GfVMn0c&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=15">Video</a>)  <br>
+										16:45 - Break
+									</p>
+								</li>
+								<li>
+									<b>Research Session 3</b>
+									<p>
+										17:00 - Relinde Jurrius - q-Analogues in codes and related combinatorics. (<a href="https://www.youtube.com/watch?v=DBwV7vhLtio&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=39">Video</a>)  <br>
+										17:50 - Edoardo Persichetti - LESS-FM: Fine-tuning Signatures from the Code Equivalence Problem. (<a href="https://www.youtube.com/watch?v=wGl89MEN_fA&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=49">Video</a>)  <br>
+										18:10	- Federico Pintore - Explicit Formulas for Hashing into G_2 on BLS Pairing-friendly Curves. (<a href="https://www.youtube.com/watch?v=GnRhUv4m4cU&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=51">Video</a>)  <br>
+										18:30 - Paolo Santonastaso - On the list decodability of rank-metric codes. (<a href="https://www.youtube.com/watch?v=76kxVyM3UEY&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=20">Video</a>)  <br>
+										18:50 - Heide Gluesing-Luerssen - Independent Spaces of q-Polymatroids. (<a href="https://www.youtube.com/watch?v=Zfb4O1qwgzw&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=36">Video</a>)  <br>
+										19:10 - End of the first day.
+									</p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<h6>Mercoledì 22 Settembre</h6>
+							<ul>
+								<li>
+									<b>Institutional Session</b>
+									<p>
+										9:00 - Generale di Corpo d’Armata Luigi Francesco De Leverano - Consigliere Militare del Presidente del Consiglio dei Ministri. (<a href="https://www.youtube.com/watch?v=qsT1jqfZdkM&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=33">Video</a>)  <br>
+										9:10 - Dott. Ivano Gabrielli - Primo Dirigente della Polizia di Stato - Servizio Polizia Postale e delle Comunicazioni - III Divisione - CNAIPIC - Direttore. (<a href="https://youtu.be/hFZenss4cbQ">Video</a>)  <br>
+										9:20 - Colonnello Antonio Buccoliero - Vicecomandante della Legione Carabinieri Abruzzo e Molise. (<a href="">Video</a>)  <br>
+										9:30 - Colonnello Gianluca Berruti - Vice Comandante del Nucleo Speciale Tutela Privacy e Frodi Tecnologiche G.d.F. (<a href="https://www.youtube.com/watch?v=Q68X8WK_Dgs&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=28">Video</a>)  <br>
+										9:40 - Onorevole Deputato Davide Zanichelli- Coordinatore intergruppo parlamentare criptovalute e blockchain. (<a href="https://www.youtube.com/watch?v=nnk_sFhWP3Y&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=23">Video</a>)  <br>
+									</p>
+								</li>
+								<li>
+									<b>Community Session</b>
+									<p>
+										9:50 - Massimiliano Sala - Le attività dell’iniziativa nazionale di crittografia De Componendis Cifris. (<a href="https://www.youtube.com/watch?v=49XBq2bhv6s&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=30">Video</a>)  <br>
+										10:10 - Premiazione vincitori delle CryptoWars 2020 e presentazione delle  CryptoWars 2021. (<a href="https://www.youtube.com/watch?v=2SkwgN-bzDs&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=31">Video</a>)  <br>
+										10:15 - Ivan Visconti - Le attività del team CifrisChain sulla tecnologia blockchain e le crittovalute. (<a href="https://www.youtube.com/watch?v=ALtfyZpJTKE&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=38">Video</a>)  <br>
+										10:30 - Marco Pedicini - Le attività del team CifrisCloud sulla Cloud Encryption e le sue applicazioni. (<a href="https://www.youtube.com/watch?v=CSf7ThrA0Q4&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=48">Video</a>)  <br>
+										10:45 - Marco Baldi - Le attività del team PQCifris sulla crittografia post-quantum. (<a href="https://youtu.be/1kRCSaeyvuU">Video</a>)  <br>
+										11:00 - Massimo Giulietti - L’advisory Board De Cifris: un ponte tra accademia e aziende. (<a href="https://www.youtube.com/watch?v=PBXDnEfasG4&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=14">Video</a>)  <br>
+										11:15 - Massimiliano Sala - Un ricordo del nostro Presidente Michele Elia. (<a href="https://www.youtube.com/watch?v=IrXAsC049hs&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=26">Video</a>)  <br>
+									</p>
+								</li>
+								<li>
+									<b>Research Session 4</b>
+									<p>
+										11:40 - Sihem Mesnager - “Readers digest of” 17-year achievements on Boolean and vectorial functions and open problems. (<a href="https://www.youtube.com/watch?v=fC9SxukVrNU&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=43">Video</a>)
+									</p>
+									<ul>
+										<li>
+											<b>Subsession IV.a</b>
+											<p>
+												12:30 - Miguel Angel Navarro Pèrez - Optimum distance flag codes and Singer groups. (<a href="https://www.youtube.com/watch?v=8dqgJIVhTkE&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=46">Video</a>)  <br>
+												12:50 - Marco Timpanella - PIR codes from combinatorial structures. (<a href="https://www.youtube.com/watch?v=W2s_VE0v_vA&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=52">Video</a>)  <br>
+												13:10 - Stefano Lia - AG codes from F_q 7-rational points of the GK maximal curve. (<a href="https://www.youtube.com/watch?v=CZ0xYegyaj8&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=17">Video</a>)  <br>
+											</p>
+										</li>
+										<li>
+											<b>Subsession IV.b</b>
+											<p>
+												12:30 - Francesco Pavese - Small complete caps in PG(4n + 1, q). (<a href="https://www.youtube.com/watch?v=n7980OGfyv0&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=47">Video</a>)  <br>
+												12:50 - Wissam Ghantous - Loops, multi-edges and collisions in supersingular isogeny graphs. (<a href="https://www.youtube.com/watch?v=FJgvGQsuue8&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=5">Video</a>)  <br>
+												13:10 - Annamaria Iezzi - Bruhat–Tits trees as a cryptanalitic tool for isogeny-based cryptography. (<a href="https://www.youtube.com/watch?v=ZD94bMaJpaA&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=6">Video</a>)  <br>
+											</p>
+										</li>
+										<li>
+											<b>Subsession IV.c</b>
+											<p>
+												12:30 - Amir Hamzah Abd Ghafar - Partial Key Exposure Attack on RSA using Dickman’s Function. (<a href="https://www.youtube.com/watch?v=gYJbgp-vz48&t=5s">Video</a>)  <br>
+												12:50 - Giuseppe Cotardo - Codes for the Binary Asymmetric Channel. (<a href="https://www.youtube.com/watch?v=ufSePtI3jr4&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=13">Video</a>)  <br>
+												13:10 - Alessandro Budroni - A New Trapdoor Construction for LWE. (<a href="https://www.youtube.com/watch?v=-I9vEEK2gQU&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=11">Video</a>)  <br>
+											</p>
+										</li>
+									</ul>
+									<p>
+										13:30	Lunch.
+									</p>
+								</li>
+								<li>
+									<b>Industrial Session</b>
+									<p>
+										14:45	Matteo Bocchi e Adriano Gaibotti - Hash-Based Post-Quantum Signature Verifications on 32-bit Microcontrollers. (<a href="https://www.youtube.com/watch?v=fx1q2qgFmcg&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=27">Video</a>)  <br>
+										15:05 - Niccolò Izzo - Compute Express Link Security. (<a href="https://www.youtube.com/watch?v=gn1EvyOFFPQ&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=16">Video</a>)  <br>
+										15:25 - Davide Bacco - Quantum key distribution for telecom applications. (<a href="https://www.youtube.com/watch?v=_vA1RY7vRCc&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=3">Video</a>)  <br>
+										15:45 - Paolo Gasti - Keyless: A Privacy-preserving Biometric Authentication System. (<a href="https://www.youtube.com/watch?v=Hfkzbp0m3jI&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=34">Video</a>)  <br>
+										16:05 - Andrea Molino- Cryptography for electronic locks in security doors. (<a href="https://www.youtube.com/watch?v=gHZkcSc3kck&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=44">Video</a>)  <br>
+										16:25 - Break.
+									</p>
+								</li>
+								<li>
+									<b>Research Session</b>
+										<p>17:00 - Elisa Gorla - A general theory of supports and generalized weights for linear codes. (<a href="https://www.youtube.com/watch?v=ju_YNPwkDi8&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=37">Video</a>) </p>
+										<ul>
+											<li>
+												<b>Subsession V.a</b>
+												<p>
+													17:50 - Giovanni Longobardi - Partially scattered linearized polynomials, linear sets and rank metric codes. (<a href="https://www.youtube.com/watch?v=lxFp_8_2RkM&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=7">Video</a>)  <br>
+													18:10 - Giovanni Zini - On a class of linear square MRD codes. (<a href="https://www.youtube.com/watch?v=acJF3X0kX34&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=25">Video</a>)  <br>
+													18:30 - Wrya K. Kadir - On interpolation-based decoding of MRD codes. (<a href="https://www.youtube.com/watch?v=gYJbgp-vz48&t=5s">Video</a>)  <br>
+												</p>
+											</li>
+											<li>
+												<b>Subsession V.b</b>
+												<p>
+													17:50 	Ilaria Zappatore - An Algorithm-based Fault Tolerant Technique for Polynomial Linear System Solving. (<a href="https://www.youtube.com/watch?v=vlG7iXKxbiM&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=24">Video</a>)  <br>
+													18:10 	Enrico Piccione - Algebraic attack on the WG-PRNG. (<a href="">Video</a>)  <br>
+													18:30	Isaac Canales Martínez - Multivariate Correlation Attacks and the Cryptanalysis of LFSR-based Stream Ciphers. (<a href="https://www.youtube.com/watch?v=wdhMYjF8ap0&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=10">Video</a>)  <br>
+												</p>
+											</li>
+											<li>
+												<b>Subsession V.c</b>
+												<p>
+													17:50 - Jonathan Mannaert - On the non-existence of Cameron-Liebler sets of k-spaces in PG(n, q). (<a href="https://www.youtube.com/watch?v=Z9hBY4sVwXU&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=42">Video</a>)  <br>
+													18:10 - Emanuele Giunta - On Interactive Oracle Proofs for Boolean R1CS Statements. (<a href="https://www.youtube.com/watch?v=h03vxRGhG7U&list=PLu4yxTVzRRMV1vrXPH82t5rCu_PALHuEr&index=35">Video</a>)  <br>
+												</p>
+											</li>
+										</ul>
+										<p>18:50	Closing remarks and end of the Conference</p>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</ng-sidebar-container>
