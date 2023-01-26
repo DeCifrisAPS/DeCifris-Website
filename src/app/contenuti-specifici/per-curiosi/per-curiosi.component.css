@@ -5,6 +5,13 @@ ng-sidebar-container{
 	height: 100%;
 }
 
+button{
+	background:none;
+	border:none;
+	outline:none;
+	color:rgb(48, 117, 128);
+}
+
 ::ng-deep .ng-sidebar{
 	background-color: aliceblue;
 	width: 300px !important;
@@ -24,4 +31,13 @@ h4, h3{
 .bottomExtra{
 	margin-bottom: 3em;
 	padding-bottom: 3em;
+}
+
+.noIndent {
+	list-style: none;
+	padding-left: 0;
+}
+
+.noIndent ul li {
+	margin: 10px 0;
 }

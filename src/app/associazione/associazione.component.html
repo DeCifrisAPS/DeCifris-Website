@@ -1,0 +1,61 @@
+<ng-sidebar-container>
+	<ng-sidebar opened="true" position="left" id="right-sidebar" mode="push" [autoCollapseWidth]="799">
+		<ul class="noIndent" align="left">
+			<!-- Utilizziamo questo trick per evitare di rendere visibile l'autofocus al lettore. -->
+			<li style="display:none">
+				<button autofocus="autofocus"></button>
+			</li>
+			<li>
+				<button class="btn btn-outline-info" routerLink="/aziende">
+					Statuto
+				</button>
+			</li>
+			<li>
+				<button class="btn btn-outline-info" routerLink="/aziende">
+					Regolamento
+				</button>
+			</li>
+			<li>
+				<button class="btn btn-outline-info" routerLink="/aziende">
+					Organi direttivi
+				</button>
+			</li>
+			<li>
+				<button class="btn btn-outline-info" routerLink="/aziende">
+					Comitati
+				</button>
+			</li>
+			<li>
+				<button class="btn btn-outline-info" routerLink="/aziende">
+					Come associarsi
+				</button>
+			</li>
+			<li>
+				<button class="btn btn-outline-info" routerLink="/aziende">
+					Come affiliarsi
+				</button>
+			</li>
+		</ul>
+	</ng-sidebar>
+	<div ng-sidebar-content class="container bottomExtra">
+		<br>
+		<div class="row mt-3 mr-1 ml-1">
+			<div class="col-md-12">
+				<h3>L'ASSOCIZIONE</h3>
+				<p>Pagina in allestimento</p>
+			</div>
+		</div>
+		<hr>
+		<app-statuto></app-statuto>
+		<hr>
+		<app-regolamento></app-regolamento>
+		<hr>
+		<app-organi-direttivi></app-organi-direttivi>
+		<hr>
+		<app-comitati></app-comitati>
+		<hr>
+		<app-come-associarsi></app-come-associarsi>
+		<hr>
+		<app-come-affiliarsi></app-come-affiliarsi>
+	</div>
+</ng-sidebar-container>

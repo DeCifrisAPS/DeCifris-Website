@@ -48,8 +48,10 @@ import { AComponent } from './a/a.component';
 import { DecifrisTrendComponent } from './attivita/decifris-trend/decifris-trend.component';
 import { SummerSchoolComponent } from './eventi/eventi-pubblici/summer-school/summer-school.component';
 import { ConvegnoUmiComponent } from './eventi/eventi-pubblici/convegno-umi/convegno-umi.component';
+import { AssociazioneComponent } from './associazione/associazione.component';
 
 const routes: Routes = [
+  {path: 'associazione', component: AssociazioneComponent},
   {path: 'trends', component: DecifrisTrendComponent},
   {path: 'advisoryboard/borse', redirectTo: 'opportunita', pathMatch: 'full' },
   {path: "a.html", component: AComponent},

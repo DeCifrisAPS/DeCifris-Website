@@ -96,6 +96,13 @@ import { AComponent } from './a/a.component';
 import { DecifrisTrendComponent } from './attivita/decifris-trend/decifris-trend.component';
 import { SummerSchoolComponent } from './eventi/eventi-pubblici/summer-school/summer-school.component';
 import { ConvegnoUmiComponent } from './eventi/eventi-pubblici/convegno-umi/convegno-umi.component';
+import { AssociazioneComponent } from './associazione/associazione.component';
+import { StatutoComponent } from './associazione/statuto/statuto.component';
+import { RegolamentoComponent } from './associazione/regolamento/regolamento.component';
+import { OrganiDirettiviComponent } from './associazione/organi-direttivi/organi-direttivi.component';
+import { ComitatiComponent } from './associazione/comitati/comitati.component';
+import { ComeAssociarsiComponent } from './associazione/come-associarsi/come-associarsi.component';
+import { ComeAffiliarsiComponent } from './associazione/come-affiliarsi/come-affiliarsi.component';
 
 @NgModule({
   declarations: [
@@ -186,7 +193,14 @@ import { ConvegnoUmiComponent } from './eventi/eventi-pubblici/convegno-umi/conv
     AComponent,
     DecifrisTrendComponent,
     SummerSchoolComponent,
-    ConvegnoUmiComponent
+    ConvegnoUmiComponent,
+    AssociazioneComponent,
+    StatutoComponent,
+    RegolamentoComponent,
+    OrganiDirettiviComponent,
+    ComitatiComponent,
+    ComeAssociarsiComponent,
+    ComeAffiliarsiComponent
   ],
   imports: [
     BrowserModule,
