@@ -27,7 +27,7 @@ ng-sidebar-container{
 	height: 100%;
 }
 
-::ng-deep .ng-sidebar{ 
+::ng-deep .ng-sidebar{
 	background-color: aliceblue;
 	width: 300px !important;
 	padding: 2em 1em;
