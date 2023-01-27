@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/DeCifris",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
