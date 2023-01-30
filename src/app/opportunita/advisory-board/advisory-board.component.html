@@ -1,0 +1,153 @@
+<div>
+	<ng-sidebar-container>
+		<ng-sidebar opened="true" position="left" id="right-sidebar" mode="push" [autoCollapseWidth]="799"> 
+			<ul class="noIndent" align="left">
+				<!-- Utilizziamo questo trick per evitare di rendere visibile l'autofocus al lettore. -->
+				<li style="display:none">
+					<button autofocus="autofocus"></button>
+				</li>
+				<li>
+					<button class="btn btn-outline-info" routerLink="/posizioniRicerca">
+						Posizioni Accademiche
+					</button>
+				</li>
+				<li>
+					<button class="btn btn-outline-info" routerLink="/stageTirocini">
+						Stage e Tirocini
+					</button>
+				</li>
+				<!-- <li>
+					<button class="btn btn-outline-info" routerLink="/advisoryBoard">
+						Advisory Board
+					</button>
+				</li> -->
+			</ul>
+			<!-- <button class="btn btn-outline-info" (click)="toggleSidebar()" style="position: absolute; bottom: 75px; left: 30;">
+				Nascondi
+			</button> -->
+		 </ng-sidebar>
+		<div ng-sidebar-content class="container bottomExtra">
+			<div class="row mt-3">
+				<div class="col-md-12 center mt-3">
+					<h4>ADVISORY BOARD "DE CIFRIS"</h4>
+					<p>L' Advisory Board "De Cifris" è formato da aziende ed enti interessati alla Crittografia.</p>
+					<p>I membri del Board instaurano una relazione continuativa con il mondo accademico crittografico, in particolare 
+						con le sedi universitarie italiane che propongono all'interno delle loro offerte formative dei percorsi orientati 
+						alla crittografia e alle sue applicazioni.</p>
+					<p>I membri del Board interagiscono con le sedi nei modi seguenti: </p>
+					<ul>
+						<li> Incontrano i docenti e suggeriscono competenze, che sarebbe utile gli studenti avessero, 
+							per entrare in modo agevole nel mondo del lavoro. </li>
+						<li> Offrono tirocini retribuiti ai laureandi/neolaureati che possono mettere in pratica le 
+							conoscenze acquisite durante il percorso di studio crittografico. </li>
+						<li> Discutono con i docenti l'istituzione di corsi specializzati per la formazione del personale aziendale. </li>
+						<li> Finanziano borse di studio destinate agli studenti meritevoli.</li>
+					</ul>
+					<p> Ad oggi sono tre le Università Italiane che forniscono all'interno della loro offerta 
+						didattica un percorso di laurea magistrale altamente specializzato: </p>
+					<ul>
+						<li> Il Dipartimento di Matematica e Informatica dell'Università degli Studi di Perugia, 
+							che offre all'interno del Corso di Laurea Magistrale in Matematica il curriculum: 
+							Matematica per la Crittografia. </li>
+						<li> Il Dipartimento di Matematica e Fisica dell'Università degli Studi Roma Tre, che offre 
+							all'interno del Corso di Laurea Magistrale in Scienze Computazionali, nel curriculum Gestione 
+							e Protezione dei Dati offre un percorso formativo in: Crittografia e Sicurezza dell'Informazione. </li>
+						<li> Il Dipartimento di Matematica dell'Università degli Studi di Trento, che offre all'interno del 
+							Corso di Laurea Magistrale in Matematica il curriculum: Cryptography. </li>
+					</ul>
+				</div>
+			</div>
+			
+			<div *ngIf="visualizzaNuoveAziendeInteressate;then visualizzare else nonVisualizzare"></div>    
+			<ng-template #visualizzare> <app-nuove-aziende-interessate></app-nuove-aziende-interessate> </ng-template>
+			<ng-template #nonVisualizzare> <hr id="borseAdvisoryBoard"> </ng-template>
+			
+			<div class="row">
+				<div class="col-md-12">
+					<h4>BORSE ADVISORY BOARD "DE CIFRIS"</h4>
+					<p>  I membri del Board instaurano una relazione continuativa con il mondo accademico crittografico, 
+						in particolare con le sedi universitarie italiane che propongono all'interno delle loro offerte 
+						formative dei percorsi orientati alla crittografia e alle sue applicazioni.
+						<a href="../../assets/opportunità/advisoryBoard/manifestoAB2021.pdf">
+						Qui</a> il link del manifesto relativo all'anno 2021.
+						I membri del Board finanziano borse di studio nelle seguenti città: </p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<ul>
+						<li class="myListItem">
+							PERUGIA (2021/22):
+							<a href=""> link alla borsa (a breve)</a>
+							<br>
+						</li>
+						<li class="myListItem">
+							TRENTO (2021/2022):
+							<a href=""> link alla borsa (a breve)</a>
+							<br>
+						</li>
+						<li class="myListItem">
+							ROMA TRE (2021/22):
+							<a href="https://matematicafisica.uniroma3.it/didattica/borse-di-
+							studio/borse-di-studio-scienze-computazionali/"> link alla borsa</a>
+							<br>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p>L'anno scorso i membri del Board hanno finanziato le seguenti borse:</p>
+					<ul>
+						<li class="myListItem">
+							PERUGIA (2020/21):
+							<a href="http://www.dmi.unipg.it//dipartimento/
+							bandi-e-selezioni/379-bando-per-borsa-di-studio-
+							riservato-agli-studenti-iscritti-al-c-d-l-magistrale-
+							in-matematica-curriculum-matematica-per-la-crittografia"> 
+							link alla borsa</a>
+							<br>
+						</li>
+						<li class="myListItem">
+							TRENTO (2020/2021):
+							<a href="http://www.science.unitn.it/~sala/laurea/grants.html"> 
+								link alla borsa</a>
+							<br>
+						</li>
+						<li class="myListItem">
+							ROMA TRE (2020/21):
+							<a href="http://www.uniroma3.it/articoli/pre-dipartimento-di-
+							matematica-e-fisica-bando-di-concorso-per-borsa-di-studio-12729/"> 
+							link alla borsa</a>
+							<br>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p>Le aziende che al momento hanno aderito sono:</p>
+					<ul>
+						<li> <a href="http://www.argentea.it"> Argentea </a> </li>
+						<li> <a href="http://www.bv-tech.it"> BV TECH </a> </li>
+						<li> <a href="https://it.nttdata.com">NTT DATA </a> </li>
+						<li> <a href="https://www.tasgroup.eu"> TAS group </a> </li>
+						<li> <a href="https://www.telsy.com">Telsy SPA </a> </li>
+						<li><a href="https://www.unicredit.it/it/chi-siamo.html">Unicredit</a></li>
+						</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					Negli anni hanno partecipato con noi:
+					<ul>
+						<li> <a  href="https://www.digitalinnovationhubvicenza.it/"> DIH Vicenza </a> </li>
+						<li> <a  href="https://www.gt50.org/"> GT50 </a> </li>
+						<li> <a  href="https://www.cyberark.com/partner-finder/iks/">IKS</a> </li>
+						<li> <a  href="https://www.idquantique.com/">ID Quantique</a> </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</ng-sidebar-container>
+</div>

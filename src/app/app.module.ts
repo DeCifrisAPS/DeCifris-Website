@@ -103,6 +103,9 @@ import { OrganiDirettiviComponent } from './associazione/organi-direttivi/organi
 import { ComitatiComponent } from './associazione/comitati/comitati.component';
 import { ComeAssociarsiComponent } from './associazione/come-associarsi/come-associarsi.component';
 import { ComeAffiliarsiComponent } from './associazione/come-affiliarsi/come-affiliarsi.component';
+import { StageTirociniComponent } from './opportunita/stage-tirocini/stage-tirocini.component';
+import { PosizioniRicercaComponent } from './opportunita/posizioni-ricerca/posizioni-ricerca.component';
+import { AdvisoryBoardComponent } from './opportunita/advisory-board/advisory-board.component';
 
 @NgModule({
   declarations: [
@@ -200,7 +203,10 @@ import { ComeAffiliarsiComponent } from './associazione/come-affiliarsi/come-aff
     OrganiDirettiviComponent,
     ComitatiComponent,
     ComeAssociarsiComponent,
-    ComeAffiliarsiComponent
+    ComeAffiliarsiComponent,
+    StageTirociniComponent,
+    PosizioniRicercaComponent,
+    AdvisoryBoardComponent
   ],
   imports: [
     BrowserModule,

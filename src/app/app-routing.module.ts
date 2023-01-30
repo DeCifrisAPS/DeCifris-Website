@@ -49,9 +49,19 @@ import { DecifrisTrendComponent } from './attivita/decifris-trend/decifris-trend
 import { SummerSchoolComponent } from './eventi/eventi-pubblici/summer-school/summer-school.component';
 import { ConvegnoUmiComponent } from './eventi/eventi-pubblici/convegno-umi/convegno-umi.component';
 import { AssociazioneComponent } from './associazione/associazione.component';
+import { StatutoComponent } from './associazione/statuto/statuto.component';
+import { RegolamentoComponent } from './associazione/regolamento/regolamento.component';
+import { AdvisoryBoardComponent } from './opportunita/advisory-board/advisory-board.component';
+import { PosizioniRicercaComponent } from './opportunita/posizioni-ricerca/posizioni-ricerca.component';
+import { StageTirociniComponent } from './opportunita/stage-tirocini/stage-tirocini.component';
 
 const routes: Routes = [
   {path: 'associazione', component: AssociazioneComponent},
+  {path: "statuto", component: StatutoComponent},
+  {path: "regolamento", component: RegolamentoComponent},
+  {path: "advisoryBoard", component: AdvisoryBoardComponent},
+  {path: "posizioniRicerca", component: PosizioniRicercaComponent},
+  {path: "stageTirocini", component: StageTirociniComponent},
   {path: 'trends', component: DecifrisTrendComponent},
   {path: 'advisoryboard/borse', redirectTo: 'opportunita', pathMatch: 'full' },
   {path: "a.html", component: AComponent},
