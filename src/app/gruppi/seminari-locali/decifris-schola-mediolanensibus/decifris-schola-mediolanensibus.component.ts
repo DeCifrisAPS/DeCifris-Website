@@ -13,15 +13,15 @@ export class DecifrisScholaMediolanensibusComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.route.fragment.subscribe(fragment => { this.fragment = fragment; });
+   //this.route.fragment.subscribe(fragment => { this.fragment = fragment; });
   }
 
-  ngAfterViewInit(): void {
+  ngAfterViewInit(): void {/*
     try {
       document.querySelector('#' + this.fragment).scrollIntoView({behavior: 'smooth'});
     } catch (e) {
       this.goTo('recenti');
-    }
+    }*/
   } 
 
   sleep(ms) {

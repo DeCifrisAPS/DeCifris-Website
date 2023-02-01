@@ -20,22 +20,23 @@
 				<button class="btn btn-outline-info" routerLink="/deCifrisMediolanensibus">Mediolanensibus</button>
 			</li>
 			<li>
-				<button class="btn btn-outline-info" [routerLink]="['/cifrisChain']" fragment="seminari">Cifris Chain</button>
+				<button class="btn btn-outline-info" [routerLink]="['/cifrisChain']">Cifris Chain</button> 
+				<!-- Nota: per andare ad una sezione specifica della pagina usare fragment. Ad esempio [routerLink]="['/cifrisChain']" fragment="seminari" -->
 			</li>
 			<li>
-				<button class="btn btn-outline-info" [routerLink]="['/PQCifris']" fragment="seminari">PQCifris</button>
+				<button class="btn btn-outline-info" [routerLink]="['/quantumCifris']">QuantumCifris</button>
 			</li>
 			<li>
-				<button class="btn btn-outline-info" [routerLink]="['/quantumCifris']" fragment="seminari">QuantumCifris</button>
+				<button class="btn btn-outline-info" [routerLink]="['/PQCifris']" >PQCifris</button>
 			</li>
 			<li>
-				<button class="btn btn-outline-info" [routerLink]="['/cifrisCloud']" fragment="seminari">CifrisCloud</button>
+				<button class="btn btn-outline-info" [routerLink]="['/cifrisCloud']" >CifrisCloud</button>
 			</li>
 			<li>
-				<button class="btn btn-outline-info" [routerLink]="['/mathCifris']" fragment="seminari">Math Cifris</button>
+				<button class="btn btn-outline-info" [routerLink]="['/mathCifris']" >Math Cifris</button>
 			</li>
 			<li>
-				<button class="btn btn-outline-info" [routerLink]="['/deCifrisHistoriae']" fragment="seminari">De Cifris Historiae</button>
+				<button class="btn btn-outline-info" [routerLink]="['/deCifrisHistoriae']" >De Cifris Historiae</button>
 			</li>
 		</ul>
 	</ng-sidebar>

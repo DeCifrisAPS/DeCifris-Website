@@ -51,6 +51,7 @@ import { ConvegnoUmiComponent } from './eventi/eventi-pubblici/convegno-umi/conv
 import { AssociazioneComponent } from './associazione/associazione.component';
 import { StatutoComponent } from './associazione/statuto/statuto.component';
 import { RegolamentoComponent } from './associazione/regolamento/regolamento.component';
+import { OrganiDirettiviComponent } from './associazione/organi-direttivi/organi-direttivi.component';
 import { AdvisoryBoardComponent } from './opportunita/advisory-board/advisory-board.component';
 import { PosizioniRicercaComponent } from './opportunita/posizioni-ricerca/posizioni-ricerca.component';
 import { StageTirociniComponent } from './opportunita/stage-tirocini/stage-tirocini.component';
@@ -59,6 +60,7 @@ const routes: Routes = [
   {path: 'associazione', component: AssociazioneComponent},
   {path: "statuto", component: StatutoComponent},
   {path: "regolamento", component: RegolamentoComponent},
+  {path: "organiDirettivi", component:OrganiDirettiviComponent},
   {path: "advisoryBoard", component: AdvisoryBoardComponent},
   {path: "posizioniRicerca", component: PosizioniRicercaComponent},
   {path: "stageTirocini", component: StageTirociniComponent},
