@@ -106,6 +106,7 @@ import { ComeAffiliarsiComponent } from './associazione/come-affiliarsi/come-aff
 import { StageTirociniComponent } from './opportunita/stage-tirocini/stage-tirocini.component';
 import { PosizioniRicercaComponent } from './opportunita/posizioni-ricerca/posizioni-ricerca.component';
 import { AdvisoryBoardComponent } from './opportunita/advisory-board/advisory-board.component';
+import { AssociarsiComponent } from './opportunita/associarsi/associarsi.component';
 
 @NgModule({
   declarations: [
@@ -206,7 +207,8 @@ import { AdvisoryBoardComponent } from './opportunita/advisory-board/advisory-bo
     ComeAffiliarsiComponent,
     StageTirociniComponent,
     PosizioniRicercaComponent,
-    AdvisoryBoardComponent
+    AdvisoryBoardComponent,
+    AssociarsiComponent
   ],
   imports: [
     BrowserModule,
