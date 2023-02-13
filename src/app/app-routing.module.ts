@@ -56,6 +56,7 @@ import { AdvisoryBoardComponent } from './opportunita/advisory-board/advisory-bo
 import { PosizioniRicercaComponent } from './opportunita/posizioni-ricerca/posizioni-ricerca.component';
 import { StageTirociniComponent } from './opportunita/stage-tirocini/stage-tirocini.component';
 import { AssociarsiComponent } from './opportunita/associarsi/associarsi.component';
+import { BenemeritiComponent } from './opportunita/associarsi/benemeriti/benemeriti.component';
 
 const routes: Routes = [
   {path: 'associazione', component: AssociazioneComponent},
@@ -65,6 +66,7 @@ const routes: Routes = [
   {path: "advisoryBoard", component: AdvisoryBoardComponent},
   {path: "posizioniRicerca", component: PosizioniRicercaComponent},
   {path: "stageTirocini", component: StageTirociniComponent},
+  {path: "associarsi-benemeriti", component:BenemeritiComponent},
   {path: "associarsi", component: AssociarsiComponent},
   {path: 'trends', component: DecifrisTrendComponent},
   {path: 'advisoryboard/borse', redirectTo: 'opportunita', pathMatch: 'full' },
