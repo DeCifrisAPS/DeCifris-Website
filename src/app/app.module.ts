@@ -108,6 +108,7 @@ import { PosizioniRicercaComponent } from './opportunita/posizioni-ricerca/posiz
 import { AdvisoryBoardComponent } from './opportunita/advisory-board/advisory-board.component';
 import { AssociarsiComponent } from './opportunita/associarsi/associarsi.component';
 import { BenemeritiComponent } from './opportunita/associarsi/benemeriti/benemeriti.component';
+import { DiconoDiNoiComponent } from './associazione/dicono-di-noi/dicono-di-noi.component';
 
 @NgModule({
   declarations: [
@@ -210,7 +211,8 @@ import { BenemeritiComponent } from './opportunita/associarsi/benemeriti/benemer
     PosizioniRicercaComponent,
     AdvisoryBoardComponent,
     AssociarsiComponent,
-    BenemeritiComponent
+    BenemeritiComponent,
+    DiconoDiNoiComponent
   ],
   imports: [
     BrowserModule,

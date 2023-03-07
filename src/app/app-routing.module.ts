@@ -57,9 +57,11 @@ import { PosizioniRicercaComponent } from './opportunita/posizioni-ricerca/posiz
 import { StageTirociniComponent } from './opportunita/stage-tirocini/stage-tirocini.component';
 import { AssociarsiComponent } from './opportunita/associarsi/associarsi.component';
 import { BenemeritiComponent } from './opportunita/associarsi/benemeriti/benemeriti.component';
+import { DiconoDiNoiComponent} from './associazione/dicono-di-noi/dicono-di-noi.component';
 
 const routes: Routes = [
-  {path: 'associazione', component: AssociazioneComponent},
+  {path: "dicono-di-noi", component: DiconoDiNoiComponent},
+  {path: "associazione", component: AssociazioneComponent},
   {path: "statuto", component: StatutoComponent},
   {path: "regolamento", component: RegolamentoComponent},
   {path: "organiDirettivi", component:OrganiDirettiviComponent},
