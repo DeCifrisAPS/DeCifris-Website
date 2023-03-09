@@ -4,7 +4,9 @@ ng-sidebar-container{
 	top: 55px;
 	height: 100%;
 }
-
+img{
+	float: right;
+}
 button{
 	background:none;
 	border:none;
