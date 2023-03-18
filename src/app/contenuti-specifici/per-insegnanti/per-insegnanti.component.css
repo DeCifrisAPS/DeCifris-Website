@@ -41,3 +41,9 @@ h4, h3{
 .noIndent ul li {
 	margin: 10px 0;
 }
+ul{
+	/* Questa modifica lascia più spazio tra gli item della lista, 
+	"per evitare che sembri tutto attaccato" */
+	display: grid;
+	gap: 5px;
+}

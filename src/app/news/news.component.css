@@ -28,3 +28,10 @@ b {
 	sua versione standard risulta all'occhio un po' "slavato" */
 	font-weight: 500;
 }
+
+ul{
+	/* Questa modifica lascia più spazio tra gli item della lista, 
+	"per evitare che sembri tutto attaccato" */
+	display: grid;
+	gap: 5px;
+}
