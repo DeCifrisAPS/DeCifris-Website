@@ -109,6 +109,11 @@ import { AdvisoryBoardComponent } from './opportunita/advisory-board/advisory-bo
 import { AssociarsiComponent } from './opportunita/associarsi/associarsi.component';
 import { BenemeritiComponent } from './opportunita/associarsi/benemeriti/benemeriti.component';
 import { DiconoDiNoiComponent } from './associazione/dicono-di-noi/dicono-di-noi.component';
+import { Cifris2023Component } from './cifris2023/cifris2023.component';
+import { CallForPapersComponent } from './cifris2023/call-for-papers/call-for-papers.component';
+import { CallForWorkshopsComponent } from './cifris2023/call-for-workshops/call-for-workshops.component';
+import { ProgramCommitteeComponent } from './cifris2023/program-committee/program-committee.component';
+import { RegistrationComponent } from './cifris2023/registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -212,7 +217,12 @@ import { DiconoDiNoiComponent } from './associazione/dicono-di-noi/dicono-di-noi
     AdvisoryBoardComponent,
     AssociarsiComponent,
     BenemeritiComponent,
-    DiconoDiNoiComponent
+    DiconoDiNoiComponent,
+    Cifris2023Component,
+    CallForPapersComponent,
+    CallForWorkshopsComponent,
+    ProgramCommitteeComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,

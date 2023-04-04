@@ -58,8 +58,17 @@ import { StageTirociniComponent } from './opportunita/stage-tirocini/stage-tiroc
 import { AssociarsiComponent } from './opportunita/associarsi/associarsi.component';
 import { BenemeritiComponent } from './opportunita/associarsi/benemeriti/benemeriti.component';
 import { DiconoDiNoiComponent} from './associazione/dicono-di-noi/dicono-di-noi.component';
-
+import { Cifris2023Component } from './cifris2023/cifris2023.component';
+import { CallForPapersComponent } from './cifris2023/call-for-papers/call-for-papers.component';
+import { CallForWorkshopsComponent } from './cifris2023/call-for-workshops/call-for-workshops.component';
+import { ProgramCommitteeComponent } from './cifris2023/program-committee/program-committee.component';
+import { RegistrationComponent } from './cifris2023/registration/registration.component';
 const routes: Routes = [
+  {path: "cifris23", component: Cifris2023Component},
+  {path: "cifris23-call-for-papers", component: CallForPapersComponent},
+  {path: "cifris23-call-for-workshops", component: CallForWorkshopsComponent},
+  {path: "cifris23-program-committee", component: ProgramCommitteeComponent},
+  {path: "cifris23-registration", component: RegistrationComponent},
   {path: "dicono-di-noi", component: DiconoDiNoiComponent},
   {path: "associazione", component: AssociazioneComponent},
   {path: "statuto", component: StatutoComponent},
