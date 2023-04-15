@@ -114,6 +114,7 @@ import { CallForPapersComponent } from './cifris2023/call-for-papers/call-for-pa
 import { CallForWorkshopsComponent } from './cifris2023/call-for-workshops/call-for-workshops.component';
 import { ProgramCommitteeComponent } from './cifris2023/program-committee/program-committee.component';
 import { RegistrationComponent } from './cifris2023/registration/registration.component';
+import { SubmissionComponent } from './cifris2023/submission/submission.component';
 
 @NgModule({
   declarations: [
@@ -222,7 +223,8 @@ import { RegistrationComponent } from './cifris2023/registration/registration.co
     CallForPapersComponent,
     CallForWorkshopsComponent,
     ProgramCommitteeComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    SubmissionComponent
   ],
   imports: [
     BrowserModule,

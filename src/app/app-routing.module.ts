@@ -63,12 +63,14 @@ import { CallForPapersComponent } from './cifris2023/call-for-papers/call-for-pa
 import { CallForWorkshopsComponent } from './cifris2023/call-for-workshops/call-for-workshops.component';
 import { ProgramCommitteeComponent } from './cifris2023/program-committee/program-committee.component';
 import { RegistrationComponent } from './cifris2023/registration/registration.component';
+import { SubmissionComponent } from './cifris2023/submission/submission.component';
 const routes: Routes = [
   {path: "cifris23", component: Cifris2023Component},
   {path: "cifris23-call-for-papers", component: CallForPapersComponent},
   {path: "cifris23-call-for-workshops", component: CallForWorkshopsComponent},
   {path: "cifris23-program-committee", component: ProgramCommitteeComponent},
   {path: "cifris23-registration", component: RegistrationComponent},
+  {path: "cifris23-submission", component: SubmissionComponent},
   {path: "dicono-di-noi", component: DiconoDiNoiComponent},
   {path: "associazione", component: AssociazioneComponent},
   {path: "statuto", component: StatutoComponent},
