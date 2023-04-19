@@ -115,6 +115,7 @@ import { CallForWorkshopsComponent } from './cifris2023/call-for-workshops/call-
 import { ProgramCommitteeComponent } from './cifris2023/program-committee/program-committee.component';
 import { RegistrationComponent } from './cifris2023/registration/registration.component';
 import { SubmissionComponent } from './cifris2023/submission/submission.component';
+import { CookiePolicyComponent } from './cookie-policy/cookie-policy.component';
 import { Trends23Component } from './attivita/trends23/trends23.component';
 import { Trends22Component } from './attivita/trends22/trends22.component';
 import { HomeCifris23Component } from './cifris2023/home-cifris23/home-cifris23.component';
@@ -228,6 +229,7 @@ import { HomeCifris23Component } from './cifris2023/home-cifris23/home-cifris23.
     ProgramCommitteeComponent,
     RegistrationComponent,
     SubmissionComponent,
+    CookiePolicyComponent,
     Trends23Component,
     Trends22Component,
     HomeCifris23Component
