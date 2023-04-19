@@ -69,11 +69,8 @@ import { Trends23Component } from './attivita/trends23/trends23.component';
 import { Trends22Component } from './attivita/trends22/trends22.component';
 import { HomeCifris23Component } from './cifris2023/home-cifris23/home-cifris23.component';
 const routes: Routes = [
-<<<<<<< HEAD
   { path: 'cifris23', redirectTo: '/cifris23/homeCifris23', pathMatch: 'full' },
-=======
   {path: "cookie-policy", component: CookiePolicyComponent},
->>>>>>> 9f56581f411553e02814339fce9b5cf124b82968
   {path: "cifris23", component: Cifris2023Component, children:[
     {path: "call-for-papers", component: CallForPapersComponent},
     {path: "call-for-workshops", component: CallForWorkshopsComponent},
