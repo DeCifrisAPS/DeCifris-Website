@@ -117,6 +117,7 @@ import { RegistrationComponent } from './cifris2023/registration/registration.co
 import { SubmissionComponent } from './cifris2023/submission/submission.component';
 import { Trends23Component } from './attivita/trends23/trends23.component';
 import { Trends22Component } from './attivita/trends22/trends22.component';
+import { HomeCifris23Component } from './cifris2023/home-cifris23/home-cifris23.component';
 
 @NgModule({
   declarations: [
@@ -228,7 +229,8 @@ import { Trends22Component } from './attivita/trends22/trends22.component';
     RegistrationComponent,
     SubmissionComponent,
     Trends23Component,
-    Trends22Component
+    Trends22Component,
+    HomeCifris23Component
   ],
   imports: [
     BrowserModule,

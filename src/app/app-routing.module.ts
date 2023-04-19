@@ -66,13 +66,21 @@ import { RegistrationComponent } from './cifris2023/registration/registration.co
 import { SubmissionComponent } from './cifris2023/submission/submission.component';
 import { Trends23Component } from './attivita/trends23/trends23.component';
 import { Trends22Component } from './attivita/trends22/trends22.component';
+import { HomeCifris23Component } from './cifris2023/home-cifris23/home-cifris23.component';
 const routes: Routes = [
-  {path: "cifris23", component: Cifris2023Component},
-  {path: "cifris23-call-for-papers", component: CallForPapersComponent},
+  {path: "cifris23", component: Cifris2023Component, children:[
+    {path: "call-for-papers", component: CallForPapersComponent},
+    {path: "call-for-workshops", component: CallForWorkshopsComponent},
+    {path: "program-committee", component: ProgramCommitteeComponent},
+    {path: "registration", component: RegistrationComponent},
+    {path: "submission", component: SubmissionComponent},
+    {path: "homeCifris23", component: HomeCifris23Component}
+  ]},
+  /* {path: "cifris23-call-for-papers", component: CallForPapersComponent},
   {path: "cifris23-call-for-workshops", component: CallForWorkshopsComponent},
   {path: "cifris23-program-committee", component: ProgramCommitteeComponent},
   {path: "cifris23-registration", component: RegistrationComponent},
-  {path: "cifris23-submission", component: SubmissionComponent},
+  {path: "cifris23-submission", component: SubmissionComponent}, */
   {path: "dicono-di-noi", component: DiconoDiNoiComponent},
   {path: "associazione", component: AssociazioneComponent},
   {path: "statuto", component: StatutoComponent},
