@@ -1,0 +1,75 @@
+<ng-sidebar-container>
+	<ng-sidebar opened="true" position="left" id="right-sidebar" mode="push" [autoCollapseWidth]="799">
+	<!-- Ai posteri: in caso voleste inserire nuovo contenuto nella sidebar, questo è il posto -->
+	<ul class="noIndent" align="left">
+		<!-- Utilizziamo questo trick per evitare di rendere visibile l'autofocus al lettore. -->
+		<li style="display:none">
+			<button autofocus="autofocus"></button>
+		</li>
+		<li>
+			<button class="btn btn-outline-info" (click)="goTo('info')">
+				Informazioni Generali
+			</button>
+		</li>
+		<li>
+			<button class="btn btn-outline-info" (click)="goTo('programma')">
+				Programma Dettagliato
+			</button>
+		</li>
+		<li>
+			<button class="btn btn-outline-info" (click)="goTo('seminari')">
+				Seminari
+			</button>
+		</li>
+	</ul>
+	</ng-sidebar>
+	<div ng-sidebar-content class="container bottomExtra"> 
+		<br>
+		<h3 align="center">De Cifris Trends
+			in Cryptographic Protocols</h3>
+		<p>
+			La ricca attività di ricerca svolta all’interno della comunità 
+			crittografica Italiana, sia nel campo accademico, sia nel mondo del lavoro e  
+			dell'impresa, in questa occasione si completa di un'intensa serie di lezioni ed 
+			eventi seminariali.  Il complesso di 
+			interventi, coordinato dall’università di Trento, coinvolge i docenti di ben 
+			20 Università.
+		</p>
+		<img style="width: 40vw" src="../../../assets/attivita/Trends23/locandina-Trends-23.png" 
+			class="rounded mx-auto d-block" alt="...">
+		<br>
+		<p>
+			Il corso è utile a chiunque abbia familiarità con la crittografia standard e il 
+			suo background matematico, tra cui: dottorandi, laureati , professionisti che 
+			lavorano per aziende o settore pubblico.
+			In particolare il corso è adatto a studenti di laurea magistrale con 
+			speciale interesse per la crittografia.
+		</p>
+		<hr id="info">
+		<div class="row">
+			<div class="col-md-12">
+				<h3>INFORMAZIONI GENERALI</h3>
+				TBA
+			</div>
+		</div>
+		<hr id="programma">
+		<div class="row">
+			<div class="col-md-12">
+				<h3>PROGRAMMA DEL CORSO</h3>
+				TBA
+			</div>
+		</div>
+		<hr id="seminari">
+		<div class="row">
+			<div class="col-md-12">
+				<h3>PROGRAMMA DEI SEMINARI</h3>
+				TBA
+			</div>
+		</div>
+		<hr>
+		<div>
+			<h3>ESAME</h3>
+			TBA
+		</div>
+	</div>
+</ng-sidebar-container>

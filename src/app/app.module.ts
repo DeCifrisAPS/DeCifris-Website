@@ -115,6 +115,8 @@ import { CallForWorkshopsComponent } from './cifris2023/call-for-workshops/call-
 import { ProgramCommitteeComponent } from './cifris2023/program-committee/program-committee.component';
 import { RegistrationComponent } from './cifris2023/registration/registration.component';
 import { SubmissionComponent } from './cifris2023/submission/submission.component';
+import { Trends23Component } from './attivita/trends23/trends23.component';
+import { Trends22Component } from './attivita/trends22/trends22.component';
 
 @NgModule({
   declarations: [
@@ -224,7 +226,9 @@ import { SubmissionComponent } from './cifris2023/submission/submission.componen
     CallForWorkshopsComponent,
     ProgramCommitteeComponent,
     RegistrationComponent,
-    SubmissionComponent
+    SubmissionComponent,
+    Trends23Component,
+    Trends22Component
   ],
   imports: [
     BrowserModule,

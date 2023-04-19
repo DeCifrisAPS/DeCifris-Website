@@ -64,6 +64,8 @@ import { CallForWorkshopsComponent } from './cifris2023/call-for-workshops/call-
 import { ProgramCommitteeComponent } from './cifris2023/program-committee/program-committee.component';
 import { RegistrationComponent } from './cifris2023/registration/registration.component';
 import { SubmissionComponent } from './cifris2023/submission/submission.component';
+import { Trends23Component } from './attivita/trends23/trends23.component';
+import { Trends22Component } from './attivita/trends22/trends22.component';
 const routes: Routes = [
   {path: "cifris23", component: Cifris2023Component},
   {path: "cifris23-call-for-papers", component: CallForPapersComponent},
@@ -82,6 +84,8 @@ const routes: Routes = [
   {path: "associarsi-benemeriti", component:BenemeritiComponent},
   {path: "associarsi", component: AssociarsiComponent},
   {path: 'trends', component: DecifrisTrendComponent},
+  {path: 'trends23', component: Trends23Component},
+  {path: 'trends22', component: Trends22Component},
   {path: 'advisoryboard/borse', redirectTo: 'opportunita', pathMatch: 'full' },
   {path: "a.html", component: AComponent},
   {path : "", component : HomeComponent},
