@@ -69,11 +69,8 @@ import { Trends23Component } from './attivita/trends23/trends23.component';
 import { Trends22Component } from './attivita/trends22/trends22.component';
 import { HomeCifris23Component } from './cifris2023/home-cifris23/home-cifris23.component';
 const routes: Routes = [
-<<<<<<< HEAD
   { path: 'cifris23', redirectTo: '/cifris23/homeCifris23', pathMatch: 'full' },
-=======
   {path: "cookie-policy", component: CookiePolicyComponent},
->>>>>>> 9f56581f411553e02814339fce9b5cf124b82968
   {path: "cifris23", component: Cifris2023Component, children:[
     {path: "call-for-papers", component: CallForPapersComponent},
     {path: "call-for-workshops", component: CallForWorkshopsComponent},
@@ -82,11 +79,6 @@ const routes: Routes = [
     {path: "submission", component: SubmissionComponent},
     {path: "homeCifris23", component: HomeCifris23Component}
   ]},
-  /* {path: "cifris23-call-for-papers", component: CallForPapersComponent},
-  {path: "cifris23-call-for-workshops", component: CallForWorkshopsComponent},
-  {path: "cifris23-program-committee", component: ProgramCommitteeComponent},
-  {path: "cifris23-registration", component: RegistrationComponent},
-  {path: "cifris23-submission", component: SubmissionComponent}, */
   {path: "dicono-di-noi", component: DiconoDiNoiComponent},
   {path: "associazione", component: AssociazioneComponent},
   {path: "statuto", component: StatutoComponent},
@@ -133,7 +125,7 @@ const routes: Routes = [
   {path: "aziende", component: PerAziendeComponent},
   {path: "convegnoUmi", component: ConvegnoUmiComponent},
   {path: "accademia", component: PerAccademiaComponent},
-  {path: "counterparty", component: CounterpartyComponent},
+  /* {path: "counterparty", component: CounterpartyComponent}, */
   {path: "summerSchool2022", component: SummerSchoolComponent},
   {path: "cryptowars", component: CryptowarsComponent, children:  [
     {path: "2021", component: Cryptowars2021Component},
