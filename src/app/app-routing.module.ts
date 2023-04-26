@@ -125,7 +125,7 @@ const routes: Routes = [
   {path: "aziende", component: PerAziendeComponent},
   {path: "convegnoUmi", component: ConvegnoUmiComponent},
   {path: "accademia", component: PerAccademiaComponent},
-  /* {path: "counterparty", component: CounterpartyComponent}, */
+  {path: "counterparty", component: CounterpartyComponent},
   {path: "summerSchool2022", component: SummerSchoolComponent},
   {path: "cryptowars", component: CryptowarsComponent, children:  [
     {path: "2021", component: Cryptowars2021Component},
