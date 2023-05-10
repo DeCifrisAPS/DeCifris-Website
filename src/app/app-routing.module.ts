@@ -79,11 +79,6 @@ const routes: Routes = [
     {path: "submission", component: SubmissionComponent},
     {path: "homeCifris23", component: HomeCifris23Component}
   ]},
-  /* {path: "cifris23-call-for-papers", component: CallForPapersComponent},
-  {path: "cifris23-call-for-workshops", component: CallForWorkshopsComponent},
-  {path: "cifris23-program-committee", component: ProgramCommitteeComponent},
-  {path: "cifris23-registration", component: RegistrationComponent},
-  {path: "cifris23-submission", component: SubmissionComponent}, */
   {path: "dicono-di-noi", component: DiconoDiNoiComponent},
   {path: "associazione", component: AssociazioneComponent},
   {path: "statuto", component: StatutoComponent},
