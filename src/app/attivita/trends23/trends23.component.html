@@ -8,17 +8,17 @@
 		</li>
 		<li>
 			<button class="btn btn-outline-info" (click)="goTo('info')">
-				Informazioni Generali
+				General Informations
 			</button>
 		</li>
 		<li>
 			<button class="btn btn-outline-info" (click)="goTo('programma')">
-				Programma Dettagliato
+				Course Program
 			</button>
 		</li>
 		<li>
-			<button class="btn btn-outline-info" (click)="goTo('seminari')">
-				Seminari
+			<button class="btn btn-outline-info" (click)="goTo('test')">
+				Test
 			</button>
 		</li>
 	</ul>
@@ -69,6 +69,13 @@
 					<h5> Course structure </h5>
 						<p> The course is divided into ten online lectures via the Zoom platform, each lasting thirty
 						minutes. The lessons will be held in English and will take place in October 2023.</p>
+					<h5> Course prerequisites </h5>
+						<ul style="list-style-type:none;  padding-left: 0;">
+							<li> Mathematics: basic concepts of computational complexity, elementary number theory and probability theory.</li>
+							<li> Symmetric cryptography: basic understanding of block ciphers, stream ciphers, hash functions and MAC's.</li>
+							<li> Public-key cryptography: DH and RSA.</li>
+							<li> Protocols: some general concept on protocols, such as those necessary to understand SSL/TLS.</li>	
+						</ul>
 					<h5> Registration and costs </h5>
 						<p>	The course is free of charge, and any De Cifris member or UNITN (University of Trento)
 						affiliate can attend. Registration is open until 4th September 2023 or until the maximum
@@ -206,7 +213,7 @@
 				 </table>
 			</div>
 		</div>
-		<hr>
+		<hr id="test">
 		<div>
 			<h3> TEST </h3>
 				<p> 
