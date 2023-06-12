@@ -119,6 +119,7 @@ import { CookiePolicyComponent } from './cookie-policy/cookie-policy.component';
 import { Trends23Component } from './attivita/trends23/trends23.component';
 import { Trends22Component } from './attivita/trends22/trends22.component';
 import { HomeCifris23Component } from './cifris2023/home-cifris23/home-cifris23.component';
+import { EditoriaComponent } from './attivita/editoria/editoria.component';
 
 @NgModule({
   declarations: [
@@ -232,7 +233,8 @@ import { HomeCifris23Component } from './cifris2023/home-cifris23/home-cifris23.
     CookiePolicyComponent,
     Trends23Component,
     Trends22Component,
-    HomeCifris23Component
+    HomeCifris23Component,
+    EditoriaComponent
   ],
   imports: [
     BrowserModule,
