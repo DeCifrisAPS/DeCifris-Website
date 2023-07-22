@@ -9,7 +9,7 @@
 		</li>
 		<li>
 			<button class="btn btn-outline-info" (click)="goTo('futuri')">
-				Eventi Recenti
+				Prossimi Eventi
 			</button>
 		</li>
 		<li>
@@ -33,7 +33,7 @@
 				</div>
 			</div>
 			<hr id="futuri">
-			<h4><a (click)="toggleEventi('futuri')">EVENTI RECENTI</a></h4>
+			<h4><a (click)="toggleEventi('futuri')">PROSSIMI EVENTI</a></h4>
 			<div *ngIf="mostraFuturi">
 				<app-eventi-futuri></app-eventi-futuri>
 			</div>
