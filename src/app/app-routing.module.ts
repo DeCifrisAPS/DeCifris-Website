@@ -67,6 +67,7 @@ import { SubmissionComponent } from './cifris2023/submission/submission.componen
 import { CookiePolicyComponent } from './cookie-policy/cookie-policy.component';
 import { Trends23Component } from './attivita/trends23/trends23.component';
 import { Trends22Component } from './attivita/trends22/trends22.component';
+import { Trends22bisComponent } from './attivita/trends22/trends22bis/trends22bis.component';
 import { HomeCifris23Component } from './cifris2023/home-cifris23/home-cifris23.component';
 import { EditoriaComponent } from './attivita/editoria/editoria.component';
 
@@ -95,6 +96,7 @@ const routes: Routes = [
   {path: "associarsi", component: AssociarsiComponent},
   {path: 'trends', component: DecifrisTrendComponent},
   {path: 'trends23', component: Trends23Component},
+  {path: 'trends22bis', component:Trends22bisComponent},
   {path: 'trends22', component: Trends22Component},
   {path: 'advisoryboard/borse', redirectTo: 'opportunita', pathMatch: 'full' },
   {path: "a.html", component: AComponent},

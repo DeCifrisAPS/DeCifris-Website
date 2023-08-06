@@ -120,6 +120,7 @@ import { Trends23Component } from './attivita/trends23/trends23.component';
 import { Trends22Component } from './attivita/trends22/trends22.component';
 import { HomeCifris23Component } from './cifris2023/home-cifris23/home-cifris23.component';
 import { EditoriaComponent } from './attivita/editoria/editoria.component';
+import { Trends22bisComponent } from './attivita/trends22/trends22bis/trends22bis.component';
 
 @NgModule({
   declarations: [
@@ -234,7 +235,8 @@ import { EditoriaComponent } from './attivita/editoria/editoria.component';
     Trends23Component,
     Trends22Component,
     HomeCifris23Component,
-    EditoriaComponent
+    EditoriaComponent,
+    Trends22bisComponent
   ],
   imports: [
     BrowserModule,
