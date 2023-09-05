@@ -24,4 +24,5 @@ export class DecifrisTrendComponent implements OnInit {
     await this.sleep(10);
     document.getElementById(s).scrollIntoView({behavior: 'smooth'});
   }
+
 }
