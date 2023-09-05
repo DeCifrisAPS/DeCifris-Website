@@ -70,9 +70,11 @@ import { Trends22Component } from './attivita/trends22/trends22.component';
 import { Trends22bisComponent } from './attivita/trends22/trends22bis/trends22bis.component';
 import { HomeCifris23Component } from './cifris2023/home-cifris23/home-cifris23.component';
 import { EditoriaComponent } from './attivita/editoria/editoria.component';
+import { BlockchainSmartContractComponent } from './attivita/blockchain-smart-contract/blockchain-smart-contract.component';
 
 
 const routes: Routes = [
+  {path: "blockchain-smart-contract", component: BlockchainSmartContractComponent},
   {path: "editoria", component: EditoriaComponent},
   {path: 'cifris23', redirectTo: '/cifris23/homeCifris23', pathMatch: 'full' },
   {path: "cookie-policy", component: CookiePolicyComponent},

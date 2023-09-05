@@ -121,6 +121,7 @@ import { Trends22Component } from './attivita/trends22/trends22.component';
 import { HomeCifris23Component } from './cifris2023/home-cifris23/home-cifris23.component';
 import { EditoriaComponent } from './attivita/editoria/editoria.component';
 import { Trends22bisComponent } from './attivita/trends22/trends22bis/trends22bis.component';
+import { BlockchainSmartContractComponent } from './attivita/blockchain-smart-contract/blockchain-smart-contract.component';
 
 @NgModule({
   declarations: [
@@ -236,7 +237,8 @@ import { Trends22bisComponent } from './attivita/trends22/trends22bis/trends22bi
     Trends22Component,
     HomeCifris23Component,
     EditoriaComponent,
-    Trends22bisComponent
+    Trends22bisComponent,
+    BlockchainSmartContractComponent
   ],
   imports: [
     BrowserModule,
