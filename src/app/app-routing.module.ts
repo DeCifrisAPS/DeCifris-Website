@@ -71,6 +71,7 @@ import { Trends22bisComponent } from './attivita/trends22/trends22bis/trends22bi
 import { HomeCifris23Component } from './cifris2023/home-cifris23/home-cifris23.component';
 import { EditoriaComponent } from './attivita/editoria/editoria.component';
 import { BlockchainSmartContractComponent } from './attivita/blockchain-smart-contract/blockchain-smart-contract.component';
+import { ProgramComponent } from './cifris2023/program/program.component';
 
 
 const routes: Routes = [
@@ -84,7 +85,8 @@ const routes: Routes = [
     {path: "program-committee", component: ProgramCommitteeComponent},
     {path: "registration", component: RegistrationComponent},
     {path: "submission", component: SubmissionComponent},
-    {path: "homeCifris23", component: HomeCifris23Component}
+    {path: "homeCifris23", component: HomeCifris23Component},
+    {path: "program", component: ProgramComponent}
   ]},
   {path: "dicono-di-noi", component: DiconoDiNoiComponent},
   {path: "associazione", component: AssociazioneComponent},

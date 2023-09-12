@@ -122,6 +122,7 @@ import { HomeCifris23Component } from './cifris2023/home-cifris23/home-cifris23.
 import { EditoriaComponent } from './attivita/editoria/editoria.component';
 import { Trends22bisComponent } from './attivita/trends22/trends22bis/trends22bis.component';
 import { BlockchainSmartContractComponent } from './attivita/blockchain-smart-contract/blockchain-smart-contract.component';
+import { ProgramComponent } from './cifris2023/program/program.component';
 
 @NgModule({
   declarations: [
@@ -238,7 +239,8 @@ import { BlockchainSmartContractComponent } from './attivita/blockchain-smart-co
     HomeCifris23Component,
     EditoriaComponent,
     Trends22bisComponent,
-    BlockchainSmartContractComponent
+    BlockchainSmartContractComponent,
+    ProgramComponent
   ],
   imports: [
     BrowserModule,
