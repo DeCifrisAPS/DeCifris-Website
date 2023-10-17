@@ -50,3 +50,22 @@ b {
 	sua versione standard risulta all'occhio un po' "slavato" */
 	font-weight: 500;
 }
+
+/**
+ * CSS for collapsible buttons.
+ */
+.collapsible{
+	display: inline-block;
+	text-align: left;
+	white-space: nowrap;
+	width: 100%;
+	color: rgb(23, 162, 184);
+	font-weight: 500;
+	margin-bottom: 5px;
+
+	&:after {
+		content: attr(data-button-icon);
+		float: right;
+		padding-left: 1em;
+	}
+}
