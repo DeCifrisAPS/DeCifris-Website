@@ -27,4 +27,105 @@
 		</p>
 	</div>
 </div>
+<hr><!------------------------------------------------------------------------>
+<div class="row mt-3 mr-1 ml-1">
+	<div class="col-md-12">
+		<h4>PAYMENT</h4>
+	</div>
+	<form 
+		class="form"
+		method='post'
+		(ngSubmit)="checkAndPay(this)"
+	>
+		<label for="fname">
+			First Name *
+		</label>
+		<input type="text" id="fname" name="fname">
+		<!--<input type="hidden" id="h_fname">-->
 
+		<label for="lname">
+			Last Name *
+		</label>
+		<input type="text" id="lname" name="lname">
+
+		<label for="email">
+			Email *
+		</label>
+		<input type="text" id="email" name="email">
+
+		<label for="fee">
+			Fee *
+		</label>
+		<div id="fee">
+			<input 
+				type="radio"
+				id="regular"
+				name="fee"
+				value="19000"
+				(click)=setFee($event)
+			>
+			<label for="regular">
+				Regular
+			</label><br>
+			
+			<input 
+				type="radio" 
+				id="scientific_memebers" 
+				name="fee" 
+				value="17000"
+				(click)=setFee($event)
+			>
+			<label for="scientific_memebers">
+				Members of Unione Matematica Italiana, IEEE Computer Society, IEEE Information Theory Society
+			</label><br>
+			
+			<input 
+				type="radio" 
+				id="young" 
+				name="fee" 
+				value="12000"
+				(click)=setFee($event)
+			>
+			<label for="young">
+				Young
+			</label><br>
+
+			<input 
+				type="radio" 
+				id="member" 
+				name="fee" 
+				value="12000"
+				(click)=setFee($event)
+			>
+			<label for="member">
+				Member of De Cifris (“ordinario”, ”benemerito” or “fondatore”)
+			</label><br>
+			
+			<input 
+				type="radio" 
+				id="member_young" 
+				name="fee" 
+				value="7000"
+				(click)=setFee($event)
+			>
+			<label for="member_young">
+				Member of De Cifris (“socio giovane”)
+			</label>
+		</div>
+
+		<hr><!---------------------------------------------------------------->
+
+		<p style="font-weight: bold;">
+			Total: € {{fee/100}}.00
+		</p>
+
+		<input 
+			type="submit"
+			value="Pay Now"
+		>
+
+		<p class="footnote">
+			* fields are mandatory
+		</p>
+	</form>
+</div>
