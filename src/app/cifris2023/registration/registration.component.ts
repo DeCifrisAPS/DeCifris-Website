@@ -121,7 +121,7 @@ export class RegistrationComponent implements OnInit {
 		 * contenenti requestParams
 		 */
 		console.log('[startPayment] Instatiating action...');
-		//form.action = this.requestUrl;
+		form.action = this.requestUrl;
 	}
 
 	/**
