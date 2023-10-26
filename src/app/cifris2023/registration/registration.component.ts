@@ -10,13 +10,47 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: ['./registration.component.css']
 })
 export class RegistrationComponent implements OnInit {
-
+	
 	public firstName = '';
 	public lastName = '';
 	public email = '';
 	public fee = 0;
 
-	constructor() { }
+	//---------------------------------------------------------------------------
+	//---------------------------- Payment variables ----------------------------
+
+	// Alias e chiave segreta
+	readonly ALIAS = "ALIAS_WEB_00074470";
+	readonly CHIAVESEGRETA = "SQV946OD2KUQ4M71SHXBCB85SW3FVVQF";
+
+	readonly HTTP_HOST = "localhost:4200/cifris23/registration";
+	//readonly HTTP_HOST = "www.decifris.it/cifris23/registration";
+
+	//readonly requestUrl = 'https://ecommerce.nexi.it/' +
+	//											'ecomm/ecomm/DispatcherServlet';
+	readonly requestUrl = 'https://int-ecommerce.nexi.it/' +
+												'ecomm/ecomm/DispatcherServlet';	
+
+	requestParams = new Map<string, string>();
+
+	//---------------------------------------------------------------------------
+
+	constructor() {
+		// Mandatory parameters
+		this.requestParams["alias"] = this.ALIAS;
+		this.requestParams["importo"] = 0;
+		this.requestParams["divisa"] = '';
+		this.requestParams["codTrans"] = '';
+		this.requestParams["url"] = '';
+		this.requestParams["url_back"] = '';
+		this.requestParams["mac"] = '';
+
+		// Optional parameters
+		this.requestParams['mail'] = '';
+		this.requestParams['languageId'] = 'ENG';
+		this.requestParams['nome'] = '';
+		this.requestParams['cognome'] = '';
+	}
 
 	ngOnInit(): void {
 	}
@@ -25,6 +59,7 @@ export class RegistrationComponent implements OnInit {
 	 * Sets this.fee as the value of the selected radio button.
 	 */
 	public setFee(event) {
+
 		const radioButton = event.currentTarget;
 
 		this.fee = radioButton.value;
@@ -34,6 +69,7 @@ export class RegistrationComponent implements OnInit {
 	 * Generates a MAC given an input string.
 	 */
 	public hashMac(stringaMac): string {
+
 		var hash = crypto.SHA1(stringaMac);
 
 		return hash.toString();
@@ -47,19 +83,11 @@ export class RegistrationComponent implements OnInit {
 	 * - Comments correspond to the production phase.
 	 */
 	public startPayment(form) {
-		// Alias e chiave segreta
-		var ALIAS = "ALIAS_WEB_00074470";
-		var CHIAVESEGRETA = "SQV946OD2KUQ4M71SHXBCB85SW3FVVQF";
-
-		var HTTP_HOST = "localhost:4200/cifris23/registration";
-		//var HTTP_HOST = "www.decifris.it/cifris23/registration";
-
-		//var requestUrl = "https://ecommerce.nexi.it/ecomm/ecomm/DispatcherServlet";
-		var requestUrl = "https://int-ecommerce.nexi.it/ecomm/ecomm/DispatcherServlet";
-		//var merchantServerUrl =	"https://" + HTTP_HOST + 
+	
+		//var merchantServerUrl =	"https://" + this.HTTP_HOST + 
 		//												"/xpay/pagamento_semplice/multivaluta/";
-		var merchantServerUrl =	"http://" + HTTP_HOST + 
-														"/xpay/pagamento_semplice/multivaluta/";
+		var merchantServerUrl =	'http://' + this.HTTP_HOST + 
+														'/xpay/pagamento_semplice/multivaluta/';
 
 		var date = new Date();
 		var codTrans = "TESTPS_" + formatDate(date, 'yyyyMMddHHmmss', 'en-US');
@@ -71,33 +99,29 @@ export class RegistrationComponent implements OnInit {
 		var stringaMac =	"codTrans=" + codTrans +
 											"divisa=" + divisa +
 											"importo=" + importo +
-											CHIAVESEGRETA;
+											this.CHIAVESEGRETA;
 
 		var macCalculated = this.hashMac(stringaMac);
 
-		var requestParams = new Map<string, string>();
-
 		// Parametri obbligatori
-		requestParams["alias"] = ALIAS;
-		requestParams["importo"] = importo;
-		requestParams["divisa"] = divisa;
-		requestParams["codTrans"] = codTrans;
-		requestParams["url"] = merchantServerUrl + "esito.html";
-		requestParams["url_back"] = merchantServerUrl + "annullo.html";
-		requestParams["mac"] = macCalculated;
+		this.requestParams["importo"] = importo;
+		this.requestParams["divisa"] = divisa;
+		this.requestParams["codTrans"] = codTrans;
+		this.requestParams["url"] = merchantServerUrl + "esito.html";
+		this.requestParams["url_back"] = merchantServerUrl + "annullo.html";
+		this.requestParams["mac"] = macCalculated;
 
 		// Parametri facoltativi
-		requestParams['mail'] = this.email;
-		requestParams['languageId'] = 'ENG';
-		requestParams['nome'] = this.firstName;
-		requestParams['cognome'] = this.lastName;
+		this.requestParams['mail'] = this.email;
+		this.requestParams['nome'] = this.firstName;
+		this.requestParams['cognome'] = this.lastName;
 
 		/**
 		 * Creare un form html con metodo post verso requestUrl con campi hidden
 		 * contenenti requestParams
 		 */
-		alert('[startPayment] Due: € ' + requestParams['importo']/100 + '.00');
-		form.action = requestUrl;
+		console.log('[startPayment] Instatiating action...');
+		//form.action = this.requestUrl;
 	}
 
 	/**
@@ -105,6 +129,7 @@ export class RegistrationComponent implements OnInit {
 	 * everything is properly filled and false otherwise.
 	 */
 	public checkFields(): boolean {
+
 		var isValid = true;
 
 		// Input fields
@@ -132,8 +157,8 @@ export class RegistrationComponent implements OnInit {
 		var emailIn = <HTMLInputElement> document.getElementById("email");
 		emailIn.disabled = true;
 
-		//Disabling 
-		var radio = document.getElementsByTagName("fee");
+		// Disabling radio buttons 
+		var radio = document.getElementsByName("fee");
 		for (var i = 0; i < radio.length; i++) {
 			(<HTMLInputElement> radio[i]).disabled = true;
 		}
