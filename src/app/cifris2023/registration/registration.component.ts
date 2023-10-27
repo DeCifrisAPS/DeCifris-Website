@@ -27,9 +27,9 @@ export class RegistrationComponent implements OnInit {
 	//readonly HTTP_HOST = "www.decifris.it/cifris23/registration";
 
 	//readonly requestUrl = 'https://ecommerce.nexi.it/' +
-	//											'ecomm/ecomm/DispatcherServlet';
+	//						'ecomm/ecomm/DispatcherServlet';
 	readonly requestUrl = 'https://int-ecommerce.nexi.it/' +
-												'ecomm/ecomm/DispatcherServlet';	
+							'ecomm/ecomm/DispatcherServlet';	
 
 	requestParams = new Map<string, string>();
 
@@ -84,10 +84,10 @@ export class RegistrationComponent implements OnInit {
 	 */
 	public startPayment(form) {
 	
-		//var merchantServerUrl =	"https://" + this.HTTP_HOST + 
-		//												"/xpay/pagamento_semplice/multivaluta/";
+		//var merchantServerUrl = "https://" + this.HTTP_HOST + 
+		//							"/xpay/pagamento_semplice/multivaluta/";
 		var merchantServerUrl =	'http://' + this.HTTP_HOST + 
-														'/xpay/pagamento_semplice/multivaluta/';
+								'/xpay/pagamento_semplice/multivaluta/';
 
 		var date = new Date();
 		var codTrans = "TESTPS_" + formatDate(date, 'yyyyMMddHHmmss', 'en-US');

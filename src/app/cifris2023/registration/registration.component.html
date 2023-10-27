@@ -27,7 +27,8 @@
 		</p>
 	</div>
 </div>
-<hr><!------------------------------------------------------------------------>
+<!--
+<hr>
 <div class="row mt-3 mr-1 ml-1">
 	<div class="col-md-12">
 		<h4>PAYMENT</h4>
@@ -40,18 +41,17 @@
 		<label for="fname">
 			First Name *
 		</label>
-		<input type="text" id="fname" name="fname">
-		<!--<input type="hidden" id="h_fname">-->
+		<input type="text" id="fname" name="nome">
 
 		<label for="lname">
 			Last Name *
 		</label>
-		<input type="text" id="lname" name="lname">
+		<input type="text" id="lname" name="cognome">
 
 		<label for="email">
 			Email *
 		</label>
-		<input type="text" id="email" name="email">
+		<input type="text" id="email" name="mail">
 
 		<label for="fee">
 			Fee *
@@ -112,8 +112,17 @@
 				Member of De Cifris (“socio giovane”)
 			</label>
 		</div>
+		<input type="hidden" id="importo" name="importo">
 
-		<hr><!---------------------------------------------------------------->
+		<input type="hidden" id="alias" name="alias">
+		<input type="hidden" id="divisa" name="divisa">
+		<input type="hidden" id="codTrans" name="codTrans">
+		<input type="hidden" id="url" name="url">
+		<input type="hidden" id="url_back" name="url_back">
+		<input type="hidden" id="mac" name="mac">
+		<input type="hidden" id="languageId" name="languageId" value="ENG">
+
+		<hr>
 
 		<p style="font-weight: bold;">
 			Total: € {{fee/100}}.00
@@ -129,3 +138,4 @@
 		</p>
 	</form>
 </div>
+-->
