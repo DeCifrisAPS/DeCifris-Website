@@ -4,7 +4,7 @@ import { ObiettiviComponent } from './obiettivi/obiettivi.component';
 import { AttivitaComponent } from './attivita/attivita.component';
 import { EventiComponent } from './eventi/eventi.component';
 import { Routes, RouterModule } from '@angular/router';
-import {HomeComponent} from './home/home.component';
+import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { SeminariLocaliComponent } from './gruppi/seminari-locali/seminari-locali.component';
 import { CifrisChainComponent } from './gruppi/cifris-chain/cifris-chain.component';
@@ -63,7 +63,7 @@ import { CallForPapersComponent } from './cifris2023/call-for-papers/call-for-pa
 import { CallForWorkshopsComponent } from './cifris2023/call-for-workshops/call-for-workshops.component';
 import { ProgramCommitteeComponent } from './cifris2023/program-committee/program-committee.component';
 import { RegistrationComponent } from './cifris2023/registration/registration.component';
-import { SubmissionComponent } from './cifris2023/submission/submission.component';
+import { ProceedingsComponent } from './cifris2023/proceedings/proceedings.component';
 import { CookiePolicyComponent } from './cookie-policy/cookie-policy.component';
 import { Trends23Component } from './attivita/trends23/trends23.component';
 import { Trends22Component } from './attivita/trends22/trends22.component';
@@ -84,9 +84,9 @@ const routes: Routes = [
     {path: "call-for-workshops", component: CallForWorkshopsComponent},
     {path: "program-committee", component: ProgramCommitteeComponent},
     {path: "registration", component: RegistrationComponent},
-    {path: "submission", component: SubmissionComponent},
     {path: "homeCifris23", component: HomeCifris23Component},
-    {path: "program", component: ProgramComponent}
+    {path: "program", component: ProgramComponent},
+    {path: "proceedings", component: ProceedingsComponent},
   ]},
   {path: "dicono-di-noi", component: DiconoDiNoiComponent},
   {path: "associazione", component: AssociazioneComponent},
