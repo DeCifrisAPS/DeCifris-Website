@@ -2,6 +2,7 @@ import * as crypto from 'crypto-js';
 
 import { formatDate } from "@angular/common";
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 
 @Component({
@@ -11,10 +12,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistrationComponent implements OnInit {
 	
-	public firstName = '';
-	public lastName = '';
-	public email = '';
-	public fee = 0;
+	public fee = 19000;
 
 	//---------------------------------------------------------------------------
 	//---------------------------- Payment variables ----------------------------
@@ -23,37 +21,21 @@ export class RegistrationComponent implements OnInit {
 	readonly ALIAS = "ALIAS_WEB_00074470";
 	readonly CHIAVESEGRETA = "SQV946OD2KUQ4M71SHXBCB85SW3FVVQF";
 
-	readonly HTTP_HOST = "localhost:4200/cifris23/registration";
-	//readonly HTTP_HOST = "www.decifris.it/cifris23/registration";
+	readonly HTTP_HOST = "localhost:4200/cifris23/";
+	//readonly HTTP_HOST = "www.decifris.it/cifris23/";
 
 	//readonly requestUrl = 'https://ecommerce.nexi.it/' +
 	//						'ecomm/ecomm/DispatcherServlet';
 	readonly requestUrl = 'https://int-ecommerce.nexi.it/' +
-							'ecomm/ecomm/DispatcherServlet';	
+						  'ecomm/ecomm/DispatcherServlet';
 
-	requestParams = new Map<string, string>();
+	readonly DIVISA = 'EUR';
 
 	//---------------------------------------------------------------------------
 
-	constructor() {
-		// Mandatory parameters
-		this.requestParams["alias"] = this.ALIAS;
-		this.requestParams["importo"] = 0;
-		this.requestParams["divisa"] = '';
-		this.requestParams["codTrans"] = '';
-		this.requestParams["url"] = '';
-		this.requestParams["url_back"] = '';
-		this.requestParams["mac"] = '';
+	constructor() {}
 
-		// Optional parameters
-		this.requestParams['mail'] = '';
-		this.requestParams['languageId'] = 'ENG';
-		this.requestParams['nome'] = '';
-		this.requestParams['cognome'] = '';
-	}
-
-	ngOnInit(): void {
-	}
+	ngOnInit(): void {}
 
 	/**
 	 * Sets this.fee as the value of the selected radio button.
@@ -76,71 +58,46 @@ export class RegistrationComponent implements OnInit {
 	}
 
 	/**
-	 * Instantiates a payment issue for a given value calling the action of the
-	 * specified form.
+	 * Instantiates a payment issue.
 	 * 
 	 * TODO:
 	 * - Comments correspond to the production phase.
 	 */
-	public startPayment(form) {
+	public startPayment() {
 	
-		//var merchantServerUrl = "https://" + this.HTTP_HOST + 
-		//							"/xpay/pagamento_semplice/multivaluta/";
-		var merchantServerUrl =	'http://' + this.HTTP_HOST + 
-								'/xpay/pagamento_semplice/multivaluta/';
+		// Data preprocessing
+		//var merchantServerUrl = "https://" + this.HTTP_HOST;
+		var merchantServerUrl =	'http://' + this.HTTP_HOST;
 
 		var date = new Date();
-		var codTrans = "TESTPS_" + formatDate(date, 'yyyyMMddHHmmss', 'en-US');
+		var codTrans = "TESTPS_" +
+					   formatDate(date, 'yyyyMMddHHmmss', 'en-US');
 
-		var divisa = "EUR";
 		var importo = this.fee;
 
-		// Calcolo MAC
-		var stringaMac =	"codTrans=" + codTrans +
-											"divisa=" + divisa +
-											"importo=" + importo +
-											this.CHIAVESEGRETA;
+		var macString = "codTrans=" + codTrans +
+						"divisa=" + this.DIVISA +
+						"importo=" + importo +
+						this.CHIAVESEGRETA;
+		var macCalculated = this.hashMac(macString);
 
-		var macCalculated = this.hashMac(stringaMac);
+		// Filling hidden inputs
+		var importoIn = <HTMLInputElement> document.getElementById("importo");
+		var codTransIn = <HTMLInputElement> document.getElementById("codTrans");
+		var urlIn = <HTMLInputElement> document.getElementById("url");
+		var urlBackIn = <HTMLInputElement> document.getElementById("url_back");
+		var macIn = <HTMLInputElement> document.getElementById("mac");
 
-		// Parametri obbligatori
-		this.requestParams["importo"] = importo;
-		this.requestParams["divisa"] = divisa;
-		this.requestParams["codTrans"] = codTrans;
-		this.requestParams["url"] = merchantServerUrl + "esito.html";
-		this.requestParams["url_back"] = merchantServerUrl + "annullo.html";
-		this.requestParams["mac"] = macCalculated;
+		importoIn.value = importo.toString();
+		codTransIn.value = codTrans;
+		urlIn.value = merchantServerUrl + "result"; //'homeCifris23'
+		urlBackIn.value = merchantServerUrl + "cancel";
+		macIn.value = macCalculated;
 
-		// Parametri facoltativi
-		this.requestParams['mail'] = this.email;
-		this.requestParams['nome'] = this.firstName;
-		this.requestParams['cognome'] = this.lastName;
-
-		/**
-		 * Creare un form html con metodo post verso requestUrl con campi hidden
-		 * contenenti requestParams
-		 */
-		console.log('[startPayment] Instatiating action...');
+		// Form submission
+		var form = <HTMLFormElement> document.getElementById("payForm");
 		form.action = this.requestUrl;
-	}
-
-	/**
-	 * Performs the necessary checks on the form fields, returning true if
-	 * everything is properly filled and false otherwise.
-	 */
-	public checkFields(): boolean {
-
-		var isValid = true;
-
-		// Input fields
-		isValid = isValid && !(this.firstName === '');
-		isValid = isValid && !(this.lastName === '');
-		isValid = isValid && !(this.email === '');
-
-		// Radio buttons
-		isValid = isValid && (this.fee != 0);
-
-		return isValid;
+		form.submit();
 	}
 
 	/**
@@ -148,45 +105,40 @@ export class RegistrationComponent implements OnInit {
 	 */
 	public setDisabled() {
 		// Disabling input text fields
-		var fnameIn = <HTMLInputElement> document.getElementById("fname");
+		var fnameIn = <HTMLInputElement> document.getElementById('nome');
 		fnameIn.disabled = true;
 
-		var lnameIn = <HTMLInputElement> document.getElementById("lname");
+		var lnameIn = <HTMLInputElement> document.getElementById('cognome');
 		lnameIn.disabled = true;
 
-		var emailIn = <HTMLInputElement> document.getElementById("email");
+		var emailIn = <HTMLInputElement> document.getElementById('mail');
 		emailIn.disabled = true;
 
 		// Disabling radio buttons 
-		var radio = document.getElementsByName("fee");
+		var radio = document.getElementsByName('fee');
 		for (var i = 0; i < radio.length; i++) {
 			(<HTMLInputElement> radio[i]).disabled = true;
 		}
 	}
 
 	/**
-	 * Performs the checks on the given form, then it either:
-	 * - Generates a warning if something is missing in the form;
-	 * - Otherwise, executes the payment.
+	 * Performs the checks on the payment form, then it either:
+	 * - Generates a warning if something is missing;
+	 * - Otherwise, disables the fields and executes the payment.
 	 */
-	public checkAndPay(form): boolean {
-		// Getting values from inputs
-		this.firstName = (<HTMLInputElement> document.getElementById('fname')).value;
-		this.lastName = (<HTMLInputElement> document.getElementById('lname')).value;
-		this.email = (<HTMLInputElement> document.getElementById('email')).value;
-
-		// Checking fields
-		var isValid = this.checkFields();
+	public checkAndPay(): boolean {
+		// Checking form fields
+		var form = <HTMLFormElement> document.getElementById('payForm');
+		var isValid = form.checkValidity();
 
 		if(isValid) {
-			// Disbaling fields and executing payment with given values
+			// Disbaling fields and executing payment
 			this.setDisabled();
-
-			this.startPayment(form);
+			this.startPayment();
 		} else {
 			// Throwing error
 			alert('All fields are mandatory. \n' + 
-				'Please be sure to have compiled all of them.'); 
+				  'Please be sure to have compiled all of them.'); 
 		}
 
 		return isValid;

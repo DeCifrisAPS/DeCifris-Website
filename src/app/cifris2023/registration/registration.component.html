@@ -27,50 +27,42 @@
 		</p>
 	</div>
 </div>
-<!--
 <hr>
 <div class="row mt-3 mr-1 ml-1">
 	<div class="col-md-12">
 		<h4>PAYMENT</h4>
 	</div>
 	<form 
+		id="payForm"
 		class="form"
-		method='post'
-		(ngSubmit)="checkAndPay(this)"
+		method="post"
+		(ngSubmit)="checkAndPay()"
 	>
-		<label for="fname">
-			First Name *
-		</label>
-		<input type="text" id="fname" name="nome">
+		<!-- User input -->
+		<label for="nome"> First Name * </label>
+		<input type="text" id="nome" name="nome" required>
 
-		<label for="lname">
-			Last Name *
-		</label>
-		<input type="text" id="lname" name="cognome">
+		<label for="cognome"> Last Name * </label>
+		<input type="text" id="cognome" name="cognome" required>
 
-		<label for="email">
-			Email *
-		</label>
-		<input type="text" id="email" name="mail">
+		<label for="mail"> Email * </label>
+		<input type="email" id="mail" name="mail" required>
 
-		<label for="fee">
-			Fee *
-		</label>
-		<div id="fee">
+		<label> Fee * </label>
+		<div>
 			<input 
 				type="radio"
 				id="regular"
 				name="fee"
 				value="19000"
 				(click)=setFee($event)
+				checked="checked"
 			>
-			<label for="regular">
-				Regular
-			</label><br>
+			<label for="regular"> Regular </label><br>
 			
 			<input 
-				type="radio" 
-				id="scientific_memebers" 
+				type="radio"
+				id="scientific_memebers"
 				name="fee" 
 				value="17000"
 				(click)=setFee($event)
@@ -80,20 +72,18 @@
 			</label><br>
 			
 			<input 
-				type="radio" 
-				id="young" 
-				name="fee" 
+				type="radio"
+				id="young"
+				name="fee"
 				value="12000"
 				(click)=setFee($event)
 			>
-			<label for="young">
-				Young
-			</label><br>
+			<label for="young"> Young </label><br>
 
 			<input 
-				type="radio" 
-				id="member" 
-				name="fee" 
+				type="radio"
+				id="member"
+				name="fee"
 				value="12000"
 				(click)=setFee($event)
 			>
@@ -102,9 +92,9 @@
 			</label><br>
 			
 			<input 
-				type="radio" 
-				id="member_young" 
-				name="fee" 
+				type="radio"
+				id="member_young"
+				name="fee"
 				value="7000"
 				(click)=setFee($event)
 			>
@@ -112,10 +102,11 @@
 				Member of De Cifris (“socio giovane”)
 			</label>
 		</div>
-		<input type="hidden" id="importo" name="importo">
 
-		<input type="hidden" id="alias" name="alias">
-		<input type="hidden" id="divisa" name="divisa">
+		<!-- Hidden input -->
+		<input type="hidden" id="alias" name="alias" value={{ALIAS}}>
+		<input type="hidden" id="importo" name="importo">
+		<input type="hidden" id="divisa" name="divisa" value={{DIVISA}}>
 		<input type="hidden" id="codTrans" name="codTrans">
 		<input type="hidden" id="url" name="url">
 		<input type="hidden" id="url_back" name="url_back">
@@ -128,14 +119,11 @@
 			Total: € {{fee/100}}.00
 		</p>
 
-		<input 
-			type="submit"
-			value="Pay Now"
-		>
+		<!-- Submit input -->
+		<input type="submit" value="Pay Now">
 
 		<p class="footnote">
 			* fields are mandatory
 		</p>
 	</form>
 </div>
--->

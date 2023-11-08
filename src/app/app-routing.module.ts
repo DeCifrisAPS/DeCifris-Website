@@ -58,104 +58,110 @@ import { StageTirociniComponent } from './opportunita/stage-tirocini/stage-tiroc
 import { AssociarsiComponent } from './opportunita/associarsi/associarsi.component';
 import { BenemeritiComponent } from './opportunita/associarsi/benemeriti/benemeriti.component';
 import { DiconoDiNoiComponent} from './associazione/dicono-di-noi/dicono-di-noi.component';
+import { CookiePolicyComponent } from './cookie-policy/cookie-policy.component';
+import { Trends23Component } from './attivita/trends23/trends23.component';
+import { Trends22Component } from './attivita/trends22/trends22.component';
+import { Trends22bisComponent } from './attivita/trends22/trends22bis/trends22bis.component';
+import { EditoriaComponent } from './attivita/editoria/editoria.component';
+import { BlockchainSmartContractComponent } from './attivita/blockchain-smart-contract/blockchain-smart-contract.component';
+
+// ./cifris23
 import { Cifris2023Component } from './cifris2023/cifris2023.component';
 import { CallForPapersComponent } from './cifris2023/call-for-papers/call-for-papers.component';
 import { CallForWorkshopsComponent } from './cifris2023/call-for-workshops/call-for-workshops.component';
 import { ProgramCommitteeComponent } from './cifris2023/program-committee/program-committee.component';
 import { RegistrationComponent } from './cifris2023/registration/registration.component';
 import { ProceedingsComponent } from './cifris2023/proceedings/proceedings.component';
-import { CookiePolicyComponent } from './cookie-policy/cookie-policy.component';
-import { Trends23Component } from './attivita/trends23/trends23.component';
-import { Trends22Component } from './attivita/trends22/trends22.component';
-import { Trends22bisComponent } from './attivita/trends22/trends22bis/trends22bis.component';
 import { HomeCifris23Component } from './cifris2023/home-cifris23/home-cifris23.component';
-import { EditoriaComponent } from './attivita/editoria/editoria.component';
-import { BlockchainSmartContractComponent } from './attivita/blockchain-smart-contract/blockchain-smart-contract.component';
 import { ProgramComponent } from './cifris2023/program/program.component';
+import { CancelComponent } from './cifris2023/payment/cancel/cancel.component';
+import { ResultComponent } from './cifris2023/payment/result/result.component';
 
 
 const routes: Routes = [
-  {path: "blockchain-smart-contract", component: BlockchainSmartContractComponent},
-  {path: "editoria", component: EditoriaComponent},
-  {path: 'cifris23', redirectTo: '/cifris23/homeCifris23', pathMatch: 'full' },
-  {path: "cookie-policy", component: CookiePolicyComponent},
-  {path: "cifris23", component: Cifris2023Component, children:[
-    {path: "call-for-papers", component: CallForPapersComponent},
-    {path: "call-for-workshops", component: CallForWorkshopsComponent},
-    {path: "program-committee", component: ProgramCommitteeComponent},
-    {path: "registration", component: RegistrationComponent},
-    {path: "homeCifris23", component: HomeCifris23Component},
-    {path: "program", component: ProgramComponent},
-    {path: "proceedings", component: ProceedingsComponent},
-  ]},
-  {path: "dicono-di-noi", component: DiconoDiNoiComponent},
-  {path: "associazione", component: AssociazioneComponent},
-  {path: "statuto", component: StatutoComponent},
-  {path: "regolamento", component: RegolamentoComponent},
-  {path: "organiDirettivi", component:OrganiDirettiviComponent},
-  {path: "advisoryBoard", component: AdvisoryBoardComponent},
-  {path: "posizioniRicerca", component: PosizioniRicercaComponent},
-  {path: "stageTirocini", component: StageTirociniComponent},
-  {path: "associarsi-benemeriti", component:BenemeritiComponent},
-  {path: "associarsi", component: AssociarsiComponent},
-  {path: 'trends', component: DecifrisTrendComponent},
-  {path: 'trends23', component: Trends23Component},
-  {path: 'trends22bis', component:Trends22bisComponent},
-  {path: 'trends22', component: Trends22Component},
-  {path: 'advisoryboard/borse', redirectTo: 'opportunita', pathMatch: 'full' },
-  {path: "a.html", component: AComponent},
-  {path : "", component : HomeComponent},
-  {path: "obiettivi", component: ObiettiviComponent},
-  {path: "aderenti", component: AderentiComponent},
-  {path: "mailingList", component: MailingListComponent},
-  {path: "attivita", component: AttivitaComponent},
-  {path: "seminariLocali", component: SeminariLocaliComponent},
-  {path: "eruditorum", component: DecifrisEruditorumComponent},
-  {path: "deCifrisHistoriae", component: DecifrisHistoriaeComponent},
-  {path: "deCifrisAthesis", component: DecifrisAthesisComponent},
-  {path: "deCifrisAugustaeTaurinorum", component: DecifrisAugustaeTaurinorumComponent},
-  {path: "deCifrisScholaLatina", component: DecifrisScholaLatinaComponent},
-  {path: "deCifrisMediolanensibus", component: DecifrisScholaMediolanensibusComponent},
-  {path: 'cifrisChain', component: CifrisChainComponent},
-  {path: 'quantumCifris', component: QuantumCifrisComponent },
-  {path: 'cifrisCloud', component: CifrisCloudComponent},
-  {path: 'mathCifris', component: MathCifrisComponent},
-  {path: 'PQCifris', component: PqCifrisComponent},
-  {path: "iniziativeDivulgative", component: IniziativeDivulgativeComponent},
-  {path: "gareCrittografiche", component: GareCrittograficheComponent},
-  {path: "eventiPubblici", component: EventiPubbliciComponent},
-  {path: "didatticaUniversitaria", component: DidatticaUniversitariaComponent},
-  {path: "opportunita", component: OpportunitaComponent},
-  {path: "eventi", component: EventiComponent},
-  {path: "sessioni", component: SessioniDeCifrisComponent},
-  {path: "contatti", component: ContattiComponent},
-  {path: "curiosi", component: PerCuriosiComponent},
-  {path: "scuola", component: PerInsegnantiComponent},
-  {path: "studenti", component: PerStudentiComponent},
-  {path: "aziende", component: PerAziendeComponent},
-  {path: "convegnoUmi", component: ConvegnoUmiComponent},
-  {path: "accademia", component: PerAccademiaComponent},
-  {path: "counterparty", component: CounterpartyComponent},
-  {path: "summerSchool2022", component: SummerSchoolComponent},
-  {path: "cryptowars", component: CryptowarsComponent, children:  [
-    {path: "2021", component: Cryptowars2021Component},
-    {path: "2020", component: Cryptowars2020Component},
-    {path: "2019", component: Cryptowars2019Component},
-    {path: "2018", component: Cryptowars2018Component},
-    {path: "2016", component: Cryptowars2016Component},
-    {path: "2015", component: Cryptowars2015Component},
-    {path: "2014", component: Cryptowars2014Component},
-    {path: "2011", component: Cryptowars2011Component, children: [
-      {path: "classica", component: ClassicaComponent},
-      {path: "pubblica", component: PubblicaComponent},
-      {path: "simmetrica", component: SimmetricaComponent}
-    ]
-  }
+	{path: "blockchain-smart-contract", component: BlockchainSmartContractComponent},
+	{path: "editoria", component: EditoriaComponent},
+	{path: 'cifris23', redirectTo: '/cifris23/homeCifris23', pathMatch: 'full' },
+	{path: "cookie-policy", component: CookiePolicyComponent},
+	{path: "cifris23", component: Cifris2023Component, children:[
+		{path: "call-for-papers", component: CallForPapersComponent},
+		{path: "call-for-workshops", component: CallForWorkshopsComponent},
+		{path: "program-committee", component: ProgramCommitteeComponent},
+		{path: "registration", component: RegistrationComponent},
+		{path: "homeCifris23", component: HomeCifris23Component},
+		{path: "program", component: ProgramComponent},
+		{path: "proceedings", component: ProceedingsComponent},
+		{path: "cancel", component: CancelComponent},
+		{path: "result", component: ResultComponent},
+	]},
+	{path: "dicono-di-noi", component: DiconoDiNoiComponent},
+	{path: "associazione", component: AssociazioneComponent},
+	{path: "statuto", component: StatutoComponent},
+	{path: "regolamento", component: RegolamentoComponent},
+	{path: "organiDirettivi", component:OrganiDirettiviComponent},
+	{path: "advisoryBoard", component: AdvisoryBoardComponent},
+	{path: "posizioniRicerca", component: PosizioniRicercaComponent},
+	{path: "stageTirocini", component: StageTirociniComponent},
+	{path: "associarsi-benemeriti", component:BenemeritiComponent},
+	{path: "associarsi", component: AssociarsiComponent},
+	{path: 'trends', component: DecifrisTrendComponent},
+	{path: 'trends23', component: Trends23Component},
+	{path: 'trends22bis', component:Trends22bisComponent},
+	{path: 'trends22', component: Trends22Component},
+	{path: 'advisoryboard/borse', redirectTo: 'opportunita', pathMatch: 'full' },
+	{path: "a.html", component: AComponent},
+	{path : "", component : HomeComponent},
+	{path: "obiettivi", component: ObiettiviComponent},
+	{path: "aderenti", component: AderentiComponent},
+	{path: "mailingList", component: MailingListComponent},
+	{path: "attivita", component: AttivitaComponent},
+	{path: "seminariLocali", component: SeminariLocaliComponent},
+	{path: "eruditorum", component: DecifrisEruditorumComponent},
+	{path: "deCifrisHistoriae", component: DecifrisHistoriaeComponent},
+	{path: "deCifrisAthesis", component: DecifrisAthesisComponent},
+	{path: "deCifrisAugustaeTaurinorum", component: DecifrisAugustaeTaurinorumComponent},
+	{path: "deCifrisScholaLatina", component: DecifrisScholaLatinaComponent},
+	{path: "deCifrisMediolanensibus", component: DecifrisScholaMediolanensibusComponent},
+	{path: 'cifrisChain', component: CifrisChainComponent},
+	{path: 'quantumCifris', component: QuantumCifrisComponent },
+	{path: 'cifrisCloud', component: CifrisCloudComponent},
+	{path: 'mathCifris', component: MathCifrisComponent},
+	{path: 'PQCifris', component: PqCifrisComponent},
+	{path: "iniziativeDivulgative", component: IniziativeDivulgativeComponent},
+	{path: "gareCrittografiche", component: GareCrittograficheComponent},
+	{path: "eventiPubblici", component: EventiPubbliciComponent},
+	{path: "didatticaUniversitaria", component: DidatticaUniversitariaComponent},
+	{path: "opportunita", component: OpportunitaComponent},
+	{path: "eventi", component: EventiComponent},
+	{path: "sessioni", component: SessioniDeCifrisComponent},
+	{path: "contatti", component: ContattiComponent},
+	{path: "curiosi", component: PerCuriosiComponent},
+	{path: "scuola", component: PerInsegnantiComponent},
+	{path: "studenti", component: PerStudentiComponent},
+	{path: "aziende", component: PerAziendeComponent},
+	{path: "convegnoUmi", component: ConvegnoUmiComponent},
+	{path: "accademia", component: PerAccademiaComponent},
+	{path: "counterparty", component: CounterpartyComponent},
+	{path: "summerSchool2022", component: SummerSchoolComponent},
+	{path: "cryptowars", component: CryptowarsComponent, children:  [
+		{path: "2021", component: Cryptowars2021Component},
+		{path: "2020", component: Cryptowars2020Component},
+		{path: "2019", component: Cryptowars2019Component},
+		{path: "2018", component: Cryptowars2018Component},
+		{path: "2016", component: Cryptowars2016Component},
+		{path: "2015", component: Cryptowars2015Component},
+		{path: "2014", component: Cryptowars2014Component},
+		{path: "2011", component: Cryptowars2011Component, children: [
+			{path: "classica", component: ClassicaComponent},
+			{path: "pubblica", component: PubblicaComponent},
+			{path: "simmetrica", component: SimmetricaComponent}
+		]
+	}
 ]}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+	imports: [RouterModule.forRoot(routes)],
+	exports: [RouterModule]
 })
 export class AppRoutingModule { }
