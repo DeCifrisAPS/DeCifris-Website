@@ -74,8 +74,6 @@ import { RegistrationComponent } from './cifris2023/registration/registration.co
 import { ProceedingsComponent } from './cifris2023/proceedings/proceedings.component';
 import { HomeCifris23Component } from './cifris2023/home-cifris23/home-cifris23.component';
 import { ProgramComponent } from './cifris2023/program/program.component';
-import { CancelComponent } from './cifris2023/payment/cancel/cancel.component';
-import { ResultComponent } from './cifris2023/payment/result/result.component';
 
 
 const routes: Routes = [
@@ -91,8 +89,6 @@ const routes: Routes = [
 		{path: "homeCifris23", component: HomeCifris23Component},
 		{path: "program", component: ProgramComponent},
 		{path: "proceedings", component: ProceedingsComponent},
-		{path: "cancel", component: CancelComponent},
-		{path: "result", component: ResultComponent},
 	]},
 	{path: "dicono-di-noi", component: DiconoDiNoiComponent},
 	{path: "associazione", component: AssociazioneComponent},
