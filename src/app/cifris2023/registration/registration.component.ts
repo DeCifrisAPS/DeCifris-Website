@@ -90,8 +90,8 @@ export class RegistrationComponent implements OnInit {
 
 		importoIn.value = importo.toString();
 		codTransIn.value = codTrans;
-		urlIn.value = merchantServerUrl + "result"; //'homeCifris23'
-		urlBackIn.value = merchantServerUrl + "cancel";
+		urlIn.value = merchantServerUrl + 'homeCifris23';
+		urlBackIn.value = merchantServerUrl + 'registration';
 		macIn.value = macCalculated;
 
 		// Form submission
