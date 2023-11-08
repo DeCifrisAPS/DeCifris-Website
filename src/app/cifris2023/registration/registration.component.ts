@@ -17,19 +17,19 @@ export class RegistrationComponent implements OnInit {
 	//---------------------------------------------------------------------------
 	//---------------------------- Payment variables ----------------------------
 
-	//readonly ALIAS = 'ALIAS_WEB_00074470';
-	readonly ALIAS = 'payment_3482210';	
+	readonly ALIAS = 'ALIAS_WEB_00074470';
+	//readonly ALIAS = 'payment_3482210';	
 
-	//readonly CHIAVESEGRETA = 'SQV946OD2KUQ4M71SHXBCB85SW3FVVQF';
-	readonly CHIAVESEGRETA = 'D68kw33a4HE9Q7352HY30v3M9kV3O50e6A2542W9';
+	readonly CHIAVESEGRETA = 'SQV946OD2KUQ4M71SHXBCB85SW3FVVQF';
+	//readonly CHIAVESEGRETA = 'D68kw33a4HE9Q7352HY30v3M9kV3O50e6A2542W9';
 
-	//readonly HTTP_HOST = 'localhost:4200/cifris23/';
-	readonly HTTP_HOST = 'www.decifris.it/cifris23/';
+	readonly HTTP_HOST = 'localhost:4200/cifris23/';
+	//readonly HTTP_HOST = 'www.decifris.it/cifris23/';
 
-	//readonly requestUrl = 'https://int-ecommerce.nexi.it/' +
-	//						'ecomm/ecomm/DispatcherServlet';
-	readonly requestUrl = 'https://ecommerce.nexi.it/' +
-						  'ecomm/ecomm/DispatcherServlet';
+	readonly requestUrl = 'https://int-ecommerce.nexi.it/' +
+							'ecomm/ecomm/DispatcherServlet';
+	//readonly requestUrl = 'https://ecommerce.nexi.it/' +
+	//					  'ecomm/ecomm/DispatcherServlet';
 
 	readonly DIVISA = 'EUR';
 
@@ -65,8 +65,8 @@ export class RegistrationComponent implements OnInit {
 	public startPayment() {
 	
 		// Data preprocessing
-		//var merchantServerUrl =	'http://' + this.HTTP_HOST;
-		var merchantServerUrl = 'https://' + this.HTTP_HOST;
+		var merchantServerUrl =	'http://' + this.HTTP_HOST;
+		//var merchantServerUrl = 'https://' + this.HTTP_HOST;
 
 		var date = new Date();
 		var codTrans = 'PS_' + formatDate(date, 'yyyyMMddHHmmss', 'en-US');
@@ -88,9 +88,11 @@ export class RegistrationComponent implements OnInit {
 
 		importoIn.value = importo.toString();
 		codTransIn.value = codTrans;
-		urlIn.value = merchantServerUrl + 'homeCifris23';
+		urlIn.value = merchantServerUrl + 'payment-result'; //'homeCifris23'
 		urlBackIn.value = merchantServerUrl + 'registration';
 		macIn.value = macCalculated;
+
+		alert('[startPayment] Note 1: ' + (<HTMLInputElement> document.getElementById('Note1')).value);
 
 		// Form submission
 		var form = <HTMLFormElement> document.getElementById('payForm');
@@ -135,7 +137,7 @@ export class RegistrationComponent implements OnInit {
 			this.startPayment();
 		} else {
 			// Throwing error
-			alert('All fields are mandatory. \n' + 
+			alert('Fields with * are mandatory. \n' + 
 				  'Please be sure to have compiled all of them.'); 
 		}
 
