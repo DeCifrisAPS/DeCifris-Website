@@ -17,17 +17,19 @@ export class RegistrationComponent implements OnInit {
 	//---------------------------------------------------------------------------
 	//---------------------------- Payment variables ----------------------------
 
-	//readonly ALIAS = 'ALIAS_WEB_00074470';
+	/*
+	// TEST PHASE
+	readonly ALIAS = 'ALIAS_WEB_00074470';
+	readonly CHIAVESEGRETA = 'SQV946OD2KUQ4M71SHXBCB85SW3FVVQF';
+	readonly HTTP_HOST = 'localhost:4200/cifris23/';
+	readonly requestUrl = 'https://int-ecommerce.nexi.it/' +
+						  'ecomm/ecomm/DispatcherServlet';
+	*/
+
+	// PRODUCTION PHASE
 	readonly ALIAS = 'payment_3482210';	
-
-	//readonly CHIAVESEGRETA = 'SQV946OD2KUQ4M71SHXBCB85SW3FVVQF';
 	readonly CHIAVESEGRETA = 'D68kw33a4HE9Q7352HY30v3M9kV3O50e6A2542W9';
-
-	//readonly HTTP_HOST = 'localhost:4200/cifris23/';
 	readonly HTTP_HOST = 'www.decifris.it/cifris23/';
-
-	//readonly requestUrl = 'https://int-ecommerce.nexi.it/' +
-	//						'ecomm/ecomm/DispatcherServlet';
 	readonly requestUrl = 'https://ecommerce.nexi.it/' +
 						  'ecomm/ecomm/DispatcherServlet';
 
@@ -69,7 +71,8 @@ export class RegistrationComponent implements OnInit {
 		var merchantServerUrl = 'https://' + this.HTTP_HOST;
 
 		var date = new Date();
-		var codTrans = 'PS_' + formatDate(date, 'yyyyMMddHHmmss', 'en-US');
+		var codTrans = 'CIFRIS23_'
+						+ formatDate(date, 'yyyyMMddHHmmss', 'en-US');
 
 		var importo = this.fee;
 
@@ -102,16 +105,7 @@ export class RegistrationComponent implements OnInit {
 	 * Disables the form fields.
 	 */
 	public setDisabled() {
-		// Disabling input text fields
-		var fnameIn = <HTMLInputElement> document.getElementById('nome');
-		fnameIn.disabled = true;
-
-		var lnameIn = <HTMLInputElement> document.getElementById('cognome');
-		lnameIn.disabled = true;
-
-		var emailIn = <HTMLInputElement> document.getElementById('mail');
-		emailIn.disabled = true;
-
+		
 		// Disabling radio buttons 
 		var radio = document.getElementsByName('fee');
 		for (var i = 0; i < radio.length; i++) {

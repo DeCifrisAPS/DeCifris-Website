@@ -48,26 +48,6 @@ h5{
 /**
  * CSS for form fields 
  **/
-input[type=text], select {
-	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
-	display: inline-block;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-}
-
-input[type=email], select {
-	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
-	display: inline-block;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-}
-
 input[type=hidden], select {
 	width: 100%;
 	padding: 12px 20px;
@@ -105,4 +85,5 @@ input[type=submit] {
 	border-radius: 5px;
 	background-color: lightblue;
 	padding: 20px;
+	width: 100%;
 }
