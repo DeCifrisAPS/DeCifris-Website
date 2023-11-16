@@ -76,9 +76,8 @@ input[type=submit] {
 
 .footnote {
 	width: 100%;
-	text-align: right;
 	font-size: small;
-	margin-right: 8px;
+	margin-top: 8px;
 }
 
 .form {
