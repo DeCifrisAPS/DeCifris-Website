@@ -18,20 +18,20 @@ export class Opera24Component implements OnInit {
 	//---------------------------- Payment variables ----------------------------
 
 	// TEST PHASE
+	/*
 	readonly ALIAS = 'ALIAS_WEB_00074470';
 	readonly CHIAVESEGRETA = 'SQV946OD2KUQ4M71SHXBCB85SW3FVVQF';
 	readonly HTTP_HOST = 'localhost:4200/';
 	readonly requestUrl = 'https://int-ecommerce.nexi.it/' +
 						  'ecomm/ecomm/DispatcherServlet';
+	*/
 
-	/*
 	// PRODUCTION PHASE
 	readonly ALIAS = 'payment_3482210';	
 	readonly CHIAVESEGRETA = 'D68kw33a4HE9Q7352HY30v3M9kV3O50e6A2542W9';
 	readonly HTTP_HOST = 'www.decifris.it/';
 	readonly requestUrl = 'https://ecommerce.nexi.it/' +
 						  'ecomm/ecomm/DispatcherServlet';
-	*/
 
 	readonly DIVISA = 'EUR';
 
@@ -67,8 +67,8 @@ export class Opera24Component implements OnInit {
 	public startPayment() {
 	
 		// Data preprocessing
-		var merchantServerUrl =	'http://' + this.HTTP_HOST;
-		//var merchantServerUrl = 'https://' + this.HTTP_HOST;
+		//var merchantServerUrl =	'http://' + this.HTTP_HOST;
+		var merchantServerUrl = 'https://' + this.HTTP_HOST;
 
 		var date = new Date();
 		var codTrans = 'OpeRa2024_'
@@ -91,7 +91,8 @@ export class Opera24Component implements OnInit {
 
 		importoIn.value = importo.toString();
 		codTransIn.value = codTrans;
-		urlIn.value = merchantServerUrl + 'opera24';
+		urlIn.value = 'https://www.math.univ-paris13.fr/~borello/' +
+						'OpeRa2024/payment-result';
 		urlBackIn.value = merchantServerUrl + 'opera24';
 		macIn.value = macCalculated;
 
@@ -119,6 +120,7 @@ export class Opera24Component implements OnInit {
 	 * - Otherwise, disables the fields and executes the payment.
 	 */
 	public checkAndPay(): boolean {
+
 		// Checking form fields
 		var form = <HTMLFormElement> document.getElementById('payForm');
 		var isValid = form.checkValidity();
