@@ -1,0 +1,171 @@
+<div class="row mt-3 mr-1 ml-1">
+	<div class="col-md-12" align="center">
+		<h3>OpeRa2024 REGISTRATION</h3>
+	</div>
+</div>
+<div class="row mt-3 mr-1 ml-1">
+	<div class="col-md-12">
+		<p>
+			The fee of OpeRa2024 is:
+		</p>
+		<ol>
+			<li>
+				100.00 euros, late fee;
+			</li>
+			
+			<li>
+				68.00 euros, early-bird fee (until November 30th);
+			</li>
+
+			<li>
+				75.00 euros, late fee for members of De Cifris;
+			</li>
+			
+			<li>
+				55.00 euros, early-bird fee for members of De Cifris (until November 30th).
+			</li>
+		</ol>
+		<p> The fee covers: </p>
+		<ul>
+			<li>
+				Facilities;
+			</li>
+
+			<li>
+				Coffee breaks;
+			</li>
+
+			<li>
+				Social dinner.
+			</li>
+		</ul>
+		<p>
+			Unfortunately, there is a limited number of places, due to the hosting structure. Registrations will close when this number is reached or at latest on December 31st 2023. <br>
+			If you are Italian or another European Union citizen, we strongly encourage you to become a member of De Cifris, since it costs only 20 euros or 5 euros (depending on your age), and gives you a significant discount on the fees. To become a member, just follow these instructions: <a href="https://www.decifris.it/associarsi">
+				https://www.decifris.it/associarsi
+			</a>.
+		</p>
+		<div style="color: red;">
+			<p>
+				To register for OpeRa2024, please:
+			</p>
+			<ol>
+				<li>
+					Send an email to <a href="mailto:opera2024@decifris.it">
+						opera2024@decifris.it
+					</a> with subject "OpeRa2024". <br>
+					In the email please specify whether you pay yourself or your company/institution pays for you (in that case, please send us its fiscal data).
+				</li>
+
+				<li>
+					EITHER pay with your bank, following the instruction in your email reply; <br>
+					OR pay via credit card filling the form below.
+				</li>
+			</ol>	
+		</div>
+	</div>
+</div>
+<hr>
+<div class="row mt-3 mr-1 ml-1">
+	<div class="col-md-12">
+		<h4>PAYMENT</h4>
+	</div>
+	<form 
+		id="payForm"
+		class="form"
+		method="post"
+		(ngSubmit)="checkAndPay()"
+	>
+		<label> Fee </label>
+		<div>
+			<input 
+				type="radio"
+				id="regular"
+				name="fee"
+				value="10000"
+				(click)=setFee($event)
+				checked="checked"
+			>
+			<label for="regular"> Full late </label><br>
+			
+			<input 
+				type="radio"
+				id="scientific_memebers"
+				name="fee" 
+				value="6800"
+				(click)=setFee($event)
+			>
+			<label for="scientific_memebers">
+				Full early-bird
+			</label><br>
+			
+			<input 
+				type="radio"
+				id="young"
+				name="fee"
+				value="7500"
+				(click)=setFee($event)
+			>
+			<label for="young">
+				Reduced late (for De Cifris members)
+			</label><br>
+
+			<input 
+				type="radio"
+				id="member"
+				name="fee"
+				value="5500"
+				(click)=setFee($event)
+			>
+			<label for="member">
+				Reduced early-bird (for De Cifris members)
+			</label><br>
+		</div>
+
+		<!-- Hidden input -->
+		<input type="hidden" id="alias" name="alias" value={{ALIAS}}>
+		<input type="hidden" id="importo" name="importo">
+		<input type="hidden" id="divisa" name="divisa" value={{DIVISA}}>
+		<input type="hidden" id="codTrans" name="codTrans">
+		<input type="hidden" id="url" name="url">
+		<input type="hidden" id="url_back" name="url_back">
+		<input type="hidden" id="mac" name="mac">
+		<input type="hidden" id="mail" name="mail">
+		<input type="hidden" id="languageId" name="languageId" value="ENG">
+		<input 
+			type="hidden"
+			id="descrizione"
+			name="descrizione"
+			value="Enrollment for OpeRa2024."
+		>
+		<input 
+			type="hidden"
+			id="Note1"
+			name="Note1"
+			value="Enrollment for OpeRa2024."
+		>
+		<input type="hidden" id="nome" name="nome">
+		<input type="hidden" id="cognome" name="cognome">
+
+		<hr><!---------------------------------------------------------------->
+
+		<p style="font-weight: bold;">
+			Total: € {{fee/100}}.00
+		</p>
+
+		<!-- Submit input -->
+		<!--
+		<input type="submit" value="Pay Now">
+		-->
+
+		<p class="footnote">
+			The University of Campania "Luigi Vanvitelli" and De Componendis Cifris kindly request your consent for the processing of your personal data provided in the following payment form. This information is passed from De Componendis Cifris to the University ASAP and it is immediately deleted by De Componendis Cifris afterwards. The University declares that this information is essential for event planning, communication purposes, and addressing any special requests. Your personal data will be securely deleted upon the conclusion of the event. Learn more here about how the University of Campania "Luigi Vanvitelli" adheres to GDPR regulations in handling personal data and about your rights. <br>
+			<a href="https://international.unicampania.it/index.php/en/home/privacy-and-cookie-policy">
+				https://international.unicampania.it/index.php/en/home/privacy-and-cookie-policy
+			</a>
+		</p>
+		<p class="footnote">
+			By filling the above form you confirm that you have reviewed how the University of Campania "Luigi Vanvitelli" processes your personal data as outlined there and provide your consent for such processing.
+		</p>
+	</form>
+</div>
