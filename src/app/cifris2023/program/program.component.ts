@@ -1,3 +1,4 @@
+import { formatDate } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: ['./program.component.css']
 })
 export class ProgramComponent implements OnInit {
+
+	public today = formatDate(new Date(), 'dd/MM/yyy', 'en-US');
 
 	constructor() { }
 
