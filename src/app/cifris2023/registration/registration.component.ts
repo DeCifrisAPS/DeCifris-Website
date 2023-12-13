@@ -88,12 +88,21 @@ export class RegistrationComponent implements OnInit {
 		var urlIn = <HTMLInputElement> document.getElementById('url');
 		var urlBackIn = <HTMLInputElement> document.getElementById('url_back');
 		var macIn = <HTMLInputElement> document.getElementById('mac');
+		var descrizione = <HTMLInputElement> document.getElementById('descrizione');
 
 		importoIn.value = importo.toString();
 		codTransIn.value = codTrans;
 		urlIn.value = merchantServerUrl + 'payment-result';
 		urlBackIn.value = merchantServerUrl + 'registration';
 		macIn.value = macCalculated;
+
+		if(this.fee == 4000) {
+			descrizione.value = 'Enrollment for CIFRIS23 -' +
+								'Companion fee.';
+		} else {
+			descrizione.value = 'Enrollment for CIFRIS23 -' +
+								'Rome, 14 and 15 December 2023.';
+		}
 
 		// Form submission
 		var form = <HTMLFormElement> document.getElementById('payForm');
