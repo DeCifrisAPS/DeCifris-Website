@@ -78,3 +78,33 @@ b {
 	background-color: #0051a3;
 }
 */
+
+/* Popup container */
+.popup {
+	position: relative;
+	cursor: pointer;
+	color: #0066CC;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+	visibility: hidden;
+	position: absolute;
+	bottom: 100%;
+ 
+	right: 0%; 
+	width: 1000%;
+	padding: 10px;
+	margin: 10px;
+
+	background-color: #555;
+	border-radius: 6px;
+	color: #fff;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s
+}

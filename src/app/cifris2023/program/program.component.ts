@@ -27,4 +27,13 @@ export class ProgramComponent implements OnInit {
 			abstract.classList.contains('expanded') ? 'Read less' : 'Read more';
 	}
 	*/
+
+	public openPopup(event) {
+		const popup = event.currentTarget;
+
+		const targetId = popup.getAttribute('targetId')
+		const abstract = document.querySelector('#' + targetId);
+
+		abstract.classList.toggle("show");
+	}
 }
