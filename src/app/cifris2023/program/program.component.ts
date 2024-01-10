@@ -15,6 +15,7 @@ export class ProgramComponent implements OnInit {
 	ngOnInit(): void {
 	}
 
+	/*
 	public readMoreHandler(event) {
 		const button = event.currentTarget;
 
@@ -25,4 +26,5 @@ export class ProgramComponent implements OnInit {
 		button.textContent = 	
 			abstract.classList.contains('expanded') ? 'Read less' : 'Read more';
 	}
+	*/
 }

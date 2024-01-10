@@ -54,6 +54,7 @@ b {
 /**
  * CSS for abstracts truncating text with ellipsis.
  */
+/*
 .abstract {
 	display: -webkit-box;
 	-webkit-line-clamp: 3;
@@ -76,3 +77,4 @@ b {
 .read-more:hover {
 	background-color: #0051a3;
 }
+*/
