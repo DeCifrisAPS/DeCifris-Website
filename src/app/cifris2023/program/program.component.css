@@ -84,19 +84,21 @@ b {
 	position: relative;
 	cursor: pointer;
 	color: #0066CC;
+	width: 100%;
 }
 
 /* The actual popup (appears on top) */
 .popup .popuptext {
 	visibility: hidden;
 	position: absolute;
-	bottom: 100%;
- 
-	right: 0%; 
-	width: 1000%;
+	top: 50%;
+	left: 100%;
+    transform: translateY(-50%);
+	
+	width: 700%;
 	padding: 10px;
-	margin: 10px;
-
+	margin: 5px;
+	
 	background-color: #555;
 	border-radius: 6px;
 	color: #fff;
