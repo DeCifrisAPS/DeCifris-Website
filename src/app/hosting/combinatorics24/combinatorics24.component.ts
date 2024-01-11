@@ -17,8 +17,8 @@ export class Combinatorics24Component implements OnInit {
 	//---------------------------------------------------------------------------
 	//---------------------------- Payment variables ----------------------------
 
-	// TEST PHASE
 	/*
+	// TEST PHASE
 	readonly ALIAS = 'ALIAS_WEB_00074470';
 	readonly CHIAVESEGRETA = 'SQV946OD2KUQ4M71SHXBCB85SW3FVVQF';
 	readonly HTTP_HOST = 'localhost:4200/';
@@ -71,9 +71,9 @@ export class Combinatorics24Component implements OnInit {
 		var merchantServerUrl = 'https://' + this.HTTP_HOST;
 
 		var date = new Date();
-		var codTrans = 'combinatorics2024_'
+		var codTrans = 'comb2024_'
 						+ formatDate(date, 'yyyyMMddHHmmss', 'en-US');
-
+		
 		var importo = this.fee;
 
 		var macString = 'codTrans=' + codTrans +
