@@ -92,7 +92,8 @@ export class Combinatorics24Component implements OnInit {
 
 		importoIn.value = importo.toString();
 		codTransIn.value = codTrans;
-		urlIn.value = '';
+		urlIn.value = 'https://sites.google.com/view/' +
+					  'combinatorics2024/payment-result';
 		urlBackIn.value = merchantServerUrl + 'combinatorics2024';
 		macIn.value = macCalculated;
 
