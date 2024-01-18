@@ -66,15 +66,15 @@ import { EditoriaComponent } from './attivita/editoria/editoria.component';
 import { BlockchainSmartContractComponent } from './attivita/blockchain-smart-contract/blockchain-smart-contract.component';
 
 // ./cifris23
-import { Cifris2023Component } from './cifris2023/cifris2023.component';
-import { CallForPapersComponent } from './cifris2023/call-for-papers/call-for-papers.component';
-import { CallForWorkshopsComponent } from './cifris2023/call-for-workshops/call-for-workshops.component';
-import { ProgramCommitteeComponent } from './cifris2023/program-committee/program-committee.component';
-import { RegistrationComponent } from './cifris2023/registration/registration.component';
-import { ProceedingsComponent } from './cifris2023/proceedings/proceedings.component';
-import { HomeCifris23Component } from './cifris2023/home-cifris23/home-cifris23.component';
-import { ProgramComponent } from './cifris2023/program/program.component';
-import { PaymentResultComponent } from './cifris2023/payment-result/payment-result.component';
+import { Cifris2023Component } from './cifris/cifris2023/cifris2023.component';
+import { CallForPapersComponent } from './cifris/cifris2023/call-for-papers/call-for-papers.component';
+import { CallForWorkshopsComponent } from './cifris/cifris2023/call-for-workshops/call-for-workshops.component';
+import { ProgramCommitteeComponent } from './cifris/cifris2023/program-committee/program-committee.component';
+import { RegistrationComponent } from './cifris/cifris2023/registration/registration.component';
+import { ProceedingsComponent } from './cifris/cifris2023/proceedings/proceedings.component';
+import { HomeCifris23Component } from './cifris/cifris2023/home-cifris23/home-cifris23.component';
+import { ProgramComponent } from './cifris/cifris2023/program/program.component';
+import { PaymentResultComponent } from './cifris/cifris2023/payment-result/payment-result.component';
 
 // ./hosting
 import { Opera24Component } from './hosting/opera24/opera24.component';
