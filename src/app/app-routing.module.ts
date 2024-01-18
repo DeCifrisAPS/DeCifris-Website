@@ -76,6 +76,18 @@ import { HomeCifris23Component } from './cifris/cifris2023/home-cifris23/home-ci
 import { ProgramComponent } from './cifris/cifris2023/program/program.component';
 import { PaymentResultComponent } from './cifris/cifris2023/payment-result/payment-result.component';
 
+
+// ./cifris24
+import { Cifris2024Component } from './cifris/cifris2024/cifris2024.component';
+import { CallForPapersComponent24 } from './cifris/cifris2024/call-for-papers/call-for-papers.component';
+import { CallForWorkshopsComponent24 } from './cifris/cifris2024/call-for-workshops/call-for-workshops.component';
+import { ProgramCommitteeComponent24 } from './cifris/cifris2024/program-committee/program-committee.component';
+import { RegistrationComponent24 } from './cifris/cifris2024/registration/registration.component';
+import { ProceedingsComponent24 } from './cifris/cifris2024/proceedings/proceedings.component';
+import { HomeCifris24Component } from './cifris/cifris2024/home-cifris24/home-cifris24.component';
+import { ProgramComponent24 } from './cifris/cifris2024/program/program.component';
+import { PaymentResultComponent24 } from './cifris/cifris2024/payment-result/payment-result.component';
+
 // ./hosting
 import { Opera24Component } from './hosting/opera24/opera24.component';
 import { Combinatorics24Component } from './hosting/combinatorics24/combinatorics24.component';
@@ -86,14 +98,25 @@ const routes: Routes = [
 	{path: "combinatorics24", component: Combinatorics24Component},
 	{path: "blockchain-smart-contract", component: BlockchainSmartContractComponent},
 	{path: "editoria", component: EditoriaComponent},
-	{path: 'cifris23', redirectTo: '/cifris23/homeCifris23', pathMatch: 'full' },
 	{path: "cookie-policy", component: CookiePolicyComponent},
+	{path: 'cifris23', redirectTo: '/cifris23/homeCifris23', pathMatch: 'full' },
 	{path: "cifris23", component: Cifris2023Component, children:[
 		{path: "call-for-papers", component: CallForPapersComponent},
 		{path: "call-for-workshops", component: CallForWorkshopsComponent},
 		{path: "program-committee", component: ProgramCommitteeComponent},
 		{path: "registration", component: RegistrationComponent},
 		{path: "homeCifris23", component: HomeCifris23Component},
+		{path: "program", component: ProgramComponent},
+		{path: "proceedings", component: ProceedingsComponent},
+		{path: "payment-result", component: PaymentResultComponent},
+	]},
+	{path: 'cifris24', redirectTo: '/cifris24/homeCifris24', pathMatch: 'full' },
+	{path: "cifris24", component: Cifris2024Component, children:[
+		{path: "call-for-papers", component: CallForPapersComponent},
+		{path: "call-for-workshops", component: CallForWorkshopsComponent},
+		{path: "program-committee", component: ProgramCommitteeComponent},
+		{path: "registration", component: RegistrationComponent},
+		{path: "homeCifris24", component: HomeCifris24Component},
 		{path: "program", component: ProgramComponent},
 		{path: "proceedings", component: ProceedingsComponent},
 		{path: "payment-result", component: PaymentResultComponent},

@@ -1,8 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProgramComponent } from './program.component';
+import { ProgramComponent24 } from './program.component';
 
-describe('ProgramComponent', () => {
+describe('ProgramComponent24', () => {
   let component: ProgramComponent;
   let fixture: ComponentFixture<ProgramComponent>;
 

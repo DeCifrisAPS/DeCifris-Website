@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
 	templateUrl: './program.component.html',
 	styleUrls: ['./program.component.css']
 })
-export class ProgramComponent implements OnInit {
+export class ProgramComponent24 implements OnInit {
 
 	public today = formatDate(new Date(), 'dd/MM/yyy', 'en-US');
 

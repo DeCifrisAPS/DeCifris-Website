@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './program-committee.component.html',
   styleUrls: ['./program-committee.component.css']
 })
-export class ProgramCommitteeComponent implements OnInit {
+export class ProgramCommitteeComponent24 implements OnInit {
 
   constructor() { }
 

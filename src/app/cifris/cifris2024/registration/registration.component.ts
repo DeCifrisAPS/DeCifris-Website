@@ -10,7 +10,7 @@ import { NgForm } from '@angular/forms';
 	templateUrl: './registration.component.html',
 	styleUrls: ['./registration.component.css']
 })
-export class RegistrationComponent implements OnInit {
+export class RegistrationComponent24 implements OnInit {
 	
 	public fee = 19000;
 

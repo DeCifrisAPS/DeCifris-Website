@@ -1,8 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SubmissionComponent } from './submission.component';
+import { SubmissionComponent24 } from './submission.component';
 
-describe('SubmissionComponent', () => {
+describe('SubmissionComponent24', () => {
   let component: SubmissionComponent;
   let fixture: ComponentFixture<SubmissionComponent>;
 

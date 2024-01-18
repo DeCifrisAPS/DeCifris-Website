@@ -106,20 +106,32 @@ import { AdvisoryBoardComponent } from './opportunita/advisory-board/advisory-bo
 import { AssociarsiComponent } from './opportunita/associarsi/associarsi.component';
 import { BenemeritiComponent } from './opportunita/associarsi/benemeriti/benemeriti.component';
 import { DiconoDiNoiComponent } from './associazione/dicono-di-noi/dicono-di-noi.component';
-import { Cifris2023Component } from './cifris/cifris2023/cifris2023.component';
-import { CallForPapersComponent } from './cifris/cifris2023/call-for-papers/call-for-papers.component';
-import { CallForWorkshopsComponent } from './cifris/cifris2023/call-for-workshops/call-for-workshops.component';
-import { ProgramCommitteeComponent } from './cifris/cifris2023/program-committee/program-committee.component';
-import { RegistrationComponent } from './cifris/cifris2023/registration/registration.component';
-import { SubmissionComponent } from './cifris/cifris2023/submission/submission.component';
 import { CookiePolicyComponent } from './cookie-policy/cookie-policy.component';
 import { Trends23Component } from './attivita/trends23/trends23.component';
 import { Trends22Component } from './attivita/trends22/trends22.component';
-import { HomeCifris23Component } from './cifris/cifris2023/home-cifris23/home-cifris23.component';
 import { EditoriaComponent } from './attivita/editoria/editoria.component';
 import { Trends22bisComponent } from './attivita/trends22/trends22bis/trends22bis.component';
 import { BlockchainSmartContractComponent } from './attivita/blockchain-smart-contract/blockchain-smart-contract.component';
+
+// ./cifris/cifris2023
+import { Cifris2023Component } from './cifris/cifris2023/cifris2023.component';
+import { HomeCifris23Component } from './cifris/cifris2023/home-cifris23/home-cifris23.component';
+import { CallForPapersComponent } from './cifris/cifris2023/call-for-papers/call-for-papers.component';
+import { CallForWorkshopsComponent } from './cifris/cifris2023/call-for-workshops/call-for-workshops.component';
+import { ProgramCommitteeComponent } from './cifris/cifris2023/program-committee/program-committee.component';
 import { ProgramComponent } from './cifris/cifris2023/program/program.component';
+import { SubmissionComponent } from './cifris/cifris2023/submission/submission.component';
+import { RegistrationComponent } from './cifris/cifris2023/registration/registration.component';
+
+// ./cifris/cifris2024
+import { Cifris2024Component } from './cifris/cifris2024/cifris2024.component';
+import { HomeCifris24Component } from './cifris/cifris2024/home-cifris24/home-cifris24.component';
+import { CallForPapersComponent24 } from './cifris/cifris2024/call-for-papers/call-for-papers.component';
+import { CallForWorkshopsComponent24 } from './cifris/cifris2024/call-for-workshops/call-for-workshops.component';
+import { ProgramCommitteeComponent24 } from './cifris/cifris2024/program-committee/program-committee.component';
+import { ProgramComponent24 } from './cifris/cifris2024/program/program.component';
+import { SubmissionComponent24 } from './cifris/cifris2024/submission/submission.component';
+import { RegistrationComponent24 } from './cifris/cifris2024/registration/registration.component';
 
 @NgModule({
 	declarations: [
@@ -221,7 +233,6 @@ import { ProgramComponent } from './cifris/cifris2023/program/program.component'
 		AssociarsiComponent,
 		BenemeritiComponent,
 		DiconoDiNoiComponent,
-		Cifris2023Component,
 		CallForPapersComponent,
 		CallForWorkshopsComponent,
 		ProgramCommitteeComponent,
@@ -230,11 +241,22 @@ import { ProgramComponent } from './cifris/cifris2023/program/program.component'
 		CookiePolicyComponent,
 		Trends23Component,
 		Trends22Component,
-		HomeCifris23Component,
 		EditoriaComponent,
 		Trends22bisComponent,
 		BlockchainSmartContractComponent,
-		ProgramComponent
+		ProgramComponent,
+		//Cifris23
+		Cifris2023Component,
+		HomeCifris23Component,
+		//Cifris24
+		Cifris2024Component,
+		HomeCifris24Component,
+		CallForPapersComponent24,
+		CallForWorkshopsComponent24,
+		ProgramCommitteeComponent24,
+		ProgramComponent24,
+		SubmissionComponent24,
+		RegistrationComponent24,
 	],
 	imports: [
 		BrowserModule,

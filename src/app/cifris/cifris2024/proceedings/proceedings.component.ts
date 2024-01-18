@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 	templateUrl: './proceedings.component.html',
 	styleUrls: ['./proceedings.component.css']
 })
-export class ProceedingsComponent implements OnInit {
+export class ProceedingsComponent24 implements OnInit {
 	
 	constructor() {}
 

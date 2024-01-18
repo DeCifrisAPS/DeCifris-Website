@@ -1,8 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CallForPapersComponent } from './call-for-papers.component';
+import { CallForPapersComponent24 } from './call-for-papers.component';
 
-describe('CallForPapersComponent', () => {
+describe('CallForPapersComponent24', () => {
   let component: CallForPapersComponent;
   let fixture: ComponentFixture<CallForPapersComponent>;
 
