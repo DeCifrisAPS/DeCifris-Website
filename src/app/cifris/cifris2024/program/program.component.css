@@ -1,0 +1,112 @@
+ng-sidebar-container{
+	position: fixed;
+	right: 0;
+	top: 55px;
+	height: 100%;
+}
+
+button{
+	background:none;
+	border:none;
+	outline:none;
+	color:rgb(48, 117, 128);
+}
+
+::ng-deep .ng-sidebar{
+	background-color: aliceblue;
+	width: 300px !important;
+	padding: 2em 1em;
+}​
+
+@media screen and (max-width: 799px) {
+	#right-sidebar {
+		 display: none !important;
+	}
+}
+
+h4, h3{
+	color: rgb(23, 162, 184);
+}
+
+h5{
+	color: rgb(101, 170, 101);
+}
+.bottomExtra{
+	margin-bottom: 3em;
+	padding-bottom: 3em;
+}
+
+.noIndent {
+	list-style: none;
+	padding-left: 0;
+}
+
+.noIndent ul li {
+	margin: 10px 0;
+}
+
+b {
+	/* Su richiesta dall'alto modifico il tag <b> in quanto nella 
+	sua versione standard risulta all'occhio un po' "slavato" */
+	font-weight: 500;
+}
+
+/**
+ * CSS for abstracts truncating text with ellipsis.
+ */
+/*
+.abstract {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+.abstract.expanded {
+	-webkit-line-clamp: unset;
+}
+
+.read-more {
+	display: block;
+	background-color: rgb(23, 162, 184);
+	color: white;
+	padding: 0.2rem 0.5rem;
+	margin: 0rem 0rem 0.5rem 3rem;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+}
+.read-more:hover {
+	background-color: #0051a3;
+}
+*/
+
+/* Popup container */
+.popup {
+	position: relative;
+	cursor: pointer;
+	color: #0066CC;
+	width: 100%;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+	visibility: hidden;
+	position: absolute;
+	top: 50%;
+	left: 100%;
+    transform: translateY(-50%);
+	
+	width: 700%;
+	padding: 10px;
+	margin: 5px;
+	
+	background-color: #555;
+	border-radius: 6px;
+	color: #fff;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s
+}
