@@ -76,7 +76,6 @@ import { HomeCifris23Component } from './cifris/cifris2023/home-cifris23/home-ci
 import { ProgramComponent } from './cifris/cifris2023/program/program.component';
 import { PaymentResultComponent } from './cifris/cifris2023/payment-result/payment-result.component';
 
-
 // ./cifris24
 import { Cifris2024Component } from './cifris/cifris2024/cifris2024.component';
 import { CallForPapersComponent24 } from './cifris/cifris2024/call-for-papers/call-for-papers.component';
@@ -112,14 +111,14 @@ const routes: Routes = [
 	]},
 	{path: 'cifris24', redirectTo: '/cifris24/homeCifris24', pathMatch: 'full' },
 	{path: "cifris24", component: Cifris2024Component, children:[
-		{path: "call-for-papers", component: CallForPapersComponent},
-		{path: "call-for-workshops", component: CallForWorkshopsComponent},
-		{path: "program-committee", component: ProgramCommitteeComponent},
-		{path: "registration", component: RegistrationComponent},
+		{path: "call-for-papers", component: CallForPapersComponent24},
+		{path: "call-for-workshops", component: CallForWorkshopsComponent24},
+		{path: "program-committee", component: ProgramCommitteeComponent24},
+		{path: "registration", component: RegistrationComponent24},
 		{path: "homeCifris24", component: HomeCifris24Component},
-		{path: "program", component: ProgramComponent},
-		{path: "proceedings", component: ProceedingsComponent},
-		{path: "payment-result", component: PaymentResultComponent},
+		{path: "program", component: ProgramComponent24},
+		{path: "proceedings", component: ProceedingsComponent24},
+		{path: "payment-result", component: PaymentResultComponent24},
 	]},
 	{path: "dicono-di-noi", component: DiconoDiNoiComponent},
 	{path: "associazione", component: AssociazioneComponent},
