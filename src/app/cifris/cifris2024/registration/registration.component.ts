@@ -21,7 +21,7 @@ export class RegistrationComponent24 implements OnInit {
 	// TEST PHASE
 	readonly ALIAS = 'ALIAS_WEB_00074470';
 	readonly CHIAVESEGRETA = 'SQV946OD2KUQ4M71SHXBCB85SW3FVVQF';
-	readonly HTTP_HOST = 'localhost:4200/cifris23/';
+	readonly HTTP_HOST = 'localhost:4200/cifris24/';
 	readonly requestUrl = 'https://int-ecommerce.nexi.it/' +
 						  'ecomm/ecomm/DispatcherServlet';
 	*/
@@ -29,7 +29,7 @@ export class RegistrationComponent24 implements OnInit {
 	// PRODUCTION PHASE
 	readonly ALIAS = 'payment_3482210';	
 	readonly CHIAVESEGRETA = 'D68kw33a4HE9Q7352HY30v3M9kV3O50e6A2542W9';
-	readonly HTTP_HOST = 'www.decifris.it/cifris23/';
+	readonly HTTP_HOST = 'www.decifris.it/cifris24/';
 	readonly requestUrl = 'https://ecommerce.nexi.it/' +
 						  'ecomm/ecomm/DispatcherServlet';
 
@@ -71,7 +71,7 @@ export class RegistrationComponent24 implements OnInit {
 		var merchantServerUrl = 'https://' + this.HTTP_HOST;
 
 		var date = new Date();
-		var codTrans = 'CIFRIS23_'
+		var codTrans = 'CIFRIS24_'
 						+ formatDate(date, 'yyyyMMddHHmmss', 'en-US');
 
 		var importo = this.fee;
@@ -97,11 +97,11 @@ export class RegistrationComponent24 implements OnInit {
 		macIn.value = macCalculated;
 
 		if(this.fee == 4000) {
-			descrizione.value = 'Enrollment for CIFRIS23 -' +
+			descrizione.value = 'Enrollment for CIFRIS24 -' +
 								'Companion fee.';
 		} else {
-			descrizione.value = 'Enrollment for CIFRIS23 -' +
-								'Rome, 14 and 15 December 2023.';
+			descrizione.value = 'Enrollment for CIFRIS24 -' +
+								'Rome, 25-26-27 September 2024.';
 		}
 
 		// Form submission
