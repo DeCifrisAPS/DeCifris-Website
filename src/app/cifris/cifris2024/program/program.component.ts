@@ -2,7 +2,7 @@ import { formatDate } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-	selector: 'app-program',
+	selector: 'app-program24',
 	templateUrl: './program.component.html',
 	styleUrls: ['./program.component.css']
 })

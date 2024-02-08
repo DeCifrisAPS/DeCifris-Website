@@ -6,7 +6,7 @@ import { NgForm } from '@angular/forms';
 
 
 @Component({
-	selector: 'app-registration',
+	selector: 'app-registration24',
 	templateUrl: './registration.component.html',
 	styleUrls: ['./registration.component.css']
 })

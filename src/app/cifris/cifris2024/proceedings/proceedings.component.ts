@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
 
 
 @Component({
-	selector: 'app-proceedings',
+	selector: 'app-proceedings24',
 	templateUrl: './proceedings.component.html',
 	styleUrls: ['./proceedings.component.css']
 })
