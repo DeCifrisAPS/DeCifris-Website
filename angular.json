@@ -142,5 +142,8 @@
       }
     }
   },
-  "defaultProject": "DeCifris"
+  "defaultProject": "DeCifris",
+  "cli": {
+    "analytics": false
+  }
 }
