@@ -107,11 +107,14 @@ import { AssociarsiComponent } from './opportunita/associarsi/associarsi.compone
 import { BenemeritiComponent } from './opportunita/associarsi/benemeriti/benemeriti.component';
 import { DiconoDiNoiComponent } from './associazione/dicono-di-noi/dicono-di-noi.component';
 import { CookiePolicyComponent } from './cookie-policy/cookie-policy.component';
+import { EditoriaComponent } from './attivita/editoria/editoria.component';
+import { BlockchainSmartContractComponent } from './attivita/blockchain-smart-contract/blockchain-smart-contract.component';
+
+// ./attivita/trends
+import { Trends24Component } from './attivita/trends24/trends24.component';
 import { Trends23Component } from './attivita/trends23/trends23.component';
 import { Trends22Component } from './attivita/trends22/trends22.component';
-import { EditoriaComponent } from './attivita/editoria/editoria.component';
 import { Trends22bisComponent } from './attivita/trends22/trends22bis/trends22bis.component';
-import { BlockchainSmartContractComponent } from './attivita/blockchain-smart-contract/blockchain-smart-contract.component';
 
 // ./cifris/cifris2023
 import { Cifris2023Component } from './cifris/cifris2023/cifris2023.component';
@@ -234,11 +237,13 @@ import { RegistrationComponent24 } from './cifris/cifris2024/registration/regist
 		BenemeritiComponent,
 		DiconoDiNoiComponent,
 		CookiePolicyComponent,
+		EditoriaComponent,
+		BlockchainSmartContractComponent,
+		//Trends
+  		Trends24Component,
 		Trends23Component,
 		Trends22Component,
-		EditoriaComponent,
 		Trends22bisComponent,
-		BlockchainSmartContractComponent,
 		//Cifris23
 		Cifris2023Component,
 		HomeCifris23Component,

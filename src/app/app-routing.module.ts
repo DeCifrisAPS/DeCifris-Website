@@ -59,11 +59,15 @@ import { AssociarsiComponent } from './opportunita/associarsi/associarsi.compone
 import { BenemeritiComponent } from './opportunita/associarsi/benemeriti/benemeriti.component';
 import { DiconoDiNoiComponent} from './associazione/dicono-di-noi/dicono-di-noi.component';
 import { CookiePolicyComponent } from './cookie-policy/cookie-policy.component';
+import { EditoriaComponent } from './attivita/editoria/editoria.component';
+import { BlockchainSmartContractComponent } from './attivita/blockchain-smart-contract/blockchain-smart-contract.component';
+
+// ./attivita/trends
+import { Trends24Component } from './attivita/trends24/trends24.component';
 import { Trends23Component } from './attivita/trends23/trends23.component';
 import { Trends22Component } from './attivita/trends22/trends22.component';
 import { Trends22bisComponent } from './attivita/trends22/trends22bis/trends22bis.component';
-import { EditoriaComponent } from './attivita/editoria/editoria.component';
-import { BlockchainSmartContractComponent } from './attivita/blockchain-smart-contract/blockchain-smart-contract.component';
+
 
 // ./cifris23
 import { Cifris2023Component } from './cifris/cifris2023/cifris2023.component';
@@ -131,6 +135,7 @@ const routes: Routes = [
 	{path: "associarsi-benemeriti", component:BenemeritiComponent},
 	{path: "associarsi", component: AssociarsiComponent},
 	{path: 'trends', component: DecifrisTrendComponent},
+	{path: 'trends24', component: Trends24Component},
 	{path: 'trends23', component: Trends23Component},
 	{path: 'trends22bis', component:Trends22bisComponent},
 	{path: 'trends22', component: Trends22Component},
