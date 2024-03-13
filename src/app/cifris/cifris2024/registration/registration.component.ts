@@ -67,9 +67,25 @@ export class RegistrationComponent24 implements OnInit {
 	}
 
 	/**
-	 * Sets this.fee as the value of the selected input button.
+	 * Form behaviour for companion: whenerver the companion fee is checked,
+	 * dinner must be checked and disabled.
 	 */
-	public setFee() {
+	public companionFee() {
+		
+		const dinner = <HTMLInputElement> document.getElementById('dinner');
+
+		// Checking and disabling dinner checkbox
+		dinner.checked = true;
+		dinner.disabled = true;
+
+		this.fee = 5000;
+	}
+
+	/**
+	 * Form behaviour for non-companion participants: checks which option is
+	 * checked and associates the correct fee, eventually adding the dinner.
+	 */
+	public participantFee() {
 
 		var r, c;
 
@@ -91,9 +107,25 @@ export class RegistrationComponent24 implements OnInit {
 
 		this.fee = this.prices[r][c];
 
-		var dinner = <HTMLInputElement> document.getElementById('dinner');
+		// Enabling dinner checkbox and eventually adding it
+		const dinner = <HTMLInputElement> document.getElementById('dinner');
+		dinner.disabled = false;
 		if (dinner.checked) {
 			this.fee += 5000;
+		}
+	}
+
+	/**
+	 * Sets this.fee as the value of the selected input button.
+	 */
+	public setFee() {
+
+		const companion = <HTMLInputElement> document.getElementById('companion');
+
+		if (companion.checked) {
+			this.companionFee();
+		} else {
+			this.participantFee();
 		}
 	}
 
