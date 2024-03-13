@@ -1,6 +1,6 @@
 <div class="row mt-3 mr-1 ml-1">
 	<div class="col-md-12" align="center">
-		<h3>REGISTRATION</h3>
+		<h3> REGISTRATION </h3>
 	</div>
 </div>
 <div class="row mt-3 mr-1 ml-1">
@@ -120,7 +120,7 @@
 			In the email please specify whether you pay yourself or your company/institution pays for you (in that case, please send us its fiscal data). <br>
 		</p>
 		<p style="color: red;">
-			<b>Registration Deadline September 2024.</b>
+			<b>Registration Deadline September 2nd 2024.</b>
 		</p>
 	</div>
 </div>
@@ -129,7 +129,7 @@
 
 <div class="row mt-3 mr-1 ml-1">
 	<div class="col-md-12">
-		<h4>PAYMENT</h4>
+		<h4> PAYMENT </h4>
 	</div>
 	<form 
 		id="payForm"
@@ -137,24 +137,50 @@
 		method="post"
 		(ngSubmit)="checkAndPay()"
 	>
-		<label> Fee </label>
+		<label> CIFRIS24 participation </label>
+		<div>			
+			<input 
+				type="radio"
+				id="all"
+				name="participation"
+				checked="checked"
+				(click)=setFee()
+			>
+			<label for="all"> Main event <b>and</b> workshops (25, 26 and 27 September) </label><br>
+
+			<input 
+				type="radio"
+				id="main_event"
+				name="participation"
+				(click)=setFee()
+			>
+			<label for="main_event"> Main event (25 and 26 September) </label><br>
+
+			<input 
+				type="radio"
+				id="workshops"
+				name="participation"
+				(click)=setFee()
+			>
+			<label for="workshops"> Workshops (27 September) </label>
+		</div>
+
+		<label> Fee type </label>
 		<div>
 			<input 
 				type="radio"
 				id="regular"
 				name="fee"
-				value="19000"
-				(click)=setFee($event)
 				checked="checked"
+				(click)=setFee()
 			>
 			<label for="regular"> Regular </label><br>
-			
+
 			<input 
 				type="radio"
 				id="scientific_memebers"
-				name="fee" 
-				value="17000"
-				(click)=setFee($event)
+				name="fee"
+				(click)=setFee()
 			>
 			<label for="scientific_memebers">
 				Members of Unione Matematica Italiana, IEEE Computer Society, IEEE Information Theory Society
@@ -164,8 +190,7 @@
 				type="radio"
 				id="young"
 				name="fee"
-				value="12000"
-				(click)=setFee($event)
+				(click)=setFee()
 			>
 			<label for="young"> Young </label><br>
 
@@ -173,32 +198,35 @@
 				type="radio"
 				id="member"
 				name="fee"
-				value="12000"
-				(click)=setFee($event)
+				(click)=setFee()
 			>
 			<label for="member">
-				Member of De Cifris (“ordinario”, ”benemerito” or “fondatore”)
-			</label><br>
-			
-			<input 
-				type="radio"
-				id="member_young"
-				name="fee"
-				value="7000"
-				(click)=setFee($event)
-			>
-			<label for="member_young">
-				Member of De Cifris (“socio giovane”)
-			</label><br>
+				Member of De Cifris (“ordinario”, ”benemerito”, “fondatore”, "giovane")
+			</label> <br>
 
 			<input 
 				type="radio"
 				id="companion"
 				name="fee"
-				value="4000"
-				(click)=setFee($event)
+				(click)=setFee()
 			>
-			<label for="companion"> Companion </label>
+			<label for="companion">
+				Companion
+			</label>
+		</div>
+
+		<label> Others </label>
+		<div>
+			<input 
+				type="checkbox"
+				id="dinner" 
+				name="dinner"
+				(click)=checkDinner($event)
+				checked="checked"
+			>
+			<label for="dinner">
+				Dinner
+			</label>
 		</div>
 
 		<!-- Hidden input -->
@@ -228,9 +256,7 @@
 		</p>
 
 		<!-- Submit input -->
-		<!--
 		<input type="submit" value="Pay Now">
-		-->
 
 		<p class="footnote">
 			De Componendis Cifris kindly requests your consent for the processing of your personal data provided in the payment form. Your data will be sent by Nexi to us after your payment. The Association declares that this information is essential for event planning, communication purposes, and addressing any special requests. Your personal data will be securely deleted upon the conclusion of the event, unless you have a longer collaboration with De Componendis Cifris, such as being one of our members.

@@ -63,6 +63,11 @@ input[type=radio], select {
 	display: inline-block;
 }
 
+input[type=checkbox], select {
+	margin: 8px 8px 8px 0px;
+	display: inline-block;
+}
+
 input[type=submit] {
 	width: 100%;
 	background-color: rgb(23, 162, 184);

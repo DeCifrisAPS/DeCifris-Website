@@ -12,26 +12,32 @@ import { NgForm } from '@angular/forms';
 })
 export class RegistrationComponent24 implements OnInit {
 	
-	public fee = 19000;
+	public fee = 39000;
+
+	readonly prices = [
+						[34000, 30000, 22000, 16000, 0],
+						[26000, 24000, 18000, 13000, 0],
+						[14000, 12000, 9500, 6000, 0]
+					]
 
 	//---------------------------------------------------------------------------
 	//---------------------------- Payment variables ----------------------------
 
+	/*
 	// TEST PHASE
 	readonly ALIAS = 'ALIAS_WEB_00074470';
 	readonly CHIAVESEGRETA = 'SQV946OD2KUQ4M71SHXBCB85SW3FVVQF';
 	readonly HTTP_HOST = 'localhost:4200/cifris24/';
 	readonly requestUrl = 'https://int-ecommerce.nexi.it/' +
 						  'ecomm/ecomm/DispatcherServlet';
+	*/
 
-	/*
 	// PRODUCTION PHASE
 	readonly ALIAS = 'payment_3482210';	
 	readonly CHIAVESEGRETA = 'D68kw33a4HE9Q7352HY30v3M9kV3O50e6A2542W9';
 	readonly HTTP_HOST = 'www.decifris.it/cifris24/';
 	readonly requestUrl = 'https://ecommerce.nexi.it/' +
 						  'ecomm/ecomm/DispatcherServlet';
-	*/
 
 	readonly DIVISA = 'EUR';
 
@@ -42,13 +48,53 @@ export class RegistrationComponent24 implements OnInit {
 	ngOnInit(): void {}
 
 	/**
-	 * Sets this.fee as the value of the selected radio button.
+	 * Check the status of input 'dinner' eventually adding/subtracting the
+	 * correct price.
 	 */
-	public setFee(event) {
+	public checkDinner(event) {
 
-		const radioButton = event.currentTarget;
+		const checkButton = event.currentTarget;
+		
+		var value;
 
-		this.fee = radioButton.value;
+		if (checkButton.checked) {
+			value = 5000;
+		} else {
+			value = -5000;
+		}
+
+		this.fee += value;
+	}
+
+	/**
+	 * Sets this.fee as the value of the selected input button.
+	 */
+	public setFee() {
+
+		var r, c;
+
+		// Checking checked participation radio button
+		var radio = document.getElementsByName('participation');
+		for (var i = 0; i < radio.length; i++) {
+			if ((<HTMLInputElement> radio[i]).checked) {
+				r = i;
+			}
+		}
+
+		// Checking checked fee radio button
+		radio = document.getElementsByName('fee');
+		for (i = 0; i < radio.length; i++) {
+			if ((<HTMLInputElement> radio[i]).checked) {
+				c = i;
+			}
+		}
+
+		this.fee = this.prices[r][c];
+
+		var dinner = <HTMLInputElement> document.getElementById('dinner');
+		if (dinner.checked) {
+			this.fee += 5000;
+		}
 	}
 
 	/**
@@ -67,8 +113,8 @@ export class RegistrationComponent24 implements OnInit {
 	public startPayment() {
 	
 		// Data preprocessing
-		var merchantServerUrl =	'http://' + this.HTTP_HOST;
-		//var merchantServerUrl = 'https://' + this.HTTP_HOST;
+		//var merchantServerUrl =	'http://' + this.HTTP_HOST;
+		var merchantServerUrl = 'https://' + this.HTTP_HOST;
 
 		var date = new Date();
 		var codTrans = 'CIFRIS24_'
@@ -96,12 +142,11 @@ export class RegistrationComponent24 implements OnInit {
 		urlBackIn.value = merchantServerUrl + 'registration';
 		macIn.value = macCalculated;
 
-		if(this.fee == 4000) {
-			descrizione.value = 'Enrollment for CIFRIS24 -' +
-								'Companion fee.';
+		descrizione.value = 'Enrollment for CIFRIS24 - ';
+		if (this.fee <= 5000) {
+			descrizione.value += 'Companion fee.';
 		} else {
-			descrizione.value = 'Enrollment for CIFRIS24 -' +
-								'Rome, 25-26-27 September 2024.';
+			descrizione.value += 'Rome, 25-26-27 September 2024.';
 		}
 
 		// Form submission
@@ -115,11 +160,21 @@ export class RegistrationComponent24 implements OnInit {
 	 */
 	public setDisabled() {
 		
-		// Disabling radio buttons 
+		// Disabling fee radio buttons 
 		var radio = document.getElementsByName('fee');
 		for (var i = 0; i < radio.length; i++) {
 			(<HTMLInputElement> radio[i]).disabled = true;
 		}
+
+		// Disabling participation radio buttons 
+		radio = document.getElementsByName('participation');
+		for (var i = 0; i < radio.length; i++) {
+			(<HTMLInputElement> radio[i]).disabled = true;
+		}
+
+		// Disabling dinner checkbox button
+		var checkbox = document.getElementById('dinner');
+		(<HTMLInputElement> checkbox).disabled = true;
 	}
 
 	/**
