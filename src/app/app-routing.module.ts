@@ -94,11 +94,13 @@ import { PaymentResultComponent24 } from './cifris/cifris2024/payment-result/pay
 // ./hosting
 import { Opera24Component } from './hosting/opera24/opera24.component';
 import { Combinatorics24Component } from './hosting/combinatorics24/combinatorics24.component';
+import { WCC24Component } from './hosting/wcc24/wcc24.component';
 
 
 const routes: Routes = [
 	{path: "opera24", component: Opera24Component},
 	{path: "combinatorics24", component: Combinatorics24Component},
+	{path: "wcc24", component: WCC24Component},
 	{path: "blockchain-smart-contract", component: BlockchainSmartContractComponent},
 	{path: "editoria", component: EditoriaComponent},
 	{path: "cookie-policy", component: CookiePolicyComponent},

@@ -136,6 +136,11 @@ import { ProgramComponent24 } from './cifris/cifris2024/program/program.componen
 import { SubmissionComponent24 } from './cifris/cifris2024/submission/submission.component';
 import { RegistrationComponent24 } from './cifris/cifris2024/registration/registration.component';
 
+// ./hosting
+import { Opera24Component } from './hosting/opera24/opera24.component';
+import { Combinatorics24Component } from './hosting/combinatorics24/combinatorics24.component';
+import { WCC24Component } from './hosting/wcc24/wcc24.component';
+
 @NgModule({
 	declarations: [
 		AppComponent,
@@ -262,6 +267,10 @@ import { RegistrationComponent24 } from './cifris/cifris2024/registration/regist
 		ProgramComponent24,
 		SubmissionComponent24,
 		RegistrationComponent24,
+		//Hosting
+		Opera24Component,
+		Combinatorics24Component,
+		WCC24Component,
 	],
 	imports: [
 		BrowserModule,
