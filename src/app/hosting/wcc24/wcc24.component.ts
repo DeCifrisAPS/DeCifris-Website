@@ -96,12 +96,12 @@ export class WCC24Component implements OnInit {
 		urlBackIn.value = merchantServerUrl + 'wcc24';
 		macIn.value = macCalculated;
 
-		if(this.fee == 17000) {
+		if(this.fee == 15000) {
 			descrizione.value = 'Enrollment for WCC 2024 -' +
 								'Companion fee.';
 		} else {
 			descrizione.value = 'Enrollment for WCC 2024 -' +
-								'Perugia (Italy), 17th to 21st June 2024.';
+								'Perugia, 17th to 21st June 2024.';
 		}
 
 		// Form submission
