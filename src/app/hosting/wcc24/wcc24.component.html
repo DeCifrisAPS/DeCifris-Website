@@ -1,110 +1,75 @@
 <div class="row mt-3 mr-1 ml-1">
 	<div class="col-md-12" align="center">
-		<h3> Combinatorics 2024 REGISTRATION </h3>
+		<h3> WCC 2024 REGISTRATION </h3>
 	</div>
 </div>
 <div class="row mt-3 mr-1 ml-1">
 	<div class="col-md-12">
 		<p>
-			The fee of combinatorics2024 is:
+			The fee of WCC 2024 is:
 		</p>
 		<ol>
 			<li>
-				300.00 euros, full early registration;
+				350.00 euros, full early registration;
 			</li>
 
 			<li>
-				275.00 euros, full early registration fee for De Cifris members;
+				325.00 euros, full early registration fee for De Cifris members;
 			</li>
 
 			<li>
-				250.00 euros, student early registration fee; <br>
+				300.00 euros, student early registration fee; <br>
 				(Fee reserved to PhD students and postdoc researchers who obtained their PhD after June 2022)
 			</li>
 
 			<li>
-				240.00 euros, student early registration fee  for De Cifris members;
+				290.00 euros, student early registration fee  for De Cifris members;
 			</li>
 
 			<li>
-				350 euros, full late registration fee;
+				400 euros, full late registration fee;
 			</li>
 
 			<li>
-				325.00 euros, full late registration fee for De Cifris members;
+				375.00 euros, full late registration fee for De Cifris members;
 			</li>
 
 			<li>
-				300.00 euros, student late registration fee;
+				350.00 euros, student late registration fee;
 			</li>
 
 			<li>
-				290.00 euros, student late registration fee for De Cifris members;
+				340.00 euros, student late registration fee for De Cifris members;
 			</li>
 
 			<li>
-				170.00 euros, accompanying person.
+				150.00 euros, accompanying person.
 			</li>
 		</ol>
+		<p> 
+			The registration and the accompanying person fees include coffee-breaks and lunches for the 5 days of the conference.
+		</p>
 
 		<h4> Deadlines </h4>
 		<ul>
-			<li>Early registration payment <b>24/02/2024</b></li>
+			<li> Early registration payment <b>01/06/2024</b> </li>
 
-			<li>Late registration payment <b>07/05/2024</b></li>
+			<li> Late registration payment <b>14/06/2024</b> </li>
 		</ul>
-
 		<p>
-			<b>NB:</b> Students from the Polytechnic University of Bari can attend for free.
-		</p>
-		<!--
-		<p> The fee covers: </p>
-		<ul>
-			<li>
-				Facilities;
-			</li>
-
-			<li>
-				Coffee breaks;
-			</li>
-
-			<li>
-				Social dinner.
-			</li>
-		</ul>
-		-->
-		<!--
-		<p>
-			The costs for the accomodation are:
-		</p>
-		<ul>
-			<li>
-				Double room: 60.00 euros per person (breakfast included);
-			</li>
-
-			<li>
-				Double room/single person: 80.00 euros per person (breakfast included);
-			</li>
-
-			<li>
-				Price of a meal (lunch/dinner): 25.00 euros.
-			</li>
-		</ul>
-		-->
-		<p>
-			Unfortunately, there is a limited number of places, due to the hosting structure. Registrations will close when this number is reached or at latest on May 7th 2024. <br>
+			Unfortunately, there is a limited number of places, due to the hosting structure. Registrations will close when this number is reached or at latest on June 14th 2024. <br>
 			If you are Italian or another European Union citizen, we strongly encourage you to become a member of De Cifris, since its membership costs only 20 euros or 5 euros (depending on your age), and it gives you a significant discount on the fees. To become a member, just follow these instructions: <a href="https://www.decifris.it/associarsi">
 				https://www.decifris.it/associarsi
 			</a>.
 		</p>
 		<div style="color: red;">
 			<p>
-				To register for Combinatorics 2024, please:
+				To register for WCC 2024, please:
 			</p>
 			<ol>
 				<li>
-					Send an email to <a href="mailto:combinatorics2024@decifris.it">
-						combinatorics2024@decifris.it
+					Send an email to <a href="mailto:wcc2024@decifris.it">
+						wcc2024@decifris.it
 					</a> with your name and your affiliation as subject (for example, "Albert Turing, University of Trento"). <br>
 					In the email please specify whether you pay yourself or your company/institution pays for you (in that case, please send us its fiscal data).
 				</li>
@@ -117,7 +82,9 @@
 		</div>
 	</div>
 </div>
-<hr>
+
+<hr><!------------------------------------------------------------------------>
+
 <div class="row mt-3 mr-1 ml-1">
 	<div class="col-md-12">
 		<h4>PAYMENT</h4>
@@ -132,9 +99,54 @@
 		<div>
 			<input 
 				type="radio"
-				id="regular_late"
+				id="regular_early"
 				name="fee"
 				value="35000"
+				(click)=setFee($event)
+				checked="checked"
+			>
+			<label for="regular_early">
+				Full Early registration
+			</label><br>
+
+			<input 
+				type="radio"
+				id="regular_early_DC"
+				name="fee"
+				value="32500"
+				(click)=setFee($event)
+			>
+			<label for="regular_early_DC">
+				Full Early registration (for De Cifris members)
+			</label><br>
+
+			<input 
+				type="radio"
+				id="student_early"
+				name="fee"
+				value="30000"
+				(click)=setFee($event)
+			>
+			<label for="student_early">
+				Student Early registration
+			</label><br>
+
+			<input 
+				type="radio"
+				id="student_early_DC"
+				name="fee"
+				value="29000"
+				(click)=setFee($event)
+			>
+			<label for="student_early_DC">
+				Student Early registration (for De Cifris members)
+			</label><br>
+
+			<input 
+				type="radio"
+				id="regular_late"
+				name="fee"
+				value="40000"
 				(click)=setFee($event)
 				checked="checked"
 			>
@@ -146,7 +158,7 @@
 				type="radio"
 				id="regular_late_DC"
 				name="fee"
-				value="32500"
+				value="37500"
 				(click)=setFee($event)
 			>
 			<label for="regular_late_DC">
@@ -157,7 +169,7 @@
 				type="radio"
 				id="student_late"
 				name="fee"
-				value="30000"
+				value="35000"
 				(click)=setFee($event)
 			>
 			<label for="student_late">
@@ -168,7 +180,7 @@
 				type="radio"
 				id="student_late_DC"
 				name="fee"
-				value="29000"
+				value="34000"
 				(click)=setFee($event)
 			>
 			<label for="student_late_DC">
@@ -179,7 +191,7 @@
 				type="radio"
 				id="companion"
 				name="fee"
-				value="17000"
+				value="15000"
 				(click)=setFee($event)
 			>
 			<label for="companion">	Accompanying person	</label>
@@ -215,9 +227,9 @@
 		<input type="submit" value="Pay Now">
 		
 		<p class="footnote">
-			The Polytechnic University of Bari and De Componendis Cifris kindly request your consent for the processing of your personal data provided in the following payment form. This information is passed from De Componendis Cifris to the University ASAP and it is immediately deleted by De Componendis Cifris afterwards. The University declares that this information is essential for event planning, communication purposes, and addressing any special requests. Your personal data will be securely deleted upon the conclusion of the event. Learn more here about how the Polytechnic University of Bari adheres to GDPR regulations in handling personal data and about your rights. <br>
-			<a href="https://www.poliba.it/it/privacy/note-informative-sulla-privacy">
-				poliba.it/it/privacy/note-informative-sulla-privacy
+			The University of Perugia and De Componendis Cifris kindly request your consent for the processing of your personal data provided in the following payment form. This information is passed from De Componendis Cifris to the University ASAP and it is immediately deleted by De Componendis Cifris afterwards. The University declares that this information is essential for event planning, communication purposes, and addressing any special requests. Your personal data will be securely deleted upon the conclusion of the event. Learn more here about how the University of Perugia adheres to GDPR regulations in handling personal data and about your rights. <br>
+			<a href="https://www.unipg.it/ateneo/protezione-dati-personali">
+				unipg.it/ateneo/protezione-dati-personali
 			</a>
 		</p>
 		<p class="footnote">

@@ -12,7 +12,7 @@ import { NgForm } from '@angular/forms';
 })
 export class WCC24Component implements OnInit {
 	
-	public fee = 35000;
+	public fee = 40000;
 
 	//---------------------------------------------------------------------------
 	//---------------------------- Payment variables ----------------------------
@@ -92,17 +92,16 @@ export class WCC24Component implements OnInit {
 
 		importoIn.value = importo.toString();
 		codTransIn.value = codTrans;
-		urlIn.value = 'https://sites.google.com/view/' +
-					  'combinatorics2024/payment-result';
-		urlBackIn.value = merchantServerUrl + 'combinatorics2024';
+		urlIn.value = 'https://wcc2024.sites.dmi.unipg.it/payment-result.html';
+		urlBackIn.value = merchantServerUrl + 'wcc24';
 		macIn.value = macCalculated;
 
 		if(this.fee == 17000) {
-			descrizione.value = 'Enrollment for combinatorics2024 -' +
+			descrizione.value = 'Enrollment for WCC 2024 -' +
 								'Companion fee.';
 		} else {
-			descrizione.value = 'Enrollment for combinatorics2024 -' +
-								'Carovigno (Brindisi), 3rd to 7th of June 2024.';
+			descrizione.value = 'Enrollment for WCC 2024 -' +
+								'Perugia (Italy), 17th to 21st June 2024.';
 		}
 
 		// Form submission
