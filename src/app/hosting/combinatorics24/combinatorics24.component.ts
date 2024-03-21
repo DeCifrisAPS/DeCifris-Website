@@ -94,7 +94,7 @@ export class Combinatorics24Component implements OnInit {
 		codTransIn.value = codTrans;
 		urlIn.value = 'https://sites.google.com/view/' +
 					  'combinatorics2024/payment-result';
-		urlBackIn.value = merchantServerUrl + 'combinatorics2024';
+		urlBackIn.value = merchantServerUrl + 'combinatorics24';
 		macIn.value = macCalculated;
 
 		if(this.fee == 17000) {
