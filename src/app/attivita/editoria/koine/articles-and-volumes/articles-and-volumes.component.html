@@ -9,8 +9,47 @@
 </div>
 <div class="row mt-3 mr-1 ml-1">
 	<div class="col-md-12">
-		<p>
-			Lorem ipsum...
-		</p>
+		<hr><!---------------------------------------------------------------->
+		<!--
+		<div
+			class="abstract"
+			targetId="volume1"
+		>
+			<h4> Volume 1 </h4>
+			<p>
+				In this talk, we give a tutorial about MPC-in-the-head for signature schemes and illustrate it by designing identification protocols and signature schemes from group actions. We discuss the security of the proposed identification schemes and rely on the Fiat-Shamir transformation to turn them into signatures. We also stress that an essential ingredient for the efficiency of such signature schemes is the use of Puncturable-PRFs.
+			</p>
+		</div>
+		<button 
+			class="read-more"
+			targetId="volume1"
+			(click)="readMoreHandler($event)"
+		>
+			Read more
+		</button>
+		-->
+		<div class="collapsible">
+			<button 
+				class="collapsible-btn"
+				(click)="openCollapsible($event)"
+			>
+				<b> Volume 1 </b>
+				<span class="arrow">&#9660;</span>
+			</button>
+			<div
+				class="collapsible-content"
+			>
+				<ul style="list-style-type: none">
+					<li> 
+						Article X
+					</li>
+					
+					<li> 
+						Article Y
+					</li>
+				</ul>
+			</div>
+		</div>
+		<hr><!---------------------------------------------------------------->
 	</div>
 </div>
