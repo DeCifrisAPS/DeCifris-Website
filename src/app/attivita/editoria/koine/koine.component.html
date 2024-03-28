@@ -6,39 +6,35 @@
 				<button autofocus="autofocus"></button>
 			</li>
 			<li>
-				<button class="btn btn-outline-info" (click)="goTo('home')" routerLink="/decifriskoine">
+				<button 
+					class="btn btn-outline-info"
+					(click)="goTo('home')"
+					routerLink="/decifriskoine"
+				>
 					Home
 				</button>
 			</li>
 			<li>
-				<button class="btn btn-outline-info" (click)="goTo('sezioneScelta')" routerLink="articles-and-volumes">
+				<button
+					class="btn btn-outline-info"
+					(click)="goTo('sezioneScelta')"
+					routerLink="articles-and-volumes"
+				>
 					Articles & Volumes
 				</button>
 			</li>
-			<!--
 			<li>
-				<button class="btn btn-outline-info" (click)="goTo('sezioneScelta')" routerLink="call-for-papers">
-					Call for papers
+				<button 
+					class="btn btn-outline-info"
+					(click)="goTo('sezioneScelta')"
+					routerLink="editorial-board"
+				>
+					Editorial Board
 				</button>
 			</li>
-			<li>
-				<button class="btn btn-outline-info" (click)="goTo('sezioneScelta')" routerLink="call-for-workshops">
-                    Call for workshops
-                </button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" (click)="goTo('sezioneScelta')" routerLink="registration">
-					Registration
-				</button>
-			</li>
-            <li>
-				<button class="btn btn-outline-info" (click)="goTo('sezioneScelta')" routerLink="proceedings">
-					Proceedings
-				</button>
-			</li>
-		-->
 		</ul>
 	</ng-sidebar>
+
 	<div ng-sidebar-content class="container bottomExtra">
 		<br id="home">
 		<div class="row mt-3 mr-1 ml-1">
@@ -70,22 +66,15 @@
 						class="btn btn-outline-info"
 						(click)="goTo('sezioneScelta')"
 						routerLink="./articles-and-volumes">
-						<i class="material-symbols-outlined">list</i> <br> Articles & Volumes 
+						<i class="material-symbols-outlined">book_2</i> <br> Articles & Volumes 
 					</button>
-					<!--
-					<button class="btn btn-outline-info" (click)="goTo('sezioneScelta')" routerLink="./call-for-papers">
-						<i class="material-symbols-outlined">history_edu</i> <br> Call for papers 
+					<button 
+						class="btn btn-outline-info"
+						(click)="goTo('sezioneScelta')"
+						routerLink="./editorial-board"
+					>
+						<i class="material-symbols-outlined">groups</i> <br> Editorial Board 
 					</button>
-					<button class="btn btn-outline-info" (click)="goTo('sezioneScelta')" routerLink="./call-for-workshops">
-						<i class="material-symbols-outlined">interactive_space</i> <br> Call for workshops 
-					</button>
-					<button class="btn btn-outline-info" (click)="goTo('sezioneScelta')" routerLink="./registration">
-						<span class="material-symbols-outlined">how_to_reg</span> <br> Registration 
-					</button>
-					<button class="btn btn-outline-info" (click)="goTo('sezioneScelta')" routerLink="./proceedings">
-						<span class="material-symbols-outlined">bookmarks</span> <br> Proceedings 
-					</button>
-				-->
 				</div>
             </div>
         </div>

@@ -120,6 +120,7 @@ import { Trends22bisComponent } from './attivita/trends22/trends22bis/trends22bi
 import { KoineComponent } from './attivita/editoria/koine/koine.component';
 import { HomeKoineComponent } from './attivita/editoria/koine/home-koine/home-koine.component';
 import { ArticlesAndVolumesComponent } from './attivita/editoria/koine/articles-and-volumes/articles-and-volumes.component';
+import { EditorialBoardComponent } from './attivita/editoria/koine/editorial-board/editorial-board.component';
 
 // ./cifris/cifris2023
 import { Cifris2023Component } from './cifris/cifris2023/cifris2023.component';
