@@ -71,6 +71,7 @@ import { Trends22bisComponent } from './attivita/trends22/trends22bis/trends22bi
 // ./attivita/editoria/koine
 import { KoineComponent } from './attivita/editoria/koine/koine.component';
 import { HomeKoineComponent } from './attivita/editoria/koine/home-koine/home-koine.component';
+import { ArticlesAndVolumesComponent } from './attivita/editoria/koine/articles-and-volumes/articles-and-volumes.component';
 
 // ./cifris23
 import { Cifris2023Component } from './cifris/cifris2023/cifris2023.component';
@@ -104,6 +105,7 @@ const routes: Routes = [
 	{path: 'decifriskoine', redirectTo: '/decifriskoine/homeKoine', pathMatch: 'full' },
 	{path: "decifriskoine", component: KoineComponent, children:[
 		{path: "homeKoine", component: HomeKoineComponent},
+		{path: "articles-and-volumes", component: ArticlesAndVolumesComponent},
 	]},
 	{path: "opera24", component: Opera24Component},
 	{path: "combinatorics24", component: Combinatorics24Component},
