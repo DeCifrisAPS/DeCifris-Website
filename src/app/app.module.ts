@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -115,6 +115,10 @@ import { Trends24Component } from './attivita/trends24/trends24.component';
 import { Trends23Component } from './attivita/trends23/trends23.component';
 import { Trends22Component } from './attivita/trends22/trends22.component';
 import { Trends22bisComponent } from './attivita/trends22/trends22bis/trends22bis.component';
+
+// ./attivita/editoria/koine
+import { KoineComponent } from './attivita/editoria/koine/koine.component';
+import { HomeKoineComponent } from './attivita/editoria/koine/home-koine/home-koine.component';
 
 // ./cifris/cifris2023
 import { Cifris2023Component } from './cifris/cifris2023/cifris2023.component';
@@ -244,6 +248,9 @@ import { WCC24Component } from './hosting/wcc24/wcc24.component';
 		CookiePolicyComponent,
 		EditoriaComponent,
 		BlockchainSmartContractComponent,
+		//Koine
+		KoineComponent,
+		HomeKoineComponent,
 		//Trends
   		Trends24Component,
 		Trends23Component,
