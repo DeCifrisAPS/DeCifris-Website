@@ -1,3 +1,7 @@
+
+
+
+
 import { MailingListComponent } from './mailing-list/mailing-list.component';
 import { OpportunitaComponent } from './opportunita/opportunita.component';
 import { ObiettiviComponent } from './obiettivi/obiettivi.component';
@@ -58,6 +62,7 @@ import { StageTirociniComponent } from './opportunita/stage-tirocini/stage-tiroc
 import { AssociarsiComponent } from './opportunita/associarsi/associarsi.component';
 import { BenemeritiComponent } from './opportunita/associarsi/benemeriti/benemeriti.component';
 import { DiconoDiNoiComponent} from './associazione/dicono-di-noi/dicono-di-noi.component';
+import { NotizieComponent} from './associazione/notizie/notizie.component';
 import { CookiePolicyComponent } from './cookie-policy/cookie-policy.component';
 import { EditoriaComponent } from './attivita/editoria/editoria.component';
 import { BlockchainSmartContractComponent } from './attivita/blockchain-smart-contract/blockchain-smart-contract.component';
@@ -138,6 +143,7 @@ const routes: Routes = [
 		{path: "payment-result", component: PaymentResultComponent24},
 	]},
 	{path: "dicono-di-noi", component: DiconoDiNoiComponent},
+	{path: "notizie", component: NotizieComponent},
 	{path: "associazione", component: AssociazioneComponent},
 	{path: "statuto", component: StatutoComponent},
 	{path: "regolamento", component: RegolamentoComponent},

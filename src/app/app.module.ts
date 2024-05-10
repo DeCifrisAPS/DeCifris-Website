@@ -146,6 +146,7 @@ import { RegistrationComponent24 } from './cifris/cifris2024/registration/regist
 import { Opera24Component } from './hosting/opera24/opera24.component';
 import { Combinatorics24Component } from './hosting/combinatorics24/combinatorics24.component';
 import { WCC24Component } from './hosting/wcc24/wcc24.component';
+import { NotizieComponent } from './associazione/notizie/notizie.component';
 
 @NgModule({
 	declarations: [
@@ -280,6 +281,7 @@ import { WCC24Component } from './hosting/wcc24/wcc24.component';
 		Opera24Component,
 		Combinatorics24Component,
 		WCC24Component,
+  NotizieComponent,
 	],
 	imports: [
 		BrowserModule,
