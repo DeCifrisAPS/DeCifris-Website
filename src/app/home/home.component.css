@@ -18,6 +18,8 @@ button{
 	border:none;
 	outline:none;
 	color:rgb(48, 117, 128);
+    width: 200px;
+    text-align:left;
 }
 
 ng-sidebar-container{
@@ -53,3 +55,18 @@ ng-sidebar-container{
 	margin: 10px 0;
 }
 
+button.imagebtn {
+    padding: 5px;
+	color: rgb(48, 117, 128);
+}
+#imagebtn_container img {
+    margin-right: 5px;    
+    vertical-align: middle;
+	
+}
+.imagebtn-txt {
+    vertical-align: middle;
+}
+.imagebtn:hover {
+	color:crimson;
+}
