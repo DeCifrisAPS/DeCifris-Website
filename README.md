@@ -1,47 +1,148 @@
-# DeCifris
+# **Sito Associazione *De Componendis Cifris***
 
-Questo progetto racchiude il codice del sito web dell'associazione nazionale di crittografia **De Componendis Cifris**. Il codice è stato scritto utilizzando Angular, un framework front-end che gestisce l'interazione di HTML, CSS e Typescript.
+Questo progetto racchiude il codice del [sito web dell'associazione nazionale di crittografia **De Componendis Cifris**](https://www.decifris.it/). Il codice è stato scritto utilizzando [Angular](https://angular.io/), un framework front-end che gestisce l'interazione di HTML, CSS e Typescript.
+
+<p align="center">
+  <img width="250" src="https://github.com/triki96/de-cifris-site/assets/64229723/158b5df9-2425-46e2-bae9-ed01ba3765f9" />
+</p>
+
+- [Linee Guida Community](#linee-guida-community)
+- [Guida alla modifica del codice](#guida-alla-modifica-del-codice)
+  * [1. Scaricare il codice da GitHub](#1-scaricare-il-codice-da-github)
+  * [2. Modifiche al codice in locale](#2-modifiche-al-codice-in-locale)
+    + [Modifiche quotidiane](#modifiche-quotidiane)
+      - [Caricare un file](#caricare-un-file)
+      - [Modificare una pagina specifica](#modificare-una-pagina-specifica)
+    + [Modifiche consistenti](#modifiche-consistenti)
+      - [Setup ambiente di lavoro](#setup-ambiente-di-lavoro)
+      - [Simulazione in locale del sito](#simulazione-in-locale-del-sito)
+      - [Modifiche al codice del sito](#modifiche-al-codice-del-sito)
+  * [3. Aggiornare la repository GitHub](#3-aggiornare-la-repository-github)
+  * [4. Aggiornare il server](#4-aggiornare-il-server)
 
 
-# Linee Guida Generali
-L'idea di base è che questo sito venga gestito in modo più o meno volontario da studenti/ex-studenti, o comunque persone non specialiste del settore. Da un lato la conoscenza di questo codice, nella sua interezza, può essere un lavoro laborioso, ma dall'altro la conoscenza necessaria e sufficiente per apportare qualche modifica risulta essere un compito ben più leggero. Nelle seguenti sotto-sezioni sono spiegate passo passo le procedure da seguire per svolgere le mansioni ordinarie di manutenzione.
+# Linee Guida Community
+Il sito viene gestito in modo volontario da studenti ed ex-studenti, o comunque persone non specialiste del settore. La conoscenza completa di questo codice, nella sua interezza, può essere un lavoro laborioso, ma quella necessaria e sufficiente per apportare qualche modifica è ben più leggera. Nelle seguenti sotto-sezioni sono spiegate passo passo le procedure da seguire per svolgere le mansioni ordinarie di manutenzione.
 
-Visto che il compito di gestire questo sito è un testimone che passa di mano in mano a diverse persone, è buona cosa che tutti risultiamo d'accordo sul modo di operare. Un codice pulito, snello e ben commentato (qualora il codice non fosse sufficientemente auto-esplicativo) sono sicuramente dei buoni punti da cui partire, e facilitano il compito anche a chi leggerà il codice dopo di noi.
+Visto che il compito di gestire questo sito è un testimone che passa di mano in mano, è buona cosa accordarsi sul modo di operare. 
+Un codice pulito, snello e ben commentato (se non sufficientemente auto-esplicativo) sono sicuramente dei buoni punti da cui partire, e facilitano il compito anche a chi lo leggerà dopo di noi.
 
-# Linee Guida Specifiche
+# Guida alla modifica del codice
 In questa macro-sezione sono esposte le procedure per le operazioni di routine più e meno comuni. Ogni volta che vogliamo apportare qualche modifica a lato server dovremo seguire il seguente iter: scaricare la repository di GitHub, apportare le modifiche in locale, aggiornare la repository di GitHub, aggiornare il server. Vediamo come eseguire ognuna di queste operazioni.
 
 ## 1. Scaricare il codice da GitHub
-Scaricare il codice da GitHub è semplice: è sufficiente cliccare sul dropdown *code* e avviare il download del file zip associato al progetto. In alternativa è possibile scaricare il progetto direttamente da terminale con il comando
+Scaricare il codice da GitHub è semplice: è sufficiente cliccare sul menù dropdown *code* e avviare il download del file zip associato al progetto. In alternativa è possibile scaricare il progetto direttamente da terminale con il comando
 ```
 git clone https://github.com/<username>/<indirizzoRepo>
 ```
-avendo cura di sostituire *\<username>* e *\<indirizzoRepo>* rispettivamente con il proprietario del progetto e l'effettivo indirizzo in cui si trova il progetto.  Ad oggi il progetto è reperibile all'indirizzo https://github.com/triki96/de-cifris-site, ma non garantisco che in futuro sia ancora così.
+avendo cura di sostituire `<username>` e `<indirizzoRepo>` rispettivamente con il proprietario del progetto e l'effettivo indirizzo in cui si trova il progetto.  Ad oggi il progetto è reperibile all'indirizzo `https://github.com/triki96/de-cifris-site`. Sarà buona misura iniziare ogni futura operazione al codice con un 
+```
+git pull
+```
+per scaricare l'ultima versione disponibile.
+## 2. Modifiche al codice in locale
+Modificare il codice è lo step meno immediato dei 4, ma rimane comunque una procedura tranquilla. Poiché spesso le modifiche da fare riguardano essenzialmente l'aggiunta di nuovi pdf o l'aggiornamento di qualche pagina HTML/CSS (e non operazioni più complesse, ad esempio, l'aggiunta di nuovi componenti oppure nuove funzionalità, ...) di seguito sono presenti due sotto-guide. La prima, più veloce, si rivolge a chi vuole apportare modifiche ai file HTML/CSS esistenti; la seconda, più completa (ma spesso non necessaria), si rivolge a chi ha bisogno di interfacciarsi con l'intero ambiente di sviluppo (i.e. Angular), per apportare modifiche anche più profonde.
 
-## 2. Modifiche al codice
-Modificare il codice è lo step meno immediato dei 4, ma rimane comunque una procedura tranquilla. Poiché spesso le modifiche da fare riguardano essenzialmente l'aggiunta di nuovi pdf o l'aggiornamento di qualche pagina HTML/CSS (e non operazioni più complesse, ad esempio, l'aggiunta di nuovi componenti oppure nuove funzionalità, ...) di seguito sono presenti due sotto-guide. La prima, più veloce, si rivolge a chi vuole apportare modifiche unicamente ai file HTML/CSS; la seconda, più completa (ma spesso non necessaria), si rivolge a chi ha bisogno di interfacciarsi con l'intero ambiente di sviluppo (i.e. Angular), per apportare modifiche anche più profonde.
+### Modifiche quotidiane
+Una volta scaricata la repository possiamo modificare il codice. Distinguiamo i casi in cui l'operazione da fare sia il caricamento di un nuovo documento (ad esempio un pdf), oppure l'aggiornamento di una pagina HTML/CSS.
 
-### Modifiche rapide
-Una volta scaricata la repository come da punto 1, possiamo modificare il codice. Distinguiamo i casi in cui l'operazione da fare sia il caricamento di un nuovo documento (ad esempio un pdf), oppure l'aggiornamento di una pagina HTML/CSS.
+#### Caricare un file 
+I documenti sono tutti aggiunti nella cartella `src/assets`. In questa cartella troviamo le immagini del logo, più alcune sotto-cartelle, che hanno il compito di tenere ordine dei vari file caricati. Per caricare un file possiamo quindi spostarci in una di queste cartelle (o crearne un'altra se ce ne fosse bisogno) e spostare qua il file desiderato. 
 
-- **Caricare un file:** i documenti sono tutti aggiunti nella cartella src/assets. In questa cartella troviamo le immagini del logo, più alcune sotto-cartelle, che hanno il compito di tenere ordine dei vari file caricati. Per caricare un file possiamo quindi spostarci in una di queste cartelle (o crearne un'altra se ce ne fosse bisogno) e spostare qua il file desiderato. Per fare un esempio: supponiamo di voler caricare il file locandina.pdf dell' evento "Post Quantum Key Exchange" tenutosi nel 2020; in questo caso ci sposteremo in src/assets/eventi/2020, dove creeremo la cartella "PostQuantumKeyExchange", all'interno della quale incolleremo il file.
-- **Modificare una pagina specifica:** il progetto si compone di molti file html (e css), ad esempio il codice presente nella pagina principale è scritto nel file home.component.html (e il css associato è presente nel file home.component.css), e cosi via. Scrivere codice HTML in più file (se fatto bene) ci garantisce un rapido accesso ai sorgenti. Premesso questo, tutti i file HTML/CSS sono presenti nel path src/app/, e relative sottocartelle. È importante a questo punto sapere che Angular (il framework che stiamo usando) lavora con i cosiddetti **components**; un component è una terna composta da un file HTML, un file CSS e un file TS. Grazie ad Angular (che si preoccupa di gestire l'interazione di questi tre file) possiamo scrivere del codice in HTML, gestirne la grafica nel rispettivo file CSS, e gestire gli eventi e più in generale la logica nel file TS. Quindi, ad esempio, se volessimo modificare una porzione di codice nella homepage, ci posizioneremo nella cartella src/app/home, all'interno della quale troveremo i file *home.component.html, home.component.css e home.component.ts* (più un file extra di test, di cui non ci interessiamo); a questo punto apriamo *home.component.html*, modifichiamo, salviamo e chiudiamo.
+Supponiamo di voler caricare il file `locandina.pdf` dell' evento "Post Quantum Key Exchange" tenutosi nel 2020.
+1. Ci spostiamo in `src/assets/eventi/2020`.
+2. Creiamo la cartella *"PostQuantumKeyExchange"*.
+3. Incolliamo il file.
+
+#### Modificare una pagina specifica
+Il progetto si compone di molti file. Tutti i file HTML/CSS sono presenti nel path `src/app/` e relative sottocartelle: ad esempio, il codice presente della pagina principale è nel file `home.component.html` e il CSS associato è in `home.component.css`. Scrivere codice HTML in più file -- se fatto bene -- ci garantisce un rapido accesso ai sorgenti.  
+
+È importante a questo punto sapere che Angular (il framework che stiamo usando) lavora con i cosiddetti **components**. Un component è una terna composta da un file HTML, un file CSS ed un file TS. Angular si preoccupa di gestire l'interazione di questi tre file. Possiamo scrivere del codice in HTML, gestirne la grafica nel rispettivo file CSS, e gestire gli eventi e più in generale la logica nel file TS. 
+
+Supponiamo di voler modificare una porzione di codice nella homepage.
+1. Posizioniamoci nella cartella `src/app/home`
+2. Al suo interno osserviamo la seguente struttura:
+```
+src/app  
+│
+└───home
+│   │   home.component.html
+│   │   home.component.css
+│   │   home.component.ts
+│   │   home.component.spec.ts
+│
+...
+```
+3. Per modifiche al contenuto della pagina, è sufficiente modificare il file `home.component.html`. Per modifiche allo stile della pagina, invece, modifichiamo `home.component.css`. Ignoriamo due file: `home.component.ts` servirà per modifiche alla logica del sito tramite TypeScript, `home.component.spec.ts` per unit test di Angular.
+4. Salviamo e chiudiamo. 
 
 ### Modifiche consistenti
-Per fare modifiche consistenti è consigliabile lavorare con un IDE con cui si abbia confidenza (personalmente VSCode rimane una buona opzione).  Il primo punto che risolviamo è quello di simulare il sito in locale; lo faremo all'indirizzo http://localhost:4200. Per prima cosa apriamo il progetto dal nostro editor di testo Avremo bisogno di un'[interfaccia a linea di comando](https://cli.angular.io/) apposita per Angular, installabile con
+
+Questo richiede avere un ambiente in grado di eseguire in locale una copia funzionante del sito.
+
+#### Setup ambiente di lavoro
+
+Servirà prima di tutto installare alcuni pacchetti. Le procedure descritte sono per Linux. Fate attenzione alle versioni utilizzate, dichiarate [in fondo alla prossima sottosezione](https://github.com/triki96/de-cifris-site/edit/associazione/README.md#simulazione-in-locale-del-sito).
+
+1. (Facoltativo) Il development front-end avverrà tramite Node. Node Version Manager (NVM) aiuta ad installare e gestire le versioni di Node: non è necessario, ma è molto comodo. Per clonare il progetto NVM in locale è sufficiente usare uno dei seguenti due comandi:
 ```
-npm install -g @angular/cli
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+- oppure -
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```
-A questo punto siamo in grado di far girare il sito, con il comando
+2. Installare Node Packet Manager. Per installare la versione numero `<version>` tramite NVM è sufficiente scrivere
+```
+nvm install <version>
+```
+3. Per fare modifiche consistenti è consigliabile lavorare con un IDE con cui si abbia confidenza (personalmente [VSCode](https://code.visualstudio.com/) rimane una buona opzione).  Il primo punto che risolviamo è quello di simulare il sito in locale; lo faremo all'indirizzo `http://localhost:4200`. Per prima cosa apriamo il progetto dal nostro editor di testo Avremo bisogno di un'[interfaccia a linea di comando apposita per Angular, *Angular CLI*,](https://cli.angular.io/), installabile con
+```
+npm install -g @angular/cli@<version>
+```
+
+#### Simulazione in locale del sito
+Spostiamoci nella cartella del progetto: ora lavoreremo qui. A questo punto siamo in grado di far girare localmente una copia del sito, con il comando
 ```
 ng serve --port 4200
 ```
-Di solito il comando è ridotto a *ng serve*, in quanto la porta 4200 è impostata in automatico da Angular. Probabilmente eseguendo questo comando per la prima volta la shell interromperà l'esecuzione con degli errori, chiedendo l'installazione di qualche modulo (ad es. @angular-devkit/build-angular). Per ovviare a questo problema è sufficiente installare il modulo in questione, ad esempio con
+Di solito il comando è ridotto a `ng serve`, in quanto la porta 4200 è impostata in automatico da Angular. Eseguendo questo comando per la prima volta la shell interromperà l'esecuzione con degli errori, chiedendo l'installazione di qualche modulo (ad es. `@angular-devkit/build-angular`) richiesto nelle dipendenze del progetto. Prima di tutto installiamo
 ```
 npm install --save-dev @angular-devkit/build-angular
 ```
-A questo punto il comando *ng serve* funziona senza nessun problema, e possiamo vedere la nostra versione locale del sito all'indirizzo sopracitato.
-Per fare una modifica accedere al rispettivo file in cui si desidera modificare qualcosa, dopodiché sarà sufficiente salvare le modifiche fatte, e Angular si preoccuperà di aggiornare il sito in locale. In questo modo è possibile riscontrare se le modifiche apportate hanno raggiunto il risultato desiderato. Nel primo caso abbiamo finito nel secondo caso torniamo sul codice e continuiamo a modificare.
+Ora basterà richiedere l'installazione di tutte le altre dipendenze dichiarate nel file `package.json`. Nel nostro caso si tratta di una procedura detta *"clean install"*, evocata dal comando
+```
+npm ci
+```
+A questo punto il comando `ng serve` funziona senza nessun problema, e possiamo vedere la nostra versione locale del sito all'indirizzo sopracitato. Simularlo è importante per verificare che le nostre modifiche abbiano effettivamente lo scopo desiderato e non abbiano rotto il codice! Concludiamo verificando di avere le versioni corrette di tutti i pacchetti più importanti: confrontiamo l'output di 
+```
+ng v
+```
+con quanto segue.
+```
+Angular CLI: 11.2.19
+Node: 14.17.5
+OS: linux x64
+
+Angular: 11.2.14
+... animations, common, compiler, compiler-cli, core, forms
+... localize, platform-browser, platform-browser-dynamic, router
+Ivy Workspace: Yes
+
+Package                         Version
+---------------------------------------------------------
+@angular-devkit/architect       0.1102.19
+@angular-devkit/build-angular   0.1102.19
+@angular-devkit/core            11.2.19
+@angular-devkit/schematics      11.2.19
+@angular/cdk                    10.2.7
+@angular/cli                    11.2.19
+@schematics/angular             11.2.19
+@schematics/update              0.1102.19
+rxjs                            6.5.5
+typescript                      4.0.8
+```
+
+#### Modifiche al codice del sito
+Per fare una modifica serve accedere al file desiderato, dopodiché sarà sufficiente salvare le modifiche fatte, e Angular si preoccuperà di aggiornare il sito in locale. In questo modo è possibile riscontrare se le modifiche apportate hanno raggiunto il risultato desiderato: Nel primo caso abbiamo finito e possiamo procedere, nel secondo caso torniamo sul codice e continuiamo a modificare. 
 
 ## 3. Aggiornare la repository GitHub
 Una volta fatte le modifiche, è fondamentale rendere queste modifiche disponibili per tutte le altre persone che potrebbero dover mettere mano al codice più avanti. Per garantire che ciò sia possibile, aggiorniamo la repositort GitHub posizionandoci nella cartella del progetto ed eseguendo da terminale i seguenti comandi standard.
@@ -63,7 +164,7 @@ nothing to commit, working tree clean
 ```
 Questo conclude l'aggiornamento della repository GitHub.
 
-## 4. Deploy sul server
+## 4. Aggiornare il server
 Per fare il deploy sul server bisogna dapprima fare la build del progetto in locale. 
 Per fare la build di un progetto Angular utilizziamo un'[interfaccia a linea di comando](https://cli.angular.io/) apposita per Angular, installabile con
 ```
