@@ -57,6 +57,7 @@ ng-sidebar-container{
 
 button.imagebtn {
 	color: rgb(48, 117, 128);
+	width: 30%;
 }
 #imagebtn_container img {
     margin-right: 5px;    
@@ -67,5 +68,10 @@ button.imagebtn {
 }
 .imagebtn:hover {
 	opacity: 0.9;
-	box-shadow: 5px 5px 5px rgba(157, 184, 209, 0.5);
+	box-shadow: 5px 5px 9px rgba(157, 184, 209, 0.5);
 }
+
+
+
+
+

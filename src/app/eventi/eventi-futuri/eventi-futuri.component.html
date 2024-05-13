@@ -1,20 +1,32 @@
-<ul>
-	<li>
-		Il congresso di crittografia <a [routerLink]="['/cifris24']"> CIFRIS24</a> si terrà a Roma dal 25 al 27
-		Settembre 2024.
-	</li>
-	<li>
-		La seconda edizione del corso <a [routerLink]="['/trends24']"> De Cifris Trends</a> si terrà da Settembre a
-		Novembre 2024.
-		Questa edizione è intitolata <i> Trends in Modern Cryptography: The French Magisterium </i>  e consisterà di 20 lezioni di 30 minuti, tenute su
-		 Zoom. 
-	</li>
-	<li>
-		Stiamo organizzando il nuovo corso su blockchain e smart contract. Scopri di più a questo <a
-			[routerLink]="['/blockchain-smart-contract']">link</a>.
-	</li>
-	<li>
-		Stiamo organizzando una seconda fruizione dell'edizione 2022 del
-		<a [routerLink]="['/trends22bis']">corso</a> "Post Quantum and Cloud Cryptography".
-	</li>
-</ul>
+<div class="cards">
+	<!-- CIFRIS 24-->
+	
+	<div class="card">
+		<a [routerLink]="['/cifris24']">
+	  <img src="../../../assets/attivita/convegnoAnnuale/sede_cifris24.jpg" alt="" />
+	 
+	  <div class="container">
+		<h1>Congresso CIFRIS24</h1>
+		<p>
+		    Il nostro secondo congresso annuale di crittografia, rivolto a esperti, appassionati ed istituzioni. CIFRIS24 si terrà nell'eterna città di Roma dal 25 al 27
+			Settembre 2024.
+		</p>
+	  </div>
+		</a>
+	</div>
+	<div class="card">
+	<!-- TRENDS 24-->
+	  <a [routerLink]="['/trends24']">
+	  <img src="../../../assets/attivita/deCifrisTrends/trends24_paris.jpg" alt="" />
+	  <div class="container">
+		<h1>Trends in Modern Cryptography 2024</h1>
+		<p>
+			La terza edizione del corso <a [routerLink]="['/trends24']"> De Cifris Trends</a>, da Settembre a
+			Novembre 2024.
+			<i> Trends in Modern Cryptography: The French Magisterium </i>  consisterà di 20 lezioni di 30 minuti, tenute via
+			 Zoom. 
+		</p>
+	  </div>
+	  </a>
+	</div>
+  </div>
