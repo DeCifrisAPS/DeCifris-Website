@@ -56,17 +56,16 @@ ng-sidebar-container{
 }
 
 button.imagebtn {
-    padding: 5px;
 	color: rgb(48, 117, 128);
 }
 #imagebtn_container img {
     margin-right: 5px;    
     vertical-align: middle;
-	
 }
 .imagebtn-txt {
     vertical-align: middle;
 }
 .imagebtn:hover {
-	color:crimson;
+	opacity: 0.9;
+	box-shadow: 5px 5px 5px rgba(157, 184, 209, 0.5);
 }
