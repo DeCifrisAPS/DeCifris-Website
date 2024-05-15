@@ -147,6 +147,7 @@ import { Opera24Component } from './hosting/opera24/opera24.component';
 import { Combinatorics24Component } from './hosting/combinatorics24/combinatorics24.component';
 import { WCC24Component } from './hosting/wcc24/wcc24.component';
 import { NotizieComponent } from './associazione/notizie/notizie.component';
+import { EventiPatrocinatiComponent } from './eventi/eventi-patrocinati/eventi-patrocinati/eventi-patrocinati.component';
 
 @NgModule({
 	declarations: [
@@ -282,6 +283,7 @@ import { NotizieComponent } from './associazione/notizie/notizie.component';
 		Combinatorics24Component,
 		WCC24Component,
   NotizieComponent,
+  EventiPatrocinatiComponent,
 	],
 	imports: [
 		BrowserModule,
