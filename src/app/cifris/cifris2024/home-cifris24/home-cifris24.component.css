@@ -50,3 +50,50 @@ b {
 	sua versione standard risulta all'occhio un po' "slavato" */
 	font-weight: 500;
 }
+
+
+
+table.date-table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	border-radius: 10px 10xp 0 0;
+	margin: 10px auto 30px auto;
+	align-content: center;
+}
+.date-table thead tr th{
+    background-color:var(--cifris_blue);
+    color: #ffffff;
+    text-align: center;
+	font-weight: 700;
+	padding: 10px;
+}
+.date-table th,
+.date-table td {
+    padding: 12px 15px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.date-table tbody tr {
+    border-bottom: 1px solid var(--cifris_blue);
+}
+
+.date-table tbody tr:nth-of-type(even) {
+    background-color: var(--cifris_azure);
+}
+
+.date-table tbody tr.active-row {
+    font-weight: bold;
+    color: var(--cifris_orange);
+}
+.date-table tbody tr.dead-row {
+    font-style: italic;
+    color: gray;
+}
+
+
+
+
+

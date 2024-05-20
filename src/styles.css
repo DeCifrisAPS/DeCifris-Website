@@ -11,13 +11,15 @@
 
 /* Font, textstyle */
 
-html,
-body {
+
+html {
     height: 100%;
     background-color: --cifris_azure;
 }
 
 body {
+    height: 100%;
+    background-color: --cifris_azure;
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
@@ -28,6 +30,8 @@ h3,
 h4,
 h5,
 h6 {
+    margin-left: 0;
+    padding-left: 0;
     color: var(--cifris_blue) !important;
 }
 
