@@ -1,4 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+/* Colors */
+:root {
+    --cifris_blue: #307580;
+    --cifris_azure: #e6f4f1;
+    --cifris_green: #54bf81;
+    --cifris_vanilla: #F3E5AB;
+    --cifris_orange: #ff8d3d;
+    --cifris_purple: #7c72a7;
+    --cirfis_scarlet: #832700;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Font, textstyle */
+
+html,
+body {
+    height: 100%;
+    background-color: --cifris_azure;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--cifris_blue) !important;
+}
+
+/* Sidebar */
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    color: --cifris_blue;
+    width: 200px;
+    text-align: left !important;
+}

@@ -5,3 +5,8 @@ a{
 .toggleText{
 	color: #1976D2;
 }
+
+b{
+	color:var(--cifris_orange);
+	font-weight: 500;
+}

@@ -1,5 +1,4 @@
 h5 {
-    color: rgb(23, 162, 184);
     font-weight: 700;
     font-size: 20px;
     line-height: 34px;
@@ -22,7 +21,7 @@ h5 {
 }
   
 .event:hover {
-    background: rgba(23, 163, 184, 0.184);
+    background: var(--cifris_azure);
     letter-spacing: 1px;
     -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
     -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
@@ -41,7 +40,7 @@ h5 {
     overflow: auto;
     align-self: right;
     width: 70%;
-    color: #ffa502;
+    color: var(--cifris_orange);
     font-weight: 700;
     font-size: 14px;
     margin-left: 10px;

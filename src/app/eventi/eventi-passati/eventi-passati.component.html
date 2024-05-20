@@ -1,11 +1,47 @@
 <p>Tutti i nostri eventi passati.</p>
 <div class="row">
 	<div class="col-md-12">
+		<h5>EVENTI 2024</h5>
+		<ul>
+			<li>
+				<!-- todo: a quando saranno aggiunte le slides-->
+				<a [routerLink]=""> De Cifris Eruditorum</a>, seminario su diritto e storia della crittografia.
+			</li>
+			<li>
+				<b> Eventi patrocinati:</b>
+				<ul>
+					<li>
+						<a class="event" href="https://crypto.polito.it/cryptography_days">
+							CrypTography Days 2024
+						</a>, gruppo "CrypTo" del Politecnico di Torino
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="col-md-12">
 		<h5>EVENTI 2023</h5>
 		<ul>
 			<li>
-				<a [routerLink]="['/cifris23']"> CIFRIS23</a>, il primo congresso Italiano di crittografia. 
+				<a [routerLink]="['/cifris23']"> CIFRIS23</a>, il primo congresso Italiano di crittografia.
 				Rivolto a tutta la comunità italiana: da esperti ad interessati.
+			</li>
+			<li>
+				<b> Eventi patrocinati:</b>
+				<ul>
+					<li>
+						<a class="event"
+							href="https://www.linkedin.com/posts/de-cifris-associazione-nazionale-8274501a5_crittografia-e-codici-convegno-annuale-activity-7075522164497539072-SXld">
+							Convegno di Crittografia e Codici 2023
+						</a>, Perugia, gruppo UMI "Crittografia e Codici"
+					</li>
+					<li>
+						<a class="event"
+							href="https://www.linkedin.com/posts/de-cifris-associazione-nazionale-8274501a5_1st-international-workshop-on-trends-in-digital-activity-7046364384662593536-cWK-">
+							First International Workshop in Digital Identity 2023
+						</a>, Trento
+					</li>
+				</ul>
 			</li>
 		</ul>
 	</div>
@@ -13,7 +49,7 @@
 		<h5>EVENTI 2022</h5>
 		<ul>
 			<li>
-				Tra il 10 e il 14 ottobre 2022 si è svolto <a [routerLink]="['/summerSchool2022']">PQCifris 2022</a>, 
+				Tra il 10 e il 14 ottobre 2022 si è svolto <a [routerLink]="['/summerSchool2022']">PQCifris 2022</a>,
 				che ha riunito studenti e ricercatori interessati alla crittografia post-quantistica,
 				proponendo due giornate di Scuola e due di Workshop, per introdurre l'argomento,
 				presentare i temi più all'avanguardia e discutere i recenti progressi della
@@ -22,8 +58,8 @@
 			<li>
 				Tra il 2 e il 27 maggio 2022, in collaborazione con 13 atenei Nazionali e Internazionali
 				si è svolto il corso on line <a [routerLink]="['/trends']">Trends in Modern Cryptography</a>,
-				relativo ad aspetti crittografici come 
-				la crittografia post quantum e la crittografia su cloud.	
+				relativo ad aspetti crittografici come
+				la crittografia post quantum e la crittografia su cloud.
 			</li>
 		</ul>
 	</div>
@@ -34,8 +70,9 @@
 				<a routerLink="/cryptowars/2021">Cryptowars 2021</a>.
 			</li>
 			<li>
-				In collaborazione con il gruppo di Crittografia e Codici dell'UMI nei giorni 21-22 
-				settembre si è tenuto il <a href="/convegnoUmi">convegno annuale</a> di crittografia e teoria dei codici, in cui i
+				In collaborazione con il gruppo di Crittografia e Codici dell'UMI nei giorni 21-22
+				settembre si è tenuto il <a href="/convegnoUmi">convegno annuale</a> di crittografia e teoria dei
+				codici, in cui i
 				ricercatori hanno presentato i loro risultati e le novità dell'intera comunità crittografica.
 			</li>
 		</ul>
@@ -49,19 +86,22 @@
 			<li>
 				<a href="../../../assets/eventi/2020/RomaAntica/DC-Historiae-Moraglio.pdf">
 					Codici segreti nella Roma antica</a> (6 novembre 2020) - <a href="../../../assets/eventi/
-					2020/RomaAntica/MORAGLIO-slide.pdf">slide</a>.</li>
-			<li> 
+					2020/RomaAntica/MORAGLIO-slide.pdf">slide</a>.
+			</li>
+			<li>
 				<a style="color:#1380ed;" class="toggleText" (click)="mostraEvento
-				('workshopCryptanalysis')">Workshop</a>: Cryptanalysis: a key tool in 
+				('workshopCryptanalysis')">Workshop</a>: Cryptanalysis: a key tool in
 				securing and breaking ciphers
-				(4 febbraio).</li>
+				(4 febbraio).
+			</li>
 			<div *ngIf="eventoDaMostrare=='workshopCryptanalysis'">
 				<app-workshop-cryptanalysis></app-workshop-cryptanalysis>
 			</div>
-			<li> 
+			<li>
 				<a href="https://scn.unisa.it/scn20/">
 					12th Conference on Security and Cryptography for Networks
-				</a> (14-16 settembre).</li>
+				</a> (14-16 settembre).
+			</li>
 		</ul>
 	</div>
 </div>
@@ -71,25 +111,24 @@
 		<h5>EVENTI 2019</h5>
 		<ul>
 			<li><a routerLink="/cryptowars/2019">Cryptowars 2019</a>.</li>
-			<li><a style="color:#1380ed;" class="toggleText" 
-				(click)="mostraEvento('torinoOttobre')">
-				Evento De Cifris Nord Italia</a>
+			<li><a style="color:#1380ed;" class="toggleText" (click)="mostraEvento('torinoOttobre')">
+					Evento De Cifris Nord Italia</a>
 				(Torino 14 ottobre).
 			</li>
 			<div *ngIf="eventoDaMostrare=='torinoOttobre'">
 				<app-sessione-torino></app-sessione-torino>
 			</div>
 			<li>
-				<a style="color:#1380ed;" class="toggleText"(click)="mostraEvento('perugia')">
+				<a style="color:#1380ed;" class="toggleText" (click)="mostraEvento('perugia')">
 					Evento De Cifris Centro-Sud Italia
-				</a>(Perugia 16 ottobre).</li>
+				</a>(Perugia 16 ottobre).
+			</li>
 			<div *ngIf="eventoDaMostrare=='perugia'">
 				<app-sessione-perugia></app-sessione-perugia>
 			</div>
 			<li>
-				<a style="color:#1380ed;" class="toggleText" 
-				(click)="mostraEvento('hackatonSmartContract')">
-				Prima Hackaton
+				<a style="color:#1380ed;" class="toggleText" (click)="mostraEvento('hackatonSmartContract')">
+					Prima Hackaton
 				</a> De Cifris di Smart Contract (26 settembre).
 			</li>
 			<div *ngIf="eventoDaMostrare=='hackatonSmartContract'">
@@ -101,9 +140,9 @@
 			<li><a href="/attivita">Le 100 tesi</a>.</li>
 			<li>Evento di crittografia militare in collaborazione con AFCEA (Roma 8 maggio) .</li>
 			<li>
-				Primo evento del neocostituito team di PostQuantum: 
-				<a style="color:#1380ed;" class="toggleText" 
-				(click)="mostraEvento('romaPQCifris')">PQCifris2019</a> (Roma 9 maggio).
+				Primo evento del neocostituito team di PostQuantum:
+				<a style="color:#1380ed;" class="toggleText" (click)="mostraEvento('romaPQCifris')">PQCifris2019</a>
+				(Roma 9 maggio).
 			</li>
 			<div *ngIf="eventoDaMostrare=='romaPQCifris'">
 				<app-sessione-roma-pqcifris></app-sessione-roma-pqcifris>
@@ -125,20 +164,17 @@
 		<h5>EVENTI 2018</h5>
 		<ul>
 			<li><a routerLink="/cryptowars/2018">Cryptowars 2018</a>.</li>
-			<li>I nostri eventi territoriali: 
+			<li>I nostri eventi territoriali:
 				<ul>
 					<li>
-						<a style="color:#1380ed;" class="toggleText" 
-						(click)="mostraEvento('salerno')">
-						De Cifris a Salerno</a> (9 maggio).
+						<a style="color:#1380ed;" class="toggleText" (click)="mostraEvento('salerno')">
+							De Cifris a Salerno</a> (9 maggio).
 					</li>
 					<div *ngIf="eventoDaMostrare=='salerno'" style="width: 100%;">
 						<app-sessione-salerno></app-sessione-salerno>
 					</div>
 					<li>
-						<a style="color:#1380ed;" 
-						class="toggleText" 
-						(click)="mostraEvento('milano')">
+						<a style="color:#1380ed;" class="toggleText" (click)="mostraEvento('milano')">
 							De Cifris a Milano</a> (11 settembre).
 					</li>
 					<div *ngIf="eventoDaMostrare=='milano'">
@@ -153,11 +189,10 @@
 					</div>
 				</ul>
 			</li>
-			<li>I nostri eventi tematici: 
+			<li>I nostri eventi tematici:
 				<ul>
 					<li>
-						<a style="color:#1380ed;" class="toggleText" 
-						(click)="mostraEvento('eventoConoscitivo')">
+						<a style="color:#1380ed;" class="toggleText" (click)="mostraEvento('eventoConoscitivo')">
 							Evento conoscitivo De Componendis Cifris</a> (22 gennaio).
 					</li>
 					<div *ngIf="eventoDaMostrare=='eventoConoscitivo'">
