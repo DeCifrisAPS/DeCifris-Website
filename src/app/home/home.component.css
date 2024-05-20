@@ -55,16 +55,38 @@ ng-sidebar-container{
 	margin: 10px 0;
 }
 
-button.imagebtn {
+div.iniziativecontainer{	
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.imagebtn {
 	color: rgb(48, 117, 128);
-	width: 30%;
+	width:120px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 0 auto;
+	align-items : center;
+}
+.imagebtn_container{
+	background: #fff; 
+	align-items: center;
+	width: 100%;
 }
 #imagebtn_container img {
-    margin-right: 5px;    
-    vertical-align: middle;
+	margin-left: 15%;
+	margin-right: 15%;
+	width: 70%;
 }
-.imagebtn-txt {
-    vertical-align: middle;
+#imagebtn_container p {
+    vertical-align:center;
+	text-align: center;
+	color: black;
+	width: 100%;
+	overflow: auto;
+	font-weight: 500;
 }
 .imagebtn:hover {
 	opacity: 0.9;
