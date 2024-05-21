@@ -73,7 +73,7 @@ table.date-table {
 .date-table th,
 .date-table td {
     padding: 12px 15px;
-	padding-left: 50px;
+	padding-left: 20px;
 	padding-right: 50px;
 }
 .date-table tbody tr {
@@ -81,7 +81,10 @@ table.date-table {
 }
 
 .date-table tbody tr:nth-of-type(even) {
-    background-color: var(--cifris_azure);
+    background-color: var(--cifris_azure) !important;
+}
+.date-table tbody tr:nth-of-type(odd) {
+    background-color: white !important;
 }
 
 .date-table tbody tr.active-row {
