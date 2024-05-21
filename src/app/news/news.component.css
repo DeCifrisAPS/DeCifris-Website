@@ -45,6 +45,7 @@ ul {
 	border-radius: 20px;
 	transition: 0.3s all ease-in;
 	border: solid 1px #007bff;
+	background-color: white;
 }
 
 .newscard:hover {

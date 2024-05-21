@@ -1,37 +1,39 @@
-ng-sidebar-container{
+ng-sidebar-container {
 	position: fixed;
 	right: 0;
 	top: 55px;
 	height: 100%;
 }
 
-button{
-	background:none;
-	border:none;
-	outline:none;
-	color:rgb(48, 117, 128);
+button {
+	background: none;
+	border: none;
+	outline: none;
+	color: rgb(48, 117, 128);
 }
 
-::ng-deep .ng-sidebar{
+::ng-deep .ng-sidebar {
 	background-color: aliceblue;
 	width: 300px !important;
 	padding: 2em 1em;
-}​
+}
 
-@media screen and (max-width: 799px) {
+​ @media screen and (max-width: 799px) {
 	#right-sidebar {
-		 display: none !important;
+		display: none !important;
 	}
 }
 
-h4, h3{
-	color:rgb(23, 162, 184);
+h4,
+h3 {
+	color: rgb(23, 162, 184);
 }
 
-h5{
+h5 {
 	color: rgb(101, 170, 101);
 }
-.bottomExtra{
+
+.bottomExtra {
 	margin-bottom: 3em;
 	padding-bottom: 3em;
 }
@@ -54,49 +56,59 @@ b {
 
 
 table.date-table {
-    border-collapse: collapse;
-    font-size: 0.9em;
-    font-family: sans-serif;
-    min-width: 400px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	border-collapse: collapse;
+	font-size: 0.9em;
+	font-family: sans-serif;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 	border-radius: 10px 10xp 0 0;
 	margin: 10px auto 30px auto;
 	align-content: center;
 }
-.date-table thead tr th{
-    background-color:var(--cifris_blue);
-    color: #ffffff;
-    text-align: center;
+
+.date-table thead tr th {
+	background-color: var(--cifris_blue);
+	color: #ffffff;
+	text-align: center;
 	font-weight: 700;
 	padding: 10px;
 }
+
 .date-table th,
 .date-table td {
-    padding: 12px 15px;
-	padding-left: 20px;
-	padding-right: 50px;
+	padding: 12px 15px;
 }
+
+td.date {
+	width: 120px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+td.item {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 300px;
+	padding-right: 10px;
+}
+
 .date-table tbody tr {
-    border-bottom: 1px solid var(--cifris_blue);
+	border-bottom: 1px solid var(--cifris_blue);
 }
 
 .date-table tbody tr:nth-of-type(even) {
-    background-color: var(--cifris_azure) !important;
+	background-color: var(--cifris_azure) !important;
 }
+
 .date-table tbody tr:nth-of-type(odd) {
-    background-color: white !important;
+	background-color: white !important;
 }
 
 .date-table tbody tr.active-row {
-    font-weight: bold;
-    color: var(--cifris_orange);
+	font-weight: bold;
+	color: var(--cifris_orange);
 }
+
 .date-table tbody tr.dead-row {
-    font-style: italic;
-    color: gray;
+	font-style: italic;
+	color: gray;
 }
-
-
-
-
-

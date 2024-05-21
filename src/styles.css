@@ -22,6 +22,10 @@ body {
     background-color: --cifris_azure;
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
+    background: linear-gradient(rgba(255, 255, 255, .96), rgba(255, 255, 255, .96)),
+		url(assets/logo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 h1,

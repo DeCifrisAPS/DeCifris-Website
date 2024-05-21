@@ -15,6 +15,22 @@
 					Program
 				</button>
 			</li>
+
+			<li>
+				<button class="btn btn-outline-info" (click)="goTo('sezioneScelta')" routerLink="registration">
+					Registration
+				</button>
+			</li>
+			<li>
+				<button class="btn btn-outline-info" (click)="goTo('sezioneScelta')" routerLink="venue-accomodation">
+					Venue and accomodation
+				</button>
+			</li>
+            <li>
+				<button class="btn btn-outline-info" (click)="goTo('sezioneScelta')" routerLink="proceedings">
+					Proceedings
+				</button>
+			</li>
 			<li>
 				<button class="btn btn-outline-info" (click)="goTo('sezioneScelta')" routerLink="call-for-papers">
 					Call for papers
@@ -24,16 +40,6 @@
 				<button class="btn btn-outline-info" (click)="goTo('sezioneScelta')" routerLink="call-for-workshops">
                     Call for workshops
                 </button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" (click)="goTo('sezioneScelta')" routerLink="registration">
-					Registration
-				</button>
-			</li>
-            <li>
-				<button class="btn btn-outline-info" (click)="goTo('sezioneScelta')" routerLink="proceedings">
-					Proceedings
-				</button>
 			</li>
 		</ul>
 	</ng-sidebar>
@@ -67,6 +73,9 @@
 					</button>
 					<button class="btn btn-outline-info" (click)="goTo('sezioneScelta')" routerLink="./program">
 						<i class="material-symbols-outlined">list</i> <br> Program 
+					</button>
+					<button class="btn btn-outline-info" (click)="goTo('sezioneScelta')" routerLink="./venue-accomodation">
+						<i class="material-symbols-outlined">map</i> <br> Venue, accomodation 
 					</button>
 					<button class="btn btn-outline-info" (click)="goTo('sezioneScelta')" routerLink="./call-for-papers">
 						<i class="material-symbols-outlined">history_edu</i> <br> Call for papers 

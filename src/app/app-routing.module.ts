@@ -99,6 +99,7 @@ import { RegistrationComponent24 } from './cifris/cifris2024/registration/regist
 import { ProceedingsComponent24 } from './cifris/cifris2024/proceedings/proceedings.component';
 import { HomeCifris24Component } from './cifris/cifris2024/home-cifris24/home-cifris24.component';
 import { ProgramComponent24 } from './cifris/cifris2024/program/program.component';
+import { VenueAccomodationComponent24 } from './cifris/cifris2024/venue-accomodation/venue-accomodation.component';
 import { PaymentResultComponent24 } from './cifris/cifris2024/payment-result/payment-result.component';
 
 // ./hosting
@@ -133,6 +134,7 @@ const routes: Routes = [
 	]},
 	{path: 'cifris24', redirectTo: '/cifris24/homeCifris24', pathMatch: 'full' },
 	{path: "cifris24", component: Cifris2024Component, children:[
+		{path: "venue-accomodation", component: VenueAccomodationComponent24},
 		{path: "call-for-papers", component: CallForPapersComponent24},
 		{path: "call-for-workshops", component: CallForWorkshopsComponent24},
 		{path: "program-committee", component: ProgramCommitteeComponent24},

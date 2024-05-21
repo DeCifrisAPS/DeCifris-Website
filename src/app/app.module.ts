@@ -148,6 +148,7 @@ import { Combinatorics24Component } from './hosting/combinatorics24/combinatoric
 import { WCC24Component } from './hosting/wcc24/wcc24.component';
 import { NotizieComponent } from './associazione/notizie/notizie.component';
 import { EventiPatrocinatiComponent } from './eventi/eventi-patrocinati/eventi-patrocinati/eventi-patrocinati.component';
+import { VenueAccomodationComponent24 } from './cifris/cifris2024/venue-accomodation/venue-accomodation.component';
 
 @NgModule({
 	declarations: [
@@ -284,6 +285,7 @@ import { EventiPatrocinatiComponent } from './eventi/eventi-patrocinati/eventi-p
 		WCC24Component,
   NotizieComponent,
   EventiPatrocinatiComponent,
+  VenueAccomodationComponent24,
 	],
 	imports: [
 		BrowserModule,
