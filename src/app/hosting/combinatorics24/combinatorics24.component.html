@@ -27,7 +27,7 @@
 			</li>
 
 			<li>
-				240.00 euros, student early registration fee  for De Cifris members;
+				240.00 euros, student early registration fee for De Cifris members;
 			</li>
 
 			<li>
@@ -61,44 +61,14 @@
 		<p>
 			<b>NB:</b> Students from the Polytechnic University of Bari can attend for free.
 		</p>
-
-		<!--
-		<p> The fee covers: </p>
-		<ul>
-			<li>
-				Facilities;
-			</li>
-
-			<li>
-				Coffee breaks;
-			</li>
-
-			<li>
-				Social dinner.
-			</li>
-		</ul>
-		-->
-		<!--
 		<p>
-			The costs for the accomodation are:
-		</p>
-		<ul>
-			<li>
-				Double room: 60.00 euros per person (breakfast included);
-			</li>
-
-			<li>
-				Double room/single person: 80.00 euros per person (breakfast included);
-			</li>
-
-			<li>
-				Price of a meal (lunch/dinner): 25.00 euros.
-			</li>
-		</ul>
-		-->
-		<p>
-			Unfortunately, there is a limited number of places, due to the hosting structure. Registrations will close when this number is reached or at latest on May 7th 2024. <br>
-			If you are Italian or another European Union citizen, we strongly encourage you to become a member of De Cifris, since its membership costs only 20 euros or 5 euros (depending on your age), and it gives you a significant discount on the fees. To become a member, just follow these instructions: <a href="https://www.decifris.it/associarsi">
+			Unfortunately, there is a limited number of places due to the hosting structure. Registrations will
+			close
+			when this number is reached or at latest on May 7th 2024. <br>
+			If you are Italian or another European Union citizen, we strongly encourage you to become a member of De
+			Cifris, since its membership costs only 20 euros or 5 euros (depending on your age), and it gives you a
+			significant discount on the fees. To become a member, just follow these instructions: <a
+				href="https://www.decifris.it/associarsi">
 				https://www.decifris.it/associarsi
 			</a>.
 		</p>
@@ -110,84 +80,49 @@
 				<li>
 					Send an email to <a href="mailto:combinatorics2024@decifris.it">
 						combinatorics2024@decifris.it
-					</a> with your name and your affiliation as subject (for example, "Albert Turing, University of Trento"). <br>
-					In the email please specify whether you pay yourself or your company/institution pays for you (in that case, please send us its fiscal data).
+					</a> with your name and your affiliation as subject (for example, "Albert Turing, University of
+					Trento"). <br>
+					In the email please specify whether you pay yourself or your company/institution pays for you
+					(in that case, please send us its fiscal data).
 				</li>
 
 				<li>
 					EITHER pay with your bank, following the instruction in your email reply; <br>
 					OR pay via credit card filling the form below.
 				</li>
-			</ol>	
+			</ol>
 		</div>
 	</div>
 </div>
-<hr>
 <div class="row mt-3 mr-1 ml-1">
 	<div class="col-md-12">
 		<h4>PAYMENT</h4>
 	</div>
-	<form 
-		id="payForm"
-		class="form"
-		method="post"
-		(submit)="checkAndPay()"
-	>
+	<form id="payForm" class="form" method="post" (submit)="checkAndPay()">
 		<label> Fee </label>
 		<div>
-			<input 
-				type="radio"
-				id="regular_late"
-				name="fee"
-				value="35000"
-				(click)=setFee($event)
-				checked="checked"
-			>
+			<input type="radio" id="regular_late" name="fee" value="35000" (click)=setFee($event) checked="checked">
 			<label for="regular_late">
 				Full Late registration
 			</label><br>
 
-			<input 
-				type="radio"
-				id="regular_late_DC"
-				name="fee"
-				value="32500"
-				(click)=setFee($event)
-			>
+			<input type="radio" id="regular_late_DC" name="fee" value="32500" (click)=setFee($event)>
 			<label for="regular_late_DC">
 				Full Late registration (for De Cifris members)
 			</label><br>
 
-			<input 
-				type="radio"
-				id="student_late"
-				name="fee"
-				value="30000"
-				(click)=setFee($event)
-			>
+			<input type="radio" id="student_late" name="fee" value="30000" (click)=setFee($event)>
 			<label for="student_late">
 				Student Late registration
 			</label><br>
 
-			<input 
-				type="radio"
-				id="student_late_DC"
-				name="fee"
-				value="29000"
-				(click)=setFee($event)
-			>
+			<input type="radio" id="student_late_DC" name="fee" value="29000" (click)=setFee($event)>
 			<label for="student_late_DC">
 				Student Late registration (for De Cifris members)
 			</label><br>
 
-			<input 
-				type="radio"
-				id="companion"
-				name="fee"
-				value="17000"
-				(click)=setFee($event)
-			>
-			<label for="companion">	Accompanying person	</label>
+			<input type="radio" id="companion" name="fee" value="17000" (click)=setFee($event)>
+			<label for="companion"> Accompanying person </label>
 		</div>
 
 		<!-- Hidden input -->
@@ -201,12 +136,7 @@
 		<input type="hidden" id="mail" name="mail">
 		<input type="hidden" id="languageId" name="languageId" value="ENG">
 		<input type="hidden" id="descrizione" name="descrizione">
-		<input 
-			type="hidden"
-			id="Note1"
-			name="Note1"
-			value="Enrollment for combinatorics2024."
-		>
+		<input type="hidden" id="Note1" name="Note1" value="Enrollment for combinatorics2024.">
 		<input type="hidden" id="nome" name="nome">
 		<input type="hidden" id="cognome" name="cognome">
 
@@ -220,15 +150,25 @@
 		<!--
 		<input type="submit" value="Pay Now">
 		-->
-		
+
 		<p class="footnote">
-			The Polytechnic University of Bari and De Componendis Cifris kindly request your consent for the processing of your personal data provided in the following payment form. This information is passed from De Componendis Cifris to the University ASAP and it is immediately deleted by De Componendis Cifris afterwards. The University declares that this information is essential for event planning, communication purposes, and addressing any special requests. Your personal data will be securely deleted upon the conclusion of the event. Learn more here about how the Polytechnic University of Bari adheres to GDPR regulations in handling personal data and about your rights. <br>
+			The Polytechnic University of Bari and De Componendis Cifris kindly request your consent for the
+			processing
+			of your personal data provided in the following payment form. This information is passed from De
+			Componendis
+			Cifris to the University ASAP and it is immediately deleted by De Componendis Cifris afterwards. The
+			University declares that this information is essential for event planning, communication purposes, and
+			addressing any special requests. Your personal data will be securely deleted upon the conclusion of the
+			event. Learn more here about how the Polytechnic University of Bari adheres to GDPR regulations in
+			handling
+			personal data and about your rights. <br>
 			<a href="https://www.poliba.it/it/privacy/note-informative-sulla-privacy">
 				poliba.it/it/privacy/note-informative-sulla-privacy
 			</a>
 		</p>
 		<p class="footnote">
-			By filling the above form you confirm that you have reviewed how the Polytechnic University of Bari processes your personal data as outlined there and provide your consent for such processing.
+			By filling the above form you confirm that you have reviewed how the Polytechnic University of Bari
+			processes your personal data as outlined there and provide your consent for such processing.
 		</p>
 	</form>
 </div>
