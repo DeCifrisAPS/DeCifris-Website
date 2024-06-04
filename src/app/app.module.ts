@@ -149,6 +149,7 @@ import { WCC24Component } from './hosting/wcc24/wcc24.component';
 import { NotizieComponent } from './associazione/notizie/notizie.component';
 import { EventiPatrocinatiComponent } from './eventi/eventi-patrocinati/eventi-patrocinati/eventi-patrocinati.component';
 import { VenueAccomodationComponent24 } from './cifris/cifris2024/venue-accomodation/venue-accomodation.component';
+import { Vol1Cifris23ProceedingsComponent } from './attivita/editoria/koine/articles-and-volumes/vol1-cifris23-proceedings/vol1-cifris23-proceedings.component';
 
 @NgModule({
 	declarations: [
@@ -253,9 +254,11 @@ import { VenueAccomodationComponent24 } from './cifris/cifris2024/venue-accomoda
 		CookiePolicyComponent,
 		EditoriaComponent,
 		BlockchainSmartContractComponent,
+		EventiPatrocinatiComponent,
 		//Koine
 		KoineComponent,
 		HomeKoineComponent,
+		Vol1Cifris23ProceedingsComponent,
 		//Trends
   		Trends24Component,
 		Trends23Component,
@@ -279,13 +282,12 @@ import { VenueAccomodationComponent24 } from './cifris/cifris2024/venue-accomoda
 		ProgramComponent24,
 		SubmissionComponent24,
 		RegistrationComponent24,
+		VenueAccomodationComponent24,
 		//Hosting
 		Opera24Component,
 		Combinatorics24Component,
 		WCC24Component,
-  NotizieComponent,
-  EventiPatrocinatiComponent,
-  VenueAccomodationComponent24,
+		NotizieComponent,
 	],
 	imports: [
 		BrowserModule,

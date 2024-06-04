@@ -1,37 +1,39 @@
-ng-sidebar-container{
+ng-sidebar-container {
 	position: fixed;
 	right: 0;
 	top: 55px;
 	height: 100%;
 }
 
-button{
-	background:none;
-	border:none;
-	outline:none;
-	color:rgb(48, 117, 128);
+button {
+	background: none;
+	border: none;
+	outline: none;
+	color: rgb(48, 117, 128);
 }
 
-::ng-deep .ng-sidebar{
+::ng-deep .ng-sidebar {
 	background-color: aliceblue;
 	width: 300px !important;
 	padding: 2em 1em;
-}​
+}
 
-@media screen and (max-width: 799px) {
+​ @media screen and (max-width: 799px) {
 	#right-sidebar {
-		 display: none !important;
+		display: none !important;
 	}
 }
 
-h4, h3{
-	color:rgb(23, 162, 184);
+h4,
+h3 {
+	color: rgb(23, 162, 184);
 }
 
-h5{
+h5 {
 	color: rgb(101, 170, 101);
 }
-.bottomExtra{
+
+.bottomExtra {
 	margin-bottom: 3em;
 	padding-bottom: 3em;
 }
@@ -46,7 +48,5 @@ h5{
 }
 
 b {
-	/* Su richiesta dall'alto modifico il tag <b> in quanto nella 
-	sua versione standard risulta all'occhio un po' "slavato" */
-	font-weight: 500;
+	font-weight: 800;
 }

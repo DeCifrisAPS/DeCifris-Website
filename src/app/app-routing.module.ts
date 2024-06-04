@@ -109,9 +109,9 @@ import { WCC24Component } from './hosting/wcc24/wcc24.component';
 
 
 const routes: Routes = [
-	{path: 'decifriskoine', redirectTo: '/decifriskoine/homeKoine', pathMatch: 'full' },
-	{path: "decifriskoine", component: KoineComponent, children:[
-		{path: "homeKoine", component: HomeKoineComponent},
+	{path: 'koine', redirectTo: '/koine/home', pathMatch: 'full' },
+	{path: "koine", component: KoineComponent, children:[
+		{path: "home", component: HomeKoineComponent},
 		{path: "articles-and-volumes", component: ArticlesAndVolumesComponent},
 		{path: "editorial-board", component: EditorialBoardComponent},
 	]},
