@@ -1,5 +1,4 @@
 import * as crypto from 'crypto-js';
-
 import { formatDate } from "@angular/common";
 import { Component, OnInit } from '@angular/core';
 
