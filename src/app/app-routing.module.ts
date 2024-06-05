@@ -79,6 +79,9 @@ import { HomeKoineComponent } from './attivita/editoria/koine/home-koine/home-ko
 import { ArticlesAndVolumesComponent } from './attivita/editoria/koine/articles-and-volumes/articles-and-volumes.component';
 import { EditorialBoardComponent } from './attivita/editoria/koine/editorial-board/editorial-board.component';
 
+// varie CENTO TESI
+import { CentoTesiComponent } from './attivita/cento-tesi/cento-tesi.component';
+
 // ./cifris23
 import { Cifris2023Component } from './cifris/cifris2023/cifris2023.component';
 import { CallForPapersComponent } from './cifris/cifris2023/call-for-papers/call-for-papers.component';
@@ -120,6 +123,7 @@ const routes: Routes = [
 	{path: "wcc24", component: WCC24Component},
 	{path: "blockchain-smart-contract", component: BlockchainSmartContractComponent},
 	{path: "editoria", component: EditoriaComponent},
+	{path: "centotesi", component: CentoTesiComponent},
 	{path: "cookie-policy", component: CookiePolicyComponent},
 	{path: 'cifris23', redirectTo: '/cifris23/homeCifris23', pathMatch: 'full' },
 	{path: "cifris23", component: Cifris2023Component, children:[

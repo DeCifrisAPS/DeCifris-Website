@@ -6,6 +6,12 @@ ng-sidebar-container{
 }
 img{
 	float: right;
+	width: 50%;
+	max-width: 350px!important;
+	max-height: 200px;
+	object-fit: cover;
+	margin-left: 30px;
+
 }
 button{
 	background:none;

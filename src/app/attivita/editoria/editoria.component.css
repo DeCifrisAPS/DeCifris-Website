@@ -43,3 +43,65 @@ ng-sidebar-container{
 .noIndent ul li {
 	margin: 10px 0;
 }
+
+
+div.bookcontainer{
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.book {
+	color: rgb(48, 117, 128);
+	width: 150px;
+	margin: 0 auto;
+	align-items: center;
+	padding:5px;
+}
+
+.book_container {
+	background: #fff;
+	align-items: center;
+	width: fit-content;
+	height: fit-content;
+	padding: 0;
+	margin:0;
+}
+
+#book_container img {
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 120px;
+	height: 150px;
+	object-fit: cover;
+}
+
+#book_container p.author {
+	vertical-align: center;
+	text-align: center;
+	color: var(--cifris_purple) !important;
+	overflow: auto;
+	font-weight: 400;
+	font-style: italic;
+	margin:0;
+	width: 140px;
+	font-size: small;
+}
+#book_container p.title {
+	vertical-align: center;
+	text-align: center;
+	color: var(--cifris_purple) !important;
+	overflow: auto;
+	font-weight: 600;
+	margin:0;
+	width: 140px;
+	font-size: small;
+}
+
+.book:hover {
+	opacity: 0.9;
+	box-shadow: 5px 5px 9px var(--cifris_purple);
+}

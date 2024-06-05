@@ -259,6 +259,8 @@ import { Vol1Cifris23ProceedingsComponent } from './attivita/editoria/koine/arti
 		KoineComponent,
 		HomeKoineComponent,
 		Vol1Cifris23ProceedingsComponent,
+		//Centotesi
+		CentoTesiComponent,
 		//Trends
   		Trends24Component,
 		Trends23Component,
