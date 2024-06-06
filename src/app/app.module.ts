@@ -24,7 +24,7 @@ import { DecifrisAugustaeTaurinorumComponent } from './gruppi/seminari-locali/de
 import { DecifrisScholaLatinaComponent } from './gruppi/seminari-locali/decifris-schola-latina/decifris-schola-latina.component';
 import { DecifrisScholaMediolanensibusComponent } from './gruppi/seminari-locali/decifris-schola-mediolanensibus/decifris-schola-mediolanensibus.component';
 import { NuoveAziendeInteressateComponent } from './opportunita/nuove-aziende-interessate/nuove-aziende-interessate.component';
-import { CentoTesiComponent } from './attivita/cento-tesi/cento-tesi.component';
+import { Centotesi20082017Component } from './attivita/centotesi20082017/centotesi20082017.component';
 import { IniziativeDivulgativeComponent } from './attivita/iniziative-divulgative/iniziative-divulgative.component';
 import { GareCrittograficheComponent } from './attivita/gare-crittografiche/gare-crittografiche.component';
 import { EventiPubbliciComponent } from './eventi/eventi-pubblici/eventi-pubblici.component';
@@ -149,7 +149,8 @@ import { WCC24Component } from './hosting/wcc24/wcc24.component';
 import { NotizieComponent } from './associazione/notizie/notizie.component';
 import { EventiPatrocinatiComponent } from './eventi/eventi-patrocinati/eventi-patrocinati/eventi-patrocinati.component';
 import { VenueAccomodationComponent24 } from './cifris/cifris2024/venue-accomodation/venue-accomodation.component';
-import { Vol1Cifris23ProceedingsComponent } from './attivita/editoria/koine/articles-and-volumes/vol1-cifris23-proceedings/vol1-cifris23-proceedings.component';
+import { Vol1Component } from './attivita/editoria/koine/articles-and-volumes/vol1/vol1.component';
+import { Centotesi20142023Component } from './attivita/centotesi20142023/centotesi20142023.component';
 
 @NgModule({
 	declarations: [
@@ -173,7 +174,7 @@ import { Vol1Cifris23ProceedingsComponent } from './attivita/editoria/koine/arti
 		DecifrisScholaLatinaComponent,
 		DecifrisScholaMediolanensibusComponent,
 		NuoveAziendeInteressateComponent,
-		CentoTesiComponent,
+		Centotesi20082017Component,
 		IniziativeDivulgativeComponent,
 		GareCrittograficheComponent,
 		EventiPubbliciComponent,
@@ -258,9 +259,10 @@ import { Vol1Cifris23ProceedingsComponent } from './attivita/editoria/koine/arti
 		//Koine
 		KoineComponent,
 		HomeKoineComponent,
-		Vol1Cifris23ProceedingsComponent,
+		Vol1Component,
 		//Centotesi
-		CentoTesiComponent,
+		Centotesi20082017Component,
+		Centotesi20142023Component,
 		//Trends
   		Trends24Component,
 		Trends23Component,

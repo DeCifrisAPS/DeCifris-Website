@@ -24,7 +24,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    background: url(assets/background.jpeg);
+    background: url('assets/background.jpeg');
 	background-repeat: no-repeat;
 	background-size: cover;
 }

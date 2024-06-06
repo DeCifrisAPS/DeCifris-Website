@@ -1,7 +1,3 @@
-
-
-
-
 import { MailingListComponent } from './mailing-list/mailing-list.component';
 import { OpportunitaComponent } from './opportunita/opportunita.component';
 import { ObiettiviComponent } from './obiettivi/obiettivi.component';
@@ -78,9 +74,11 @@ import { KoineComponent } from './attivita/editoria/koine/koine.component';
 import { HomeKoineComponent } from './attivita/editoria/koine/home-koine/home-koine.component';
 import { ArticlesAndVolumesComponent } from './attivita/editoria/koine/articles-and-volumes/articles-and-volumes.component';
 import { EditorialBoardComponent } from './attivita/editoria/koine/editorial-board/editorial-board.component';
+import { Vol1Component } from './attivita/editoria/koine/articles-and-volumes/vol1/vol1.component';
 
 // varie CENTO TESI
-import { CentoTesiComponent } from './attivita/cento-tesi/cento-tesi.component';
+import { Centotesi20082017Component } from './attivita/centotesi20082017/centotesi20082017.component';
+import { Centotesi20142023Component } from './attivita/centotesi20142023/centotesi20142023.component';
 
 // ./cifris23
 import { Cifris2023Component } from './cifris/cifris2023/cifris2023.component';
@@ -117,13 +115,15 @@ const routes: Routes = [
 		{path: "home", component: HomeKoineComponent},
 		{path: "articles-and-volumes", component: ArticlesAndVolumesComponent},
 		{path: "editorial-board", component: EditorialBoardComponent},
+		{path: "vol1", component: Vol1Component},
 	]},
 	{path: "opera24", component: Opera24Component},
 	{path: "combinatorics24", component: Combinatorics24Component},
 	{path: "wcc24", component: WCC24Component},
 	{path: "blockchain-smart-contract", component: BlockchainSmartContractComponent},
 	{path: "editoria", component: EditoriaComponent},
-	{path: "centotesi", component: CentoTesiComponent},
+	{path: "centotesi2008-2017", component: Centotesi20082017Component},
+	{path: "centotesi2014-2023", component: Centotesi20142023Component},
 	{path: "cookie-policy", component: CookiePolicyComponent},
 	{path: 'cifris23', redirectTo: '/cifris23/homeCifris23', pathMatch: 'full' },
 	{path: "cifris23", component: Cifris2023Component, children:[

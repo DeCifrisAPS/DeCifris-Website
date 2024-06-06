@@ -32,14 +32,6 @@ button{
 	}
 }
 
-h4, h3{
-	color:rgb(23, 162, 184);
-}
-
-h5{
-	color: rgb(101, 170, 101);
-}
-
 .bottomExtra{
 	margin-bottom: 3em;
 	padding-bottom: 3em;
@@ -53,4 +45,9 @@ h5{
 .noIndent ul li {
 	margin: 10px 0;
 }
-
+@media screen and (max-width: 799px) {
+	img.card-img-right{
+		width: 100%!important;
+		margin-bottom: 30px;
+	}
+}

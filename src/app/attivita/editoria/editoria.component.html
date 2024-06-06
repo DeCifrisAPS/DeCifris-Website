@@ -32,11 +32,29 @@
 
 		<h5>LIBRI IN PREPARAZIONE</h5>
 		<div class="bookcontainer">
-			<a href="">
+			<a [routerLink]="['/centotesi2014-2023']">
 				<button class="book">
 					<div id="book_container">
 						<img src="../../../assets/attivita/editoria/empty.jpg" />
 						<p class="title">Cento tesi di crittografia e codici in Italia, dal 2014 al 2023</p>
+						<p class="author">AA VV</p>
+					</div>
+				</button>
+			</a>
+			<a>
+				<button class="book">
+					<div id="book_container">
+						<img src="../../../assets/attivita/editoria/empty.jpg" />
+						<p class="title">Advanced Cryptographic Protocols</p>
+						<p class="author">AA VV</p>
+					</div>
+				</button>
+			</a>
+			<a>
+				<button class="book">
+					<div id="book_container">
+						<img src="../../../assets/attivita/editoria/empty.jpg" />
+						<p class="title">Proceedings di DeCifris Eruditorum</p>
 						<p class="author">AA VV</p>
 					</div>
 				</button>
@@ -59,21 +77,30 @@
 					</div>
 				</button>
 			</a>
+			<a [routerLink]="['/koine/articles-and-volumes']">
+				<button class="book">
+					<div id="book_container">
+						<img src="../../../assets/attivita/editoria/aavv_cifris23acta.png"/>
+						<p class="title">CIFRIS23 Acta</p>
+						<p class="author">AA VV</p>
+					</div>
+				</button>
+			</a>
+			<a [routerLink]="['/centotesi2008-2017']">
+				<button class="book">
+					<div id="book_container">
+						<img src="../../../assets/attivita/editoria/aavv_100tesi.jpg" />
+						<p class="title">Cento tesi di crittografia e codici in Italia, dal 2008 al 2017</p>
+						<p class="author">AA VV</p>
+					</div>
+				</button>
+			</a>
 			<a
 				href="https://www.aracneeditrice.eu/it/pubblicazioni/de-cifris-cryptanalysis-roberto-la-scala-marco-pedicini-andrea-visconti-stefano-barbero-marco-cianfriglia-marco-pedicini-michele-elia-roberto-la-scala-nadir-murru-giordano-sa-9791259948656.html">
 				<button class="book">
 					<div id="book_container">
 						<img src="../../../assets/attivita/editoria/aavv_cryptanalysis.jpg" />
 						<p class="title">De Cifris Cryptanalysis</p>
-						<p class="author">AA VV</p>
-					</div>
-				</button>
-			</a>
-			<a [routerLink]="['/centotesi']">
-				<button class="book">
-					<div id="book_container">
-						<img src="../../../assets/attivita/editoria/aavv_100tesi.jpg" />
-						<p class="title">Cento tesi di crittografia e codici in Italia, dal 2008 al 2017</p>
 						<p class="author">AA VV</p>
 					</div>
 				</button>
