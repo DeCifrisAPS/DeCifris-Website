@@ -127,16 +127,3 @@ p.txtbtn-txt {
 	box-shadow: 5px 5px 9px var(--cifris_purple);
 }
 
-div.alert {
-	background-color: var(--cifris_blue);
-	width: 100%;
-	margin-top: 10px;
-}
-div.alert p{
-	margin:0; padding:0;
-}
-
-div.alert:hover {
-	opacity: 0.9;
-	box-shadow: 5px 5px 9px var(--cifris_purple);
-}

@@ -1,34 +1,35 @@
-ng-sidebar-container{
+ng-sidebar-container {
 	position: fixed;
 	right: 0;
 	top: 55px;
 	height: 100%;
 }
 
-button{
-	background:none;
-	border:none;
-	outline:none;
-	color:rgb(48, 117, 128);
+button {
+	background: none;
+	border: none;
+	outline: none;
+	color: rgb(48, 117, 128);
 }
 
-::ng-deep .ng-sidebar{
+::ng-deep .ng-sidebar {
 	background-color: aliceblue;
 	width: 300px !important;
 	padding: 2em 1em;
-}​
+}
 
-@media screen and (max-width: 799px) {
+​ @media screen and (max-width: 799px) {
 	#right-sidebar {
-		 display: none !important;
+		display: none !important;
 	}
 }
 
-h4, h3{
-	color:rgb(23, 162, 184);
+h4,
+h3 {
+	color: rgb(23, 162, 184);
 }
 
-.bottomExtra{
+.bottomExtra {
 	margin-bottom: 3em;
 	padding-bottom: 3em;
 }
@@ -40,4 +41,20 @@ h4, h3{
 
 .noIndent ul li {
 	margin: 10px 0;
+}
+
+div.alert {
+	background-color: var(--cifris_blue);
+	width: 100%;
+	margin-top: 10px;
+}
+
+div.alert p {
+	margin: 0;
+	padding: 0;
+}
+
+div.alert:hover {
+	opacity: 0.9;
+	box-shadow: 5px 5px 9px var(--cifris_purple);
 }
