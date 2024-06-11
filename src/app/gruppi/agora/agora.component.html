@@ -1,0 +1,108 @@
+<ng-sidebar-container>
+    <ng-sidebar opened="true" position="left" id="right-sidebar" mode="push" [autoCollapseWidth]="799">
+        <!-- Ai posteri: in caso voleste inserire nuovo contenuto nella sidebar, questo è il posto -->
+        <ul class="noIndent" align="left">
+            <!-- Utilizziamo questo trick per evitare di rendere visibile l'autofocus al lettore. -->
+            <li style="display:none">
+                <button autofocus="autofocus"></button>
+            </li>
+            <li>
+                <button class="btn btn-outline-info" routerLink="/seminariLocali">
+                    Homepage Seminari
+                </button>
+            </li>
+            <li>
+                <button class="btn btn-outline-info" (click)="goTo('prossimi')">
+                    Prossimi Seminari
+                </button>
+            </li>
+            <li>
+                <button class="btn btn-outline-info" (click)="goTo('passati')">
+                    Seminari Passati
+                </button>
+            </li>
+        </ul>
+    </ng-sidebar>
+    <div ng-sidebar-content class="container bottomExtra">
+        <br>
+        <div class="mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>DE CIFRIS AGORA</h3>
+                    <p>
+                        Partendo dal concetto greco di ἀγορά (assemblea, raduno), la mailing list <b>De Cifris Agora</b>
+                        permette ai soci di proporre i propri seminari a tutta la comunità De Cifris con lo scopo di
+                        aiutare a diffondere la crittografia e valorizzare le iniziative divulgative.
+                    </p>
+                    <h5>Ricevere notizie</h5>
+                    <p>
+                        Per iscrivervi alla mailing list e ricevere gli aggiornamenti,
+                        scrivete ad <a href="mailto:agora@decifris.it">agora@decifris.it</a>. L'accesso è libero per
+                        i soci De Cifris ed i cittadini extra-UE.
+                    </p>
+
+                    <h5>Proporre un seminario</h5>
+                    <p>
+                        La mailing list è volta a seminari interessati a ricevere pubblicità tramite i nostri canali. Il
+                        proponente deve verificare che il seminario soddisfi i requisiti ed inviare una mail a
+                        <a href="mailto:agora@decifris.it">agora@decifris.it</a> specificando:
+                    </p>
+                    <ul>
+                        <li>Titolo e data del seminario</li>
+                        <li>Nome del proponente e degli speaker</li>
+                        <li>Modalità di fruizione per gli iscritti ad Agora</li>
+                    </ul>
+                    <h5>Requisiti per la sottomissione</h5>
+                    <p> Per rispettare la filosofia di Agora, serve soddisfare questi requisiti:</p>
+                    <ol>
+                        <li>
+                            il seminario deve essere gratuito ed aperto a tutti, al netto della capienza della venue
+                        </li>
+                        <li>
+                            il proponente deve essere un socio De Cifris (<b>non è necessario per gli speaker</b>)
+                        </li>
+                        <li>
+                            il seminario deve essere organizzato da un ente di ricerca, anche piccolo
+                        </li>
+                    </ol>
+                    <p>
+                        Non vi sono vincoli sugli speaker o limitazioni strette sui contenuti. Non essendo gestiti da De
+                        Cifris, i proponenti si assumono la responsabilità di questa fase di verifica.
+                    </p>
+                </div>
+            </div>
+            <hr id="prossimi">
+            <h4>PROSSIMI SEMINARI</h4>
+            <ul>
+
+            </ul>
+            <ul>
+
+            </ul>
+            <hr id="passati">
+            <h4>SEMINARI PASSATI</h4>
+            <ul>
+                <!--
+                    TENGO QUESTO COME ESEMPIO DI ITEM PER I POSTERI
+                    - L
+                <li>
+                    <b> 19 Gennaio 2022 -- 15:00 </b>
+                    <ul>
+                        <li>
+                            <b>Fadi Barbara</b> -- Università di Torino <br>
+                            <i>"Digital signature for interoperability and privacy in
+                                blockchains"</i><br>
+                            <a href=".././../../assets/attivita/gruppi/cifrisChain/
+								FadiBarbara.pdf">Locandina</a> --
+                            <a href="../../../assets/attivita/gruppi/cifrisChain/Allegato1_
+								CifrisChain_SLIDE_Barbara.pdf">Slide</a> --
+                            <a href="https://www.youtube.com/watch?v=6RU7xDmz7Ok">Video</a>
+                            <br>
+                        </li>
+                    </ul>
+                </li>
+                -->
+            </ul>
+        </div>
+    </div>
+</ng-sidebar-container>

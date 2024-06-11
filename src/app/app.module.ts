@@ -151,6 +151,7 @@ import { EventiPatrocinatiComponent } from './eventi/eventi-patrocinati/eventi-p
 import { VenueAccomodationComponent24 } from './cifris/cifris2024/venue-accomodation/venue-accomodation.component';
 import { Vol1Component } from './attivita/editoria/koine/articles-and-volumes/vol1/vol1.component';
 import { Centotesi20142023Component } from './attivita/centotesi20142023/centotesi20142023.component';
+import { AgoraComponent } from './gruppi/agora/agora.component';
 
 @NgModule({
 	declarations: [
@@ -292,6 +293,7 @@ import { Centotesi20142023Component } from './attivita/centotesi20142023/centote
 		Combinatorics24Component,
 		WCC24Component,
 		NotizieComponent,
+  AgoraComponent,
 	],
 	imports: [
 		BrowserModule,
