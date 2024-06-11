@@ -1,0 +1,15 @@
+{
+    "id": 3,
+    "titolo": "CIFRIS23: convegno nazionale di crittografia",
+    "contenuto": "CIFRIS23 è un evento internazionale ed il nostro primo convegno nazionale in Italia, sostenuto e organizzato da De Cifris con lo scopo di riunire ricercatori nel campo della crittografia, professionisti, sviluppatori e entusiasti per favorire lo scambio di tecniche, strumenti, esperienze e idee.",
+    "autore": "",
+    "dataPubblicazione": "12 marzo 2023",
+    "immagine":"",
+    "links": [{
+        "nome": "Iscriviti a CIFRIS23",
+        "url": "https://www.decifris.it/cifris23/registration"
+    },{
+        "nome": "Leggi su LinkedIn",
+        "url": "https://www.linkedin.com/posts/de-cifris-associazione-nazionale-8274501a5_first-cfp-cifris24-activity-7167893521591386112-1TkD"
+    }]
+}

@@ -1,0 +1,15 @@
+{
+    "id": 2,
+    "titolo": "De Componendis Cifris apre le iscrizioni!",
+    "contenuto": "Sono finalmente aperte le adesioni alla nostra Associazione. Siete tutti benvenuti, professori e studenti, esperti e semplici curiosi. Con 5 euro se avete meno di 30 anni, solo 20 euro per chiunque altro, entrate così nella più grande community italiana di crittografia.",
+    "autore": "",
+    "dataPubblicazione": "14 febbraio 2023",
+    "immagine":"",
+    "links": [{
+        "nome": "Associati a De Cifris",
+        "url": "https://www.decifris.it/associarsi"
+    },{
+        "nome": "Leggi su LinkedIn",
+        "url": "https://it.linkedin.com/posts/de-cifris-associazione-nazionale-8274501a5_decifriamo-insieme-activity-7031199679006552064-fWeE"
+    }]
+}

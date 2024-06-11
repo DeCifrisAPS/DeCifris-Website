@@ -1,0 +1,16 @@
+{
+    "id": 11,
+    "titolo": "Nasce la collana De Cifris Koine",
+    "sottotitolo": "", 
+    "contenuto": "Oggi apriamo la collana De Cifris Koine con il volume degli acta del nostro primo congresso, CIFRIS23. Koine si prefigge lo scopo di collegare culture e persone in un'unica comunità di crittografi.",
+    "autore": "",
+    "dataPubblicazione": "04 giugno 2024",
+    "immagine":"../../../assets/koine/Vol1: CIFRIS23 ACTA.png",
+    "links": [{
+        "nome": "Leggi su LinkedIn",
+        "url": "https://www.linkedin.com/posts/de-cifris-associazione-nazionale-8274501a5_prima-locandina-koine-activity-7203713323190661120-gzB9"
+    },{
+        "nome": "Visita il sito di Koine",
+        "url": "http://www.decifris.it/koine"
+    }]
+}

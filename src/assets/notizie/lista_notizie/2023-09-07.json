@@ -1,0 +1,18 @@
+{
+    "id": 5,
+    "titolo": "Due nuovi corsi (più uno!) su crittografia e blockchain",
+    "contenuto": "Siamo lieti di annunciare l'apertura di due nuovi corsi per questo autunno. L'iscrizione è gratuita per i soci, che riceveranno un attestato con il superamento di un esame finale. De Cifris Trends in Modern Cryptography 2023: Cryptographic Protocols è un corso di medio-alto livello su metodi e tecniche utilizzate nella creazione ed applicazione di protocolli moderni, mirato ad un pubblico di interessati, esperti, dottorandi, professionisti... De Cifris Young to Young è un nuovo formato di corsi tenuti da giovani docenti ed esperti e mirato a giovani ed entusiasti. L'edizione di quest'anno riguarderà il mondo delle Blockchain e degli Smart Contracts. Infine <i>Trends in Modern Cryptography 2022: Post Quantum and Cloud Cryptography verrà riproposto per chi non ha potuto fruirne l'anno scorso.",
+    "autore": "",
+    "dataPubblicazione": "7 settembre 2023",
+    "immagine":"",
+    "links": [{
+        "nome": "Trends22bis",
+        "url": "https://www.decifris.it/trends22bis"
+    },{
+        "nome": "Trends23",
+        "url": "https://www.decifris.it/trends23"
+    },{
+        "nome": "Y2Y: Blockchain & Smart",
+        "url": "https://www.decifris.it/blockchain-smart-contract"
+    }]
+}

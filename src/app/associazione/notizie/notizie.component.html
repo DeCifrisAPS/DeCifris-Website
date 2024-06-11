@@ -20,17 +20,6 @@
 					Statuto
 				</button>
 			</li>
-			<!--
-			<li>
-				<button class="btn btn-outline-info" routerLink="/aziende">
-					Come associarsi
-				</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" routerLink="/aziende">
-					Come affiliarsi
-				</button>
-			</li> -->
 		</ul>
 	</ng-sidebar>
 	<div ng-sidebar-content class="container bottomExtra">
@@ -43,228 +32,25 @@
 				LinkedIn</a>.
 		</p>
 		<hr>
-
-		<!--
-			##########################################
-			TEMPLATE NOTIZIE:
-
-			<div class="card" style="margin-bottom: 20px;">
-            <div class="card-body">
-              <h5 class="card-title">    TITOLO    </h5>
-              <h6 class="card-subtitle mb-2 text-muted">    DATA    </h6>
-              <p class="card-text">
-					TESTO
-			  </p>
-              <a href="LINK" class="card-link">DESCRIZIONE</a>
-            </div>
-        	############################################
-		-->
-		<div class="card" style="margin-bottom: 20px; box-shadow: 0px 0px 2px 2px gray;">
-			<div class="card-body">
-				<h5 class="card-title">Cento Tesi di Crittografia e Codici in Italia: 2017-2023</h5>
-				<h6 class="card-subtitle mb-2 text-muted">07 giugno 2024</h6>
-				<p class="card-text">
-					Annunciata la pubblicazione del secondo volume di <i>Cento Tesi di Crittografia e Codici in
-						Italia</i>, stavolta dal 2017 al 2023. Tutti i nostri soci possono partecipare!<br>
-					Questo sarà il sesto volume di De Cifris Koine, la collana pubblicata dalla nostra casa editrice De
-					Cifris Press.
-				</p>
-				<a [routerLink]="[ '/centotesi2014-2023']" class="card-link">Vedi la pagina di Cento Tesi</a>
-				<a class="card-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7205156305471172608">Leggi su LinkedIn</a>
-				<a [routerLink]="[ '/koine']" class="card-link">Vedi Koine</a>
+		<div *ngFor="let notizia of notizie" class="notizie-container">
+			<div class="notizia">
+				<div *ngIf="notizia.immagine" class="img-container">
+					<img [src]="notizia.immagine" alt="Immagine di {{ notizia.titolo }}" class="card-img-right">
+				</div>
+				<h5 class="title">{{ notizia.titolo }}</h5>
+				<p class="subtitle">{{ notizia.sottotitolo }}</p>
+				<p class="date">{{ notizia.dataPubblicazione }}</p>
+				<p class="content">{{ notizia.contenuto }}</p>
 			</div>
-		</div>
-		<div class="card" style="margin-bottom: 20px; box-shadow: 0px 0px 2px 2px gray;">
-			<div class="card-body">
-				<h5 class="card-title">Nasce la collana "De Cifris Koine"</h5>
-				<h6 class="card-subtitle mb-2 text-muted">04 giugno 2024</h6>
-				<img class="card-img-right" src="../../../assets/koine/Vol1: CIFRIS23 ACTA.png"
-					style="width: 25vw; padding: 1vw" alt="DeCifris alla Camera">
-				<p class="card-text">
-				<p class="card-text">
-					Oggi apriamo la collana <i>De Cifris Koine</i> con il volume degli acta del nostro primo
-					congresso, CIFRIS23. Koine si prefigge lo scopo di collegare culture e persone in un'unica comunità
-					di crittografi.
-				</p>
-				<a href="https://www.linkedin.com/posts/de-cifris-associazione-nazionale-8274501a5_prima-locandina-koine-activity-7203713323190661120-gzB9"
-					class="card-link">Leggi su LinkedIn</a>
-				<a href="http://www.decifris.it/koine" class="card-link">Visita il sito Koine</a>
+			<div *ngIf="notizia.links && notizia.links.length > 0" class="links-container">
+				<div *ngIf="notizia.links && notizia.links.length > 0" class="links-container">
+					<div *ngFor="let link of notizia.links" class="links">
+						<a *ngIf="link.url" [href]="link.url" target="_blank">{{ link.nome }}</a>
+						<a *ngIf="link.routerLink" [routerLink]="link.routerLink">{{ link.nome }}</a>
+					</div>
+				</div>
 			</div>
+			<hr>
 		</div>
-
-		<div class="card" style="margin-bottom: 20px; box-shadow: 0px 0px 2px 2px gray;">
-			<div class="card-body">
-				<h5 class="card-title">Crittografia e Imprese per il Paese: incontro alla Camera dei Deputati</h5>
-				<h6 class="card-subtitle mb-2 text-muted">10 maggio 2024</h6>
-				<img class="card-img-right" src="../../assets/attivita/Camera/fotoCamera10maggio.jpeg"
-					style="width: 25vw; padding: 1vw" alt="DeCifris alla Camera">
-				<p class="card-text">
-				<p class="card-text">
-					Si è appena svolto un nostro convegno presso la Camera dei Deputati con
-					lo scopo di incentivare la collaborazione tra le Istituzioni
-					e le imprese più innovative, soprattutto in questo momento
-					storico in cui è più cruciale che mai sostenere la difesa del
-					Paese proteggendo i suoi dati e le sue informazioni.
-				</p>
-				<a href="https://it.linkedin.com/posts/de-cifris-associazione-nazionale-8274501a5_locandina-evento-imprese-crittografia-activity-7183528855704391682-kS3K"
-					class="card-link">Leggi su LinkedIn</a>
-			</div>
-		</div>
-
-		<div class="card" style="margin-bottom: 20px; box-shadow: 0px 0px 2px 2px gray;">
-			<div class="card-body">
-				<h5 class="card-title">Censimento soci De Cifris</h5>
-				<h6 class="card-subtitle mb-2 text-muted">25 marzo 2024</h6>
-				<p class="card-text">
-				<p class="card-text">
-					Abbiamo svolto un censimento sui nostri
-					soci che lavorano nel mondo accademico italiano. Potete vedere dati aggregati su sedi e
-					settori.
-				</p>
-				<a href="https://drive.google.com/file/d/1B1r-a8ry3WpPL7ctfj0INSJL9Ww25qTK/view?usp=drive_link"
-					class="card-link">Vedi il documento</a>
-			</div>
-		</div>
-
-		<div class="card" style="margin-bottom: 20px; box-shadow: 0px 0px 2px 2px gray;">
-			<div class="card-body">
-				<h5 class="card-title">De Cifris Eruditorum: la Crittografia nella società, tra Storia e Diritto</h5>
-				<h6 class="card-subtitle mb-2 text-muted">01 marzo 2024</h6>
-				<p class="card-text">
-					Il ciclo di seminari <i>De Cifris Eruditorum</i> torna con un evento congiunto tra De Componendis Cifris
-					ed il Dipartimento di Giurisprudenza dell'Università di Trento.
-					Il 15 marzo 2024 si terrà <i>"la Crittografia nella società, tra Storia e Diritto"</i>, è possibile
-					seguire in presenza o a distanza. Contattate segreteria@decifris.it per maggiori informazioni.
-				</p>
-				<a href="https://it.linkedin.com/posts/de-cifris-associazione-nazionale-8274501a5_prima-locandina-eruditorum-activity-7169340703486029824-YcYJ"
-					class="card-link">Leggi su LinkedIn</a>
-			</div>
-		</div>
-
-
-		<div class="card" style="margin-bottom: 20px; box-shadow: 0px 0px 2px 2px gray;">
-			<div class="card-body">
-				<h5 class="card-title">CIFRIS24: convegno nazionale di crittografia</h5>
-				<h6 class="card-subtitle mb-2 text-muted">26 febbraio 2024</h6>
-				<p class="card-text">
-					Siamo lieti di invitarvi a sottomettere i vostri articoli al nostro secondo grande evento: CIFRIS24.
-					Nella nostra bellissima capitale, la città eterna di Roma, terremo un incontro di tre giorni a fine
-					settembre dove molti eccellenti crittografi presenteranno i loro risultati.
-				</p>
-				<a href="https://www.decifris.it/cifris24/registration" class="card-link">Iscriviti a CIFRIS24</a>
-				<a href="https://www.linkedin.com/posts/de-cifris-associazione-nazionale-8274501a5_first-cfp-cifris24-activity-7167893521591386112-1TkD"
-					class="card-link">Leggi su LinkedIn</a>
-			</div>
-		</div>
-
-		<div class="card" style="margin-bottom: 20px; box-shadow: 0px 0px 2px 2px gray;">
-			<div class="card-body">
-				<h5 class="card-title">CIFRIS23: primo convegno nazionale di crittografia</h5>
-				<h6 class="card-subtitle mb-2 text-muted">14 dicembre 2023</h6>
-				<img class="card-img-right" src="../../assets/attivita/convegnoAnnuale/cifris23.jpeg"
-					style="width: 25vw; padding: 1vw" alt="ifris23">
-				<p class="card-text">
-				<p class="card-text">
-					Inizia oggi CIFRIS23, il primo congresso di De Cifris che per la prima volta chiama a raccolta tutta
-					la crittografia italiana.
-					Nella prestigiosa cornice della sede romana di Consob, ci attendono due giornate interessantissime.
-				</p>
-				<a href="https://www.decifris.it/cifris23/program" class="card-link">Vedi il programma!</a>
-				<a href="https://www.consob.it/documents/1912911/2058255/20231214-15_CIFRIS23.pdf/0651a612-66c6-a225-707d-ad5d91f40064"
-					class="card-link">Locandina di CONSOB</a>
-
-			</div>
-		</div>
-
-		<div class="card" style="margin-bottom: 20px; box-shadow: 0px 0px 2px 2px gray;">
-			<div class="card-body">
-				<h5 class="card-title">Due nuovi corsi (più uno!) su crittografia e blockchain</h5>
-				<h6 class="card-subtitle mb-2 text-muted">7 settembre 2023</h6>
-				<p class="card-text">
-					Siamo lieti di annunciare l'apertura di due nuovi corsi per questo autunno.
-					L'iscrizione è gratuita per i soci, che riceveranno un attestato con il superamento di un esame
-					finale.
-					<br>
-					<i>De Cifris Trends in Modern Cryptography 2023: Cryptographic Protocols</i> è un corso di
-					medio-alto livello su metodi e tecniche utilizzate nella creazione ed applicazione
-					di protocolli moderni, mirato ad un pubblico di interessati, esperti, dottorandi, professionisti...
-					<br>
-					<i>De Cifris Young to Young</i> è un nuovo formato di corsi tenuti da giovani
-					docenti ed esperti e mirato a giovani ed entusiasti. L'edizione di quest'anno riguarderà
-					il mondo delle Blockchain e degli Smart Contracts.
-					<br>
-					Infine <i>Trends in Modern Cryptography 2022: Post Quantum and Cloud Cryptography</i> verrà
-					riproposto per chi non ha potuto fruirne l'anno scorso.
-				</p>
-				<a href="https://www.decifris.it/trends22bis" class="card-link">Trends22bis</a>
-				<a href="https://www.decifris.it/trends23" class="card-link">Trends23</a>
-				<a href="https://www.decifris.it/blockchain-smart-contract" class="card-link">Y2Y: Blockchain & Smart
-					Contracts</a>
-			</div>
-		</div>
-
-		<div class="card" style="margin-bottom: 20px; box-shadow: 0px 0px 2px 2px gray;">
-			<div class="card-body">
-				<h5 class="card-title">Un Centro Nazionale di crittografia al servizio del Paese: incontro alla camera
-					dei Deputati</h5>
-				<h6 class="card-subtitle mb-2 text-muted">17 aprile 2023</h6>
-				<img class="card-img-right" src="../../assets/attivita/Camera/fotoCamera17aprile.jpeg"
-					style="width: 25vw; padding: 1vw" alt="DeCifris alla Camera">
-				<p class="card-text">
-					Oggi, assieme a relatori delle Istituzioni e del mondo Accademico,
-					abbiamo tenuto un intervento alla Sala del Refettorio della Camera dei Deputati
-					per discutere il ruolo che un centro nazionale di crittografia potrebbe avere
-					per il nostro Paese.
-				</p>
-				<a href="https://it.linkedin.com/posts/de-cifris-associazione-nazionale-8274501a5_locandina-evento-imprese-crittografia-activity-7183528855704391682-kS3K"
-					class="card-link">Leggi su LinkedIn</a>
-			</div>
-		</div>
-
-		<div class="card" style="margin-bottom: 20px; box-shadow: 0px 0px 2px 2px gray;">
-			<div class="card-body">
-				<h5 class="card-title">CIFRIS23: convegno nazionale di crittografia</h5>
-				<h6 class="card-subtitle mb-2 text-muted">12 marzo 2023</h6>
-				<p class="card-text">
-					CIFRIS23 è un evento internazionale ed il nostro primo convegno nazionale in Italia,
-					sostenuto e organizzato da De Cifris con lo scopo di riunire ricercatori nel campo
-					della crittografia, professionisti, sviluppatori e entusiasti per
-					favorire lo scambio di tecniche, strumenti, esperienze e idee.
-				</p>
-				<a href="https://www.decifris.it/cifris23/registration" class="card-link">Iscriviti a CIFRIS23</a>
-				<a href="https://www.linkedin.com/posts/de-cifris-associazione-nazionale-8274501a5_first-cfp-cifris24-activity-7167893521591386112-1TkD"
-					class="card-link">Leggi su LinkedIn</a>
-			</div>
-		</div>
-
-		<div class="card" style="margin-bottom: 20px; box-shadow: 0px 0px 2px 2px gray;">
-			<div class="card-body">
-				<h5 class="card-title">De Componendis Cifris apre le iscrizioni!</h5>
-				<h6 class="card-subtitle mb-2 text-muted">14 febbraio 2023</h6>
-				<p class="card-text">
-					Sono finalmente aperte le adesioni alla nostra Associazione.
-					Siete tutti benvenuti, professori e studenti, esperti e semplici curiosi.
-					Con 5 euro se avete meno di 30 anni, solo 20 euro per chiunque altro, entrate così nella più grande
-					community italiana di crittografia.
-				</p>
-				<a href="https://www.decifris.it/associarsi" class="card-link">Associati a DeCifris</a>
-				<a href="https://it.linkedin.com/posts/de-cifris-associazione-nazionale-8274501a5_decifriamo-insieme-activity-7031199679006552064-fWeE"
-					class="card-link">Leggi su LinkedIn</a>
-			</div>
-		</div>
-
-		<div class="card" style="margin-bottom: 20px; box-shadow: 0px 0px 2px 2px gray;">
-			<div class="card-body">
-				<h5 class="card-title">Fondata De Componendis Cifris APS</h5>
-				<h6 class="card-subtitle mb-2 text-muted">21 dicembre 2022</h6>
-				<p class="card-text">
-					Il 21 dicembre 2022, partendo dall'Iniziativa Nazionale De Componendis Cifris,
-					si è costituita l’associazione denominata "De Componendis Cifris
-					Associazione di Promozione Sociale" o, in forma abbreviata "De Cifris APS".
-				</p>
-				<a href="https://www.decifris.it/statuto" class="card-link">Leggi lo statuto</a>
-			</div>
-		</div>
-
 	</div>
 </ng-sidebar-container>

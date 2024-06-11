@@ -1,0 +1,15 @@
+{
+    "id": 7,
+    "titolo": "CIFRIS24: secondo convegno nazionale di crittografia",
+    "contenuto": "Siamo lieti di invitarvi a sottomettere i vostri articoli al nostro secondo grande evento: CIFRIS24. Nella nostra bellissima capitale, la città eterna di Roma, terremo un incontro di tre giorni a fine settembre dove molti eccellenti crittografi presenteranno i loro risultati.",
+    "autore": "",
+    "dataPubblicazione": "26 febbraio 2024",
+    "immagine":"",
+    "links": [{
+        "nome": "Iscriviti a CIFRIS24",
+        "url": "https://www.decifris.it/cifris24/registration"
+    },{
+        "nome": "Leggi su LinkedIn",
+        "url": "https://www.linkedin.com/posts/de-cifris-associazione-nazionale-8274501a5_first-cfp-cifris24-activity-7167893521591386112-1TkD"
+    }]
+}

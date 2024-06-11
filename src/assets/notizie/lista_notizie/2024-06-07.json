@@ -1,0 +1,19 @@
+{
+    "id": 12,
+    "titolo": "Cento Tesi di Crittografia e Codici in Italia: 2017-2023",
+    "sottotitolo": "Call per la partecipazione al secondo volume.", 
+    "contenuto": "Annunciata la pubblicazione del secondo volume di Cento Tesi di Crittografia e Codici in Italia, stavolta dal 2017 al 2023. Tutti i nostri soci possono partecipare! Questo sarà il sesto volume di De Cifris Koine, la collana pubblicata dalla nostra casa editrice De Cifris Press.",
+    "autore": "",
+    "dataPubblicazione": "07 giugno 2024",
+    "immagine":"",
+    "links": [{
+        "nome": "Leggi su LinkedIn",
+        "url": "https://www.linkedin.com/feed/update/urn:li:activity:7205156305471172608"
+    },{
+        "nome": "Vedi la pagina di Cento Tesi",
+        "routerLink":  "/centotesi2014-2023"
+    },{
+        "nome": "Vedi la collana Koine",
+        "routerLink":  "/koine"
+    }]
+}
