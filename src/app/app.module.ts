@@ -152,6 +152,7 @@ import { EventiPatrocinatiComponent } from './eventi/eventi-patrocinati/eventi-p
 import { VenueAccomodationComponent24 } from './cifris/cifris2024/venue-accomodation/venue-accomodation.component';
 import { Centotesi20142023Component } from './attivita/centotesi20142023/centotesi20142023.component';
 import { AgoraComponent } from './gruppi/agora/agora.component';
+import { Vol2Component } from './attivita/editoria/koine/vol2/vol2.component';
 
 @NgModule({
 	declarations: [
@@ -260,6 +261,7 @@ import { AgoraComponent } from './gruppi/agora/agora.component';
 		//Koine
 		KoineComponent,
 		HomeKoineComponent,
+		ArticlesAndVolumesComponent,
 		Vol1Component,
 		//Centotesi
 		Centotesi20082017Component,
@@ -294,6 +296,7 @@ import { AgoraComponent } from './gruppi/agora/agora.component';
 		WCC24Component,
 		NotizieComponent,
   		AgoraComponent,
+    Vol2Component,
 	],
 	imports: [
 		BrowserModule,
