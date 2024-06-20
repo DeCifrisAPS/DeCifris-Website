@@ -81,7 +81,6 @@ import { KoineComponent } from './attivita/editoria/koine/koine.component';
 import { HomeKoineComponent } from './attivita/editoria/koine/home-koine/home-koine.component';
 import { ArticlesAndVolumesComponent } from './attivita/editoria/koine/articles-and-volumes/articles-and-volumes.component';
 import { EditorialBoardComponent } from './attivita/editoria/koine/editorial-board/editorial-board.component';
-import { Vol1Component } from './attivita/editoria/koine/articles-and-volumes/vol1/vol1.component';
 
 // varie CENTO TESI
 import { Centotesi20082017Component } from './attivita/centotesi20082017/centotesi20082017.component';
@@ -123,7 +122,6 @@ const routes: Routes = [
 			{ path: "home", component: HomeKoineComponent },
 			{ path: "articles-and-volumes", component: ArticlesAndVolumesComponent },
 			{ path: "editorial-board", component: EditorialBoardComponent },
-			{ path: "vol1", component: Vol1Component },
 		]
 	},
 	{ path: "opera24", component: Opera24Component },

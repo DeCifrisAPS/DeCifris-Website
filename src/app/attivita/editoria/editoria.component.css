@@ -46,6 +46,7 @@ ng-sidebar-container{
 
 
 div.bookcontainer{
+	vertical-align: top;
 	width: 100%;
 	justify-content: center;
 	align-items: center;
@@ -55,6 +56,7 @@ div.bookcontainer{
 }
 
 .book {
+	vertical-align: top;
 	color: rgb(48, 117, 128);
 	width: 150px;
 	margin: 0 auto;
@@ -77,6 +79,7 @@ div.bookcontainer{
 	width: 120px;
 	height: 150px;
 	object-fit: cover;
+	border: solid 1px var(--cifris_azure);
 }
 
 #book_container p.author {

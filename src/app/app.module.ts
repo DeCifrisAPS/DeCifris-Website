@@ -121,6 +121,7 @@ import { KoineComponent } from './attivita/editoria/koine/koine.component';
 import { HomeKoineComponent } from './attivita/editoria/koine/home-koine/home-koine.component';
 import { ArticlesAndVolumesComponent } from './attivita/editoria/koine/articles-and-volumes/articles-and-volumes.component';
 import { EditorialBoardComponent } from './attivita/editoria/koine/editorial-board/editorial-board.component';
+import { Vol1Component } from './attivita/editoria/koine/vol1/vol1.component';
 
 // ./cifris/cifris2023
 import { Cifris2023Component } from './cifris/cifris2023/cifris2023.component';
@@ -149,7 +150,6 @@ import { WCC24Component } from './hosting/wcc24/wcc24.component';
 import { NotizieComponent } from './associazione/notizie/notizie.component';
 import { EventiPatrocinatiComponent } from './eventi/eventi-patrocinati/eventi-patrocinati/eventi-patrocinati.component';
 import { VenueAccomodationComponent24 } from './cifris/cifris2024/venue-accomodation/venue-accomodation.component';
-import { Vol1Component } from './attivita/editoria/koine/articles-and-volumes/vol1/vol1.component';
 import { Centotesi20142023Component } from './attivita/centotesi20142023/centotesi20142023.component';
 import { AgoraComponent } from './gruppi/agora/agora.component';
 
@@ -293,7 +293,7 @@ import { AgoraComponent } from './gruppi/agora/agora.component';
 		Combinatorics24Component,
 		WCC24Component,
 		NotizieComponent,
-  AgoraComponent,
+  		AgoraComponent,
 	],
 	imports: [
 		BrowserModule,
