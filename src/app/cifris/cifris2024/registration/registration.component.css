@@ -88,15 +88,14 @@ input[type=submit] {
 
 
 table.fee-table {
-	width:90%;
+	width:95%;
 	border-collapse: collapse;
 	font-size: 0.9em;
 	font-family: sans-serif;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 	border-radius: 10px 10xp 0 0;
 	margin: 10px auto 30px auto;
 	align-content: center;
-	background-color: var(--cifris_azure);
 }
 
 .fee-table thead tr th {
@@ -108,7 +107,7 @@ table.fee-table {
 }
 
 td.item {
-	width: 80%;
+	width: 85%;
 	vertical-align: top;
 	padding-left: 30px;
 	padding-top: 10px;
@@ -118,9 +117,16 @@ td.item {
 td.fee {
 	vertical-align: top;
 	text-align: right;
+	width: 15%;
 	padding-top: 10px;
-	padding-bottom: 10px;
-	width: 120px;
 	padding-right: 30px;
 	font-weight: bold;
+}
+
+.fee-table tbody tr:nth-of-type(even) {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.fee-table tbody tr:nth-of-type(odd) {
+	background-color: rgba(255, 255, 255, 0.5);
 }
