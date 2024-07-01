@@ -4,7 +4,7 @@ ng-sidebar-container {
 	top: 55px;
 	height: 100%;
 	background: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)),
-		url(../../../assets/attivita/convegnoAnnuale/teatro_cifris24.jpg);
+		url("../../../assets/attivita/convegnoAnnuale/2024 - cifris24/roma2.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
