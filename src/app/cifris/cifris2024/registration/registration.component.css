@@ -24,13 +24,7 @@ button{
 	}
 }
 
-h4, h3{
-	color: rgb(23, 162, 184);
-}
 
-h5{
-	color: rgb(101, 170, 101);
-}
 .bottomExtra{
 	margin-bottom: 3em;
 	padding-bottom: 3em;
@@ -90,4 +84,43 @@ input[type=submit] {
 	background-color: lightblue;
 	padding: 20px;
 	width: 100%;
+}
+
+
+table.fee-table {
+	width:90%;
+	border-collapse: collapse;
+	font-size: 0.9em;
+	font-family: sans-serif;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	border-radius: 10px 10xp 0 0;
+	margin: 10px auto 30px auto;
+	align-content: center;
+	background-color: var(--cifris_azure);
+}
+
+.fee-table thead tr th {
+	background-color: var(--cifris_blue);
+	color: #ffffff;
+	text-align: center;
+	font-weight: 700;
+	padding: 10px;
+}
+
+td.item {
+	width: 80%;
+	vertical-align: top;
+	padding-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+td.fee {
+	vertical-align: top;
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 120px;
+	padding-right: 30px;
+	font-weight: bold;
 }
