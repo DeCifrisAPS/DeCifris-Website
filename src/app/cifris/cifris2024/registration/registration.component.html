@@ -6,7 +6,9 @@
 <div class="row mt-3 mr-1 ml-1">
 	<div class="col-md-12">
 		<p>
-			The fees of CIFRIS24 are the following:
+			The fees of CIFRIS24 are the following. <br>
+			Fees are lower for De Cifris members. Membership costs 20 EUR, reduced to 5 EUR for young members. It is restricted to EU citizens.
+		
 		</p>
 		<h4>MAIN EVENT</h4>
 		September 25th and 26th. The fee covers
@@ -36,9 +38,9 @@
 					<td class="fee">200 EUR</td>
 				</tr>
 				<tr>
-					<td class="item"><b>members of De Cifris </b> <br> “ordinario”, ”benemerito”, “fondatore”, "giovane"
+					<td class="item"><b style="color:orangered">members of De Cifris </b> <br> “ordinario”, ”benemerito”, “fondatore”, "giovane"
 					</td>
-					<td class="fee">130 EUR</td>
+					<td class="fee" style="color:orangered">130 EUR</td>
 				</tr>
 			</tbody>
 		</table>
@@ -72,9 +74,9 @@
 					<td class="fee">110 EUR</td>
 				</tr>
 				<tr>
-					<td class="item"><b>members of De Cifris </b> <br> “ordinario”, ”benemerito”, “fondatore”, "giovane"
+					<td class="item"><b style="color:orangered">members of De Cifris </b> <br> “ordinario”, ”benemerito”, “fondatore”, "giovane"
 					</td>
-					<td class="fee">60 EUR</td>
+					<td class="fee" style="color:orangered">60 EUR</td>
 				</tr>
 			</tbody>
 		</table>
@@ -108,9 +110,9 @@
 					<td class="fee">250 EUR</td>
 				</tr>
 				<tr>
-					<td class="item"><b>members of De Cifris </b> <br> “ordinario”, ”benemerito”, “fondatore”, "giovane"
+					<td class="item"><b style="color:orangered">members of De Cifris </b> <br> “ordinario”, ”benemerito”, “fondatore”, "giovane"
 					</td>
-					<td class="fee">160 EUR</td>
+					<td class="fee" style="color:orangered">160 EUR</td>
 				</tr>
 			</tbody>
 		</table>
@@ -122,16 +124,13 @@
 		</p>
 		<!-------------------------------------------------------------------->
 		<hr>
-		<p>
-			PS: membership of De Cifris costs 20 euros "regular" and 5 euros "young", but it is reserved to EU citizens.
-		</p>
 		<p style="color: red;">
 			To register, please send an email to <a href="mailto:cifris24@decifris.it">cifris24@decifris.it</a>. <br>
 			In the email please specify whether you pay yourself or your company/institution pays for you (in that case,
 			please send us its fiscal data). <br>
 		</p>
 		<p style="color: red;">
-			<b>Registration Deadline September 2nd 2024.</b>
+			<b>Registration Deadline September 9th 2024.</b>
 		</p>
 	</div>
 </div>
@@ -144,38 +143,41 @@
 	</div>
 	<form id="payForm" class="form" method="post" (ngSubmit)="checkAndPay()">
 		<label> CIFRIS24 participation </label>
+		<p style="color: red;text-align: center;width: 100%; font-weight: bolder;">
+			REGISTRATION WILL OPEN ON JULY 8TH 2024
+		</p>
 		<div>
 			<input type="radio" id="all" name="participation" checked="checked" (click)=setFee()>
-			<label for="all"> Main event <b>and</b> workshops (25, 26 and 27 September) </label><br>
+			<label for="all"> Main event <b>and</b> workshops (Sep. 25th, 26th, 27th) </label><br>
 
 			<input type="radio" id="main_event" name="participation" (click)=setFee()>
-			<label for="main_event"> Main event (25 and 26 September) </label><br>
+			<label for="main_event"> Main event (Sep. 25th, 26th) </label><br>
 
 			<input type="radio" id="workshops" name="participation" (click)=setFee()>
-			<label for="workshops"> Workshops (27 September) </label>
+			<label for="workshops"> Workshops (Sep. 27th) </label>
 		</div>
 
 		<label> Fee type </label>
 		<div>
 			<input type="radio" id="regular" name="fee" checked="checked" (click)=setFee()>
-			<label for="regular"> Regular </label><br>
+			<label for="regular"> Regular fee </label><br>
 
 			<input type="radio" id="scientific_memebers" name="fee" (click)=setFee()>
 			<label for="scientific_memebers">
-				Members of Unione Matematica Italiana, IEEE Computer Society, IEEE Information Theory Society
+				Regular fee for members of Unione Matematica Italiana, IEEE Computer Society, IEEE Information Theory Society
 			</label><br>
 
 			<input type="radio" id="young" name="fee" (click)=setFee()>
-			<label for="young"> Young </label><br>
+			<label for="young"> Regular fee for young participants </label><br>
 
 			<input type="radio" id="member" name="fee" (click)=setFee()>
 			<label for="member">
-				Member of De Cifris (“ordinario”, ”benemerito”, “fondatore”, "giovane")
+				Fee for De Cifris members (“ordinario”, ”benemerito”, “fondatore”, "giovane")
 			</label> <br>
 
 			<input type="radio" id="companion" name="fee" (click)=setFee()>
 			<label for="companion">
-				Companion
+				Companion fee (only social dinner)
 			</label>
 		</div>
 
@@ -209,7 +211,10 @@
 		</p>
 
 		<!-- Submit input -->
-		<input type="submit" value="Pay Now">
+		<!-- 		
+			<input type="submit" value="Pay Now">
+		-->
+
 
 		<p class="footnote">
 			De Componendis Cifris kindly requests your consent for the processing of your personal data provided in the
