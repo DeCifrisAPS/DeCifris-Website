@@ -12,7 +12,7 @@ import { NgForm } from '@angular/forms';
 })
 export class RegistrationComponent24 implements OnInit {
 
-	public fee = 39000;
+	public fee = 16000;
 
 	readonly prices = [
 		[35000, 30000, 25000, 16000, 0],

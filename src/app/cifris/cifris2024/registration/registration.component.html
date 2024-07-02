@@ -11,8 +11,8 @@
 			restricted to EU citizens.
 
 		</p>
-		<h4>MAIN EVENT</h4>
-		September 25th and 26th. The fee covers
+		<h4>MAIN EVENT (Sept. 25th, 26th)</h4>
+		The fee covers
 		<ul>
 			<li>Free entrance to the main conference room;</li>
 			<li>Coffee breaks and lunches (September 25th and 26th).</li>
@@ -48,8 +48,8 @@
 		</table>
 		<hr>
 		<!-------------------------------------------------------------------->
-		<h4>WORKSHOPS</h4>
-		September 27th. The fee covers
+		<h4>WORKSHOPS (Sept. 27th)</h4>
+		The fee covers
 		<ul>
 			<li>Free entrance to the workshop rooms;</li>
 			<li>Coffee breaks and lunches (September 27th).</li>
@@ -85,8 +85,8 @@
 		</table>
 		<!-------------------------------------------------------------------->
 		<hr>
-		<h4>MAIN CONFERENCE AND WORKSHOPS</h4>
-		September 25th, 26th and 27th. The fee covers
+		<h4>MAIN CONFERENCE AND WORKSHOPS (Sept. 25th, 26th, 27th)</h4>
+		The fee covers
 		<ul>
 			<li>Free entrance to the main conference room;</li>
 			<li>Free entrance to the workshop rooms;</li>
@@ -122,7 +122,7 @@
 		</table>
 		<hr>
 		<!-------------------------------------------------------------------->
-		<h4> SOCIAL DINNER FEE </h4>
+		<h4> SOCIAL DINNER (Sept. 25th)</h4>
 		<p>
 			The additional fee for the social dinner is 50 EUR, and covers the dinner of September 25th.
 			<br> <br>
@@ -153,7 +153,7 @@
 	<form id="payForm" class="form" method="post" (ngSubmit)="checkAndPay()">
 		<label> CIFRIS24 participation </label>
 		<p style="color: red;text-align: center;width: 100%; font-weight: bolder;">
-			REGISTRATION WILL OPEN ON JULY 8TH 2024
+			REGISTRATION WILL OPEN ON JULY 10TH 2024
 		</p>
 		<div>
 			<input type="radio" id="all" name="participation" checked="checked" (click)=setFee()>
@@ -168,19 +168,19 @@
 
 		<label> Fee type </label>
 		<div>
-			<input type="radio" id="regular" name="fee" checked="checked" (click)=setFee()>
+			<input type="radio" id="regular" name="fee" disabled="true" (click)=setFee()>
 			<label for="regular"> Regular fee </label><br>
 
-			<input type="radio" id="scientific_memebers" name="fee" (click)=setFee()>
+			<input type="radio" id="scientific_memebers" disabled="true" name="fee" (click)=setFee()>
 			<label for="scientific_memebers">
 				Regular fee for members of Unione Matematica Italiana, IEEE Computer Society, IEEE Information Theory
 				Society
 			</label><br>
 
-			<input type="radio" id="young" name="fee" (click)=setFee()>
+			<input type="radio" id="young" name="fee" disabled="true" (click)=setFee()>
 			<label for="young"> Regular fee for young participants </label><br>
 
-			<input type="radio" id="member" name="fee" (click)=setFee()>
+			<input type="radio" id="member" name="fee" checked="checked"(click)=setFee()>
 			<label for="member">
 				Fee for De Cifris members (“ordinario”, ”benemerito”, “fondatore”, "giovane")
 			</label> <br>
@@ -193,7 +193,7 @@
 
 		<label> Others </label>
 		<div>
-			<input type="checkbox" id="dinner" name="dinner" (click)=checkDinner($event) checked="checked">
+			<input type="checkbox" id="dinner" name="dinner" (click)=checkDinner($event)>
 			<label for="dinner">
 				Dinner
 			</label>
@@ -221,9 +221,7 @@
 		</p>
 
 		<!-- Submit input -->
-		<!--
 		<input type="submit" value="Pay Now">
-		-->
 
 		<p class="footnote">
 			De Componendis Cifris kindly requests your consent for the processing of your personal data provided in the
