@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { UntypedFormBuilder, Validators } from '@angular/forms';
 import { RegistrationService } from '../servizi/registration.service';
 
 @Component({
@@ -14,7 +14,7 @@ export class MailingListComponent implements OnInit {
   submitted : boolean;
 
   constructor(
-    private fb : FormBuilder,
+    private fb : UntypedFormBuilder,
     private servizioRegistratione: RegistrationService
     ) { }
 
