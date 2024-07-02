@@ -126,21 +126,12 @@
 		<p>
 			The additional fee for the social dinner is 50 EUR, and covers the dinner of September 25th.
 			<br> <br>
-			It is possible to join the social dinner with a Companion (fee: 50 EUR), subject to the availability of
+			It is possible to join the social dinner with a Companion (Companion fee: 50 EUR), subject to the availability of
 			seats at the venue. Please select the <b>Companion fee</b> option below to pay for a companion, then send an
 			email to
 			<a href="mailto:cifris24@decifris.it">cifris24@decifris.it</a>.
 		</p>
 		<!-------------------------------------------------------------------->
-		<hr>
-		<p style="color: red;">
-			To register, please send an email to <a href="mailto:cifris24@decifris.it">cifris24@decifris.it</a>. <br>
-			In the email please specify whether you pay yourself or your company/institution pays for you (in that case,
-			please send us its fiscal data). <br>
-		</p>
-		<p style="color: red;">
-			<b>Registration Deadline September 9th 2024.</b>
-		</p>
 	</div>
 </div>
 
@@ -149,12 +140,26 @@
 <div class="row mt-3 mr-1 ml-1">
 	<div class="col-md-12">
 		<h4> PAYMENT </h4>
+		<p>
+			Before paying, please send an email to <a href="mailto:cifris24@decifris.it">cifris24@decifris.it</a> to
+			register.
+			<br>
+			Accepted payment methods are wire transfer or credit card (NEXI, via the form below).
+			<br>
+			<br>
+			In the email, please specify whether you pay yourself or your company/institution pays for you (in that
+			case,
+			please also attach its fiscal data). <br>
+		</p>
+		<p style="color: red;">
+			Registration Deadline: September 9th, 2024.
+		</p>
 	</div>
 	<form id="payForm" class="form" method="post" (ngSubmit)="checkAndPay()">
-		<label> CIFRIS24 participation </label>
-		<p style="color: red;text-align: center;width: 100%; font-weight: bolder;">
-			REGISTRATION WILL OPEN ON JULY 10TH 2024
+		<p>
+			<b style="color:var(--cifris_blue)">CIFRIS24 payment via NEXI</b>
 		</p>
+		<label> Participation </label>
 		<div>
 			<input type="radio" id="all" name="participation" checked="checked" (click)=setFee()>
 			<label for="all"> Main event <b>and</b> workshops (Sep. 25th, 26th, 27th) </label><br>
@@ -180,7 +185,7 @@
 			<input type="radio" id="young" name="fee" disabled="true" (click)=setFee()>
 			<label for="young"> Regular fee for young participants </label><br>
 
-			<input type="radio" id="member" name="fee" checked="checked"(click)=setFee()>
+			<input type="radio" id="member" name="fee" checked="checked" (click)=setFee()>
 			<label for="member">
 				Fee for De Cifris members (“ordinario”, ”benemerito”, “fondatore”, "giovane")
 			</label> <br>
@@ -220,8 +225,11 @@
 			Total: € {{fee/100}}.00
 		</p>
 
+		<p style="color: red;text-align: center;width: 100%; font-weight: bolder;">
+			REGISTRATION WILL OPEN ON JULY 10TH 2024
+		</p>
 		<!-- Submit input -->
-		<input type="submit" value="Pay Now">
+		<input type="submit" disabled="false" value="Pay Now">
 
 		<p class="footnote">
 			De Componendis Cifris kindly requests your consent for the processing of your personal data provided in the
