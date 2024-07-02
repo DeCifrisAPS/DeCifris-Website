@@ -11,7 +11,6 @@ import { GareCrittograficheComponent } from './attivita/gare-crittografiche/gare
 import { EventiPubbliciComponent } from './eventi/eventi-pubblici/eventi-pubblici.component';
 import { DidatticaUniversitariaComponent } from './gruppi/didattica-universitaria/didattica-universitaria.component';
 import { SessioniDeCifrisComponent } from './eventi/eventi-pubblici/sessioni-de-cifris/sessioni-de-cifris.component';
-import { pathToFileURL } from 'url';
 
 // seminari e mailing list
 import { MailingListComponent } from './mailing-list/mailing-list.component';
