@@ -1,0 +1,125 @@
+/* Codice comune */
+
+
+
+.navbar-toggler {
+    height: 100%;
+    text-align: right;
+    align-self: flex-end;
+    /* Utilizzo di flex-end al posto di right */
+    color: white;
+    border: none;
+}
+
+.pr-2 {
+    filter: brightness(0) invert(1);
+    height: 100%;
+}
+
+.pr-2:focus {
+    outline: none !important;
+}
+
+.pr-2:hover {
+    cursor: pointer;
+}
+
+.logo-container {
+    height: 100%;
+    margin-right: 10%;
+    margin-left: 1%;
+}
+
+a {
+    font-size: medium;
+}
+
+
+
+
+
+
+/* Schermi sopra 992 px */
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+        margin-top: 0;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+
+    /* Correzione del selettore per la navbar */
+    .navbar {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        height: 10%;
+        background-color: var(--cifris_blue) !important;
+    }
+
+    .dropdown {
+        color: white !important;
+        margin-right: 3%;
+    }
+
+    .dropdown-item:hover {
+        font-weight: bold;
+        color: var(--cifris_orange);
+    }
+
+    .dropdown-toggle::after {
+        content: none;
+    }
+
+}
+
+
+
+
+
+
+/* Schermi sotto 991 px */
+@media all and (max-width: 991px) {
+    .nav-item .dropdown-menu {
+        display: none;
+        margin-top: 0;
+    }
+
+    .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+
+    /* Correzione del selettore per la navbar */
+    .navbar {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        height: 8%;
+        background-color: var(--cifris_blue) !important;
+    }
+
+    .navbar-toggler {
+        height: 100%;
+        text-align: right;
+        align-self: flex-end;
+        /* Utilizzo di flex-end al posto di right */
+        color: white;
+        border: none;
+        margin-right: 5%;
+        outline: none !important;
+        box-shadow: none !important;
+        /* Rimuove eventuali ombre */
+    }
+
+    .navbar-toggler:focus {
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+        /* Rimuove eventuali ombre */
+    }
+
+    .logo-container {
+        margin-left: 5%;
+    }
+
+}

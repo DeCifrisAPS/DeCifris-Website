@@ -1,4 +1,3 @@
-import { AfterViewInit, ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
@@ -9,8 +8,6 @@ import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 
 export class HomeComponent implements OnInit {
-
-  /* visualizzaAderenti: boolean = true; */
   attivitaDaMostrare: string = "";
   closeResult = '';
 
@@ -20,7 +17,7 @@ export class HomeComponent implements OnInit {
     /* document.getElementById("openModalButton").click(); */
   }
 
-  
+
 
   private getDismissReason(reason: any): string {
     if (reason === ModalDismissReasons.ESC) {
@@ -31,18 +28,14 @@ export class HomeComponent implements OnInit {
       return `with: ${reason}`;
     }
   }
-  
+
   open(content) {
-    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
+    this.modalService.open(content, { ariaLabelledBy: 'modal-basic-title' }).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
     }, (reason) => {
       this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
     });
   }
-
-  /* visualizzareAderenti(): void {
-    this.visualizzaAderenti = !this.visualizzaAderenti;
-  } */
 
   sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -50,10 +43,10 @@ export class HomeComponent implements OnInit {
 
   /* Ai posteri: utilizzare del codice asincrono (async/await) mi è sembrato l'unico 
   modo per gestire la transizione della pagina alla sezione "eventi passati".*/
-  async goTo(s : string){
+  async goTo(s: string) {
     this.attivitaDaMostrare = s;
     await this.sleep(10);
-    document.getElementById(s).scrollIntoView({behavior: 'smooth'});
+    document.getElementById(s).scrollIntoView({ behavior: 'smooth' });
   }
 
 }

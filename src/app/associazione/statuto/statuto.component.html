@@ -1,126 +1,92 @@
-<ng-sidebar-container>
-	<ng-sidebar opened="true" position="left" id="right-sidebar" mode="push" [autoCollapseWidth]="799">
-		<ul class="noIndent" align="left">
-			<!-- Utilizziamo questo trick per evitare di rendere visibile l'autofocus al lettore. -->
-			<li style="display:none">
-				<button autofocus="autofocus"></button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" routerLink="/regolamento">
-					Regolamenti
-				</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" routerLink="/organiDirettivi">
-					Organizzazione
-				</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" routerLink="/dicono-di-noi">
-					Dicono di noi
-				</button>
-			</li>
-			<!--
-			<li>
-				<button class="btn btn-outline-info" routerLink="/aziende">
-					Come associarsi
-				</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" routerLink="/aziende">
-					Come affiliarsi
-				</button>
-			</li> -->
-		</ul>
-	</ng-sidebar>
-	<div ng-sidebar-content class="container bottomExtra">
-		<br>
-		<div class="row mt-3 mr-1 ml-1">
-			<div class="col-md-12">
-				<h3>STATUTO</h3>
-				<p>Si riportano integralmente di seguito gli articoli 3.1, 4.1 e 4.2 dello statuto, per meglio evidenziare
-					attività e finalità dell’associazione. La versione completa è disponibile al seguente 
-					<a href="../../../assets/associazione/statuto.pdf" target="_blank">link</a>.</p>
-				<h6>Art. 3.1</h6>
-				<p>
-					Avvalendosi in modo prevalente dell’attività di volontariato dei propri associati, l’associazione
-					esercita in via esclusiva o prevalente attività di interesse generale a favore dei propri associati, o di
-					terzi, per il perseguimento, senza scopo di lucro, di finalità civiche solidaristiche e di utilità sociale,
-					con particolare riguardo:
-				</p>
-				<ul>
-					<li>
-						all’educazione, istruzione e formazione professionale, ai sensi della legge 28 marzo 2003, n. 53, e
-						successive modificazioni, nonché le attività culturali di interesse sociale con finalità educativa;
-					</li>
-					<li>alla formazione universitaria e post-universitaria;</li>
-					<li>alla ricerca scientifica di particolare interesse sociale;</li>
-					<li>
-						all’organizzazione e gestione di attività culturali, artistiche o ricreative di interesse sociale, incluse
-						attività, anche editoriali, di promozione e diffusione della cultura e della pratica del volontariato e
-						delle attività di interesse generale ai sensi dell’Articolo 5 del codice del terzo settore.
-					</li>
-				</ul>
-				<h6>Art. 4.1</h6>
-				<p>
-					Nell’esercizio dell’attività di interesse generale di cui all’Articolo 3, l’associazione ha lo scopo di
-					perseguire i seguenti obiettivi e di realizzare le seguenti attività scientifiche, formative e
-					strumentali:
-				</p>
-				<ul>
-					<li>diffondere e divulgare la crittografia, in tutti i suoi aspetti: le basi teoriche, le applicazioni,
-						l’evoluzione storica e l’impatto sulla società;</li>
-					<li>incoraggiare lo studio e la ricerca nel campo della crittografia in Italia, sia teorica sia applicata,
-						comprese collaborazioni tra il mondo accademico, quello istituzionale (enti) e delle imprese;</li>
-					<li>facilitare, all’interno della comunità dei crittografi italiani, compresi quelli operanti all’estero,
-						l’aggregazione di studiosi e ricercatori, affinché dalla loro collaborazione nascano idee progettuali
-						e iniziative di interesse nazionale; estendere queste collaborazioni agli studiosi italiani interessati
-						alle applicazioni della crittografia;</li>
-					<li>favorire l’interazione tra la comunità crittografica italiana, le comunità degli altri paesi, nonché la
-						più ampia comunità internazionale;</li>
-					<li>organizzare attività di formazione inerenti la crittografia e temi affini;</li>
-					<li>organizzare seminari, cicli di seminari, convegni, summer e winter school;</li>
-					<li>condurre attività didattica nelle scuole superiori per diffondere la crittografia;</li>
-					<li>svolgere attività divulgativa, utilizzando anche i canali social e il sito dell’associazione;</li>
-					<li>elargire borse di studio per studenti e borse di ricerca per giovani ricercatori. Fornire travel grant
-						a studenti e giovani ricercatori per supportare la partecipazione a sessioni di studio e ricerca,
-						summer e winter school, convegni, workshop;</li>
-					<li>preparare e coordinare gare crittografiche rivolte soprattutto a studenti;</li>
-					<li>offrire opportunità di stage e tirocini in aziende, su temi legati alla crittografia, a studenti,
-						neolaureati e altri interessati;</li>
-					<li>organizzare incontri di orientamento per gli studenti con le aziende nel mondo della crittografia;</li>
-					<li>partecipare a eventi divulgativi, anche rivolti a un grande pubblico, e di ampio respiro scientifico;</li>
-					<li>partecipare e contribuire all’organizzazione di eventi scientifici internazionali, in cui siano
-						coinvolti ricercatori italiani;</li>
-					<li>curare l’attività editoriale (libraria e digitale): riviste, collane di libri, atti di convegno;</li>
-					<li>pianificare eventi finalizzati all’incontro di studiosi e ricercatori per la discussione di idee
-						progettuali e della eventuale partecipazione a bandi pubblici;</li>
-					<li>erogare corsi formativi e corsi specializzati per piccole e grandi imprese, aziende ed
-						enti/istituzioni;</li>
-					<li>erogare corsi, anche online, introduttivi e specialistici, aperti a chiunque sia interessato.</li>
-					<li>stipulare accordi bilaterali o multilaterali con simili associazioni straniere.</li>
-				</ul>
-				<h6>Art. 4.2</h6>
-				<p>
-					Per il conseguimento degli scopi sociali e per l’espletamento delle azioni predette, l’associazione è
-					aperta a collaborazioni con istituzioni (enti) pubbliche italiane ed europee, nonché con enti privati
-					di qualsiasi natura e forma (a puro titolo esemplificativo, fondazioni, cooperative, associazioni e
-					società), compresa la partecipazione alla redazione di policy e regolamentazione tecnica.
-				</p>
-			</div>
-		</div>
-
-		<h4> ALTRI DOCUMENTI </h4>
-		<p> Per completezza presentiamo anche altri documenti collegati al nostro Statuto:</p>
-		<ul>
-			<li>
-				L'<a href="../../../assets/associazione/DocumentoNotarileRedatto2.pdf" target="_blank">Atto Costitutivo</a> (in versione redatta per la privacy).
-			</li>
-			<li>
-				La <a href= "https://drive.google.com/file/d/1mt035hSuscD9BfqP6g1anpg53fhIR235" target="_blank"> richiesta</a>
-				di iscrizione al Runts-Registro Nazionale Terzo Settore e 
-				l'<a href="https://drive.google.com/file/d/1BrbG1aXxc1k5U_WiahqCfJiRYkex5aiZ/view?usp=share_link" target="_blank">accettazione</a> della stessa.
-			</li>
-		</ul>
-	</div>
-</ng-sidebar-container>
+<h2>STATUTO</h2>
+<p>Si riportano integralmente di seguito gli articoli 3.1, 4.1 e 4.2 dello statuto per meglio evidenziare
+	attività e finalità dell’associazione. La versione completa è disponibile al seguente
+	<a href="../../../assets/pdf/statuto/statuto.pdf" target="_blank">link</a>.
+</p>
+<details>
+	<summary>Art. 3.1</summary>
+	<p>
+		Avvalendosi in modo prevalente dell’attività di volontariato dei propri associati, l’associazione
+		esercita in via esclusiva o prevalente attività di interesse generale a favore dei propri associati, o di
+		terzi, per il perseguimento, senza scopo di lucro, di finalità civiche solidaristiche e di utilità sociale,
+		con particolare riguardo:
+	</p>
+	<ul>
+		<li>
+			all’educazione, istruzione e formazione professionale, ai sensi della legge 28 marzo 2003, n. 53, e
+			successive modificazioni, nonché le attività culturali di interesse sociale con finalità educativa;
+		</li>
+		<li>alla formazione universitaria e post-universitaria;</li>
+		<li>alla ricerca scientifica di particolare interesse sociale;</li>
+		<li>
+			all’organizzazione e gestione di attività culturali, artistiche o ricreative di interesse sociale,
+			incluse
+			attività, anche editoriali, di promozione e diffusione della cultura e della pratica del volontariato e
+			delle attività di interesse generale ai sensi dell’Articolo 5 del codice del terzo settore.
+		</li>
+	</ul>
+</details>
+<details>
+	<summary>Art. 4.1</summary>
+	<p>
+		Nell’esercizio dell’attività di interesse generale di cui all’Articolo 3, l’associazione ha lo scopo di
+		perseguire i seguenti obiettivi e di realizzare le seguenti attività scientifiche, formative e
+		strumentali:
+	</p>
+	<ul>
+		<li>diffondere e divulgare la crittografia, in tutti i suoi aspetti: le basi teoriche, le applicazioni,
+			l’evoluzione storica e l’impatto sulla società;</li>
+		<li>incoraggiare lo studio e la ricerca nel campo della crittografia in Italia, sia teorica sia applicata,
+			comprese collaborazioni tra il mondo accademico, quello istituzionale (enti) e delle imprese;</li>
+		<li>facilitare, all’interno della comunità dei crittografi italiani, compresi quelli operanti all’estero,
+			l’aggregazione di studiosi e ricercatori, affinché dalla loro collaborazione nascano idee progettuali
+			e iniziative di interesse nazionale; estendere queste collaborazioni agli studiosi italiani interessati
+			alle applicazioni della crittografia;</li>
+		<li>favorire l’interazione tra la comunità crittografica italiana, le comunità degli altri paesi, nonché la
+			più ampia comunità internazionale;</li>
+		<li>organizzare attività di formazione inerenti la crittografia e temi affini;</li>
+		<li>organizzare seminari, cicli di seminari, convegni, summer e winter school;</li>
+		<li>condurre attività didattica nelle scuole superiori per diffondere la crittografia;</li>
+		<li>svolgere attività divulgativa, utilizzando anche i canali social e il sito dell’associazione;</li>
+		<li>elargire borse di studio per studenti e borse di ricerca per giovani ricercatori. Fornire travel grant
+			a studenti e giovani ricercatori per supportare la partecipazione a sessioni di studio e ricerca,
+			summer e winter school, convegni, workshop;</li>
+		<li>preparare e coordinare gare crittografiche rivolte soprattutto a studenti;</li>
+		<li>offrire opportunità di stage e tirocini in aziende, su temi legati alla crittografia, a studenti,
+			neolaureati e altri interessati;</li>
+		<li>organizzare incontri di orientamento per gli studenti con le aziende nel mondo della crittografia;</li>
+		<li>partecipare a eventi divulgativi, anche rivolti a un grande pubblico, e di ampio respiro scientifico;</li>
+		<li>partecipare e contribuire all’organizzazione di eventi scientifici internazionali, in cui siano
+			coinvolti ricercatori italiani;</li>
+		<li>curare l’attività editoriale (libraria e digitale): riviste, collane di libri, atti di convegno;</li>
+		<li>pianificare eventi finalizzati all’incontro di studiosi e ricercatori per la discussione di idee
+			progettuali e della eventuale partecipazione a bandi pubblici;</li>
+		<li>erogare corsi formativi e corsi specializzati per piccole e grandi imprese, aziende ed
+			enti/istituzioni;</li>
+		<li>erogare corsi, anche online, introduttivi e specialistici, aperti a chiunque sia interessato.</li>
+		<li>stipulare accordi bilaterali o multilaterali con simili associazioni straniere.</li>
+	</ul>
+</details>
+<details>
+	<summary>Art. 4.2</summary>
+	<p>
+		Per il conseguimento degli scopi sociali e per l’espletamento delle azioni predette, l’associazione è
+		aperta a collaborazioni con istituzioni (enti) pubbliche italiane ed europee, nonché con enti privati
+		di qualsiasi natura e forma (a puro titolo esemplificativo, fondazioni, cooperative, associazioni e
+		società), compresa la partecipazione alla redazione di policy e regolamentazione tecnica.
+	</p>
+</details>
+<br><br>
+<p> Documenti collegati al nostro Statuto:</p>
+<ul>
+	<li>
+		<a href="../../../assets/pdf/statuto/DocumentoNotarileRedatto2.pdf" target="_blank">Atto Costitutivo</a> (in
+		versione redatta per la privacy).
+	</li>
+	<li>
+		<a href="https://drive.google.com/file/d/1mt035hSuscD9BfqP6g1anpg53fhIR235" target="_blank"> Richiesta</a>
+		di iscrizione al Runts-Registro Nazionale Terzo Settore e
+		l'<a href="https://drive.google.com/file/d/1BrbG1aXxc1k5U_WiahqCfJiRYkex5aiZ/view?usp=share_link"
+			target="_blank">accettazione</a> della stessa.
+	</li>
+</ul>

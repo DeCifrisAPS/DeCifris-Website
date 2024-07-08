@@ -1,248 +1,78 @@
 <div zoomed>
-	<nav class="navbar navbar-expand-lg navbar-light fixed-top" 
-	style="background-color: var(--cifris_blue);min-height: 50px;">
-		<!--
-			<a class="navbar-brand" routerLink="" data-toggle="collapse" data-target=".navbar-collapse.show"
-			routerLinkActive="active">
-			De Componendis Cifris</a>
-		-->
-		<a routerLink="" data-toggle="collapse" data-target=".navbar-collapse.show" routerLinkActive="active">
-			<img class="pr-2 noFocus" routerLink="" src="../assets/icons/decifris.svg" alt="Logo De Cifris">
-		</a>
+	<div class="toolbar">
+		<app-toolbar></app-toolbar>
+	</div>
+	<br><br><br>
 
-		<button class="navbar-toggler" type="button" data-toggle="collapse" string
-			data-target="#navbarSupportedContent">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav">
-				<!--
-				###########################################
-				######## WELCOME
-				###########################################
-			-->
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false" style="color: white; font-weight: 400px;">Welcome</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" routerLink="/accademia" href="#" data-toggle="collapse"
-							data-target=".navbar-collapse.show">Fai ricerca?</a>
-						<a class="dropdown-item" routerLink="/aziende" href="#" data-toggle="collapse"
-							data-target=".navbar-collapse.show">Lavori in azienda?</a>
-						<a class="dropdown-item" routerLink="/scuola" href="#" data-toggle="collapse"
-							data-target=".navbar-collapse.show">Insegni a scuola?</a>
-						<a class="dropdown-item" routerLink="/studenti" href="#" data-toggle="collapse"
-							data-target=".navbar-collapse.show">Sei studente?</a>
-						<a class="dropdown-item" routerLink="/curiosi" href="#" data-toggle="collapse"
-							data-target=".navbar-collapse.show">Ti incuriosisce?</a>
-					</div>
-				</li>
-				<!--
-				###########################################
-				######## ASSOCIAZIONE
-				###########################################
-			-->
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false"
-						style="color: white; font-weight: 400px;">Associazione</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" routerLink="/statuto" href="#" data-toggle="collapse"
-							data-target=".navbar-collapse.show">Statuto</a>
-						<a class="dropdown-item" routerLink="/regolamento" href="#" data-toggle="collapse"
-							data-target=".navbar-collapse.show">Regolamenti</a>
-						<a class="dropdown-item" routerLink="/organiDirettivi" href="#" data-toggle="collapse"
-							data-target=".navbar-collapse.show">Organizzazione</a>
-						<hr>
-						<a class="dropdown-item" routerLink="/notizie" href="#" data-toggle="collapse"
-							data-target=".navbar-collapse.show">Notizie</a>
-						<a class="dropdown-item" routerLink="/dicono-di-noi" href="#" data-toggle="collapse"
-							data-target=".navbar-collapse.show">Dicono di noi</a>
-					</div>
-				</li>
-				<!-- <li class="nav-item" routerLinkActive="active">
-				<a class="nav-link" 
-				routerLink="obiettivi" 
-				data-toggle="collapse" 
-				data-target=".navbar-collapse.show">Obiettivi</a>
-			</li> -->
-				<!-- <li class="nav-item" routerLinkActive="active">
-				<a class="nav-link" 
-					routerLink="eventi" 
-					data-toggle="collapse" 
-					data-target=".navbar-collapse.show">Eventi</a>
-			</li> -->
-				<!--
-				###########################################
-				######## ATTIVITA'
-				###########################################
-			-->
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false"
-						style="color: white; font-weight: 400px;">Attività</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<!-- <a class="dropdown-item" 
-					value="cifrisChain" 
-					routerLink="/cifrisChain"
-					href="#" 
-					data-toggle="collapse" 
-					data-target=".navbar-collapse.show">CifrisChain</a>
-				<a class="dropdown-item" 
-					value="PQCifris" 
-					routerLink="/PQCifris"
-					href="#" 
-					data-toggle="collapse" 
-					data-target=".navbar-collapse.show">PQCifris</a>
-				<a class="dropdown-item" 
-					value="cifrisCloud" 
-					routerLink="/cifrisCloud" 
-					href="#" 
-					data-toggle="collapse" 
-					data-target=".navbar-collapse.show">CifrisCloud</a>
-				<a class="dropdown-item" 
-					value="mathCifris" 
-					routerLink="/mathCifris" 
-					href="#" 
-					data-toggle="collapse" 
-					data-target=".navbar-collapse.show">MathCifris</a> -->
-						<a class="dropdown-item" value="eventi" routerLink="/eventi" href="#" data-toggle="collapse"
-							data-target=".navbar-collapse.show">Eventi</a>
-						<hr>
-						<a class="dropdown-item" value="seminari" routerLink="/seminariLocali" href="#"
-							data-toggle="collapse" data-target=".navbar-collapse.show">Seminari</a>
-						<a class="dropdown-item" value="seminari" routerLink="/trends" href="#" data-toggle="collapse"
-							data-target=".navbar-collapse.show">Corsi</a>
-						<a class="dropdown-item" value="editoria" routerLink="/editoria" href="#" data-toggle="collapse"
-							data-target=".navbar-collapse.show">Attività Editoriale</a>
-					</div>
-				</li>
-				<!-- <li class="nav-item" routerLinkActive="active">
-				<a class="nav-link"
-					routerLink="seminariLocali" 
-					data-toggle="collapse" 
-					data-target=".navbar-collapse.show">Seminari</a>
-			</li> -->
-				<!--
-				###########################################
-				######## COLLABORA CON NOI
-				###########################################
-			-->
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false" style="color: white; font-weight: 400px;">Collabora
-						con noi</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" routerLink="/associarsi" href="#" data-toggle="collapse"
-							data-target=".navbar-collapse.show">Come associarsi</a>
-						<a class="dropdown-item" routerLink="/posizioniRicerca" href="#" data-toggle="collapse"
-							data-target=".navbar-collapse.show">Posizioni accademiche</a>
-						<a class="dropdown-item" routerLink="/advisoryBoard" href="#" data-toggle="collapse"
-							data-target=".navbar-collapse.show">Advisory board</a>
-						<a class="dropdown-item" routerLink="/stageTirocini" href="#" data-toggle="collapse"
-							data-target=".navbar-collapse.show">Stage e tirocini</a>
-					</div>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false"
-						style="color: white; font-weight: 400px;">CIFRIS23</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" routerLink="/cifris23/homeCifris23" href="#" data-toggle="collapse"
-							data-target=".navbar-collapse.show">Home</a>
-						<a class="dropdown-item" routerLink="/cifris23/program" href="#" data-toggle="collapse"
-							data-target=".navbar-collapse.show">Program</a>
-						<a class="dropdown-item" routerLink="/cifris23/call-for-papers" href="#" data-toggle="collapse"
-							data-target=".navbar-collapse.show">Call for papers</a>
-						<a class="dropdown-item" routerLink="/cifris23/call-for-workshops" href="#"
-							data-toggle="collapse" data-target=".navbar-collapse.show">Call for workshops</a>
-						<a class="dropdown-item" routerLink="/cifris23/registration" href="#" data-toggle="collapse"
-							data-target=".navbar-collapse.show">Registration</a>
-						<a class="dropdown-item" routerLink="/cifris23/proceedings" href="#" data-toggle="collapse"
-							data-target=".navbar-collapse.show">Proceedings</a>
-					</div>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false"
-						style="color: white; font-weight: 400px;">CIFRIS24</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" routerLink="/cifris24/homeCifris24" href="#" data-toggle="collapse"
-							data-target=".navbar-collapse.show">Home</a>
-						<b style="color:var(--cifris_blue);margin-left: 10pt; font-weight: 400;">Participate:</b>
-						<a class="dropdown-item" routerLink="/cifris24/registration" href="#" data-toggle="collapse"
-							data-target=".navbar-collapse.show">Registration</a>
-						<a class="dropdown-item" routerLink="/cifris24/program" href="#" data-toggle="collapse"
-							data-target=".navbar-collapse.show">Program</a>
-						<a class="dropdown-item" routerLink="/cifris24/venue-accomodation" href="#"
-							data-toggle="collapse" data-target=".navbar-collapse.show">Venue and accomodation</a>
-						<a class="dropdown-item" routerLink="/cifris24/proceedings" href="#" data-toggle="collapse"
-							data-target=".navbar-collapse.show">Proceedings</a>
-						<b style="color:var(--cifris_blue);margin-left: 10pt; font-weight: 400;">Contribute:</b>
-						<a class="dropdown-item" routerLink="/cifris24/call-for-papers" href="#" data-toggle="collapse"
-							data-target=".navbar-collapse.show">Call for papers</a>
-						<a class="dropdown-item" routerLink="/cifris24/call-for-workshops" href="#"
-							data-toggle="collapse" data-target=".navbar-collapse.show">Call for workshops</a>
-
-
-
-					</div>
-				</li>
-			</ul>
-
-
-
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item" routerLinkActive="active">
-					<a class="nav-link" routerLink="mailingList" data-toggle="collapse"
-						data-target=".navbar-collapse.show" style="color: white; font-weight: 400px;">Mailing List</a>
-				</li>
-				<li class="nav-item" routerLinkActive="active">
-					<a class="nav-link" routerLink="contatti" data-toggle="collapse" data-target=".navbar-collapse.show"
-						style="color: white; font-weight: 400px;">Contatti</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-	<br>
-	<br>
-	<br>
 	<div class="container">
-		<router-outlet (activate)="onActivate($event)"></router-outlet>
-		<!-- Questo bottone serve per attivare la modale di login. Non è visibile, ma è necessario -->
-		<button id="openModal" #openModal [hidden]="true" data-toggle="modal" data-target="#loginModal"></button>
+		<div class="sidenav">
+			<nav class="sidebar" id="sidebar">
+				<ul>
+					<li style="padding-top: 50px;">
+						<button mat-button [routerLink]="['/']" routerLinkActive="active"
+							[routerLinkActiveOptions]="{exact: true}" class="image-button">
+							<mat-icon>home</mat-icon>
+							<span class="sidebar-text">HOME</span>
+						</button>
+					</li>
+					<h5 style="margin-bottom: 5px;"> IN EVIDENZA </h5>
+					<li>
+						<button mat-button [routerLink]="['/']" routerLinkActive="active"
+							[routerLinkActiveOptions]="{exact: true}" class="image-button">
+							<mat-icon>emoji_people</mat-icon>
+							<span class="sidebar-text">Welcome</span>
+						</button>
+					</li>
+					<li>
+						<button mat-button [routerLink]="['/associazione']" routerLinkActive="active"
+							[routerLinkActiveOptions]="{exact: true}" class="image-button">
+							<mat-icon>groups</mat-icon>
+							<span class="sidebar-text">Associazione</span>
+						</button>
+					</li>
+					<li>
+						<button mat-button [routerLink]="['/']" routerLinkActive="active"
+							[routerLinkActiveOptions]="{exact: true}" class="image-button">
+							<mat-icon>public</mat-icon>
+							<span class="sidebar-text">Attività</span>
+						</button>
+					</li>
+					<li>
+						<button mat-button [routerLink]="['/']" routerLinkActive="active"
+							[routerLinkActiveOptions]="{exact: true}" class="image-button">
+							<mat-icon>auto_stories</mat-icon>
+							<span class="sidebar-text">De Cifris Koine</span>
+						</button>
+					</li>
+					<li>
+						<button mat-button [routerLink]="['/']" routerLinkActive="active"
+							[routerLinkActiveOptions]="{exact: true}" class="image-button">
+							<mat-icon>event</mat-icon>
+							<span class="sidebar-text">CIFRIS24</span>
+						</button>
+					</li>
+					<h5 style="margin-bottom: 5px;"> INFORMAZIONI </h5>
+					<li>
+						<button mat-button [routerLink]="['/contatti']" routerLinkActive="active"
+							[routerLinkActiveOptions]="{exact: true}" class="image-button">
+							<mat-icon>mail</mat-icon>
+							<span class="sidebar-text">Contatti</span>
+						</button>
+					</li>
+					<li>
+						<button mat-button [routerLink]="['/cookie-policy']" routerLinkActive="active"
+							[routerLinkActiveOptions]="{exact: true}" class="image-button">
+							<mat-icon>cookie</mat-icon>
+							<span class="sidebar-text">Cookies</span>
+						</button>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="content">
+			<router-outlet (activate)="onActivate($event)"></router-outlet>
+			<button id="openModal" #openModal [hidden]="true" data-toggle="modal" data-target="#loginModal"
+				style="outline: none;"></button>
+		</div>
 	</div>
 </div>
-
-<!-- Modal -->
-<!-- <div class="modal fade" #loginModal id="loginModal" tabindex="-1" role="dialog">
-	<div class="modal-dialog modal-dialog-centered" role="document">
-	<div class="modal-content">
-		<div class="modal-header">
-			<h5 class="modal-title" id="exampleModalLongTitle">Benvenuto nel sito della De Componendis Cifris</h5>
-			<button type="button" class="close" data-dismiss="modal">
-				<span aria-hidden="true">&times;</span>
-			</button>
-		</div>
-		<div class="modal-body" align="center">
-			<p>Abbiamo dei contenuti specifici che potrebbero interessarti</p>
-			<div class="btn-group" role="group">
-				<button type="button"
-					data-dismiss="modal"
-					class="btn btn-outline-info"
-					routerLink="/studenti">Per gli studenti</button>
-				<button type="button" 
-					data-dismiss="modal"
-					class="btn btn-outline-info"
-					routerLink="/aziende">Per le aziende</button>
-				<button type="button" 
-					data-dismiss="modal"
-					routerLink="/accademia"
-					class="btn btn-outline-info mr-3">Per l'accademia</button>
-			</div>
-		</div>
-	</div>
-	</div>
-</div>
- -->

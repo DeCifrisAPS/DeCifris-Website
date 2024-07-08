@@ -2,43 +2,6 @@ a {
 	cursor: pointer;
 }
 
-.toggleText {
-	color: #1976D2;
-}
-
-button {
-	background: none;
-	border: none;
-	outline: none;
-	color: --cifris_blue;
-	width: 200px;
-	text-align: left !important;
-}
-
-ng-sidebar-container {
-	position: fixed;
-	right: 0;
-	top: 55px;
-	height: 100%;
-}
-
-::ng-deep .ng-sidebar {
-	background-color: aliceblue;
-	width: 300px !important;
-	padding: 2em 1em;
-}
-
-​ @media screen and (max-width: 799px) {
-	#right-sidebar {
-		display: none !important;
-	}
-}
-
-.bottomExtra {
-	margin-bottom: 3em;
-	padding-bottom: 3em;
-}
-
 .noIndent {
 	list-style: none;
 	padding-left: 0;
@@ -51,6 +14,7 @@ ng-sidebar-container {
 
 img.mainlogo {
 	width: 40%;
+	border-radius: 50%;
 }
 
 div.iniziativecontainer {
@@ -98,7 +62,8 @@ div.iniziativecontainer {
 
 .imagebtn:hover {
 	opacity: 0.9;
-	box-shadow: 5px 5px 9px var(--cifris_purple);
+	transform: translateY(-5px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 btn.txtbtn {
@@ -109,6 +74,7 @@ btn.txtbtn {
 	margin: 0 auto;
 	text-align: center;
 	padding: 0;
+	width: 20%;
 }
 
 p.txtbtn-txt {
@@ -125,6 +91,6 @@ p.txtbtn-txt {
 
 .txtbtn:hover {
 	opacity: 0.9;
-	box-shadow: 5px 5px 9px var(--cifris_purple);
+	transform: translateY(-5px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-

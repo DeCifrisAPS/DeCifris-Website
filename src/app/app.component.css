@@ -1,67 +1,170 @@
-@media all and (min-width: 992px) {
-	.navbar .nav-item .dropdown-menu {
-		display: none;
-	}
+/* SIDEBAR */
+/* Schermi piccoli */
+@media all and (max-width: 991px) {
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .sidebar-text {
+        color: var(--cifris_blue);
+    }
+    .image-button{
+        text-align: left;
+        align-items: left;
+        justify-content: left;
+    }
+    .image-button:hover{
+        font-weight: bold;
+        color: var(--cifris_orange);
+    }
+    .sidebar {
+        padding: 20px;
+        padding-top: 10%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 0;
+        background-color: var(--cifris_azure);
+        position: fixed;
+        left: -60%;
+        top: 0;
+        bottom: 0;
+        width: 60%;
+        height: fit-content;
+        transition: 0.3s;
+    }
+    .sidebar.open {
+        left: 0%;
+    }
 
-	.navbar .nav-item:hover .dropdown-menu {
-		display: block;
-	}
+    .mat-icon {
+        color: var(--cifris_blue);
+        margin-right: 10px;
+        /* Margine a destra dell'icona per separarla dal testo */
+    }
 
-	.navbar .nav-item .dropdown-menu {
-		margin-top: 0;
-	}
+    .sidebar-text {
+        display: inline-block;
+        /* Garantisce che il testo non vada a capo */
+        vertical-align: middle;
+        /* Allinea verticalmente il testo */
+    }
+    h5{ 
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Schermi grandi */
+@media all and (min-width: 992px) {
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .sidebar-text {
+        color: var(--cifris_blue);
+    }
+    .image-button{
+        text-align: left;
+        align-items: left;
+        justify-content: left;
+    }
+    .image-button:hover{
+        font-weight: bold;
+        color: var(--cifris_orange);
+    }
+    .sidebar {
+        padding: 20px;
+        padding-top: 3%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 0;
+        background-color: var(--cifris_azure);
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 20%;
+    }
+
+    .mat-icon {
+        color: var(--cifris_blue);
+        margin-right: 10px;
+        /* Margine a destra dell'icona per separarla dal testo */
+    }
+
+    .sidebar-text {
+        display: inline-block;
+        /* Garantisce che il testo non vada a capo */
+        vertical-align: middle;
+        /* Allinea verticalmente il testo */
+    }
+    h5{ 
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
+
+}
+
+/* fine sidebar */
+
 
 
 div.zoomed {
-	zoom: 1.1;
-	-moz-transform: scale(1.1);
-	-moz-transform-origin: 0 0;
+    height: 100%;
+    zoom: 1.1;
+    transform: scale(1.1);
+    transform-origin: 0 0;
+}
+.toolbar {
+    z-index: 2;
+    position: absolute;
+}
+.sidenav {
+    z-index: 1;
+    position: absolute;
+}
+.container {
+    z-index: 0;
+    height: 100%;
 }
 
-navbar {
-	z-index: 1;
+.content {
+    z-index: 0;
+    height: 100%;
+    margin-left: 20%;
+    /* Larghezza della sidebar */
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.navbar-brand {
-	color: white !important;
-	font-weight: 800;
-	font-family: fantasy;
-	font-style: oblique;
-	padding-right: 30px;
+/* Schermi piccoli */
+@media all and (max-width: 991px) {
+    .content {
+        margin-left: 10px;
+        margin-top: 5%;
+        /* Larghezza della sidebar */
+        margin-bottom: 150px;
+    }
 }
 
-.navbar-toggler {
-	width: 10%;
-	text-align: right;
-	align-self: right;
-	color: white;
-	border: none;
-}
-
-.dropdown {
-	color: white !important;
-	font-weight: 400;
-	font-style: bold;
-}
-
-.pr-2 {
-	filter: brightness(0) invert(1);
-	/* 
-	serve generare il filtro per colorare gli SVG, vedi qui:
-	https://codepen.io/sosuke/pen/Pjoqqp?__cf_chl_jschl_tk__=ecc0b72797ae71bc009d6322e3e470773936b386-1604211766-0-ASpz720gXnc6Ej0vzlgY9-KLmlPkldgcOx1wAmGTUCjLZLOxkArNxpRzZ9m8woL-NGmP9LBGVPws8UxMJZrR7O1qFH6QkKtrGVPw6StRnXiK1XTQR_nY905r0XobAG2nOmyC6Zq8mdyPDp1MyHD7JLodJUXCRViXhtmLmRVE_-JGarVJRlxs6k3DzAOQQEJewfp00DjhlD0mxr8ZKpk2yq6IPTZZQ52XYxh26FC5MxLHhs7LuAwhtolmDZyp4_IuwRg8I5m-2--MmvGE8CCqjRWrkE85zgkMXPlOqcZtppRpZhn6Uz9DZAuKheHwVBb0ySIhFYG92bvQOgiKX0TTswB1SHgOLIeqktuyUaAgxI_h /*
-	ed anche qui per capire come renderlo bianco:
-	https://stackoverflow.com/questions/22252472/how-can-i-change-the-color-of-an-svg-element/53336754#53336754
-	*/
-	height: 30px;
-	margin-right: 150px;
-	margin-left: 10px;
-}
-
-.pr-2:focus {
-	outline: none !important;
-}
-
-.pr-2:hover {
-	cursor: pointer;
+/* Schermi grandi */
+@media all and (min-width: 992px) {
+    .content {
+        margin-bottom: 120px;
+        margin-top:20px;
+    }
 }

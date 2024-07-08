@@ -1,197 +1,71 @@
-<ng-sidebar-container>
-	<ng-sidebar opened="true" position="left" id="right-sidebar" mode="push" [autoCollapseWidth]="799">
-	</ng-sidebar>
-	<div ng-sidebar-content class="container bottomExtra">
-		<br>
-		<div class="mt-3">
-			<div class="row">
-				<div class="col-md-12">
-					<h4>MAILING LIST</h4>
-					<h5>Agora</h5>
-					<p>
-						Nato dall'idea greca di ἀγορά (assemblea, raduno), la mailing list <b>De Cifris Agora</b>
-						permette ai soci di proporre liberamente i propri seminari alla comunità. Visita la <a [routerLink]="[ '/deCifrisAgora']">pagina web di Agora</a>.
-						<br>
-						Indirizzo: <a href="mailto:agora@decifris.it">agora@decifris.it</a>.
-					</p>
-					
-					<h5>Altre</h5>
-					<p>
-						Gestivamo molte mailing list specializzate e associate alla sezione <a
-							[routerLink]="[ '/seminariLocali']">seminari</a> che saranno riattivate in futuro:
-					</p>
-					<ul>
-						<li>
-							<h6>Eruditorum</h6>, annunci di seminari su temi di ampia portata e
-							cultura generale, come ad esempio la Storia della crittografia,
-							l’interazione della crittografia con la Società, gli aspetti Legali e
-							Giuridici, etc.
-						</li>
-						<li>
-							<h6>Historiae</h6>, annunci di seminari inerenti la storia della
-							crittografia.
-						</li>
-						<li>
-							<h6>Athesis</h6>, annunci sui seminari che teniamo a Trento, circa uno al mese
-						</li>
-						<li>
-							<h6>Taurinorum</h6>, annunci sui seminari che teniamo a Torino, circa uno al mese
-						</li>
-						<li>
-							<h6>Latina</h6>, annunci sui seminari che teniamo a Roma, circa uno al mese
-						</li>
-						<li>
-							<h6>Mediolanensibus</h6>, annunci sui seminari che teniamo a Milano, circa uno al mese
-						</li>
-						<li>
-							<h6>Cifris Chain</h6>, annunci su eventi e progetti specifici per
-							Cifris Chain (il nostro team interno che lavora su blockchain)
-						</li>
-						<li>
-							<h6>PQCifris</h6>, annunci su eventi e progetti specifici per
-							PQCifris (il nostro team interno che lavora su cifrari post-quantum)
-						</li>
-						<li>
-							<h6>QuantumCifris</h6>, annunci su eventi e progetti specifici per
-							QuantumCifris (il nostro team interno che lavora su Quantum
-							Cryptography)
-						</li>
-						<li>
-							<h6>CloudCifris</h6>, annunci su eventi e progetti specifici per
-							CloudCifris (il nostro team interno che lavora sui cifrari per il
-							Cloud Computing)
-						</li>
-						<li>
-							<h6>Math Cifris</h6>, annunci sul gruppo specificatamente matematico
-							che stiamo costituendo in collaborazione con l'UMI (Unione
-							Matematica Italiana)
-						</li>
-					</ul>
+<h1>MAILING LIST</h1>
+<h2>Agora</h2>
+<p>
+	Nato dall'idea greca di ἀγορά (assemblea, raduno), la mailing list <b>De Cifris Agora</b>
+	permette ai soci di proporre liberamente i propri seminari alla comunità. <!--Visita la <a
+		[routerLink]="[ '/deCifrisAgora']">pagina web di Agora</a>.-->
+	<br>
+	Indirizzo: <a href="mailto:agora@decifris.it">agora@decifris.it</a>.
+</p>
 
+<h2>Altre</h2>
+<p>
+	Gestivamo molte mailing list specializzate e associate alla sezione seminari che saranno riattivate in futuro:
+</p>
+<ul>
+	<li>
+		<b>Eruditorum</b>, annunci di seminari su temi di ampia portata e
+		cultura generale, come ad esempio la Storia della crittografia,
+		l’interazione della crittografia con la Società, gli aspetti Legali e
+		Giuridici, etc.
+	</li>
+	<li>
+		<b>Historiae</b>, annunci di seminari inerenti la storia della
+		crittografia.
+	</li>
+	<li>
+		<b>Athesis</b>, annunci sui seminari che teniamo a Trento, circa uno al mese
+	</li>
+	<li>
+		<b>Taurinorum</b>, annunci sui seminari che teniamo a Torino, circa uno al mese
+	</li>
+	<li>
+		<b>Latina</b>, annunci sui seminari che teniamo a Roma, circa uno al mese
+	</li>
+	<li>
+		<b>Mediolanensibus</b>, annunci sui seminari che teniamo a Milano, circa uno al mese
+	</li>
+	<li>
+		<b>Cifris Chain</b>, annunci su eventi e progetti specifici per
+		Cifris Chain (il nostro team interno che lavora su blockchain)
+	</li>
+	<li>
+		<b>PQCifris</b>, annunci su eventi e progetti specifici per
+		PQCifris (il nostro team interno che lavora su cifrari post-quantum)
+	</li>
+	<li>
+		<b>QuantumCifris</b>, annunci su eventi e progetti specifici per
+		QuantumCifris (il nostro team interno che lavora su Quantum
+		Cryptography)
+	</li>
+	<li>
+		<b>CloudCifris</b>, annunci su eventi e progetti specifici per
+		CloudCifris (il nostro team interno che lavora sui cifrari per il
+		Cloud Computing)
+	</li>
+	<li>
+		<b>Math Cifris</b>, annunci sul gruppo specificatamente matematico
+		che stiamo costituendo in collaborazione con l'UMI (Unione
+		Matematica Italiana)
+	</li>
+</ul>
 
-
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<p>
-						Se condividi i nostri interessi, associati!
-						<br>
-						L'associazione ti dà diritto a registrarti a tutte le nostre mailing-list che ti interessano.
-						Le mailing-list sono puramente informative e potrai cancellarti in qualunque momento da
-						qualunque mailing list di tua scelta.
-						<br>
-						<a routerLink="/associarsi">Per associarti basta seguire queste semplici istruzioni</a>.
-					</p>
-				</div>
-			</div>
-		</div>
-		<br>
-		<!-- Form di registrazione vecchio per le mailing list. Lo tengo in caso torni utile
-		<div class="my-3" *ngIf="!submitted">
-			<div class="row">
-				<div class="col-md-auto" style="margin: auto;">
-					<h2>Form di registrazione</h2>
-					<form [formGroup]="registrationForm" 
-						style="display: block;" 
-						(ngSubmit)="onSubmit()">
-						<div class="form-group">
-							<label>Indirizzo Email</label>
-							<input [class.is-invalid]="registrationForm.get('indirizzoEmail').invalid && registrationForm.get('indirizzoEmail').touched"
-									formControlName="indirizzoEmail" 
-									type="text" 
-									class="form-control">
-							<div *ngIf="registrationForm.get('indirizzoEmail').invalid && registrationForm.get('indirizzoEmail').touched">
-									<small *ngIf="registrationForm.get('indirizzoEmail').errors?.required" class="text-danger">Parametro obbligatorio</small>
-							</div>
-						</div>
-		
-						<div class="form-group">
-							<label>Titolo</label>
-							<select class="form-select" formControlName="titolo" class="form-control">
-								<option selected></option>
-								<option *ngFor="let titolo of titoli">{{titolo}}</option>
-							 </select>
-						</div>
-		
-						<div class="form-group">
-							<label>Nome</label>
-							<input [class.is-invalid]="registrationForm.get('nome').invalid && registrationForm.get('nome').touched"
-								formControlName="nome" type="text" class="form-control">
-							<div *ngIf="registrationForm.get('nome').invalid && registrationForm.get('nome').touched">
-								<small *ngIf="registrationForm.get('nome').errors?.required" class="text-danger">Parametro obbligatorio</small>
-							</div>
-					</div>
-		
-					<div class="form-group">
-							<label>Cognome</label>
-							<input [class.is-invalid]="registrationForm.get('cognome').invalid && registrationForm.get('cognome').touched"
-								formControlName="cognome" type="text" class="form-control">
-							<div *ngIf="registrationForm.get('cognome').invalid && registrationForm.get('cognome').touched">
-								<small *ngIf="registrationForm.get('cognome').errors?.required" class="text-danger">Parametro obbligatorio</small>
-							</div>
-						</div>
-		
-						<div class="form-group">
-							<label>Provincia</label>
-							<input formControlName="provincia" type="text" class="form-control">
-					</div>
-		
-					<div class="form-group">
-							<label>Ente</label>
-							<input [class.is-invalid]="registrationForm.get('ente').invalid && registrationForm.get('ente').touched"
-								formControlName="ente" type="text" class="form-control">
-							<div *ngIf="registrationForm.get('ente').invalid && registrationForm.get('ente').touched">
-								<small *ngIf="registrationForm.get('ente').errors?.required" class="text-danger">Parametro obbligatorio</small>
-							</div>
-						</div>
-		
-						<div class="form-group">
-							<label>Telefono</label>
-							<input formControlName="telefono" type="text" class="form-control">
-					</div>
-		
-					<div class="form-group">
-							<label>Città</label>
-							<input [class.is-invalid]="registrationForm.get('citta').invalid && registrationForm.get('citta').touched"
-								formControlName="citta" type="text" class="form-control">
-							<div *ngIf="registrationForm.get('citta').invalid && registrationForm.get('citta').touched">
-								<small *ngIf="registrationForm.get('citta').errors?.required" class="text-danger">Parametro obbligatorio</small>
-							</div>
-						</div>
-		
-						<div class="form-group">
-							<label>Occupazione</label>
-							<select class="form-select" 
-							formControlName="occupazione" 
-							class="form-control" 
-								[class.is-invalid]="registrationForm.get('occupazione').invalid && registrationForm.get('occupazione').touched">
-								<option selected></option>
-								<option *ngFor="let occupazione of occupazioni">{{occupazione}}</option>
-								</select>
-							<div *ngIf="registrationForm.get('occupazione').invalid && registrationForm.get('occupazione').touched">
-								<small *ngIf="registrationForm.get('occupazione').errors?.required" class="text-danger">Parametro obbligatorio</small>
-							</div>
-						</div>
-		
-						<button [disabled]="!registrationForm.valid" class="btn btn-primary float-right" type="submit">Registrati</button>
-					</form>
-				</div>
-			</div>
-			<br>
-		</div>
-		
-		<div class="row notify" *ngIf="submitted">
-			<div class="col-md-12">
-				<h4>De Componendis Cifris</h4>
-				<p>
-					Con la presente si conferma la Sua iscrizione alla nostra mailing list. 
-					Sarà così sempre aggiornato su ogni evento che organizzeremo. Per aggiornare 
-					i dati o ritirare la propria adesione, prego scrivere direttamente al seguente 
-					indirizzo e-mail: segreteria@decifris.it. <br> Cordiali Saluti.
-				</p>
-			</div>
-		</div>
-		-->
-	</div>
-</ng-sidebar-container>
+<p>
+	Se condividi i nostri interessi, associati!
+	<br>
+	L'associazione ti dà diritto a registrarti a tutte le nostre mailing-list che ti interessano.
+	Le mailing-list sono puramente informative e potrai cancellarti in qualunque momento da
+	qualunque mailing list di tua scelta.
+	<br>
+	<a routerLink="/associarsi">Per associarti basta seguire queste semplici istruzioni</a>.
+</p>
