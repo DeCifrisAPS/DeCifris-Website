@@ -17,7 +17,6 @@ import { AppComponent } from './app.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 
 // home
-import { HomeComponent } from './home/home.component';
 
 // associazione
 import { HomeAssociazioneComponent } from './associazione/home-associazione/home-associazione.component';
@@ -33,8 +32,11 @@ import { PosizioniRicercaComponent } from './associazione/posizioni-ricerca/posi
 import { StageTirociniComponent } from './associazione/stage-tirocini/stage-tirocini.component';
 
 // miscellanea
-import { ContattiComponent } from './contatti/contatti.component';
-import { CookiePolicyComponent } from './cookie-policy/cookie-policy.component';
+import { RootElementsComponent } from './root-elements/root-elements.component';
+import { HomeComponent } from './root-elements/home/home.component';
+import { ContattiComponent } from './root-elements/contatti/contatti.component';
+import { CookiePolicyComponent } from './root-elements/cookie-policy/cookie-policy.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 
 // 
@@ -186,7 +188,9 @@ import { CookiePolicyComponent } from './cookie-policy/cookie-policy.component';
 		AssociazioneComponent,
 		ContattiComponent,
 		CookiePolicyComponent,
-  HomeAssociazioneComponent
+  HomeAssociazioneComponent,
+  RootElementsComponent,
+  WelcomeComponent
 
 		// MailingListComponent,
 		// AttivitaComponent,

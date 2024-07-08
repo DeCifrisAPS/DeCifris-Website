@@ -1,7 +1,3 @@
-/* Codice comune */
-
-
-
 .navbar-toggler {
     height: 100%;
     text-align: right;
@@ -64,8 +60,7 @@ a {
     }
 
     .dropdown-item:hover {
-        font-weight: bold;
-        color: var(--cifris_orange);
+        color: var(--cifris_blue);
     }
 
     .dropdown-toggle::after {
@@ -103,7 +98,6 @@ a {
         text-align: right;
         align-self: flex-end;
         /* Utilizzo di flex-end al posto di right */
-        color: white;
         border: none;
         margin-right: 5%;
         outline: none !important;

@@ -10,36 +10,144 @@
 }
 
 /* Font, style */
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    height: fit-content; 
+    height: fit-content;
     background: url('assets/images/background/background.jpeg') no-repeat center center fixed;
     background-size: cover;
 }
-h1,
+
 h2,
 h3,
 h4,
 h5,
 h6 {
-
-    font-weight: bold !important;
+    font-weight: 500 !important;
     color: var(--cifris_blue) !important;
+    margin-top: 20px !important;
+    margin-bottom: 7px !important;
 }
 
-/* Sidebar */
-button {
-    background: none;
-    border: none;
-    outline: none;
-    color: var(--cifris_blue);
-    width: 200px;
-    text-align: left !important;
+h1 {
+    font-weight: 600 !important;
+    font-size: x-large !important;
+    color: var(--cifris_orange) !important;
+    width: 100% !important;
+    text-align: center !important;
 }
 
+
+/* Other styles */
+div.zoomed {
+    height: 100%;
+    zoom: 1.1;
+    transform: scale(1.1);
+    transform-origin: 0 0;
+}
+
+.toolbar,
+.sidenav,
+.container,
+.content {
+    z-index: 0;
+    position: absolute;
+    height: 100%;
+}
+
+.toolbar {
+    z-index: 2;
+}
+
+.sidenav {
+    z-index: 1;
+}
+
+.content {
+    margin-left: 25%;
+    padding: 10px;
+    margin-right: 10%;
+}
 
 .mat-divider {
     padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+/* SIDEBAR */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.sidebar ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-text,
+.mat-icon {
+    color: var(--cifris_blue);
+}
+
+.sidebar ul h5 {
+    padding: 0;
+    margin: 0;
+}
+
+/* impostazioni generiche sidebar */
+.sidebar {
+    padding-left: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--cifris_azure);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* sidebar su schermi piccoli */
+@media all and (max-width: 991px) {
+    .sidebar {
+        left: -60%;
+        width: 60%;
+        height: 100%;
+        transition: 0.3s;
+        padding-top: 100px;
+    }
+
+    .sidebar.open {
+        left: 0;
+    }
+
+    .content {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 5%;
+        margin-bottom: 150px;
+    }
+}
+
+/* sidebar su schermi grandi */
+@media all and (min-width: 992px) {
+    .sidebar {
+        width: 20%;
+        height: 100%;
+        top: 10% !important;
+        /* esattamente la dimensione della toolbar */
+    }
+
+    .content {
+        margin-top: 20px;
+        width: 80%;
+    }
 }

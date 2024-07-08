@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AttivitaServiceService } from '../servizi/attivita-service.service';
+import { AttivitaServiceService } from '../../servizi/attivita-service.service';
 
 @Component({
   selector: 'app-aderenti',

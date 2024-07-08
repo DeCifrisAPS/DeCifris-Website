@@ -2,15 +2,18 @@ a {
 	cursor: pointer;
 }
 
-.noIndent {
-	list-style: none;
-	padding-left: 0;
-}
 
-.noIndent ul li {
-	margin: 10px 0;
-}
 
+
+/* Sidebar buttons */
+button {
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--cifris_blue);
+    width: 200px;
+    text-align: left;
+}
 
 img.mainlogo {
 	width: 40%;

@@ -1,0 +1,68 @@
+<div class="container">
+    <div class="sidenav">
+        <nav class="sidebar" id="sidebar">
+            <ul>
+                <li>
+                    <button mat-button [routerLink]="['/']" routerLinkActive="active"
+                        [routerLinkActiveOptions]="{exact: true}" class="image-button">
+                        <mat-icon>home</mat-icon>
+                        <span class="sidebar-text">HOME</span>
+                    </button>
+                </li>
+                <h5> IN EVIDENZA </h5>
+                <li>
+                    <button mat-button [routerLink]="['/welcome']" routerLinkActive="active"
+                        [routerLinkActiveOptions]="{exact: true}" class="image-button">
+                        <mat-icon>emoji_people</mat-icon>
+                        <span class="sidebar-text">Welcome</span>
+                    </button>
+                </li>
+                <li>
+                    <button mat-button [routerLink]="['/associazione']" routerLinkActive="active"
+                        [routerLinkActiveOptions]="{exact: true}" class="image-button">
+                        <mat-icon>groups</mat-icon>
+                        <span class="sidebar-text">Associazione</span>
+                    </button>
+                </li>
+                <li>
+                    <button mat-button [routerLink]="['/']" routerLinkActive="active"
+                        [routerLinkActiveOptions]="{exact: true}" class="image-button">
+                        <mat-icon>public</mat-icon>
+                        <span class="sidebar-text">Attività</span>
+                    </button>
+                </li>
+                <li>
+                    <button mat-button [routerLink]="['/']" routerLinkActive="active"
+                        [routerLinkActiveOptions]="{exact: true}" class="image-button">
+                        <mat-icon>auto_stories</mat-icon>
+                        <span class="sidebar-text">De Cifris Koine</span>
+                    </button>
+                </li>
+                <li>
+                    <button mat-button [routerLink]="['/']" routerLinkActive="active"
+                        [routerLinkActiveOptions]="{exact: true}" class="image-button">
+                        <mat-icon>event</mat-icon>
+                        <span class="sidebar-text">CIFRIS24</span>
+                    </button>
+                </li>
+                <h5> INFORMAZIONI </h5>
+                <li>
+                    <button mat-button [routerLink]="['/contatti']" routerLinkActive="active"
+                        [routerLinkActiveOptions]="{exact: true}" class="image-button">
+                        <mat-icon>mail</mat-icon>
+                        <span class="sidebar-text">Contatti</span>
+                    </button>
+                </li>
+                <li>
+                    <button mat-button [routerLink]="['/cookie-policy']" routerLinkActive="active"
+                        [routerLinkActiveOptions]="{exact: true}" class="image-button">
+                        <mat-icon>cookie</mat-icon>
+                        <span class="sidebar-text">Cookies</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <router-outlet></router-outlet>
+    </div>

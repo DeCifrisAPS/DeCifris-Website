@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { HomeComponent } from './home/home.component';
+
+// elementi root (no prefisso)
+import { RootElementsComponent } from './root-elements/root-elements.component';
+import { HomeComponent } from './root-elements/home/home.component';
+import { ContattiComponent } from './root-elements/contatti/contatti.component';
+import { CookiePolicyComponent } from './root-elements/cookie-policy/cookie-policy.component';
+import { MailingListComponent } from './root-elements/mailing-list/mailing-list.component';
 
 // associazione
 import { AssociazioneComponent } from './associazione/associazione.component';
@@ -16,10 +22,14 @@ import { StageTirociniComponent } from './associazione/stage-tirocini/stage-tiro
 import { AssociarsiComponent } from './associazione/associarsi/associarsi.component';
 import { BenemeritiComponent } from './associazione/benemeriti/benemeriti.component';
 
-// miscellanea
-import { ContattiComponent } from './contatti/contatti.component';
-import { CookiePolicyComponent } from './cookie-policy/cookie-policy.component';
-import { MailingListComponent } from './mailing-list/mailing-list.component';
+// welcome
+import { PerAziendeComponent } from './welcome/per-aziende/per-aziende.component';
+import { PerAccademiaComponent } from './welcome/per-accademia/per-accademia.component';
+import { PerStudentiComponent } from './welcome/per-studenti/per-studenti.component';
+import { PerCuriosiComponent } from './welcome/per-curiosi/per-curiosi.component';
+import { PerInsegnantiComponent } from './welcome/per-insegnanti/per-insegnanti.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+
 
 // 
 // import { AttivitaComponent } from './attivita/attivita.component';
@@ -47,13 +57,9 @@ import { MailingListComponent } from './mailing-list/mailing-list.component';
 // // varie
 // import { DecifrisScholaLatinaComponent } from './gruppi/seminari-locali/decifris-schola-latina/decifris-schola-latina.component';
 // import { DecifrisScholaMediolanensibusComponent } from './gruppi/seminari-locali/decifris-schola-mediolanensibus/decifris-schola-mediolanensibus.component';
-// import { PerAziendeComponent } from './contenuti-specifici/per-aziende/per-aziende.component';
-// import { PerAccademiaComponent } from './contenuti-specifici/per-accademia/per-accademia.component';
-// import { PerStudentiComponent } from './contenuti-specifici/per-studenti/per-studenti.component';
+
 // import { AderentiComponent } from './aderenti/aderenti.component';
 // import { CounterpartyComponent } from './counterparty/counterparty.component';
-// import { PerCuriosiComponent } from './contenuti-specifici/per-curiosi/per-curiosi.component';
-// import { PerInsegnantiComponent } from './contenuti-specifici/per-insegnanti/per-insegnanti.component';
 // import { DecifrisTrendComponent } from './attivita/decifris-trend/decifris-trend.component';
 // import { SummerSchoolComponent } from './eventi/eventi-pubblici/summer-school/summer-school.component';
 // import { ConvegnoUmiComponent } from './eventi/eventi-pubblici/convegno-umi/convegno-umi.component';
@@ -130,10 +136,14 @@ import { MailingListComponent } from './mailing-list/mailing-list.component';
 // che viene gestita da <router-outlet> che ogni pagina parente ha
 const routes: Routes = [
 	// home e miscellanea
-	{ path: "", component: HomeComponent },
-	{ path: "contatti", component: ContattiComponent },
-	{ path: "cookie-policy", component: CookiePolicyComponent },
-	{ path: "mailing-list", component: MailingListComponent },
+	{
+		path: "", component: RootElementsComponent, children: [
+			{ path: "", component: HomeComponent },
+			{ path: "contatti", component: ContattiComponent },
+			{ path: "cookie-policy", component: CookiePolicyComponent },
+			{ path: "mailing-list", component: MailingListComponent },
+		]
+	},
 
 	// path ./associazione
 	{
@@ -148,11 +158,18 @@ const routes: Routes = [
 			{ path: "associarsi-benemeriti", component: BenemeritiComponent },
 			{ path: "associarsi", component: AssociarsiComponent },
 			{ path: "obiettivi", component: ObiettiviComponent },
-			{ path: 'advisoryboard/borse', redirectTo: 'opportunita', pathMatch: 'full' },
 		]
 	},
-
-
+	// path ./welcome
+	{
+		path: "welcome", component: WelcomeComponent, children: [
+			{ path: "ricercatori", component: PerAccademiaComponent },
+			{ path: "azienda", component: PerAziendeComponent },
+			{ path: "insegnanti", component: PerInsegnantiComponent },
+			{ path: "curiosi", component: PerCuriosiComponent },
+			{ path: "studenti", component: PerStudentiComponent },
+		]
+	},
 
 
 

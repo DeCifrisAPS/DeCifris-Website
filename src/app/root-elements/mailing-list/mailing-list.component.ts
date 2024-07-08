@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UntypedFormBuilder, Validators } from '@angular/forms';
-import { RegistrationService } from '../servizi/registration.service';
+import { RegistrationService } from '../../servizi/registration.service';
 
 @Component({
   selector: 'app-mailing-list',

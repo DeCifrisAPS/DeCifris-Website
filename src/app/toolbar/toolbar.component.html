@@ -4,7 +4,8 @@
         <img class="pr-2 noFocus" src="../assets/images/icons/decifris.svg" alt="Logo De Cifris">
     </a>
     <button mat-icon-button class="navbar-toggler" type="button" (click)="toggleSidebar()">
-        <mat-icon>menu</mat-icon>
+        <mat-icon style="
+        color: white!important;">menu</mat-icon>
     </button>
 
 
@@ -12,25 +13,26 @@
         <ul class="navbar-nav">
             <!-- MENU WELCOME -->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                <a class="nav-link dropdown-toggle" href="/welcome" id="navbarDropdownMenuLink" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false" style="color: white; font-weight: 600;">Welcome</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" routerLink="/accademia" data-toggle="collapse"
+                    <a class="dropdown-item" routerLink="/welcome/ricercatori" data-toggle="collapse"
                         data-target=".navbar-collapse.show">Fai ricerca?</a>
-                    <a class="dropdown-item" routerLink="/aziende" data-toggle="collapse"
+                    <a class="dropdown-item" routerLink="/welcome/azienda" data-toggle="collapse"
                         data-target=".navbar-collapse.show">Lavori in azienda?</a>
-                    <a class="dropdown-item" routerLink="/scuola" data-toggle="collapse"
+                    <a class="dropdown-item" routerLink="/welcome/insegnanti" data-toggle="collapse"
                         data-target=".navbar-collapse.show">Insegni a scuola?</a>
-                    <a class="dropdown-item" routerLink="/studenti" data-toggle="collapse"
+                    <a class="dropdown-item" routerLink="/welcome/studenti" data-toggle="collapse"
                         data-target=".navbar-collapse.show">Sei studente?</a>
-                    <a class="dropdown-item" routerLink="/curiosi" data-toggle="collapse"
+                    <a class="dropdown-item" routerLink="/welcome/curiosi" data-toggle="collapse"
                         data-target=".navbar-collapse.show">Ti incuriosisce?</a>
                 </div>
             </li>
             <!-- MENU ASSOCIAZIONE -->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="/associazione" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false" style="color: white; font-weight: 600;">Associazione</a>
+                <a class="nav-link dropdown-toggle" href="/associazione" id="navbarDropdownMenuLink"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    style="color: white; font-weight: 600;">Associazione</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" routerLink="/associazione/statuto" data-toggle="collapse"
                         data-target=".navbar-collapse.show">Statuto</a>
@@ -40,9 +42,9 @@
                         data-target=".navbar-collapse.show">Organi direttivi</a>
                     <a class="dropdown-item" routerLink="/associazione/advisory-board" data-toggle="collapse"
                         data-target=".navbar-collapse.show">Advisory board</a>
-                    <mat-divider></mat-divider>
                     <a class="dropdown-item" routerLink="/associazione/associarsi" data-toggle="collapse"
                         data-target=".navbar-collapse.show">Come associarsi</a>
+                        <mat-divider></mat-divider>
                     <a class="dropdown-item" routerLink="/associazione/posizioni-ricerca" data-toggle="collapse"
                         data-target=".navbar-collapse.show">Posizioni accademiche</a>
                     <a class="dropdown-item" routerLink="/associazione/stage-tirocini" data-toggle="collapse"
