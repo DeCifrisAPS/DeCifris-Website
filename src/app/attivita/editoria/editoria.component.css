@@ -1,51 +1,4 @@
-h3, h4, h5 {
-	color:rgb(23, 162, 184);
-}
-
-button{
-	background:none;
-	border:none;
-	outline:none;
-	color:rgb(48, 117, 128);
-}
-
-ng-sidebar-container{
-	position: fixed;
-	right: 0;
-	top: 55px;
-	height: 100%;
-}
-
-::ng-deep .ng-sidebar{
-	background-color: aliceblue;
-	width: 300px !important;
-	padding: 2em 1em;
-}​
-
-@media screen and (max-width: 799px) {
-	#right-sidebar {
-		 display: none !important;
-	}
-}
-
-.bottomExtra{
-	margin-bottom: 3em;
-	padding-bottom: 3em;
-	margin-top: 1em;
-	padding-top: 1em;
-}
-
-.noIndent {
-	list-style: none;
-	padding-left: 0;
-}
-
-.noIndent ul li {
-	margin: 10px 0;
-}
-
-
-div.bookcontainer{
+div.bookcontainer {
 	vertical-align: top;
 	width: 100%;
 	justify-content: center;
@@ -61,7 +14,7 @@ div.bookcontainer{
 	width: 150px;
 	margin: 0 auto;
 	align-items: center;
-	padding:5px;
+	padding: 5px;
 }
 
 .book_container {
@@ -70,7 +23,7 @@ div.bookcontainer{
 	width: fit-content;
 	height: fit-content;
 	padding: 0;
-	margin:0;
+	margin: 0;
 }
 
 #book_container img {
@@ -89,17 +42,18 @@ div.bookcontainer{
 	overflow: auto;
 	font-weight: 400;
 	font-style: italic;
-	margin:0;
+	margin: 0;
 	width: 140px;
 	font-size: small;
 }
+
 #book_container p.title {
 	vertical-align: center;
 	text-align: center;
 	color: var(--cifris_purple) !important;
 	overflow: auto;
 	font-weight: 600;
-	margin:0;
+	margin: 0;
 	width: 140px;
 	font-size: small;
 }

@@ -1,0 +1,21 @@
+div.error{
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+}
+h1 {
+    color: var(--cifris_scarlet) !important;
+}
+a {
+    text-decoration: none;
+}
+p {
+    font-style: italic;
+}
+
+mat-icon {
+    color: var(--cifris_scarlet);
+    font-size: 100px;
+    height: 100px ;
+    width: 100px;
+}

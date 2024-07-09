@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
+import { HttpErrorInterceptor } from './errors/http-error-interceptor.service';
 
 // elementi root (no prefisso)
 import { RootElementsComponent } from './root-elements/root-elements.component';
@@ -31,43 +31,46 @@ import { PerCuriosiComponent } from './welcome/per-curiosi/per-curiosi.component
 import { PerInsegnantiComponent } from './welcome/per-insegnanti/per-insegnanti.component';
 import { HomeWelcomeComponent } from './welcome/home-welcome/home-welcome.component';
 
+// attivita
+import { AttivitaComponent } from './attivita/attivita.component';
+import { HomeAttivitaComponent } from './attivita/home-attivita/home-attivita.component';
+import { EditoriaComponent } from './attivita/editoria/editoria.component';
+import { Centotesi20082017Component } from './attivita/editoria/centotesi20082017/centotesi20082017.component';
+import { Centotesi20142023Component } from './attivita/editoria/centotesi20142023/centotesi20142023.component';
+import { BlockchainSmartContractComponent } from './attivita/corsi/blockchain-smart-contract/blockchain-smart-contract.component';
+import { Trends22Component } from './attivita/corsi/trends22/trends22.component';
+import { Trends22bisComponent } from './attivita/corsi/trends22/trends22bis/trends22bis.component';
+import { Trends24Component } from './attivita/corsi/trends24/trends24.component';
+import { CorsiComponent } from './attivita/corsi/corsi.component';
+import { Trends23Component } from './attivita/corsi/trends23/trends23.component';
+import { SeminariComponent } from './attivita/seminari/seminari.component';
+import { DecifrisEruditorumComponent } from './attivita/seminari/decifris-eruditorum/decifris-eruditorum.component';
+import { DecifrisHistoriaeComponent } from './attivita/seminari/decifris-historiae/decifris-historiae.component';
+import { DecifrisAthesisComponent } from './attivita/seminari/decifris-athesis/decifris-athesis.component';
+import { AgoraComponent } from './attivita/seminari/agora/agora.component';
+import { DecifrisAugustaeTaurinorumComponent } from './attivita/seminari/decifris-augustae-taurinorum/decifris-augustae-taurinorum.component';
+import { DecifrisScholaMediolanensibusComponent } from './attivita/seminari/decifris-schola-mediolanensibus/decifris-schola-mediolanensibus.component';
+import { DecifrisScholaLatinaComponent } from './attivita/seminari/decifris-schola-latina/decifris-schola-latina.component';
+import { CifrisChainComponent } from './attivita/seminari/cifris-chain/cifris-chain.component';
+import { QuantumCifrisComponent } from './attivita/seminari/quantum-cifris/quantum-cifris.component';
+import { CifrisCloudComponent } from './attivita/seminari/cifris-cloud/cifris-cloud.component';
+import { PqCifrisComponent } from './attivita/seminari/pq-cifris/pq-cifris.component';
+import { MathCifrisComponent } from './attivita/seminari/math-cifris/math-cifris.component';
+import { IniziativeDivulgativeComponent } from './attivita/iniziative-divulgative/iniziative-divulgative.component';
+import { GareCrittograficheComponent } from './attivita/gare-crittografiche/gare-crittografiche.component';
+import { EventiComponent } from './attivita/eventi/eventi.component';
+// import { EventiPubbliciComponent } from './attivita/eventi/eventi-pubblici/eventi-pubblici.component';
+import { DidatticaUniversitariaComponent } from './attivita/didattica-universitaria/didattica-universitaria.component';
+import { Error403Component } from './errors/error403/error403.component';
+import { Error418Component } from './errors/error418/error418.component';
+import { Error404Component } from './errors/error404/error404.component';
 
-// 
-// import { AttivitaComponent } from './attivita/attivita.component';
-// import { EventiComponent } from './eventi/eventi.component';
-
-// import { IniziativeDivulgativeComponent } from './attivita/iniziative-divulgative/iniziative-divulgative.component';
-// import { GareCrittograficheComponent } from './attivita/gare-crittografiche/gare-crittografiche.component';
-// import { EventiPubbliciComponent } from './eventi/eventi-pubblici/eventi-pubblici.component';
-// import { DidatticaUniversitariaComponent } from './gruppi/didattica-universitaria/didattica-universitaria.component';
-// import { SessioniDeCifrisComponent } from './eventi/eventi-pubblici/sessioni-de-cifris/sessioni-de-cifris.component';
-
-// // seminari e mailing list
-// import { DecifrisAthesisComponent } from './gruppi/seminari-locali/decifris-athesis/decifris-athesis.component';
-// import { AgoraComponent } from './gruppi/agora/agora.component';
-// import { DecifrisAugustaeTaurinorumComponent } from './gruppi/seminari-locali/decifris-augustae-taurinorum/decifris-augustae-taurinorum.component';
-// import { SeminariLocaliComponent } from './gruppi/seminari-locali/seminari-locali.component';
-// import { CifrisChainComponent } from './gruppi/cifris-chain/cifris-chain.component';
-// import { CifrisCloudComponent } from './gruppi/cifris-cloud/cifris-cloud.component';
-// import { MathCifrisComponent } from './gruppi/math-cifris/math-cifris.component';
-// import { PqCifrisComponent } from './gruppi/pq-cifris/pq-cifris.component';
-// import { DecifrisEruditorumComponent } from './gruppi/seminari-locali/decifris-eruditorum/decifris-eruditorum.component';
-// import { QuantumCifrisComponent } from './gruppi/quantum-cifris/quantum-cifris.component';
-// import { DecifrisHistoriaeComponent } from './gruppi/seminari-locali/decifris-historiae/decifris-historiae.component';
-
-// // varie
-// import { DecifrisScholaLatinaComponent } from './gruppi/seminari-locali/decifris-schola-latina/decifris-schola-latina.component';
-// import { DecifrisScholaMediolanensibusComponent } from './gruppi/seminari-locali/decifris-schola-mediolanensibus/decifris-schola-mediolanensibus.component';
 
 // import { AderentiComponent } from './aderenti/aderenti.component';
 // import { CounterpartyComponent } from './counterparty/counterparty.component';
-// import { DecifrisTrendComponent } from './attivita/decifris-trend/decifris-trend.component';
-// import { SummerSchoolComponent } from './eventi/eventi-pubblici/summer-school/summer-school.component';
-// import { ConvegnoUmiComponent } from './eventi/eventi-pubblici/convegno-umi/convegno-umi.component';
 
 // import { DiconoDiNoiComponent } from './associazione/dicono-di-noi/dicono-di-noi.component';
 // import { NotizieComponent } from './associazione/notizie/notizie.component';
-// import { BlockchainSmartContractComponent } from './attivita/blockchain-smart-contract/blockchain-smart-contract.component';
 
 // // cryptowars
 // import { CryptowarsComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars.component';
@@ -161,6 +164,7 @@ const routes: Routes = [
 			{ path: "obiettivi", component: ObiettiviComponent },
 		]
 	},
+
 	// path ./welcome
 	{
 		path: "welcome", component: WelcomeComponent, children: [
@@ -173,9 +177,49 @@ const routes: Routes = [
 		]
 	},
 
+	// path ./attivita
+	{
+		path: "attivita", component: AttivitaComponent, children: [
+			{ path: "", component: HomeAttivitaComponent },
+			// editoria
+			{ path: "editoria", component: EditoriaComponent },
+			{ path: "centotesi-2008-2017", component: Centotesi20082017Component },
+			{ path: "centotesi-2014-2023", component: Centotesi20142023Component },
+			// { path: 'koine', redirectTo: '/koine/home', pathMatch: 'full' },
+			// corsi
+			{ path: 'corsi', component: CorsiComponent },
+			{ path: 'trends24', component: Trends24Component },
+			{ path: 'trends23', component: Trends23Component },
+			{ path: 'trends22bis', component: Trends22bisComponent },
+			{ path: 'trends22', component: Trends22Component },
+			{ path: "y2y-blockchain", component: BlockchainSmartContractComponent },
+			{ path: "seminari", component: SeminariComponent },
+			{ path: "eruditorum", component: DecifrisEruditorumComponent },
+			{ path: "decifris-historiae", component: DecifrisHistoriaeComponent },
+			{ path: "decifris-athesis", component: DecifrisAthesisComponent },
+			{ path: "decifris-agora", component: AgoraComponent },
+			{ path: "decifris-augustaeTaurinorum", component: DecifrisAugustaeTaurinorumComponent },
+			{ path: "decifris-scholaLatina", component: DecifrisScholaLatinaComponent },
+			{ path: "decifris-mediolanensibus", component: DecifrisScholaMediolanensibusComponent },
+			{ path: 'cifrischain', component: CifrisChainComponent },
+			{ path: 'quantumcifris', component: QuantumCifrisComponent },
+			{ path: 'cifriscloud', component: CifrisCloudComponent },
+			{ path: 'mathcifris', component: MathCifrisComponent },
+			{ path: 'pqcifris', component: PqCifrisComponent },
+			// eventi
+			{ path: "eventi", component: EventiComponent },
+			// { path: 'cifris23', redirectTo: '/cifris23', pathMatch: 'full' },
+			// { path: 'cifris24', redirectTo: '/cifris24', pathMatch: 'full' },
+			{ path: "gare-crittografiche", component: GareCrittograficheComponent },
+			// { path: "eventi-pubblici", component: EventiPubbliciComponent },
+			// miscellanea
+			{ path: "iniziative-divulgative", component: IniziativeDivulgativeComponent },
+			{ path: "didattica-universitaria", component: DidatticaUniversitariaComponent },
+
+		]
+	},
 
 
-	// { path: 'koine', redirectTo: '/koine/home', pathMatch: 'full' },
 	// {
 	// 	path: "koine", component: KoineComponent, children: [
 	// 		{ path: "home", component: HomeKoineComponent },
@@ -188,11 +232,7 @@ const routes: Routes = [
 	// { path: "opera24", component: Opera24Component },
 	// { path: "combinatorics24", component: Combinatorics24Component },
 	// { path: "wcc24", component: WCC24Component },
-	// { path: "blockchain-smart-contract", component: BlockchainSmartContractComponent },
-	// { path: "editoria", component: EditoriaComponent },
-	// { path: "centotesi2008-2017", component: Centotesi20082017Component },
-	// { path: "centotesi2014-2023", component: Centotesi20142023Component },
-	// { path: 'cifris23', redirectTo: '/cifris23/homeCifris23', pathMatch: 'full' },
+
 	// {
 	// 	path: "cifris23", component: Cifris2023Component, children: [
 	// 		{ path: "call-for-papers", component: CallForPapersComponent },
@@ -205,7 +245,6 @@ const routes: Routes = [
 	// 		{ path: "payment-result", component: PaymentResultComponent },
 	// 	]
 	// },
-	// { path: 'cifris24', redirectTo: '/cifris24/homeCifris24', pathMatch: 'full' },
 	// {
 	// 	path: "cifris24", component: Cifris2024Component, children: [
 	// 		{ path: "venue-accomodation", component: VenueAccomodationComponent24 },
@@ -221,58 +260,12 @@ const routes: Routes = [
 	// },
 	// { path: "dicono-di-noi", component: DiconoDiNoiComponent },
 	// { path: "notizie", component: NotizieComponent },
-	// { path: 'trends', component: DecifrisTrendComponent },
-	// { path: 'trends24', component: Trends24Component },
-	// { path: 'trends23', component: Trends23Component },
-	// { path: 'trends22bis', component: Trends22bisComponent },
-	// { path: 'trends22', component: Trends22Component },
-	// { path: "aderenti", component: AderentiComponent },
-	// { path: "attivita", component: AttivitaComponent },
-	// { path: "seminariLocali", component: SeminariLocaliComponent },
-	// { path: "eruditorum", component: DecifrisEruditorumComponent },
-	// { path: "deCifrisHistoriae", component: DecifrisHistoriaeComponent },
-	// { path: "deCifrisAthesis", component: DecifrisAthesisComponent },
-	// { path: "deCifrisAgora", component: AgoraComponent },
-	// { path: "deCifrisAugustaeTaurinorum", component: DecifrisAugustaeTaurinorumComponent },
-	// { path: "deCifrisScholaLatina", component: DecifrisScholaLatinaComponent },
-	// { path: "deCifrisMediolanensibus", component: DecifrisScholaMediolanensibusComponent },
-	// { path: 'cifrisChain', component: CifrisChainComponent },
-	// { path: 'quantumCifris', component: QuantumCifrisComponent },
-	// { path: 'cifrisCloud', component: CifrisCloudComponent },
-	// { path: 'mathCifris', component: MathCifrisComponent },
-	// { path: 'PQCifris', component: PqCifrisComponent },
-	// { path: "iniziativeDivulgative", component: IniziativeDivulgativeComponent },
-	// { path: "gareCrittografiche", component: GareCrittograficheComponent },
-	// { path: "eventiPubblici", component: EventiPubbliciComponent },
-	// { path: "didatticaUniversitaria", component: DidatticaUniversitariaComponent },
-	// { path: "eventi", component: EventiComponent },
-	// { path: "sessioni", component: SessioniDeCifrisComponent },
-	// { path: "curiosi", component: PerCuriosiComponent },
-	// { path: "scuola", component: PerInsegnantiComponent },
-	// { path: "studenti", component: PerStudentiComponent },
-	// { path: "aziende", component: PerAziendeComponent },
-	// { path: "convegnoUmi", component: ConvegnoUmiComponent },
-	// { path: "accademia", component: PerAccademiaComponent },
-	// { path: "counterparty", component: CounterpartyComponent },
-	// { path: "summerSchool2022", component: SummerSchoolComponent },
-	// {
-	// 	path: "cryptowars", component: CryptowarsComponent, children: [
-	// 		{ path: "2021", component: Cryptowars2021Component },
-	// 		{ path: "2020", component: Cryptowars2020Component },
-	// 		{ path: "2019", component: Cryptowars2019Component },
-	// 		{ path: "2018", component: Cryptowars2018Component },
-	// 		{ path: "2016", component: Cryptowars2016Component },
-	// 		{ path: "2015", component: Cryptowars2015Component },
-	// 		{ path: "2014", component: Cryptowars2014Component },
-	// 		{
-	// 			path: "2011", component: Cryptowars2011Component, children: [
-	// 				{ path: "classica", component: ClassicaComponent },
-	// 				{ path: "pubblica", component: PubblicaComponent },
-	// 				{ path: "simmetrica", component: SimmetricaComponent }
-	// 			]
-	// 		}
-	// 	]
-	// }
+
+
+  // Rotte per gli errori
+  { path: '403', component: Error403Component },
+  { path: '418', component: Error418Component },
+  { path: '**', component: Error404Component }
 ];
 
 @NgModule({
