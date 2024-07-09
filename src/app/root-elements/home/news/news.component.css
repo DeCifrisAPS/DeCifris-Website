@@ -1,0 +1,39 @@
+
+ul {
+	/* Questa modifica lascia più spazio tra gli item della lista, 
+	"per evitare che sembri tutto attaccato" */
+	display: grid;
+	gap: 5px;
+}
+
+.newscard {
+	width: auto !important;
+	/*override the width below*/
+	width: 100%;
+	padding: 30px;
+	margin: 10px;
+	border-radius: 20px;
+	transition: 0.3s all ease-in;
+	background-color: transparent;
+	border: 1px solid var(--cifris_blue);
+}
+
+h5 {
+	font-size: large;
+}
+
+img.float-right{
+	width: 100%;
+	max-width: 350px!important;
+	max-height: 150px;
+	object-fit: cover;
+	margin-left: 30px;
+	margin-bottom: 5px;
+	text-align: right;
+}
+
+@media screen and (max-width: 991px) {
+	img.float-right{
+		margin-bottom: 30px;
+	}
+}

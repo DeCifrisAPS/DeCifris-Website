@@ -64,6 +64,18 @@ import { DidatticaUniversitariaComponent } from './attivita/didattica-universita
 import { Error403Component } from './errors/error403/error403.component';
 import { Error418Component } from './errors/error418/error418.component';
 import { Error404Component } from './errors/error404/error404.component';
+import { DiconoDiNoiComponent } from './associazione/notizie/dicono-di-noi/dicono-di-noi.component';
+import { NotizieComponent } from './associazione/notizie/notizie.component';
+import { Cifris2024Component } from './attivita/eventi/cifris/cifris2024/cifris2024.component';
+import { CallForPapersComponent24 } from './attivita/eventi/cifris/cifris2024/call-for-papers/call-for-papers.component';
+import { CallForWorkshopsComponent24 } from './attivita/eventi/cifris/cifris2024/call-for-workshops/call-for-workshops.component';
+import { HomeCifris24Component } from './attivita/eventi/cifris/cifris2024/home-cifris24/home-cifris24.component';
+import { PaymentResultComponent24 } from './attivita/eventi/cifris/cifris2024/payment-result/payment-result.component';
+import { ProceedingsComponent24 } from './attivita/eventi/cifris/cifris2024/proceedings/proceedings.component';
+import { ProgramCommitteeComponent24 } from './attivita/eventi/cifris/cifris2024/program-committee/program-committee.component';
+import { ProgramComponent24 } from './attivita/eventi/cifris/cifris2024/program/program.component';
+import { RegistrationComponent24 } from './attivita/eventi/cifris/cifris2024/registration/registration.component';
+import { VenueAccomodationComponent24 } from './attivita/eventi/cifris/cifris2024/venue-accomodation/venue-accomodation.component';
 
 
 // import { AderentiComponent } from './aderenti/aderenti.component';
@@ -162,6 +174,8 @@ const routes: Routes = [
 			{ path: "associarsi-benemeriti", component: BenemeritiComponent },
 			{ path: "associarsi", component: AssociarsiComponent },
 			{ path: "obiettivi", component: ObiettiviComponent },
+			{ path: "dicono-di-noi", component: DiconoDiNoiComponent },
+			{ path: "notizie", component: NotizieComponent },
 		]
 	},
 
@@ -209,13 +223,27 @@ const routes: Routes = [
 			// eventi
 			{ path: "eventi", component: EventiComponent },
 			// { path: 'cifris23', redirectTo: '/cifris23', pathMatch: 'full' },
-			// { path: 'cifris24', redirectTo: '/cifris24', pathMatch: 'full' },
+			{ path: 'cifris24', redirectTo: '/cifris24', pathMatch: 'full' },
 			{ path: "gare-crittografiche", component: GareCrittograficheComponent },
 			// { path: "eventi-pubblici", component: EventiPubbliciComponent },
 			// miscellanea
 			{ path: "iniziative-divulgative", component: IniziativeDivulgativeComponent },
 			{ path: "didattica-universitaria", component: DidatticaUniversitariaComponent },
 
+		]
+	},
+	// cifris 24
+	{
+		path: "cifris24", component: Cifris2024Component, children: [
+			{ path: "", component: HomeCifris24Component },
+			{ path: "venue", component: VenueAccomodationComponent24 },
+			{ path: "call-for-papers", component: CallForPapersComponent24 },
+			{ path: "call-for-workshops", component: CallForWorkshopsComponent24 },
+			{ path: "program-committee", component: ProgramCommitteeComponent24 },
+			{ path: "registration", component: RegistrationComponent24 },
+			{ path: "program", component: ProgramComponent24 },
+			{ path: "proceedings", component: ProceedingsComponent24 },
+			{ path: "payment-result", component: PaymentResultComponent24 },
 		]
 	},
 
@@ -245,27 +273,12 @@ const routes: Routes = [
 	// 		{ path: "payment-result", component: PaymentResultComponent },
 	// 	]
 	// },
-	// {
-	// 	path: "cifris24", component: Cifris2024Component, children: [
-	// 		{ path: "venue-accomodation", component: VenueAccomodationComponent24 },
-	// 		{ path: "call-for-papers", component: CallForPapersComponent24 },
-	// 		{ path: "call-for-workshops", component: CallForWorkshopsComponent24 },
-	// 		{ path: "program-committee", component: ProgramCommitteeComponent24 },
-	// 		{ path: "registration", component: RegistrationComponent24 },
-	// 		{ path: "homeCifris24", component: HomeCifris24Component },
-	// 		{ path: "program", component: ProgramComponent24 },
-	// 		{ path: "proceedings", component: ProceedingsComponent24 },
-	// 		{ path: "payment-result", component: PaymentResultComponent24 },
-	// 	]
-	// },
-	// { path: "dicono-di-noi", component: DiconoDiNoiComponent },
-	// { path: "notizie", component: NotizieComponent },
 
 
-  // Rotte per gli errori
-  { path: '403', component: Error403Component },
-  { path: '418', component: Error418Component },
-  { path: '**', component: Error404Component }
+	// Rotte per gli errori
+	{ path: '403', component: Error403Component },
+	{ path: '418', component: Error418Component },
+	{ path: '**', component: Error404Component }
 ];
 
 @NgModule({

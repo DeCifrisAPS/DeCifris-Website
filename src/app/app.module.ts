@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { HTTP_INTERCEPTORS } from '@angular/common/http';
+// import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatMenuModule } from '@angular/material/menu';
@@ -72,6 +72,14 @@ import { HttpErrorInterceptor } from './errors/http-error-interceptor.service';
 import { AgoraComponent } from './attivita/seminari/agora/agora.component';
 import { SeminariComponent } from './attivita/seminari/seminari.component';
 import { EditoriaComponent } from './attivita/editoria/editoria.component';
+import { DiconoDiNoiComponent } from './associazione/notizie/dicono-di-noi/dicono-di-noi.component';
+import { NotizieComponent } from './associazione/notizie/notizie.component';
+import { NewsComponent } from './root-elements/home/news/news.component';
+import { CallForPapersComponent24 } from './attivita/eventi/cifris/cifris2024/call-for-papers/call-for-papers.component';
+import { CallForWorkshopsComponent24 } from './attivita/eventi/cifris/cifris2024/call-for-workshops/call-for-workshops.component';
+import { ProgramCommitteeComponent24 } from './attivita/eventi/cifris/cifris2024/program-committee/program-committee.component';
+import { SubmissionComponent24 } from './attivita/eventi/cifris/cifris2024/submission/submission.component';
+import { Cifris2024Component } from './attivita/eventi/cifris/cifris2024/cifris2024.component';
 
 
 
@@ -174,7 +182,15 @@ import { EditoriaComponent } from './attivita/editoria/editoria.component';
 		AttivitaComponent,
 		AgoraComponent,
 		SeminariComponent,
-		EditoriaComponent
+		EditoriaComponent,
+		DiconoDiNoiComponent,
+		NotizieComponent,
+		NewsComponent,
+		CallForPapersComponent24,
+		CallForWorkshopsComponent24,
+		ProgramCommitteeComponent24,
+		SubmissionComponent24,
+		Cifris2024Component
 
 		// MailingListComponent,
 		// AttivitaComponent,
@@ -319,11 +335,12 @@ import { EditoriaComponent } from './attivita/editoria/editoria.component';
 		MatCardModule
 	],
 	providers: [
-		{
-			provide: HTTP_INTERCEPTORS,
-			useClass: HttpErrorInterceptor,
-			multi: true
-		}],
+		// {
+		// 	provide: HTTP_INTERCEPTORS,
+		// 	useClass: HttpErrorInterceptor,
+		// 	multi: true
+		// }],
+	],
 	bootstrap: [AppComponent]
 })
 export class AppModule { }

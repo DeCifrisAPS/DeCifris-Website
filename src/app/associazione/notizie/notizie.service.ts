@@ -7,7 +7,7 @@ import { Notizia } from './notizia.model';
     providedIn: 'root'
 })
 export class NotizieService {
-    private basePath = 'assets/notizie/lista_notizie/';
+    private basePath = 'assets/notizie/';
 
     constructor(private http: HttpClient) { }
 
