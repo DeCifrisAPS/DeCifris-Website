@@ -9,6 +9,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCardModule } from '@angular/material/card';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // app di base
@@ -37,6 +38,7 @@ import { HomeComponent } from './root-elements/home/home.component';
 import { ContattiComponent } from './root-elements/contatti/contatti.component';
 import { CookiePolicyComponent } from './root-elements/cookie-policy/cookie-policy.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { HomeWelcomeComponent } from './welcome/home-welcome/home-welcome.component';
 
 
 // 
@@ -190,7 +192,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
 		CookiePolicyComponent,
   HomeAssociazioneComponent,
   RootElementsComponent,
-  WelcomeComponent
+  WelcomeComponent,
+  HomeWelcomeComponent
 
 		// MailingListComponent,
 		// AttivitaComponent,
@@ -332,7 +335,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
 		MatToolbarModule,
 		MatIconModule,
 		MatMenuModule,
-		BrowserAnimationsModule
+		BrowserAnimationsModule,
+		MatCardModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]

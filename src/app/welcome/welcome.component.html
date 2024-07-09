@@ -9,62 +9,48 @@
 						<span class="sidebar-text">HOME</span>
 					</button>
 				</li>
-				<h5> DE CIFRIS APS </h5>
+
+				<h5> CONTENUTI SPECIFICI </h5>
 				<li>
-					<button mat-button [routerLink]="['/associazione']" routerLinkActive="active"
+					<button mat-button [routerLink]="['/welcome']" routerLinkActive="active"
 						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
-						<mat-icon>groups</mat-icon>
-						<span class="sidebar-text">Associazione</span>
+						<mat-icon>emoji_people</mat-icon>
+						<span class="sidebar-text">Welcome!</span>
 					</button>
 				</li>
 				<li>
-					<button mat-button [routerLink]="['/associazione/statuto']" routerLinkActive="active"
+					<button mat-button [routerLink]="['/welcome/ricercatori']" routerLinkActive="active"
 						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
-						<mat-icon>description</mat-icon>
-						<span class="sidebar-text">Statuto</span>
+						<mat-icon>biotech</mat-icon>
+						<span class="sidebar-text">Fai ricerca?</span>
 					</button>
 				</li>
 				<li>
-					<button mat-button [routerLink]="['/associazione/regolamento']" routerLinkActive="active"
-						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
-						<mat-icon>gavel</mat-icon>
-						<span class="sidebar-text">Regolamenti</span>
-					</button>
-				</li>
-				<li>
-					<button mat-button [routerLink]="['/associazione/organi-direttivi']" routerLinkActive="active"
-						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
-						<mat-icon>corporate_fare</mat-icon>
-						<span class="sidebar-text">Organizzazione</span>
-					</button>
-				</li>
-				<li>
-					<button mat-button [routerLink]="['/associazione/associarsi']" routerLinkActive="active"
-						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
-						<mat-icon>person_add</mat-icon>
-						<span class="sidebar-text">Associarsi</span>
-					</button>
-				</li>
-				<li>
-					<button mat-button [routerLink]="['/associazione/advisory-board']" routerLinkActive="active"
-						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
-						<mat-icon>assured_workload</mat-icon>
-						<span class="sidebar-text">Advisory Board</span>
-					</button>
-				</li>
-				<h5> SERVIZI </h5>
-				<li>
-					<button mat-button [routerLink]="['/associazione/posizioni-ricerca']" routerLinkActive="active"
+					<button mat-button [routerLink]="['/welcome/azienda']" routerLinkActive="active"
 						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
 						<mat-icon>work</mat-icon>
-						<span class="sidebar-text">Poizioni</span>
+						<span class="sidebar-text">Lavori in azienda?</span>
 					</button>
 				</li>
 				<li>
-					<button mat-button [routerLink]="['/associazione/stage-tirocini']" routerLinkActive="active"
+					<button mat-button [routerLink]="['/welcome/insegnanti']" routerLinkActive="active"
 						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
-						<mat-icon>badge</mat-icon>
-						<span class="sidebar-text">Stage & Tirocini</span>
+						<mat-icon>square_foot</mat-icon>
+						<span class="sidebar-text">Insegni a scuola?</span>
+					</button>
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/welcome/studenti']" routerLinkActive="active"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>school</mat-icon>
+						<span class="sidebar-text">Sei studente?</span>
+					</button>
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/welcome/curiosi']" routerLinkActive="active"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>emoji_objects</mat-icon>
+						<span class="sidebar-text">Ti incuriosisce?</span>
 					</button>
 				</li>
 			</ul>

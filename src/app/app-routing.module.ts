@@ -23,12 +23,13 @@ import { AssociarsiComponent } from './associazione/associarsi/associarsi.compon
 import { BenemeritiComponent } from './associazione/benemeriti/benemeriti.component';
 
 // welcome
+import { WelcomeComponent } from './welcome/welcome.component';
 import { PerAziendeComponent } from './welcome/per-aziende/per-aziende.component';
 import { PerAccademiaComponent } from './welcome/per-accademia/per-accademia.component';
 import { PerStudentiComponent } from './welcome/per-studenti/per-studenti.component';
 import { PerCuriosiComponent } from './welcome/per-curiosi/per-curiosi.component';
 import { PerInsegnantiComponent } from './welcome/per-insegnanti/per-insegnanti.component';
-import { WelcomeComponent } from './welcome/welcome.component';
+import { HomeWelcomeComponent } from './welcome/home-welcome/home-welcome.component';
 
 
 // 
@@ -163,6 +164,7 @@ const routes: Routes = [
 	// path ./welcome
 	{
 		path: "welcome", component: WelcomeComponent, children: [
+			{ path: "", component: HomeWelcomeComponent },
 			{ path: "ricercatori", component: PerAccademiaComponent },
 			{ path: "azienda", component: PerAziendeComponent },
 			{ path: "insegnanti", component: PerInsegnantiComponent },

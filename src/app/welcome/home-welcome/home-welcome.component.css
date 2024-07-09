@@ -1,0 +1,34 @@
+div.iniziativecontainer {
+    display: flex;  /* Aggiunto display: flex */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+mat-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+    margin-right:10px;
+}
+
+mat-card:hover {
+    background-color: var(--cifris_orange);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+a {
+    width: fit-content;
+    height: fit-content;
+}
