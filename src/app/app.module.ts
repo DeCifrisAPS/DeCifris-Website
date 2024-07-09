@@ -42,8 +42,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { HomeWelcomeComponent } from './welcome/home-welcome/home-welcome.component';
 
 // attivita
+import { AttivitaComponent } from './attivita/attivita.component';
 import { HomeAttivitaComponent } from './attivita/home-attivita/home-attivita.component';
-// // ./attivita/corsi
 import { CorsiComponent } from './attivita/corsi/corsi.component';
 // import { Trends24Component } from './attivita/trends24/trends24.component';
 // import { Trends23Component } from './attivita/trends23/trends23.component';
@@ -69,6 +69,9 @@ import { Error404Component } from './errors/error404/error404.component';
 import { Error403Component } from './errors/error403/error403.component';
 import { Error418Component } from './errors/error418/error418.component';
 import { HttpErrorInterceptor } from './errors/http-error-interceptor.service';
+import { AgoraComponent } from './attivita/seminari/agora/agora.component';
+import { SeminariComponent } from './attivita/seminari/seminari.component';
+import { EditoriaComponent } from './attivita/editoria/editoria.component';
 
 
 
@@ -120,7 +123,6 @@ import { HttpErrorInterceptor } from './errors/http-error-interceptor.service';
 // import { EventiPatrocinatiComponent } from './eventi/eventi-patrocinati/eventi-patrocinati/eventi-patrocinati.component';
 // import { VenueAccomodationComponent24 } from './cifris/cifris2024/venue-accomodation/venue-accomodation.component';
 // import { Centotesi20142023Component } from './attivita/centotesi20142023/centotesi20142023.component';
-// import { AgoraComponent } from './gruppi/agora/agora.component';
 // import { Vol2Component } from './attivita/editoria/koine/vol2/vol2.component';
 
 @NgModule({
@@ -169,6 +171,10 @@ import { HttpErrorInterceptor } from './errors/http-error-interceptor.service';
 		Error404Component,
 		Error403Component,
 		Error418Component,
+		AttivitaComponent,
+		AgoraComponent,
+		SeminariComponent,
+		EditoriaComponent
 
 		// MailingListComponent,
 		// AttivitaComponent,

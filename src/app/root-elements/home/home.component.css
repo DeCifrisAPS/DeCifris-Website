@@ -7,93 +7,15 @@ a {
 
 /* Sidebar buttons */
 button {
-    background: none;
-    border: none;
-    outline: none;
-    color: var(--cifris_blue);
-    width: 200px;
-    text-align: left;
+	background: none;
+	border: none;
+	outline: none;
+	color: var(--cifris_blue);
+	width: 200px;
+	text-align: left;
 }
 
 img.mainlogo {
 	width: 40%;
 	border-radius: 50%;
-}
-
-div.iniziativecontainer {
-	width: 100%;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-}
-
-.imagebtn {
-	color: rgb(48, 117, 128);
-	width: 120px;
-	height: 120px;
-	padding-left: 20px;
-	padding-right: 20px;
-	margin: 0 auto;
-	align-items: center;
-}
-
-.imagebtn_container {
-	background: #fff;
-	align-items: center;
-	width: 100%;
-}
-
-#imagebtn_container img {
-	margin-left: 15%;
-	margin-right: 15%;
-	width: 70%;
-	filter: invert(14%) sepia(97%) saturate(2358%) hue-rotate(18deg) brightness(99%) contrast(103%);
-	/* 
-	serve generare il filtro per colorare gli SVG, vedi qui:
-	https://codepen.io/sosuke/pen/Pjoqqp?__cf_chl_jschl_tk__=ecc0b72797ae71bc009d6322e3e470773936b386-1604211766-0-ASpz720gXnc6Ej0vzlgY9-KLmlPkldgcOx1wAmGTUCjLZLOxkArNxpRzZ9m8woL-NGmP9LBGVPws8UxMJZrR7O1qFH6QkKtrGVPw6StRnXiK1XTQR_nY905r0XobAG2nOmyC6Zq8mdyPDp1MyHD7JLodJUXCRViXhtmLmRVE_-JGarVJRlxs6k3DzAOQQEJewfp00DjhlD0mxr8ZKpk2yq6IPTZZQ52XYxh26FC5MxLHhs7LuAwhtolmDZyp4_IuwRg8I5m-2--MmvGE8CCqjRWrkE85zgkMXPlOqcZtppRpZhn6Uz9DZAuKheHwVBb0ySIhFYG92bvQOgiKX0TTswB1SHgOLIeqktuyUaAgxI_h /*
-	*/
-}
-
-#imagebtn_container p {
-	vertical-align: center;
-	text-align: center;
-	color: var(--cifris_purple) !important;
-	width: 100%;
-	overflow: auto;
-	font-weight: 500;
-}
-
-.imagebtn:hover {
-	opacity: 0.9;
-	transform: translateY(-5px);
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-btn.txtbtn {
-	color: rgb(48, 117, 128);
-	height: 180px;
-	padding-left: 20px;
-	padding-right: 20px;
-	margin: 0 auto;
-	text-align: center;
-	padding: 0;
-	width: 20%;
-}
-
-p.txtbtn-txt {
-	vertical-align: center;
-	text-align: center;
-	color: var(--cifris_blue) !important;
-	width: 100%;
-	overflow: auto;
-	font-weight: 500;
-	margin: 0;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-.txtbtn:hover {
-	opacity: 0.9;
-	transform: translateY(-5px);
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

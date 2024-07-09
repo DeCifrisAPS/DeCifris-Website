@@ -1,39 +1,27 @@
 <div class="cards">
-	<!--
-		CAVEAT: questa sezione è per gli eventi futuri molto importanti, che vengono
-		visualizzati tramite schede cliccabili in varie parti del sito (e.g. se nel
-		mentre non sono stati cambiati: home, area eventi).
-		L'ideale è averne uno o due al massimo insieme per volta.
-	-->
-	<!-- CIFRIS 24-->
-	<div class="card">
-		<a [routerLink]="['/cifris24']">
-			<img src="../../../assets/attivita/convegnoAnnuale/2024 - cifris24/roma.webp" alt="" />
+	<!-- Congresso CIFRIS24 -->
+	<mat-card class="card" [routerLink]="'/cifris24'">
+		<img mat-card-image src="../../../../assets/images/events/2024/cifris24/roma.webp" alt="Congresso CIFRIS24">
+		<div class="container">
+			<h1 class="mat-headline">Congresso CIFRIS24</h1>
+		</div>
+	</mat-card>
 
-			<div class="container">
-				<h1>Congresso CIFRIS24</h1>
-				<p>
-					Il nostro secondo congresso annuale di crittografia nell'eterna Roma. Dal 25 al 27
-					Settembre 2024.
-				</p>
-			</div>
-		</a>
-	</div>
-
-	<!-- TRENDS 24-->
-	<div class="card">
-		<a [routerLink]="['/trends24']">
-			<img src="../../../assets/attivita/deCifrisTrends/trends24_paris.jpg" alt="" />
-			<div class="container">
-				<h1>Trends 2024</h1>
-				<p>
-					La terza edizione del corso <a [routerLink]="['/trends24']"> De Cifris Trends</a>, da Settembre a
-					Novembre 2024: <i>The French Magisterium </i>.
-				</p>
-			</div>
-		</a>
-	</div>
+	<!-- Trends 2024 -->
+	<mat-card class="card" [routerLink]="['/attivita/trends24']">
+		<img mat-card-image src="../../../../assets/images/events/2024/trends24/trends24_paris.jpg" alt="Trends 2024">
+		<div class="container">
+			<h1 class="mat-headline">Corso Trends 2024</h1>
+		</div>
+	</mat-card>
 </div>
+<br>
+<p>
+	<b>CIFRIS24</b> è il nostro secondo congresso annuale di crittografia, stavolta nell'eterna Roma. Dal 25 al 27 Settembre 2024.
+	<br>
+	<b>Trends24: <i>The French Magisterium</i></b> invece è la terza edizione del corso <a [routerLink]="'/attivita/corsi'">De Cifris Trends</a>, da Settembre a Novembre
+	2024:
+  </p>
 <div>
 	<app-eventi-patrocinati></app-eventi-patrocinati>
 </div>

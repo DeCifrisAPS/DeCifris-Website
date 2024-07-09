@@ -2,7 +2,7 @@
 	<img class="mainlogo" src="../../assets/images/logos/logo.jpg" alt="Logo De Cifris">
 </div>
 
-<h2>CHI SIAMO?</h2>
+<h2>Chi siamo?</h2>
 <p>
 	L'associazione di promozione sociale <b>De Componendis Cifris</b>, in
 	forma abbreviata <i>De Cifris</i>, si propone di animare la comunità
@@ -43,80 +43,13 @@
 	condividono questa visione.
 </p>
 <mat-divider></mat-divider>
-<h2>INIZIATIVE</h2>
-<p>
-	Fra le varie iniziative proposte si evidenziano
-	<a routerLink="/seminariLocali">
-		numerosi seminari</a>, vari
-	<a href="https://www.decifris.it/trends">
-		corsi</a> per ogni tipo di pubblico,
-	<a href="https://www.decifris.it/eventi">
-		eventi</a> e molto altro!
-	<br>
-	I nostri contenuti sono diffusi anche tramite le pagine
-	<a href="https://www.youtube.com/channel/UCTgLUneI3agkv_FcW0RlI0A" target="_blank">YouTube</a> e
-	<a href="https://www.linkedin.com/in/de-componendis-cifris-iniziativa-nazionale-8274501a5/"
-		target="_blank">LinkedIn</a> dell'associazione.
-</p>
-<div class="iniziativecontainer">
-	<!-- pulsante SEMINARI -->
-	<a href="/seminariLocali">
-		<button class="imagebtn">
-			<div id="imagebtn_container">
-				<img src="../../assets/images/icons/seminar.svg" />
-				<p class="imagebtn-txt">seminari</p>
-			</div>
-		</button>
-	</a>
-	<!-- pulsante CORSI -->
-	<a href="https://www.decifris.it/trends">
-		<button material-button class="imagebtn">
-			<div id="imagebtn_container">
-				<img src="../../assets/images/icons/course.svg" />
-				<p class="imagebtn-txt">corsi</p>
-			</div>
-		</button>
-	</a>
-	<!-- pulsante EVENTI -->
-	<a href="https://www.decifris.it/eventi">
-		<button material-button class="imagebtn">
-			<div id="imagebtn_container">
-				<img src="../../assets/images/icons/event.svg" />
-				<p class="imagebtn-txt">eventi</p>
-			</div>
-		</button>
-	</a>
-	<!-- pulsante PUBLISHING -->
-	<a href='/koine/home' routerLinkActive="active">
-		<button material-button class="imagebtn">
-			<div id="imagebtn_container">
-				<img src="../../assets/images/icons/publishing.svg" />
-				<p class="imagebtn-txt">publishing</p>
-			</div>
-		</button>
-	</a>
-	<!-- pulsante LINKEDIN -->
-	<a href="https://www.linkedin.com/in/
-		de-componendis-cifris-iniziativa-nazionale-8274501a5/">
-		<button material-button class="imagebtn">
-			<div id="imagebtn_container">
-				<img src="../../assets/images/icons/linkedin_2.svg" />
-				<p class="imagebtn-txt">LinkedIn</p>
-			</div>
-		</button>
-	</a>
-	<!-- pulsante YOUTUBE -->
-	<a href="https://www.youtube.com/channel/UCTgLUneI3agkv_FcW0RlI0A">
-		<button material-button class="imagebtn">
-			<div id="imagebtn_container">
-				<img src="../../assets/images/icons/youtube.svg" />
-				<p class="imagebtn-txt">YouTube</p>
-			</div>
-		</button>
-	</a>
-</div>
+
+<h2>Attività e iniziative</h2>
+<app-home-attivita></app-home-attivita>
 <app-home-welcome></app-home-welcome>
-<h2>EVENTI IN ARRIVO</h2>
-<!-- <app-eventi-futuri id="eventi"></app-eventi-futuri> -->
+<mat-divider></mat-divider>
+
+<h2>Eventi in arrivo</h2>
+<app-eventi-futuri id="eventi"></app-eventi-futuri>
 <mat-divider></mat-divider>
 <!-- <app-news id="news"></app-news> -->

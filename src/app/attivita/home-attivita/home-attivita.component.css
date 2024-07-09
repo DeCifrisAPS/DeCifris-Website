@@ -9,19 +9,22 @@ div.iniziativecontainer {
 }
 
 mat-card {
+    border: none;
+    background: none;
     display: flex;
     align-items: center;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
     justify-content: center;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-left: 10px;
-    margin-right:10px;
+    margin: 10px;
+    margin-bottom: 20px;
 }
 
 mat-card:hover {
-    background-color: var(--cifris_scarlet);
+    background-color: var(--cifris_purple);
     color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
