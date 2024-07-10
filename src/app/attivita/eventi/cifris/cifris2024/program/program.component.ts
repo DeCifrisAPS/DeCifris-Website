@@ -15,25 +15,25 @@ export class ProgramComponent24 implements OnInit {
 	ngOnInit(): void {
 	}
 
-	/*
-	public readMoreHandler(event) {
-		const button = event.currentTarget;
+	// /*
+	// public readMoreHandler(event) {
+	// 	const button = event.currentTarget;
 
-		const targetId = button.getAttribute('targetId')
-		const abstract = document.querySelector('#' + targetId);
+	// 	const targetId = button.getAttribute('targetId')
+	// 	const abstract = document.querySelector('#' + targetId);
 		
-		abstract.classList.toggle('expanded');
-		button.textContent = 	
-			abstract.classList.contains('expanded') ? 'Read less' : 'Read more';
-	}
-	*/
+	// 	abstract.classList.toggle('expanded');
+	// 	button.textContent = 	
+	// 		abstract.classList.contains('expanded') ? 'Read less' : 'Read more';
+	// }
+	// */
 
-	public openPopup(event) {
-		const popup = event.currentTarget;
+	// public openPopup(event) {
+	// 	const popup = event.currentTarget;
 
-		const targetId = popup.getAttribute('targetId')
-		const abstract = document.querySelector('#' + targetId);
+	// 	const targetId = popup.getAttribute('targetId')
+	// 	const abstract = document.querySelector('#' + targetId);
 
-		abstract.classList.toggle("show");
-	}
+	// 	abstract.classList.toggle("show");
+	// }
 }
