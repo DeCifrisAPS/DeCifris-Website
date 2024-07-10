@@ -1,87 +1,63 @@
-<ng-sidebar-container>
-	<ng-sidebar opened="true" position="left" id="right-sidebar" mode="push" [autoCollapseWidth]="799">
-		<ul class="noIndent" align="left">
-			<!-- Utilizziamo questo trick per evitare di rendere visibile l'autofocus al lettore. -->
-			<li style="display:none">
-				<button autofocus="autofocus"></button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" (click)="goTo('home')" routerLink="/cifris23">
-					Home
-				</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" (click)="goTo('sezioneScelta')" routerLink="program">
-					Program
-				</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" (click)="goTo('sezioneScelta')" routerLink="call-for-papers">
-					Call for papers
-				</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" (click)="goTo('sezioneScelta')" routerLink="call-for-workshops">
-                    Call for workshops
-                </button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" (click)="goTo('sezioneScelta')" routerLink="registration">
-					Registration
-				</button>
-			</li>
-            <li>
-				<button class="btn btn-outline-info" (click)="goTo('sezioneScelta')" routerLink="proceedings">
-					Proceedings
-				</button>
-			</li>
-		</ul>
-	</ng-sidebar>
-	<div ng-sidebar-content class="container bottomExtra">
-		<br id="home">
-		<div class="row mt-3 mr-1 ml-1">
-			<div class="col-md-12" align="center">
-				<h3>CIFRIS23</h3>
-				<p> An event organized by De Cifris</p>
-                <p>
-                    <!-- CONSOB headquarters, via Giovanni Battista Martini 3 - --> Rome
-                	<br> 
-                	<b> 14-15 December 2023 </b>
-                </p>
-			</div>
-		</div>        
-		<hr id="sezioneScelta">
-        <div class="row">
-            <div class="col-md-12">
-		        <router-outlet></router-outlet>
-            </div>
-        </div>
-		<hr>
-		<div class="row">
-            <div class="col-md-12" align="center">
-				<!--link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"-->
-				<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-				<div class="btn-group-justified">
-					<button class="btn btn-outline-info" (click)="goTo('home')" routerLink="./homeCifris23">
-						<i class="material-symbols-outlined">home</i> <br> Home 
+<div class="container">
+	<div class="sidenav">
+		<nav class="sidebar" id="sidebar">
+			<ul>
+				<li>
+					<button mat-button [routerLink]="['/']" routerLinkActive="active"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>home</mat-icon>
+						<span class="sidebar-text">HOME</span>
 					</button>
-					<button class="btn btn-outline-info" (click)="goTo('sezioneScelta')" routerLink="./program">
-						<i class="material-symbols-outlined">list</i> <br> Program 
+				</li>
+				<h5>CIFRIS 24 - ROME</h5>
+				<li>
+					<button mat-button [routerLink]="['/cifris24']" routerLinkActive="active"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>stadium</mat-icon>
+						<span class="sidebar-text">CIFRIS24</span>
 					</button>
-					<button class="btn btn-outline-info" (click)="goTo('sezioneScelta')" routerLink="./call-for-papers">
-						<i class="material-symbols-outlined">history_edu</i> <br> Call for papers 
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/cifris24/registration']" routerLinkActive="active"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>event_seat</mat-icon>
+						<span class="sidebar-text">Registration</span>
 					</button>
-					<button class="btn btn-outline-info" (click)="goTo('sezioneScelta')" routerLink="./call-for-workshops">
-						<i class="material-symbols-outlined">interactive_space</i> <br> Call for workshops 
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/cifris24/program']" routerLinkActive="active"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>date_range</mat-icon>
+						<span class="sidebar-text">Program</span>
 					</button>
-					<button class="btn btn-outline-info" (click)="goTo('sezioneScelta')" routerLink="./registration">
-						<span class="material-symbols-outlined">how_to_reg</span> <br> Registration 
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/cifris24/venue']" routerLinkActive="active"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>location_on</mat-icon>
+						<span class="sidebar-text">Venue</span>
 					</button>
-					<button class="btn btn-outline-info" (click)="goTo('sezioneScelta')" routerLink="./proceedings">
-						<span class="material-symbols-outlined">bookmarks</span> <br> Proceedings 
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/cifris24/proceedings']" routerLinkActive="active"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>menu_book</mat-icon>
+						<span class="sidebar-text">Proceedings</span>
 					</button>
-				</div>
-            </div>
-        </div>
-    </div>
-</ng-sidebar-container>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<div class="content">
+		<h1 style="margin-bottom:0;">CIFRIS23</h1>
+		<div style="text-align: center;">
+			<i style="color:var(--cifris_orange);"> An event organized by De Cifris</i>
+			<p style="margin-top: 10px;">
+				"CONSOB headoffice", Via Giovanni Battista Martini, 3 - 00198 Rome (Italy)
+				<br>
+				<b> December 14th, 15th 2023 </b>
+			</p>
+		</div>
+		<router-outlet></router-outlet>
+	</div>
+</div>

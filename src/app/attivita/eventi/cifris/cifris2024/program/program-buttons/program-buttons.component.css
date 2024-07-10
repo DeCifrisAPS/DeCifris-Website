@@ -1,0 +1,62 @@
+.iniziative-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.schedule-item {
+    margin: 10px;
+}
+
+a.txtbtn {
+    border: none;
+    background: var(--cifris_blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 90px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+a.txtbtn:hover {
+    background-color: var(--cifris_orange);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.schedule-date h4,
+.schedule-date h2,
+.schedule-period h6 {
+    margin: 0;
+    color: white!important;
+}
+
+.schedule-date h2 {
+    font-size: 35px;
+    font-weight: 700;
+    display: inline;
+}
+
+.schedule-date h4 {
+    font-size: 15px;
+    font-weight: 300;
+    display: inline;
+}
+
+.schedule-period h6 {
+    font-size: 14px;
+    font-weight: 400;
+    display: inline;
+}

@@ -25,21 +25,22 @@ export class RegistrationComponent24 implements OnInit {
 	//---------------------------- Payment variables ----------------------------
 
 	// TEST PHASE
+
+	/*
 	readonly ALIAS = 'ALIAS_WEB_00074470';
 	readonly CHIAVESEGRETA = 'SQV946OD2KUQ4M71SHXBCB85SW3FVVQF';
 	readonly HTTP_HOST = 'localhost:4200/cifris24/';
 	readonly requestUrl = 'https://int-ecommerce.nexi.it/' +
 		'ecomm/ecomm/DispatcherServlet';
+	*/
 
-
-	/*
 	// PRODUCTION PHASE
 	readonly ALIAS = 'payment_3482210';
 	readonly CHIAVESEGRETA = 'D68kw33a4HE9Q7352HY30v3M9kV3O50e6A2542W9';
 	readonly HTTP_HOST = 'www.decifris.it/cifris24/';
 	readonly requestUrl = 'https://ecommerce.nexi.it/' +
 		'ecomm/ecomm/DispatcherServlet';
-*/
+
 	readonly DIVISA = 'EUR';
 
 	//---------------------------------------------------------------------------
@@ -53,7 +54,7 @@ export class RegistrationComponent24 implements OnInit {
 	 * correct price.
 	 */
 	public checkDinner(event) {
-		console.log("[checkDinner] Running function...");
+		// console.log("[checkDinner] Running function...");
 
 		const checkButton = event.currentTarget;
 
@@ -121,7 +122,7 @@ export class RegistrationComponent24 implements OnInit {
 	 * Sets this.fee as the value of the selected input button.
 	 */
 	public setFee() {
-		console.log("[setFee] Running function...");
+		// console.log("[setFee] Running function...");
 
 		// Activating all participation buttons (ALL, WORKOSHOP,...)
 		var radio = document.getElementsByName('participation');
@@ -156,11 +157,10 @@ export class RegistrationComponent24 implements OnInit {
 	 * Instantiates a payment issue.
 	 */
 	public startPayment() {
-		console.log("[startPayment] Running function...");
-		/*
+		// console.log("[startPayment] Running function...");
 		// Data preprocessing
-		var merchantServerUrl = 'http://' + this.HTTP_HOST;
-		//var merchantServerUrl = 'https://' + this.HTTP_HOST;
+		//var merchantServerUrl = 'http://' + this.HTTP_HOST;
+		var merchantServerUrl = 'https://' + this.HTTP_HOST;
 
 		var date = new Date();
 		var codTrans = 'CIFRIS24_'
@@ -195,14 +195,12 @@ export class RegistrationComponent24 implements OnInit {
 			descrizione.value += 'Rome, 25-26-27 September 2024.';
 		}
 
-		console.log("Test: " + macIn);
+		// console.log("Test: " + macIn);
 
 		// Form submission
 		var form = <HTMLFormElement>document.getElementById('payForm');
-		console.log("Doing stuff...");
-		//form.action = this.requestUrl;
-		//form.submit();
-		*/
+		form.action = this.requestUrl;
+		form.submit();
 	}
 
 	/**
@@ -234,19 +232,19 @@ export class RegistrationComponent24 implements OnInit {
 	 */
 	public checkAndPay(event: Event): boolean {
 		event.preventDefault(); // Prevents the default form submission
-		console.log("[checkAndPay] Running function...");
+		// console.log("[checkAndPay] Running function...");
 		// Checking form fields
 		var form = <HTMLFormElement>document.getElementById('payForm');
 		var isValid = form.checkValidity();
 
 		if (isValid) {
-			console.log("[checkAndPay] sending");
+			// console.log("[checkAndPay] sending");
 			// Disbaling fields and executing payment
 			this.setDisabled();
 			this.startPayment();
 		} else {
 			// Throwing error
-			console.log("[checkAndPay] errors");
+			// console.log("[checkAndPay] errors");
 			alert('Fields with * are mandatory. \n' +
 				'Please be sure to have compiled all of them.');
 		}

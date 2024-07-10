@@ -1,3 +1,76 @@
+.mat-card {
+	margin-bottom: 20px;
+	width: 100%;
+	max-width: 600px;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mat-card:hover {
+	box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+	/* Effetto di ombra più pronunciato al passaggio del mouse */
+}
+
+mat-card-header {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-left:15px;
+	margin-bottom: 10px;
+}
+
+mat-card-title {
+	color: var(--cifris_orange);
+	/* Colore del titolo */
+	font-weight: 700;
+	font-size: 20px;
+	/* Dimensione del titolo */
+	margin-bottom: 5px;
+	/* Spazio inferiore tra il titolo e il sottotitolo */
+}
+
+.mat-card-subtitle {
+	color: var(--cifris_gray);
+	/* Colore del sottotitolo */
+	font-size: 14px;
+	/* Dimensione del sottotitolo */
+	font-style: italic;
+	
+}
+
+.mat-card-content {
+	padding: 10px;
+}
+
+
+.img-container {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 15px;
+	position: relative;
+}
+
 img {
-	float: right;
+	width: 300px;
+	height: auto;
+	object-fit: cover;
+	border-radius: 8px;
+	/* Bordo arrotondato */
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+	/* Aggiunge un'ombra leggera */
+}
+
+.news-btn {
+	text-decoration: none;
+	color: var(--cifris_blue);
+	padding: 8px 16px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 4px;
+	background-color: white;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.news-btn:hover {
+	background-color: var(--cifris_orange);
+	color: white;
 }

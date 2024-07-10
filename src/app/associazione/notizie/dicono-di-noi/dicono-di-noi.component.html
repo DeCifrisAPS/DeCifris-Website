@@ -1,181 +1,24 @@
 <h3>DICONO DI NOI</h3>
 <p>
-	Gli articoli della stampa nazionale ed internazionale su di noi.
+    Gli articoli della stampa nazionale ed internazionale su di noi.
 </p>
-<div class="card" style="margin-bottom: 20px; box-shadow: 0px 0px 2px 2px gray;">
-	<div class="card-body">
-		<h5 class="card-title">Formiche, “La sfida della minaccia quantistica spiegata dal prof. Giulietti”</h5>
-		<h6 class="card-subtitle mb-2 text-muted">23 aprile 2023</h6>
-		<img class="card-img-right" src="../../../assets/diconoDiNoi/articolo-formiche-postquantum-crypto.jpg"
-			style="width: 25vw; padding: 1vw">
-		<p class="card-text">
-			“Le Formiche” intervistano il prof. Massimo Giulietti, direttore del Dipartimento di matematica e
-			informatica dell’Università
-			degli studi di Perugia e vicepresidente dell’associazione De Componendis Cifris, sulla minaccia
-			quantistica.
-			In via teorica è stato dimostrato da Peter Shor fin dal 1994, che l’avvento dei computer quantistici
-			minaccia la sicurezza
-			e la confidenzialità delle comunicazioni. Perfino una semplice ricerca online non sarebbe più
-			sicura.
-			Al fine di resistere alla minaccia quantistica, si stanno studiando alcuni protocolli crittografici
-			che si basano su problemi
-			matematici ritenuti irrisolvibili anche in presenza di un computer quantistico.
-			Per tutelare gli interessi nazionali, è importante che l’Italia sviluppi sistemi per la cifratura in
-			maniera
-			autonoma e riservata, attraverso la costituzione di un Centro nazionale di crittografia.
-		</p>
-		<a href="https://formiche.net/2023/04/la-sfida-della-minaccia-quantistica-spiegata-dal-prof-giulietti-unipg/"
-			class="card-link">Leggi l'articolo</a>
-	</div>
-</div>
 
-<div class="card" style="margin-bottom: 20px; box-shadow: 0px 0px 2px 2px gray;">
-	<div class="card-body">
-		<h5 class="card-title">La Repubblica, “Informatica, i tempi sono ormai maturi per la crittografia”</h5>
-		<h6 class="card-subtitle mb-2 text-muted">17 marzo 2023</h6>
-		<img class="card-img-right" src="../../../assets/diconoDiNoi/articolo-repubblica-centro-crittografia.jpg"
-			style="width: 25vw; padding: 1vw">
-		<p class="card-text">
-			In questo articolo del quotidiano “la Repubblica” il professor Sala spiega l’obiettivo
-			dell’associazione
-			De Componendis Cifris, ovvero quello di animare la comunità crittografica italiana in tutte le sue
-			componenti.
-			De Cifris nasce come iniziativa nel 2017 organizzando convegni e seminari. Diventa ufficialmente
-			un’associazione nel 2022 e al giorno d’oggi vi partecipano programmatori, studenti, appassionati,
-			lavoratori nelle aziende italiane e non, contando una mailing list di 1300 persone e 300 associati.
-			Un nuovo progetto dell’associazione è l'ideazione di una piattaforma che possa essere un punto di
-			contatto tra il mondo delle aziende e gli studenti, agevolando stage e momenti di incontro.
-			Il mese prossimo la De Cifris terrà un convegno alla Camera dei deputati proprio su questo argomento
-			e si parlerà anche del Centro Nazionale di Crittografia, di come dovrà essere
-			organizzato per metterlo al servizio degli enti pubblici che ne hanno bisogno.
-		</p>
-		<a href="https://roma.repubblica.it/dossier-adv/eccellenze-lazio/2023/03/16/news/informatica_i_tempi_sono_ormai_maturi_per_la_crittografia-392097690/"
-			class="card-link">Leggi l'articolo</a>
-	</div>
-</div>
+<div *ngFor="let articolo of articoli" class="card-container">
 
-<div class="card" style="margin-bottom: 20px; box-shadow: 0px 0px 2px 2px gray;">
-	<div class="card-body">
-		<h5 class="card-title">L'Espresso, "Crittografia blockchain e cyber security. Una intervista al Prof.
-			Massimiliano Sala"</h5>
-		<h6 class="card-subtitle mb-2 text-muted">20 febbraio 2023</h6>
-		<img class="card-img-right" src="../../../assets/diconoDiNoi/block-chain-ritagliata-1.jpg"
-			style="width: 25vw; padding: 1vw">
-		<p class="card-text">
-			Nell’intervista per il giornale “l’Espresso” il professor Massimiliano Sala (Presidente di De
-			Cifris)
-			risponde ad alcune domande sulla crittografia blockchain e cyber security. Si parte parlando delle
-			origini della Crittografia e della sua evoluzione fino ai giorni nostri, in cui gioca un ruolo
-			imprescindibile
-			nella difesa per attacchi cyber. L’intervista si concentra poi sulle applicazioni della
-			crittografia: a partire
-			dalle crittovalute, crypto asset e NFT, alla cifratura dei messaggi e alla crittografia finanziaria.
-			Infine si
-			discute dell’importanza di una comunità crittografica italiana unita, per cui nasce De Cifris, e
-			della
-			mancanza di un Centro Nazionale di Crittografia, per avere delle linee guida che la comunità
-			crittografica possa seguire.
-		</p>
-		<a href="http://fino-a-prova-contraria.blogautore.espresso.repubblica.it/2023/02/22/
-			  roma-crittografia-blockchain-e-cyber-security-una-intervista-al-prof-massimiliano-sala/" class="card-link">Leggi
-			l'articolo</a>
-	</div>
-</div>
-
-<div class="card" style="margin-bottom: 20px; box-shadow: 0px 0px 2px 2px gray;">
-	<div class="card-body">
-		<h5 class="card-title">Difesaonline, "Quantum Threat: nuova minaccia alla Sicurezza Nazionale"</h5>
-		<h6 class="card-subtitle mb-2 text-muted">10 febbraio 2023</h6>
-		<img class="card-img-right" src="../../../assets/diconoDiNoi/articolo-difesaonline-quantum-computer.jpg"
-			style="width: 25vw; padding: 1vw">
-		<p class="card-text">
-			In questa intervista di Difesaonline il prof. Massimo Giulietti e il prof. Giovanni Schmid,
-			rispettivamente
-			vicepresidente e socio fondatore di De Cifris, trattano il tema della sicurezza nazionale del nostro
-			paese nel contesto internazionale in relazione alla minaccia quantistica. Viene spiegato l’approccio
-			della crittografia post-quantum e le sue varie applicazioni: dalla sicurezza informatica alla
-			cifratura
-			omomorfa, cioè l’analisi di dati cifrati permettendo di fare statistiche senza rinunciare alla
-			privacy dei
-			dati. Si analizza come altri stati, in particolare Stati Uniti e Francia, affrontino la minaccia e
-			l‘importanza
-			di avviare in Italia un Centro Nazionale di Crittografia, per creare algoritmi nazionali e per
-			incentivare la
-			ricerca.
-		</p>
-		<a href="https://www.difesaonline.it/evidenza/eventi/
-			  venerd%C3%AC-10-febbraio-alle-2100-quantum-threat-nuova-minaccia-alla-sicurezza-nazionale" class="card-link">Leggi
-			l'articolo</a>
-	</div>
-</div>
-
-<div class="card" style="margin-bottom: 20px; box-shadow: 0px 0px 2px 2px gray;">
-	<div class="card-body">
-		<h5 class="card-title">Formiche, “Perché serve un Centro nazionale di crittografia? Risponde il prof.
-			Sala"</h5>
-		<h6 class="card-subtitle mb-2 text-muted">8 febbraio 2023</h6>
-		<img class="card-img-right" src="../../../assets/diconoDiNoi/articolo-formiche-quantum-computer.jpg"
-			style="width: 25vw; padding: 1vw">
-		<p class="card-text">
-			In questo articolo di “formiche.net” il professor Massimiliano Sala, Presidente di De Cifris,
-			commenta
-			l’importanza di costituire un Centro Nazionale di Crittografia in Italia per la protezione
-			cibernetica e la
-			sicurezza informatica, visti anche i recenti sviluppi, tra cui quanto accaduto il 1° dicembre
-			scorso: la
-			diplomazia francese ha inviato il suo primo cablogramma “post-quantistico”. Il punto di partenza è
-			stata la nascita di De Cifris, il passo successivo è la creazione di un Centro per ideare algoritmi
-			nazionali, permettendo così all’Italia di proteggersi autonomamente e avviare una transizione post-
-			quantistica.
-		</p>
-		<a href="https://formiche.net/2023/02/centro-nazionale-di-crittografia-prof-sala/" class="card-link">Leggi
-			l'articolo</a>
-	</div>
-</div>
-
-<div class="card" style="margin-bottom: 20px; box-shadow: 0px 0px 2px 2px gray;">
-	<div class="card-body">
-		<h5 class="card-title">Difesaonline, "Quantum Threat: sfida ai sistemi crittografici moderni"</h5>
-		<h6 class="card-subtitle mb-2 text-muted">13 gennaio 2023</h6>
-		<img class="card-img-right" src="../../../assets/diconoDiNoi/articolo-difesaonline-quantum-computer-2.jpg"
-			style="width: 25vw; padding: 1vw">
-		<p class="card-text">
-			L'articolo riporta un'intervista fatta al professor Massimo Giulietti, vicepresidente di De Cifris,
-			riguardo
-			un articolo pubblicato da alcuni ricercatori cinesi, in cui affermano sia possibile infrangere anche
-			le
-			chiavi più sicure degli algoritmi crittografici classici usando un computer quantistico. Il
-			professore espone perché l'articolo presenti una minaccia potenziale, ma non imminente, e poi
-			specifica come altri paesi, come Stati Uniti e Francia, si siano già messi all'opera per contrastare
-			la
-			Quantum Threat, ideando nuovi algoritmi post-quantum. Conclude che sia necessario in Italia
-			acquisire maggiore consapevolezza della gravità della minaccia quantistica e soprattutto della
-			rilevanza strategica della crittografia a livello militare e finanziario.
-		</p>
-		<a href="https://www.difesaonline.it/evidenza/cyber/quantum-threat-sfida-ai-sistemi-crittografici-moderni"
-			class="card-link">Leggi l'articolo</a>
-	</div>
-</div>
-
-<div class="card" style="margin-bottom: 20px; box-shadow: 0px 0px 2px 2px gray;">
-	<div class="card-body">
-		<h5 class="card-title">Il Sole 24 ore, “Crittografia, manca il Centro nazionale. L’allarme della
-			comunità scientifica"</h5>
-		<h6 class="card-subtitle mb-2 text-muted">21 dicembre 2022</h6>
-		<img class="card-img-right" src="../../../assets/diconoDiNoi/cyber-security.jpg"
-			style="width: 25vw; padding: 1vw">
-		<p class="card-text">
-			Nonostante nel 2017 la Presidenza del Consiglio dei Ministri abbia adottato il “Piano nazionale per
-			la
-			protezione cibernetica e la sicurezza informatica”, ad oggi in Italia non è stato costituito un
-			“Centro
-			Nazionale di Crittografia”. In questo articolo del “Sole 24 Ore”, il professor Massimiliano Sala,
-			presidente di De Cifris, spiega l’importanza di questo Centro, in particolare dinnanzi alla minaccia
-			rappresentata dai computer quantistici che mettono in pericolo la crittografia moderna. Un passo
-			rilevante in questa direzione è stato effettuato con la fondazione di De Cifris: un'associazione che
-			include crittografi, programmatori, appassionati e studenti da tutta Italia.
-		</p>
-		<a href="https://www.ilsole24ore.com/art/crittografia-manca-centro-nazionale-l-allarme-comunita-scientifica-AEQfQzQC"
-			class="card-link">Leggi l'articolo</a>
-	</div>
+    <mat-card class="notizia">
+        <mat-card-header>
+            <mat-card-title>{{ articolo.title }}</mat-card-title>
+            <mat-card-subtitle>{{ articolo.subtitle }}</mat-card-subtitle>
+        </mat-card-header>
+        <div *ngIf="articolo.image" class="img-container">
+            <img mat-card-image [src]="articolo.image" alt="Immagine di {{ articolo.title }}" class="card-img-right">
+        </div>
+        <mat-card-content>
+            {{ articolo.content }}
+        </mat-card-content>
+        <mat-card-actions>
+            <a mat-button class="news-btn" [href]="articolo.link" target="_blank">Leggi l'articolo</a>
+        </mat-card-actions>
+    </mat-card>
+    <mat-divider></mat-divider>
 </div>

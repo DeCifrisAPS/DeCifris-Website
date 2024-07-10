@@ -1,0 +1,105 @@
+<head>
+    THIS IS THE HEADER
+</head>
+
+<body>
+    THIS IS THE BODY
+
+    <form id="payForm" class="form" method="POST" (ngSubmit)="checkAndPay($event)">
+        <p>
+            <b style="color:var(--cifris_blue)">CIFRIS24 payment via NEXI</b>
+        </p>
+        <label> Participation </label>
+        <div>
+            <input type="radio" id="all" name="participation" checked="checked" (click)=setFee()>
+            <label for="all"> Main event <b>and</b> workshops (Sep. 25th, 26th, 27th) </label><br>
+
+            <input type="radio" id="main_event" name="participation" (click)=setFee()>
+            <label for="main_event"> Main event (Sep. 25th, 26th) </label><br>
+
+            <input type="radio" id="workshops" name="participation" (click)=setFee()>
+            <label for="workshops"> Workshops (Sep. 27th) </label>
+        </div>
+
+        <label> Fee type </label>
+        <div>
+            <input type="radio" id="regular" name="fee" disabled="true" (click)=setFee()>
+            <label for="regular"> Regular fee </label><br>
+
+            <input type="radio" id="scientific_memebers" disabled="true" name="fee" (click)=setFee()>
+            <label for="scientific_memebers">
+                Regular fee for members of Unione Matematica Italiana, IEEE Computer Society, IEEE Information Theory
+                Society
+            </label><br>
+
+            <input type="radio" id="young" name="fee" disabled="true" (click)=setFee()>
+            <label for="young"> Regular fee for young participants </label><br>
+
+            <input type="radio" id="member" name="fee" checked="checked" (click)=setFee()>
+            <label for="member">
+                Fee for De Cifris members (“ordinario”, ”benemerito”, “fondatore”, "giovane")
+            </label> <br>
+
+            <input type="radio" id="companion" name="fee" (click)=setFee()>
+            <label for="companion">
+                Companion fee (only social dinner)
+            </label>
+        </div>
+
+        <label> Others </label>
+        <div>
+            <input type="checkbox" id="dinner" name="dinner" (click)=checkDinner($event)>
+            <label for="dinner">
+                Dinner
+            </label>
+        </div>
+
+        <!-- Hidden input -->
+        <input type="hidden" id="alias" name="alias" value={{ALIAS}}>
+        <input type="hidden" id="importo" name="importo">
+        <input type="hidden" id="divisa" name="divisa" value={{DIVISA}}>
+        <input type="hidden" id="codTrans" name="codTrans">
+        <input type="hidden" id="url" name="url">
+        <input type="hidden" id="url_back" name="url_back">
+        <input type="hidden" id="mac" name="mac">
+        <input type="hidden" id="mail" name="mail">
+        <input type="hidden" id="languageId" name="languageId" value="ENG">
+        <input type="hidden" id="descrizione" name="descrizione">
+        <input type="hidden" id="Note1" name="Note1" value="Enrollment for CIFRIS24.">
+        <input type="hidden" id="nome" name="nome">
+        <input type="hidden" id="cognome" name="cognome">
+
+        <hr>------------------------------------------------------------
+
+        <p style="font-weight: bold;">
+            Total: € {{fee/100}}.00
+        </p>
+
+        <!-- Submit input -->
+        <input type="submit" value="Pay Now">
+
+        <p class="footnote">
+            Form footnote
+        </p>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<footer>
+    THIS IS THE FOOTER
+</footer>

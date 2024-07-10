@@ -65,23 +65,34 @@ import { SessioneMilanoComponent } from './attivita/eventi/eventi-pubblici/sessi
 import { EventoConoscitivoComponent } from './attivita/eventi/eventi-pubblici/evento-conoscitivo/evento-conoscitivo.component';
 import { EventoCifrischainComponent } from './attivita/eventi/eventi-pubblici/evento-cifrischain/evento-cifrischain.component';
 import { ItasecComponent } from './attivita/eventi/eventi-pubblici/itasec/itasec.component';
-import { Error404Component } from './errors/error404/error404.component';
-import { Error403Component } from './errors/error403/error403.component';
-import { Error418Component } from './errors/error418/error418.component';
-import { HttpErrorInterceptor } from './errors/http-error-interceptor.service';
 import { AgoraComponent } from './attivita/seminari/agora/agora.component';
 import { SeminariComponent } from './attivita/seminari/seminari.component';
 import { EditoriaComponent } from './attivita/editoria/editoria.component';
 import { DiconoDiNoiComponent } from './associazione/notizie/dicono-di-noi/dicono-di-noi.component';
 import { NotizieComponent } from './associazione/notizie/notizie.component';
 import { NewsComponent } from './root-elements/home/news/news.component';
+
+// /cifris2024
+import { Cifris2024Component } from './attivita/eventi/cifris/cifris2024/cifris2024.component';
+import { HomeCifris24Component } from './attivita/eventi/cifris/cifris2024/home-cifris24/home-cifris24.component';
 import { CallForPapersComponent24 } from './attivita/eventi/cifris/cifris2024/call-for-papers/call-for-papers.component';
 import { CallForWorkshopsComponent24 } from './attivita/eventi/cifris/cifris2024/call-for-workshops/call-for-workshops.component';
 import { ProgramCommitteeComponent24 } from './attivita/eventi/cifris/cifris2024/program-committee/program-committee.component';
+import { ProgramComponent24 } from './attivita/eventi/cifris/cifris2024/program/program.component';
 import { SubmissionComponent24 } from './attivita/eventi/cifris/cifris2024/submission/submission.component';
-import { Cifris2024Component } from './attivita/eventi/cifris/cifris2024/cifris2024.component';
+import { RegistrationComponent24 } from './attivita/eventi/cifris/cifris2024/registration/registration.component';
 
 
+
+// errors & co
+import { Error404Component } from './errors/error404/error404.component';
+import { Error403Component } from './errors/error403/error403.component';
+import { Error418Component } from './errors/error418/error418.component';
+import { HttpErrorInterceptor } from './errors/http-error-interceptor.service';
+import { TestComponent } from './test/test.component';
+import { VenueAccomodationComponent24 } from './attivita/eventi/cifris/cifris2024/venue-accomodation/venue-accomodation.component';
+import { Trends23Component } from './attivita/corsi/trends23/trends23.component';
+import { ProgramButtonsComponent } from './attivita/eventi/cifris/cifris2024/program/program-buttons/program-buttons.component';
 
 // import { NewsComponent } from './news/news.component';
 // import { AderentiComponent } from './aderenti/aderenti.component';
@@ -113,15 +124,6 @@ import { Cifris2024Component } from './attivita/eventi/cifris/cifris2024/cifris2
 // import { SubmissionComponent } from './cifris/cifris2023/submission/submission.component';
 // import { RegistrationComponent } from './cifris/cifris2023/registration/registration.component';
 
-// // ./cifris/cifris2024
-// import { Cifris2024Component } from './cifris/cifris2024/cifris2024.component';
-// import { HomeCifris24Component } from './cifris/cifris2024/home-cifris24/home-cifris24.component';
-// import { CallForPapersComponent24 } from './cifris/cifris2024/call-for-papers/call-for-papers.component';
-// import { CallForWorkshopsComponent24 } from './cifris/cifris2024/call-for-workshops/call-for-workshops.component';
-// import { ProgramCommitteeComponent24 } from './cifris/cifris2024/program-committee/program-committee.component';
-// import { ProgramComponent24 } from './cifris/cifris2024/program/program.component';
-// import { SubmissionComponent24 } from './cifris/cifris2024/submission/submission.component';
-// import { RegistrationComponent24 } from './cifris/cifris2024/registration/registration.component';
 
 // // ./hosting
 // import { Opera24Component } from './hosting/opera24/opera24.component';
@@ -190,7 +192,8 @@ import { Cifris2024Component } from './attivita/eventi/cifris/cifris2024/cifris2
 		CallForWorkshopsComponent24,
 		ProgramCommitteeComponent24,
 		SubmissionComponent24,
-		Cifris2024Component
+		Cifris2024Component,
+		TestComponent,
 
 		// MailingListComponent,
 		// AttivitaComponent,
@@ -214,16 +217,16 @@ import { Cifris2024Component } from './attivita/eventi/cifris/cifris2024/cifris2
 		// EventiPubbliciComponent,
 		// SessioniDeCifrisComponent,
 		// SessionePerugiaComponent,
-		// SessioneMilanoComponent,
-		// SessioneRomaComponent,
-		// SessioneSalernoComponent,
-		// SessioneTorinoComponent,
-		// HackatonSmartContractComponent,
-		// SessioneRomaPqcifrisComponent,
-		// SessioneRomaCifrischainComponent,
-		// EventoConoscitivoComponent,
-		// ItasecComponent,
-		// EventoCifrischainComponent,
+		SessioneMilanoComponent,
+		SessioneRomaComponent,
+		SessioneSalernoComponent,
+		SessioneTorinoComponent,
+		HackatonSmartContractComponent,
+		SessioneRomaPqcifrisComponent,
+		SessioneRomaCifrischainComponent,
+		EventoConoscitivoComponent,
+		ItasecComponent,
+		EventoCifrischainComponent,
 		// DidatticaUniversitariaComponent,
 		// EventiPassatiComponent,
 		// EventiFuturiComponent,
@@ -301,17 +304,18 @@ import { Cifris2024Component } from './attivita/eventi/cifris/cifris2024/cifris2
 		// ProgramComponent,
 		// SubmissionComponent,
 		// RegistrationComponent,
-		// //Cifris24
-		// Cifris2024Component,
-		// HomeCifris24Component,
-		// CallForPapersComponent24,
-		// CallForWorkshopsComponent24,
-		// ProgramCommitteeComponent24,
-		// ProgramComponent24,
-		// SubmissionComponent24,
-		// RegistrationComponent24,
-		// VenueAccomodationComponent24,
-		// //Hosting
+		//Cifris24
+		Cifris2024Component,
+		HomeCifris24Component,
+		CallForPapersComponent24,
+		CallForWorkshopsComponent24,
+		ProgramCommitteeComponent24,
+		ProgramComponent24,
+		SubmissionComponent24,
+		RegistrationComponent24,
+		VenueAccomodationComponent24,
+  ProgramButtonsComponent,
+		//Hosting
 		// Opera24Component,
 		// Combinatorics24Component,
 		// WCC24Component,

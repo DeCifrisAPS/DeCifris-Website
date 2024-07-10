@@ -76,6 +76,7 @@ import { ProgramCommitteeComponent24 } from './attivita/eventi/cifris/cifris2024
 import { ProgramComponent24 } from './attivita/eventi/cifris/cifris2024/program/program.component';
 import { RegistrationComponent24 } from './attivita/eventi/cifris/cifris2024/registration/registration.component';
 import { VenueAccomodationComponent24 } from './attivita/eventi/cifris/cifris2024/venue-accomodation/venue-accomodation.component';
+import { TestComponent } from './test/test.component';
 
 
 // import { AderentiComponent } from './aderenti/aderenti.component';
@@ -247,6 +248,7 @@ const routes: Routes = [
 		]
 	},
 
+	{ path: 'dev', component: TestComponent },
 
 	// {
 	// 	path: "koine", component: KoineComponent, children: [
@@ -278,7 +280,7 @@ const routes: Routes = [
 	// Rotte per gli errori
 	{ path: '403', component: Error403Component },
 	{ path: '418', component: Error418Component },
-	{ path: '**', component: Error404Component }
+	{ path: '**', component: Error404Component },
 ];
 
 @NgModule({

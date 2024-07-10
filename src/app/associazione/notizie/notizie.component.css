@@ -1,90 +1,76 @@
-img.card-img-right{
-	float: right;
-	width: 50%;
-	max-width: 270px!important;
-	max-height: 150px;
-	object-fit:contain;
-	margin-left: 30px;
-
-}
-@media screen and (max-width: 599px) {
-	img.card-img-right{
-		min-width: 100%!important;
-		max-width: 100%!important;
-		margin-bottom: 30px;
-		margin-left: auto !important;
-		margin-right: auto !important;
-	}
-	div.img-container{
-		width: 100%!important;
-		margin-left: auto !important;
-		margin-right: auto !important;
-	}
-	div.notizia{
-		width: 100%!important;
-		margin-left: auto !important;
-		margin-right: auto !important;
-	}
+.mat-card {
+	margin-bottom: 20px;
+	width: 100%;
+	max-width: 600px;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-
-
-
-
-
-
-
-
-
-
-div.notizia{
-	margin:0;
-	padding:0;
+.mat-card:hover {
+	box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+	/* Effetto di ombra più pronunciato al passaggio del mouse */
 }
-h5.title{
-	margin:0;
-	padding:0;
-	color: var(--cifris_orange)!important;
-	font-weight:700;
-	font-size: large;
-}
-p.subtitle{
-	color: gray;
-	margin:0;
-	padding:0;
-	font-size: normal;
-	font-style: italic;
-}
-p.date{
-	color: gray;
-	margin:0;
-	padding:0;
-	font-size: small;
-}
-p.content{
-	margin:0;
-	padding:0;
-}
-.links-container {
+
+mat-card-header {
 	display: flex;
-	flex-wrap: wrap; /* Per avvolgere i link se ce ne sono troppi per una sola linea */
-	gap: 10px; /* Spazio tra i link */
-	bottom:0
-  }
-  
-  .links {
-	/* Eventuali stili aggiuntivi per i singoli link */
-  }
-  
-  .links a {
+	flex-direction: column;
+	align-items: flex-start;
+	padding-left:15px;
+	margin-bottom: 10px;
+}
+
+mat-card-title {
+	color: var(--cifris_orange);
+	/* Colore del titolo */
+	font-weight: 700;
+	font-size: 20px;
+	/* Dimensione del titolo */
+	margin-bottom: 5px;
+	/* Spazio inferiore tra il titolo e il sottotitolo */
+}
+
+.mat-card-subtitle {
+	color: var(--cifris_gray);
+	/* Colore del sottotitolo */
+	font-size: 14px;
+	/* Dimensione del sottotitolo */
+	font-style: italic;
+	
+}
+
+.mat-card-content {
+	padding: 10px;
+}
+
+
+.img-container {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+img {
+	width: 300px;
+	height: auto;
+	object-fit: cover;
+	border-radius: 8px;
+	/* Bordo arrotondato */
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+	/* Aggiunge un'ombra leggera */
+}
+
+.news-btn {
 	text-decoration: none;
 	color: var(--cifris_blue);
-	padding: 5px 10px;
+	padding: 8px 16px;
+	margin-left: 10px;
+	margin-right: 10px;
 	border-radius: 4px;
+	background-color: white;
 	transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .links a:hover {
-	background-color: #f0f0f0;
-	color: #333;
-  }
+}
+
+.news-btn:hover {
+	background-color: var(--cifris_orange);
+	color: white;
+}

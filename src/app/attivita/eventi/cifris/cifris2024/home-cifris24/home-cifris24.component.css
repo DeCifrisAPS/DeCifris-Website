@@ -26,6 +26,7 @@ td.date {
 	width: 120px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	font-weight: bold;
 }
 
 td.item {
@@ -47,12 +48,12 @@ td.item {
 	background-color: white !important;
 }
 
-.date-table tbody tr.active-row {
+.active-row {
 	font-weight: bold;
 	color: var(--cifris_orange);
 }
 
-.date-table tbody tr.dead-row {
+.dead-row {
 	font-style: italic;
 	color: gray;
 }

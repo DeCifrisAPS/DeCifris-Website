@@ -11,52 +11,38 @@
 				</li>
 				<h5>CIFRIS 24 - ROME</h5>
 				<li>
-					<button mat-button [routerLink]="['/attivita']" routerLinkActive="active"
+					<button mat-button [routerLink]="['/cifris24']" routerLinkActive="active"
 						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
-						<mat-icon>public</mat-icon>
-						<span class="sidebar-text">Attività</span>
+						<mat-icon>stadium</mat-icon>
+						<span class="sidebar-text">CIFRIS24</span>
 					</button>
 				</li>
 				<li>
-					<button mat-button [routerLink]="['/attivita/eventi']" routerLinkActive="active"
+					<button mat-button [routerLink]="['/cifris24/registration']" routerLinkActive="active"
 						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
-						<mat-icon>event_upcoming</mat-icon>
-						<span class="sidebar-text">Eventi</span>
+						<mat-icon>event_seat</mat-icon>
+						<span class="sidebar-text">Registration</span>
 					</button>
 				</li>
 				<li>
-					<button mat-button [routerLink]="['/attivita/corsi']" routerLinkActive="active"
+					<button mat-button [routerLink]="['/cifris24/program']" routerLinkActive="active"
 						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
-						<mat-icon>history_edu</mat-icon>
-						<span class="sidebar-text">Corsi</span>
+						<mat-icon>date_range</mat-icon>
+						<span class="sidebar-text">Program</span>
 					</button>
 				</li>
 				<li>
-					<button mat-button [routerLink]="['/attivita/seminari']" routerLinkActive="active"
+					<button mat-button [routerLink]="['/cifris24/venue']" routerLinkActive="active"
 						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
-						<mat-icon>person_raised_hand</mat-icon>
-						<span class="sidebar-text">Seminari</span>
+						<mat-icon>location_on</mat-icon>
+						<span class="sidebar-text">Venue</span>
 					</button>
 				</li>
 				<li>
-					<button mat-button [routerLink]="['/attivita/editoria']" routerLinkActive="active"
+					<button mat-button [routerLink]="['/cifris24/proceedings']" routerLinkActive="active"
 						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
 						<mat-icon>menu_book</mat-icon>
-						<span class="sidebar-text">Editoria</span>
-					</button>
-				</li>
-				<li>
-					<button mat-button [routerLink]="['/attivita/gare-crittografiche']" routerLinkActive="active"
-						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
-						<mat-icon>emoji_events</mat-icon>
-						<span class="sidebar-text">Gare crittografiche</span>
-					</button>
-				</li>
-				<li>
-					<button mat-button [routerLink]="['/attivita/iniziative-divulgative']" routerLinkActive="active"
-						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
-						<mat-icon>campaign</mat-icon>
-						<span class="sidebar-text">Iniziative divulgative</span>
+						<span class="sidebar-text">Proceedings</span>
 					</button>
 				</li>
 			</ul>
@@ -69,7 +55,7 @@
 			<p style="margin-top: 10px;">
 				"Centro Donato Menichella", Largo Guido Carli 1, Frascati (Rome)
 				<br>
-				<b> 25-26-27 September 2024 </b>
+				<b> September 25th, 26th, 27th 2024 </b>
 			</p>
 		</div>
 		<router-outlet></router-outlet>

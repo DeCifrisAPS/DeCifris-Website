@@ -1,12 +1,15 @@
-/* Colors */
+/* generati in palette partendo da cifris_blue */
 :root {
     --cifris_blue: #307580;
     --cifris_azure: #e6f4f1;
+    --cifris_azure_transparent: #e6f4f190;
     --cifris_green: #54bf81;
-    --cifris_vanilla: #F3E5AB;
+    --cifris_pink: #F3E5AB;
     --cifris_orange: #ff8d3d;
     --cifris_purple: #7c72a7;
     --cifris_scarlet: #832700;
+    --cifris_gray: #c7d5d2;
+    --cifris_darkgray: #374240;
 }
 
 /* Font, style */
