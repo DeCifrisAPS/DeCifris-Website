@@ -115,14 +115,13 @@ import { ProgramButtonsComponent } from './attivita/eventi/cifris/cifris2024/pro
 // import { Vol1Component } from './attivita/editoria/koine/vol1/vol1.component';
 
 // // ./cifris/cifris2023
-// import { Cifris2023Component } from './cifris/cifris2023/cifris2023.component';
-// import { HomeCifris23Component } from './cifris/cifris2023/home-cifris23/home-cifris23.component';
-// import { CallForPapersComponent } from './cifris/cifris2023/call-for-papers/call-for-papers.component';
-// import { CallForWorkshopsComponent } from './cifris/cifris2023/call-for-workshops/call-for-workshops.component';
-// import { ProgramCommitteeComponent } from './cifris/cifris2023/program-committee/program-committee.component';
-// import { ProgramComponent } from './cifris/cifris2023/program/program.component';
-// import { SubmissionComponent } from './cifris/cifris2023/submission/submission.component';
-// import { RegistrationComponent } from './cifris/cifris2023/registration/registration.component';
+import { Cifris2023Component } from './attivita/eventi/cifris/cifris2023/cifris2023.component';
+import { HomeCifris23Component } from './attivita/eventi/cifris/cifris2023/home-cifris23/home-cifris23.component';
+import { Vol1Component } from './attivita/editoria/koine/vol1/vol1.component';
+import { Vol2Component } from './attivita/editoria/koine/vol2/vol2.component';
+import { ArticlesAndVolumesComponent } from './attivita/editoria/koine/articles-and-volumes/articles-and-volumes.component';
+import { HomeKoineComponent } from './attivita/editoria/koine/home-koine/home-koine.component';
+import { KoineComponent } from './attivita/editoria/koine/koine.component';
 
 
 // // ./hosting
@@ -194,6 +193,13 @@ import { ProgramButtonsComponent } from './attivita/eventi/cifris/cifris2024/pro
 		SubmissionComponent24,
 		Cifris2024Component,
 		TestComponent,
+		Cifris2023Component,
+		HomeCifris23Component,
+		Vol1Component,
+		Vol2Component,
+		ArticlesAndVolumesComponent,
+		HomeKoineComponent,
+		KoineComponent,
 
 		// MailingListComponent,
 		// AttivitaComponent,

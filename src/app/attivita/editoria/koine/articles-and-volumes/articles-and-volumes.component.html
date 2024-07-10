@@ -1,28 +1,20 @@
-<div class="row mt-3 mr-1 ml-1">
-	<div class="col-md-12" align="center">
-		<h3> ARTICLES AND VOLUMES </h3>
-	</div>
+<h2> ARTICLES AND VOLUMES </h2>
 
-</div>
-<div class="row mt-3 mr-1 ml-1">
-	<div class="col-md-12">
-		<hr><!---------------------------------------------------------------->
-		<div class="collapsible">
-			<button class="collapsible-btn" (click)="openCollapsible($event)" id="vol1">
-				<b>Volume 2: DE CIFRIS SEMINARS</b>
-				<span class="arrow">&#9660;</span>
-			</button>
-			<div class="collapsible-content">
-				<app-vol2></app-vol2>
-			</div>
-		</div>
-		<div class="collapsible">
-			<button class="collapsible-btn" (click)="openCollapsible($event)" id="vol1">
-				<b>Volume 1: CIFRIS23 ACTA</b>
-				<span class="arrow">&#9660;</span>
-			</button>
-			<div class="collapsible-content">
-				<app-vol1></app-vol1>
-			</div>
-		</div>
+<div class="collapsible">
+	<button class="collapsible-btn" (click)="openCollapsible($event)" id="vol1">
+		<b>Volume 2: DE CIFRIS SEMINARS</b>
+		<span class="arrow">&#9660;</span>
+	</button>
+	<div class="collapsible-content">
+		<app-vol2></app-vol2>
 	</div>
+</div>
+<div class="collapsible">
+	<button class="collapsible-btn" (click)="openCollapsible($event)" id="vol1">
+		<b>Volume 1: CIFRIS23 ACTA</b>
+		<span class="arrow">&#9660;</span>
+	</button>
+	<div class="collapsible-content">
+		<app-vol1></app-vol1>
+	</div>
+</div>

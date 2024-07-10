@@ -8,6 +8,9 @@ import { HomeComponent } from './root-elements/home/home.component';
 import { ContattiComponent } from './root-elements/contatti/contatti.component';
 import { CookiePolicyComponent } from './root-elements/cookie-policy/cookie-policy.component';
 import { MailingListComponent } from './root-elements/mailing-list/mailing-list.component';
+import { Opera24Component } from './root-elements/hosting/opera24/opera24.component';
+import { Combinatorics24Component } from './root-elements/hosting/combinatorics24/combinatorics24.component';
+import { WCC24Component } from './root-elements/hosting/wcc24/wcc24.component';
 
 // associazione
 import { AssociazioneComponent } from './associazione/associazione.component';
@@ -21,6 +24,8 @@ import { PosizioniRicercaComponent } from './associazione/posizioni-ricerca/posi
 import { StageTirociniComponent } from './associazione/stage-tirocini/stage-tirocini.component';
 import { AssociarsiComponent } from './associazione/associarsi/associarsi.component';
 import { BenemeritiComponent } from './associazione/benemeriti/benemeriti.component';
+import { DiconoDiNoiComponent } from './associazione/notizie/dicono-di-noi/dicono-di-noi.component';
+import { NotizieComponent } from './associazione/notizie/notizie.component';
 
 // welcome
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -61,11 +66,14 @@ import { GareCrittograficheComponent } from './attivita/gare-crittografiche/gare
 import { EventiComponent } from './attivita/eventi/eventi.component';
 // import { EventiPubbliciComponent } from './attivita/eventi/eventi-pubblici/eventi-pubblici.component';
 import { DidatticaUniversitariaComponent } from './attivita/didattica-universitaria/didattica-universitaria.component';
+
+// errori e simili
 import { Error403Component } from './errors/error403/error403.component';
 import { Error418Component } from './errors/error418/error418.component';
 import { Error404Component } from './errors/error404/error404.component';
-import { DiconoDiNoiComponent } from './associazione/notizie/dicono-di-noi/dicono-di-noi.component';
-import { NotizieComponent } from './associazione/notizie/notizie.component';
+import { TestComponent } from './test/test.component';
+
+// cifris24
 import { Cifris2024Component } from './attivita/eventi/cifris/cifris2024/cifris2024.component';
 import { CallForPapersComponent24 } from './attivita/eventi/cifris/cifris2024/call-for-papers/call-for-papers.component';
 import { CallForWorkshopsComponent24 } from './attivita/eventi/cifris/cifris2024/call-for-workshops/call-for-workshops.component';
@@ -76,77 +84,25 @@ import { ProgramCommitteeComponent24 } from './attivita/eventi/cifris/cifris2024
 import { ProgramComponent24 } from './attivita/eventi/cifris/cifris2024/program/program.component';
 import { RegistrationComponent24 } from './attivita/eventi/cifris/cifris2024/registration/registration.component';
 import { VenueAccomodationComponent24 } from './attivita/eventi/cifris/cifris2024/venue-accomodation/venue-accomodation.component';
-import { TestComponent } from './test/test.component';
 
+// cifris23
+import { Cifris2023Component } from './attivita/eventi/cifris/cifris2023/cifris2023.component';
+import { CallForPapersComponent } from './attivita/eventi/cifris/cifris2023/call-for-papers/call-for-papers.component';
+import { CallForWorkshopsComponent } from './attivita/eventi/cifris/cifris2023/call-for-workshops/call-for-workshops.component';
+import { HomeCifris23Component } from './attivita/eventi/cifris/cifris2023/home-cifris23/home-cifris23.component';
+import { PaymentResultComponent } from './attivita/eventi/cifris/cifris2023/payment-result/payment-result.component';
+import { ProceedingsComponent } from './attivita/eventi/cifris/cifris2023/proceedings/proceedings.component';
+import { ProgramCommitteeComponent } from './attivita/eventi/cifris/cifris2023/program-committee/program-committee.component';
+import { ProgramComponent } from './attivita/eventi/cifris/cifris2023/program/program.component';
+import { RegistrationComponent } from './attivita/eventi/cifris/cifris2023/registration/registration.component';
 
-// import { AderentiComponent } from './aderenti/aderenti.component';
-// import { CounterpartyComponent } from './counterparty/counterparty.component';
-
-// import { DiconoDiNoiComponent } from './associazione/dicono-di-noi/dicono-di-noi.component';
-// import { NotizieComponent } from './associazione/notizie/notizie.component';
-
-// // cryptowars
-// import { CryptowarsComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars.component';
-// import { Cryptowars2020Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2020/cryptowars2020.component';
-// import { Cryptowars2019Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2019/cryptowars2019.component';
-// import { Cryptowars2018Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2018/cryptowars2018.component';
-// import { Cryptowars2016Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2016/cryptowars2016.component';
-// import { Cryptowars2015Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2015/cryptowars2015.component';
-// import { Cryptowars2014Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2014/cryptowars2014.component';
-// import { Cryptowars2011Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/cryptowars2011.component';
-// import { SimmetricaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-ita/simmetrica/simmetrica.component';
-// import { ClassicaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-ita/classica/classica.component';
-// import { PubblicaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-ita//pubblica/pubblica.component';
-// import { Cryptowars2021Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2021/cryptowars2021.component';
-
-// // ./attivita/trends
-// import { Trends24Component } from './attivita/trends24/trends24.component';
-// import { Trends23Component } from './attivita/trends23/trends23.component';
-// import { Trends22Component } from './attivita/trends22/trends22.component';
-// import { Trends22bisComponent } from './attivita/trends22/trends22bis/trends22bis.component';
-
-// // editoria e ./koine
-// import { EditoriaComponent } from './attivita/editoria/editoria.component';
-// import { KoineComponent } from './attivita/editoria/koine/koine.component';
-// import { HomeKoineComponent } from './attivita/editoria/koine/home-koine/home-koine.component';
-// import { ArticlesAndVolumesComponent } from './attivita/editoria/koine/articles-and-volumes/articles-and-volumes.component';
-// import { EditorialBoardComponent } from './attivita/editoria/koine/editorial-board/editorial-board.component';
-// import { Vol1Component } from './attivita/editoria/koine/vol1/vol1.component';
-// import { Vol2Component } from './attivita/editoria/koine/vol2/vol2.component';
-
-
-// // varie CENTO TESI
-// import { Centotesi20082017Component } from './attivita/centotesi20082017/centotesi20082017.component';
-// import { Centotesi20142023Component } from './attivita/centotesi20142023/centotesi20142023.component';
-
-// // ./cifris23
-// import { Cifris2023Component } from './cifris/cifris2023/cifris2023.component';
-// import { CallForPapersComponent } from './cifris/cifris2023/call-for-papers/call-for-papers.component';
-// import { CallForWorkshopsComponent } from './cifris/cifris2023/call-for-workshops/call-for-workshops.component';
-// import { ProgramCommitteeComponent } from './cifris/cifris2023/program-committee/program-committee.component';
-// import { RegistrationComponent } from './cifris/cifris2023/registration/registration.component';
-// import { ProceedingsComponent } from './cifris/cifris2023/proceedings/proceedings.component';
-// import { HomeCifris23Component } from './cifris/cifris2023/home-cifris23/home-cifris23.component';
-// import { ProgramComponent } from './cifris/cifris2023/program/program.component';
-// import { PaymentResultComponent } from './cifris/cifris2023/payment-result/payment-result.component';
-
-// // ./cifris24
-// import { Cifris2024Component } from './cifris/cifris2024/cifris2024.component';
-// import { CallForPapersComponent24 } from './cifris/cifris2024/call-for-papers/call-for-papers.component';
-// import { CallForWorkshopsComponent24 } from './cifris/cifris2024/call-for-workshops/call-for-workshops.component';
-// import { ProgramCommitteeComponent24 } from './cifris/cifris2024/program-committee/program-committee.component';
-// import { RegistrationComponent24 } from './cifris/cifris2024/registration/registration.component';
-// import { ProceedingsComponent24 } from './cifris/cifris2024/proceedings/proceedings.component';
-// import { HomeCifris24Component } from './cifris/cifris2024/home-cifris24/home-cifris24.component';
-// import { ProgramComponent24 } from './cifris/cifris2024/program/program.component';
-// import { VenueAccomodationComponent24 } from './cifris/cifris2024/venue-accomodation/venue-accomodation.component';
-// import { PaymentResultComponent24 } from './cifris/cifris2024/payment-result/payment-result.component';
-
-// // ./hosting
-// import { Opera24Component } from './hosting/opera24/opera24.component';
-// import { Combinatorics24Component } from './hosting/combinatorics24/combinatorics24.component';
-// import { WCC24Component } from './hosting/wcc24/wcc24.component';
-
+// koine
+import { HomeKoineComponent } from './attivita/editoria/koine/home-koine/home-koine.component';
+import { KoineComponent } from './attivita/editoria/koine/koine.component';
+import { Vol1Component } from './attivita/editoria/koine/vol1/vol1.component';
+import { Vol2Component } from './attivita/editoria/koine/vol2/vol2.component';
+import { ArticlesAndVolumesComponent } from './attivita/editoria/koine/articles-and-volumes/articles-and-volumes.component';
+import { EditorialBoardComponent } from './attivita/editoria/koine/editorial-board/editorial-board.component';
 
 
 // importante mettere come children tutti quelli che condividono la stessa sidebar, dato
@@ -159,6 +115,9 @@ const routes: Routes = [
 			{ path: "contatti", component: ContattiComponent },
 			{ path: "cookie-policy", component: CookiePolicyComponent },
 			{ path: "mailing-list", component: MailingListComponent },
+			{ path: "opera24", component: Opera24Component },
+			{ path: "combinatorics24", component: Combinatorics24Component },
+			{ path: "wcc24", component: WCC24Component },
 		]
 	},
 
@@ -223,16 +182,16 @@ const routes: Routes = [
 			{ path: 'pqcifris', component: PqCifrisComponent },
 			// eventi
 			{ path: "eventi", component: EventiComponent },
-			// { path: 'cifris23', redirectTo: '/cifris23', pathMatch: 'full' },
+			{ path: 'cifris23', redirectTo: '/cifris23', pathMatch: 'full' },
 			{ path: 'cifris24', redirectTo: '/cifris24', pathMatch: 'full' },
 			{ path: "gare-crittografiche", component: GareCrittograficheComponent },
-			// { path: "eventi-pubblici", component: EventiPubbliciComponent },
 			// miscellanea
 			{ path: "iniziative-divulgative", component: IniziativeDivulgativeComponent },
 			{ path: "didattica-universitaria", component: DidatticaUniversitariaComponent },
 
 		]
 	},
+
 	// cifris 24
 	{
 		path: "cifris24", component: Cifris2024Component, children: [
@@ -248,34 +207,33 @@ const routes: Routes = [
 		]
 	},
 
+	// cifris 23
+	{
+		path: "cifris23", component: Cifris2023Component, children: [
+			{ path: "", component: HomeCifris23Component },
+			{ path: "call-for-papers", component: CallForPapersComponent },
+			{ path: "call-for-workshops", component: CallForWorkshopsComponent },
+			{ path: "program-committee", component: ProgramCommitteeComponent },
+			{ path: "registration", component: RegistrationComponent },
+			{ path: "homeCifris23", component: HomeCifris23Component },
+			{ path: "program", component: ProgramComponent },
+			{ path: "proceedings", component: ProceedingsComponent },
+			{ path: "payment-result", component: PaymentResultComponent },
+		]
+	},
+
+	// koine
+	{
+		path: "koine", component: KoineComponent, children: [
+			{ path: "", component: HomeKoineComponent },
+			{ path: "articles-and-volumes", component: ArticlesAndVolumesComponent },
+			{ path: "editorial-board", component: EditorialBoardComponent },
+			{ path: "vol1", component: Vol1Component },
+			{ path: "vol2", component: Vol2Component },
+		]
+	},
+
 	{ path: 'dev', component: TestComponent },
-
-	// {
-	// 	path: "koine", component: KoineComponent, children: [
-	// 		{ path: "home", component: HomeKoineComponent },
-	// 		{ path: "articles-and-volumes", component: ArticlesAndVolumesComponent },
-	// 		{ path: "editorial-board", component: EditorialBoardComponent },
-	// 		{ path: "vol1", component: Vol1Component },
-	// 		{ path: "vol2", component: Vol2Component },
-	// 	]
-	// },
-	// { path: "opera24", component: Opera24Component },
-	// { path: "combinatorics24", component: Combinatorics24Component },
-	// { path: "wcc24", component: WCC24Component },
-
-	// {
-	// 	path: "cifris23", component: Cifris2023Component, children: [
-	// 		{ path: "call-for-papers", component: CallForPapersComponent },
-	// 		{ path: "call-for-workshops", component: CallForWorkshopsComponent },
-	// 		{ path: "program-committee", component: ProgramCommitteeComponent },
-	// 		{ path: "registration", component: RegistrationComponent },
-	// 		{ path: "homeCifris23", component: HomeCifris23Component },
-	// 		{ path: "program", component: ProgramComponent },
-	// 		{ path: "proceedings", component: ProceedingsComponent },
-	// 		{ path: "payment-result", component: PaymentResultComponent },
-	// 	]
-	// },
-
 
 	// Rotte per gli errori
 	{ path: '403', component: Error403Component },
