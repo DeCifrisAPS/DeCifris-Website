@@ -36,6 +36,7 @@
   font-size: 1.25rem; /* Dimensione del titolo */
   font-weight: 700;
   margin-bottom: 8px;
+  height: fit-content!important;
   background-color: var(--cifris_purple);
   color: white !important;
   border-radius: 15px;

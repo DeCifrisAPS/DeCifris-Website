@@ -123,6 +123,7 @@ import { ArticlesAndVolumesComponent } from './attivita/editoria/koine/articles-
 import { HomeKoineComponent } from './attivita/editoria/koine/home-koine/home-koine.component';
 import { KoineComponent } from './attivita/editoria/koine/koine.component';
 import { PaymentResultComponent24 } from './attivita/eventi/cifris/cifris2024/payment-result/payment-result.component';
+import { Trends24Component } from './attivita/corsi/trends24/trends24.component';
 
 
 // // ./hosting
@@ -202,6 +203,7 @@ import { PaymentResultComponent24 } from './attivita/eventi/cifris/cifris2024/pa
 		HomeKoineComponent,
 		KoineComponent,
 		PaymentResultComponent24,
+		Trends24Component,
 
 		// MailingListComponent,
 		// AttivitaComponent,

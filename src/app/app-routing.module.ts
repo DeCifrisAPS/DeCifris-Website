@@ -235,6 +235,8 @@ const routes: Routes = [
 	{ path: 'cifris/test', component: TestComponent },
 
 	// Redirect per i percorsi cambiati
+	{ path: 'dicono-di-noi', redirectTo: '/associazione/dicono-di-noi', pathMatch: 'full' },
+	{ path: 'notizie', redirectTo: '/associazione/notizie', pathMatch: 'full' },
 	{ path: 'cifris23/homeCifris23', redirectTo: '/cifris23', pathMatch: 'full' },
 	{ path: 'cifris24/homeCifris24', redirectTo: '/cifris24', pathMatch: 'full' },
 	{ path: 'advisoryboard/borse', redirectTo: '/opportunita', pathMatch: 'full' },
@@ -267,6 +269,7 @@ const routes: Routes = [
 	{ path: 'scuola', redirectTo: '/welcome/insegnanti', pathMatch: 'full' },
 	{ path: 'studenti', redirectTo: '/welcome/studenti', pathMatch: 'full' },
 	{ path: 'aziende', redirectTo: '/welcome/azienda', pathMatch: 'full' },
+	{ path: 'azienda', redirectTo: '/welcome/azienda', pathMatch: 'full' },
 	{ path: 'accademia', redirectTo: '/welcome/ricercatori', pathMatch: 'full' },
 	{ path: 'cryptowars/2011/classica', redirectTo: '/attivita/cryptowars/2011/classica', pathMatch: 'full' },
 	{ path: 'cryptowars/2011/pubblica', redirectTo: '/attivita/cryptowars/2011/pubblica', pathMatch: 'full' },

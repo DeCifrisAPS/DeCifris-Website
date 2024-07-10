@@ -17,6 +17,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    width: 100%;
     font-family: Roboto, "Helvetica Neue", sans-serif;
     height: fit-content;
     background: url('assets/images/background/background.jpeg') no-repeat center center fixed;
@@ -41,7 +42,6 @@ h1 {
     width: 100% !important;
     text-align: center !important;
 }
-
 
 /* Other styles */
 div.zoomed {
@@ -68,21 +68,41 @@ div.zoomed {
     z-index: 1;
 }
 
+/* Contenitore principale come flex container */
+.container {
+    display: flex;
+    height: 100%;
+    width:100%;
+    box-sizing: border-box;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 0 0 20%;
+    /* Fissa al 20% dello schermo, ma non crescerà né diminuirà */
+    max-width: 300px;
+    /* Assicura che la sidebar non cresca oltre 300px */
+    height: 100vh;
+    /* Rende la sidebar alta quanto la viewport */
+    box-sizing: border-box;
+    padding-left: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--cifris_azure);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+/* Content */
 .content {
+    flex: 1;
+    /* Occupa tutto lo spazio rimanente */
+    padding: 20px;
+    /* Aggiusta il padding a seconda delle necessità */
+    box-sizing: border-box;
     margin-left: 25%;
-    padding: 10px;
-    margin-right: 10%;
+    margin-right: 30px;
 }
-
-.mat-divider {
-    padding-bottom: 10px;
-}
-
-
-
-
-
-
 
 /* SIDEBAR */
 .sidebar ul {
@@ -107,50 +127,52 @@ div.zoomed {
     margin: 0;
 }
 
-/* impostazioni generiche sidebar */
-.sidebar {
-    padding-left: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: var(--cifris_azure);
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-}
-
-/* sidebar su schermi piccoli */
+/* Media query per schermi piccoli */
 @media all and (max-width: 991px) {
+    .container {
+        flex-direction: column;
+        margin-left:10px;
+        margin-right:10px;
+    }
+
     .sidebar {
-        left: -60%;
+        margin:0;
+        flex: 0 0 60%;
         width: 60%;
         height: 100%;
+        top:0;
+        right: -60%;
         transition: 0.3s;
         padding-top: 100px;
     }
 
     .sidebar.open {
-        left: 0;
+        right: 0;
     }
 
     .content {
+        flex: 1;
         margin-left: 10px;
         margin-right: 10px;
         margin-top: 5%;
-        margin-bottom: 150px;
     }
 }
 
-/* sidebar su schermi grandi */
+/* Media query per schermi grandi */
 @media all and (min-width: 992px) {
     .sidebar {
         width: 20%;
+        left: 0;
+        max-width: 300px;
         height: 100%;
-        top: 10% !important;
-        /* esattamente la dimensione della toolbar */
+        top: 10%;
+        /* Assicura che la sidebar non si sovrapponga alla toolbar */
     }
 
     .content {
         margin-top: 20px;
+        margin-right:20px;
+        margin-left: 25%;
         width: 80%;
     }
 }

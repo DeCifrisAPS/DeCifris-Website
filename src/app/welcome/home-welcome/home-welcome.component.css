@@ -21,6 +21,7 @@ mat-card {
     transition: background-color 0.3s;
     margin: 10px;
     margin-bottom: 20px;
+    background-color: var(--cifris_azure_transparent);
 }
 
 mat-card:hover {
