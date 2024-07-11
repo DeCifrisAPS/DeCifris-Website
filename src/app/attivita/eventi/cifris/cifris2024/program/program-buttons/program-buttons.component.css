@@ -5,6 +5,7 @@
     align-items: center;
     text-align: center;
     width: 100%;
+    padding: 2px;
     padding-bottom: 10px;
 }
 
@@ -18,15 +19,16 @@ a.txtbtn {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 120px;
+    width: 90px;
     height: 90px;
     cursor: pointer;
     transition: background-color 0.3s;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
     text-decoration: none;
     color: inherit;
-    padding: 10px;
     border-radius: 8px;
+    margin: 0;
+    padding: 0;
 }
 
 a.txtbtn:hover {
@@ -40,7 +42,7 @@ a.txtbtn:hover {
 .schedule-date h2,
 .schedule-period h6 {
     margin: 0;
-    color: white!important;
+    color: white !important;
 }
 
 .schedule-date h2 {
@@ -59,4 +61,8 @@ a.txtbtn:hover {
     font-size: 14px;
     font-weight: 400;
     display: inline;
+}
+
+.schedule-period{
+    margin-top:2px;
 }

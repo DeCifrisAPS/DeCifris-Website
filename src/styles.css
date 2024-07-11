@@ -56,7 +56,6 @@ div.zoomed {
 .content {
     z-index: 0;
     position: absolute;
-    height: 100%;
 }
 
 .toolbar {
@@ -67,43 +66,7 @@ div.zoomed {
     z-index: 1;
 }
 
-/* Contenitore principale come flex container */
-.container {
-    display: flex;
-    height: 100%;
-    width:100%;
-    box-sizing: border-box;
-}
-
-/* Sidebar */
-.sidebar {
-    flex: 0 0 20%;
-    /* Fissa al 20% dello schermo, ma non crescerà né diminuirà */
-    max-width: 300px;
-    /* Assicura che la sidebar non cresca oltre 300px */
-    height: 100vh;
-    /* Rende la sidebar alta quanto la viewport */
-    box-sizing: border-box;
-    padding-left: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: var(--cifris_azure);
-    position: fixed;
-    top: 0;
-    bottom: 0;
-}
-
-/* Content */
-.content {
-    flex: 1;
-    /* Occupa tutto lo spazio rimanente */
-    padding: 20px;
-    /* Aggiusta il padding a seconda delle necessità */
-    box-sizing: border-box;
-    margin-left: 25%;
-    margin-right: 30px;
-}
-
-/* SIDEBAR */
+/* SIDEBAR ELEMENTS */
 .sidebar ul {
     list-style-type: none;
     padding: 0;
@@ -128,50 +91,93 @@ div.zoomed {
 
 /* Media query per schermi piccoli */
 @media all and (max-width: 991px) {
+
+    /* Contenitore principale come flex container */
     .container {
+        display: flex;
         flex-direction: column;
-        margin-left:10px;
-        margin-right:10px;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 10% 10px 50px 10%;
     }
 
+    /* Sidebar */
     .sidebar {
-        margin:0;
-        flex: 0 0 60%;
-        width: 60%;
+        flex: 0 0 40%;
+        /* Fissa al 60% dello schermo, ma non crescerà né diminuirà */
+        width: 40%;
+        /* Assicura che la sidebar non cresca oltre 300px */
         height: 100%;
-        top:0;
-        right: -60%;
-        transition: 0.3s;
+        /* Rende la sidebar alta quanto la viewport */
+        box-sizing: border-box;
+        padding-left: 20px;
         padding-top: 100px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: var(--cifris_azure);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: -60%;
+        margin: 0;
+        transition: 0.2s;
     }
 
     .sidebar.open {
         right: 0;
     }
 
+    /* Content */
     .content {
         flex: 1;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-top: 5%;
+        /* Occupa tutto lo spazio rimanente */
+        padding: 20px;
+        box-sizing: border-box;
+        margin: 5% 10px 0 10px;
+        width: calc(100% - 20px);
     }
 }
 
 /* Media query per schermi grandi */
 @media all and (min-width: 992px) {
+
+    /* Contenitore principale come flex container */
+    .container {
+        display: flex;
+        height: 90%;
+        bottom: 0;
+        width: 100%;
+        box-sizing: border-box;
+        padding-bottom: 100px;
+    }
+
+    /* Sidebar */
     .sidebar {
-        width: 20%;
-        left: 0;
-        max-width: 300px;
+        flex: 0 0 20%;
+        /* Fissa al 20% dello schermo, ma non crescerà né diminuirà */
+        /* Assicura che la sidebar non cresca oltre 300px */
         height: 100%;
+        /* Rende la sidebar alta quanto la viewport */
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 50px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: var(--cifris_azure);
+        position: fixed;
         top: 10%;
+        left: 0;
         /* Assicura che la sidebar non si sovrapponga alla toolbar */
     }
 
+    /* Content */
     .content {
-        margin-top: 20px;
-        margin-right:20px;
-        margin-left: 25%;
-        width: 80%;
+        flex: 0 0 80%;
+        /* Occupa tutto lo spazio rimanente */
+        padding: 20px;
+        box-sizing: border-box;
+        align-items: center;
+        margin: 20px 20px 0 25%;
+        /* Margin top per separare dalla toolbar e a sinistra per far spazio alla sidebar */
     }
+
 }

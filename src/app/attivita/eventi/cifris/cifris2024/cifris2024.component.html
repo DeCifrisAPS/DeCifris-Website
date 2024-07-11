@@ -1,63 +1,121 @@
-<div class="container">
-	<div class="sidenav">
-		<nav class="sidebar" id="sidebar">
-			<ul>
-				<li>
-					<button mat-button [routerLink]="['/']" routerLinkActive="active"
-						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
-						<mat-icon>home</mat-icon>
-						<span class="sidebar-text">HOME</span>
-					</button>
-				</li>
-				<h5>CIFRIS 24 - ROME</h5>
-				<li>
-					<button mat-button [routerLink]="['/cifris24']" routerLinkActive="active"
-						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
-						<mat-icon>stadium</mat-icon>
-						<span class="sidebar-text">CIFRIS24</span>
-					</button>
-				</li>
-				<li>
-					<button mat-button [routerLink]="['/cifris24/registration']" routerLinkActive="active"
-						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
-						<mat-icon>event_seat</mat-icon>
-						<span class="sidebar-text">Registration</span>
-					</button>
-				</li>
-				<li>
-					<button mat-button [routerLink]="['/cifris24/program']" routerLinkActive="active"
-						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
-						<mat-icon>date_range</mat-icon>
-						<span class="sidebar-text">Program</span>
-					</button>
-				</li>
-				<li>
-					<button mat-button [routerLink]="['/cifris24/venue']" routerLinkActive="active"
-						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
-						<mat-icon>location_on</mat-icon>
-						<span class="sidebar-text">Venue</span>
-					</button>
-				</li>
-				<li>
-					<button mat-button [routerLink]="['/cifris24/proceedings']" routerLinkActive="active"
-						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
-						<mat-icon>menu_book</mat-icon>
-						<span class="sidebar-text">Proceedings</span>
-					</button>
-				</li>
-			</ul>
-		</nav>
-	</div>
-	<div class="content">
-		<h1 style="margin-bottom:0;">CIFRIS24</h1>
-		<div style="text-align: center;">
-			<i style="color:var(--cifris_orange);"> An event organized by De Cifris</i>
-			<p style="margin-top: 10px;">
-				"Centro Donato Menichella", Largo Guido Carli 1, Frascati (Rome)
-				<br>
-				<b> September 25th, 26th, 27th 2024 </b>
-			</p>
+<head>
+	<!-- Meta per Google -->
+	<meta name="description"
+		content="CIFRIS24 - Our second national Congress, in the eternal city of Rome.">
+
+	<!-- Meta per Facebook -->
+	<meta property="og:title" content="DeCifris.it: CIFRIS24">
+	<meta property="og:description"
+		content="CIFRIS24 - Our second national Congress, in the eternal city of Rome.">
+	<meta property="og:image" content="https://www.decifris.it/assets/images/logos/logo.jpg">
+	<meta property="og:url" content="https://www.decifris.it/cifris24">
+	<meta property="og:type" content="website">
+
+	<!-- Meta per Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="DeCifris.it: CIFRIS24">
+	<meta name="twitter:description"
+		content="CIFRIS24 - Our second national Congress, in the eternal city of Rome.">
+	<meta name="twitter:image" content="https://www.decifris.it/assets/images/logos/logo.jpg">
+	<meta name="twitter:url" content="https://www.decifris.it/cifris24">
+
+	<!-- Meta per Instagram -->
+	<meta property="og:type" content="instapp:photo">
+	<meta property="og:site_name" content="DeCifris.it: CIFRIS24">
+	<meta property="og:title" content="DeCifris.it: CIFRIS24">
+	<meta property="og:description"
+		content="CIFRIS24 - Our second national Congress, in the eternal city of Rome.">
+	<meta property="og:image" content="https://www.decifris.it/assets/images/logos/logo.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+
+	<!-- Meta per LinkedIn -->
+	<meta property="og:title" content="DeCifris.it: CIFRIS24">
+	<meta property="og:description"
+		content="CIFRIS24 - Our second national Congress, in the eternal city of Rome.">
+	<meta property="og:image" content="https://www.decifris.it/assets/images/logos/logo.jpg">
+	<meta property="og:url" content="https://www.decifris.it/cifris24">
+	<meta property="og:type" content="website">
+
+	<!-- Meta per WhatsApp -->
+	<meta property="og:title" content="DeCifris.it: CIFRIS24">
+	<meta property="og:description"
+		content="CIFRIS24 - Our second national Congress, in the eternal city of Rome.">
+	<meta property="og:image" content="https://www.decifris.it/assets/images/logos/logo.jpg">
+	<meta property="og:url" content="https://www.decifris.it/cifris24">
+
+	<!-- Meta per Telegram -->
+	<meta property="og:title" content="DeCifris.it: CIFRIS24">
+	<meta property="og:description"
+		content="CIFRIS24 - Our second national Congress, in the eternal city of Rome.">
+	<meta property="og:image" content="https://www.decifris.it/assets/images/logos/logo.jpg">
+	<meta property="og:url" content="https://www.decifris.it/cifris24">
+</head>
+
+
+<body>
+
+	<div class="container">
+		<div class="sidenav">
+			<nav class="sidebar" id="sidebar">
+				<ul>
+					<li>
+						<button mat-button [routerLink]="['/']" routerLinkActive="active"
+							[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+							<mat-icon>home</mat-icon>
+							<span class="sidebar-text">HOME</span>
+						</button>
+					</li>
+					<h5>CIFRIS 24 - ROME</h5>
+					<li>
+						<button mat-button [routerLink]="['/cifris24']" routerLinkActive="active"
+							[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+							<mat-icon>stadium</mat-icon>
+							<span class="sidebar-text">CIFRIS24</span>
+						</button>
+					</li>
+					<li>
+						<button mat-button [routerLink]="['/cifris24/registration']" routerLinkActive="active"
+							[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+							<mat-icon>event_seat</mat-icon>
+							<span class="sidebar-text">Registration</span>
+						</button>
+					</li>
+					<li>
+						<button mat-button [routerLink]="['/cifris24/program']" routerLinkActive="active"
+							[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+							<mat-icon>date_range</mat-icon>
+							<span class="sidebar-text">Program</span>
+						</button>
+					</li>
+					<li>
+						<button mat-button [routerLink]="['/cifris24/venue']" routerLinkActive="active"
+							[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+							<mat-icon>location_on</mat-icon>
+							<span class="sidebar-text">Venue</span>
+						</button>
+					</li>
+					<li>
+						<button mat-button [routerLink]="['/cifris24/proceedings']" routerLinkActive="active"
+							[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+							<mat-icon>menu_book</mat-icon>
+							<span class="sidebar-text">Proceedings</span>
+						</button>
+					</li>
+				</ul>
+			</nav>
 		</div>
-		<router-outlet></router-outlet>
+		<div class="content">
+			<h1 style="margin-bottom:0;">CIFRIS24</h1>
+			<div style="text-align: center;">
+				<i style="color:var(--cifris_orange);"> An event organized by De Cifris</i>
+				<p style="margin-top: 10px;">
+					"Centro Donato Menichella", Largo Guido Carli 1, Frascati (Rome)
+					<br>
+					<b> September 25th, 26th, 27th 2024 </b>
+				</p>
+			</div>
+			<router-outlet></router-outlet>
+		</div>
 	</div>
-</div>
+</body>
