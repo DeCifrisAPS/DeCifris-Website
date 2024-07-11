@@ -1,4 +1,21 @@
 /***************************************************************************************************
+ * 
+ * C A V E A T    L E C T O R
+ * 
+ * NON ASCOLTARE L'ERRORE DI ANGULAR. QUESTO FILE NON SI TOCCA.
+ * ALTRIMENTI IL SITO DIVENTA UNA PAGINA TRASPARENTE.
+ * SONO COSE TROPPO NUOVE PER TOCCARLE ORA, L'ERRORE RISALE A DUE SETTIMANE FA.
+ *  
+ * RITORNA QUI QUANDO PIÙ GENTE AVRÀ LO STESSO PROBLEMA TRA QUALCHE TEMPO.
+ * PER ORA DICONO TUTTI CHE QUESTO FILE SI PUÒ CANCELLARE, MA CON NOI NON FUNZIONA.
+ * EVIDENTEMENTE È RICHIESTO DA ALTRI PACCHETTI.
+ * 
+ * - LEONARDO, 11 LUG 2024
+ */
+
+
+
+/***************************************************************************************************
  * Load `$localize` onto the global scope - used if i18n tags appear in Angular templates.
  */
 import '@angular/localize/init';
