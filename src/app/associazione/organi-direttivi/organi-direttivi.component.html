@@ -1,214 +1,158 @@
+<h2>ORGANIZZAZIONE</h2>
 
-<ng-sidebar-container>
-	<ng-sidebar opened="true" position="left" id="right-sidebar" mode="push" [autoCollapseWidth]="799">
-		<ul class="noIndent" align="left">
-			<!-- Utilizziamo questo trick per evitare di rendere visibile l'autofocus al lettore. -->
-			<li style="display:none">
-				<button autofocus="autofocus"></button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" routerLink="/statuto">
-					Statuto
-				</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" routerLink="/regolamento">
-					Regolamenti
-				</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" routerLink="/dicono-di-noi">
-					Dicono di noi
-				</button>
-			</li>
-			<!--
-			<li>
-				<button class="btn btn-outline-info" routerLink="/aziende">
-					Come associarsi
-				</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" routerLink="/aziende">
-					Come affiliarsi
-				</button>
-			</li> -->
-		</ul>
-	</ng-sidebar>
-	<div ng-sidebar-content class="container bottomExtra">
-		<br>
-		<div class="row mt-3 mr-1 ml-1">
-			<div class="col-md-12">	
-				<h3>ORGANIZZAZIONE</h3>
+<h3>CONSIGLIO DIRETTIVO</h3>
+<ul>
+	<li> Sig.ra Elisa CERMIGNANI </li>
+	<li> Dott. Sandro FONTANA </li>
+	<li> Prof. Giuseppe MARINO </li>
+	<li> Prof. Silvio RANISE </li>
+	<li> Prof. Massimiliano SALA </li>
+</ul>
 
-				<h4>CONSIGLIO DIRETTIVO</h4>
-				<ul>
-					<li> Sig.ra Elisa CERMIGNANI </li>
-					<li> Dott. Sandro FONTANA </li>
-					<li> Prof. Giuseppe MARINO </li>
-					<li> Prof. Silvio RANISE </li>
-					<li> Prof. Massimiliano SALA </li>
-				</ul>
+<h4>PRESIDENTE</h4>
+<p>
+	Chiar.mo Professore Massimiliano SALA
+</p>
 
-				<h5>PRESIDENTE</h5>
-				<p>
-					Chiar.mo Professore Massimiliano SALA
-				</p>
+<h4>VICEPRESIDENTE</h4>
+<p>
+	Chiar.mo Professore Giuseppe MARINO
+</p>
 
-				<h5>VICEPRESIDENTE</h5>
-				<p> 
-					Chiar.mo Professore Giuseppe MARINO
-				</p>
+<h4>COLLEGIO DEI PROBIVIRI</h4>
+<ul>
+	<li>Prof. Antonino ALì</li>
+	<li>Prof. Edoardo FABRIS</li>
+	<li>Prof. Vincenzo VESPRI</li>
+</ul>
 
-				<h5>COLLEGIO DEI PROBIVIRI</h5>
-				<ul>
-					<li>Prof. Antonino ALì</li>
-					<li>Prof. Edoardo FABRIS</li>
-					<li>Prof. Vincenzo VESPRI</li>
-				</ul>
+<h4>COMITATO SCIENTIFICO</h4>
+<ul>
+	<li>Chiar.mo Prof. Carlo BLUNDO – Direttore Scientifico</li>
+	<li>Prof. Marco PEDICINI – ViceDirettore Scientifico</li>
+	<li>Prof. Antonino ALì</li>
+	<li>Prof. Riccardo ARAGONA</li>
+	<li>Prof. Marco BALDI</li>
+	<li>Dott. Matteo BOCCHI</li>
+	<li>Prof. Andrea BRACCIALI</li>
+	<li>Dott.ssa Claudia DE LAZZARI </li>
+	<li>Ing. Andrea GELPI</li>
+	<li>Avv. Andrea MONTI</li>
+	<li>Dott. Guglielmo MORGARI</li>
+	<li>Prof.ssa Fernanda PAMBIANCO</li>
+	<li>Prof. Gerardo PELOSI</li>
+	<li>Prof. Giovanni SCHMID</li>
+	<li>Prof. Andrea VISCONTI</li>
+</ul>
 
-				<h5>COMITATO SCIENTIFICO</h5>
-				<ul>
-					<li>Chiar.mo Prof. Carlo BLUNDO – Direttore Scientifico</li>
-					<li>Prof. Marco PEDICINI – ViceDirettore Scientifico</li>
-					<li>Prof. Antonino ALì</li>
-					<li>Prof. Riccardo ARAGONA</li>
-					<li>Prof. Marco BALDI</li>
-					<li>Dott. Matteo BOCCHI</li>
-					<li>Prof. Andrea BRACCIALI</li>
-					<li>Dott.ssa Claudia DE LAZZARI </li>
-					<li>Ing. Andrea GELPI</li>
-					<li>Avv. Andrea MONTI</li>
-					<li>Dott. Guglielmo MORGARI</li>
-					<li>Prof.ssa Fernanda PAMBIANCO</li>
-					<li>Prof. Gerardo PELOSI</li>
-					<li>Prof. Giovanni SCHMID</li>
-					<li>Prof. Andrea VISCONTI</li>
-				</ul>
-				
-				<hr><!------------------------------------------->
-				
-				<button 
-					class="collapsible"
-					type="button"
-					data-button-icon="+"
-					#btnPrec 
-					(click)="btnPrec.toggle = !btnPrec.toggle"
-				>
-					ORGANIZZAZIONE PRECEDENTE
-				</button>
-				<div [ngClass]="{collapse:!btnPrec.toggle}">
-					<h5>CONSIGLIO DIRETTIVO</h5>
-					<ul>
-						<li> Sig.ra Elisa CERMIGNANI </li>
-						<li> Dott. Sandro FONTANA </li>
-						<li> Prof. Massimo GIULIETTI </li>
-						<li> Prof. Nicola LAURENTI </li>
-						<li> Prof. Massimiliano SALA </li>
-					</ul>
+<hr><!------------------------------------------->
+<details>
+	<summary>
+		Organizzazione precedente 
+	</summary>
+	<br>
+	<h4>CONSIGLIO DIRETTIVO</h4>
+	<ul>
+		<li> Sig.ra Elisa CERMIGNANI </li>
+		<li> Dott. Sandro FONTANA </li>
+		<li> Prof. Massimo GIULIETTI </li>
+		<li> Prof. Nicola LAURENTI </li>
+		<li> Prof. Massimiliano SALA </li>
+	</ul>
 
-					<h5>PRESIDENTE</h5>
-					<p>
-						Chiar.mo Professore Massimiliano SALA
-					</p>
+	<h4>PRESIDENTE</h4>
+	<p>
+		Chiar.mo Professore Massimiliano SALA
+	</p>
 
-					<h5>VICEPRESIDENTE</h5>
-					<p>
-						Chiar.mo Professore Massimo GIULIETTI
-					</p>
-					<!-- <h5>DECANO DEI PROBIVIRI</h5>
+	<h4>VICEPRESIDENTE</h4>
+	<p>
+		Chiar.mo Professore Massimo GIULIETTI
+	</p>
+	<!-- <h4>DECANO DEI PROBIVIRI</h4>
 					<p> 
 						Chiar.mo Professore Vincenzo VESPRI.
 					</p> -->
-					<h5>COLLEGIO DEI PROBIVIRI</h5>
-					<ul>
-						<li> Dott.ssa Chiara BALLARI </li>
-						<li> Prof. Edoardo FABRIS </li>
-						<li> Chiar.mo Professore Vincenzo VESPRI </li>
-					</ul>
-					
-					<h5>TESORIERE</h5>
-					<p> 
-						Sig.ra Elisa CERMIGNANI
-					</p>
-				</div>
+	<h4>COLLEGIO DEI PROBIVIRI</h4>
+	<ul>
+		<li> Dott.ssa Chiara BALLARI </li>
+		<li> Prof. Edoardo FABRIS </li>
+		<li> Chiar.mo Professore Vincenzo VESPRI </li>
+	</ul>
 
-				<hr><!------------------------------------------->
+	<h4>TESORIERE</h4>
+	<p>
+		Sig.ra Elisa CERMIGNANI
+	</p>
+</details>
 
-				<button 
-					class="collapsible"
-					type="button"
-					data-button-icon="+"
-					#btnFund 
-					(click)="btnFund.toggle = !btnFund.toggle"
-				>
-					ORGANIZZAZIONE FONDATRICE
-				</button>
-				<div [ngClass]="{collapse:!btnFund.toggle}">
-					<h5>SOCI FONDATORI</h5>
-					<ul>
-						<li> Riccardo ARAGONA </li>
-						<li> Marco BALDI </li>
-						<li> Chiara Letizia BALLARI </li>
-						<li> Alessandro BARENGHI </li>
-						<li> Danilo BAZZANELLA </li>
-						<li> Carlo BLUNDO </li>
-						<li> Andrea BRACCIALI </li>
-						<li> Marco CALDERINI </li>
-						<li> Paolo CAMPEGIANI </li>
-						<li> Luca CASATI </li>
-						<li> Elisa CERMIGNANI </li>
-						<li> Franco CHIARALUCE </li>
-						<li> Roberto CIVINO </li>
-						<li> Davide COSTA </li>
-						<li> Alessandro DE PICCOLI </li>
-						<li> Edoardo FABRIS </li>
-						<li> Fabio FIORI </li>
-						<li> Sandro FONTANA </li>
-						<li> Tommaso GAGLIARDONI </li>
-						<li> Norberto GAVIOLI </li>
-						<li> Gianandrea GELPI </li>
-						<li> Massimo GIULIETTI </li>
-						<li> Roberto LA SCALA </li>
-						<li> Nicola LAURENTI </li>
-						<li> Alberto Ottavio LEPORATI </li>
-						<li> Giuseppe MARINO </li>
-						<li> Luca MARIOT </li>
-						<li> Alessio MENEGHETTI </li>
-						<li> Filippo MIGNOSI </li>
-						<li> Guglielmo MORGARI </li>
-						<li> Nadir MURRU </li>
-						<li> Lorenzo NICOLODI </li>
-						<li> Marco PEDICINI </li>
-						<li> Gerardo PELOSI </li>
-						<li> Federico PINTORE </li>
-						<li> Silvio RANISE </li>
-						<li> Mario RASO </li>
-						<li> Denis ROIO </li>
-						<li> Giuseppe ROSELLI </li>
-						<li> Massimiliano SALA </li>
-						<li> Paolo SANTINI </li>
-						<li> Giovanni SCHMID </li>
-						<li> Marco TIMPANELLA </li>
-						<li> Antonio TORTORA </li>
-						<li> Massimiliano VEGNI </li>
-						<li> Giacomo VERTICALE </li>
-						<li> Vincenzo Riccardo VESPRI </li>
-						<li> Irene VILLA </li>
-						<li> Filippo ZATTI </li>
-						<li> Ferdinando ZULLO </li>
-						<li> Roberto ZUNINO </li>
-					</ul>
+<hr><!------------------------------------------->
+<details>
+	<summary>
+		Organizzazione fondatrice
+	</summary>
+	<br>
+	<h4>SOCI FONDATORI</h4>
+	<ul>
+		<li> Riccardo ARAGONA </li>
+		<li> Marco BALDI </li>
+		<li> Chiara Letizia BALLARI </li>
+		<li> Alessandro BARENGHI </li>
+		<li> Danilo BAZZANELLA </li>
+		<li> Carlo BLUNDO </li>
+		<li> Andrea BRACCIALI </li>
+		<li> Marco CALDERINI </li>
+		<li> Paolo CAMPEGIANI </li>
+		<li> Luca CASATI </li>
+		<li> Elisa CERMIGNANI </li>
+		<li> Franco CHIARALUCE </li>
+		<li> Roberto CIVINO </li>
+		<li> Davide COSTA </li>
+		<li> Alessandro DE PICCOLI </li>
+		<li> Edoardo FABRIS </li>
+		<li> Fabio FIORI </li>
+		<li> Sandro FONTANA </li>
+		<li> Tommaso GAGLIARDONI </li>
+		<li> Norberto GAVIOLI </li>
+		<li> Gianandrea GELPI </li>
+		<li> Massimo GIULIETTI </li>
+		<li> Roberto LA SCALA </li>
+		<li> Nicola LAURENTI </li>
+		<li> Alberto Ottavio LEPORATI </li>
+		<li> Giuseppe MARINO </li>
+		<li> Luca MARIOT </li>
+		<li> Alessio MENEGHETTI </li>
+		<li> Filippo MIGNOSI </li>
+		<li> Guglielmo MORGARI </li>
+		<li> Nadir MURRU </li>
+		<li> Lorenzo NICOLODI </li>
+		<li> Marco PEDICINI </li>
+		<li> Gerardo PELOSI </li>
+		<li> Federico PINTORE </li>
+		<li> Silvio RANISE </li>
+		<li> Mario RASO </li>
+		<li> Denis ROIO </li>
+		<li> Giuseppe ROSELLI </li>
+		<li> Massimiliano SALA </li>
+		<li> Paolo SANTINI </li>
+		<li> Giovanni SCHMID </li>
+		<li> Marco TIMPANELLA </li>
+		<li> Antonio TORTORA </li>
+		<li> Massimiliano VEGNI </li>
+		<li> Giacomo VERTICALE </li>
+		<li> Vincenzo Riccardo VESPRI </li>
+		<li> Irene VILLA </li>
+		<li> Filippo ZATTI </li>
+		<li> Ferdinando ZULLO </li>
+		<li> Roberto ZUNINO </li>
+	</ul>
 
-					<h5>SOCI BENEMERITI</h5>
-					<ul>
-						<li> Emanuele CESENA </li>
-						<li> Ilaria CHILLOTTI </li>
-						<li> Michela IEZZI </li>
-						<li> Edoardo PERSICHETTI </li>
-						<li> Francesco SICA </li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</ng-sidebar-container>
+	<h4>SOCI BENEMERITI</h4>
+	<ul>
+		<li> Emanuele CESENA </li>
+		<li> Ilaria CHILLOTTI </li>
+		<li> Michela IEZZI </li>
+		<li> Edoardo PERSICHETTI </li>
+		<li> Francesco SICA </li>
+	</ul>
+</details>

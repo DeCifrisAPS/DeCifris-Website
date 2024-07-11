@@ -1,0 +1,13 @@
+{
+    "id": 10,
+    "titolo": "Crittografia e Imprese per il Paese: incontro alla Camera dei Deputati",
+    "sottotitolo": "", 
+    "contenuto": "Si è appena svolto un nostro convegno presso la Camera dei Deputati con lo scopo di incentivare la collaborazione tra le Istituzioni e le imprese più innovative, soprattutto in questo momento storico in cui è più cruciale che mai sostenere la difesa del Paese proteggendo i suoi dati e le sue informazioni.",
+    "autore": "",
+    "dataPubblicazione": "10 maggio 2024",
+    "immagine":"../assets/images/notizie/fotoCamera10maggio.jpeg",
+    "links": [{
+        "nome": "Leggi su LinkedIn",
+        "url": "https://it.linkedin.com/posts/de-cifris-associazione-nazionale-8274501a5_locandina-evento-imprese-crittografia-activity-7183528855704391682-kS3K"
+    }]
+}

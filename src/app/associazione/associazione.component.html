@@ -1,62 +1,90 @@
-<ng-sidebar-container>
-	<ng-sidebar opened="true" position="left" id="right-sidebar" mode="push" [autoCollapseWidth]="799">
-		<ul class="noIndent" align="left">
-			<!-- Utilizziamo questo trick per evitare di rendere visibile l'autofocus al lettore. -->
-			<li style="display:none">
-				<button autofocus="autofocus"></button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" routerLink="/aziende">
-					Statuto
-				</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" routerLink="/aziende">
-					Regolamento
-				</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" routerLink="/aziende">
-					Organizzazione
-				</button>
-			</li>
-			<!--
-			<li>
-				<button class="btn btn-outline-info" routerLink="/aziende">
-					Comitati
-				</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" routerLink="/aziende">
-					Come associarsi
-				</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" routerLink="/aziende">
-					Come affiliarsi
-				</button>
-			</li> -->
-		</ul>
-	</ng-sidebar>
-	<div ng-sidebar-content class="container bottomExtra">
-		<br>
-		<div class="row mt-3 mr-1 ml-1">
-			<div class="col-md-12">
-				<h3>L'ASSOCIZIONE</h3>
-				<p>Pagina in allestimento</p>
-			</div>
-		</div>
-		<hr>
-		<app-statuto></app-statuto>
-		<hr>
-		<app-regolamento></app-regolamento>
-		<!-- <hr>
-		<app-organi-direttivi></app-organi-direttivi>
-		<hr>
-		<app-comitati></app-comitati>
-		<hr>
-		<app-come-associarsi></app-come-associarsi>
-		<hr>
-		<app-come-affiliarsi></app-come-affiliarsi> -->
+<div class="container">
+	<div class="sidenav">
+		<nav class="sidebar" id="sidebar">
+			<ul>
+				<li>
+					<button mat-button [routerLink]="['/']" routerLinkActive="active"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>home</mat-icon>
+						<span class="sidebar-text">HOME</span>
+					</button>
+				</li>
+				<h5> DE CIFRIS APS</h5>
+				<li>
+					<button mat-button [routerLink]="['/associazione']" routerLinkActive="active"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>groups</mat-icon>
+						<span class="sidebar-text">Associazione</span>
+					</button>
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/associazione/statuto']" routerLinkActive="active"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>description</mat-icon>
+						<span class="sidebar-text">Statuto</span>
+					</button>
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/associazione/regolamento']" routerLinkActive="active"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>gavel</mat-icon>
+						<span class="sidebar-text">Regolamenti</span>
+					</button>
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/associazione/organi-direttivi']" routerLinkActive="active"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>corporate_fare</mat-icon>
+						<span class="sidebar-text">Organizzazione</span>
+					</button>
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/associazione/associarsi']" routerLinkActive="active"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>person_add</mat-icon>
+						<span class="sidebar-text">Associarsi</span>
+					</button>
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/associazione/advisory-board']" routerLinkActive="active"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>assured_workload</mat-icon>
+						<span class="sidebar-text">Advisory Board</span>
+					</button>
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/associazione/posizioni-ricerca']" routerLinkActive="active"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>work</mat-icon>
+						<span class="sidebar-text">Poizioni</span>
+					</button>
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/associazione/stage-tirocini']" routerLinkActive="active"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>badge</mat-icon>
+						<span class="sidebar-text">Stage & Tirocini</span>
+					</button>
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/associazione/notizie']" routerLinkActive="active"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>newspaper</mat-icon>
+						<span class="sidebar-text">Notizie</span>
+					</button>
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/associazione/dicono-di-noi']" routerLinkActive="active"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>travel_explore</mat-icon>
+						<span class="sidebar-text">Dicono di noi</span>
+					</button>
+				</li>
+			</ul>
+		</nav>
 	</div>
-</ng-sidebar-container>
+	<div class="content">
+		<h1>Associazione di Promozione Sociale <i>De Componendis Cifris</i></h1>
+		<router-outlet></router-outlet>
+	</div>
+</div>

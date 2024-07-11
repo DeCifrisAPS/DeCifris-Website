@@ -5,11 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './editorial-board.component.html',
   styleUrls: ['./editorial-board.component.css']
 })
-export class EditorialBoardComponent implements OnInit {
+export class EditorialBoardComponent{
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }

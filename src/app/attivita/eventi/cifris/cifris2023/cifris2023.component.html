@@ -1,0 +1,56 @@
+<div class="container">
+	<div class="sidenav">
+		<nav class="sidebar" id="sidebar">
+			<ul>
+				<li>
+					<button mat-button [routerLink]="['/']" routerLinkActive="active"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>home</mat-icon>
+						<span class="sidebar-text">HOME</span>
+					</button>
+				</li>
+				<h5>CIFRIS 23 - ROME</h5>
+				<li>
+					<button mat-button [routerLink]="['/cifris23']" routerLinkActive="active"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>stadium</mat-icon>
+						<span class="sidebar-text">CIFRIS23</span>
+					</button>
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/cifris23/registration']" routerLinkActive="active"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>event_seat</mat-icon>
+						<span class="sidebar-text">Registration</span>
+					</button>
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/cifris23/program']" routerLinkActive="active"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>date_range</mat-icon>
+						<span class="sidebar-text">Program</span>
+					</button>
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/cifris23/proceedings']" routerLinkActive="active"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>menu_book</mat-icon>
+						<span class="sidebar-text">Proceedings</span>
+					</button>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<div class="content">
+		<h1 style="margin-bottom:0;">CIFRIS23</h1>
+		<div style="text-align: center;">
+			<i style="color:var(--cifris_orange);"> An event organized by De Cifris</i>
+			<p style="margin-top: 10px;">
+				"CONSOB headoffice", Via Giovanni Battista Martini, 3 - 00198 Rome (Italy)
+				<br>
+				<b> December 14th, 15th 2023 </b>
+			</p>
+		</div>
+		<router-outlet></router-outlet>
+	</div>
+</div>

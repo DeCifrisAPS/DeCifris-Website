@@ -1,0 +1,23 @@
+<h3>DICONO DI NOI</h3>
+<p>
+    Gli articoli della stampa nazionale ed internazionale su di noi.
+</p>
+
+<div *ngFor="let articolo of articoli" class="card-container">
+
+    <mat-card class="notizia">
+        <mat-card-header>
+            <mat-card-title>{{ articolo.title }}</mat-card-title>
+            <mat-card-subtitle>{{ articolo.subtitle }}</mat-card-subtitle>
+        </mat-card-header>
+        <div *ngIf="articolo.image" class="img-container">
+            <img mat-card-image [src]="articolo.image" alt="Immagine di {{ articolo.title }}" class="card-img-right">
+        </div>
+        <mat-card-content>
+            {{ articolo.content }}
+        </mat-card-content>
+        <mat-card-actions>
+            <a mat-button class="news-btn" [href]="articolo.link" target="_blank">Leggi l'articolo</a>
+        </mat-card-actions>
+    </mat-card>
+</div>

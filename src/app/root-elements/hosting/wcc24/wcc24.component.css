@@ -1,0 +1,44 @@
+/**
+ * CSS for form fields 
+ **/
+input[type=hidden],
+select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type=radio],
+select {
+	margin: 8px 8px 8px 0px;
+	display: inline-block;
+}
+
+input[type=submit] {
+	width: 100%;
+	background-color: rgb(23, 162, 184);
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.footnote {
+	width: 100%;
+	font-size: small;
+	margin-top: 8px;
+}
+
+.form {
+	border-radius: 5px;
+	background-color: lightblue;
+	padding: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+}

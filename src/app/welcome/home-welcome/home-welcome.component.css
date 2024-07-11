@@ -1,0 +1,39 @@
+div.iniziativecontainer {
+    display: flex;  /* Aggiunto display: flex */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+mat-card {
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px;
+    margin-bottom: 20px;
+    background-color: var(--cifris_azure_transparent);
+}
+
+mat-card:hover {
+    background-color: var(--cifris_purple);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+    font-weight: bold;
+}
+
+a {
+    width: fit-content;
+    height: fit-content;
+}

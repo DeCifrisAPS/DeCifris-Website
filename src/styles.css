@@ -1,52 +1,177 @@
-/* Colors */
+/* generati in palette partendo da cifris_blue */
 :root {
     --cifris_blue: #307580;
     --cifris_azure: #e6f4f1;
+    --cifris_azure_transparent: #e6f4f190;
     --cifris_green: #54bf81;
-    --cifris_vanilla: #F3E5AB;
+    --cifris_pink: #F3E5AB;
     --cifris_orange: #ff8d3d;
     --cifris_purple: #7c72a7;
     --cifris_scarlet: #832700;
+    --cifris_gray: #c7d5d2;
+    --cifris_darkgray: #374240;
 }
 
-/* Font, textstyle */
-
-
-html {
-    height: 100%;
-    background-color: --cifris_azure;
-    padding: 0;
-}
-
+/* Font, style */
+html,
 body {
-    height: 100%;
-    background-color: --cifris_azure;
     margin: 0;
     padding: 0;
+    width: 100%;
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    background: url('assets/background.jpeg');
-	background-repeat: no-repeat;
-	background-size: cover;
+    height: fit-content;
+    background: url('assets/images/background/background.jpeg') no-repeat center center fixed;
+    background-size: cover;
 }
 
-h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    margin-left: 0;
-    padding-left: 0;
     color: var(--cifris_blue) !important;
+    margin-top: 20px !important;
+    margin-bottom: 7px !important;
+}
+
+h1 {
+    font-weight: 600 !important;
+    font-size: x-large !important;
+    color: var(--cifris_orange) !important;
+    width: 100% !important;
+    text-align: center !important;
+}
+
+/* Other styles */
+div.zoomed {
+    height: 100%;
+    zoom: 1.1;
+    transform: scale(1.1);
+    transform-origin: 0 0;
+}
+
+.toolbar,
+.sidenav,
+.container,
+.content {
+    z-index: 0;
+    position: absolute;
+    height: 100%;
+}
+
+.toolbar {
+    z-index: 2;
+}
+
+.sidenav {
+    z-index: 1;
+}
+
+/* Contenitore principale come flex container */
+.container {
+    display: flex;
+    height: 100%;
+    width:100%;
+    box-sizing: border-box;
 }
 
 /* Sidebar */
+.sidebar {
+    flex: 0 0 20%;
+    /* Fissa al 20% dello schermo, ma non crescerà né diminuirà */
+    max-width: 300px;
+    /* Assicura che la sidebar non cresca oltre 300px */
+    height: 100vh;
+    /* Rende la sidebar alta quanto la viewport */
+    box-sizing: border-box;
+    padding-left: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--cifris_azure);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
 
-button {
-    background: none;
-    border: none;
-    outline: none;
-    color: --cifris_blue;
-    width: 200px;
-    text-align: left !important;
+/* Content */
+.content {
+    flex: 1;
+    /* Occupa tutto lo spazio rimanente */
+    padding: 20px;
+    /* Aggiusta il padding a seconda delle necessità */
+    box-sizing: border-box;
+    margin-left: 25%;
+    margin-right: 30px;
+}
+
+/* SIDEBAR */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.sidebar ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-text,
+.mat-icon {
+    color: var(--cifris_blue);
+}
+
+.sidebar ul h5 {
+    padding: 0;
+    margin: 0;
+}
+
+/* Media query per schermi piccoli */
+@media all and (max-width: 991px) {
+    .container {
+        flex-direction: column;
+        margin-left:10px;
+        margin-right:10px;
+    }
+
+    .sidebar {
+        margin:0;
+        flex: 0 0 60%;
+        width: 60%;
+        height: 100%;
+        top:0;
+        right: -60%;
+        transition: 0.3s;
+        padding-top: 100px;
+    }
+
+    .sidebar.open {
+        right: 0;
+    }
+
+    .content {
+        flex: 1;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 5%;
+    }
+}
+
+/* Media query per schermi grandi */
+@media all and (min-width: 992px) {
+    .sidebar {
+        width: 20%;
+        left: 0;
+        max-width: 300px;
+        height: 100%;
+        top: 10%;
+        /* Assicura che la sidebar non si sovrapponga alla toolbar */
+    }
+
+    .content {
+        margin-top: 20px;
+        margin-right:20px;
+        margin-left: 25%;
+        width: 80%;
+    }
 }

@@ -1,0 +1,85 @@
+
+/**
+ * CSS for form fields 
+ **/
+input[type=hidden], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type=radio], select {
+	margin: 8px 8px 8px 0px;
+	display: inline-block;
+}
+
+input[type=checkbox], select {
+	margin: 8px 8px 8px 0px;
+	display: inline-block;
+}
+
+input[type=submit] {
+	width: 100%;
+	background-color: rgb(23, 162, 184);
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.footnote {
+	width: 100%;
+	font-size: small;
+	margin-top: 8px;
+}
+
+.form {
+	border-radius: 5px;
+	background-color: lightblue;
+	padding: 20px;
+	width: 100%;
+}
+
+
+table.fee-table {
+	width:95%;
+	border-collapse: collapse;
+	font-size: 0.9em;
+	font-family: sans-serif;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+	background-color: var(--cifris_azure_transparent);
+	border-radius: 10px;
+	margin: 10px auto 30px auto;
+	align-content: center;
+}
+
+.fee-table thead tr th {
+	background-color: var(--cifris_blue);
+	color: #ffffff;
+	text-align: center;
+	font-weight: 700;
+	padding: 10px;
+}
+
+td.item {
+	width: 85%;
+	vertical-align: top;
+	padding-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+td.fee {
+	vertical-align: top;
+	text-align: right;
+	width: 15%;
+	padding-top: 15px;
+	padding-right: 30px;
+	font-weight: bold;
+}

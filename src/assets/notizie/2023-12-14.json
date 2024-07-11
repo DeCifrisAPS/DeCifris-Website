@@ -1,0 +1,15 @@
+{
+    "id": 6,
+    "titolo": "CIFRIS23: primo convegno nazionale di crittografia",
+    "contenuto": "Inizia oggi CIFRIS23, il primo congresso di De Cifris che per la prima volta chiama a raccolta tutta la crittografia italiana. Nella prestigiosa cornice della sede romana di Consob, ci attendono due giornate interessantissime.",
+    "autore": "",
+    "dataPubblicazione": "14 dicembre 2023",
+    "immagine":"../assets/images/notizie/cifris23.jpeg",
+    "links": [{
+        "nome": "Vedi il programma!",
+        "url": "https://www.decifris.it/cifris23/program"
+    },{
+        "nome": "Locandina di CONSOB",
+        "url": "https://www.consob.it/documents/1912911/2058255/20231214-15_CIFRIS23.pdf/0651a612-66c6-a225-707d-ad5d91f40064"
+    }]
+}

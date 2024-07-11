@@ -1,56 +1,21 @@
-<ng-sidebar-container>
-	<ng-sidebar opened="true" position="left" id="right-sidebar" mode="push" [autoCollapseWidth]="799">
-		<ul class="noIndent" align="left">
-			<!-- Utilizziamo questo trick per evitare di rendere visibile l'autofocus al lettore. -->
-			<li style="display:none">
-				<button autofocus="autofocus"></button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" routerLink="/regolamento">
-					Regolamenti
-				</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" routerLink="/organiDirettivi">
-					Organizzazione
-				</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" routerLink="/statuto">
-					Statuto
-				</button>
-			</li>
-		</ul>
-	</ng-sidebar>
-	<div ng-sidebar-content class="container bottomExtra">
-		<br>
-		<h3>NOTIZIE</h3>
-		<p>
-			Qui potete trovare uno storico delle notizie più importanti per l'associazione. Ricordiamo che il canale
-			preferenziale di informazione è
-			<a href="https://it.linkedin.com/in/de-cifris-associazione-nazionale-8274501a5"> il profilo ufficiale
-				LinkedIn</a>.
-		</p>
-		<hr>
-		<div *ngFor="let notizia of notizie" class="notizie-container">
-			<div class="notizia">
-				<div *ngIf="notizia.immagine" class="img-container">
-					<img [src]="notizia.immagine" alt="Immagine di {{ notizia.titolo }}" class="card-img-right">
-				</div>
-				<h5 class="title">{{ notizia.titolo }}</h5>
-				<p class="subtitle">{{ notizia.sottotitolo }}</p>
-				<p class="date">{{ notizia.dataPubblicazione }}</p>
-				<p class="content">{{ notizia.contenuto }}</p>
-			</div>
-			<div *ngIf="notizia.links && notizia.links.length > 0" class="links-container">
-				<div *ngIf="notizia.links && notizia.links.length > 0" class="links-container">
-					<div *ngFor="let link of notizia.links" class="links">
-						<a *ngIf="link.url" [href]="link.url" target="_blank">{{ link.nome }}</a>
-						<a *ngIf="link.routerLink" [routerLink]="link.routerLink">{{ link.nome }}</a>
-					</div>
-				</div>
-			</div>
-			<hr>
+<div *ngFor="let notizia of notizie" class="notizie-container">
+	<mat-card class="notizia">
+		<mat-card-header>
+			<mat-card-title>{{ notizia.titolo }}</mat-card-title>
+			<mat-card-subtitle>{{ notizia.sottotitolo }}</mat-card-subtitle>
+			<mat-card-subtitle>{{ notizia.dataPubblicazione }}</mat-card-subtitle>
+		</mat-card-header>
+		<div *ngIf="notizia.immagine" class="img-container">
+			<img mat-card-image [src]="notizia.immagine" alt="Immagine di {{ notizia.titolo }}" class="card-img-right">
 		</div>
-	</div>
-</ng-sidebar-container>
+		<mat-card-content>
+			{{ notizia.contenuto }}
+		</mat-card-content>
+		<mat-card-actions *ngIf="notizia.links && notizia.links.length > 0" class="links-container">
+			<ng-container *ngFor="let link of notizia.links">
+				<a mat-button class="news-btn" *ngIf="link.url" [href]="link.url" target="_blank">{{ link.nome }}</a>
+				<a mat-button  class="news-btn" *ngIf="link.routerLink" [routerLink]="link.routerLink">{{ link.nome }}</a>
+			</ng-container>
+		</mat-card-actions>
+	</mat-card>
+</div>

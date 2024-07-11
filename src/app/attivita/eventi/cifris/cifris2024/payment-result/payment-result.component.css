@@ -1,0 +1,11 @@
+mat-icon {
+    color: var(--cifris_blue);
+    font-size: 100px;
+    height: 100px;
+    width: 100px;
+}
+
+div.result {
+    width: 100%;
+    text-align: center;
+}

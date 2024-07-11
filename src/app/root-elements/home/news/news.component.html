@@ -1,0 +1,26 @@
+<h2>News</h2>
+<p style="margin-bottom: 20px;">
+	Puoi esplorare <a href="https://www.decifris.it/notizie">le nostre notizie</a> e
+	<a href="https://www.decifris.it/dicono-di-noi">gli articoli su di noi</a>. Una selezione:
+</p>
+
+<div *ngFor="let articolo of articoli" class="card-container">
+
+	<mat-card class="notizia">
+		<mat-card-header>
+			<mat-card-title>{{ articolo.title }}</mat-card-title>
+			<mat-card-subtitle>{{ articolo.subtitle }}</mat-card-subtitle>
+		</mat-card-header>
+		<div *ngIf="articolo.image" class="img-container">
+			<img mat-card-image [src]="articolo.image" alt="Immagine di {{ articolo.title }}" class="card-img-right">
+		</div>
+		<mat-card-content>
+			{{ articolo.content }}
+		</mat-card-content>
+		<mat-card-actions>
+			<ng-container *ngFor="let link of articolo.links">
+				<a mat-button class="news-btn" *ngIf="link.text" [href]="link.link" target="_blank">{{ link.text }}</a>
+			</ng-container>
+		</mat-card-actions>
+	</mat-card>
+</div>

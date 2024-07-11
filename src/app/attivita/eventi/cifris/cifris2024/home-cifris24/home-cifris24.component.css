@@ -1,0 +1,59 @@
+table.date-table {
+	border-collapse: collapse;
+	font-size: 0.9em;
+	font-family: sans-serif;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	border-radius: 10px 10xp 0 0;
+	margin: 10px auto 30px auto;
+	align-content: center;
+	width: fit-content;
+}
+
+.date-table thead tr th {
+	background-color: var(--cifris_blue);
+	color: #ffffff;
+	text-align: center;
+	font-weight: 700;
+	padding: 10px;
+}
+
+.date-table th,
+.date-table td {
+	padding: 12px 15px;
+}
+
+td.date {
+	width: 120px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: bold;
+}
+
+td.item {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 300px;
+	padding-right: 10px;
+}
+
+.date-table tbody tr {
+	border-bottom: 1px solid var(--cifris_blue);
+}
+
+.date-table tbody tr:nth-of-type(even) {
+	background-color: var(--cifris_azure) !important;
+}
+
+.date-table tbody tr:nth-of-type(odd) {
+	background-color: white !important;
+}
+
+.active-row {
+	font-weight: bold;
+	color: var(--cifris_orange);
+}
+
+.dead-row {
+	font-style: italic;
+	color: gray;
+}

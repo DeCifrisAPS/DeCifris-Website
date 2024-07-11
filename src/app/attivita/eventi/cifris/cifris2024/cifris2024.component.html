@@ -1,0 +1,63 @@
+<div class="container">
+	<div class="sidenav">
+		<nav class="sidebar" id="sidebar">
+			<ul>
+				<li>
+					<button mat-button [routerLink]="['/']" routerLinkActive="active"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>home</mat-icon>
+						<span class="sidebar-text">HOME</span>
+					</button>
+				</li>
+				<h5>CIFRIS 24 - ROME</h5>
+				<li>
+					<button mat-button [routerLink]="['/cifris24']" routerLinkActive="active"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>stadium</mat-icon>
+						<span class="sidebar-text">CIFRIS24</span>
+					</button>
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/cifris24/registration']" routerLinkActive="active"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>event_seat</mat-icon>
+						<span class="sidebar-text">Registration</span>
+					</button>
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/cifris24/program']" routerLinkActive="active"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>date_range</mat-icon>
+						<span class="sidebar-text">Program</span>
+					</button>
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/cifris24/venue']" routerLinkActive="active"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>location_on</mat-icon>
+						<span class="sidebar-text">Venue</span>
+					</button>
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/cifris24/proceedings']" routerLinkActive="active"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>menu_book</mat-icon>
+						<span class="sidebar-text">Proceedings</span>
+					</button>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<div class="content">
+		<h1 style="margin-bottom:0;">CIFRIS24</h1>
+		<div style="text-align: center;">
+			<i style="color:var(--cifris_orange);"> An event organized by De Cifris</i>
+			<p style="margin-top: 10px;">
+				"Centro Donato Menichella", Largo Guido Carli 1, Frascati (Rome)
+				<br>
+				<b> September 25th, 26th, 27th 2024 </b>
+			</p>
+		</div>
+		<router-outlet></router-outlet>
+	</div>
+</div>
