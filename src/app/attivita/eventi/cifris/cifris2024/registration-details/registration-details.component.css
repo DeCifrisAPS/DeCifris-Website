@@ -1,0 +1,36 @@
+table.fee-table {
+	width:95%;
+	border-collapse: collapse;
+	font-size: 0.9em;
+	font-family: sans-serif;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+	background-color: var(--cifris_azure_transparent);
+	border-radius: 10px;
+	margin: 10px auto 30px auto;
+	align-content: center;
+}
+
+.fee-table thead tr th {
+	background-color: var(--cifris_blue);
+	color: #ffffff;
+	text-align: center;
+	font-weight: 700;
+	padding: 10px;
+}
+
+td.item {
+	width: 85%;
+	vertical-align: top;
+	padding-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+td.fee {
+	vertical-align: top;
+	text-align: right;
+	width: 15%;
+	padding-top: 15px;
+	padding-right: 30px;
+	font-weight: bold;
+}

@@ -89,6 +89,10 @@ div.zoomed {
     margin: 0;
 }
 
+
+
+
+
 /* Media query per schermi piccoli */
 @media all and (max-width: 991px) {
 
@@ -137,6 +141,9 @@ div.zoomed {
         width: calc(100% - 20px);
     }
 }
+
+
+
 
 /* Media query per schermi grandi */
 @media all and (min-width: 992px) {

@@ -84,6 +84,7 @@ import { ProgramCommitteeComponent24 } from './attivita/eventi/cifris/cifris2024
 import { ProgramComponent24 } from './attivita/eventi/cifris/cifris2024/program/program.component';
 import { RegistrationComponent24 } from './attivita/eventi/cifris/cifris2024/registration/registration.component';
 import { VenueAccomodationComponent24 } from './attivita/eventi/cifris/cifris2024/venue-accomodation/venue-accomodation.component';
+import { RegistrationDetailsComponent24 } from './attivita/eventi/cifris/cifris2024/registration-details/registration-details.component';
 
 // cifris23
 import { Cifris2023Component } from './attivita/eventi/cifris/cifris2023/cifris2023.component';
@@ -201,6 +202,7 @@ const routes: Routes = [
 			{ path: "call-for-workshops", component: CallForWorkshopsComponent24 },
 			{ path: "program-committee", component: ProgramCommitteeComponent24 },
 			{ path: "registration", component: RegistrationComponent24 },
+			{ path: "registration-details", component: RegistrationDetailsComponent24 },
 			{ path: "program", component: ProgramComponent24 },
 			{ path: "proceedings", component: ProceedingsComponent24 },
 			{ path: "payment-result", component: PaymentResultComponent24 },
