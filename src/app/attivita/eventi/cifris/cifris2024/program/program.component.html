@@ -554,9 +554,6 @@
 		<!------------------------------>
 		<td>
 			<em><b style="color:var(--cifris_blue)"> NTC - Number Theory for Cryptography</b></em>
-			<button mat-button (click)="toggleShowMore()" class="btn-showmore">
-				{{ showMore ? 'Show Less' : 'Show More' }}
-			</button>
 			<!-- VERSIONE NORMALE -->
 			<p *ngIf="!showMore">
 				Exploring the connections between number theory and cryptography, with a focus on the most
@@ -581,6 +578,14 @@
 			<p *ngIf="showMore">
 				<b>Program:</b> TBA.
 			</p>
+			<div>
+				<button mat-button (click)="toggleShowMore()" class="btn-showmore">
+					{{ showMore ? 'Show Less' : 'Show More' }}
+				</button>
+				<a mat-button href = "/cifris24/ntc24" class="btn-showmore" style="margin-left: 10px;">
+					Workshop webpage
+				</a>
+			</div>
 		</td>
 	</tr>
 	<tr>
@@ -725,7 +730,7 @@
 	</tr>
 	<tr>
 		<td class="schedule"> 14:00<br>17:00 </td>
-		<td><em><b style="color:var(--cifris_blue)">PQcifris</b></em></td>
+		<td><em><b style="color:var(--cifris_blue)">PQCifris</b></em></td>
 	</tr>
 	<tr>
 		<td colspan="2"><br></td>
