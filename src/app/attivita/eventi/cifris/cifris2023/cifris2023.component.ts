@@ -22,5 +22,13 @@ export class Cifris2023Component implements OnInit {
     await this.sleep(10);
     document.getElementById(s).scrollIntoView({behavior: 'smooth'});
   }
+  toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    if (sidebar) {
+      sidebar.classList.toggle('open');
+    } else {
+      sidebar.classList.toggle('closed');
+    }
+  }
 
 }

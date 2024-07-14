@@ -3,7 +3,7 @@
 		<nav class="sidebar" id="sidebar">
 			<ul>
 				<li>
-					<button mat-button [routerLink]="['/']" routerLinkActive="active"
+					<button mat-button [routerLink]="['/']" routerLinkActive="active" (click)="toggleSidebar()" 
 						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
 						<mat-icon>home</mat-icon>
 						<span class="sidebar-text">HOME</span>
@@ -11,28 +11,28 @@
 				</li>
 				<h5>CIFRIS 23 - ROME</h5>
 				<li>
-					<button mat-button [routerLink]="['/cifris23']" routerLinkActive="active"
+					<button mat-button [routerLink]="['/cifris23']" routerLinkActive="active" (click)="toggleSidebar()" 
 						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
 						<mat-icon>stadium</mat-icon>
 						<span class="sidebar-text">CIFRIS23</span>
 					</button>
 				</li>
 				<li>
-					<button mat-button [routerLink]="['/cifris23/registration']" routerLinkActive="active"
+					<button mat-button [routerLink]="['/cifris23/registration']" routerLinkActive="active" (click)="toggleSidebar()" 
 						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
 						<mat-icon>event_seat</mat-icon>
 						<span class="sidebar-text">Registration</span>
 					</button>
 				</li>
 				<li>
-					<button mat-button [routerLink]="['/cifris23/program']" routerLinkActive="active"
+					<button mat-button [routerLink]="['/cifris23/program']" routerLinkActive="active" (click)="toggleSidebar()" 
 						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
 						<mat-icon>date_range</mat-icon>
 						<span class="sidebar-text">Program</span>
 					</button>
 				</li>
 				<li>
-					<button mat-button [routerLink]="['/cifris23/proceedings']" routerLinkActive="active"
+					<button mat-button [routerLink]="['/cifris23/proceedings']" routerLinkActive="active" (click)="toggleSidebar()" 
 						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
 						<mat-icon>menu_book</mat-icon>
 						<span class="sidebar-text">Proceedings</span>

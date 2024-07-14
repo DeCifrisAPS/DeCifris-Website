@@ -3,7 +3,7 @@
         <nav class="sidebar" id="sidebar">
             <ul>
                 <li>
-                    <button mat-button [routerLink]="['/']" routerLinkActive="active"
+                    <button mat-button [routerLink]="['/']" routerLinkActive="active" (click)="toggleSidebar()" 
                         [routerLinkActiveOptions]="{exact: true}" class="image-button">
                         <mat-icon>home</mat-icon>
                         <span class="sidebar-text">HOME</span>
@@ -11,35 +11,35 @@
                 </li>
                 <h5> IN EVIDENZA </h5>
                 <li>
-                    <button mat-button [routerLink]="['/welcome']" routerLinkActive="active"
+                    <button mat-button [routerLink]="['/welcome']" routerLinkActive="active" (click)="toggleSidebar()" 
                         [routerLinkActiveOptions]="{exact: true}" class="image-button">
                         <mat-icon>emoji_people</mat-icon>
                         <span class="sidebar-text">Welcome</span>
                     </button>
                 </li>
                 <li>
-                    <button mat-button [routerLink]="['/associazione']" routerLinkActive="active"
+                    <button mat-button [routerLink]="['/associazione']" routerLinkActive="active" (click)="toggleSidebar()" 
                         [routerLinkActiveOptions]="{exact: true}" class="image-button">
                         <mat-icon>groups</mat-icon>
                         <span class="sidebar-text">Associazione</span>
                     </button>
                 </li>
                 <li>
-                    <button mat-button [routerLink]="['/attivita']" routerLinkActive="active"
+                    <button mat-button [routerLink]="['/attivita']" routerLinkActive="active" (click)="toggleSidebar()" 
                         [routerLinkActiveOptions]="{exact: true}" class="image-button">
                         <mat-icon>public</mat-icon>
                         <span class="sidebar-text">Attività</span>
                     </button>
                 </li>
                 <li>
-                    <button mat-button [routerLink]="['/koine']" routerLinkActive="active"
+                    <button mat-button [routerLink]="['/koine']" routerLinkActive="active" (click)="toggleSidebar()" 
                         [routerLinkActiveOptions]="{exact: true}" class="image-button">
                         <mat-icon>auto_stories</mat-icon>
                         <span class="sidebar-text">De Cifris Koine</span>
                     </button>
                 </li>
                 <li>
-                    <button mat-button [routerLink]="['/cifris24']" routerLinkActive="active"
+                    <button mat-button [routerLink]="['/cifris24']" routerLinkActive="active" (click)="toggleSidebar()" 
                         [routerLinkActiveOptions]="{exact: true}" class="image-button">
                         <mat-icon>event</mat-icon>
                         <span class="sidebar-text">CIFRIS24</span>
@@ -47,14 +47,14 @@
                 </li>
                 <h5> INFORMAZIONI </h5>
                 <li>
-                    <button mat-button [routerLink]="['/contatti']" routerLinkActive="active"
+                    <button mat-button [routerLink]="['/contatti']" routerLinkActive="active" (click)="toggleSidebar()" 
                         [routerLinkActiveOptions]="{exact: true}" class="image-button">
                         <mat-icon>mail</mat-icon>
                         <span class="sidebar-text">Contatti</span>
                     </button>
                 </li>
                 <li>
-                    <button mat-button [routerLink]="['/cookie-policy']" routerLinkActive="active"
+                    <button mat-button [routerLink]="['/cookie-policy']" routerLinkActive="active" (click)="toggleSidebar()" 
                         [routerLinkActiveOptions]="{exact: true}" class="image-button">
                         <mat-icon>cookie</mat-icon>
                         <span class="sidebar-text">Cookies</span>

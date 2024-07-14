@@ -88,3 +88,9 @@ table.orari th {
 td.schedule {
 	width: 5%
 }
+
+.btn-showmore{
+	background-color: var(--cifris_azure_transparent);
+	color: var(--cifris_blue);
+	margin-left: 10px;
+}

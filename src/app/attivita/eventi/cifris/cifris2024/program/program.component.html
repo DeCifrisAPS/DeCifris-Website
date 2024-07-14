@@ -549,21 +549,37 @@
 	</tr><!------------------------------>
 	<tr>
 		<td class="schedule"> 10:00<br>11:20 </td>
+		<!------------------------------>
+		<!-- WORKSHOP NUMBER THEORY   -->
+		<!------------------------------>
 		<td>
 			<em><b style="color:var(--cifris_blue)"> NTC - Number Theory for Cryptography</b></em>
-			<p>
+			<button mat-button (click)="toggleShowMore()" class="btn-showmore">
+				{{ showMore ? 'Show Less' : 'Show More' }}
+			</button>
+			<!-- VERSIONE NORMALE -->
+			<p *ngIf="!showMore">
+				Exploring the connections between number theory and cryptography, with a focus on the most
+				challenging topics.
+			</p>
+			<p *ngIf="!showMore">
+				<b>Invited speaker:</b> TBA.
+			</p>
+			<!-- VERSIONE ESTESA -->
+			<p *ngIf="showMore">
 				<b>Organizers:</b>
 				<i>
-					F. Accossato, G. Alecci, D. Bazzanella, L. Capuano, G. D’Alconzo, S. Dutto, N. Murru, G. Santilli.
+					Federico Accossato (PoliTo), Gessica Alecci (PoliTo), Danilo Bazzanella (PoliTo), Laura Capuano (RomaTre), Giuseppe D’Alconzo (PoliTo), Simone Dutto (ACN), Nadir Murru (UniTN), Giordano Santilli (ACN).
 				</i>
 			</p>
-			<p>
-				<b>Short abstract:</b> The connections between number theory and cryptography with a focus on the most
-				challenging topics: from
-				classical public-key algorithms to post-quantum cryptography, to cryptanalysis.
+			<p *ngIf="showMore">
+				<b>Abstract:</b> The workshop aims at exploring the connections between number theory and
+				cryptography with a focus on the most challenging topics involved in modern cryptography (from classical
+				public-key algorithms to post-quantum cryptography). Particular emphasis will be given to the
+				applications of number theory for developing new cryptosystems and methods of cryptanalysis.
 			</p>
-			<p>
-				<b>Invited speaker:</b> TBA.
+			<p *ngIf="showMore">
+				<b>Program:</b> TBA.
 			</p>
 		</td>
 	</tr>

@@ -3,7 +3,7 @@
 		<nav class="sidebar" id="sidebar">
 			<ul>
 				<li>
-					<button mat-button [routerLink]="['/']" routerLinkActive="active"
+					<button mat-button [routerLink]="['/']" routerLinkActive="active" (click)="toggleSidebar()" 
 						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
 						<mat-icon>home</mat-icon>
 						<span class="sidebar-text">HOME</span>
@@ -11,49 +11,49 @@
 				</li>
 				<h5>INIZIATIVE DE CIFRIS</h5>
 				<li>
-					<button mat-button [routerLink]="['/attivita']" routerLinkActive="active"
+					<button mat-button [routerLink]="['/attivita']" routerLinkActive="active" (click)="toggleSidebar()" 
 						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
 						<mat-icon>public</mat-icon>
 						<span class="sidebar-text">Attività</span>
 					</button>
 				</li>
 				<li>
-					<button mat-button [routerLink]="['/attivita/eventi']" routerLinkActive="active"
+					<button mat-button [routerLink]="['/attivita/eventi']" routerLinkActive="active" (click)="toggleSidebar()" 
 						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
 						<mat-icon>event_upcoming</mat-icon>
 						<span class="sidebar-text">Eventi</span>
 					</button>
 				</li>
 				<li>
-					<button mat-button [routerLink]="['/attivita/corsi']" routerLinkActive="active"
+					<button mat-button [routerLink]="['/attivita/corsi']" routerLinkActive="active" (click)="toggleSidebar()" 
 						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
 						<mat-icon>history_edu</mat-icon>
 						<span class="sidebar-text">Corsi</span>
 					</button>
 				</li>
 				<li>
-					<button mat-button [routerLink]="['/attivita/seminari']" routerLinkActive="active"
+					<button mat-button [routerLink]="['/attivita/seminari']" routerLinkActive="active" (click)="toggleSidebar()" 
 						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
 						<mat-icon>person_raised_hand</mat-icon>
 						<span class="sidebar-text">Seminari</span>
 					</button>
 				</li>
 				<li>
-					<button mat-button [routerLink]="['/attivita/editoria']" routerLinkActive="active"
+					<button mat-button [routerLink]="['/attivita/editoria']" routerLinkActive="active" (click)="toggleSidebar()" 
 						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
 						<mat-icon>menu_book</mat-icon>
 						<span class="sidebar-text">Editoria</span>
 					</button>
 				</li>
 				<li>
-					<button mat-button [routerLink]="['/attivita/gare-crittografiche']" routerLinkActive="active"
+					<button mat-button [routerLink]="['/attivita/gare-crittografiche']" routerLinkActive="active" (click)="toggleSidebar()" 
 						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
 						<mat-icon>emoji_events</mat-icon>
 						<span class="sidebar-text">Gare crittografiche</span>
 					</button>
 				</li>
 				<li>
-					<button mat-button [routerLink]="['/attivita/iniziative-divulgative']" routerLinkActive="active"
+					<button mat-button [routerLink]="['/attivita/iniziative-divulgative']" routerLinkActive="active" (click)="toggleSidebar()" 
 						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
 						<mat-icon>campaign</mat-icon>
 						<span class="sidebar-text">Iniziative divulgative</span>

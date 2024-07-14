@@ -101,16 +101,17 @@ div.zoomed {
         display: flex;
         flex-direction: column;
         height: 100%;
-        width: 100%;
-        box-sizing: border-box;
-        margin: 10% 10px 50px 10%;
+        margin: 10% 10px 50px 10px;
+        left:0;
+        right:0;
+        padding:0;
     }
 
     /* Sidebar */
     .sidebar {
-        flex: 0 0 40%;
+        flex: 0 0 60%;
         /* Fissa al 60% dello schermo, ma non crescerà né diminuirà */
-        width: 40%;
+        width: 60%;
         /* Assicura che la sidebar non cresca oltre 300px */
         height: 100%;
         /* Rende la sidebar alta quanto la viewport */
@@ -138,7 +139,7 @@ div.zoomed {
         padding: 20px;
         box-sizing: border-box;
         margin: 5% 10px 0 10px;
-        width: calc(100% - 20px);
+        width: calc(100% - 35px);
     }
 }
 
