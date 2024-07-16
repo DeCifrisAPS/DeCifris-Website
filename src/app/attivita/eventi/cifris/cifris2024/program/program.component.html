@@ -566,7 +566,9 @@
 			<p *ngIf="showMore">
 				<b>Organizers:</b>
 				<i>
-					Federico Accossato (PoliTo), Gessica Alecci (PoliTo), Danilo Bazzanella (PoliTo), Laura Capuano (RomaTre), Giuseppe D’Alconzo (PoliTo), Simone Dutto (ACN), Nadir Murru (UniTN), Giordano Santilli (ACN).
+					Federico Accossato (PoliTo), Gessica Alecci (PoliTo), Danilo Bazzanella (PoliTo), Laura Capuano
+					(RomaTre), Giuseppe D’Alconzo (PoliTo), Simone Dutto (ACN), Nadir Murru (UniTN), Giordano Santilli
+					(ACN).
 				</i>
 			</p>
 			<p *ngIf="showMore">
@@ -578,14 +580,12 @@
 			<p *ngIf="showMore">
 				<b>Program:</b> TBA.
 			</p>
-			<div>
-				<button mat-button (click)="toggleShowMore()" class="btn-showmore">
-					{{ showMore ? 'Show Less' : 'Show More' }}
-				</button>
-				<a mat-button href = "/cifris24/ntc24" class="btn-showmore" style="margin-left: 10px;">
-					Workshop webpage
-				</a>
-			</div>
+			<button mat-button (click)="toggleShowMore()" class="btn-showmore">
+				{{ showMore ? 'Show Less' : 'Show More' }}
+			</button>
+			<a mat-button href="/cifris24/ntc24" class="btn-showmore" style="margin-left: 10px;">
+				Webpage
+			</a>
 		</td>
 	</tr>
 	<tr>
@@ -650,7 +650,46 @@
 	</tr><!------------------------------>
 	<tr>
 		<td class="schedule"> 11:40<br>13:00 </td>
-		<td><em><b style="color:var(--cifris_blue)"> Boolean functions and symmetric cryptography </b></em></td>
+		<!------------------------------>
+		<!-- WORKSHOP SYMMETRIC       -->
+		<!------------------------------>
+		<td>
+			<em><b style="color:var(--cifris_blue)"> SymCrypt - Symmetric Cryptography and Boolean Functions </b></em>
+			<!-- VERSIONE NORMALE -->
+			<p *ngIf="!showMore">
+				Topics in symmetric cryptography with a focus on properties, classification, and construction of Boolean
+				Functions.
+			</p>
+			<p *ngIf="!showMore">
+				<b>Invited speaker:</b> TBA.
+			</p>
+			<!-- VERSIONE ESTESA -->
+			<p *ngIf="showMore">
+				<b>Organizers:</b>
+				<i>
+					Marco Calderini (University of Trento - Italy),
+					George Petrides (University of Cyprus - Cyprus),
+					Irene Villa (University of Genoa & University of Trento – Italy).
+				</i>
+			</p>
+			<p *ngIf="showMore">
+				<b>Abstract:</b> The workshop will be in two interrelated areas. The first one concerns different
+				aspects of symmetric cryptography, such as the design of symmetric ciphers, attacks to these ciphers, as
+				well as countermeasures. The second topic of interest is the theory of Boolean functions applied in
+				cryptography scenarios, particularly in the design of symmetric ciphers. Such functions have found
+				applications as S-boxes of block ciphers and feedback functions in stream ciphers, and the workshop will
+				be focusing on their relevant cryptographic properties, their classification, and construction methods.
+			</p>
+			<p *ngIf="showMore">
+				<b>Program:</b> TBA.
+			</p>
+			<button mat-button (click)="toggleShowMore()" class="btn-showmore">
+				{{ showMore ? 'Show Less' : 'Show More' }}
+			</button>
+			<a mat-button href="/cifris24/symcrypt24" class="btn-showmore" style="margin-left: 10px;">
+				Webpage
+			</a>
+		</td>
 	</tr>
 	<tr>
 		<td colspan="2">

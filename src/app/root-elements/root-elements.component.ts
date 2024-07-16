@@ -14,5 +14,4 @@ export class RootElementsComponent {
       sidebar.classList.toggle('closed');
     }
   }
-
 }
