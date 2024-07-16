@@ -18,16 +18,20 @@ export class Cifris2023Component implements OnInit {
 
   /* Ai posteri: utilizzare del codice asincrono (async/await) mi è sembrato l'unico 
   modo per gestire la transizione della pagina alla sezione "eventi passati".*/
-  async goTo(s : string){
+  async goTo(s: string) {
     await this.sleep(10);
-    document.getElementById(s).scrollIntoView({behavior: 'smooth'});
+    document.getElementById(s).scrollIntoView({ behavior: 'smooth' });
   }
-  toggleSidebar() {
+  toggleSidebar(forceClose?: boolean) {
     const sidebar = document.getElementById('sidebar');
     if (sidebar) {
-      sidebar.classList.toggle('open');
-    } else {
-      sidebar.classList.toggle('closed');
+      if (forceClose) {
+        sidebar.classList.remove('open');
+        sidebar.classList.add('closed');
+      } else {
+        sidebar.classList.toggle('open');
+        sidebar.classList.toggle('closed');
+      }
     }
   }
 

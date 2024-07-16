@@ -11,12 +11,16 @@ export class AssociazioneComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  toggleSidebar() {
+  toggleSidebar(forceClose?: boolean) {
     const sidebar = document.getElementById('sidebar');
     if (sidebar) {
-      sidebar.classList.toggle('open');
-    } else {
-      sidebar.classList.toggle('closed');
+      if (forceClose) {
+        sidebar.classList.remove('open');
+        sidebar.classList.add('closed');
+      } else {
+        sidebar.classList.toggle('open');
+        sidebar.classList.toggle('closed');
+      }
     }
   }
 
