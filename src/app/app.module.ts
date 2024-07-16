@@ -52,7 +52,7 @@ import { CorsiComponent } from './attivita/corsi/corsi.component';
 import { EventiComponent } from './attivita/eventi/eventi.component';
 import { EventiPassatiComponent } from './attivita/eventi/eventi-passati/eventi-passati.component';
 import { EventiFuturiComponent } from './attivita/eventi/eventi-futuri/eventi-futuri.component';
-import { EventiPatrocinatiComponent } from './attivita/eventi/eventi-patrocinati/eventi-patrocinati/eventi-patrocinati.component';
+import { EventiPatrocinatiComponent } from './attivita/eventi/eventi-patrocinati/eventi-patrocinati.component';
 import { WorkshopCryptanalysisComponent } from './attivita/eventi/eventi-pubblici/workshop-cryptanalysis/workshop-cryptanalysis.component';
 import { SessioneTorinoComponent } from './attivita/eventi/eventi-pubblici/sessione-torino/sessione-torino.component';
 import { SessionePerugiaComponent } from './attivita/eventi/eventi-pubblici/sessione-perugia/sessione-perugia.component';
@@ -136,7 +136,8 @@ import { Trends24Component } from './attivita/corsi/trends24/trends24.component'
 // import { Centotesi20142023Component } from './attivita/centotesi20142023/centotesi20142023.component';
 // import { Vol2Component } from './attivita/editoria/koine/vol2/vol2.component';
 
-@NgModule({ declarations: [
+@NgModule({
+    declarations: [
         AppComponent,
         ToolbarComponent,
         HomeComponent,
@@ -343,6 +344,7 @@ import { Trends24Component } from './attivita/corsi/trends24/trends24.component'
         MatMenuModule,
         BrowserAnimationsModule,
         MatCardModule], providers: [
-        provideHttpClient(withInterceptorsFromDi())
-    ] })
+            provideHttpClient(withInterceptorsFromDi())
+        ]
+})
 export class AppModule { }
