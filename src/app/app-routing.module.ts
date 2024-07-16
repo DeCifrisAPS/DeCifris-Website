@@ -106,6 +106,7 @@ import { ArticlesAndVolumesComponent } from './attivita/editoria/koine/articles-
 import { EditorialBoardComponent } from './attivita/editoria/koine/editorial-board/editorial-board.component';
 import { NtcComponent24 } from './attivita/eventi/cifris/cifris2024/workshops/ntc/ntc.component';
 import { SymcryptComponent24 } from './attivita/eventi/cifris/cifris2024/workshops/symcrypt/symcrypt.component';
+import { WorkshopsComponent24 } from './attivita/eventi/cifris/cifris2024/workshops/workshops.component';
 
 
 // importante mettere come children tutti quelli che condividono la stessa sidebar, dato
@@ -210,6 +211,7 @@ const routes: Routes = [
 			{ path: "payment-result", component: PaymentResultComponent24 },
 			{ path: "ntc24", component: NtcComponent24},
 			{ path: "symcrypt24", component: SymcryptComponent24},
+			{ path: "workshops", component: WorkshopsComponent24},
 		]
 	},
 

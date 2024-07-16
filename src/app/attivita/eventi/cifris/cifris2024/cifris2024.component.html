@@ -89,6 +89,13 @@
 						</button>
 					</li>
 					<li>
+						<button mat-button [routerLink]="['/cifris24/workshops']" routerLinkActive="active" (click)="toggleSidebar()" 
+							[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+							<mat-icon>architecture</mat-icon>
+							<span class="sidebar-text">Workshops</span>
+						</button>
+					</li>
+					<li>
 						<button mat-button [routerLink]="['/cifris24/venue']" routerLinkActive="active" (click)="toggleSidebar()" 
 							[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
 							<mat-icon>location_on</mat-icon>
