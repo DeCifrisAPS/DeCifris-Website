@@ -46,9 +46,9 @@
 </head>
 
 
-<h2>PROGRAM</h2>
 
 <app-program-buttons></app-program-buttons>
+<app-workshop-buttons24></app-workshop-buttons24>
 
 <table class="orari" cellspacing="2" cellpadding="2" id="25morning">
 	<th class="schedule" colspan="2">
@@ -460,7 +460,7 @@
 	<tr>
 		<td colspan="2"><br></td>
 	</tr>
-	<tr>
+	<tr id="fcr24-i">
 		<td colspan="2">
 			<h2>MAIN HALL</h2>
 		</td>
@@ -472,9 +472,40 @@
 	</tr><!------------------------------>
 	<tr>
 		<td class="schedule"> 10:00<br>11:20 </td>
-		<td><em><b style="color:var(--cifris_blue)"> Joint workshop: Banca d'Italia and De Cifris </b></em></td>
+		<!------------------------------>
+		<!-- WORKSHOP DCC E BDI        -->
+		<!------------------------------>
+		<td>
+			<em><b style="color:var(--cifris_blue)"> FCR - Financial Cryptography in Rome</b></em>
+			<!-- VERSIONE NORMALE -->
+			<p *ngIf="!showMore">
+				Joint workshop of Banca d'Italia and De Cifris on novel financial applications of cryptography.
+			</p>
+			<p *ngIf="!showMore">
+				<b>Invited speaker:</b> TBA.
+			</p>
+			<!-- VERSIONE ESTESA -->
+			<p *ngIf="showMore">
+				<b>Organizers:</b>
+				<i>
+					Michela Iezzi (Banca d'Italia) and Massimiliano Sala (De Cifris).
+				</i>
+			</p>
+			<p *ngIf="showMore">
+				<b>Abstract:</b> TBA.
+			</p>
+			<p *ngIf="showMore">
+				<b>Program:</b> TBA.
+			</p>
+			<button mat-button (click)="toggleShowMore()" class="btn-showmore">
+				{{ showMore ? 'Show Less' : 'Show More' }}
+			</button>
+			<a mat-button href="/cifris24/fcr24" class="btn-showmore" style="margin-left: 10px;">
+				Webpage
+			</a>
+		</td>
 	</tr>
-	<tr>
+	<tr id="fcr24-ii">
 		<td colspan="2">
 			<hr>
 		</td>
@@ -490,7 +521,38 @@
 	</tr><!------------------------------>
 	<tr>
 		<td class="schedule"> 11:40<br>13:00 </td>
-		<td><em><b style="color:var(--cifris_blue)"> Joint workshop: Banca d'Italia and De Cifris </b></em></td>
+		<!------------------------------>
+		<!-- WORKSHOP DCC E BDI        -->
+		<!------------------------------>
+		<td>
+			<em><b style="color:var(--cifris_blue)"> FCR - Financial Cryptography in Rome</b></em>
+			<!-- VERSIONE NORMALE -->
+			<p *ngIf="!showMore">
+				Joint workshop of Banca d'Italia and De Cifris on novel financial applications of cryptography.
+			</p>
+			<p *ngIf="!showMore">
+				<b>Invited speaker:</b> TBA.
+			</p>
+			<!-- VERSIONE ESTESA -->
+			<p *ngIf="showMore">
+				<b>Organizers:</b>
+				<i>
+					Michela Iezzi (Banca d'Italia) and Massimiliano Sala (De Cifris).
+				</i>
+			</p>
+			<p *ngIf="showMore">
+				<b>Abstract:</b> TBA.
+			</p>
+			<p *ngIf="showMore">
+				<b>Program:</b> TBA.
+			</p>
+			<button mat-button (click)="toggleShowMore()" class="btn-showmore">
+				{{ showMore ? 'Show Less' : 'Show More' }}
+			</button>
+			<a mat-button href="/cifris24/fcr24" class="btn-showmore" style="margin-left: 10px;">
+				Webpage
+			</a>
+		</td>
 	</tr>
 	<tr>
 		<td colspan="2">
@@ -553,7 +615,7 @@
 			<hr>
 		</td>
 	</tr><!------------------------------>
-	<tr>
+	<tr id="ntc24">
 		<td colspan="2">
 			<h2>ROOM B</h2>
 		</td>
@@ -655,7 +717,7 @@
 			<hr>
 		</td>
 	</tr><!------------------------------>
-	<tr>
+	<tr id="symcrypt24">
 		<td class="schedule"> 11:20<br>11:40 </td>
 		<td><em> Coffee break </em></td>
 	</tr>
@@ -721,7 +783,7 @@
 			<hr>
 		</td>
 	</tr><!------------------------------>
-	<tr>
+	<tr id="qcifris24">
 		<td colspan="2">
 			<h2>ROOM D</h2>
 		</td>
@@ -733,7 +795,38 @@
 	</tr><!------------------------------>
 	<tr>
 		<td class="schedule"> 10:00<br>11:20 </td>
-		<td><em><b style="color:var(--cifris_blue)"> CifrisCloud </b></em></td>
+		<!------------------------------>
+		<!-- WORKSHOP NUMBER THEORY   -->
+		<!------------------------------>
+		<td>
+			<em><b style="color:var(--cifris_blue)"> QCifris - Quantum Cifris</b></em>
+			<!-- VERSIONE NORMALE -->
+			<p *ngIf="!showMore">
+				Advances in all perspectives of post-quantum cryptography.
+			</p>
+			<p *ngIf="!showMore">
+				<b>Invited speaker:</b> TBA.
+			</p>
+			<!-- VERSIONE ESTESA -->
+			<p *ngIf="showMore">
+				<b>Organizers:</b>
+				<i>
+					Paolo Villoresi (Università di Padova).
+				</i>
+			</p>
+			<p *ngIf="showMore">
+				<b>Abstract:</b> TBA.
+			</p>
+			<p *ngIf="showMore">
+				<b>Program:</b> TBA.
+			</p>
+			<button mat-button (click)="toggleShowMore()" class="btn-showmore">
+				{{ showMore ? 'Show Less' : 'Show More' }}
+			</button>
+			<a mat-button href="/cifris24/qcifris24" class="btn-showmore" style="margin-left: 10px;">
+				Webpage
+			</a>
+		</td>
 	</tr>
 	<tr>
 		<td colspan="2">
@@ -751,7 +844,7 @@
 	</tr><!------------------------------>
 	<tr>
 		<td class="schedule"> 11:40<br>13:00 </td>
-		<td><em><b style="color:var(--cifris_blue)"> TBA </b></em></td>
+		<td><em><b style="color:var(--cifris_blue)"> CifrisCloud </b></em></td>
 	</tr>
 	<tr>
 		<td colspan="2">

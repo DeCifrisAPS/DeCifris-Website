@@ -125,6 +125,7 @@ import { HomeKoineComponent } from './attivita/editoria/koine/home-koine/home-ko
 import { KoineComponent } from './attivita/editoria/koine/koine.component';
 import { PaymentResultComponent24 } from './attivita/eventi/cifris/cifris2024/payment-result/payment-result.component';
 import { Trends24Component } from './attivita/corsi/trends24/trends24.component';
+import { WorkshopButtons24Component } from './attivita/eventi/cifris/cifris2024/program/workshop-buttons24/workshop-buttons24.component';
 
 // // ./hosting
 // import { Opera24Component } from './hosting/opera24/opera24.component';
@@ -324,6 +325,7 @@ import { Trends24Component } from './attivita/corsi/trends24/trends24.component'
         VenueAccomodationComponent24,
         ProgramButtonsComponent,
         WorkshopsComponent24,
+        WorkshopButtons24Component
         //Hosting
         // Opera24Component,
         // Combinatorics24Component,

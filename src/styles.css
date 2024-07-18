@@ -141,6 +141,16 @@ div.zoomed {
         margin: 5% 10px 0 10px;
         width: calc(100% - 35px);
     }
+
+    .sidebar-image-button {
+        width: 200px;
+        text-align: left!important; 
+        display: flex!important; 
+        justify-content: flex-start!important; 
+        align-items: center!important; 
+        padding-left: 20px!important; 
+        box-sizing: border-box!important; 
+    }
 }
 
 
@@ -168,7 +178,7 @@ div.zoomed {
         /* Rende la sidebar alta quanto la viewport */
         box-sizing: border-box;
         padding-left: 20px;
-        padding-right: 50px;
+        padding-right: 20px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         background-color: var(--cifris_azure);
         position: fixed;
@@ -186,6 +196,16 @@ div.zoomed {
         align-items: center;
         margin: 20px 20px 0 25%;
         /* Margin top per separare dalla toolbar e a sinistra per far spazio alla sidebar */
+    }
+
+    .sidebar-image-button {
+        width: 200px;
+        text-align: left!important; 
+        display: flex!important; 
+        justify-content: flex-start!important; 
+        align-items: center!important; 
+        padding-left: 20px!important; 
+        box-sizing: border-box!important; 
     }
 
 }

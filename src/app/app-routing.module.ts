@@ -107,6 +107,8 @@ import { EditorialBoardComponent } from './attivita/editoria/koine/editorial-boa
 import { NtcComponent24 } from './attivita/eventi/cifris/cifris2024/workshops/ntc/ntc.component';
 import { SymcryptComponent24 } from './attivita/eventi/cifris/cifris2024/workshops/symcrypt/symcrypt.component';
 import { WorkshopsComponent24 } from './attivita/eventi/cifris/cifris2024/workshops/workshops.component';
+import { Fcr24Component } from './attivita/eventi/cifris/cifris2024/workshops/fcr24/fcr24.component';
+import { Qcifris24Component } from './attivita/eventi/cifris/cifris2024/workshops/qcifris24/qcifris24.component';
 
 
 // importante mettere come children tutti quelli che condividono la stessa sidebar, dato
@@ -212,6 +214,8 @@ const routes: Routes = [
 			{ path: "ntc24", component: NtcComponent24},
 			{ path: "symcrypt24", component: SymcryptComponent24},
 			{ path: "workshops", component: WorkshopsComponent24},
+			{ path: "fcr24", component: Fcr24Component},
+			{ path: "qcifris24", component: Qcifris24Component},
 		]
 	},
 

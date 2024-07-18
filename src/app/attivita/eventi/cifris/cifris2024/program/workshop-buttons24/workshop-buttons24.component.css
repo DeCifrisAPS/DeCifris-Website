@@ -8,43 +8,13 @@
     padding: 2px;
     padding-bottom: 10px;
 }
-
-.schedule-item {
-    margin: 10px;
-}
-
-a.txtbtn {
-    border: none;
-    background: var(--cifris_blue);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90px;
-    height: 90px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
-    text-decoration: none;
-    color: inherit;
-    border-radius: 8px;
-    margin: 0;
-    padding: 0;
-}
-
-a.txtbtn:hover {
-    background-color: var(--cifris_orange);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05);
-    transition: transform 0.2s ease-in-out;
-}
-
 a.txtbtn-workshop {
     border: none;
     background: var(--cifris_blue);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
+    width: 100px;
     cursor: pointer;
     transition: background-color 0.3s;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
@@ -54,6 +24,9 @@ a.txtbtn-workshop {
     border-radius: 8px;
     margin: 0;
     padding: 0;
+    margin-bottom: 5px;
+    margin-left:20px;
+    margin-right: 20px;
 }
 
 a.txtbtn-workshop:hover {
@@ -63,31 +36,30 @@ a.txtbtn-workshop:hover {
     transition: transform 0.2s ease-in-out;
 }
 
-
-.schedule-date h4,
-.schedule-date h2,
-.schedule-period h6 {
-    color: white !important;
+h3 {
+    margin:0;
+    padding:0;
 }
 
-.schedule-date h2 {
-    font-size: 33px;
-    font-weight: 700;
-    display: inline;
+.workshop-item{
+    padding-bottom: 10px;
+    width: 140px;
+    text-align: center;
 }
-
-.schedule-date h4 {
-    font-size: 14px;
-    font-weight: 300;
-    display: inline;
-}
-
-.schedule-period h6 {
-    font-size: 14px;
-    font-weight: 400;
-    display: inline;
-}
-
-.schedule-period{
-    margin-top:0px;
+a.txtbtn-workshop-inactive {
+    border: none;
+    background: var(--cifris_gray);
+    cursor: default;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    color: white!important;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+    margin-left:20px;
+    margin-right: 20px;
 }
