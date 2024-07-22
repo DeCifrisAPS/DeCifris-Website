@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    vertical-align: top;
     align-items: center;
     text-align: center;
     width: 100%;
@@ -24,7 +25,7 @@ a.txtbtn-workshop {
     border-radius: 8px;
     margin: 0;
     padding: 0;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     margin-left:20px;
     margin-right: 20px;
 }
@@ -59,7 +60,27 @@ a.txtbtn-workshop-inactive {
     border-radius: 8px;
     margin: 0;
     padding: 0;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     margin-left:20px;
     margin-right: 20px;
+}
+a.txtbtn-workshop-empty {
+    border: 1px solid var(--cifris_azure_transparent);
+    background: none;
+    cursor: default;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    color: black!important;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2px;
+    margin-left:20px;
+    margin-right: 20px;
+}
+a.txtbtn-workshop-empty:hover {
+    background: none;
 }

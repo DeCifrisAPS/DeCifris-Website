@@ -50,6 +50,7 @@
 <app-program-buttons></app-program-buttons>
 <app-workshop-buttons24></app-workshop-buttons24>
 
+<h1>PROGRAM</h1>
 <table class="orari" cellspacing="2" cellpadding="2" id="25morning">
 	<th class="schedule" colspan="2">
 		<font size="+1"><b> September 25th (morning) - Institutional Session</b></font>
@@ -70,7 +71,7 @@
 	</tr><!------------------------------>
 	<tr>
 		<td class="schedule"> 10:30<br>11:30 </td>
-		<td><em> Welcome address </em> <br> <em> Institutional Round Table </em></td>
+		<td><em> Welcome address and institutional round table </em></td>
 	</tr>
 	<tr>
 		<td colspan="2">
@@ -90,6 +91,8 @@
 		<td class="schedule"> 12:00<br>12:30 </td>
 		<td>
 			<em><b>Invited Talk</b> - Barbara Masucci (University of Salerno - Italy)</em>
+			<br>
+			La De Cifris e la crittografia italiana
 		</td>
 	</tr>
 	<tr>
@@ -99,7 +102,21 @@
 	</tr><!------------------------------>
 	<tr>
 		<td class="schedule"> 12:30<br>13:00 </td>
-		<td><em> De Cifris Partners </em></td>
+		<td>
+			<b> De Cifris Partners </b>
+			<br>
+			Chiara Ballari, <i><a href="https://www.athilab.eu/">Athilab</a></i>
+			<br>
+			Massimo Caccia, <i><a href="https://www.randompower.eu/">Random Power</a></i>
+			<br>
+			Simone Capeleto, <i><a href="https://www.thinkquantum.com/">ThinkQuantum</a></i>
+			<br>
+			TBA
+			<br>
+			TBA
+			<br>
+			TBA
+		</td>
 	</tr>
 	<tr>
 		<td colspan="2">
@@ -152,10 +169,16 @@
 				Abstract
 			</summary>
 			<i>
-				TBA
+				The so-called (n,m)-functions have very nice properties when quadratic, which for instance ease the study of their
+				almost perfect nonlinearity. But quadratic functions are weak against some other attacks. It is then
+				important to study strict superclasses sharing some of these properties. In particular, when the
+				block ciphers have a structure of substitution-permutation network (SPN), the substitution boxes must be
+				permutations (m=n). <br>
+				It is then essential to study superclasses of quadratic functions within the class of balanced
+				functions. We shall introduce and study such a superclass, that of "quadratic-like balanced functions"
+				("permutations" when m=n).
 			</i>
 		</details>
-		<br>
 		<br>
 		<em>Augustine Musukwa</em>
 		<br>
@@ -209,7 +232,6 @@
 				seminal works by Ishai, Sahai and Wagner (CRYPTO 2003) and Micali and Reyzin (TCC 2004).
 			</i>
 		</details>
-		<br>
 		<br>
 		<em>Delaram Kahrobaei, Ludovic Perret and Martina Vigorito</em>
 		<br>
@@ -278,7 +300,6 @@
 				and sometimes surprising results.
 			</i>
 		</details>
-		<br>
 		<br>
 		<em>Antonio Di Scala and Carlo Sanna</em>
 		<br>
@@ -384,7 +405,6 @@
 			memory encryption or cache-randomization.
 		</details>
 		<br>
-		<br>
 		<em>Maria Ferrara, Paolo Santonastaso, Antonio Tortora and Ferdinando Zullo</em>
 		<br>
 		Polynomial functional encryption schemes
@@ -476,13 +496,19 @@
 		<!-- WORKSHOP DCC E BDI        -->
 		<!------------------------------>
 		<td>
-			<em><b style="color:var(--cifris_blue)"> FCR - Financial Cryptography in Rome</b></em>
+			<em><b style="color:var(--cifris_blue)"> FCR - Financial Cryptography in Rome 2024</b></em>
 			<!-- VERSIONE NORMALE -->
 			<p *ngIf="!showMore">
 				Joint workshop of Banca d'Italia and De Cifris on novel financial applications of cryptography.
 			</p>
 			<p *ngIf="!showMore">
-				<b>Invited speaker:</b> TBA.
+				<b>Invited speakers:</b>
+				<br>
+				Marie Beth van Egmond, <i>Netherlands Organisation for Applied Scientific Research (Nethernalds)</i>
+				<br>
+				Carsten Maple, <i>Graz University of Technology (Austria)</i>
+				<br>
+				Christian Rechberger, <i>University of Warwick (UK)</i>
 			</p>
 			<!-- VERSIONE ESTESA -->
 			<p *ngIf="showMore">
@@ -525,13 +551,10 @@
 		<!-- WORKSHOP DCC E BDI        -->
 		<!------------------------------>
 		<td>
-			<em><b style="color:var(--cifris_blue)"> FCR - Financial Cryptography in Rome</b></em>
+			<em><b style="color:var(--cifris_blue)"> FCR - Financial Cryptography in Rome 2024</b></em>
 			<!-- VERSIONE NORMALE -->
 			<p *ngIf="!showMore">
 				Joint workshop of Banca d'Italia and De Cifris on novel financial applications of cryptography.
-			</p>
-			<p *ngIf="!showMore">
-				<b>Invited speaker:</b> TBA.
 			</p>
 			<!-- VERSIONE ESTESA -->
 			<p *ngIf="showMore">
@@ -569,7 +592,7 @@
 		</td>
 	</tr><!------------------------------>
 	<tr>
-		<td colspan="2">
+		<td colspan="2" id="tac24">
 			<h2>ROOM A</h2>
 		</td>
 	</tr>
@@ -579,8 +602,60 @@
 		</td>
 	</tr><!------------------------------>
 	<tr>
-		<td class="schedule"> 10:00<br>11:20 </td>
-		<td><em><b style="color:var(--cifris_blue)"> Topics in Applied Cryptography </b></em></td>
+		<td class="schedule"> 11:40<br>13:00 </td>
+		<!------------------------------>
+		<!-- WORKSHOP TAC        -->
+		<!------------------------------>
+		<td>
+			<em><b style="color:var(--cifris_blue)"> TAC - Topics in Applied Cryptography 2024</b></em>
+			<!-- VERSIONE NORMALE -->
+			<p *ngIf="!showMore">
+				Specific applications, scenarios and technologies: performance, hardware, IoT, attacks, vulnerabilities,
+				unusual applications, etc.
+			</p>
+			<p *ngIf="!showMore">
+				Filippo Valsorda, <i>full-time independent open source maintainer</i>.
+			</p>
+			<!-- VERSIONE ESTESA -->
+			<p *ngIf="showMore">
+				<b>Organizers:</b>
+				<em>
+					<b>Chair:</b> Riccardo Longo (Fondazione Bruno Kessler, Italy)
+					<br>
+					Alessandro Tomasi (Fondazione Bruno Kessler, Italy)
+					<br>
+					Chiara Spadafora (University of Trento, Italy)
+					<br>
+					Silvio Ranise (University of Trento and Fondazione Bruno Kessler, Italy)
+					<br>
+					Stefano Berlato (Fondazione Bruno Kessler, Italy)
+				</em>
+			</p>
+			<p *ngIf="showMore">
+				<b>Abstract:</b> Topics in Applied Cryptography 2024 (TAC2024) is a workshop dedicated to cryptography
+				with a specific application,
+				scenario and/or technology in mind, including performance evaluation, libraries and implementation
+				issues, hardware
+				and IoT, attacks and vulnerabilities, and requirements for unusual application scenarios; purely
+				theoretical results
+				are out of scope. Topics of interest include privacy enhancing cryptography, homomorphic encryption,
+				secure
+				multi-party computation, quantum key distribution, and quantum-safe cryptography.
+			</p>
+			<p *ngIf="showMore">
+				<b>Program:</b> TBA.
+			</p>
+			<button mat-button (click)="toggleShowMore()" class="btn-showmore">
+				{{ showMore ? 'Show Less' : 'Show More' }}
+			</button>
+			<a mat-button href="/cifris24/tac24" class="btn-showmore" style="margin-left: 10px;">
+				Webpage
+			</a>
+			<a mat-button href="https://aleph.fbk.eu/events/TAC2024/index.html" class="btn-showmore"
+				style="margin-left: 10px;">
+				Website
+			</a>
+		</td>
 	</tr>
 	<tr>
 		<td colspan="2">
@@ -631,7 +706,7 @@
 		<!-- WORKSHOP NUMBER THEORY   -->
 		<!------------------------------>
 		<td>
-			<em><b style="color:var(--cifris_blue)"> NTC - Number Theory for Cryptography</b></em>
+			<em><b style="color:var(--cifris_blue)"> NTC - Number Theory for Cryptography 2024</b></em>
 			<!-- VERSIONE NORMALE -->
 			<p *ngIf="!showMore">
 				Exploring the connections between number theory and cryptography, with a focus on the most
@@ -732,7 +807,8 @@
 		<!-- WORKSHOP SYMMETRIC       -->
 		<!------------------------------>
 		<td>
-			<em><b style="color:var(--cifris_blue)"> SymCrypt - Symmetric Cryptography and Boolean Functions </b></em>
+			<em><b style="color:var(--cifris_blue)"> SymCrypt - Symmetric Cryptography and Boolean Functions
+					2024</b></em>
 			<!-- VERSIONE NORMALE -->
 			<p *ngIf="!showMore">
 				Topics in symmetric cryptography with a focus on properties, classification, and construction of Boolean
@@ -796,13 +872,13 @@
 	<tr>
 		<td class="schedule"> 10:00<br>11:20 </td>
 		<!------------------------------>
-		<!-- WORKSHOP NUMBER THEORY   -->
+		<!-- WORKSHOP FISICI   -->
 		<!------------------------------>
 		<td>
-			<em><b style="color:var(--cifris_blue)"> QCifris - Quantum Cifris</b></em>
+			<em><b style="color:var(--cifris_blue)"> QCifris - Quantum Cifris 2024</b></em>
 			<!-- VERSIONE NORMALE -->
 			<p *ngIf="!showMore">
-				Advances in all perspectives of post-quantum cryptography.
+				Advances in quantum technologies and research from the perspective of Physics.
 			</p>
 			<p *ngIf="!showMore">
 				<b>Invited speaker:</b> TBA.
@@ -868,7 +944,7 @@
 
 
 <table class="orari" cellspacing="2" cellpadding="2" id="27afternoon">
-	<tr bgcolor="lightblue">
+	<tr bgcolor="lightblue" id="raipqc24">
 		<th class="schedule" colspan="2">
 			<font size="+1"><b>September 27th (afternoon) - Workshop Session</b></font>
 		</th>
@@ -878,7 +954,47 @@
 	</tr>
 	<tr>
 		<td class="schedule"> 14:00<br>17:00 </td>
-		<td><em><b style="color:var(--cifris_blue)">PQCifris</b></em></td>
+		<!------------------------------>
+		<!-- WORKSHOP PQ   -->
+		<!------------------------------>
+		<td>
+			<em><b style="color:var(--cifris_blue)"> RAIPQC - Recent Advances in Post-Quantum Cryptography 2024</b></em>
+			<!-- VERSIONE NORMALE -->
+			<p *ngIf="!showMore">
+				An overview of the state of the art in PQ cryptography, the NIST competition, and cutting-edge methods
+				for design and implementation of post-quantum signatures.
+			</p>
+			<p *ngIf="!showMore">
+				<b>Invited speaker:</b> TBA.
+			</p>
+			<!-- VERSIONE ESTESA -->
+			<p *ngIf="showMore">
+				<b>Organizers:</b>
+				<i>
+					Giulio Codogni (Tor Vergata University of Rome), Roberto La Scala (University of Bari), Edoardo
+					Persichetti (Florida Atlantic University), Federico Pintore (University of Trento).
+				</i>
+			</p>
+			<p *ngIf="showMore">
+				<b>Abstract:</b> Post-quantum cryptography, that is, the study of cryptographic schemes capable of
+				withstanding attackers equipped with both classical and quantum computers, is an area of research that
+				has experienced tremendous growth in recent years, also due to the initiation of a standardization
+				effort by NIST, which has led to the selection of the first schemes to standardise. More recently, the
+				focus has been on post-quantum digital signature schemes, which are the subject of the latest NIST
+				competition. This workshop will provide an overview of the state of the art in post-quantum
+				cryptography, along with the NIST competition, and focus on cutting-edge methods for designing and
+				implementing post-quantum signatures.
+			</p>
+			<p *ngIf="showMore">
+				<b>Program:</b> TBA.
+			</p>
+			<button mat-button (click)="toggleShowMore()" class="btn-showmore">
+				{{ showMore ? 'Show Less' : 'Show More' }}
+			</button>
+			<a mat-button href="/cifris24/raipqc24" class="btn-showmore" style="margin-left: 10px;">
+				Webpage
+			</a>
+		</td>
 	</tr>
 	<tr>
 		<td colspan="2"><br></td>

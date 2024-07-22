@@ -1,0 +1,8 @@
+
+/* Other styles */
+div.zoomed {
+    height: 100%;
+    zoom: 1.1;
+    transform: scale(1.1);
+    transform-origin: 0 0;
+}

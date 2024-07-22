@@ -95,16 +95,15 @@ div.zoomed {
 
 /* Media query per schermi piccoli */
 @media all and (max-width: 991px) {
-
     /* Contenitore principale come flex container */
     .container {
         display: flex;
         flex-direction: column;
         height: 100%;
-        margin: 10% 10px 50px 10px;
+        margin: 50px 10px 50px 10px;
         left:0;
         right:0;
-        padding:0;
+        padding:0px;
     }
 
     /* Sidebar */
@@ -136,10 +135,10 @@ div.zoomed {
     .content {
         flex: 1;
         /* Occupa tutto lo spazio rimanente */
-        padding: 20px;
+        padding: 0px;
         box-sizing: border-box;
-        margin: 5% 10px 0 10px;
-        width: calc(100% - 35px);
+        margin: 30px 10px 0 10px;
+        width: 90%
     }
 
     .sidebar-image-button {

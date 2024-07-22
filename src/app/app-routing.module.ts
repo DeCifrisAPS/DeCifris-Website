@@ -109,6 +109,8 @@ import { SymcryptComponent24 } from './attivita/eventi/cifris/cifris2024/worksho
 import { WorkshopsComponent24 } from './attivita/eventi/cifris/cifris2024/workshops/workshops.component';
 import { Fcr24Component } from './attivita/eventi/cifris/cifris2024/workshops/fcr24/fcr24.component';
 import { Qcifris24Component } from './attivita/eventi/cifris/cifris2024/workshops/qcifris24/qcifris24.component';
+import { Raipqc24Component } from './attivita/eventi/cifris/cifris2024/workshops/raipqc24/raipqc24.component';
+import { Tac24Component } from './attivita/eventi/cifris/cifris2024/workshops/tac24/tac24.component';
 
 
 // importante mettere come children tutti quelli che condividono la stessa sidebar, dato
@@ -216,6 +218,8 @@ const routes: Routes = [
 			{ path: "workshops", component: WorkshopsComponent24},
 			{ path: "fcr24", component: Fcr24Component},
 			{ path: "qcifris24", component: Qcifris24Component},
+			{ path: "raipqc24", component: Raipqc24Component},
+			{ path: "tac24", component: Tac24Component},
 		]
 	},
 

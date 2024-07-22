@@ -112,14 +112,16 @@
 			</nav>
 		</div>
 		<div class="content" (click)="toggleSidebar(true)">
-			<h1 style="margin-bottom:0;">CIFRIS24</h1>
-			<div style="text-align: center;">
-				<i style="color:var(--cifris_orange);"> An event organized by De Cifris</i>
-				<p style="margin-top: 10px;">
+
+			<div style="text-align: center;padding:0; margin-bottom: 10px;">
+				<p style="color:var(--cifris_blue);font-size: larger; font-weight: bold;margin:0; display: inline;">
+					CIFRIS24 - <i style="font-weight: normal;">an event organized by De Cifris</i></p>
+				<p style="margin:0;font-size: small;">
 					Banca d'Italia, "Centro Donato Menichella", Largo Guido Carli 1, Frascati (Rome)
 					<br>
 					<b> September 25th, 26th, 27th 2024 </b>
 				</p>
+				<hr style="width: 60%;margin-left: 20%;color:var(--cifris_blue)">
 			</div>
 			<router-outlet></router-outlet>
 		</div>
