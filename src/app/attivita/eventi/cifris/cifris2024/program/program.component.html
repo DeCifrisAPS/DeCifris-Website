@@ -169,7 +169,8 @@
 				Abstract
 			</summary>
 			<i>
-				The so-called (n,m)-functions have very nice properties when quadratic, which for instance ease the study of their
+				The so-called (n,m)-functions have very nice properties when quadratic, which for instance ease the
+				study of their
 				almost perfect nonlinearity. But quadratic functions are weak against some other attacks. It is then
 				important to study strict superclasses sharing some of these properties. In particular, when the
 				block ciphers have a structure of substitution-permutation network (SPN), the substitution boxes must be
@@ -730,9 +731,28 @@
 				public-key algorithms to post-quantum cryptography). Particular emphasis will be given to the
 				applications of number theory for developing new cryptosystems and methods of cryptanalysis.
 			</p>
-			<p *ngIf="showMore">
-				<b>Program:</b> TBA.
-			</p>
+			<ul *ngIf="showMore">
+				<li>
+					<i><b>Federico Pintore</b>, University of Trento (Italy)</i>
+					<br>
+					Hessians of elliptic curves: isogenies and graphs
+				</li>
+				<li>
+					<i><b>Marzio Mula</b>, Universität des Bundeswehr München (Germany)</i>
+					<br>
+					Proving knowledge of an isogeny using modular polynomials
+				</li>
+				<li>
+					<i><b>Stefano Barbero</b>, Politecnico di Torino (Italy)</i>
+					<br>
+					Lattices and Cryptography, an Overview
+				</li>
+				<li>
+					<i><b>Guglielmo Morgari</b>, Telsy SPA (Italy)</i>
+					<br>
+					P-values distribution in NIST 800-22 statistical tests
+				</li>
+			</ul>
 			<button mat-button (click)="toggleShowMore()" class="btn-showmore">
 				{{ showMore ? 'Show Less' : 'Show More' }}
 			</button>
@@ -774,7 +794,7 @@
 		</td>
 	</tr><!------------------------------>
 	<tr>
-		<td colspan="2">
+		<td colspan="2" id="codemath24">
 			<h2>ROOM C</h2>
 		</td>
 	</tr>
@@ -785,7 +805,50 @@
 	</tr><!------------------------------>
 	<tr>
 		<td class="schedule"> 10:00<br>11:20 </td>
-		<td><em><b style="color:var(--cifris_blue)"> Coding Theory and Discrete Mathematics </b></em></td>
+		<!------------------------------>
+		<!-- WORKSHOP DISCRETE MATH   -->
+		<!------------------------------>
+		<td>
+			<em><b style="color:var(--cifris_blue)"> CodeMath - Coding Theory and Discrete Mathematics 2024</b></em>
+			<!-- VERSIONE NORMALE -->
+			<p *ngIf="!showMore">
+				Networking and discussion event on: Algebraic Foundations and Advanced Topics of Coding theory,
+				relations with Cryptography and Finite Geometry, trends, challenges.
+			</p>
+			<p *ngIf="!showMore">
+				<b>Invited speaker:</b> TBA.
+			</p>
+			<!-- VERSIONE ESTESA -->
+			<p *ngIf="showMore">
+				<b>Organizers:</b>
+				<i>
+					Massimo Giulietti (Università di Perugia),
+					Giuseppe Marino (Università di Napoli Federico II),
+					Olga Polverino (Università della Campania “Luigi Vanvitelli”),
+					Ferdinando Zullo (Università della Campania “Luigi Vanvitelli”)
+				</i>
+			</p>
+			<p *ngIf="showMore">
+				<b>Abstract:</b> The aim of the workshop is to create a collaborative environment that promotes research
+				and innovation in these fields, to facilitate networking opportunities for participants to engage with
+				peers, industry experts, and researchers, and to showcase the practical applications of coding theory
+				and discrete mathematics in areas such as error correction and cryptography.
+				Subjects of interest for the Workshop will be: Algebraic Foundations of Coding theory (Finite fields,
+				Polynomial algebras, Algebraic Varieties and their applications in coding), Advanced Topics in Coding
+				Theory (such as turbo codes and LDPC codes; network coding and its applications; quantum error
+				correction), Cryptography and its relation to Coding theory and Finite Geometry, Current trends and
+				challenges in coding theory and discrete mathematics.
+			</p>
+			<p *ngIf="showMore">
+				<b>Program:</b> TBA.
+			</p>
+			<button mat-button (click)="toggleShowMore()" class="btn-showmore">
+				{{ showMore ? 'Show Less' : 'Show More' }}
+			</button>
+			<a mat-button href="/cifris24/codemath24" class="btn-showmore" style="margin-left: 10px;">
+				Webpage
+			</a>
+		</td>
 	</tr>
 	<tr>
 		<td colspan="2">

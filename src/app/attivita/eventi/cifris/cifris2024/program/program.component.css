@@ -92,4 +92,5 @@ td.schedule {
 .btn-showmore{
 	background-color: var(--cifris_azure_transparent);
 	color: var(--cifris_blue);
+	margin-bottom: 5px;
 }

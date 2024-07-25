@@ -111,6 +111,7 @@ import { Fcr24Component } from './attivita/eventi/cifris/cifris2024/workshops/fc
 import { Qcifris24Component } from './attivita/eventi/cifris/cifris2024/workshops/qcifris24/qcifris24.component';
 import { Raipqc24Component } from './attivita/eventi/cifris/cifris2024/workshops/raipqc24/raipqc24.component';
 import { Tac24Component } from './attivita/eventi/cifris/cifris2024/workshops/tac24/tac24.component';
+import { Codemath24Component } from './attivita/eventi/cifris/cifris2024/workshops/codemath24/codemath24.component';
 
 
 // importante mettere come children tutti quelli che condividono la stessa sidebar, dato
@@ -220,6 +221,7 @@ const routes: Routes = [
 			{ path: "qcifris24", component: Qcifris24Component},
 			{ path: "raipqc24", component: Raipqc24Component},
 			{ path: "tac24", component: Tac24Component},
+			{ path: "codemath24", component: Codemath24Component},
 		]
 	},
 
