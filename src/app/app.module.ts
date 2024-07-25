@@ -126,6 +126,7 @@ import { KoineComponent } from './attivita/editoria/koine/koine.component';
 import { PaymentResultComponent24 } from './attivita/eventi/cifris/cifris2024/payment-result/payment-result.component';
 import { Trends24Component } from './attivita/corsi/trends24/trends24.component';
 import { WorkshopButtons24Component } from './attivita/eventi/cifris/cifris2024/program/workshop-buttons24/workshop-buttons24.component';
+import { Vol3Component } from './attivita/editoria/koine/vol3/vol3.component';
 
 // // ./hosting
 // import { Opera24Component } from './hosting/opera24/opera24.component';
@@ -236,6 +237,7 @@ import { WorkshopButtons24Component } from './attivita/eventi/cifris/cifris2024/
         EventoConoscitivoComponent,
         ItasecComponent,
         EventoCifrischainComponent,
+        Vol3Component,
         // DidatticaUniversitariaComponent,
         // EventiPassatiComponent,
         // EventiFuturiComponent,

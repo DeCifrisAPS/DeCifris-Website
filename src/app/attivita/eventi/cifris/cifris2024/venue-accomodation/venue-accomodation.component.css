@@ -3,6 +3,7 @@ table {
     margin: 20px auto;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: scroll;
 }
 
 th,
@@ -19,7 +20,6 @@ th {
 
 .highlight {
     background-color: var(--cifris_azure);
-    width: 12%;
 }
 
 .special {

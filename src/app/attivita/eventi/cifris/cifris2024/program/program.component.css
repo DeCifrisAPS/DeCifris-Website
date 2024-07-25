@@ -69,10 +69,8 @@ table.orari {
 table.orari tr,
 table.orari td {
 	background-color: white;
-	margin-left: 20px;
-	padding-left: 20px;
-	margin-right: 20px;
-	padding-right: 20px;
+	padding-left: 5px;
+	padding-right: 15px;
 }
 
 table.orari th {
@@ -84,13 +82,21 @@ table.orari th {
 	margin-right: 20px;
 	padding-right: 20px;
 }
-
 td.schedule {
-	width: 5%
+	width: 50px!important;
+	margin:0!important;
+	padding-right:10px!important;
+	padding-left:15px!important;
 }
 
 .btn-showmore{
 	background-color: var(--cifris_azure_transparent);
 	color: var(--cifris_blue);
 	margin-bottom: 5px;
+}
+
+h2{
+	padding-left:20px;
+	background-color: var(--cifris_blue);
+	color: white!important;
 }
