@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 import { HttpErrorInterceptor } from './errors/http-error-interceptor.service';
 
 // elementi root (no prefisso)
@@ -214,14 +214,14 @@ const routes: Routes = [
 			{ path: "program", component: ProgramComponent24 },
 			{ path: "proceedings", component: ProceedingsComponent24 },
 			{ path: "payment-result", component: PaymentResultComponent24 },
-			{ path: "ntc24", component: NtcComponent24},
-			{ path: "symcrypt24", component: SymcryptComponent24},
-			{ path: "workshops", component: WorkshopsComponent24},
-			{ path: "fcr24", component: Fcr24Component},
-			{ path: "qcifris24", component: Qcifris24Component},
-			{ path: "raipqc24", component: Raipqc24Component},
-			{ path: "tac24", component: Tac24Component},
-			{ path: "codemath24", component: Codemath24Component},
+			{ path: "ntc24", component: NtcComponent24 },
+			{ path: "symcrypt24", component: SymcryptComponent24 },
+			{ path: "workshops", component: WorkshopsComponent24 },
+			{ path: "fcr24", component: Fcr24Component },
+			{ path: "qcifris24", component: Qcifris24Component },
+			{ path: "raipqc24", component: Raipqc24Component },
+			{ path: "tac24", component: Tac24Component },
+			{ path: "codemath24", component: Codemath24Component },
 		]
 	},
 
@@ -299,9 +299,12 @@ const routes: Routes = [
 	{ path: '418', component: Error418Component },
 	{ path: '**', component: Error404Component },
 ];
-
+const routerOptions: ExtraOptions = {
+	scrollPositionRestoration: 'enabled',
+	anchorScrolling: 'enabled'
+};
 @NgModule({
-	imports: [RouterModule.forRoot(routes)],
+	imports: [RouterModule.forRoot(routes, routerOptions)],
 	exports: [RouterModule]
 })
 export class AppRoutingModule { }
