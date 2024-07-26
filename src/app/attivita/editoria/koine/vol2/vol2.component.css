@@ -77,3 +77,10 @@ h6 {
 	margin-left: 10px;
 	font-weight: 700;
 }
+
+h3 {
+	background-color: var(--cifris_blue);
+	color: white!important;
+	padding-left:20px;
+	margin-top: 15px;
+}
