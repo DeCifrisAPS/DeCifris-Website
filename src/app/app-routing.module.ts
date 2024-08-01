@@ -219,7 +219,7 @@ const routes: Routes = [
 			{ path: "workshops", component: WorkshopsComponent24 },
 			{ path: "fcr24", component: Fcr24Component },
 			{ path: "qcifris24", component: Qcifris24Component },
-			{ path: "raipqc24", component: Raipqc24Component },
+			{ path: "rapqc24", component: Raipqc24Component },
 			{ path: "tac24", component: Tac24Component },
 			{ path: "codemath24", component: Codemath24Component },
 		]
@@ -293,6 +293,7 @@ const routes: Routes = [
 	{ path: 'trends22bis', redirectTo: '/attivita/trends22bis', pathMatch: 'full' },
 	{ path: 'trends23', redirectTo: '/attivita/trends23', pathMatch: 'full' },
 	{ path: 'trends24', redirectTo: '/attivita/trends24', pathMatch: 'full' },
+	{ path: 'cifris24/raipqc24', redirectTo: '/cifris24/rapqc24', pathMatch: 'full' },
 	{ path: 'cryptowars/2011/classica', redirectTo: '/attivita/cryptowars/2011/classica', pathMatch: 'full' },
 	{ path: 'cryptowars/2011/pubblica', redirectTo: '/attivita/cryptowars/2011/pubblica', pathMatch: 'full' },
 	{ path: 'cryptowars/2011/simmetrica', redirectTo: '/attivita/cryptowars/2011/simmetrica', pathMatch: 'full' },
