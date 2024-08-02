@@ -17,22 +17,24 @@ mat-card {
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
     justify-content: center;
     width: 210px;
-    height: 100px;
+    height: 60px;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin: 5px;
-    margin-bottom: 10px;
+    margin: 4px;
+    margin-bottom: 5px;
     background-color: var(--cifris_scarlet);
     color: white;
+    padding: 0;
 }
 
-mat-card.txtbtn:hover {
+mat-card:hover {
     background-color: var(--cifris_purple);
     color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05);
+    transform: scale(1.04);
     transition: transform 0.2s ease-in-out;
     font-weight: bold;
+    border: solid 0px transparent!important;
 }
 
 a {
@@ -46,6 +48,22 @@ mat-card.inactive-txtbtn {
     cursor: default
 }
 
-i {
-    line-height: 20%
+mat-card.content{
+    padding:0; 
+    margin:0;
+}
+
+.smaller {
+    display: block;
+    font-size: 10px!important;
+    line-height: 1.2!important;
+    margin-top: 0!important;
+
+}
+.scientific{
+    background-color: var(--cifris_darkgreen);
+    border: solid 4px var(--cifris_green)
+}
+.institutional{
+    background-color: var(--cifris_orange);
 }

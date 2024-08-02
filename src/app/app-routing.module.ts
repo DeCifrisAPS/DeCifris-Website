@@ -104,14 +104,17 @@ import { Vol1Component } from './attivita/editoria/koine/vol1/vol1.component';
 import { Vol2Component } from './attivita/editoria/koine/vol2/vol2.component';
 import { ArticlesAndVolumesComponent } from './attivita/editoria/koine/articles-and-volumes/articles-and-volumes.component';
 import { EditorialBoardComponent } from './attivita/editoria/koine/editorial-board/editorial-board.component';
-import { NtcComponent24 } from './attivita/eventi/cifris/cifris2024/workshops/ntc/ntc.component';
-import { SymcryptComponent24 } from './attivita/eventi/cifris/cifris2024/workshops/symcrypt/symcrypt.component';
-import { WorkshopsComponent24 } from './attivita/eventi/cifris/cifris2024/workshops/workshops.component';
-import { Fcr24Component } from './attivita/eventi/cifris/cifris2024/workshops/fcr24/fcr24.component';
-import { Qcifris24Component } from './attivita/eventi/cifris/cifris2024/workshops/qcifris24/qcifris24.component';
-import { Raipqc24Component } from './attivita/eventi/cifris/cifris2024/workshops/raipqc24/raipqc24.component';
-import { Tac24Component } from './attivita/eventi/cifris/cifris2024/workshops/tac24/tac24.component';
-import { Codemath24Component } from './attivita/eventi/cifris/cifris2024/workshops/codemath24/codemath24.component';
+import { NtcComponent24 } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/ntc/ntc.component';
+import { SymcryptComponent24 } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/symcrypt/symcrypt.component';
+import { WorkshopsComponent24 } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/workshops.component';
+import { Fcr24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/fcr24/fcr24.component';
+import { Qcifris24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/qcifris24/qcifris24.component';
+import { Raipqc24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/raipqc24/raipqc24.component';
+import { Tac24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/tac24/tac24.component';
+import { Codemath24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/codemath24/codemath24.component';
+import { InstitutionalSession24Component } from './attivita/eventi/cifris/cifris2024/single-pages/main-conference24/institutional-session24/institutional-session24.component';
+import { MainConference24Component } from './attivita/eventi/cifris/cifris2024/single-pages/main-conference24/main-conference24.component';
+import { ScientificSession24Component } from './attivita/eventi/cifris/cifris2024/single-pages/main-conference24/scientific-session24/scientific-session24.component';
 
 
 // importante mettere come children tutti quelli che condividono la stessa sidebar, dato
@@ -222,6 +225,8 @@ const routes: Routes = [
 			{ path: "rapqc24", component: Raipqc24Component },
 			{ path: "tac24", component: Tac24Component },
 			{ path: "codemath24", component: Codemath24Component },
+			{ path: "institutional-session", component: InstitutionalSession24Component },
+			{ path: "scientific-session", component: ScientificSession24Component },
 		]
 	},
 

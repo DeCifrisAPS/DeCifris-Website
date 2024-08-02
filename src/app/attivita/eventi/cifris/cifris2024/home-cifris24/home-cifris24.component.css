@@ -32,8 +32,8 @@ td.date {
 td.item {
 	padding-top: 10px;
 	padding-bottom: 10px;
-	width: 300px;
-	padding-right: 10px;
+	padding-left:5px;
+	padding-right: 5px;
 }
 
 .date-table tbody tr {

@@ -81,7 +81,7 @@ import { ProgramCommitteeComponent24 } from './attivita/eventi/cifris/cifris2024
 import { ProgramComponent24 } from './attivita/eventi/cifris/cifris2024/program/program.component';
 import { SubmissionComponent24 } from './attivita/eventi/cifris/cifris2024/submission/submission.component';
 import { RegistrationComponent24 } from './attivita/eventi/cifris/cifris2024/registration/registration.component';
-import { WorkshopsComponent24 } from './attivita/eventi/cifris/cifris2024/workshops/workshops.component';
+import { WorkshopsComponent24 } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/workshops.component';
 
 
 
@@ -127,6 +127,11 @@ import { PaymentResultComponent24 } from './attivita/eventi/cifris/cifris2024/pa
 import { Trends24Component } from './attivita/corsi/trends24/trends24.component';
 import { WorkshopButtons24Component } from './attivita/eventi/cifris/cifris2024/program/workshop-buttons24/workshop-buttons24.component';
 import { Vol3Component } from './attivita/editoria/koine/vol3/vol3.component';
+import { InstitutionalSession24Component } from './attivita/eventi/cifris/cifris2024/single-pages/main-conference24/institutional-session24/institutional-session24.component';
+import { ScientificSession24Component } from './attivita/eventi/cifris/cifris2024/single-pages/main-conference24/scientific-session24/scientific-session24.component';
+import { MainConference24Component } from './attivita/eventi/cifris/cifris2024/single-pages/main-conference24/main-conference24.component';
+import { OrariInstitutionalSession24Component } from './attivita/eventi/cifris/cifris2024/program/orari-institutional-session24/orari-institutional-session24.component';
+import { OrariScientificSession24Component } from './attivita/eventi/cifris/cifris2024/program/orari-scientific-session24/orari-scientific-session24.component';
 
 // // ./hosting
 // import { Opera24Component } from './hosting/opera24/opera24.component';
@@ -238,6 +243,11 @@ import { Vol3Component } from './attivita/editoria/koine/vol3/vol3.component';
         ItasecComponent,
         EventoCifrischainComponent,
         Vol3Component,
+        InstitutionalSession24Component,
+        ScientificSession24Component,
+        MainConference24Component,
+        OrariInstitutionalSession24Component,
+        OrariScientificSession24Component,
         // DidatticaUniversitariaComponent,
         // EventiPassatiComponent,
         // EventiFuturiComponent,
