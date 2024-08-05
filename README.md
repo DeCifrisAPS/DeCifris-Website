@@ -118,27 +118,35 @@ ng v
 ```
 con quanto segue.
 ```
-Angular CLI: 11.2.19
-Node: 14.17.5
+
+     _                      _                 ____ _     ___
+    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
+   / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
+  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
+ /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
+                |___/
+    
+
+Angular CLI: 18.1.3
+Node: 20.15.1
+Package Manager: npm 10.7.0
 OS: linux x64
 
-Angular: 11.2.14
-... animations, common, compiler, compiler-cli, core, forms
-... localize, platform-browser, platform-browser-dynamic, router
-Ivy Workspace: Yes
+Angular: 18.1.3
+... animations, cdk, cli, common, compiler, compiler-cli, core
+... forms, localize, material, platform-browser
+... platform-browser-dynamic, router
 
 Package                         Version
 ---------------------------------------------------------
-@angular-devkit/architect       0.1102.19
-@angular-devkit/build-angular   0.1102.19
-@angular-devkit/core            11.2.19
-@angular-devkit/schematics      11.2.19
-@angular/cdk                    10.2.7
-@angular/cli                    11.2.19
-@schematics/angular             11.2.19
-@schematics/update              0.1102.19
-rxjs                            6.5.5
-typescript                      4.0.8
+@angular-devkit/architect       0.1801.3
+@angular-devkit/build-angular   18.1.3
+@angular-devkit/core            18.1.3
+@angular-devkit/schematics      18.1.3
+@schematics/angular             18.1.3
+rxjs                            7.8.1
+typescript                      5.5.4
+zone.js                         0.14.8
 ```
 
 #### Modifiche al codice del sito
