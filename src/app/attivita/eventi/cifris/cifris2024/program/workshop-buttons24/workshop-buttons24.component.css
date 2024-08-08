@@ -65,15 +65,10 @@ a.txtbtn-workshop-inactive {
     margin-right: 20px;
 }
 a.txtbtn-workshop-empty {
-    border: 1px solid var(--cifris_azure_transparent);
-    background: none;
+    border: none;
+    background: var(--cifris_azure_transparent);
     cursor: default;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100px;
-    color: black!important;
-    text-decoration: none;
     border-radius: 8px;
     margin: 0;
     padding: 0;

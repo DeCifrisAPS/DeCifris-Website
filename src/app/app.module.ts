@@ -132,6 +132,7 @@ import { ScientificSession24Component } from './attivita/eventi/cifris/cifris202
 import { MainConference24Component } from './attivita/eventi/cifris/cifris2024/single-pages/main-conference24/main-conference24.component';
 import { OrariInstitutionalSession24Component } from './attivita/eventi/cifris/cifris2024/program/orari-institutional-session24/orari-institutional-session24.component';
 import { OrariScientificSession24Component } from './attivita/eventi/cifris/cifris2024/program/orari-scientific-session24/orari-scientific-session24.component';
+import { Cpsid24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/cpsid24/cpsid24.component';
 
 // // ./hosting
 // import { Opera24Component } from './hosting/opera24/opera24.component';
