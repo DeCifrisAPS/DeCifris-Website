@@ -204,6 +204,7 @@
 				unusual applications, etc.
 			</p>
 			<p *ngIf="!showMore">
+				<b> Invited speaker: </b>
 				Filippo Valsorda, <i>full-time independent open source maintainer</i>.
 			</p>
 			<!-- VERSIONE ESTESA -->
@@ -253,14 +254,55 @@
 		</td>
 	</tr><!------------------------------>
 	<tr>
-		<td class="schedule"> 11:40<br>13:00  </td>
+		<td class="schedule"> 11:40<br>13:00 </td>
 		<!------------------------------>
 		<!-- WORKSHOP IDENTITY        -->
 		<!------------------------------>
 		<td>
-			<em><b style="color:var(--cifris_blue)"> CPSID - Cryptography, Protocols and Security in Digital Identity 2024</b></em>
-			<br><br>
-			<a mat-button href="/cifris24/cpsid24" class="btn-showmore">
+			<em><b style="color:var(--cifris_blue)"> CPSID - Cryptography, Protocols and Security in Digital Identity
+					2024</b></em>
+			<!-- VERSIONE NORMALE -->
+			<p *ngIf="!showMore">
+				We will explore the two main standards, EUDI-ARF and W3C-DID/W3C-VC, their cryptography, protocols,
+				threat models and mitigations, but also emerging cryptographic schemes.
+			</p>
+			<!-- VERSIONE ESTESA -->
+			<p *ngIf="showMore">
+				<b>Organizers:</b>
+				<i>
+					Andrea D'Intino (Dyne Foundation), Denis "Jaromil" Roio (Dyne Foundation)
+				</i>
+			</p>
+			<p *ngIf="showMore">
+				<b>Abstract:</b> The seminar dives into the two main current identity standards, EUDI-ARF and
+				W3C-DID/W3C-VC and describe their cryptography, protocols, threat models and mitigations,
+				highlighting pros and cons of each element. The seminar also offers a view about new and emerging
+				cryptographic schemes in the identity space.
+			</p>
+			<ul *ngIf="showMore">
+				<li>
+					<i><b>Andrea D'Intino</b>, Dyne Foundation (Netherlands)</i>
+					<br>
+					Overview of the current digital identity standards
+				</li>
+				<li>
+					<i><b>Giuseppe De Marco</b>, Dipartimento per la Trasformazione Digitale (Italy)</i>
+					<br>
+					<i><b>Francesco Marino</b>, Poligrafico e Zecca dello Stato (Italy)</i>
+					Current status of the implementation of the Italian Wallet and Trust Framework Infrastructure
+				</li>
+				<li>
+					<i><b>Simone Onofri</b>, W3.org (USA)</i>
+					<br>
+					<i><b>Denis Roio</b>, Dyne Foundation (Netherlands)</i>
+					<br>
+					Challenges and upcoming standards
+				</li>
+			</ul>
+			<button mat-button (click)="toggleShowMore()" class="btn-showmore">
+				{{ showMore ? 'Show Less' : 'Show More' }}
+			</button>
+			<a mat-button href="/cifris24/cpsid24" class="btn-showmore" style="margin-left: 10px;">
 				Webpage
 			</a>
 		</td>
@@ -302,7 +344,10 @@
 				challenging topics.
 			</p>
 			<p *ngIf="!showMore">
-				<b>Invited speaker:</b> TBA.
+				<b> Invited speaker: </b> Federico Pintore,
+				<i>
+					Università di Trento (Italy)
+				</i>
 			</p>
 			<!-- VERSIONE ESTESA -->
 			<p *ngIf="showMore">
@@ -404,7 +449,8 @@
 				relations with Cryptography and Finite Geometry, trends, challenges.
 			</p>
 			<p *ngIf="!showMore">
-				<b>Invited speaker:</b> TBA.
+				<b>Invited speaker:</b> Gilles Zémor, 
+				<i>Institut de Mathématiques de Bordeaux (France)</i>
 			</p>
 			<!-- VERSIONE ESTESA -->
 			<p *ngIf="showMore">
@@ -427,9 +473,28 @@
 				correction), Cryptography and its relation to Coding theory and Finite Geometry, Current trends and
 				challenges in coding theory and discrete mathematics.
 			</p>
-			<p *ngIf="showMore">
-				<b>Program:</b> TBA.
-			</p>
+			<ul *ngIf="showMore">
+				<li>
+					<i><b>Gilles Zémor</b>, Institut de Mathématiques de Bordeaux (France)</i>
+					<br>
+					TBA
+				</li>
+				<li>
+					<i><b>Daniele Bartoli</b>, Università degli Studi di Perugia (Italy)</i>
+					<br>
+					TBA
+				</li>
+				<li>
+					<i><b>Luca Giuzzi,</b>, Università degli Studi di Brescia (Italy)</i>
+					<br>
+					TBA
+				</li>
+				<li>
+					<i><b>Violetta Weger</b>, Technical University of Munich (Germany)</i>
+					<br>
+					TBA
+				</li>
+			</ul>
 			<button mat-button (click)="toggleShowMore()" class="btn-showmore">
 				{{ showMore ? 'Show Less' : 'Show More' }}
 			</button>
@@ -616,7 +681,10 @@
 				for design and implementation of post-quantum signatures.
 			</p>
 			<p *ngIf="!showMore">
-				<b>Invited speaker:</b> TBA.
+				<b> Invited speaker: </b>Thibauld Feneuil,
+				<i>
+					CryptoExperts (France)
+				</i>
 			</p>
 			<!-- VERSIONE ESTESA -->
 			<p *ngIf="showMore">
