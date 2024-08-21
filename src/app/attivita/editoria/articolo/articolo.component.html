@@ -1,0 +1,27 @@
+<p class="text-center">
+  <a [title]="theVolume.title"
+      href="/koine/{{theVolume.id}}">
+     {{ theVolume.title }}</a>,
+     {{ theVolume.published }},
+     pages {{ theArticle.pageRange }}
+</p>
+<h1>{{ theArticle.title }}</h1>
+<p class="text-center">
+  @for (author of theArticle.authors; track author) {
+    @if ($index !== 0) {
+      <span>, </span>
+    }
+    <span>{{ author.name }}</span>
+  }
+</p>
+<p id="action-bar">
+  <span>DOI: <a title="doi" href="https://doi.org/{{ theArticle.doi }}">{{
+  theArticle.doi }}</a></span>
+  <span><a href="{{ theArticle.pdfLink }}">Download PDF</a></span>
+</p>
+<h2>Abstract</h2>
+<p style="white-space: pre-wrap;">{{ theArticle.abstract }}</p>
+
+
+<h3>BibTeX</h3>
+<p>Coming soon.</p>

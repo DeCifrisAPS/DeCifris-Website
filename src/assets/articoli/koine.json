@@ -1,0 +1,32 @@
+[
+  { "id": "vol1"
+  , "title": "Volume 1: CIFRIS23 ACTA"
+  , "publishing": "De Cifris Press"
+  , "published": "April 2024"
+  , "ISSN": "3034-9796"
+  , "ISBN": "979-12-81863-00-2"
+  , "volumeLink": "https://drive.google.com/file/d/1T6MYqf8NC-4vjLXUmRJxfui_8Gu4grPG"
+  , "coverLink": "https://drive.google.com/file/d/1_Ty7ddP6i459S8R0PlsVou-B58uZ5PHS"
+  , "articles": [
+      { "id": "I01"
+      , "title": "Introduction to CIFRIS23 ACTA"
+      , "authors": [
+          { "name": "Massimiliano Sala" }
+        , { "name": "Michele Ciampi" } 
+        , { "name": "Roberto Civino" } 
+        , { "name": "Daniele Driolo" } 
+        , { "name": "Sihem Mesnager" } ]
+      , "pageRange": "2-5"
+      , "doi": "10.69091/koine/vol-1-I01"
+      , "pdfLink": "https://drive.google.com/file/d/1o--ZJTZFhS0Hoy9e8LDP3pXqWzU46Igx/view?usp=sharing"
+      , "abstract": "This part of the book contains the proceedings related to the Scientific Session of CIFRIS23.\n\nThe Scientific Session consists of short abstracts of eleven contributed talks and two keynotes held by our invited speakers. The eleven contributed papers were carefully selected and reviewed by a program committee of twenty-three world-leading experts in the area of security and cryptology.\nOur program committee consisted of international researchers, with a highly heterogenous background, coming from twenty research institutes around the world." }
+    , { "id": "M02"
+      , "title": "Keynote: MPC in the head for isomorphisms and group action"
+      , "authors": [{"name": "Antoine Joux"}]
+      , "pageRange": "32-33"
+      , "doi": "10.69091/koine/vol-1-M02"
+      , "pdfLink": "https://drive.google.com/file/d/1QrNHQcOR-a-zD4434k7RkPN0dzf3W4C4/view?usp=sharing"
+      , "abstract": "In this talk, we show how to design identification protocols and signature schemes from group actions using the MPC-in-the-head paradigm.  We prove the security of the given identification schemes and rely on the Fiat-Shamir transformation to turn them into signatures.\nWe also establish a parallel with the technique used for the MPC-in-the-head approach and the seed tree method that has been recently used in some signature and ring signatures algorithms based on group action problems." }
+    ]
+  }
+]
