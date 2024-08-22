@@ -182,7 +182,7 @@
 		</td>
 	</tr><!------------------------------>
 	<tr>
-		<td colspan="2" id="tac24">
+		<td colspan="2" id="tac24-i">
 			<h2>ROOM A</h2>
 		</td>
 	</tr>
@@ -196,7 +196,7 @@
 		<!------------------------------>
 		<!-- WORKSHOP TAC        -->
 		<!------------------------------>
-		<td id="cpsid24">
+		<td>
 			<em><b style="color:var(--cifris_blue)"> TAC - Topics in Applied Cryptography 2024</b></em>
 			<!-- VERSIONE NORMALE -->
 			<p *ngIf="!showMore">
@@ -253,60 +253,73 @@
 			<hr>
 		</td>
 	</tr><!------------------------------>
+	<tr id="tac24-ii">
+		<td class="schedule"> 11:20<br>11:40 </td>
+		<td><em> Coffee break </em></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<hr>
+		</td>
+	</tr><!------------------------------>
 	<tr>
 		<td class="schedule"> 11:40<br>13:00 </td>
 		<!------------------------------>
-		<!-- WORKSHOP IDENTITY        -->
+		<!-- WORKSHOP TAC        -->
 		<!------------------------------>
 		<td>
-			<em><b style="color:var(--cifris_blue)"> CPSID - Cryptography, Protocols and Security in Digital Identity
-					2024</b></em>
+			<em><b style="color:var(--cifris_blue)"> TAC - Topics in Applied Cryptography 2024</b></em>
 			<!-- VERSIONE NORMALE -->
 			<p *ngIf="!showMore">
-				We will explore the two main standards, EUDI-ARF and W3C-DID/W3C-VC, their cryptography, protocols,
-				threat models and mitigations, but also emerging cryptographic schemes.
+				Specific applications, scenarios and technologies: performance, hardware, IoT, attacks, vulnerabilities,
+				unusual applications, etc.
+			</p>
+			<p *ngIf="!showMore">
+				<b> Invited speaker: </b>
+				Filippo Valsorda, <i>full-time independent open source maintainer</i>.
 			</p>
 			<!-- VERSIONE ESTESA -->
 			<p *ngIf="showMore">
 				<b>Organizers:</b>
-				<i>
-					Andrea D'Intino (Dyne Foundation), Denis "Jaromil" Roio (Dyne Foundation)
-				</i>
+				<em>
+					<b>Chair:</b> Riccardo Longo (Fondazione Bruno Kessler, Italy)
+					<br>
+					Alessandro Tomasi (Fondazione Bruno Kessler, Italy)
+					<br>
+					Chiara Spadafora (University of Trento, Italy)
+					<br>
+					Silvio Ranise (University of Trento and Fondazione Bruno Kessler, Italy)
+					<br>
+					Stefano Berlato (Fondazione Bruno Kessler, Italy)
+				</em>
 			</p>
 			<p *ngIf="showMore">
-				<b>Abstract:</b> The seminar dives into the two main current identity standards, EUDI-ARF and
-				W3C-DID/W3C-VC and describe their cryptography, protocols, threat models and mitigations,
-				highlighting pros and cons of each element. The seminar also offers a view about new and emerging
-				cryptographic schemes in the identity space.
+				<b>Abstract:</b> Topics in Applied Cryptography 2024 (TAC2024) is a workshop dedicated to cryptography
+				with a specific application,
+				scenario and/or technology in mind, including performance evaluation, libraries and implementation
+				issues, hardware
+				and IoT, attacks and vulnerabilities, and requirements for unusual application scenarios; purely
+				theoretical results
+				are out of scope. Topics of interest include privacy enhancing cryptography, homomorphic encryption,
+				secure
+				multi-party computation, quantum key distribution, and quantum-safe cryptography.
 			</p>
-			<ul *ngIf="showMore">
-				<li>
-					<i><b>Andrea D'Intino</b>, Dyne Foundation (Netherlands)</i>
-					<br>
-					Overview of the current digital identity standards
-				</li>
-				<li>
-					<i><b>Giuseppe De Marco</b>, Dipartimento per la Trasformazione Digitale (Italy)</i>
-					<br>
-					<i><b>Francesco Marino</b>, Poligrafico e Zecca dello Stato (Italy)</i>
-					Current status of the implementation of the Italian Wallet and Trust Framework Infrastructure
-				</li>
-				<li>
-					<i><b>Simone Onofri</b>, W3.org (USA)</i>
-					<br>
-					<i><b>Denis Roio</b>, Dyne Foundation (Netherlands)</i>
-					<br>
-					Challenges and upcoming standards
-				</li>
-			</ul>
+			<p *ngIf="showMore">
+				<b>Program:</b> TBA.
+			</p>
 			<button mat-button (click)="toggleShowMore()" class="btn-showmore">
 				{{ showMore ? 'Show Less' : 'Show More' }}
 			</button>
-			<a mat-button href="/cifris24/cpsid24" class="btn-showmore" style="margin-left: 10px;">
+			<a mat-button href="/cifris24/tac24" class="btn-showmore" style="margin-left: 10px;">
 				Webpage
+			</a>
+			<a mat-button href="https://aleph.fbk.eu/events/TAC2024/index.html" class="btn-showmore"
+				style="margin-left: 10px;">
+				Website
 			</a>
 		</td>
 	</tr>
+
 	<tr>
 		<td colspan="2">
 			<hr>
@@ -383,7 +396,7 @@
 				<li>
 					<i><b>Guglielmo Morgari</b>, Telsy SPA (Italy)</i>
 					<br>
-					P-values distribution in NIST 800-22 statistical tests
+					A Note on the P-values Distribution in NIST SP 800-22 Rev. 1a Statistical Tests
 				</li>
 			</ul>
 			<button mat-button (click)="toggleShowMore()" class="btn-showmore">
@@ -399,7 +412,7 @@
 			<hr>
 		</td>
 	</tr><!------------------------------>
-	<tr>
+	<tr id="cpsid24">
 		<td class="schedule"> 11:20<br>11:40 </td>
 		<td><em> Coffee break </em></td>
 	</tr>
@@ -410,7 +423,57 @@
 	</tr><!------------------------------>
 	<tr>
 		<td class="schedule"> 11:40<br>13:00 </td>
-		<td><em><b style="color:var(--cifris_blue)"> CifrisGroups </b></em></td>
+		<!------------------------------>
+		<!-- WORKSHOP IDENTITY        -->
+		<!------------------------------>
+		<td>
+			<em><b style="color:var(--cifris_blue)"> CPSID - Cryptography, Protocols and Security in Digital Identity
+					2024</b></em>
+			<!-- VERSIONE NORMALE -->
+			<p *ngIf="!showMore">
+				We will explore the two main standards, EUDI-ARF and W3C-DID/W3C-VC, their cryptography, protocols,
+				threat models and mitigations, but also emerging cryptographic schemes.
+			</p>
+			<!-- VERSIONE ESTESA -->
+			<p *ngIf="showMore">
+				<b>Organizers:</b>
+				<i>
+					Andrea D'Intino (Dyne Foundation), Denis "Jaromil" Roio (Dyne Foundation)
+				</i>
+			</p>
+			<p *ngIf="showMore">
+				<b>Abstract:</b> The seminar dives into the two main current identity standards, EUDI-ARF and
+				W3C-DID/W3C-VC and describe their cryptography, protocols, threat models and mitigations,
+				highlighting pros and cons of each element. The seminar also offers a view about new and emerging
+				cryptographic schemes in the identity space.
+			</p>
+			<ul *ngIf="showMore">
+				<li>
+					<i><b>Andrea D'Intino</b>, Dyne Foundation (Netherlands)</i>
+					<br>
+					Overview of the current digital identity standards
+				</li>
+				<li>
+					<i><b>Giuseppe De Marco</b>, Dipartimento per la Trasformazione Digitale (Italy)</i>
+					<br>
+					<i><b>Francesco Marino</b>, Poligrafico e Zecca dello Stato (Italy)</i>
+					Current status of the implementation of the Italian Wallet and Trust Framework Infrastructure
+				</li>
+				<li>
+					<i><b>Simone Onofri</b>, W3.org (USA)</i>
+					<br>
+					<i><b>Denis Roio</b>, Dyne Foundation (Netherlands)</i>
+					<br>
+					Challenges and upcoming standards
+				</li>
+			</ul>
+			<button mat-button (click)="toggleShowMore()" class="btn-showmore">
+				{{ showMore ? 'Show Less' : 'Show More' }}
+			</button>
+			<a mat-button href="/cifris24/cpsid24" class="btn-showmore" style="margin-left: 10px;">
+				Webpage
+			</a>
+		</td>
 	</tr>
 	<tr>
 		<td colspan="2">
@@ -449,7 +512,7 @@
 				relations with Cryptography and Finite Geometry, trends, challenges.
 			</p>
 			<p *ngIf="!showMore">
-				<b>Invited speaker:</b> Gilles Zémor, 
+				<b>Invited speaker:</b> Gilles Zémor,
 				<i>Institut de Mathématiques de Bordeaux (France)</i>
 			</p>
 			<!-- VERSIONE ESTESA -->
@@ -531,7 +594,8 @@
 				Functions.
 			</p>
 			<p *ngIf="!showMore">
-				<b>Invited speaker:</b> TBA.
+				<b>Invited speaker:</b>
+				Sihem Mesnager, <i>University of Paris VIII (France)</i>
 			</p>
 			<!-- VERSIONE ESTESA -->
 			<p *ngIf="showMore">
@@ -681,7 +745,8 @@
 				for design and implementation of post-quantum signatures.
 			</p>
 			<p *ngIf="!showMore">
-				<b> Invited speaker: </b>Thibauld Feneuil,
+				<b> Keynote speaker: </b>
+				Thibauld Feneuil,
 				<i>
 					CryptoExperts (France)
 				</i>
