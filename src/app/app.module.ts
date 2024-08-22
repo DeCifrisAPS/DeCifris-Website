@@ -1,4 +1,4 @@
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { BrowserModule, bootstrapApplication, provideClientHydration } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { NgModule } from '@angular/core';
 import { provideHttpClient, withFetch } from '@angular/common/http';
