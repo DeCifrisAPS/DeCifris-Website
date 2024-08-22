@@ -1,7 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { NgModule } from '@angular/core';
-import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { provideHttpClient, withFetch } from '@angular/common/http';
 // import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -359,7 +359,8 @@ import { Cpsid24Component } from './attivita/eventi/cifris/cifris2024/single-pag
         MatMenuModule,
         BrowserAnimationsModule,
         MatCardModule], providers: [
-            provideHttpClient(withInterceptorsFromDi())
+            provideHttpClient(withFetch()),
+            provideClientHydration()
         ]
 })
 export class AppModule { }

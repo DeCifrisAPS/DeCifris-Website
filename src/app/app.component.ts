@@ -22,11 +22,15 @@ export class AppComponent implements AfterViewInit {
 
   scegliAttivita(s: string) {
     this.servizioAttivita.setAttivita(s);
-    window.scrollTo(0, 0)
+    if (typeof window !== "undefined") {
+      window.scrollTo(0, 0)
+    }
   }
 
   onActivate(event) {
-    window.scroll(0, 0);
+    if (typeof window !== "undefined") {
+      window.scroll(0, 0);
+    }
   }
   toggleSidebar() {
     const sidebar = document.getElementById('sidebar');
