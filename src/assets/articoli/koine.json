@@ -20,6 +20,29 @@
       , "doi": "10.69091/koine/vol-1-I01"
       , "pdfLink": "https://drive.google.com/file/d/1o--ZJTZFhS0Hoy9e8LDP3pXqWzU46Igx/view?usp=sharing"
       , "abstract": "This part of the book contains the proceedings related to the Scientific Session of CIFRIS23.\n\nThe Scientific Session consists of short abstracts of eleven contributed talks and two keynotes held by our invited speakers. The eleven contributed papers were carefully selected and reviewed by a program committee of twenty-three world-leading experts in the area of security and cryptology.\nOur program committee consisted of international researchers, with a highly heterogenous background, coming from twenty research institutes around the world." }
+    , { "id": "I02"
+      , "title": "Cryptography and its Applications in the Italian Scenario"
+      , "authors": [{ "name": "Massimo Giulietti" }]
+      , "pageRange": "17-18"
+      , "doi": "10.69091/koine/vol-1-I02"
+      , "pdfLink": "https://drive.google.com/file/d/16YexU009cf-K1qej2-a4by9chug0BVCR/view?usp=sharing"
+      , "abstract": "CHANGEME"}
+    , { "id": "I03"
+      , "title": "La visione di De Cifris: partnership con le aziende leader"
+      , "authors": [{ "name": "Antonino Alì" }]
+      , "pageRange": "19-21"
+      , "doi": "10.69091/koine/vol-1-I03"
+      , "pdfLink": "https://drive.google.com/file/d/1Izh5vbkkG3QxBizrZ9DXnsTSBsx-wsMX/view?usp=sharing"
+      , "abstract": "CHANGEME"}
+    , { "id": "M01"
+      , "title": "Introduction to the Scientific Session"
+      , "authors": [
+          { "name": "Michele Ciampi" }
+        , { "name": "Sihem Mesnager" }]
+      , "pageRange": "30-30"
+      , "doi": "10.69091/koine/vol-1-M01"
+      , "pdfLink": "https://drive.google.com/file/d/1J30Ks-mYBpDc445-BMUxOifzX85bKml2/view?usp=sharing"
+      , "abstract": "CHANGEME"}
     , { "id": "M02"
       , "title": "Keynote: MPC in the head for isomorphisms and group action"
       , "authors": [{"name": "Antoine Joux"}]
@@ -27,6 +50,119 @@
       , "doi": "10.69091/koine/vol-1-M02"
       , "pdfLink": "https://drive.google.com/file/d/1QrNHQcOR-a-zD4434k7RkPN0dzf3W4C4/view?usp=sharing"
       , "abstract": "In this talk, we show how to design identification protocols and signature schemes from group actions using the MPC-in-the-head paradigm.  We prove the security of the given identification schemes and rely on the Fiat-Shamir transformation to turn them into signatures.\nWe also establish a parallel with the technique used for the MPC-in-the-head approach and the seed tree method that has been recently used in some signature and ring signatures algorithms based on group action problems." }
+    , { "id": "M03"
+      , "title": "Efficiency of SIDH-based signatures (yes, SIDH)"
+      , "authors": [
+          { "name": "Wissam Ghantous" }
+        , { "name": "Federico Pintore" }
+        , { "name": "Mattia Veroni" }]
+      , "pageRange": "34-35"
+      , "doi": "10.69091/koine/vol-1-M03"
+      , "pdfLink": "https://drive.google.com/file/d/1BQ59Pc9iM__xvGQ5kdl4YLpezUXGzVKz/view?usp=sharing"
+      , "abstract": "CHANGEME"}
+    , { "id": "M04"
+      , "title": "The group structure of elliptic curves over Z/NZ"
+      , "authors": [
+          { "name": "Massimiliano Sala" }
+        , { "name": "Daniele Taufer" }]
+      , "pageRange": "36-38"
+      , "doi": "10.69091/koine/vol-1-M04"
+      , "pdfLink": "https://drive.google.com/file/d/1QYRp1jYRM9WcvoPiPoPGqqpviUdLEezc/view?usp=sharing"
+      , "abstract": "CHANGEME"}
+    , { "id": "M05"
+      , "title": "FPGA And Software Acceleration of Multi-Scalar Multiplication: CycloneMSM"
+      , "authors": [
+          { "name": "Kaveh Aasaraai" }
+        , { "name": "Emanuele Cesena" }
+        , { "name": "Rahul Maganti" }
+        , { "name": "Nicolas Stalder" }
+        , { "name": "Javier Varela" }]
+      , "pageRange": "40-40"
+      , "doi": "10.69091/koine/vol-1-M05"
+      , "pdfLink": "https://drive.google.com/file/d/1AUcZoMqWM7QnZjqxrZeR55ZcAw-Tgt7G/view"
+      , "abstract": "CHANGEME"}
+    , { "id": "M06"
+      , "title": "On Linear Codes with Random Multiplier Vectors and the Maximum Trace Dimension Property"
+      , "authors": [
+          { "name": "Márton Erdélyi" }
+        , { "name": "Pál Hegedüs" }
+        , { "name": "Sándor Z. Kiss" }
+        , { "name": "Gábor P. Nagy" }]
+      , "pageRange": "41-42"
+      , "doi": "10.69091/koine/vol-1-M06"
+      , "pdfLink": "https://drive.google.com/file/d/1GZwPFoidaVQnXAIP1FgwOHYIzHMO-PGX/view?usp=sharing"
+      , "abstract": "CHANGEME"}
+    , { "id": "M07"
+      , "title": "On a generalization of the Deligne-Lustzig curve of Suzuki type and application to AG codes"
+      , "authors": [{ "name": "Marco Timpanella" }]
+      , "pageRange": "43-44"
+      , "doi": "10.69091/koine/vol-1-M07"
+      , "pdfLink": "https://drive.google.com/file/d/1tf_pJzWQY3AE8qEWTyWL-7u_37SehQNv/view?usp=sharing"
+      , "abstract": "CHANGEME"}
+    , { "id": "M08"
+      , "title": "On the Black-Box Impossibility of Multi-Designated Verifiers Signature Schemes from Ring Signature Schemes"
+      , "authors": [
+          { "name": "Kyosuke Yamashita" }
+        , { "name": "Keisuke Hara" }]
+      , "pageRange": "45-47"
+      , "doi": "10.69091/koine/vol-1-M08"
+      , "pdfLink": "https://drive.google.com/file/d/1_I1XPgjM7LVYSZ27235iFBh4SrHKbJgU/view?usp=sharing"
+      , "abstract": "CHANGEME"}
+    , { "id": "M09"
+      , "title": "Keynote: Threshold Implementations: Securing Implementations of Symmetric-Key Algorithms"
+      , "authors": [{ "name": "Svetla Nikova" }]
+      , "pageRange": "49-51"
+      , "doi": "10.69091/koine/vol-1-M09"
+      , "pdfLink": "https://drive.google.com/file/d/1qflgDB1Qzcyd1ApjFvEmJ2YpgCcLvoXg/view?usp=sharing"
+      , "abstract": "CHANGEME"}
+    , { "id": "M10"
+      , "title": "Differential experiments using parallel alternative operations"
+      , "authors": [
+          { "name": "Marco Calderini" }
+        , { "name": "Roberto Civino" }
+        , { "name": "Riccardo Invernizzi" }]
+      , "pageRange": "52-54"
+      , "doi": "10.69091/koine/vol-1-M10"
+      , "pdfLink": "https://drive.google.com/file/d/1GD1H1uKqaOwesFgfFnFmmVkjwGXH390-/view?usp=sharing"
+      , "abstract": "CHANGEME"}
+    , { "id": "M11"
+      , "title": "Automatic Boomerang Attacks Search on Rijndael"
+      , "authors": [
+          { "name": "Marine Minier" }
+        , { "name": "Loïc Rouquette" }
+        , { "name": "Christine Solnon" }]
+      , "pageRange": "55-56"
+      , "doi": "10.69091/koine/vol-1-M11"
+      , "pdfLink": "https://drive.google.com/file/d/1W5uo2pnPkBms9jxJVY00c96eaS8DrcEd"
+      , "abstract": "CHANGEME"}
+    , { "id": "M12"
+      , "title": "Searchable Encryption with randomized ciphertext and randomized keyword search"
+      , "authors": [
+          { "name": "Marco Calderini" }
+        , { "name": "Riccardo Longo" }
+        , { "name": "Massimiliano Sala" }
+        , { "name": "Irene Villa" }]
+      , "pageRange": "58-60"
+      , "doi": "10.69091/koine/vol-1-M12"
+      , "pdfLink": "https://drive.google.com/file/d/1TcmxgSaKX2ADooELGYvt0jjxJdDS7YdI"
+      , "abstract": "CHANGEME"}
+    , { "id": "M13"
+      , "title": "Cryptanalysis of a privacy-preserving authentication scheme"
+      , "authors": [{ "name": "Sigurd Eskeland" }]
+      , "pageRange": "61-63"
+      , "doi": "10.69091/koine/vol-1-M13"
+      , "pdfLink": "https://drive.google.com/file/d/1ATuY33FjpV1tU8T-T643HHbHQ5jIdmaj"
+      , "abstract": "CHANGEME"}
+    , { "id": "M14"
+      , "title": "mRLWE-CP-ABE: a revocable CP-ABE for post-quantum cryptography"
+      , "authors": [
+          { "name": "Marco Cianfriglia" }
+        , { "name": "Elia Onofri" }
+        , { "name": "Marco Pedicini" }]
+      , "pageRange": "64-66"
+      , "doi": "10.69091/koine/vol-1-M14"
+      , "pdfLink": "https://drive.google.com/file/d/1xiIVv1wL7UCKireGD78b9cCi1f6cyRbP"
+      , "abstract": "CHANGEME"}
     ]
   }
 ]

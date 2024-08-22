@@ -1,12 +1,8 @@
-<p class="text-center">
-  <a [title]="theVolume.title"
-      href="/koine/{{theVolume.id}}">
-     {{ theVolume.title }}</a>,
-     {{ theVolume.published }},
-     pages {{ theArticle.pageRange }}
+<p>
+  Published by De Cifris Press, {{ theVolume.published }}
 </p>
-<h1>{{ theArticle.title }}</h1>
-<p class="text-center">
+<h1 class="" style="text-align: left !important;">{{ theArticle.title }}</h1>
+<p class="">
   @for (author of theArticle.authors; track author) {
     @if ($index !== 0) {
       <span>, </span>
@@ -14,14 +10,28 @@
     <span>{{ author.name }}</span>
   }
 </p>
-<p id="action-bar">
-  <span>DOI: <a title="doi" href="https://doi.org/{{ theArticle.doi }}">{{
-  theArticle.doi }}</a></span>
-  <span><a href="{{ theArticle.pdfLink }}">Download PDF</a></span>
+<ul id="preamble">
+  <li>
+    From the journal <a href="/koine" title="Koine">De Cifris Koine</a>.
+    In
+    <a [title]="theVolume.title"
+        href="/koine/{{theVolume.id}}">
+      {{ theVolume.title }}</a>.
+     </li>
+  <li><a class="text-muted" title="doi" href="https://doi.org/{{ theArticle.doi }}">https://doi.org/{{ theArticle.doi }}</a></li>
+</ul>
+<p id="">
+  <a class="btn btn-info" title="pdf" href="{{ theArticle.pdfLink }}">Download article (PDF), pp. {{ theArticle.pageRange }}</a>
+  <details>
+    <summary>Cite this with BibTeX</summary>
+    <code><pre>&#64;misc&lbrace;cryptoeprint:2024/1299,
+  author = &lbrace;Ben Fisch and Arthur Lazzaretti and Zeyu Liu and Lei Yang&rbrace;,
+  title = &lbrace;Permissionless Verifiable Information Dispersal (Data Availability for Bitcoin Rollups)&rbrace;,
+  howpublished = &lbrace;Cryptology &lbrace;ePrint&rbrace; Archive, Paper 2024/1299&rbrace;,
+  year = &lbrace;2024&rbrace;,
+  url = &lbrace;https://eprint.iacr.org/2024/1299&rbrace;
+&rbrace;</pre></code>
+  </details>
 </p>
-<h2>Abstract</h2>
+<hr />
 <p style="white-space: pre-wrap;">{{ theArticle.abstract }}</p>
-
-
-<h3>BibTeX</h3>
-<p>Coming soon.</p>

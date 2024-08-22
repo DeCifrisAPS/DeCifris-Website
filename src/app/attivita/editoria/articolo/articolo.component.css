@@ -4,6 +4,12 @@
   align-items: baseline;
 }
 
+ul#preamble {
+  padding: 0;
+  list-style: none;
+}
+
+
 /*
 ul#article-preamble {
   display: flex;
