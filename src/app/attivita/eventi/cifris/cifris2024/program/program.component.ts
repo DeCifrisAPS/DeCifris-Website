@@ -9,11 +9,6 @@ import { Component, OnInit } from '@angular/core';
 export class ProgramComponent24 implements OnInit {
 
 	public today = formatDate(new Date(), 'dd/MM/yyy', 'en-US');
-	showMore = false;
-
-	toggleShowMore() {
-		this.showMore = !this.showMore;
-	}
 
 	constructor() { }
 

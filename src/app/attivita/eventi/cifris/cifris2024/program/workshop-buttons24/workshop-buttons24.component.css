@@ -15,7 +15,8 @@ a.txtbtn-workshop {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100px;
+    width: 120px;
+    height:35px;
     cursor: pointer;
     transition: background-color 0.3s;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
@@ -39,7 +40,11 @@ a.txtbtn-workshop:hover {
 
 h3 {
     margin:0;
+    margin-left:15px;
     padding:0;
+    font-weight: bold;
+    color: var(--cifris_orange)!important;
+
 }
 
 .workshop-item{
@@ -54,7 +59,8 @@ a.txtbtn-workshop-inactive {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100px;
+    width: 120px;
+    height:35px;
     color: white!important;
     text-decoration: none;
     border-radius: 8px;
@@ -64,18 +70,12 @@ a.txtbtn-workshop-inactive {
     margin-left:20px;
     margin-right: 20px;
 }
-a.txtbtn-workshop-empty {
-    border: none;
-    background: var(--cifris_azure_transparent);
-    cursor: default;
-    width: 100px;
-    border-radius: 8px;
+p.txtbtn-workshop-empty {
+    width: 120px;
+    height:35px;
     margin: 0;
     padding: 0;
     margin-bottom: 2px;
     margin-left:20px;
     margin-right: 20px;
-}
-a.txtbtn-workshop-empty:hover {
-    background: none;
 }

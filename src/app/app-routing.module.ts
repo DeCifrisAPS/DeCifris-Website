@@ -116,6 +116,7 @@ import { InstitutionalSession24Component } from './attivita/eventi/cifris/cifris
 import { MainConference24Component } from './attivita/eventi/cifris/cifris2024/single-pages/main-conference24/main-conference24.component';
 import { ScientificSession24Component } from './attivita/eventi/cifris/cifris2024/single-pages/main-conference24/scientific-session24/scientific-session24.component';
 import { Cpsid24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/cpsid24/cpsid24.component';
+import { Cifriscloud24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/cifriscloud24/cifriscloud24.component';
 
 
 // importante mettere come children tutti quelli che condividono la stessa sidebar, dato
@@ -227,6 +228,7 @@ const routes: Routes = [
 			{ path: "tac24", component: Tac24Component },
 			{ path: "codemath24", component: Codemath24Component },
 			{ path: "cpsid24", component: Cpsid24Component },
+			{ path: "cifriscloud24", component: Cifriscloud24Component },
 			{ path: "institutional-session", component: InstitutionalSession24Component },
 			{ path: "scientific-session", component: ScientificSession24Component },
 		]
