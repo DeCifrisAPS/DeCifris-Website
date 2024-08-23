@@ -7,7 +7,7 @@
     <tr>
         <td colspan="2"><br></td>
     </tr>
-    <tr id="fcr24-i">
+    <tr id="fcir24-i">
         <td colspan="2">
             <h2>MAIN HALL</h2>
         </td>
@@ -23,7 +23,7 @@
         <!-- WORKSHOP DCC E BDI        -->
         <!------------------------------>
         <td>
-            <em><b style="color:var(--cifris_blue)"> FCR - Financial Cryptography in Rome 2024, session I</b></em>
+            <em><b style="color:var(--cifris_blue)"> FCiR - Financial Cryptography in Rome 2024, session I</b></em>
             <!-- VERSIONE NORMALE -->
             <p>
                 Joint workshop of Banca d'Italia and De Cifris on novel financial applications of cryptography.
@@ -53,12 +53,12 @@
             <button mat-button (click)="toggleShowMoreFCR1()" class="btn-showmore">
                 {{ showMoreFCR1 ? 'Show Less' : 'Show More' }}
             </button>
-            <a mat-button href="/cifris24/fcr24" class="btn-showmore" style="margin-left: 10px;">
+            <a mat-button href="/cifris24/fcir24" class="btn-showmore" style="margin-left: 10px;">
                 Webpage
             </a>
         </td>
     </tr>
-    <tr id="fcr24-ii">
+    <tr id="fcir24-ii">
         <td colspan="2">
             <hr>
         </td>
@@ -78,7 +78,7 @@
         <!-- WORKSHOP DCC E BDI        -->
         <!------------------------------>
         <td>
-            <em><b style="color:var(--cifris_blue)"> FCR - Financial Cryptography in Rome 2024, session II</b></em>
+            <em><b style="color:var(--cifris_blue)"> FCiR - Financial Cryptography in Rome 2024, session II</b></em>
             <!-- VERSIONE NORMALE -->
             <p>
                 Joint workshop of Banca d'Italia and De Cifris on novel financial applications of cryptography.
@@ -99,7 +99,7 @@
             <button mat-button (click)="toggleShowMoreFCR2()" class="btn-showmore">
                 {{ showMoreFCR2 ? 'Show Less' : 'Show More' }}
             </button>
-            <a mat-button href="/cifris24/fcr24" class="btn-showmore" style="margin-left: 10px;">
+            <a mat-button href="/cifris24/fcir24" class="btn-showmore" style="margin-left: 10px;">
                 Webpage
             </a>
         </td>
@@ -603,7 +603,10 @@
             <p *ngIf="showMoreQCIFRIS">
                 <b>Organisers:</b>
                 <i>
-                    Paolo Villoresi (Università di Padova).
+                    Paolo Villoresi (Università di Padova),
+                    Ivo De Giovanni (INRIM),
+                    Fabio Sciarrino (Università di Roma La Sapienza),
+                    Cristian Antonelli (Università degli Studi dell'Aquila).
                 </i>
             </p>
             <p *ngIf="showMoreQCIFRIS">
@@ -643,29 +646,60 @@
             <em><b style="color:var(--cifris_blue)"> CifrisCloud - Cryptography for the Cloud 2024</b></em>
             <!-- VERSIONE NORMALE -->
             <p>
-                TBA.
+                Explore the latest advancements in privacy enhancing techniques specifically designed for cloud
+                computing.
             </p>
             <p>
-                <b>Invited speaker:</b> TBA.
+                <b>Invited speaker:</b> Martina Palmucci, <i>NTT Data (Italy)</i>
             </p>
             <!-- VERSIONE ESTESA -->
             <p *ngIf="showMoreCIFRISCLOUD">
                 <b>Organisers:</b>
                 <i>
-                    TBA.
+                    Michela Iezzi (Bank of Italy), Matteo Nardelli (Bank of Italy) and Marco Pedicini (Roma Tre
+                    University)
                 </i>
             </p>
             <p *ngIf="showMoreCIFRISCLOUD">
-                <b>Abstract:</b> TBA.
+                <b>Abstract:</b> The widespread use of wearable devices, IoT, smartphones, and sensors is driving the
+                need to decentralize cloud computing to the network's edges. This new computing environment involves
+                various devices exchanging data at unprecedented speeds, creating a pressing need for cryptographic data
+                protection against interception and tampering.
+                Key topics in cloud cryptography include data privacy and secure data sharing, as well as advanced
+                cryptographic techniques such as homomorphic encryption, attribute-based encryption, functional
+                encryption and federated learning.
             </p>
-            <p *ngIf="showMoreCIFRISCLOUD">
-                <b>Program:</b> TBA.
-            </p>
+            <ul *ngIf="showMoreCIFRISCLOUD">
+                <li>
+                    <i><b>Martina Palmucci</b>, NTT Data (Italy)</i>
+                    <br>
+                    ANTI-fraud: ABE Solutions
+                </li>
+                <li>
+                    <i><b>Roberto La Scala,</b>, University of Bari (Italy)</i>
+                    <br>
+                    An introduction to Functional Encryption with multivariate algebra
+                </li>
+                <li>
+                    <i><b>Maria Tota,</b>, University of Salerno (Italy)</i>
+                    <br>
+                    An introduction to Fully Homomorphic Encryption
+                </li>
+                <li>
+                    <i><b>Giovanni Giuseppe Grimaldi,</b>, University of Naples (Italy)</i>
+                    <br>
+                    An introduction to homomorphic encryption based on coding theory and polynomials
+                </li>
+            </ul>
             <button mat-button (click)="toggleShowMoreCIFRISCLOUD()" class="btn-showmore">
                 {{ showMoreCIFRISCLOUD ? 'Show Less' : 'Show More' }}
             </button>
             <a mat-button href="/cifris24/cifriscloud24" class="btn-showmore" style="margin-left: 10px;">
                 Webpage
+            </a>
+            <a mat-button href="https://pis147879.github.io/CloudCIFRIS24/" class="btn-showmore"
+                style="margin-left: 10px;">
+                Website
             </a>
         </td>
     </tr>
