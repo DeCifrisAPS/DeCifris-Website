@@ -426,7 +426,7 @@
         </td>
     </tr><!------------------------------>
     <tr>
-        <td colspan="2" id="codemath24">
+        <td colspan="2" id="symcrypt24">
             <h2>ROOM C</h2>
         </td>
     </tr>
@@ -438,7 +438,66 @@
     <tr>
         <td class="schedule"> 10:00<br>11:20 </td>
         <!------------------------------>
-        <!-- WORKSHOP DISCRETE MATH   -->
+        <!-- WORKSHOP SYMMETRIC       -->
+        <!------------------------------>
+        <td>
+            <em><b style="color:var(--cifris_blue)"> SymCrypt - Symmetric Cryptography and Boolean Functions
+                    2024</b></em>
+            <!-- VERSIONE NORMALE -->
+            <p>
+                Topics in symmetric cryptography with a focus on properties, classification, and construction of Boolean
+                Functions.
+            </p>
+            <p>
+                <b>Invited speaker:</b>
+                Sihem Mesnager, <i>University of Paris VIII (France)</i>
+            </p>
+            <!-- VERSIONE ESTESA -->
+            <p *ngIf="showMoreSYMCRYPT">
+                <b>Organisers:</b>
+                <i>
+                    Marco Calderini (University of Trento - Italy),
+                    George Petrides (University of Cyprus - Cyprus),
+                    Irene Villa (University of Genoa & University of Trento – Italy).
+                </i>
+            </p>
+            <p *ngIf="showMoreSYMCRYPT">
+                <b>Abstract:</b> The workshop will be in two interrelated areas. The first one concerns different
+                aspects of symmetric cryptography, such as the design of symmetric ciphers, attacks to these ciphers, as
+                well as countermeasures. The second topic of interest is the theory of Boolean functions applied in
+                cryptography scenarios, particularly in the design of symmetric ciphers. Such functions have found
+                applications as S-boxes of block ciphers and feedback functions in stream ciphers, and the workshop will
+                be focusing on their relevant cryptographic properties, their classification, and construction methods.
+            </p>
+            <p *ngIf="showMoreSYMCRYPT">
+                <b>Program:</b> TBA.
+            </p>
+            <button mat-button (click)="toggleShowMoreSYMCRYPT()" class="btn-showmore">
+                {{ showMoreSYMCRYPT ? 'Show Less' : 'Show More' }}
+            </button>
+            <a mat-button href="/cifris24/symcrypt24" class="btn-showmore" style="margin-left: 10px;">
+                Webpage
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <hr>
+        </td>
+    </tr><!------------------------------>
+    <tr id="codemath24">
+        <td class="schedule"> 11:20<br>11:40 </td>
+        <td><em> Coffee break </em></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <hr>
+        </td>
+    </tr><!------------------------------>
+    <tr>
+        <td class="schedule"> 11:40<br>13:00 </td>
+        <!------------------------------>
+        <!-- WORKSHOP CODES MATH   -->
         <!------------------------------>
         <td>
             <em><b style="color:var(--cifris_blue)"> CodeMath - Coding Theory and Discrete Mathematics 2024</b></em>
@@ -498,65 +557,6 @@
                 {{ showMoreCODEMATH ? 'Show Less' : 'Show More' }}
             </button>
             <a mat-button href="/cifris24/codemath24" class="btn-showmore" style="margin-left: 10px;">
-                Webpage
-            </a>
-        </td>
-    </tr>
-    <tr>
-        <td colspan="2">
-            <hr>
-        </td>
-    </tr><!------------------------------>
-    <tr id="symcrypt24">
-        <td class="schedule"> 11:20<br>11:40 </td>
-        <td><em> Coffee break </em></td>
-    </tr>
-    <tr>
-        <td colspan="2">
-            <hr>
-        </td>
-    </tr><!------------------------------>
-    <tr>
-        <td class="schedule"> 11:40<br>13:00 </td>
-        <!------------------------------>
-        <!-- WORKSHOP SYMMETRIC       -->
-        <!------------------------------>
-        <td>
-            <em><b style="color:var(--cifris_blue)"> SymCrypt - Symmetric Cryptography and Boolean Functions
-                    2024</b></em>
-            <!-- VERSIONE NORMALE -->
-            <p>
-                Topics in symmetric cryptography with a focus on properties, classification, and construction of Boolean
-                Functions.
-            </p>
-            <p>
-                <b>Invited speaker:</b>
-                Sihem Mesnager, <i>University of Paris VIII (France)</i>
-            </p>
-            <!-- VERSIONE ESTESA -->
-            <p *ngIf="showMoreSYMCRYPT">
-                <b>Organisers:</b>
-                <i>
-                    Marco Calderini (University of Trento - Italy),
-                    George Petrides (University of Cyprus - Cyprus),
-                    Irene Villa (University of Genoa & University of Trento – Italy).
-                </i>
-            </p>
-            <p *ngIf="showMoreSYMCRYPT">
-                <b>Abstract:</b> The workshop will be in two interrelated areas. The first one concerns different
-                aspects of symmetric cryptography, such as the design of symmetric ciphers, attacks to these ciphers, as
-                well as countermeasures. The second topic of interest is the theory of Boolean functions applied in
-                cryptography scenarios, particularly in the design of symmetric ciphers. Such functions have found
-                applications as S-boxes of block ciphers and feedback functions in stream ciphers, and the workshop will
-                be focusing on their relevant cryptographic properties, their classification, and construction methods.
-            </p>
-            <p *ngIf="showMoreSYMCRYPT">
-                <b>Program:</b> TBA.
-            </p>
-            <button mat-button (click)="toggleShowMoreSYMCRYPT()" class="btn-showmore">
-                {{ showMoreSYMCRYPT ? 'Show Less' : 'Show More' }}
-            </button>
-            <a mat-button href="/cifris24/symcrypt24" class="btn-showmore" style="margin-left: 10px;">
                 Webpage
             </a>
         </td>
