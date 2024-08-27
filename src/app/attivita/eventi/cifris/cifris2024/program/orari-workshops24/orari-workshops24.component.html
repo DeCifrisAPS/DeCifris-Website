@@ -170,9 +170,33 @@
                 secure
                 multi-party computation, quantum key distribution, and quantum-safe cryptography.
             </p>
-            <p *ngIf="showMoreTAC1">
-                <b>Program:</b> TBA.
-            </p>
+            <ul *ngIf="showMoreTAC1">
+                <li>
+                    <i><b>Filippo Valsorda</b>, independent open source maintainer (Italy)</i>
+                    <br>
+                    Keynote: <i>TBA</i>
+                </li>
+                <li>
+                    <i><b>Noel Elias</b>, University of Texas (USA)</i>
+                    <br>
+                    Remote presentation: <i> Lova: A Novel Framework for Verifying Mathematical Proofs with
+                        Incrementally
+                        Verifiable Computation </i>
+                </li>
+                <li>
+                    <i><b>Amit Chaudhary</b>, University of Warwick (UK)</i>
+                    <br>
+                    Work-in-progress: <i> HASHTA: Share and compute securely your data </i>
+                </li>
+                <li>
+                    <i><b>Sara Montanari</b>, University of Trento and FBK (Italy)</i>
+                    <br>
+                    Work-in-progress: <i> Extensible Decentralized Verifiable Refreshable Secret Sharing Protocol with
+                        Extension
+                        to Threshold
+                        Access Trees for Wallet Key Recovery </i>
+                </li>
+            </ul>
             <button mat-button (click)="toggleShowMoreTAC1()" class="btn-showmore">
                 {{ showMoreTAC1 ? 'Show Less' : 'Show More' }}
             </button>
@@ -241,9 +265,25 @@
                 secure
                 multi-party computation, quantum key distribution, and quantum-safe cryptography.
             </p>
-            <p *ngIf="showMoreTAC2">
-                <b>Program:</b> TBA.
-            </p>
+            <ul *ngIf="showMoreTAC2">
+                <li>
+                    <i><b>Stefano Berlato</b>, FBK (Italy)</i>
+                    <br>
+                    Lightning talk: <i> Improving Security and Performance of Cryptographic Access Control with Trusted
+                        Execution Environments </i>
+                </li>
+                <li>
+                    <i><b>Enrico Sorbera</b>, FBK (Italy)</i>
+                    <br>
+                    Work-in-progress: <i> On the combination of Searchable Encryption and Attribute-based encryption
+                    </i>
+                </li>
+                <li>
+                    <i>Round table - discussion and community feedback on hot topics, involving as much as possible the whole
+                        audience
+                    </i>
+                </li>
+            </ul>
             <button mat-button (click)="toggleShowMoreTAC2()" class="btn-showmore">
                 {{ showMoreTAC2 ? 'Show Less' : 'Show More' }}
             </button>
@@ -391,7 +431,6 @@
                     Overview of the current digital identity standards
                 </li>
                 <li>
-                    <i><b>Giuseppe De Marco</b>, Dipartimento per la Trasformazione Digitale (Italy)</i>, and
                     <i><b>Francesco Marino</b>, Poligrafico e Zecca dello Stato (Italy)</i>
                     <br>
                     Current status of the implementation of the Italian Wallet and Trust Framework Infrastructure
