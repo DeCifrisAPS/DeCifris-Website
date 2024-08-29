@@ -1,7 +1,103 @@
+/* Resetta alcuni stili di default */
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
 
-ul{
-	/* Questa modifica lascia più spazio tra gli item della lista, 
-	"per evitare che sembri tutto attaccato" */
-	display: grid;
-	gap: 5px;
+div{
+	margin-bottom: 5px;
+}
+
+/* Layout griglia per le card */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+/* Configura il layout per ogni colonna */
+.col {
+    flex: 1 1 calc(50% - 16px); /* 50% per avere due colonne */
+    box-sizing: border-box;
+}
+
+/* Stile delle card */
+.card {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-content {
+    padding: 16px;
+	padding-bottom: 0;
+}
+
+/* Stile per il link della card */
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Stile per il titolo della card */
+.card-title {
+    display: flex;
+    align-items: center;
+    font-size: large;
+    color: var(--cifris_orange);
+	margin-bottom: 5px;
+}
+
+.card-title i {
+    margin-right: 10px;
+    color: var(--cifris_blue);
+}
+
+/* Stile per i titoli delle sezioni */
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 16px;
+    color: var(--cifris_blue);
+    text-align: left; /* Aggiunge coerenza visiva */
+}
+
+
+.card-actions {
+    padding: 16px;
+	padding-top:0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+	margin:0px;
+}
+
+/* Stile per i link all'interno delle azioni */
+.action-link {
+    text-decoration: none;
+    color: var(--cifris_blue);
+    font-weight: bold;
+    display: inline-block;
+    transition: color 0.2s ease-in-out;
+}
+
+/* Hover effect per i link delle azioni */
+.action-link:hover {
+    color: var(--cifris_orange);
+    text-decoration: underline;
+}
+
+a {
+	padding-bottom: 0;
+	margin-bottom: 0;
 }
