@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-cpsid24',
   templateUrl: './cpsid24.component.html',
-  styleUrl: './cpsid24.component.css'
+  styleUrl: '../workshops-style.css'
 })
 export class Cpsid24Component {
 

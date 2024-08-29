@@ -4,19 +4,11 @@
             <font size="+1"><b>September 27th (morning) - Workshop Session</b></font>
         </th>
     </tr>
-    <tr>
-        <td colspan="2"><br></td>
-    </tr>
     <tr id="fcir24-i">
         <td colspan="2">
             <h2>MAIN HALL</h2>
         </td>
     </tr>
-    <tr>
-        <td colspan="2">
-            <hr>
-        </td>
-    </tr><!------------------------------>
     <tr>
         <td class="schedule"> 10:00<br>11:20 </td>
         <!------------------------------>
@@ -29,27 +21,35 @@
                 Joint workshop of Banca d'Italia and De Cifris on novel financial applications of cryptography.
             </p>
             <p>
-                <b>Invited speakers:</b>
-                <br>
-                Marie Beth van Egmond, <i>Organisation for Applied Scientific Research (Nethernalds)</i>
-                <br>
-                Carsten Maple, <i>University of Warwick (UK)</i>
-                <br>
-                Christian Rechberger, <i>Graz University of Technology (Austria)</i>
+                Invited speakers:
+                <b>Carsten Maple</b>, University of Warwick (UK), and
+                <b>Christian Rechberger</b>, Graz University of Technology (Austria)
             </p>
             <!-- VERSIONE ESTESA -->
             <p *ngIf="showMoreFCR1">
-                <b>Organisers:</b>
+                Organisers:
                 <i>
                     Michela Iezzi (Banca d'Italia) and Massimiliano Sala (De Cifris).
                 </i>
             </p>
             <p *ngIf="showMoreFCR1">
-                <b>Abstract:</b> TBA.
+                Financial Cryptography in Rome (FCiR) and Data Security covers all aspects of securing
+                transactions and digital value, with a specific focus on commercial and currency contexts. While we
+                hosts cryptographic talks on both fundamental research and real-world applications, we encourage also
+                interdisciplinary works not strictly related to cryptography.
             </p>
-            <p *ngIf="showMoreFCR1">
-                <b>Program:</b> TBA.
-            </p>
+            <ul *ngIf="showMoreFCR1">
+                <li>
+                    <i><b>Carsten Maple</b>, University of Warwick (UK)</i>
+                    <br>
+                    Keynote: TBA
+                </li>
+                <li>
+                    <i><b>Christian Rechberger</b>, Graz University of Technology (Austria)</i>
+                    <br>
+                    Keynote: TBA
+                </li>
+            </ul>
             <button mat-button (click)="toggleShowMoreFCR1()" class="btn-showmore">
                 {{ showMoreFCR1 ? 'Show Less' : 'Show More' }}
             </button>
@@ -59,19 +59,9 @@
         </td>
     </tr>
     <tr id="fcir24-ii">
-        <td colspan="2">
-            <hr>
-        </td>
-    </tr><!------------------------------>
-    <tr>
         <td class="schedule"> 11:20<br>11:40 </td>
         <td><em> Coffee break </em></td>
     </tr>
-    <tr>
-        <td colspan="2">
-            <hr>
-        </td>
-    </tr><!------------------------------>
     <tr>
         <td class="schedule"> 11:40<br>13:00 </td>
         <!------------------------------>
@@ -85,17 +75,37 @@
             </p>
             <!-- VERSIONE ESTESA -->
             <p *ngIf="showMoreFCR2">
-                <b>Organisers:</b>
+                Organisers:
                 <i>
                     Michela Iezzi (Banca d'Italia) and Massimiliano Sala (De Cifris).
                 </i>
             </p>
             <p *ngIf="showMoreFCR2">
-                <b>Abstract:</b> TBA.
+                Financial Cryptography in Rome (FCiR) and Data Security covers all aspects of securing
+                transactions and digital value, with a specific focus on commercial and currency contexts. While we
+                hosts cryptographic talks on both fundamental research and real-world applications, we encourage also
+                interdisciplinary works not strictly related to cryptography.
             </p>
-            <p *ngIf="showMoreFCR2">
-                <b>Program:</b> TBA.
-            </p>
+            <ul *ngIf="showMoreFCR2">
+                <li>
+                    <i><b>Giuseppe Galano</b>, Bank of Italy (Italy)</i>
+                    <br>
+                    TBA
+                </li>
+                <li>
+                    <i><b>Amit Chaudhary</b>, Labyrinth Technology (UK)</i>
+                    <br>
+                    TBA
+                </li>
+                <li>
+                    <i><b>Andrea Coletta</b>, Bank of Italy (Italy)</i>
+                    <br>
+                    TBA
+                </li>
+                <li>
+                    <b>Final discussion and round table</b>
+                </li>
+            </ul>
             <button mat-button (click)="toggleShowMoreFCR2()" class="btn-showmore">
                 {{ showMoreFCR2 ? 'Show Less' : 'Show More' }}
             </button>
@@ -105,29 +115,14 @@
         </td>
     </tr>
     <tr>
-        <td colspan="2">
-            <hr>
-        </td>
-    </tr><!------------------------------>
-    <tr>
         <td class="schedule">13:00<br>14:00</td>
         <td><em> Lunch </em></td>
     </tr>
-    <tr>
-        <td colspan="2">
-            <hr>
-        </td>
-    </tr><!------------------------------>
     <tr>
         <td colspan="2" id="tac24-i">
             <h2>ROOM A</h2>
         </td>
     </tr>
-    <tr>
-        <td colspan="2">
-            <hr>
-        </td>
-    </tr><!------------------------------>
     <tr>
         <td class="schedule"> 10:00<br>11:20 </td>
         <!------------------------------>
@@ -141,26 +136,22 @@
                 unusual applications, etc.
             </p>
             <p>
-                <b> Invited speaker: </b>
-                Filippo Valsorda, <i>full-time independent open source maintainer</i>.
+                Invited speaker:
+                <b>Filippo Valsorda</b>, full-time independent open source maintainer (USA).
             </p>
             <!-- VERSIONE ESTESA -->
             <p *ngIf="showMoreTAC1">
-                <b>Organisers:</b>
+                Organisers:
                 <em>
-                    <b>Chair:</b> Riccardo Longo (Fondazione Bruno Kessler, Italy)
-                    <br>
-                    Alessandro Tomasi (Fondazione Bruno Kessler, Italy)
-                    <br>
-                    Chiara Spadafora (University of Trento, Italy)
-                    <br>
-                    Silvio Ranise (University of Trento and Fondazione Bruno Kessler, Italy)
-                    <br>
+                    Riccardo Longo (Fondazione Bruno Kessler, Italy),
+                    Alessandro Tomasi (Fondazione Bruno Kessler, Italy),
+                    Chiara Spadafora (University of Trento, Italy),
+                    Silvio Ranise (University of Trento and Fondazione Bruno Kessler, Italy),
                     Stefano Berlato (Fondazione Bruno Kessler, Italy)
                 </em>
             </p>
             <p *ngIf="showMoreTAC1">
-                <b>Abstract:</b> Topics in Applied Cryptography 2024 (TAC2024) is a workshop dedicated to cryptography
+                Topics in Applied Cryptography 2024 (TAC2024) is a workshop dedicated to cryptography
                 with a specific application,
                 scenario and/or technology in mind, including performance evaluation, libraries and implementation
                 issues, hardware
@@ -174,27 +165,25 @@
                 <li>
                     <i><b>Filippo Valsorda</b>, independent open source maintainer (Italy)</i>
                     <br>
-                    Keynote: <i>TBA</i>
+                    Keynote - Transparency, trust and accountability
                 </li>
                 <li>
                     <i><b>Noel Elias</b>, University of Texas (USA)</i>
                     <br>
-                    Remote presentation: <i> Lova: A Novel Framework for Verifying Mathematical Proofs with
+                    Remote presentation - Lova: A Novel Framework for Verifying Mathematical Proofs with
                         Incrementally
-                        Verifiable Computation </i>
+                        Verifiable Computation
                 </li>
                 <li>
                     <i><b>Amit Chaudhary</b>, University of Warwick (UK)</i>
                     <br>
-                    Work-in-progress: <i> HASHTA: Share and compute securely your data </i>
+                    Work-in-progress - HASHTA: Share and compute securely your data
                 </li>
                 <li>
                     <i><b>Sara Montanari</b>, University of Trento and FBK (Italy)</i>
                     <br>
-                    Work-in-progress: <i> Extensible Decentralized Verifiable Refreshable Secret Sharing Protocol with
-                        Extension
-                        to Threshold
-                        Access Trees for Wallet Key Recovery </i>
+                    Work-in-progress - Extensible Decentralized Verifiable Refreshable Secret Sharing Protocol with
+                        Extension to Threshold Access Trees for Wallet Key Recovery
                 </li>
             </ul>
             <button mat-button (click)="toggleShowMoreTAC1()" class="btn-showmore">
@@ -209,20 +198,10 @@
             </a>
         </td>
     </tr>
-    <tr>
-        <td colspan="2">
-            <hr>
-        </td>
-    </tr><!------------------------------>
     <tr id="tac24-ii">
         <td class="schedule"> 11:20<br>11:40 </td>
         <td><em> Coffee break </em></td>
     </tr>
-    <tr>
-        <td colspan="2">
-            <hr>
-        </td>
-    </tr><!------------------------------>
     <tr>
         <td class="schedule"> 11:40<br>13:00 </td>
         <!------------------------------>
@@ -235,27 +214,19 @@
                 Specific applications, scenarios and technologies: performance, hardware, IoT, attacks, vulnerabilities,
                 unusual applications, etc.
             </p>
-            <p>
-                <b> Invited speaker: </b>
-                Filippo Valsorda, <i>full-time independent open source maintainer</i>.
-            </p>
             <!-- VERSIONE ESTESA -->
             <p *ngIf="showMoreTAC2">
-                <b>Organisers:</b>
+                Organisers:
                 <em>
-                    <b>Chair:</b> Riccardo Longo (Fondazione Bruno Kessler, Italy)
-                    <br>
-                    Alessandro Tomasi (Fondazione Bruno Kessler, Italy)
-                    <br>
-                    Chiara Spadafora (University of Trento, Italy)
-                    <br>
-                    Silvio Ranise (University of Trento and Fondazione Bruno Kessler, Italy)
-                    <br>
+                    Riccardo Longo (Fondazione Bruno Kessler, Italy),
+                    Alessandro Tomasi (Fondazione Bruno Kessler, Italy),
+                    Chiara Spadafora (University of Trento, Italy),
+                    Silvio Ranise (University of Trento and Fondazione Bruno Kessler, Italy),
                     Stefano Berlato (Fondazione Bruno Kessler, Italy)
                 </em>
             </p>
             <p *ngIf="showMoreTAC2">
-                <b>Abstract:</b> Topics in Applied Cryptography 2024 (TAC2024) is a workshop dedicated to cryptography
+                Topics in Applied Cryptography 2024 (TAC2024) is a workshop dedicated to cryptography
                 with a specific application,
                 scenario and/or technology in mind, including performance evaluation, libraries and implementation
                 issues, hardware
@@ -269,19 +240,17 @@
                 <li>
                     <i><b>Stefano Berlato</b>, FBK (Italy)</i>
                     <br>
-                    Lightning talk: <i> Improving Security and Performance of Cryptographic Access Control with Trusted
-                        Execution Environments </i>
+                    Lightning talk - Improving Security and Performance of Cryptographic Access Control with Trusted
+                        Execution Environments
                 </li>
                 <li>
                     <i><b>Enrico Sorbera</b>, FBK (Italy)</i>
                     <br>
-                    Work-in-progress: <i> On the combination of Searchable Encryption and Attribute-based encryption
-                    </i>
+                    Work-in-progress - On the combination of Searchable Encryption and Attribute-based encryption
                 </li>
                 <li>
-                    <i>Round table - discussion and community feedback on hot topics, involving as much as possible the whole
-                        audience
-                    </i>
+                    <b>Round table</b>, discussion and community feedback on hot topics, involving as much as
+                        possible the whole audience
                 </li>
             </ul>
             <button mat-button (click)="toggleShowMoreTAC2()" class="btn-showmore">
@@ -296,31 +265,15 @@
             </a>
         </td>
     </tr>
-
-    <tr>
-        <td colspan="2">
-            <hr>
-        </td>
-    </tr><!------------------------------>
     <tr>
         <td class="schedule">13:00<br>14:00</td>
         <td><em> Lunch </em></td>
     </tr>
-    <tr>
-        <td colspan="2">
-            <hr>
-        </td>
-    </tr><!------------------------------>
     <tr id="ntc24">
         <td colspan="2">
             <h2>ROOM B</h2>
         </td>
     </tr>
-    <tr>
-        <td colspan="2">
-            <hr>
-        </td>
-    </tr><!------------------------------>
     <tr>
         <td class="schedule"> 10:00<br>11:20 </td>
         <!------------------------------>
@@ -334,14 +287,12 @@
                 challenging topics.
             </p>
             <p>
-                <b> Invited speaker: </b> Federico Pintore,
-                <i>
-                    Università di Trento (Italy)
-                </i>
+                Invited speaker:
+                <b>Federico Pintore</b>, University of Trento (Italy)
             </p>
             <!-- VERSIONE ESTESA -->
             <p *ngIf="showMoreNTC">
-                <b>Organisers:</b>
+                Organisers:
                 <i>
                     Federico Accossato (PoliTo), Gessica Alecci (PoliTo), Danilo Bazzanella (PoliTo), Laura Capuano
                     (RomaTre), Giuseppe D’Alconzo (PoliTo), Simone Dutto (ACN), Nadir Murru (UniTN), Giordano Santilli
@@ -349,7 +300,7 @@
                 </i>
             </p>
             <p *ngIf="showMoreNTC">
-                <b>Abstract:</b> The workshop aims at exploring the connections between number theory and
+                The workshop aims at exploring the connections between number theory and
                 cryptography with a focus on the most challenging topics involved in modern cryptography (from classical
                 public-key algorithms to post-quantum cryptography). Particular emphasis will be given to the
                 applications of number theory for developing new cryptosystems and methods of cryptanalysis.
@@ -384,20 +335,10 @@
             </a>
         </td>
     </tr>
-    <tr>
-        <td colspan="2">
-            <hr>
-        </td>
-    </tr><!------------------------------>
     <tr id="cpsid24">
         <td class="schedule"> 11:20<br>11:40 </td>
         <td><em> Coffee break </em></td>
     </tr>
-    <tr>
-        <td colspan="2">
-            <hr>
-        </td>
-    </tr><!------------------------------>
     <tr>
         <td class="schedule"> 11:40<br>13:00 </td>
         <!------------------------------>
@@ -412,14 +353,14 @@
                 threat models and mitigations, but also emerging cryptographic schemes.
             </p>
             <!-- VERSIONE ESTESA -->
-            <p>
-                <b>Organisers:</b>
+            <p *ngIf="showMoreCPSID">
+                Organisers:
                 <i>
                     Andrea D'Intino (Dyne Foundation), Denis "Jaromil" Roio (Dyne Foundation)
                 </i>
             </p>
             <p *ngIf="showMoreCPSID">
-                <b>Abstract:</b> The seminar dives into the two main current identity standards, EUDI-ARF and
+                The seminar dives into the two main current identity standards, EUDI-ARF and
                 W3C-DID/W3C-VC and describe their cryptography, protocols, threat models and mitigations,
                 highlighting pros and cons of each element. The seminar also offers a view about new and emerging
                 cryptographic schemes in the identity space.
@@ -451,29 +392,14 @@
         </td>
     </tr>
     <tr>
-        <td colspan="2">
-            <hr>
-        </td>
-    </tr><!------------------------------>
-    <tr>
         <td class="schedule">13:00<br>14:00</td>
         <td><em> Lunch </em></td>
     </tr>
-    <tr>
-        <td colspan="2">
-            <hr>
-        </td>
-    </tr><!------------------------------>
     <tr>
         <td colspan="2" id="symcrypt24">
             <h2>ROOM C</h2>
         </td>
     </tr>
-    <tr>
-        <td colspan="2">
-            <hr>
-        </td>
-    </tr><!------------------------------>
     <tr>
         <td class="schedule"> 10:00<br>11:20 </td>
         <!------------------------------>
@@ -488,12 +414,12 @@
                 Functions.
             </p>
             <p>
-                <b>Invited speaker:</b>
-                Sihem Mesnager, <i>University of Paris VIII (France)</i>
+                Invited speaker:
+                <b>Sihem Mesnager</b>, University of Paris VIII (France)
             </p>
             <!-- VERSIONE ESTESA -->
             <p *ngIf="showMoreSYMCRYPT">
-                <b>Organisers:</b>
+                Organisers:
                 <i>
                     Marco Calderini (University of Trento - Italy),
                     George Petrides (University of Cyprus - Cyprus),
@@ -501,16 +427,30 @@
                 </i>
             </p>
             <p *ngIf="showMoreSYMCRYPT">
-                <b>Abstract:</b> The workshop will be in two interrelated areas. The first one concerns different
+                The workshop will be in two interrelated areas. The first one concerns different
                 aspects of symmetric cryptography, such as the design of symmetric ciphers, attacks to these ciphers, as
                 well as countermeasures. The second topic of interest is the theory of Boolean functions applied in
                 cryptography scenarios, particularly in the design of symmetric ciphers. Such functions have found
                 applications as S-boxes of block ciphers and feedback functions in stream ciphers, and the workshop will
                 be focusing on their relevant cryptographic properties, their classification, and construction methods.
             </p>
-            <p *ngIf="showMoreSYMCRYPT">
-                <b>Program:</b> TBA.
-            </p>
+            <ul *ngIf="showMoreSYMCRYPT">
+                <li>
+                    <i><b>Sihem Mesnager</b>, University of Paris VIII (France)</i>
+                    <br>
+                    TBA
+                </li>
+                <li>
+                    <i><b>Roberto La Scala</b>, University of Bari (Italy)</i>
+                    <br>
+                    Stream ciphers encoded by difference equations over finite fields and their cryptanalysis
+                </li>
+                <li>
+                    <i><b>Luca Mariot</b>, University of Twente (Netherlands)</i>
+                    <br>
+                    TBA
+                </li>
+            </ul>
             <button mat-button (click)="toggleShowMoreSYMCRYPT()" class="btn-showmore">
                 {{ showMoreSYMCRYPT ? 'Show Less' : 'Show More' }}
             </button>
@@ -519,20 +459,10 @@
             </a>
         </td>
     </tr>
-    <tr>
-        <td colspan="2">
-            <hr>
-        </td>
-    </tr><!------------------------------>
     <tr id="codemath24">
         <td class="schedule"> 11:20<br>11:40 </td>
         <td><em> Coffee break </em></td>
     </tr>
-    <tr>
-        <td colspan="2">
-            <hr>
-        </td>
-    </tr><!------------------------------>
     <tr>
         <td class="schedule"> 11:40<br>13:00 </td>
         <!------------------------------>
@@ -546,12 +476,12 @@
                 relations with Cryptography and Finite Geometry, trends, challenges.
             </p>
             <p>
-                <b>Invited speaker:</b> Gilles Zémor,
-                <i>Institut de Mathématiques de Bordeaux (France)</i>
+                Invited speaker: <b>Gilles Zémor</b>,
+                Institut de Mathématiques de Bordeaux (France)
             </p>
             <!-- VERSIONE ESTESA -->
             <p *ngIf="showMoreCODEMATH">
-                <b>Organisers:</b>
+                Organisers:
                 <i>
                     Massimo Giulietti (Università di Perugia),
                     Giuseppe Marino (Università di Napoli Federico II),
@@ -560,7 +490,7 @@
                 </i>
             </p>
             <p *ngIf="showMoreCODEMATH">
-                <b>Abstract:</b> The aim of the workshop is to create a collaborative environment that promotes research
+                The aim of the workshop is to create a collaborative environment that promotes research
                 and innovation in these fields, to facilitate networking opportunities for participants to engage with
                 peers, industry experts, and researchers, and to showcase the practical applications of coding theory
                 and discrete mathematics in areas such as error correction and cryptography.
@@ -574,22 +504,22 @@
                 <li>
                     <i><b>Gilles Zémor</b>, Institut de Mathématiques de Bordeaux (France)</i>
                     <br>
-                    TBA
+                    Hadamard products of codes: an Additive Combinatorics perspective
                 </li>
                 <li>
                     <i><b>Daniele Bartoli</b>, Università degli Studi di Perugia (Italy)</i>
                     <br>
-                    TBA
+                    Recent results on scattered spaces and MRD codes
                 </li>
                 <li>
                     <i><b>Luca Giuzzi,</b>, Università degli Studi di Brescia (Italy)</i>
                     <br>
-                    TBA
+                    Cryptographic uses of (polar) Grassmannians
                 </li>
                 <li>
                     <i><b>Violetta Weger</b>, Technical University of Munich (Germany)</i>
                     <br>
-                    TBA
+                    CROSS: a signature scheme with restricted errors
                 </li>
             </ul>
             <button mat-button (click)="toggleShowMoreCODEMATH()" class="btn-showmore">
@@ -601,29 +531,14 @@
         </td>
     </tr>
     <tr>
-        <td colspan="2">
-            <hr>
-        </td>
-    </tr><!------------------------------>
-    <tr>
         <td class="schedule">13:00<br>14:00</td>
         <td><em> Lunch </em></td>
     </tr>
-    <tr>
-        <td colspan="2">
-            <hr>
-        </td>
-    </tr><!------------------------------>
     <tr id="qcifris24">
         <td colspan="2">
             <h2>ROOM D</h2>
         </td>
     </tr>
-    <tr>
-        <td colspan="2">
-            <hr>
-        </td>
-    </tr><!------------------------------>
     <tr>
         <td class="schedule"> 10:00<br>11:20 </td>
         <!------------------------------>
@@ -633,14 +548,14 @@
             <em><b style="color:var(--cifris_blue)"> QCifris - Quantum Cifris 2024</b></em>
             <!-- VERSIONE NORMALE -->
             <p>
-                Advances in quantum technologies and research from the perspective of Physics.
+                Advances in quantum technologies and applications in cryptography from the perspective of Physics.
             </p>
             <p>
-                <b>Invited speaker:</b> TBA.
+                Invited speaker: TBA.
             </p>
             <!-- VERSIONE ESTESA -->
             <p *ngIf="showMoreQCIFRIS">
-                <b>Organisers:</b>
+                Organisers:
                 <i>
                     Paolo Villoresi (Università di Padova),
                     Ivo De Giovanni (INRIM),
@@ -649,7 +564,7 @@
                 </i>
             </p>
             <p *ngIf="showMoreQCIFRIS">
-                <b>Abstract:</b> TBA.
+                TBA.
             </p>
             <p *ngIf="showMoreQCIFRIS">
                 <b>Program:</b> TBA.
@@ -662,20 +577,10 @@
             </a>
         </td>
     </tr>
-    <tr>
-        <td colspan="2">
-            <hr>
-        </td>
-    </tr><!------------------------------>
     <tr id="cifriscloud24">
         <td class="schedule"> 11:20<br>11:40 </td>
         <td><em> Coffee break </em></td>
     </tr>
-    <tr>
-        <td colspan="2">
-            <hr>
-        </td>
-    </tr><!------------------------------>
     <tr>
         <td class="schedule"> 11:40<br>13:00 </td>
         <!------------------------------>
@@ -689,18 +594,18 @@
                 computing.
             </p>
             <p>
-                <b>Invited speaker:</b> Martina Palmucci, <i>NTT Data (Italy)</i>
+                Invited speaker: <b>Martina Palmucci</b>, NTT Data (Italy)
             </p>
             <!-- VERSIONE ESTESA -->
             <p *ngIf="showMoreCIFRISCLOUD">
-                <b>Organisers:</b>
+                Organisers:
                 <i>
                     Michela Iezzi (Bank of Italy), Matteo Nardelli (Bank of Italy) and Marco Pedicini (Roma Tre
                     University)
                 </i>
             </p>
             <p *ngIf="showMoreCIFRISCLOUD">
-                <b>Abstract:</b> The widespread use of wearable devices, IoT, smartphones, and sensors is driving the
+                The widespread use of wearable devices, IoT, smartphones, and sensors is driving the
                 need to decentralize cloud computing to the network's edges. This new computing environment involves
                 various devices exchanging data at unprecedented speeds, creating a pressing need for cryptographic data
                 protection against interception and tampering.
@@ -720,14 +625,10 @@
                     An introduction to Functional Encryption with multivariate algebra
                 </li>
                 <li>
-                    <i><b>Maria Tota,</b>, University of Salerno (Italy)</i>
-                    <br>
-                    An introduction to Fully Homomorphic Encryption
+                    TBA
                 </li>
                 <li>
-                    <i><b>Giovanni Giuseppe Grimaldi,</b>, University of Naples (Italy)</i>
-                    <br>
-                    An introduction to homomorphic encryption based on coding theory and polynomials
+                    TBA
                 </li>
             </ul>
             <button mat-button (click)="toggleShowMoreCIFRISCLOUD()" class="btn-showmore">
@@ -743,34 +644,23 @@
         </td>
     </tr>
     <tr>
-        <td colspan="2">
-            <hr>
-        </td>
-    </tr><!------------------------------>
-    <tr>
         <td class="schedule">13:00<br>14:00</td>
         <td><em> Lunch </em></td>
-    </tr>
-    <tr>
-        <td colspan="2"><br></td>
     </tr>
 </table>
 
 
-<!--
-						################################################################
-						################################################################
-					-->
-
 
 <table class="orari" cellspacing="2" cellpadding="2" id="27afternoon">
-    <tr bgcolor="lightblue" id="rapqc24">
+    <tr bgcolor="lightblue">
         <th class="schedule" colspan="2">
             <font size="+1"><b>September 27th (afternoon) - Workshop Session</b></font>
         </th>
     </tr>
-    <tr>
-        <td colspan="2"><br></td>
+    <tr id="rapqc24">
+        <td colspan="2">
+            <h2>MAIN HALL</h2>
+        </td>
     </tr>
     <tr>
         <td class="schedule"> 14:00<br>17:00 </td>
@@ -785,22 +675,19 @@
                 for design and implementation of post-quantum signatures.
             </p>
             <p>
-                <b> Invited speaker: </b>
-                Thibauld Feneuil,
-                <i>
-                    CryptoExperts (France)
-                </i>
+                Invited speaker:
+                <b>Thibauld Feneuil</b>, CryptoExperts (France)
             </p>
             <!-- VERSIONE ESTESA -->
             <p *ngIf="showMoreRAPQC">
-                <b>Organisers:</b>
+                Organisers:
                 <i>
                     Giulio Codogni (Tor Vergata University of Rome), Roberto La Scala (University of Bari), Edoardo
                     Persichetti (Florida Atlantic University), Federico Pintore (University of Trento).
                 </i>
             </p>
             <p *ngIf="showMoreRAPQC">
-                <b>Abstract:</b> Post-quantum cryptography, that is, the study of cryptographic schemes capable of
+                Post-quantum cryptography, that is, the study of cryptographic schemes capable of
                 withstanding attackers equipped with both classical and quantum computers, is an area of research that
                 has experienced tremendous growth in recent years, also due to the initiation of a standardization
                 effort by NIST, which has led to the selection of the first schemes to standardise. More recently, the
@@ -809,18 +696,40 @@
                 cryptography, along with the NIST competition, and focus on cutting-edge methods for designing and
                 implementing post-quantum signatures.
             </p>
-            <p *ngIf="showMoreRAPQC">
-                <b>Program:</b> TBA.
-            </p>
+            
+            <ul *ngIf="showMoreRAPQC">
+                <li>
+                    <i><b>Thibauld Feneuil</b>, CryptoExperts (France)</i>
+                    <br>
+                    Post-Quantum Signatures from Secure Multiparty Computation
+                </li>
+                <li>
+                    <i><b>Andrea Basso</b>, IBM Zurich (Switzerland)</i>
+                    <br>
+                    TBA
+                </li>
+                <li>
+                    <i><b>Rocco Mora</b>, CISPA Helmholtz Center for Information Security (Germany)</i>
+                    <br>
+                    TBA
+                </li>
+                <li>
+                    <i><b>Ryann Cartor</b>, Clemson University (USA)</i>
+                    <br>
+                    TBA
+                </li>
+                <li>
+                    <i><b>Luciano Maino</b>, University of Bristol (UK)</i>
+                    <br>
+                    TBA
+                </li>
+            </ul>
             <button mat-button (click)="toggleShowMoreRAPQC()" class="btn-showmore">
                 {{ showMoreRAPQC ? 'Show Less' : 'Show More' }}
             </button>
-            <a mat-button href="/cifris24/rapqc24" class="btn-showmore" style="margin-left: 10px;">
+            <a mat-button href="/cifris24/raipqc24" class="btn-showmore" style="margin-left: 10px;">
                 Webpage
             </a>
         </td>
-    </tr>
-    <tr>
-        <td colspan="2"><br></td>
     </tr>
 </table>

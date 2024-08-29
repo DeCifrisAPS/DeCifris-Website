@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-ntc',
   templateUrl: './ntc.component.html',
-  styleUrl: './ntc.component.css'
+  styleUrl: '../workshops-style.css'
 })
 export class NtcComponent24 {
 
