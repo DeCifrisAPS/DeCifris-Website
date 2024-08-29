@@ -18,8 +18,8 @@ a.txtbtn {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90px;
-    height: 90px;
+    width: 85px;
+    height: 85px;
     cursor: pointer;
     transition: background-color 0.3s;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
@@ -60,4 +60,5 @@ a.txtbtn:hover {
 
 .schedule-period{
     margin-top:0px;
+    margin-bottom: 5px;
 }
