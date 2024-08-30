@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-symcrypt',
   templateUrl: './symcrypt.component.html',
-  styleUrl: '../workshops-style.css'
+  styleUrl: '../../../../../../../../styles-tabelle-orari.css'
 })
 export class SymcryptComponent24 {
 

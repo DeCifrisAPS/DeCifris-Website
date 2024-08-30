@@ -48,7 +48,7 @@ td.schedule {
 Pensato per fare un'unica riga che spezzi tutta la tabella in un colspan=2 (e.g.).
 Ad esempio, la stanza di un workshop, o il tema comune di una serie di interventi.
 */
-h2 {
+tr h2 {
     padding: 2px 0 2px 20px !important;
     margin: 0 !important;
     color: white !important;

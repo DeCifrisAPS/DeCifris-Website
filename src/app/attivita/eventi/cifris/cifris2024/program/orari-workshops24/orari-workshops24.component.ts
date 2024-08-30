@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-orari-workshops24',
   templateUrl: './orari-workshops24.component.html',
-  styleUrl: '../orari.css'
+  styleUrl: '../../../../../../../styles-tabelle-orari.css'
 })
 export class OrariWorkshops24Component {
   // toggle FCR1
