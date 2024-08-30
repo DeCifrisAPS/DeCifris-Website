@@ -16,49 +16,61 @@
 a.txtbtn {
     background: var(--cifris_blue);
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    width: 85px;
-    height: 85px;
+    align-items: center;
+    width: 80px;
+    height: 80px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.1s;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
     text-decoration: none;
-    color: inherit;
     border-radius: 8px;
     margin: 0;
-    padding: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 a.txtbtn:hover {
     background-color: var(--cifris_orange);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05);
-    transition: transform 0.2s ease-in-out;
+    transform: scale(1.06);
+    transition: transform 0.1s ease-in-out;
 }
 
-.schedule-date h2 {
+i {
+    font-size: 10;
+    font-weight: 300;
+    scale: 0.3;
+}
+b {
     font-size: 33px;
     font-weight: 700;
-    display: inline;
-    color: white !important;
 }
 
-.schedule-date h4 {
-    font-size: 14px;
-    font-weight: 300;
-    display: inline;
-    color: white !important;
+div {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    line-height: 1.2;
 }
 
-.schedule-period h6 {
-    font-size: 15px;
+.day {
+    padding-left: 5px;
+}
+
+.month {
+    font-size: 12px;
     font-weight: 400;
-    display: inline;
-    color: white !important;
+    margin-bottom: 2px;
+    /* Spazio tra il mese e il giorno */
 }
 
-.schedule-period{
-    margin-top:0px;
-    margin-bottom: 5px;
+.time {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 2px;
+    /* Spazio tra il giorno e il tempo */
 }
