@@ -1,7 +1,7 @@
 export interface Volume {
   id: string;
   title: string;
-  publishing: string;
+  publisher: string;
   published: string;
   ISBN: string;
   ISSN: string;

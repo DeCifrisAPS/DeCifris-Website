@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title, Meta, MetaDefinition } from '@angular/platform-browser';
 import { ArticoloService } from './articolo.service';
-import { Volume, Articolo } from './articolo.model';
+import { Volume, Articolo, Author } from './articolo.model';
 
 @Component({
   selector: 'app-articolo',
@@ -13,7 +13,7 @@ import { Volume, Articolo } from './articolo.model';
 })
 export class ArticoloComponent {
 
-  theVolume: Volume = { id: "", title: "", publishing: "", published: "", ISBN: "", ISSN: "", volumeLink: "", coverLink: "", articles: [] };
+  theVolume: Volume = { id: "", title: "", publisher: "", published: "", ISBN: "", ISSN: "", volumeLink: "", coverLink: "", articles: [] };
   theArticle: Articolo = { id: "", title: "", authors: [], pageRange: "", doi: "", pdfLink: "", abstract: "" };
 
   constructor(private metaService: Meta, private titleService: Title, private route: ActivatedRoute, private articoloService: ArticoloService) {}
@@ -87,7 +87,15 @@ export class ArticoloComponent {
          */
         this.titleService.setTitle(this.theArticle.title);
         this.metaService.addTag({ name: 'citation_pdf_url', content: this.theArticle.pdfLink });
-        // this.metaService.addTag({ name: 'description', content: 'Article number ' + this.articleId + '!' });
+        this.metaService.addTag({ name: 'citation_title', content: this.theArticle.title });
+        this.metaService.addTag({ name: 'citation_doi', content: this.theArticle.doi });
+        this.metaService.addTag({ name: 'citation_issn', content: this.theVolume.ISSN });
+        this.metaService.addTag({ name: 'citation_isbn', content: this.theVolume.ISBN });
+        for (let author of this.theArticle.authors) {
+          this.metaService.addTag({ name: 'citation_author', content: author.name });
+        }
+        this.metaService.addTag({ name: 'citation_publication_date', content: this.theVolume.publisher });
+        this.metaService.addTag({ name: 'citation_publication_date', content: this.theVolume.published });
       });
     });
   }
