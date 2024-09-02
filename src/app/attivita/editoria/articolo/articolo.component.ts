@@ -13,6 +13,7 @@ import { Volume, Articolo, Author } from './articolo.model';
 })
 export class ArticoloComponent {
 
+  bibtex: string = "";
   theVolume: Volume = { id: "", title: "", publisher: "", published: "", ISBN: "", ISSN: "", volumeLink: "", coverLink: "", articles: [] };
   theArticle: Articolo = { id: "", title: "", authors: [], pageRange: "", doi: "", pdfLink: "", abstract: "" };
 
@@ -96,6 +97,18 @@ export class ArticoloComponent {
         }
         this.metaService.addTag({ name: 'citation_publication_date', content: this.theVolume.publisher });
         this.metaService.addTag({ name: 'citation_publication_date', content: this.theVolume.published });
+
+        this.bibtex = "@article{koine:" + this.theVolume.id + "-" + this.theArticle.id + ","
+            + '\n  author = {' + this.theArticle.authors.map(a => a.name).join(" and ") + '},'
+            + '\n  title = {' + this.theArticle.title + '},'
+            + '\n  journal = {Koine},'
+            + '\n  year = {' + this.theVolume.published.split(" ")[1] + '},'
+            + '\n  pages = {' + this.theArticle.pageRange.split("-").join("--") + '},'
+            + '\n  volume = {' + this.theVolume.id.split("vol")[1] + '},'
+            + '\n  doi = {' + this.theArticle.doi + '},'
+            + '\n  issn = {' + this.theVolume.ISSN + '},'
+            + '\n  isbn = {' + this.theVolume.ISBN + '}'
+            + "\n}";
       });
     });
   }

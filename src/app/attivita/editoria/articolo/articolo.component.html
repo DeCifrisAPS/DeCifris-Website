@@ -19,22 +19,14 @@
   <li><a class="text-muted" title="doi" href="https://doi.org/{{ theArticle.doi }}">https://doi.org/{{ theArticle.doi }}</a></li>
   <li>Published by De Cifris Press, {{ theVolume.published }}</li>
 </ul>
-<p id="">
+<p>
   <a class="btn btn-info" title="pdf" href="{{ theArticle.pdfLink }}">Download article (PDF), pp. {{ theArticle.pageRange }}</a>
-  <details>
-    <summary>Cite this with BibTeX</summary>
-    <code><pre>&#64;misc&lbrace;cryptoeprint:2024/1299,
-  author = &lbrace;Ben Fisch and Arthur Lazzaretti and Zeyu Liu and Lei Yang&rbrace;,
-  title = &lbrace;Permissionless Verifiable Information Dispersal (Data Availability for Bitcoin Rollups)&rbrace;,
-  howpublished = &lbrace;Cryptology &lbrace;ePrint&rbrace; Archive, Paper 2024/1299&rbrace;,
-  year = &lbrace;2024&rbrace;,
-  url = &lbrace;https://eprint.iacr.org/2024/1299&rbrace;
-&rbrace;</pre></code>
-  </details>
 </p>
 @if (theArticle.abstract !== "") {
   <hr />
   <h2>Abstract</h2>
   <p style="white-space: pre-wrap; font-size: 1rem; line-height: 1.5 ">{{ theArticle.abstract }}</p>
 }
+<h3>Cite this</h3>
+<code class="card card-body" style="margin-top: 0.5rem;"><pre style="margin:0;">{{ bibtex }}</pre></code>
 <p>&nbsp;</p>

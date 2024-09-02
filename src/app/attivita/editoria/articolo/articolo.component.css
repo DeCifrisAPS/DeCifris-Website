@@ -9,6 +9,17 @@ ul#preamble {
   list-style: none;
 }
 
+.btn-info {
+  background-color: var(--cifris_blue);
+  color: white;
+  border: solid 1px var(--cifris_blue);
+}
+
+.btn-info:hover, .btn-info:active {
+  background-color: var(--cifris_azure);
+  color: black;
+}
+
 
 /*
 ul#article-preamble {
