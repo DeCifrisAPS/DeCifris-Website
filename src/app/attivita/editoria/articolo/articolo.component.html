@@ -1,6 +1,6 @@
 <hr />
 <h1 class="" style="text-align: left !important;">{{ theArticle.title }}</h1>
-<p class="">
+<p class="" style="font-size: 1.2rem">
   @for (author of theArticle.authors; track author) {
     @if ($index !== 0) {
       <span>, </span>
@@ -35,6 +35,6 @@
 @if (theArticle.abstract !== "") {
   <hr />
   <h2>Abstract</h2>
-  <p style="white-space: pre-wrap; font-size: 0.975rem; line-height: 1.5; font-family: serif; ">{{ theArticle.abstract }}</p>
+  <p style="white-space: pre-wrap; font-size: 1rem; line-height: 1.5 ">{{ theArticle.abstract }}</p>
 }
 <p>&nbsp;</p>
