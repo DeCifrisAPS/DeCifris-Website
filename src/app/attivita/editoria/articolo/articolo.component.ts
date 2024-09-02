@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Meta, MetaDefinition } from '@angular/platform-browser';
+import { Title, Meta, MetaDefinition } from '@angular/platform-browser';
 import { ArticoloService } from './articolo.service';
 import { Volume, Articolo } from './articolo.model';
 
@@ -16,7 +16,7 @@ export class ArticoloComponent {
   theVolume: Volume = { id: "", title: "", publishing: "", published: "", ISBN: "", ISSN: "", volumeLink: "", coverLink: "", articles: [] };
   theArticle: Articolo = { id: "", title: "", authors: [], pageRange: "", doi: "", pdfLink: "", abstract: "" };
 
-  constructor(private metaService: Meta, private route: ActivatedRoute, private articoloService: ArticoloService) {}
+  constructor(private metaService: Meta, private titleService: Title, private route: ActivatedRoute, private articoloService: ArticoloService) {}
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
@@ -85,6 +85,8 @@ export class ArticoloComponent {
          * og:image
          *
          */
+        this.titleService.setTitle(this.theArticle.title);
+        this.metaService.addTag({ name: 'citation_pdf_url', content: this.theArticle.pdfLink });
         // this.metaService.addTag({ name: 'description', content: 'Article number ' + this.articleId + '!' });
       });
     });

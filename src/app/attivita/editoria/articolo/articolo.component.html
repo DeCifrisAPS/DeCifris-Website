@@ -1,6 +1,4 @@
-<p>
-  Published by De Cifris Press, {{ theVolume.published }}
-</p>
+<hr />
 <h1 class="" style="text-align: left !important;">{{ theArticle.title }}</h1>
 <p class="">
   @for (author of theArticle.authors; track author) {
@@ -19,6 +17,7 @@
       {{ theVolume.title }}</a>.
      </li>
   <li><a class="text-muted" title="doi" href="https://doi.org/{{ theArticle.doi }}">https://doi.org/{{ theArticle.doi }}</a></li>
+  <li>Published by De Cifris Press, {{ theVolume.published }}</li>
 </ul>
 <p id="">
   <a class="btn btn-info" title="pdf" href="{{ theArticle.pdfLink }}">Download article (PDF), pp. {{ theArticle.pageRange }}</a>
@@ -33,5 +32,9 @@
 &rbrace;</pre></code>
   </details>
 </p>
-<hr />
-<p style="white-space: pre-wrap;">{{ theArticle.abstract }}</p>
+@if (theArticle.abstract !== "") {
+  <hr />
+  <h2>Abstract</h2>
+  <p style="white-space: pre-wrap; font-size: 0.975rem; line-height: 1.5; font-family: serif; ">{{ theArticle.abstract }}</p>
+}
+<p>&nbsp;</p>
