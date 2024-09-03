@@ -81,7 +81,7 @@ import { ProgramCommitteeComponent24 } from './attivita/eventi/cifris/cifris2024
 import { ProgramComponent24 } from './attivita/eventi/cifris/cifris2024/program/program.component';
 import { SubmissionComponent24 } from './attivita/eventi/cifris/cifris2024/submission/submission.component';
 import { RegistrationComponent24 } from './attivita/eventi/cifris/cifris2024/registration/registration.component';
-import { WorkshopsComponent24 } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/workshops.component';
+import { Workshops24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/workshops24.component';
 
 
 
@@ -207,6 +207,7 @@ import { OrariWorkshops24Component } from './attivita/eventi/cifris/cifris2024/p
         HomeCifris23Component,
         Vol1Component,
         Vol2Component,
+        Vol3Component,
         ArticlesAndVolumesComponent,
         HomeKoineComponent,
         KoineComponent,
@@ -339,7 +340,7 @@ import { OrariWorkshops24Component } from './attivita/eventi/cifris/cifris2024/p
         RegistrationComponent24,
         VenueAccomodationComponent24,
         ProgramButtonsComponent,
-        WorkshopsComponent24,
+        Workshops24Component,
         WorkshopButtons24Component
         //Hosting
         // Opera24Component,

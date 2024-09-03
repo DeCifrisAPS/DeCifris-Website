@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Raipqc24Component } from './raipqc24.component';
+import { Readpqc24Component } from './readpqc24.component';
 
-describe('Raipqc24Component', () => {
-  let component: Raipqc24Component;
-  let fixture: ComponentFixture<Raipqc24Component>;
+describe('Readpqc24Component', () => {
+  let component: Readpqc24Component;
+  let fixture: ComponentFixture<Readpqc24Component>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Raipqc24Component]
+      imports: [Readpqc24Component]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Raipqc24Component);
+    fixture = TestBed.createComponent(Readpqc24Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
