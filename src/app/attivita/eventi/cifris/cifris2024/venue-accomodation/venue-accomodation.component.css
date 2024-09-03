@@ -4,6 +4,18 @@ table {
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: scroll;
+    width: 90%;
+}
+
+.table-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+}
+
+.table-wrapper div {
+    width: 48%;
 }
 
 th,
@@ -22,8 +34,25 @@ th {
     background-color: var(--cifris_azure);
 }
 
+.highlight-anomalous {
+    background-color: var(--cifris_orange_transparent);
+}
+
 .special {
     color: var(--cifris_orange);
     font-weight: 500;
-    width:fit-content
+    width: fit-content;
+    font-size: 12;
+}
+
+img.venue {
+    width: 45%;
+    margin: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    border: 2px solid var(--cifris_blue);
+}
+
+hr {
+    padding-bottom: 30px;
 }
