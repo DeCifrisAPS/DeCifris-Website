@@ -16,7 +16,7 @@ mat-card {
     align-items: center;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
     justify-content: center;
-    width: 125px;
+    width: 140px;
     height: 90px;
     cursor: pointer;
     transition: background-color 0.3s;

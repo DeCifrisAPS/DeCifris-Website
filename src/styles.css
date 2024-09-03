@@ -23,6 +23,15 @@ body {
     height: fit-content;
     background: url('assets/images/background/background.jpeg') no-repeat center center fixed;
     background-size: cover;
+    overflow-x: hidden;
+}
+
+/* Other styles */
+div.zoomed {
+    height: 100%;
+    zoom: 1.1;
+    transform: scale(1.1);
+    transform-origin: 0 0;
 }
 
 h2,
@@ -43,12 +52,8 @@ h1 {
     text-align: center !important;
 }
 
-/* Other styles */
-div.zoomed {
-    height: 100%;
-    zoom: 1.1;
-    transform: scale(1.1);
-    transform-origin: 0 0;
+hr {
+    color: var(--cifris_blue) !important;
 }
 
 .toolbar,
@@ -91,30 +96,28 @@ div.zoomed {
 }
 
 
-
-
-
-/* Media query per schermi piccoli */
+/* CONTAINER ELEMENTS */
+/* Media query per telefoni */
 @media all and (max-width: 991px) {
-    /* Contenitore principale come flex container */
+
     .container {
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        left: 0;
+        right: 0;
         height: 100%;
-        margin: 50px 10px 50px 10px;
-        left:0;
-        right:0;
-        padding:0px;
+        margin: 0 auto;
+        width: 100%;
+        margin-top: 40px;
+        box-sizing: border-box;
     }
 
-    /* Sidebar */
     .sidebar {
         flex: 0 0 60%;
-        /* Fissa al 60% dello schermo, ma non crescerà né diminuirà */
         width: 60%;
-        /* Assicura che la sidebar non cresca oltre 300px */
         height: 100%;
-        /* Rende la sidebar alta quanto la viewport */
         box-sizing: border-box;
         padding-left: 20px;
         padding-top: 100px;
@@ -124,39 +127,40 @@ div.zoomed {
         top: 0;
         bottom: 0;
         right: -60%;
+        /* Nasconde la sidebar inizialmente */
         margin: 0;
-        transition: 0.2s;
+        transition: right 0.2s ease;
     }
 
     .sidebar.open {
         right: 0;
+        /* Mostra la sidebar quando è aperta */
     }
 
-    /* Content */
     .content {
         flex: 1;
-        /* Occupa tutto lo spazio rimanente */
-        padding: 0px;
+        padding: 0;
         box-sizing: border-box;
-        margin: 30px 10px 0 10px;
-        width: 90%
+        margin: 30px 3% 0 3%;
+        width: 94%;
     }
 
     .sidebar-image-button {
         width: 200px;
-        text-align: left!important; 
-        display: flex!important; 
-        justify-content: flex-start!important; 
-        align-items: center!important; 
-        padding-left: 20px!important; 
-        box-sizing: border-box!important; 
+        text-align: left !important;
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        padding-left: 20px !important;
+        box-sizing: border-box !important;
     }
 }
 
 
 
 
-/* Media query per schermi grandi */
+/* CONTAINER ELEMENTS */
+/* Media query per computer */
 @media all and (min-width: 992px) {
 
     /* Contenitore principale come flex container */
@@ -164,7 +168,11 @@ div.zoomed {
         display: flex;
         height: 90%;
         bottom: 0;
-        width: 100%;
+        justify-self: center;
+        justify-content: center;
+        left: 20%;
+        right: 0;
+        width: 80% !important;
         box-sizing: border-box;
         padding-bottom: 100px;
     }
@@ -172,40 +180,33 @@ div.zoomed {
     /* Sidebar */
     .sidebar {
         flex: 0 0 20%;
-        /* Fissa al 20% dello schermo, ma non crescerà né diminuirà */
-        /* Assicura che la sidebar non cresca oltre 300px */
         height: 100%;
-        /* Rende la sidebar alta quanto la viewport */
         box-sizing: border-box;
         padding-left: 20px;
-        padding-right: 20px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         background-color: var(--cifris_azure);
         position: fixed;
         top: 10%;
+        min-width: 20%;
         left: 0;
-        /* Assicura che la sidebar non si sovrapponga alla toolbar */
     }
 
     /* Content */
     .content {
         flex: 0 0 80%;
-        /* Occupa tutto lo spazio rimanente */
         padding: 20px;
         box-sizing: border-box;
         align-items: center;
-        margin: 20px 20px 0 25%;
-        /* Margin top per separare dalla toolbar e a sinistra per far spazio alla sidebar */
     }
 
     .sidebar-image-button {
         width: 200px;
-        text-align: left!important; 
-        display: flex!important; 
-        justify-content: flex-start!important; 
-        align-items: center!important; 
-        padding-left: 20px!important; 
-        box-sizing: border-box!important; 
+        text-align: left !important;
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        padding-left: 20px !important;
+        box-sizing: border-box !important;
     }
 
 }

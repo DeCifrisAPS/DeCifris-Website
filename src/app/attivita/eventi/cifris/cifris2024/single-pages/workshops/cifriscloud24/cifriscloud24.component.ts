@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-raipqc24',
-  templateUrl: './raipqc24.component.html',
+  selector: 'app-cifriscloud24',
+  templateUrl: './cifriscloud24.component.html',
   styleUrl: '../../../../../../../../styles-tabelle-orari.css'
 })
-export class Raipqc24Component {
+export class Cifriscloud24Component {
 
 }

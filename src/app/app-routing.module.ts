@@ -116,6 +116,7 @@ import { InstitutionalSession24Component } from './attivita/eventi/cifris/cifris
 import { MainConference24Component } from './attivita/eventi/cifris/cifris2024/single-pages/main-conference24/main-conference24.component';
 import { ScientificSession24Component } from './attivita/eventi/cifris/cifris2024/single-pages/main-conference24/scientific-session24/scientific-session24.component';
 import { Cpsid24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/cpsid24/cpsid24.component';
+import { Cifriscloud24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/cifriscloud24/cifriscloud24.component';
 import { ArticoloComponent } from './attivita/editoria/articolo/articolo.component';
 import { articoloGuard } from './attivita/editoria/articolo/articolo.guard';
 
@@ -223,12 +224,13 @@ const routes: Routes = [
 			{ path: "ntc24", component: NtcComponent24 },
 			{ path: "symcrypt24", component: SymcryptComponent24 },
 			{ path: "workshops", component: WorkshopsComponent24 },
-			{ path: "fcr24", component: Fcr24Component },
+			{ path: "fcir24", component: Fcr24Component },
 			{ path: "qcifris24", component: Qcifris24Component },
 			{ path: "rapqc24", component: Raipqc24Component },
 			{ path: "tac24", component: Tac24Component },
 			{ path: "codemath24", component: Codemath24Component },
 			{ path: "cpsid24", component: Cpsid24Component },
+			{ path: "cifriscloud24", component: Cifriscloud24Component },
 			{ path: "institutional-session", component: InstitutionalSession24Component },
 			{ path: "scientific-session", component: ScientificSession24Component },
 		]
@@ -267,6 +269,7 @@ const routes: Routes = [
 	{ path: 'notizie', redirectTo: '/associazione/notizie', pathMatch: 'full' },
 	{ path: 'cifris23/homeCifris23', redirectTo: '/cifris23', pathMatch: 'full' },
 	{ path: 'cifris24/homeCifris24', redirectTo: '/cifris24', pathMatch: 'full' },
+	{ path: 'cifris24/fcr24', redirectTo: 'cifris24/fcir24', pathMatch: 'full' },
 	{ path: 'advisoryboard/borse', redirectTo: '/opportunita', pathMatch: 'full' },
 	{ path: 'centotesi2008-2017', redirectTo: '/attivita/centotesi-2008-2017', pathMatch: 'full' },
 	{ path: 'centotesi2014-2023', redirectTo: '/attivita/centotesi-2014-2023', pathMatch: 'full' },

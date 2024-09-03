@@ -134,6 +134,7 @@ import { MainConference24Component } from './attivita/eventi/cifris/cifris2024/s
 import { OrariInstitutionalSession24Component } from './attivita/eventi/cifris/cifris2024/program/orari-institutional-session24/orari-institutional-session24.component';
 import { OrariScientificSession24Component } from './attivita/eventi/cifris/cifris2024/program/orari-scientific-session24/orari-scientific-session24.component';
 import { Cpsid24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/cpsid24/cpsid24.component';
+import { OrariWorkshops24Component } from './attivita/eventi/cifris/cifris2024/program/orari-workshops24/orari-workshops24.component';
 
 // // ./hosting
 // import { Opera24Component } from './hosting/opera24/opera24.component';
@@ -250,6 +251,7 @@ import { Cpsid24Component } from './attivita/eventi/cifris/cifris2024/single-pag
         MainConference24Component,
         OrariInstitutionalSession24Component,
         OrariScientificSession24Component,
+        OrariWorkshops24Component,
         // DidatticaUniversitariaComponent,
         // EventiPassatiComponent,
         // EventiFuturiComponent,
