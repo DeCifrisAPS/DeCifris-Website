@@ -3,11 +3,14 @@ import { ActivatedRoute } from '@angular/router';
 import { Title, Meta, MetaDefinition } from '@angular/platform-browser';
 import { ArticoloService } from './articolo.service';
 import { Volume, Articolo, Author } from './articolo.model';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-articolo',
-  standalone: true,
-  imports: [],
+  // standalone: true,
+  // imports: [MatButtonModule, MatDividerModule, MatIconModule],
   templateUrl: './articolo.component.html',
   styleUrl: './articolo.component.css'
 })

@@ -71,6 +71,7 @@ import { EditoriaComponent } from './attivita/editoria/editoria.component';
 import { DiconoDiNoiComponent } from './associazione/notizie/dicono-di-noi/dicono-di-noi.component';
 import { NotizieComponent } from './associazione/notizie/notizie.component';
 import { NewsComponent } from './root-elements/home/news/news.component';
+import { ArticoloComponent } from './attivita/editoria/articolo/articolo.component';
 
 // /cifris2024
 import { Cifris2024Component } from './attivita/eventi/cifris/cifris2024/cifris2024.component';
@@ -338,7 +339,7 @@ import { Cpsid24Component } from './attivita/eventi/cifris/cifris2024/single-pag
         VenueAccomodationComponent24,
         ProgramButtonsComponent,
         WorkshopsComponent24,
-        WorkshopButtons24Component
+        WorkshopButtons24Component,
         //Hosting
         // Opera24Component,
         // Combinatorics24Component,
@@ -346,6 +347,8 @@ import { Cpsid24Component } from './attivita/eventi/cifris/cifris2024/single-pag
         // NotizieComponent,
         // AgoraComponent,
         // Vol2Component,
+        //Koine
+        ArticoloComponent
     ],
     bootstrap: [AppComponent], imports: [BrowserModule,
         AppRoutingModule,

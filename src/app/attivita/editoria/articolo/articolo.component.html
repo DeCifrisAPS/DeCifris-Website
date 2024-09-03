@@ -20,7 +20,7 @@
   <li>Published by De Cifris Press, {{ theVolume.published }}</li>
 </ul>
 <p>
-  <a class="btn btn-info" title="pdf" href="{{ theArticle.pdfLink }}">Download article (PDF), pp. {{ theArticle.pageRange }}</a>
+  <a mat-raised-button style="background-color: var(--cifris_azure)" title="pdf" href="{{ theArticle.pdfLink }}">Download article (PDF), pp. {{ theArticle.pageRange }}</a>
 </p>
 @if (theArticle.abstract !== "") {
   <hr />
