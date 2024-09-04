@@ -118,6 +118,7 @@ import { ScientificSession24Component } from './attivita/eventi/cifris/cifris202
 import { Cpsid24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/cpsid24/cpsid24.component';
 import { Cifriscloud24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/cifriscloud24/cifriscloud24.component';
 import { Vol3Component } from './attivita/editoria/koine/vol3/vol3.component';
+import { Vol4Component } from './attivita/editoria/koine/vol4/vol4.component';
 
 
 // importante mettere come children tutti quelli che condividono la stessa sidebar, dato
@@ -258,6 +259,7 @@ const routes: Routes = [
 			{ path: "vol1", component: Vol1Component },
 			{ path: "vol2", component: Vol2Component },
 			{ path: "vol3", component: Vol3Component },
+			{ path: "vol4", component: Vol4Component },
 		]
 	},
 

@@ -2,7 +2,7 @@ const { SitemapStream, streamToPromise } = require('sitemap');
 const { createWriteStream, statSync } = require('fs');
 const path = require('path');
 
-console.log(`[de-cifris-site/generate-sitemap.js] Generando la sitemap.`);
+console.log(`[de-cifris-site/generate-sitemap.js] Fetching data`);
 // Funzione per ottenere la data di ultima modifica di un file
 function getLastModified(filePath) {
   try {
@@ -17,6 +17,7 @@ function getLastModified(filePath) {
 // Creazione dello stream per la sitemap
 const sitemap = new SitemapStream({ hostname: 'https://www.decifris.it' });
 const pages = [
+  
   { url: '/', changefreq: 'always', priority: 1.0, filePath: 'src/app/root-elements/home/home.component.html' },
   { url: '/contatti', changefreq: 'always', priority: 1.0, filePath: 'src/app/root-elements/contatti/contatti.component.html' },
   { url: '/cookie-policy', changefreq: 'always', priority: 1.0, filePath: 'src/app/root-elements/cookie-policy/cookie-policy.component.html' },
@@ -37,7 +38,7 @@ const pages = [
   { url: '/associazione/obiettivi', changefreq: 'always', priority: 1.0, filePath: 'src/app/associazione/obiettivi/obiettivi.component.html' },
   { url: '/associazione/dicono-di-noi', changefreq: 'always', priority: 1.0, filePath: 'src/app/associazione/notizie/dicono-di-noi/dicono-di-noi.component.html' },
   { url: '/associazione/notizie', changefreq: 'always', priority: 1.0, filePath: 'src/app/associazione/notizie/notizie.component.html' },
-
+  
   { url: '/welcome', changefreq: 'always', priority: 1.0, filePath: 'src/app/welcome/home-welcome/home-welcome.component.html' },
   { url: '/welcome/ricercatori', changefreq: 'always', priority: 1.0, filePath: 'src/app/welcome/per-accademia/per-accademia.component.html' },
   { url: '/welcome/azienda', changefreq: 'always', priority: 1.0, filePath: 'src/app/welcome/per-aziende/per-aziende.component.html' },
@@ -88,15 +89,16 @@ const pages = [
   { url: '/cifris24/registration', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2024/registration/registration.component.html' },
   { url: '/cifris24/program', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2024/program/program.component.html' },
   { url: '/cifris24/proceedings', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2024/proceedings/proceedings.component.html' },
-  { url: '/cifris24/workshops', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2024/single-pages/workshops/workshops.component.html' },
+  { url: '/cifris24/workshops', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2024/single-pages/workshops/workshops24.component.html' },
   { url: '/cifris24/codemath24', changefreq: 'always', priority: 1.0, filePath: '/home/stark/de-cifris-site/src/app/attivita/eventi/cifris/cifris2024/single-pages/workshops/codemath24/codemath24.component.html' },
   { url: '/cifris24/fcr24', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2024/single-pages/workshops/fcr24/fcr24.component.html' },
-  { url: '/cifris24/ntc24', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2024/single-pages/workshops/ntc/ntc.component.html' },
+  { url: '/cifris24/ntc24', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2024/single-pages/workshops/ntc24/ntc24.component.html' },
   { url: '/cifris24/qcifris24', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2024/single-pages/workshops/qcifris24/qcifris24.component.html' },
-  { url: '/cifris24/rapqc24', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2024/single-pages/workshops/raipqc24/raipqc24.component.html' },
+  { url: '/cifris24/readpqc24', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2024/single-pages/workshops/readpqc24/readpqc24.component.html' },
   { url: '/cifris24/symcrypt24', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2024/single-pages/workshops/symcrypt/symcrypt.component.html' },
   { url: '/cifris24/tac24', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2024/single-pages/workshops/tac24/tac24.component.html' },
   { url: '/cifris24/cpsid24', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2024/single-pages/workshops/cpsid24/cpsid24.component.html' },
+  { url: '/cifris24/cifriscloud24', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2024/single-pages/workshops/cifriscloud24/cifriscloud24.component.html' },
   //{ url: '/cifris24/payment-result', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2024/payment-result/payment-result.component.html' },
   
   { url: '/cifris23', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2023/cifris2023.component.html' },
@@ -114,6 +116,8 @@ const pages = [
   { url: '/koine/editorial-board', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/koine/editorial-board/editorial-board.component.html' },
   { url: '/koine/vol1', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/koine/vol1/vol1.component.html' },
   { url: '/koine/vol2', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/koine/vol2/vol2.component.html' },
+  { url: '/koine/vol3', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/koine/vol3/vol3.component.html' },
+  { url: '/koine/vol4', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/koine/vol4/vol4.component.html' },
 
 
   // uguali, ma con / alla fine, a volte Google lo richiede
@@ -207,14 +211,16 @@ pages.forEach(page => {
       lastmod: lastmod
     });
   } else {
-    console.warn(`[de-cifris-site/generate-sitemap.js] La pagina ${page.url} non verrà inclusa nella sitemap a causa di un errore nel percorso del file.`);
+    console.warn(`[de-cifris-site/generate-sitemap.js] Path error, page ignored: ${page.url}`);
   }
 });
 
-// Terminazione dello stream
+
+console.log(`[de-cifris-site/generate-sitemap.js] End of data stream`);
 sitemap.end();
 
-// Scrittura della sitemap nel file sitemap.xml
+
+console.log(`[de-cifris-site/generate-sitemap.js] Writing sitemap.xml`);
 streamToPromise(sitemap)
   .then(data => createWriteStream(path.join(__dirname, 'src', 'sitemap.xml')).write(data))
   .catch(err => console.error(err));

@@ -2,6 +2,7 @@ div.bookcontainer {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 10px;
+	width: 100%;
 }
 
 mat-card {
@@ -10,8 +11,8 @@ mat-card {
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: center;
-	width: 170px;
-	height: 240px;
+	width: 150px;
+	height: 215px;
 	border-radius: 8px;
 	overflow: hidden;
 	transition: box-shadow 0.3s ease-in-out;
@@ -27,7 +28,7 @@ mat-card:hover {
 img {
 	display: block;
 	width: 100%;
-	height: 240px;
+	height: 215px;
 	object-fit: cover;
 }
 
