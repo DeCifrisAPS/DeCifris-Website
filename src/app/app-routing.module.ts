@@ -119,6 +119,7 @@ import { Cpsid24Component } from './attivita/eventi/cifris/cifris2024/single-pag
 import { Cifriscloud24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/cifriscloud24/cifriscloud24.component';
 import { Vol3Component } from './attivita/editoria/koine/vol3/vol3.component';
 import { Vol4Component } from './attivita/editoria/koine/vol4/vol4.component';
+import { SitemapComponent } from './root-elements/sitemap/sitemap.component';
 
 
 // importante mettere come children tutti quelli che condividono la stessa sidebar, dato
@@ -134,6 +135,7 @@ const routes: Routes = [
 			{ path: "opera24", component: Opera24Component },
 			{ path: "combinatorics24", component: Combinatorics24Component },
 			{ path: "wcc24", component: WCC24Component },
+			{ path: "sitemap", component: SitemapComponent },
 		]
 	},
 

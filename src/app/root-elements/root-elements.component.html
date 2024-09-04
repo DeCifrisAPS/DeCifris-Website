@@ -54,6 +54,13 @@
                     </button>
                 </li>
                 <li>
+                    <button mat-button [routerLink]="['/sitemap']" routerLinkActive="active" (click)="toggleSidebar()" 
+                        [routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+                        <mat-icon>pin_drop</mat-icon>
+                        <span class="sidebar-text">Sitemap</span>
+                    </button>
+                </li>
+                <li>
                     <button mat-button [routerLink]="['/cookie-policy']" routerLinkActive="active" (click)="toggleSidebar()" 
                         [routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
                         <mat-icon>cookie</mat-icon>

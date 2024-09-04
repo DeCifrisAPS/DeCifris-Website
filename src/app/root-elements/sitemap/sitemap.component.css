@@ -1,0 +1,28 @@
+a:not(b) {
+    text-decoration-color: black;
+    color: black;
+}
+
+b {
+    color: var(--cifris_orange);
+}
+a:has(b) {
+    text-decoration-color: var(--cifris_orange);
+}
+
+ul {
+    column-width: 150px; /* Larghezza minima di una colonna */
+    column-gap: 20px; /* Spazio tra le colonne */
+}
+
+li {
+    break-inside: avoid;
+}
+ul.main-list { /* Aggiungi una classe al <ul> principale */
+    column-count: 3;
+    column-gap: 20px;
+}
+
+ul.main-list > li {
+    break-inside: avoid;
+}
