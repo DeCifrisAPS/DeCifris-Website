@@ -73,40 +73,40 @@
 			</p>
 		</footer>
 	</div>
-	<div class="bottomnav">
-		<nav class="bottombar" id="bottomnav">
-			<ul class="bottomnav-menu">
-				<li>
-					<button mat-button [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-						<mat-icon>home</mat-icon>
-						<span>HOME</span>
-					</button>
-				</li>
-				<li>
-					<button mat-button [routerLink]="['/koine']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-						<mat-icon>menu_book</mat-icon>
-						<span>Koine</span>
-					</button>
-				</li>
-				<li>
-					<button mat-button [routerLink]="['/koine/vol3']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-						<mat-icon>schedule</mat-icon>
-						<span>Latest issue</span>
-					</button>
-				</li>
-				<li>
-					<button mat-button [routerLink]="['/koine/articles-and-volumes']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-						<mat-icon>library_books</mat-icon>
-						<span>Articles & volumes</span>
-					</button>
-				</li>
-				<li>
-					<button mat-button [routerLink]="['/koine/editorial-board']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-						<mat-icon>groups</mat-icon>
-						<span>Editorial board</span>
-					</button>
-				</li>
-			</ul>
-		</nav>
-	</div>
+	<ul class="bottomnav-menu">
+		<li>
+			<button mat-button [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+				<mat-icon>home</mat-icon>
+				<span>HOME</span>
+			</button>
+		</li>
+		<li>
+			<button mat-button [routerLink]="['/koine']" routerLinkActive="active"
+				[routerLinkActiveOptions]="{exact: true}">
+				<mat-icon>menu_book</mat-icon>
+				<span>Koine</span>
+			</button>
+		</li>
+		<li>
+			<button mat-button [routerLink]="['/koine/vol3']" routerLinkActive="active"
+				[routerLinkActiveOptions]="{exact: true}">
+				<mat-icon>schedule</mat-icon>
+				<span>Latest issue</span>
+			</button>
+		</li>
+		<li>
+			<button mat-button [routerLink]="['/koine/articles-and-volumes']" routerLinkActive="active"
+				[routerLinkActiveOptions]="{exact: true}">
+				<mat-icon>library_books</mat-icon>
+				<span>Articles & volumes</span>
+			</button>
+		</li>
+		<li>
+			<button mat-button [routerLink]="['/koine/editorial-board']" routerLinkActive="active"
+				[routerLinkActiveOptions]="{exact: true}">
+				<mat-icon>groups</mat-icon>
+				<span>Editorial board</span>
+			</button>
+		</li>
+	</ul>
 </div>

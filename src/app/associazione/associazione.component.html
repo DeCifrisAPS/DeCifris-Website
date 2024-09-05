@@ -100,76 +100,82 @@
 		</div>
 		<router-outlet></router-outlet>
 	</div>
-	<div class="bottomnav">
-		<nav class="bottombar" id="bottomnav">
-			<ul class="bottomnav-menu">
-				<li>
-					<button mat-button [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-						<mat-icon>home</mat-icon>
-						<span>HOME</span>
-					</button>
-				</li>
-				<li>
-					<button mat-button [routerLink]="['/associazione']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-						<mat-icon>groups</mat-icon>
-						<span class="sidebar-text">Associazione</span>
-					</button>
-				</li>
-				<li>
-					<button mat-button [routerLink]="['/associazione/statuto']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-						<mat-icon>description</mat-icon>
-						<span>Statuto</span>
-					</button>
-				</li>
-				<li>
-					<button mat-button [routerLink]="['/associazione/regolamento']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-						<mat-icon>gavel</mat-icon>
-						<span>Regolamenti</span>
-					</button>
-				</li>
-				<li>
-					<button mat-button [routerLink]="['/associazione/organi-direttivi']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-						<mat-icon>corporate_fare</mat-icon>
-						<span>Organizzazione</span>
-					</button>
-				</li>
-				<li>
-					<button mat-button [routerLink]="['/associazione/associarsi']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-						<mat-icon>person_add</mat-icon>
-						<span>Associarsi</span>
-					</button>
-				</li>
-				<li>
-					<button mat-button [routerLink]="['/associazione/advisory-board']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-						<mat-icon>assured_workload</mat-icon>
-						<span>Advisory Board</span>
-					</button>
-				</li>
-				<li>
-					<button mat-button [routerLink]="['/associazione/posizioni-ricerca']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-						<mat-icon>work</mat-icon>
-						<span>Posizioni</span>
-					</button>
-				</li>
-				<li>
-					<button mat-button [routerLink]="['/associazione/stage-tirocini']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-						<mat-icon>badge</mat-icon>
-						<span>Stage & Tirocini</span>
-					</button>
-				</li>
-				<li>
-					<button mat-button [routerLink]="['/associazione/notizie']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-						<mat-icon>newspaper</mat-icon>
-						<span>Notizie</span>
-					</button>
-				</li>
-				<li>
-					<button mat-button [routerLink]="['/associazione/dicono-di-noi']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-						<mat-icon>travel_explore</mat-icon>
-						<span>Dicono di noi</span>
-					</button>
-				</li>
-			</ul>
-		</nav>
-	</div>
+	<ul class="bottomnav-menu">
+		<li>
+			<button mat-button [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+				<mat-icon>home</mat-icon>
+				<span>HOME</span>
+			</button>
+		</li>
+		<li>
+			<button mat-button [routerLink]="['/associazione']" routerLinkActive="active"
+				[routerLinkActiveOptions]="{exact: true}">
+				<mat-icon>groups</mat-icon>
+				<span class="sidebar-text">Associazione</span>
+			</button>
+		</li>
+		<li>
+			<button mat-button [routerLink]="['/associazione/statuto']" routerLinkActive="active"
+				[routerLinkActiveOptions]="{exact: true}">
+				<mat-icon>description</mat-icon>
+				<span>Statuto</span>
+			</button>
+		</li>
+		<li>
+			<button mat-button [routerLink]="['/associazione/regolamento']" routerLinkActive="active"
+				[routerLinkActiveOptions]="{exact: true}">
+				<mat-icon>gavel</mat-icon>
+				<span>Regolamenti</span>
+			</button>
+		</li>
+		<li>
+			<button mat-button [routerLink]="['/associazione/organi-direttivi']" routerLinkActive="active"
+				[routerLinkActiveOptions]="{exact: true}">
+				<mat-icon>corporate_fare</mat-icon>
+				<span>Organizzazione</span>
+			</button>
+		</li>
+		<li>
+			<button mat-button [routerLink]="['/associazione/associarsi']" routerLinkActive="active"
+				[routerLinkActiveOptions]="{exact: true}">
+				<mat-icon>person_add</mat-icon>
+				<span>Associarsi</span>
+			</button>
+		</li>
+		<li>
+			<button mat-button [routerLink]="['/associazione/advisory-board']" routerLinkActive="active"
+				[routerLinkActiveOptions]="{exact: true}">
+				<mat-icon>assured_workload</mat-icon>
+				<span>Advisory Board</span>
+			</button>
+		</li>
+		<li>
+			<button mat-button [routerLink]="['/associazione/posizioni-ricerca']" routerLinkActive="active"
+				[routerLinkActiveOptions]="{exact: true}">
+				<mat-icon>work</mat-icon>
+				<span>Posizioni</span>
+			</button>
+		</li>
+		<li>
+			<button mat-button [routerLink]="['/associazione/stage-tirocini']" routerLinkActive="active"
+				[routerLinkActiveOptions]="{exact: true}">
+				<mat-icon>badge</mat-icon>
+				<span>Stage & Tirocini</span>
+			</button>
+		</li>
+		<li>
+			<button mat-button [routerLink]="['/associazione/notizie']" routerLinkActive="active"
+				[routerLinkActiveOptions]="{exact: true}">
+				<mat-icon>newspaper</mat-icon>
+				<span>Notizie</span>
+			</button>
+		</li>
+		<li>
+			<button mat-button [routerLink]="['/associazione/dicono-di-noi']" routerLinkActive="active"
+				[routerLinkActiveOptions]="{exact: true}">
+				<mat-icon>travel_explore</mat-icon>
+				<span>Dicono di noi</span>
+			</button>
+		</li>
+	</ul>
 </div>
