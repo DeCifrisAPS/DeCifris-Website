@@ -139,6 +139,7 @@ a[mat-button]:hover {
     box-sizing: border-box;
   }
 
+  /* Sidebar */
   .sidebar {
     flex: 0 0 60%;
     width: 60%;
@@ -162,6 +163,17 @@ a[mat-button]:hover {
     /* Mostra la sidebar quando è aperta */
   }
 
+  .sidebar-image-button {
+    width: 200px;
+    text-align: left !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    padding-left: 20px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Bottomnav */
   .bottomnav {
     bottom: 0;
     box-sizing: border-box;
@@ -187,9 +199,9 @@ a[mat-button]:hover {
 
   .bottomnav-menu li mat-icon {
     scale: 1.1;
-    padding:0;
+    padding: 0;
     margin-bottom: 5px;
-    padding-left:2px;
+    padding-left: 2px;
     display: inline-block;
     vertical-align: middle;
     color: white;
@@ -222,23 +234,14 @@ a[mat-button]:hover {
     background-color: var(--cifris_orange) !important;
   }
 
+  /* Content */
   .content {
     flex: 1;
     padding: 0;
     box-sizing: border-box;
     margin: 30px 3% 0 3%;
     width: 94%;
-    padding-bottom: 150px!important;
-  }
-
-  .sidebar-image-button {
-    width: 200px;
-    text-align: left !important;
-    display: flex !important;
-    justify-content: flex-start !important;
-    align-items: center !important;
-    padding-left: 20px !important;
-    box-sizing: border-box !important;
+    padding-bottom: 150px !important;
   }
 }
 
@@ -271,6 +274,11 @@ a[mat-button]:hover {
     top: 10%;
     min-width: 20%;
     left: 0;
+  }
+
+  /* Bottomnav */
+  .bottomnav {
+    display: none;
   }
 
   /* Content */
