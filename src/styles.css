@@ -56,6 +56,24 @@ h1 {
 
 hr {
     color: var(--cifris_blue) !important;
+    padding-bottom: 30px !important;
+}
+
+a[mat-button] {
+    text-decoration: none;
+    text-align: left;
+    background: var(--cifris_azure_transparent);
+    padding: 8px 16px;
+    margin: 0px 10px 2px 10px;
+    width: 200px;
+    border-radius: 4px;
+    border: transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a[mat-button]:hover {
+    background-color: var(--cifris_orange);
+    color: white;
 }
 
 .toolbar,
