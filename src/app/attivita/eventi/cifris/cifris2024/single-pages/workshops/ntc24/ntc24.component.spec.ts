@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NtcComponent } from './ntc.component';
+import { Ntc24Component } from './ntc24.component';
 
 describe('NtcComponent', () => {
-  let component: NtcComponent;
-  let fixture: ComponentFixture<NtcComponent>;
+  let component: Ntc24Component;
+  let fixture: ComponentFixture<Ntc24Component>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NtcComponent]
+      imports: [Ntc24Component]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(NtcComponent);
+    fixture = TestBed.createComponent(Ntc24Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

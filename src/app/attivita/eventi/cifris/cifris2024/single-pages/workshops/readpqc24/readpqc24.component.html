@@ -1,4 +1,4 @@
-<h1 style="text-align: center;">RAIPQC24 - Recent Advances in Post-Quantum Cryptography 2024</h1>
+<h1 style="text-align: center;">ReAdPQC24 - Recent Advances in Post-Quantum Cryptography 2024</h1>
 <h2>Organizers</h2>
 <p>
     <b></b>
@@ -22,24 +22,31 @@
     post-quantum cryptography, along with the NIST competition, and focus on cutting-edge methods for designing and
     implementing post-quantum signatures.
 </p>
+<p>
+    <i>
+        This workshop was partially financially supported by the Italian MUR PRIN 2022 project POst quantum
+        Identification and eNcryption primiTives: dEsign and Realization (POINTER) ID-2022M2JLF2.
+    </i>
+</p>
 <h2>Program</h2>
 <p>
     <i> September 27th, workshop session</i>
     <br>
-    <i>Main hall, 14:00 - 17:00</i>
+    <i>Main hall, 14:00 - 16:30</i>
 </p>
 <p>
     Keynote speaker: <b>Thibauld Feneuil</b>, CryptoExperts (France)
 </p>
 <table class="orari" cellspacing="2" cellpadding="2" id="27afternoon">
-    <tr bgcolor="lightblue" id="raipqc24">
+    <tr bgcolor="lightblue">
         <th class="schedule" colspan="2">
             <font size="+1"><b>September 27th (afternoon) - Workshop Session</b></font>
         </th>
     </tr>
     <tr>
         <td class="schedule">
-            TBA
+            14:00
+            14:40
         </td>
         <td>
             <i>
@@ -63,43 +70,69 @@
     </tr>
     <tr>
         <td class="schedule">
-            TBA
-        </td>
-        <td>
-            <i>
-                <b>Andrea Basso</b>, IBM Zurich (Switzerland)
-            </i>
-            <br>
-            TBA
-        </td>
-    </tr>
-    <tr>
-        <td class="schedule">
-            TBA
+            14:40
+            15:05
         </td>
         <td>
             <i>
                 <b>Rocco Mora</b>, CISPA Helmholtz Center for Information Security (Germany)
             </i>
             <br>
-            TBA
+            The Regular Multivariate Quadratic problem
+            <details>
+                <summary>
+                    Abstract
+                </summary>
+                In this talk, we introduce a new NP-complete variant of the multivariate quadratic problem. The
+                computational challenge involves finding a solution to an algebraic system that meets the "regular"
+                constraint, meaning that each block of the solution vector contains only one nonzero entry. Following
+                this, we adapt and compare various techniques of cryptanalysis to study the asymptotic complexity of the
+                average instance.
+            </details>
         </td>
     </tr>
     <tr>
         <td class="schedule">
-            TBA
+            15:05
+            15:15
+        </td>
+        <td>
+            <i>
+                Coffee Break
+            </i>
+        </td>
+    </tr>
+    <tr>
+        <td class="schedule">
+            15:15
+            15:40
         </td>
         <td>
             <i>
                 <b>Ryann Cartor</b>, Clemson University (USA)
             </i>
             <br>
-            TBA
+            MinRank Attacks in Multivariate Cryptography
+            <details>
+                <summary>
+                    Abstract
+                </summary>
+                This talk focuses on the cryptanalysis of post-quantum cryptography schemes, particularly focusing on
+                multivariate and rank-metric code-based cryptosystems. As quantum computing advances, these schemes have
+                gained attention for their unique performance characteristics, but they are vulnerable to MinRank
+                attacks, which have exposed critical security flaws. The MinRank problem, central to these attacks, has
+                been effectively used to break several prominent cryptosystems. This presentation will examine two
+                distinct MinRank-based attacks on the multivariate encryption scheme HFERP, offering new insights into
+                cryptanalytic techniques and their implications for the future of post-quantum cryptography. The
+                discussion highlights the necessity of continuous cryptanalysis and innovation in developing
+                quantum-resistant cryptosystems.
+            </details>
         </td>
     </tr>
     <tr>
         <td class="schedule">
-            TBA
+            15:40
+            16:05
         </td>
         <td>
             <i>
@@ -116,6 +149,32 @@
                 The practicality of FESTA relies on novel efficient algorithms to compute isogenies between abelian
                 surfaces. We will give some intuition on such algorithms and finally discuss recent developments in
                 isogeny-based cryptography.
+            </details>
+        </td>
+    </tr>
+    <tr>
+        <td class="schedule">
+            16:05
+            16:30
+        </td>
+        <td>
+            <i>
+                <b>Andrea Basso</b>, IBM Zurich (Switzerland)
+            </i>
+            <br>
+            SQIsign2D-West: a brand-new 2-dimensional improvement of SQIsign
+            <details>
+                <summary>
+                    Abstract
+                </summary>
+                SQIsign is the leading isogeny-based signature scheme: it is the only isogeny-based candidate in the
+                NIST, and it offers small signatures, at the cost of long computation times.
+                In this talk, we briefly survey the developments of SQIsign over the years, and we introduce
+                SQIsign2D-West, a variant of SQIsign using two-dimensional isogeny representations. The new signature
+                scheme offers remarkable performance (80 ms for signing, 4.5 ms for verification), compact signatures
+                (66 bytes for a public key, 148 bytes for a signature), and strong security (by relying on a simple
+                assumption). This represents an improvement over one-dimensional SQIsign in all metrics and better
+                trade-offs than all SQIsign variants.
             </details>
         </td>
     </tr>

@@ -104,12 +104,12 @@ import { Vol1Component } from './attivita/editoria/koine/vol1/vol1.component';
 import { Vol2Component } from './attivita/editoria/koine/vol2/vol2.component';
 import { ArticlesAndVolumesComponent } from './attivita/editoria/koine/articles-and-volumes/articles-and-volumes.component';
 import { EditorialBoardComponent } from './attivita/editoria/koine/editorial-board/editorial-board.component';
-import { NtcComponent24 } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/ntc/ntc.component';
+import { Ntc24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/ntc24/ntc24.component';
 import { SymcryptComponent24 } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/symcrypt/symcrypt.component';
-import { WorkshopsComponent24 } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/workshops.component';
+import { Workshops24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/workshops24.component';
 import { Fcr24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/fcr24/fcr24.component';
 import { Qcifris24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/qcifris24/qcifris24.component';
-import { Raipqc24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/raipqc24/raipqc24.component';
+import { Readpqc24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/readpqc24/readpqc24.component';
 import { Tac24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/tac24/tac24.component';
 import { Codemath24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/codemath24/codemath24.component';
 import { InstitutionalSession24Component } from './attivita/eventi/cifris/cifris2024/single-pages/main-conference24/institutional-session24/institutional-session24.component';
@@ -117,6 +117,10 @@ import { MainConference24Component } from './attivita/eventi/cifris/cifris2024/s
 import { ScientificSession24Component } from './attivita/eventi/cifris/cifris2024/single-pages/main-conference24/scientific-session24/scientific-session24.component';
 import { Cpsid24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/cpsid24/cpsid24.component';
 import { Cifriscloud24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/cifriscloud24/cifriscloud24.component';
+import { Vol3Component } from './attivita/editoria/koine/vol3/vol3.component';
+import { Vol4Component } from './attivita/editoria/koine/vol4/vol4.component';
+import { SitemapComponent } from './root-elements/sitemap/sitemap.component';
+import { SocialDinner24Component } from './attivita/eventi/cifris/cifris2024/social-dinner24/social-dinner24.component';
 import { ArticoloComponent } from './attivita/editoria/articolo/articolo.component';
 import { articoloGuard } from './attivita/editoria/articolo/articolo.guard';
 
@@ -134,6 +138,7 @@ const routes: Routes = [
 			{ path: "opera24", component: Opera24Component },
 			{ path: "combinatorics24", component: Combinatorics24Component },
 			{ path: "wcc24", component: WCC24Component },
+			{ path: "sitemap", component: SitemapComponent },
 		]
 	},
 
@@ -221,18 +226,19 @@ const routes: Routes = [
 			{ path: "program", component: ProgramComponent24 },
 			{ path: "proceedings", component: ProceedingsComponent24 },
 			{ path: "payment-result", component: PaymentResultComponent24 },
-			{ path: "ntc24", component: NtcComponent24 },
+			{ path: "ntc24", component: Ntc24Component },
 			{ path: "symcrypt24", component: SymcryptComponent24 },
-			{ path: "workshops", component: WorkshopsComponent24 },
+			{ path: "workshops", component: Workshops24Component },
 			{ path: "fcir24", component: Fcr24Component },
 			{ path: "qcifris24", component: Qcifris24Component },
-			{ path: "rapqc24", component: Raipqc24Component },
+			{ path: "readpqc24", component: Readpqc24Component },
 			{ path: "tac24", component: Tac24Component },
 			{ path: "codemath24", component: Codemath24Component },
 			{ path: "cpsid24", component: Cpsid24Component },
 			{ path: "cifriscloud24", component: Cifriscloud24Component },
 			{ path: "institutional-session", component: InstitutionalSession24Component },
 			{ path: "scientific-session", component: ScientificSession24Component },
+			{ path: "dinner", component: SocialDinner24Component },
 		]
 	},
 
@@ -258,6 +264,8 @@ const routes: Routes = [
 			{ path: "editorial-board", component: EditorialBoardComponent },
 			{ path: "vol1", component: Vol1Component },
 			{ path: "vol2", component: Vol2Component },
+			{ path: "vol3", component: Vol3Component },
+			{ path: "vol4", component: Vol4Component },
             { path: ":volume/:article", component: ArticoloComponent, canMatch: [articoloGuard], pathMatch: 'full' },
 		]
 	},
@@ -306,7 +314,8 @@ const routes: Routes = [
 	{ path: 'trends22bis', redirectTo: '/attivita/trends22bis', pathMatch: 'full' },
 	{ path: 'trends23', redirectTo: '/attivita/trends23', pathMatch: 'full' },
 	{ path: 'trends24', redirectTo: '/attivita/trends24', pathMatch: 'full' },
-	{ path: 'cifris24/raipqc24', redirectTo: '/cifris24/rapqc24', pathMatch: 'full' },
+	{ path: 'cifris24/raipqc24', redirectTo: '/cifris24/readpqc24', pathMatch: 'full' },
+	{ path: 'cifris24/rapqc24', redirectTo: '/cifris24/readpqc24', pathMatch: 'full' },
 	{ path: 'cryptowars/2011/classica', redirectTo: '/attivita/cryptowars/2011/classica', pathMatch: 'full' },
 	{ path: 'cryptowars/2011/pubblica', redirectTo: '/attivita/cryptowars/2011/pubblica', pathMatch: 'full' },
 	{ path: 'cryptowars/2011/simmetrica', redirectTo: '/attivita/cryptowars/2011/simmetrica', pathMatch: 'full' },

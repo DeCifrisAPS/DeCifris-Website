@@ -1,7 +1,6 @@
 <h1> REGISTRATION </h1>
 <p style="color: var(--cifris_orange);">
-	Registration deadline for members: August 31st. <br>
-	Registration for non-members: from August 31st to September 15th.
+	Registration deadline: September 15th.
 </p>
 <p>
 	The fees of CIFRIS24 are the following. <br>
@@ -118,11 +117,15 @@ and doesn't cover
 		</tr>
 	</tbody>
 </table>
-<hr>
+<hr id="social-dinner">
 <!-------------------------------------------------------------------->
 <h2> SOCIAL DINNER (Sept. 25th)</h2>
 <p>
-	The additional fee for the social dinner is 50 EUR, and covers the dinner taking place in tge evening of September 25th.
+	The additional fee for the social dinner is 50 EUR, and covers the dinner taking place in the evening of September
+	25th.
+	<br>
+	If you already registered and wish to add the social dinner to your existing registration, contact us at <a
+		href="mailto:cifris24@decifris.it">cifris24&#64;decifris.it</a>.
 	<br> <br>
 	It is possible to join the social dinner with a Companion (Companion fee: 50 EUR), subject to the availability of
 	seats at the venue. Please select the <b>Companion fee</b> option below to pay for a companion, then send an
@@ -132,7 +135,7 @@ and doesn't cover
 <!-------------------------------------------------------------------->
 
 
-<hr><!------------------------------------------------------------------------>
+<hr id="payment"><!------------------------------------------------------------------------>
 
 <h2> PAYMENT </h2>
 <p>
@@ -147,14 +150,13 @@ and doesn't cover
 	please also attach its fiscal data). <br>
 </p>
 <p style="color: red;">
-	Registration deadline for members: August 31st. <br>
-	Registration for non-members: from August 31st to September 15th.
+	Registration deadline: September 15th.
 </p>
 <form id="payForm" class="form" method="POST" (ngSubmit)="checkAndPay($event)">
 	<p>
 		<b style="color:var(--cifris_blue)">CIFRIS24 payment via NEXI</b>
 	</p>
-	<label> Participation </label>
+	<label> Attendance type </label>
 	<div>
 		<input type="radio" id="all" name="participation" checked="checked" (click)=setFee()>
 		<label for="all"> Main event <b>and</b> workshops (Sep. 25th, 26th, 27th) </label><br>
@@ -168,16 +170,16 @@ and doesn't cover
 
 	<label> Fee type </label>
 	<div>
-		<input type="radio" id="regular" name="fee" disabled="true" (click)=setFee()>
+		<input type="radio" id="regular" name="fee" (click)=setFee()>
 		<label for="regular"> Regular fee </label><br>
 
-		<input type="radio" id="scientific_memebers" disabled="true" name="fee" (click)=setFee()>
+		<input type="radio" id="scientific_memebers" name="fee" (click)=setFee()>
 		<label for="scientific_memebers">
 			Regular fee for members of Unione Matematica Italiana, IEEE Computer Society, IEEE Information Theory
 			Society
 		</label><br>
 
-		<input type="radio" id="young" name="fee" disabled="true" (click)=setFee()>
+		<input type="radio" id="young" name="fee" (click)=setFee()>
 		<label for="young"> Regular fee for young participants </label><br>
 
 		<input type="radio" id="member" name="fee" checked="checked" (click)=setFee()>
@@ -187,7 +189,7 @@ and doesn't cover
 
 		<input type="radio" id="companion" name="fee" (click)=setFee()>
 		<label for="companion">
-			Companion fee (only social dinner)
+			Companion fee (social dinner only)
 		</label>
 	</div>
 

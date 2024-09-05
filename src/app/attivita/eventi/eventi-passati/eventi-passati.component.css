@@ -50,7 +50,10 @@ b {
 .card .container {
 	padding: 16px;
 	padding-top: 0px;
-	margin-top: 10px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	margin-top:10px;
 }
 
 .card .container h1 {
@@ -69,3 +72,4 @@ b {
 	color: var(--cifris_orange);
 	text-decoration: none;
 }
+

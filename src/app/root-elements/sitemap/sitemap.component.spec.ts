@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Raipqc24Component } from './raipqc24.component';
+import { SitemapComponent } from './sitemap.component';
 
-describe('Raipqc24Component', () => {
-  let component: Raipqc24Component;
-  let fixture: ComponentFixture<Raipqc24Component>;
+describe('SitemapComponent', () => {
+  let component: SitemapComponent;
+  let fixture: ComponentFixture<SitemapComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Raipqc24Component]
+      imports: [SitemapComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Raipqc24Component);
+    fixture = TestBed.createComponent(SitemapComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

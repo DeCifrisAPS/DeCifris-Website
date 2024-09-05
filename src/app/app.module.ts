@@ -83,7 +83,7 @@ import { ProgramCommitteeComponent24 } from './attivita/eventi/cifris/cifris2024
 import { ProgramComponent24 } from './attivita/eventi/cifris/cifris2024/program/program.component';
 import { SubmissionComponent24 } from './attivita/eventi/cifris/cifris2024/submission/submission.component';
 import { RegistrationComponent24 } from './attivita/eventi/cifris/cifris2024/registration/registration.component';
-import { WorkshopsComponent24 } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/workshops.component';
+import { Workshops24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/workshops24.component';
 
 
 
@@ -136,6 +136,7 @@ import { OrariInstitutionalSession24Component } from './attivita/eventi/cifris/c
 import { OrariScientificSession24Component } from './attivita/eventi/cifris/cifris2024/program/orari-scientific-session24/orari-scientific-session24.component';
 import { Cpsid24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/cpsid24/cpsid24.component';
 import { OrariWorkshops24Component } from './attivita/eventi/cifris/cifris2024/program/orari-workshops24/orari-workshops24.component';
+import { SocialDinner24Component } from './attivita/eventi/cifris/cifris2024/social-dinner24/social-dinner24.component';
 
 // // ./hosting
 // import { Opera24Component } from './hosting/opera24/opera24.component';
@@ -209,10 +210,12 @@ import { OrariWorkshops24Component } from './attivita/eventi/cifris/cifris2024/p
         HomeCifris23Component,
         Vol1Component,
         Vol2Component,
+        Vol3Component,
         ArticlesAndVolumesComponent,
         HomeKoineComponent,
         KoineComponent,
         PaymentResultComponent24,
+        SocialDinner24Component,
         Trends24Component,
         // MailingListComponent,
         // AttivitaComponent,
@@ -341,8 +344,8 @@ import { OrariWorkshops24Component } from './attivita/eventi/cifris/cifris2024/p
         RegistrationComponent24,
         VenueAccomodationComponent24,
         ProgramButtonsComponent,
-        WorkshopsComponent24,
-        WorkshopButtons24Component,
+        Workshops24Component,
+        WorkshopButtons24Component
         //Hosting
         // Opera24Component,
         // Combinatorics24Component,

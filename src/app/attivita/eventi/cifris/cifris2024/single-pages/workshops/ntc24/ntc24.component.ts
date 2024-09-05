@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-ntc',
-  templateUrl: './ntc.component.html',
+  selector: 'app-ntc24',
+  templateUrl: './ntc24.component.html',
   styleUrl: '../../../../../../../../styles-tabelle-orari.css'
 })
-export class NtcComponent24 {
+export class Ntc24Component {
 
 }

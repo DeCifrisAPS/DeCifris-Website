@@ -97,7 +97,15 @@
 							(click)="toggleSidebar()" [routerLinkActiveOptions]="{exact: true}"
 							class="sidebar-image-button">
 							<mat-icon>location_on</mat-icon>
-							<span class="sidebar-text">Venue</span>
+							<span class="sidebar-text">Venue & shuttles</span>
+						</button>
+					</li>
+					<li>
+						<button mat-button [routerLink]="['/cifris24/dinner']" routerLinkActive="active"
+							(click)="toggleSidebar()" [routerLinkActiveOptions]="{exact: true}"
+							class="sidebar-image-button">
+							<mat-icon>restaurant</mat-icon>
+							<span class="sidebar-text">Social event</span>
 						</button>
 					</li>
 					<li>
