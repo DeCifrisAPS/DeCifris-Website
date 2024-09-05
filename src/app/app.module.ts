@@ -249,7 +249,6 @@ import { SocialDinner24Component } from './attivita/eventi/cifris/cifris2024/soc
         EventoConoscitivoComponent,
         ItasecComponent,
         EventoCifrischainComponent,
-        Vol3Component,
         InstitutionalSession24Component,
         ScientificSession24Component,
         MainConference24Component,
@@ -345,7 +344,7 @@ import { SocialDinner24Component } from './attivita/eventi/cifris/cifris2024/soc
         VenueAccomodationComponent24,
         ProgramButtonsComponent,
         Workshops24Component,
-        WorkshopButtons24Component
+        WorkshopButtons24Component,
         //Hosting
         // Opera24Component,
         // Combinatorics24Component,

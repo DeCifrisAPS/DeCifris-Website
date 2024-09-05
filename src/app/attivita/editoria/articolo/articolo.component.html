@@ -19,11 +19,11 @@
   <li><a class="text-muted" title="doi" href="https://doi.org/{{ theArticle.doi }}">https://doi.org/{{ theArticle.doi }}</a></li>
   <li>Published by De Cifris Press, {{ theVolume.published }}</li>
 </ul>
-<p>
-  <a mat-raised-button style="background-color: var(--cifris_azure)" title="pdf" href="{{ theArticle.pdfLink }}">Download official article (PDF), pp. {{ theArticle.pageRange }}</a>
+<p style="line-height: 3.5;">
+  <a mat-raised-button title="pdf" href="{{ theArticle.pdfLink }}">Download official article (PDF), pp. {{ theArticle.pageRange }}</a>
   @if (theArticle.pdfRevisedLink !== undefined) {
     &nbsp;
-    <a mat-raised-button style="background-color: var(--cifris_azure)" title="pdf" href="{{ theArticle.pdfLink }}">Download revised article with errata (PDF)</a>
+    <a mat-raised-button title="pdf" href="{{ theArticle.pdfLink }}">Download revised article with errata (PDF)</a>
   }
 </p>
 @if (theArticle.abstract !== undefined && theArticle.abstract !== "") {

@@ -122,7 +122,7 @@ export class ArticoloComponent {
 
   generateHandle(tag: string, published: string, authors: Author[]): string {
     let sep = ":";
-    let year = published.split(' ')[1];
+    let year = published.split(' ')[1].slice(2);
     if (authors.length === 1) {
       return tag + sep + authors[0].surname.replace('\'', '').split(' ').join('') + year;
     } else if (authors.length > 1 && authors.length < 4) {
