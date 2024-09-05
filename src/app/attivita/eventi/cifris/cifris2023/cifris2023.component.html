@@ -3,7 +3,7 @@
 		<nav class="sidebar" id="sidebar">
 			<ul>
 				<li>
-					<button mat-button [routerLink]="['/']" routerLinkActive="active" (click)="toggleSidebar()" 
+					<button mat-button [routerLink]="['/']" routerLinkActive="active" (click)="toggleSidebar()"
 						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
 						<mat-icon>home</mat-icon>
 						<span class="sidebar-text">HOME</span>
@@ -11,29 +11,32 @@
 				</li>
 				<h5>CIFRIS 23 - ROME</h5>
 				<li>
-					<button mat-button [routerLink]="['/cifris23']" routerLinkActive="active" (click)="toggleSidebar()" 
+					<button mat-button [routerLink]="['/cifris23']" routerLinkActive="active" (click)="toggleSidebar()"
 						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
 						<mat-icon>stadium</mat-icon>
 						<span class="sidebar-text">CIFRIS23</span>
 					</button>
 				</li>
 				<li>
-					<button mat-button [routerLink]="['/cifris23/registration']" routerLinkActive="active" (click)="toggleSidebar()" 
-						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+					<button mat-button [routerLink]="['/cifris23/registration']" routerLinkActive="active"
+						(click)="toggleSidebar()" [routerLinkActiveOptions]="{exact: true}"
+						class="sidebar-image-button">
 						<mat-icon>event_seat</mat-icon>
 						<span class="sidebar-text">Registration</span>
 					</button>
 				</li>
 				<li>
-					<button mat-button [routerLink]="['/cifris23/program']" routerLinkActive="active" (click)="toggleSidebar()" 
-						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+					<button mat-button [routerLink]="['/cifris23/program']" routerLinkActive="active"
+						(click)="toggleSidebar()" [routerLinkActiveOptions]="{exact: true}"
+						class="sidebar-image-button">
 						<mat-icon>date_range</mat-icon>
 						<span class="sidebar-text">Program</span>
 					</button>
 				</li>
 				<li>
-					<button mat-button [routerLink]="['/cifris23/proceedings']" routerLinkActive="active" (click)="toggleSidebar()" 
-						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+					<button mat-button [routerLink]="['/cifris23/proceedings']" routerLinkActive="active"
+						(click)="toggleSidebar()" [routerLinkActiveOptions]="{exact: true}"
+						class="sidebar-image-button">
 						<mat-icon>menu_book</mat-icon>
 						<span class="sidebar-text">Proceedings</span>
 					</button>
@@ -52,5 +55,41 @@
 			</p>
 		</div>
 		<router-outlet></router-outlet>
+	</div>
+	<div class="bottomnav">
+		<nav class="bottombar" id="bottomnav">
+			<ul class="bottomnav-menu">
+				<li>
+					<button mat-button [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" >
+						<mat-icon>home</mat-icon>
+						<span>HOME</span>
+					</button>
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/cifris23']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+						<mat-icon>stadium</mat-icon>
+						<span>CIFRIS23</span>
+					</button>
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/cifris23/registration']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+						<mat-icon>event_seat</mat-icon>
+						<span>Registration</span>
+					</button>
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/cifris23/program']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+						<mat-icon>date_range</mat-icon>
+						<span>Program</span>
+					</button>
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/cifris23/proceedings']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+						<mat-icon>menu_book</mat-icon>
+						<span>Proceedings</span>
+					</button>
+				</li>
+			</ul>
+		</nav>
 	</div>
 </div>

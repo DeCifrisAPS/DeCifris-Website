@@ -52,7 +52,3 @@ img.venue {
     display: inline-block;
     border: 2px solid var(--cifris_blue);
 }
-
-hr {
-    padding-bottom: 30px;
-}
