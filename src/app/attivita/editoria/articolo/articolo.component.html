@@ -5,12 +5,12 @@
     @if ($index !== 0) {
       <span>, </span>
     }
-    <span>{{ author.name }}</span>
+    <span>{{ author.name }} {{ author.surname }}</span>
   }
 </p>
 <ul id="preamble">
   <li>
-    From the journal <a href="/koine" title="Koine">De Cifris Koine</a>.
+    From the book series <a href="/koine" title="Koine">De Cifris Koine</a>.
     In
     <a [title]="theVolume.title"
         href="/koine/{{theVolume.id}}">
@@ -20,12 +20,30 @@
   <li>Published by De Cifris Press, {{ theVolume.published }}</li>
 </ul>
 <p>
-  <a mat-raised-button style="background-color: var(--cifris_azure)" title="pdf" href="{{ theArticle.pdfLink }}">Download article (PDF), pp. {{ theArticle.pageRange }}</a>
+  <a mat-raised-button style="background-color: var(--cifris_azure)" title="pdf" href="{{ theArticle.pdfLink }}">Download official article (PDF), pp. {{ theArticle.pageRange }}</a>
+  @if (theArticle.pdfRevisedLink !== undefined) {
+    &nbsp;
+    <a mat-raised-button style="background-color: var(--cifris_azure)" title="pdf" href="{{ theArticle.pdfLink }}">Download revised article with errata (PDF)</a>
+  }
 </p>
-@if (theArticle.abstract !== "") {
+@if (theArticle.abstract !== undefined && theArticle.abstract !== "") {
   <hr />
   <h2>Abstract</h2>
   <p style="white-space: pre-wrap; font-size: 1rem; line-height: 1.5 ">{{ theArticle.abstract }}</p>
+}
+@if (theArticle.keywords !== undefined) {
+  <p>
+  Keywords:
+  @for (keyword of theArticle.keywords; track keyword) {
+    @if ($index !== 0) {
+      <span>, </span>
+    }
+    <span>{{ keyword }}</span>
+  }
+  </p>
+}
+@if (theArticle.note !== undefined) {
+  <p><b>Note:</b> {{ theArticle.note }}</p>
 }
 <h3>Cite this</h3>
 <code class="card card-body" style="margin-top: 0.5rem;"><pre style="margin:0;">{{ bibtex }}</pre></code>

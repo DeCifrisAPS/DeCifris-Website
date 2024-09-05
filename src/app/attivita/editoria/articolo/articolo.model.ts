@@ -11,7 +11,10 @@ export interface Volume {
 }
 
 export interface Author {
-  name: string
+  name: string;
+  surname?: string;
+  affiliation?: string;
+  ORCID?: string;
 }
 
 export interface Articolo {
@@ -21,5 +24,8 @@ export interface Articolo {
   pageRange: string;
   doi: string;
   pdfLink: string;
-  abstract: string;
+  abstract?: string;
+  note?: string;
+  keywords?: string[];
+  pdfRevisedLink?: string;
 }

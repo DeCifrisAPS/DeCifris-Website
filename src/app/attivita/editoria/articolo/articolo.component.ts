@@ -96,24 +96,40 @@ export class ArticoloComponent {
         this.metaService.addTag({ name: 'citation_issn', content: this.theVolume.ISSN });
         this.metaService.addTag({ name: 'citation_isbn', content: this.theVolume.ISBN });
         for (let author of this.theArticle.authors) {
-          this.metaService.addTag({ name: 'citation_author', content: author.name });
+          this.metaService.addTag({ name: 'citation_author', content: author.name + " " + author.surname });
         }
         this.metaService.addTag({ name: 'citation_publication_date', content: this.theVolume.publisher });
         this.metaService.addTag({ name: 'citation_publication_date', content: this.theVolume.published });
 
-        this.bibtex = "@article{koine:" + this.theVolume.id + "-" + this.theArticle.id + ","
-            + '\n  author = {' + this.theArticle.authors.map(a => a.name).join(" and ") + '},'
+        this.bibtex = '@incollection{' + this.generateHandle('KOINE', this.theVolume.published, this.theArticle.authors) + ','
+            + '\n  author = {' + this.theArticle.authors.map(a => a.surname + ", " + a.name).join(" and ") + '},'
             + '\n  title = {' + this.theArticle.title + '},'
-            + '\n  journal = {Koine},'
+            + '\n  booktitle = {' + this.theVolume.title + '},'
             + '\n  year = {' + this.theVolume.published.split(" ")[1] + '},'
+            + '\n  month = {' + this.theVolume.published.split(" ")[0] + '},'
+            + '\n  publisher = {' + this.theVolume.publisher + '},'
+            + '\n  series = {De Cifris Koine},'
             + '\n  pages = {' + this.theArticle.pageRange.split("-").join("--") + '},'
             + '\n  volume = {' + this.theVolume.id.split("vol")[1] + '},'
-            + '\n  doi = {' + this.theArticle.doi + '},'
-            + '\n  issn = {' + this.theVolume.ISSN + '},'
-            + '\n  isbn = {' + this.theVolume.ISBN + '}'
+            + '\n  url = {https://doi.org/' + this.theArticle.doi + '},'
+            + '\n  DOI = {' + this.theArticle.doi + '},'
+            + '\n  ISSN = {' + this.theVolume.ISSN + '},'
+            + '\n  ISBN = {' + this.theVolume.ISBN + '}'
             + "\n}";
       });
     });
+  }
+
+  generateHandle(tag: string, published: string, authors: Author[]): string {
+    let sep = ":";
+    let year = published.split(' ')[1];
+    if (authors.length === 1) {
+      return tag + sep + authors[0].surname.replace('\'', '').split(' ').join('') + year;
+    } else if (authors.length > 1 && authors.length < 4) {
+      return tag + sep + authors.map(a => a.surname.replace('\'', '').split(' ').join('').substring(0, 3)).join('') + year;
+    } else {
+      return tag + sep + authors.map(a => a.surname.replace('\'', '').substring(0, 1)).join('') + year;
+    }
   }
 
 }
