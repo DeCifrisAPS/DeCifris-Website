@@ -1,8 +1,13 @@
+<hr>
 <h2>September 27th</h2>
 <table class="orari" cellspacing="2" cellpadding="2" id="27morning">
     <tr bgcolor="lightblue">
         <th class="schedule" colspan="2">
-            <font size="+1"><b>September 27th (morning) - Workshop Session</b></font>
+            <font size="+1">
+                <b>September 27th (morning) - Workshop Session</b>
+                <br>
+                <i class="location">Centro D. Menichella, Largo Guido Carli 1, Frascati (Rome)</i>
+            </font>
         </th>
     </tr>
     <tr id="fcir24-i">
@@ -444,12 +449,12 @@
                 <li>
                     <i><b>Luca Mariot</b>, University of Twente (Netherlands)</i>
                     <br>
-                    On the computation of the Walsh-Hadamard Transform using Binomial Trees 
+                    On the computation of the Walsh-Hadamard Transform using Binomial Trees
                 </li>
                 <li>
                     <i><b>Sihem Mesnager</b>, University of Paris VIII (France)</i>
                     <br>
-                    TBA
+                    (Cryptographic) Functions for Designing Locally Recoverable Codes in Distributed Storage
                 </li>
             </ul>
             <button mat-button (click)="toggleShowMoreSYMCRYPT()" class="btn-showmore">
@@ -559,11 +564,36 @@
                 </i>
             </p>
             <p *ngIf="showMoreQCIFRIS">
-                TBA.
+                Countering the growing level of cybercrime requires an ever-innovative approach. Quantum
+                Technologies propose solutions for cryptographic key exchange and random number generation
+                that are radically new compared to the algorithmic approach, with which they can be integrated to
+                achieve the highest levels of security.
+                The state of the art and perspectives in this area will be presented. The status of quantum
+                computing in cryptanalysis will also be presented.
             </p>
-            <p *ngIf="showMoreQCIFRIS">
-                <b>Program:</b> TBA.
-            </p>
+            <ul *ngIf="showMoreQCIFRIS">
+                <li>
+                    <i><b>Paolo Villoresi</b>, University of Padova (Italy)</i>
+                    <br>
+                    Quantum communication protocols and quantum computing
+                </li>
+                <li>
+                    <i><b>Simone Montangero</b>, University of Padova (Italy)</i>
+                    <br>
+                    TBA
+                </li>
+                <li>
+                    <i><b>Alessandro Zavatta</b>, CNR-INO (Italy)</i>
+                    <br>
+                    Quantum Communications for Enhanced Security: Technology and Applications
+                </li>
+                <li>
+                    <i><b>Fabio Sciarrino</b>, University of Roma La Sapienza (Italy)</i>, and
+                    <i><b>Giuseppe Vallone</b>, University of Padova (Italy)</i>
+                    <br>
+                    TBA
+                </li>
+            </ul>
             <button mat-button (click)="toggleShowMoreQCIFRIS()" class="btn-showmore">
                 {{ showMoreQCIFRIS ? 'Show Less' : 'Show More' }}
             </button>
@@ -660,7 +690,8 @@
         <!-- WORKSHOP PQ   -->
         <!------------------------------>
         <td>
-            <em><b style="color:var(--cifris_blue)"> ReAdPQC24 - Recent Advances in Post-Quantum Cryptography 2024</b></em>
+            <em><b style="color:var(--cifris_blue)"> ReAdPQC24 - Recent Advances in Post-Quantum Cryptography
+                    2024</b></em>
             <!-- VERSIONE NORMALE -->
             <p>
                 An overview of the state of the art in PQ cryptography, the NIST competition, and cutting-edge methods

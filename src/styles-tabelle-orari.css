@@ -92,8 +92,20 @@ dire che sarà solo in italiano.
   color: var(--cifris_scarlet);
   font-weight: 450;
 }
-div.disclaimer-box{
-    margin: -10px 0 0 10px;
-    padding:0;
-    padding-top:-10px;
+
+div.disclaimer-box {
+  margin: -10px 0 0 10px;
+  padding: 0;
+  padding-top: -10px;
+}
+
+/** 
+Questo è idealmente un elemento da inserire nell'header di ogni tabella per specificare 
+la location di quella parte di conferenza - che forse è diversa dalle altre.
+**/
+.location {
+  font-size: smaller;
+  font-style: normal!important;
+  line-height: 1 !important;
+  font-weight: 450;
 }
