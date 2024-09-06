@@ -135,6 +135,8 @@ import { OrariScientificSession24Component } from './attivita/eventi/cifris/cifr
 import { Cpsid24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/cpsid24/cpsid24.component';
 import { OrariWorkshops24Component } from './attivita/eventi/cifris/cifris2024/program/orari-workshops24/orari-workshops24.component';
 import { SocialDinner24Component } from './attivita/eventi/cifris/cifris2024/social-dinner24/social-dinner24.component';
+import { ProceedingsButton24Component } from './attivita/eventi/cifris/cifris2024/proceedings/proceedings-button24/proceedings-button24.component';
+import { ProceedingsComponent24 } from './attivita/eventi/cifris/cifris2024/proceedings/proceedings.component';
 
 // // ./hosting
 // import { Opera24Component } from './hosting/opera24/opera24.component';
@@ -342,7 +344,9 @@ import { SocialDinner24Component } from './attivita/eventi/cifris/cifris2024/soc
         VenueAccomodationComponent24,
         ProgramButtonsComponent,
         Workshops24Component,
-        WorkshopButtons24Component
+        WorkshopButtons24Component,
+        ProceedingsButton24Component,
+        ProceedingsComponent24
         //Hosting
         // Opera24Component,
         // Combinatorics24Component,
