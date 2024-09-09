@@ -35,7 +35,7 @@ img {
 	bottom: 0;
     top:0;
 	padding: 10px;
-	background: rgba(0, 0, 0, 0.7);
+	background: var(--cifris_green);
 	text-align: center;
 	box-sizing: border-box;
     border-radius: 5px;

@@ -121,6 +121,7 @@ import { Vol3Component } from './attivita/editoria/koine/vol3/vol3.component';
 import { Vol4Component } from './attivita/editoria/koine/vol4/vol4.component';
 import { SitemapComponent } from './root-elements/sitemap/sitemap.component';
 import { SocialDinner24Component } from './attivita/eventi/cifris/cifris2024/social-dinner24/social-dinner24.component';
+import { TimelineComponent } from './associazione/organi-direttivi/timeline/timeline.component';
 
 
 // importante mettere come children tutti quelli che condividono la stessa sidebar, dato
@@ -155,6 +156,7 @@ const routes: Routes = [
 			{ path: "obiettivi", component: ObiettiviComponent },
 			{ path: "dicono-di-noi", component: DiconoDiNoiComponent },
 			{ path: "notizie", component: NotizieComponent },
+			{ path: "timeline", component: TimelineComponent },
 		]
 	},
 
