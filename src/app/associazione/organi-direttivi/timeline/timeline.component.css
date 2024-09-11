@@ -7,7 +7,6 @@ li {
   background: var(--cifris_gray);
   border: 3px solid var(--cifris_darkgray);
   border-radius: 5px;
-  width: 450px;
 }
 b {
   color: var(--cifris_orange);

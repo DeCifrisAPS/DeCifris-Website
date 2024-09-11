@@ -109,3 +109,20 @@ la location di quella parte di conferenza - che forse è diversa dalle altre.
   line-height: 1 !important;
   font-weight: 450;
 }
+
+b.normal-speaker{
+  font-weight: normal!important;
+  font-style: italic!important;
+  color: var(--cifris_blue)!important;
+}
+b.invited-speaker{
+  color: var(--cifris_blue)!important;
+  font-weight: bold!important;
+  font-style: normal!important;
+}
+b.mini-session{
+  color: var(--cifris_orange)!important;
+  font-weight: bold!important;
+  font-style: italic!important;
+}
+
