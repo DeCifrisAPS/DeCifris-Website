@@ -1,13 +1,45 @@
-ul {
-  list-style: none;
+.temple {
+  background-image: url("../../../../assets/images/events/2024/cifris24/sfondo_2.jpg") !important;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
 }
-li {
-  margin-bottom: 10px;
-  padding: 5px;
-  background: var(--cifris_gray);
+
+.timeline-card {
+  width: 50%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: 3px solid var(--cifris_darkgray);
-  border-radius: 5px;
+  background-image: url("../../../../assets/images/events/2024/cifris24/sfondo.jpg");
 }
-b {
-  color: var(--cifris_orange);
+
+mat-card-header {
+  color: var(--cifris_darkgray);
+  text-align: center;
+  border-radius: 15px 15px 0 0;
+}
+
+mat-card-title {
+  font-weight: 700;
+}
+
+mat-card-subtitle {
+  font-style: italic;
+  color: var(--cifris_gray);
+}
+
+mat-card-content {
+  padding: 16px;
+  color: var(--cifris_darkgray)!important;
+}
+
+h1{
+  color: var(--cifris_darkgray)!important;
 }

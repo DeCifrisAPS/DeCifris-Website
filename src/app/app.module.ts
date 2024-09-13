@@ -137,6 +137,7 @@ import { OrariWorkshops24Component } from './attivita/eventi/cifris/cifris2024/p
 import { SocialDinner24Component } from './attivita/eventi/cifris/cifris2024/social-dinner24/social-dinner24.component';
 import { ProceedingsButton24Component } from './attivita/eventi/cifris/cifris2024/proceedings/proceedings-button24/proceedings-button24.component';
 import { ProceedingsComponent24 } from './attivita/eventi/cifris/cifris2024/proceedings/proceedings.component';
+import { TimelineComponent } from './associazione/organi-direttivi/timeline/timeline.component';
 
 // // ./hosting
 // import { Opera24Component } from './hosting/opera24/opera24.component';
@@ -217,6 +218,7 @@ import { ProceedingsComponent24 } from './attivita/eventi/cifris/cifris2024/proc
         PaymentResultComponent24,
         SocialDinner24Component,
         Trends24Component,
+        TimelineComponent,
         // MailingListComponent,
         // AttivitaComponent,
         // OpportunitaComponent,

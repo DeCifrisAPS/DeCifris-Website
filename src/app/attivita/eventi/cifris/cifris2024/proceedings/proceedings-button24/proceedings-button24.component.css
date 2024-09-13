@@ -59,11 +59,13 @@ p {
 
 p.title {
 	font-style: italic;
+	font-size:12pt;
 	-webkit-box-orient: vertical;
 }
 
 p.author {
     margin-top: 5px;
+	font-size:11pt;
 	font-weight: bold;
 }
 
