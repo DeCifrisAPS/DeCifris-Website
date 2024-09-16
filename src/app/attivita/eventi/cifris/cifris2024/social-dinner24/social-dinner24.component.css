@@ -45,3 +45,12 @@
   border-radius: 15px;
   height: fit-content !important;
 }
+
+.off{
+  width: 200px;
+  background-color: lightgray;
+  color: gray;
+  margin: 5px;
+  padding:2px;
+  padding-left:10px
+}
