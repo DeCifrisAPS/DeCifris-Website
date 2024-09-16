@@ -13,6 +13,15 @@ export class NewsComponent implements OnInit {
   }
   articoli = [
     {
+      title: 'Ultimo giorno per iscriversi a CIFRIS24!',
+      date: '16 settembre 2024',
+      content: `Oggi scadono le iscrizioni per il secondo convegno nazionale italiano di crittografia, CIFRIS24. L'evento si terrà a Frascati (Roma) dal 25 al 27 settembre. `,
+      links: [
+        { text: 'Registrati', link: '/cifris24/registration' },
+        { text: 'Vedi il programma', link: '/cifris24/program' }
+      ]
+    },
+    {
       title: 'Cento Tesi di Crittografia e Codici in Italia: 2014-2023',
       date: '07 giugno 2024',
       content: `Annunciata la pubblicazione del secondo volume di Cento Tesi di Crittografia e Codici in Italia, 
@@ -42,7 +51,7 @@ export class NewsComponent implements OnInit {
                 dove molti eccellenti crittografi presenteranno i loro risultati.`,
       links: [
         { text: 'Iscriviti a CIFRIS24', link: 'https://www.decifris.it/cifris24/registration' },
-        { text: 'Leggi su LinkedIn', link: "https://www.linkedin.com/posts/de-cifris-associazione-nazionale-8274501a5_first-cfp-cifris24-activity-7167893521591386112-1TkD"}
+        { text: 'Leggi su LinkedIn', link: "https://www.linkedin.com/posts/de-cifris-associazione-nazionale-8274501a5_first-cfp-cifris24-activity-7167893521591386112-1TkD" }
       ]
     },
     {
