@@ -341,58 +341,72 @@
             </a>
         </td>
     </tr>
-    <tr id="cpsid24">
+    <tr id="qcifris24">
         <td class="schedule"> 11:20<br>11:40 </td>
         <td><em> Coffee break </em></td>
-    </tr>
-    <tr>
+    </tr><tr>
         <td class="schedule"> 11:40<br>13:00 </td>
         <!------------------------------>
-        <!-- WORKSHOP IDENTITY        -->
+        <!-- WORKSHOP FISICI   -->
         <!------------------------------>
         <td>
-            <em><b style="color:var(--cifris_blue)"> CPSID - Cryptography, Protocols and Security in Digital Identity
-                    2024</b></em>
+            <em><b style="color:var(--cifris_blue)"> QCifris - Quantum Cifris 2024</b></em>
             <!-- VERSIONE NORMALE -->
             <p>
-                We will explore the two main standards, EUDI-ARF and W3C-DID/W3C-VC, their cryptography, protocols,
-                threat models and mitigations, but also emerging cryptographic schemes.
+                Advances in quantum technologies and applications in cryptography from the perspective of Physics.
             </p>
             <!-- VERSIONE ESTESA -->
-            <p *ngIf="showMoreCPSID">
+            <p *ngIf="showMoreQCIFRIS">
                 Organisers:
                 <i>
-                    Andrea D'Intino (Dyne Foundation), Denis "Jaromil" Roio (Dyne Foundation)
+                    Paolo Villoresi (Università di Padova) <br>
+                    Marco Genovese (INRIM-Torino) <br>
+                    Fabio Sciarrino (Università di Roma La Sapienza) <br>
+                    Cristian Antonelli (Università dell’Aquila) <br>
+                    Giuseppe Vallone (Università di Padova)
                 </i>
             </p>
-            <p *ngIf="showMoreCPSID">
-                The seminar dives into the two main current identity standards, EUDI-ARF and
-                W3C-DID/W3C-VC and describe their cryptography, protocols, threat models and mitigations,
-                highlighting pros and cons of each element. The seminar also offers a view about new and emerging
-                cryptographic schemes in the identity space.
+            <p *ngIf="showMoreQCIFRIS">
+                Countering the growing level of cybercrime requires an ever-innovative approach. Quantum
+                Technologies propose solutions for cryptographic key exchange and random number generation
+                that are radically new compared to the algorithmic approach, with which they can be integrated to
+                achieve the highest levels of security.
+                The state of the art and perspectives in this area will be presented. The status of quantum
+                computing in cryptanalysis will also be presented.
             </p>
-            <ul *ngIf="showMoreCPSID">
+            <ul *ngIf="showMoreQCIFRIS">
                 <li>
-                    <i><b>Andrea D'Intino</b>, Dyne Foundation (Netherlands)</i>
+                    <i><b>Paolo Villoresi</b>, University of Padova (Italy)</i>
                     <br>
-                    Overview of the current digital identity standards
+                    Quantum communication protocols and quantum computing
                 </li>
                 <li>
-                    <i><b>Francesco Marino</b>, Poligrafico e Zecca dello Stato (Italy)</i>
+                    <i><b>Fabio Sciarrino</b>, University of Roma La Sapienza (Italy)</i>
                     <br>
-                    Current status of the implementation of the Italian Wallet and Trust Framework Infrastructure
+                    Entanglement for quantum key distribution
                 </li>
                 <li>
-                    <i><b>Simone Onofri</b>, W3.org (USA)</i>, and
-                    <i><b>Denis Roio</b>, Dyne Foundation (Netherlands)</i>
+                    <i><b>Simone Montangero</b>, University of Padova (Italy)</i>
                     <br>
-                    Challenges and upcoming standards
+                    Quantum Computing in Cybersecurity
+                </li>
+                <li>
+                    <i><b>Giuseppe Vallone</b>, University of Padova (Italy)</i>
+                    <br>
+                    Genuine random numbers from quantum processes for cybersecurity
+                </li>
+                <li>
+                    <i><b>Alessandro Zavatta</b>, CNR-INO (Italy)</i>, and
+                    <i><b>Simone Capeleto</b>, ThinkQuantum SRL (Italy)</i>
+                    <br>
+                    National and European Quantum Communications for Enhanced Security: Technology and
+                    Applications
                 </li>
             </ul>
-            <button mat-button (click)="toggleShowMoreCPSID()" class="btn-showmore">
-                {{ showMoreCPSID ? 'Show Less' : 'Show More' }}
+            <button mat-button (click)="toggleShowMoreQCIFRIS()" class="btn-showmore">
+                {{ showMoreQCIFRIS ? 'Show Less' : 'Show More' }}
             </button>
-            <a mat-button href="/cifris24/cpsid24" class="btn-showmore" style="margin-left: 10px;">
+            <a mat-button href="/cifris24/qcifris24" class="btn-showmore" style="margin-left: 10px;">
                 Show all details
             </a>
         </td>
@@ -540,7 +554,7 @@
         <td class="schedule">13:00<br>14:00</td>
         <td><em> Lunch </em></td>
     </tr>
-    <tr id="qcifris24">
+    <tr id="cpsid24">
         <td colspan="2">
             <h2>ROOM D</h2>
         </td>
@@ -548,66 +562,51 @@
     <tr>
         <td class="schedule"> 10:00<br>11:20 </td>
         <!------------------------------>
-        <!-- WORKSHOP FISICI   -->
+        <!-- WORKSHOP IDENTITY        -->
         <!------------------------------>
         <td>
-            <em><b style="color:var(--cifris_blue)"> QCifris - Quantum Cifris 2024</b></em>
+            <em><b style="color:var(--cifris_blue)"> CPSID - Cryptography, Protocols and Security in Digital Identity
+                    2024</b></em>
             <!-- VERSIONE NORMALE -->
             <p>
-                Advances in quantum technologies and applications in cryptography from the perspective of Physics.
+                We will explore the two main standards, EUDI-ARF and W3C-DID/W3C-VC, their cryptography, protocols,
+                threat models and mitigations, but also emerging cryptographic schemes.
             </p>
             <!-- VERSIONE ESTESA -->
-            <p *ngIf="showMoreQCIFRIS">
+            <p *ngIf="showMoreCPSID">
                 Organisers:
                 <i>
-                    Paolo Villoresi (Università di Padova) <br>
-                    Marco Genovese (INRIM-Torino) <br>
-                    Fabio Sciarrino (Università di Roma La Sapienza) <br>
-                    Cristian Antonelli (Università dell’Aquila) <br>
-                    Giuseppe Vallone (Università di Padova)
+                    Andrea D'Intino (Dyne Foundation), Denis "Jaromil" Roio (Dyne Foundation)
                 </i>
             </p>
-            <p *ngIf="showMoreQCIFRIS">
-                Countering the growing level of cybercrime requires an ever-innovative approach. Quantum
-                Technologies propose solutions for cryptographic key exchange and random number generation
-                that are radically new compared to the algorithmic approach, with which they can be integrated to
-                achieve the highest levels of security.
-                The state of the art and perspectives in this area will be presented. The status of quantum
-                computing in cryptanalysis will also be presented.
+            <p *ngIf="showMoreCPSID">
+                The seminar dives into the two main current identity standards, EUDI-ARF and
+                W3C-DID/W3C-VC and describe their cryptography, protocols, threat models and mitigations,
+                highlighting pros and cons of each element. The seminar also offers a view about new and emerging
+                cryptographic schemes in the identity space.
             </p>
-            <ul *ngIf="showMoreQCIFRIS">
+            <ul *ngIf="showMoreCPSID">
                 <li>
-                    <i><b>Paolo Villoresi</b>, University of Padova (Italy)</i>
+                    <i><b>Andrea D'Intino</b>, Dyne Foundation (Netherlands)</i>
                     <br>
-                    Quantum communication protocols and quantum computing
+                    Overview of the current digital identity standards
                 </li>
                 <li>
-                    <i><b>Fabio Sciarrino</b>, University of Roma La Sapienza (Italy)</i>
+                    <i><b>Francesco Marino</b>, Poligrafico e Zecca dello Stato (Italy)</i>
                     <br>
-                    Entanglement for quantum key distribution
+                    Current status of the implementation of the Italian Wallet and Trust Framework Infrastructure
                 </li>
                 <li>
-                    <i><b>Simone Montangero</b>, University of Padova (Italy)</i>
+                    <i><b>Simone Onofri</b>, W3.org (USA)</i>, and
+                    <i><b>Denis Roio</b>, Dyne Foundation (Netherlands)</i>
                     <br>
-                    Quantum Computing in Cybersecurity
-                </li>
-                <li>
-                    <i><b>Giuseppe Vallone</b>, University of Padova (Italy)</i>
-                    <br>
-                    Genuine random numbers from quantum processes for cybersecurity
-                </li>
-                <li>
-                    <i><b>Alessandro Zavatta</b>, CNR-INO (Italy)</i>, and
-                    <i><b>Simone Capeleto</b>, ThinkQuantum SRL (Italy)</i>
-                    <br>
-                    National and European Quantum Communications for Enhanced Security: Technology and
-                    Applications
+                    Challenges and upcoming standards
                 </li>
             </ul>
-            <button mat-button (click)="toggleShowMoreQCIFRIS()" class="btn-showmore">
-                {{ showMoreQCIFRIS ? 'Show Less' : 'Show More' }}
+            <button mat-button (click)="toggleShowMoreCPSID()" class="btn-showmore">
+                {{ showMoreCPSID ? 'Show Less' : 'Show More' }}
             </button>
-            <a mat-button href="/cifris24/qcifris24" class="btn-showmore" style="margin-left: 10px;">
+            <a mat-button href="/cifris24/cpsid24" class="btn-showmore" style="margin-left: 10px;">
                 Show all details
             </a>
         </td>
