@@ -18,7 +18,7 @@ export class ArticoloComponent {
 
   bibtex: string = "";
   theVolume: Volume = { id: "", title: "", publisher: "", published: "", series: "", ISBN: "", ISSN: "", volumeLink: "", coverLink: "", articles: [] };
-  theArticle: Articolo = { id: "", title: "", authors: [], pageRange: "", doi: "", pdfLink: "", abstract: "" };
+  theArticle: Articolo = { id: "", title: "", language: "", authors: [], pageRange: "", doi: "", pdfLink: "", abstract: "" };
 
   constructor(private metaService: Meta, private titleService: Title, private route: ActivatedRoute, private articoloService: ArticoloService) {}
 

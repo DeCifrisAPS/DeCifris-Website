@@ -21,6 +21,7 @@ export interface Author {
 export interface Articolo {
   id: string;
   title: string;
+  language: string;
   authors: Author[];
   pageRange: string;
   doi: string;
