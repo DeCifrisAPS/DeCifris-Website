@@ -9,13 +9,16 @@ table {
 
 .table-wrapper {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     gap: 20px;
     text-align: center;
 }
 
 .table-wrapper div {
     width: 48%;
+    min-width: 300px;
+    margin:auto;
 }
 
 th,
@@ -47,12 +50,9 @@ th {
 
 img.venue {
     width: 45%;
+    min-width: 250px;
     margin: 20px;
     border-radius: 10px;
     display: inline-block;
     border: 2px solid var(--cifris_blue);
-}
-
-hr {
-    padding-bottom: 30px;
 }

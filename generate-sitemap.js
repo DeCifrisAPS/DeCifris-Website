@@ -99,7 +99,7 @@ const pages = [
   { url: '/cifris24/tac24', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2024/single-pages/workshops/tac24/tac24.component.html' },
   { url: '/cifris24/cpsid24', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2024/single-pages/workshops/cpsid24/cpsid24.component.html' },
   { url: '/cifris24/cifriscloud24', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2024/single-pages/workshops/cifriscloud24/cifriscloud24.component.html' },
-  //{ url: '/cifris24/payment-result', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2024/payment-result/payment-result.component.html' },
+  { url: '/cifris24/dinner', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2024/social-dinner24/social-dinner24.component.html' },
   
   { url: '/cifris23', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2023/cifris2023.component.html' },
   { url: '/cifris23/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2023/home-cifris23/home-cifris23.component.html' },

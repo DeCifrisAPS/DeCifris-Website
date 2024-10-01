@@ -1,6 +1,6 @@
 <h1> REGISTRATION </h1>
 <p style="color: var(--cifris_orange);">
-	Registration deadline: September 15th.
+	Registration permanently closed (registration deadline was September 16th).
 </p>
 <p>
 	The fees of CIFRIS24 are the following. <br>
@@ -150,7 +150,7 @@ and doesn't cover
 	please also attach its fiscal data). <br>
 </p>
 <p style="color: red;">
-	Registration deadline: September 15th.
+	Registration permanently closed (registration deadline was September 16th).
 </p>
 <form id="payForm" class="form" method="POST" (ngSubmit)="checkAndPay($event)">
 	<p>
@@ -223,7 +223,18 @@ and doesn't cover
 	</p>
 
 	<!-- Submit input -->
-	<input type="submit" value="Pay Now">
+	<!--
+	<input type="submit" value="Pay Now" disabled/>
+	-->
+	<mat-card style="
+	background-color: var(--cifris_azure);
+	color: var(--cifris_scarlet);
+	text-align: center;
+	">
+		Pay now <br>
+		<i style="font-size: small;">- 
+			registration permanently closed (registration deadline was September 16th) -</i>
+	</mat-card>
 
 	<p class="footnote">
 		De Componendis Cifris kindly requests your consent for the processing of your personal data provided in the

@@ -1,8 +1,13 @@
+<hr>
 <h2>September 27th</h2>
 <table class="orari" cellspacing="2" cellpadding="2" id="27morning">
     <tr bgcolor="lightblue">
         <th class="schedule" colspan="2">
-            <font size="+1"><b>September 27th (morning) - Workshop Session</b></font>
+            <font size="+1">
+                <b>September 27th (morning) - Workshop Session</b>
+                <br>
+                <i class="location">Centro D. Menichella, Largo Guido Carli 1, Frascati (Rome)</i>
+            </font>
         </th>
     </tr>
     <tr id="fcir24-i">
@@ -43,19 +48,19 @@
                 <li>
                     <i><b>Carsten Maple</b>, University of Warwick (UK)</i>
                     <br>
-                    Keynote: TBA
+                    Keynote: Secure and Private Data Sharing in Financial Institutions
                 </li>
                 <li>
                     <i><b>Christian Rechberger</b>, Graz University of Technology (Austria)</i>
                     <br>
-                    Keynote: TBA
+                    Keynote: Progress on Private Computation
                 </li>
             </ul>
             <button mat-button (click)="toggleShowMoreFCR1()" class="btn-showmore">
                 {{ showMoreFCR1 ? 'Show Less' : 'Show More' }}
             </button>
             <a mat-button href="/cifris24/fcir24" class="btn-showmore" style="margin-left: 10px;">
-                Webpage
+                Show all details
             </a>
         </td>
     </tr>
@@ -99,7 +104,7 @@
                     Decentralized Finance: Labyrinth
                 </li>
                 <li>
-                    <i><b>Andrea Coletta</b>, Bank of Italy (Italy)</i>
+                    <i><b>Costanza Catalano</b> and <b>Andrea Coletta</b>, Bank of Italy (Italy)</i>
                     <br>
                     Confidential Knowledge Graphs through Synthetic Augmentation
                 </li>
@@ -111,7 +116,7 @@
                 {{ showMoreFCR2 ? 'Show Less' : 'Show More' }}
             </button>
             <a mat-button href="/cifris24/fcir24" class="btn-showmore" style="margin-left: 10px;">
-                Webpage
+                Show all details
             </a>
         </td>
     </tr>
@@ -178,7 +183,7 @@
                 <li>
                     <i><b>Amit Chaudhary</b>, University of Warwick (UK)</i>
                     <br>
-                    Work-in-progress - HASHTA: Share and compute securely your data
+                    Work-in-progress - HASHTA AI: Share and compute securely your data
                 </li>
                 <li>
                     <i><b>Sara Montanari</b>, University of Trento and FBK (Italy)</i>
@@ -191,7 +196,7 @@
                 {{ showMoreTAC1 ? 'Show Less' : 'Show More' }}
             </button>
             <a mat-button href="/cifris24/tac24" class="btn-showmore" style="margin-left: 10px;">
-                Webpage
+                Show all details
             </a>
             <a mat-button href="https://aleph.fbk.eu/events/TAC2024/index.html" class="btn-showmore"
                 style="margin-left: 10px;">
@@ -258,7 +263,7 @@
                 {{ showMoreTAC2 ? 'Show Less' : 'Show More' }}
             </button>
             <a mat-button href="/cifris24/tac24" class="btn-showmore" style="margin-left: 10px;">
-                Webpage
+                Show all details
             </a>
             <a mat-button href="https://aleph.fbk.eu/events/TAC2024/index.html" class="btn-showmore"
                 style="margin-left: 10px;">
@@ -332,63 +337,77 @@
                 {{ showMoreNTC ? 'Show Less' : 'Show More' }}
             </button>
             <a mat-button href="/cifris24/ntc24" class="btn-showmore" style="margin-left: 10px;">
-                Webpage
+                Show all details
             </a>
         </td>
     </tr>
-    <tr id="cpsid24">
+    <tr id="qcifris24">
         <td class="schedule"> 11:20<br>11:40 </td>
         <td><em> Coffee break </em></td>
-    </tr>
-    <tr>
+    </tr><tr>
         <td class="schedule"> 11:40<br>13:00 </td>
         <!------------------------------>
-        <!-- WORKSHOP IDENTITY        -->
+        <!-- WORKSHOP FISICI   -->
         <!------------------------------>
         <td>
-            <em><b style="color:var(--cifris_blue)"> CPSID - Cryptography, Protocols and Security in Digital Identity
-                    2024</b></em>
+            <em><b style="color:var(--cifris_blue)"> QCifris - Quantum Cifris 2024</b></em>
             <!-- VERSIONE NORMALE -->
             <p>
-                We will explore the two main standards, EUDI-ARF and W3C-DID/W3C-VC, their cryptography, protocols,
-                threat models and mitigations, but also emerging cryptographic schemes.
+                Advances in quantum technologies and applications in cryptography from the perspective of Physics.
             </p>
             <!-- VERSIONE ESTESA -->
-            <p *ngIf="showMoreCPSID">
+            <p *ngIf="showMoreQCIFRIS">
                 Organisers:
                 <i>
-                    Andrea D'Intino (Dyne Foundation), Denis "Jaromil" Roio (Dyne Foundation)
+                    Paolo Villoresi (Università di Padova) <br>
+                    Marco Genovese (INRIM-Torino) <br>
+                    Fabio Sciarrino (Università di Roma La Sapienza) <br>
+                    Cristian Antonelli (Università dell’Aquila) <br>
+                    Giuseppe Vallone (Università di Padova)
                 </i>
             </p>
-            <p *ngIf="showMoreCPSID">
-                The seminar dives into the two main current identity standards, EUDI-ARF and
-                W3C-DID/W3C-VC and describe their cryptography, protocols, threat models and mitigations,
-                highlighting pros and cons of each element. The seminar also offers a view about new and emerging
-                cryptographic schemes in the identity space.
+            <p *ngIf="showMoreQCIFRIS">
+                Countering the growing level of cybercrime requires an ever-innovative approach. Quantum
+                Technologies propose solutions for cryptographic key exchange and random number generation
+                that are radically new compared to the algorithmic approach, with which they can be integrated to
+                achieve the highest levels of security.
+                The state of the art and perspectives in this area will be presented. The status of quantum
+                computing in cryptanalysis will also be presented.
             </p>
-            <ul *ngIf="showMoreCPSID">
+            <ul *ngIf="showMoreQCIFRIS">
                 <li>
-                    <i><b>Andrea D'Intino</b>, Dyne Foundation (Netherlands)</i>
+                    <i><b>Paolo Villoresi</b>, University of Padova (Italy)</i>
                     <br>
-                    Overview of the current digital identity standards
+                    Quantum communication protocols and quantum computing
                 </li>
                 <li>
-                    <i><b>Francesco Marino</b>, Poligrafico e Zecca dello Stato (Italy)</i>
+                    <i><b>Fabio Sciarrino</b>, University of Roma La Sapienza (Italy)</i>
                     <br>
-                    Current status of the implementation of the Italian Wallet and Trust Framework Infrastructure
+                    Entanglement for quantum key distribution
                 </li>
                 <li>
-                    <i><b>Simone Onofri</b>, W3.org (USA)</i>, and
-                    <i><b>Denis Roio</b>, Dyne Foundation (Netherlands)</i>
+                    <i><b>Simone Montangero</b>, University of Padova (Italy)</i>
                     <br>
-                    Challenges and upcoming standards
+                    Quantum Computing in Cybersecurity
+                </li>
+                <li>
+                    <i><b>Giuseppe Vallone</b>, University of Padova (Italy)</i>
+                    <br>
+                    Genuine random numbers from quantum processes for cybersecurity
+                </li>
+                <li>
+                    <i><b>Tommaso Occhipinti</b>, QTI (Italy)</i>, and
+                    <i><b>Simone Capeleto</b>, ThinkQuantum SRL (Italy)</i>
+                    <br>
+                    National and European Quantum Communications for Enhanced Security: Technology and
+                    Applications
                 </li>
             </ul>
-            <button mat-button (click)="toggleShowMoreCPSID()" class="btn-showmore">
-                {{ showMoreCPSID ? 'Show Less' : 'Show More' }}
+            <button mat-button (click)="toggleShowMoreQCIFRIS()" class="btn-showmore">
+                {{ showMoreQCIFRIS ? 'Show Less' : 'Show More' }}
             </button>
-            <a mat-button href="/cifris24/cpsid24" class="btn-showmore" style="margin-left: 10px;">
-                Webpage
+            <a mat-button href="/cifris24/qcifris24" class="btn-showmore" style="margin-left: 10px;">
+                Show all details
             </a>
         </td>
     </tr>
@@ -444,19 +463,19 @@
                 <li>
                     <i><b>Luca Mariot</b>, University of Twente (Netherlands)</i>
                     <br>
-                    On the computation of the Walsh-Hadamard Transform using Binomial Trees 
+                    On the computation of the Walsh-Hadamard Transform using Binomial Trees
                 </li>
                 <li>
                     <i><b>Sihem Mesnager</b>, University of Paris VIII (France)</i>
                     <br>
-                    TBA
+                    (Cryptographic) Functions for Designing Locally Recoverable Codes in Distributed Storage
                 </li>
             </ul>
             <button mat-button (click)="toggleShowMoreSYMCRYPT()" class="btn-showmore">
                 {{ showMoreSYMCRYPT ? 'Show Less' : 'Show More' }}
             </button>
             <a mat-button href="/cifris24/symcrypt24" class="btn-showmore" style="margin-left: 10px;">
-                Webpage
+                Show all details
             </a>
         </td>
     </tr>
@@ -513,7 +532,7 @@
                     Recent results on scattered spaces and MRD codes
                 </li>
                 <li>
-                    <i><b>Luca Giuzzi,</b>, Università degli Studi di Brescia (Italy)</i>
+                    <i><b>Luca Giuzzi</b>, Università degli Studi di Brescia (Italy)</i>
                     <br>
                     Cryptographic uses of (polar) Grassmannians
                 </li>
@@ -527,7 +546,7 @@
                 {{ showMoreCODEMATH ? 'Show Less' : 'Show More' }}
             </button>
             <a mat-button href="/cifris24/codemath24" class="btn-showmore" style="margin-left: 10px;">
-                Webpage
+                Show all details
             </a>
         </td>
     </tr>
@@ -535,7 +554,7 @@
         <td class="schedule">13:00<br>14:00</td>
         <td><em> Lunch </em></td>
     </tr>
-    <tr id="qcifris24">
+    <tr id="cpsid24">
         <td colspan="2">
             <h2>ROOM D</h2>
         </td>
@@ -543,32 +562,52 @@
     <tr>
         <td class="schedule"> 10:00<br>11:20 </td>
         <!------------------------------>
-        <!-- WORKSHOP FISICI   -->
+        <!-- WORKSHOP IDENTITY        -->
         <!------------------------------>
         <td>
-            <em><b style="color:var(--cifris_blue)"> QCifris - Quantum Cifris 2024</b></em>
+            <em><b style="color:var(--cifris_blue)"> CPSID - Cryptography, Protocols and Security in Digital Identity
+                    2024</b></em>
             <!-- VERSIONE NORMALE -->
             <p>
-                Advances in quantum technologies and applications in cryptography from the perspective of Physics.
+                We will explore the two main standards, EUDI-ARF and W3C-DID/W3C-VC, their cryptography, protocols,
+                threat models and mitigations, but also emerging cryptographic schemes.
             </p>
             <!-- VERSIONE ESTESA -->
-            <p *ngIf="showMoreQCIFRIS">
+            <p *ngIf="showMoreCPSID">
                 Organisers:
                 <i>
-                    Paolo Villoresi (Università di Padova)
+                    Andrea D'Intino (Dyne Foundation), Denis "Jaromil" Roio (Dyne Foundation)
                 </i>
             </p>
-            <p *ngIf="showMoreQCIFRIS">
-                TBA.
+            <p *ngIf="showMoreCPSID">
+                The seminar dives into the two main current identity standards, EUDI-ARF and
+                W3C-DID/W3C-VC and describe their cryptography, protocols, threat models and mitigations,
+                highlighting pros and cons of each element. The seminar also offers a view about new and emerging
+                cryptographic schemes in the identity space.
             </p>
-            <p *ngIf="showMoreQCIFRIS">
-                <b>Program:</b> TBA.
-            </p>
-            <button mat-button (click)="toggleShowMoreQCIFRIS()" class="btn-showmore">
-                {{ showMoreQCIFRIS ? 'Show Less' : 'Show More' }}
+            <ul *ngIf="showMoreCPSID">
+                <li>
+                    <i><b>Andrea D'Intino</b>, Dyne Foundation (Netherlands)</i>
+                    <br>
+                    Overview of the current digital identity standards
+                </li>
+                <li>
+                    <i><b>Francesco Marino</b>, Poligrafico e Zecca dello Stato (Italy)</i>
+                    <br>
+                    Current status of the implementation of the Italian Wallet and Trust Framework Infrastructure
+                </li>
+                <li>
+                    <i><b>Simone Onofri</b>, W3.org (USA)</i>, and
+                    <i><b>Denis Roio</b>, Dyne Foundation (Netherlands)</i>
+                    <br>
+                    Challenges and upcoming standards
+                </li>
+            </ul>
+            <button mat-button (click)="toggleShowMoreCPSID()" class="btn-showmore">
+                {{ showMoreCPSID ? 'Show Less' : 'Show More' }}
             </button>
-            <a mat-button href="/cifris24/qcifris24" class="btn-showmore" style="margin-left: 10px;">
-                Webpage
+            <a mat-button href="/cifris24/cpsid24" class="btn-showmore" style="margin-left: 10px;">
+                Show all details
             </a>
         </td>
     </tr>
@@ -615,23 +654,21 @@
                     ANTI-fraud: ABE Solutions
                 </li>
                 <li>
-                    <i><b>Roberto La Scala,</b>, University of Bari (Italy)</i>
+                    <i><b>Roberto La Scala</b>, University of Bari (Italy)</i>
                     <br>
                     An introduction to Functional Encryption with multivariate algebra
                 </li>
                 <li>
-                    TBA
+                    <b>Daniele Friolo</b>, University of Roma La Sapienza (Italy)
+                    <br>
+                    Registered Functional Encryption
                 </li>
             </ul>
             <button mat-button (click)="toggleShowMoreCIFRISCLOUD()" class="btn-showmore">
                 {{ showMoreCIFRISCLOUD ? 'Show Less' : 'Show More' }}
             </button>
             <a mat-button href="/cifris24/cifriscloud24" class="btn-showmore" style="margin-left: 10px;">
-                Webpage
-            </a>
-            <a mat-button href="https://pis147879.github.io/CloudCIFRIS24/" class="btn-showmore"
-                style="margin-left: 10px;">
-                Website
+                Show all details
             </a>
         </td>
     </tr>
@@ -660,7 +697,8 @@
         <!-- WORKSHOP PQ   -->
         <!------------------------------>
         <td>
-            <em><b style="color:var(--cifris_blue)"> ReAdPQC24 - Recent Advances in Post-Quantum Cryptography 2024</b></em>
+            <em><b style="color:var(--cifris_blue)"> ReAdPQC24 - Recent Advances in Post-Quantum Cryptography
+                    2024</b></em>
             <!-- VERSIONE NORMALE -->
             <p>
                 An overview of the state of the art in PQ cryptography, the NIST competition, and cutting-edge methods
@@ -720,7 +758,7 @@
                 {{ showMoreRAPQC ? 'Show Less' : 'Show More' }}
             </button>
             <a mat-button href="/cifris24/readpqc24" class="btn-showmore" style="margin-left: 10px;">
-                Webpage
+                Show all details
             </a>
         </td>
     </tr>

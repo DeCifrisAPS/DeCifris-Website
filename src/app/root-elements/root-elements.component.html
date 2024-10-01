@@ -3,7 +3,7 @@
         <nav class="sidebar" id="sidebar">
             <ul>
                 <li>
-                    <button mat-button [routerLink]="['/']" routerLinkActive="active" (click)="toggleSidebar()" 
+                    <button mat-button [routerLink]="['/']" routerLinkActive="active" (click)="toggleSidebar()"
                         [routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
                         <mat-icon>home</mat-icon>
                         <span class="sidebar-text">HOME</span>
@@ -11,35 +11,37 @@
                 </li>
                 <h5> IN EVIDENZA </h5>
                 <li>
-                    <button mat-button [routerLink]="['/welcome']" routerLinkActive="active" (click)="toggleSidebar()" 
+                    <button mat-button [routerLink]="['/welcome']" routerLinkActive="active" (click)="toggleSidebar()"
                         [routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
                         <mat-icon>emoji_people</mat-icon>
                         <span class="sidebar-text">Welcome</span>
                     </button>
                 </li>
                 <li>
-                    <button mat-button [routerLink]="['/associazione']" routerLinkActive="active" (click)="toggleSidebar()" 
-                        [routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+                    <button mat-button [routerLink]="['/associazione']" routerLinkActive="active"
+                        (click)="toggleSidebar()" [routerLinkActiveOptions]="{exact: true}"
+                        class="sidebar-image-button">
                         <mat-icon>groups</mat-icon>
                         <span class="sidebar-text">Associazione</span>
                     </button>
                 </li>
                 <li>
-                    <button mat-button [routerLink]="['/attivita']" routerLinkActive="active" (click)="toggleSidebar()" 
+                    <button mat-button [routerLink]="['/attivita']" routerLinkActive="active" (click)="toggleSidebar()"
                         [routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
                         <mat-icon>public</mat-icon>
                         <span class="sidebar-text">Attività</span>
                     </button>
                 </li>
                 <li>
-                    <button mat-button [routerLink]="['/attivita/trends24']" routerLinkActive="active" (click)="toggleSidebar()" 
-                        [routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+                    <button mat-button [routerLink]="['/attivita/trends24']" routerLinkActive="active"
+                        (click)="toggleSidebar()" [routerLinkActiveOptions]="{exact: true}"
+                        class="sidebar-image-button">
                         <mat-icon>auto_stories</mat-icon>
                         <span class="sidebar-text">Trends24</span>
                     </button>
                 </li>
                 <li>
-                    <button mat-button [routerLink]="['/cifris24']" routerLinkActive="active" (click)="toggleSidebar()" 
+                    <button mat-button [routerLink]="['/cifris24']" routerLinkActive="active" (click)="toggleSidebar()"
                         [routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
                         <mat-icon>event</mat-icon>
                         <span class="sidebar-text">CIFRIS24</span>
@@ -47,22 +49,23 @@
                 </li>
                 <h5> INFORMAZIONI </h5>
                 <li>
-                    <button mat-button [routerLink]="['/contatti']" routerLinkActive="active" (click)="toggleSidebar()" 
+                    <button mat-button [routerLink]="['/contatti']" routerLinkActive="active" (click)="toggleSidebar()"
                         [routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
                         <mat-icon>mail</mat-icon>
                         <span class="sidebar-text">Contatti</span>
                     </button>
                 </li>
                 <li>
-                    <button mat-button [routerLink]="['/sitemap']" routerLinkActive="active" (click)="toggleSidebar()" 
+                    <button mat-button [routerLink]="['/sitemap']" routerLinkActive="active" (click)="toggleSidebar()"
                         [routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
                         <mat-icon>pin_drop</mat-icon>
                         <span class="sidebar-text">Sitemap</span>
                     </button>
                 </li>
                 <li>
-                    <button mat-button [routerLink]="['/cookie-policy']" routerLinkActive="active" (click)="toggleSidebar()" 
-                        [routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+                    <button mat-button [routerLink]="['/cookie-policy']" routerLinkActive="active"
+                        (click)="toggleSidebar()" [routerLinkActiveOptions]="{exact: true}"
+                        class="sidebar-image-button">
                         <mat-icon>cookie</mat-icon>
                         <span class="sidebar-text">Cookies</span>
                     </button>
@@ -73,3 +76,68 @@
     <div class="content" (click)="toggleSidebar(true)">
         <router-outlet></router-outlet>
     </div>
+    <ul class="bottomnav-menu">
+        <li>
+            <button mat-button [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                <mat-icon style="color:var(--cifris_azure_transparent);">home</mat-icon>
+                <span style="color:var(--cifris_azure_transparent);">HOME</span>
+            </button>
+        </li>
+        <li>
+            <button mat-button [routerLink]="['/welcome']" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">
+                <mat-icon>emoji_people</mat-icon>
+                <span>Welcome!</span>
+            </button>
+        </li>
+        <li>
+            <button mat-button [routerLink]="['/associazione']" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">
+                <mat-icon>groups</mat-icon>
+                <span>Associazione</span>
+            </button>
+        </li>
+        <li>
+            <button mat-button [routerLink]="['/attivita']" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">
+                <mat-icon>public</mat-icon>
+                <span>Attività</span>
+            </button>
+        </li>
+        <li>
+            <button mat-button [routerLink]="['/attivita/trends24']" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">
+                <mat-icon>auto_stories</mat-icon>
+                <span>Trends24</span>
+            </button>
+        </li>
+        <li>
+            <button mat-button [routerLink]="['/cifris24']" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">
+                <mat-icon>event</mat-icon>
+                <span>CIFRIS24</span>
+            </button>
+        </li>
+        <li>
+            <button mat-button [routerLink]="['/contatti']" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">
+                <mat-icon>mail</mat-icon>
+                <span>Contatti</span>
+            </button>
+        </li>
+        <li>
+            <button mat-button [routerLink]="['/sitemap']" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">
+                <mat-icon>pin_drop</mat-icon>
+                <span>Sitemap</span>
+            </button>
+        </li>
+        <li>
+            <button mat-button [routerLink]="['/cookie-policy']" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">
+                <mat-icon>cookie</mat-icon>
+                <span>Cookies</span>
+            </button>
+        </li>
+    </ul>
+</div>

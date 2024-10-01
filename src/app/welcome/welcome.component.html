@@ -3,7 +3,7 @@
 		<nav class="sidebar" id="sidebar">
 			<ul>
 				<li>
-					<button mat-button [routerLink]="['/']" routerLinkActive="active" (click)="toggleSidebar()" 
+					<button mat-button [routerLink]="['/']" routerLinkActive="active" (click)="toggleSidebar()"
 						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
 						<mat-icon>home</mat-icon>
 						<span class="sidebar-text">HOME</span>
@@ -12,43 +12,48 @@
 
 				<h5> CONTENUTI SPECIFICI </h5>
 				<li>
-					<button mat-button [routerLink]="['/welcome']" routerLinkActive="active" (click)="toggleSidebar()" 
+					<button mat-button [routerLink]="['/welcome']" routerLinkActive="active" (click)="toggleSidebar()"
 						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
 						<mat-icon>emoji_people</mat-icon>
 						<span class="sidebar-text">Welcome!</span>
 					</button>
 				</li>
 				<li>
-					<button mat-button [routerLink]="['/welcome/ricercatori']" routerLinkActive="active" (click)="toggleSidebar()" 
-						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+					<button mat-button [routerLink]="['/welcome/ricercatori']" routerLinkActive="active"
+						(click)="toggleSidebar()" [routerLinkActiveOptions]="{exact: true}"
+						class="sidebar-image-button">
 						<mat-icon>biotech</mat-icon>
 						<span class="sidebar-text">Fai ricerca?</span>
 					</button>
 				</li>
 				<li>
-					<button mat-button [routerLink]="['/welcome/azienda']" routerLinkActive="active" (click)="toggleSidebar()" 
-						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+					<button mat-button [routerLink]="['/welcome/azienda']" routerLinkActive="active"
+						(click)="toggleSidebar()" [routerLinkActiveOptions]="{exact: true}"
+						class="sidebar-image-button">
 						<mat-icon>work</mat-icon>
 						<span class="sidebar-text">Lavori in azienda?</span>
 					</button>
 				</li>
 				<li>
-					<button mat-button [routerLink]="['/welcome/insegnanti']" routerLinkActive="active" (click)="toggleSidebar()" 
-						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+					<button mat-button [routerLink]="['/welcome/insegnanti']" routerLinkActive="active"
+						(click)="toggleSidebar()" [routerLinkActiveOptions]="{exact: true}"
+						class="sidebar-image-button">
 						<mat-icon>square_foot</mat-icon>
 						<span class="sidebar-text">Insegni a scuola?</span>
 					</button>
 				</li>
 				<li>
-					<button mat-button [routerLink]="['/welcome/studenti']" routerLinkActive="active" (click)="toggleSidebar()" 
-						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+					<button mat-button [routerLink]="['/welcome/studenti']" routerLinkActive="active"
+						(click)="toggleSidebar()" [routerLinkActiveOptions]="{exact: true}"
+						class="sidebar-image-button">
 						<mat-icon>school</mat-icon>
 						<span class="sidebar-text">Sei studente?</span>
 					</button>
 				</li>
 				<li>
-					<button mat-button [routerLink]="['/welcome/curiosi']" routerLinkActive="active" (click)="toggleSidebar()" 
-						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+					<button mat-button [routerLink]="['/welcome/curiosi']" routerLinkActive="active"
+						(click)="toggleSidebar()" [routerLinkActiveOptions]="{exact: true}"
+						class="sidebar-image-button">
 						<mat-icon>emoji_objects</mat-icon>
 						<span class="sidebar-text">Ti incuriosisce?</span>
 					</button>
@@ -57,7 +62,57 @@
 		</nav>
 	</div>
 	<div class="content" (click)="toggleSidebar(true)">
-			<h1>Contenuti specifici</h1>
+		<h1>Contenuti specifici</h1>
 		<router-outlet></router-outlet>
 	</div>
+	<ul class="bottomnav-menu">
+		<li>
+			<button mat-button [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+				<mat-icon style="color:var(--cifris_azure_transparent)">home</mat-icon>
+				<span style="color:var(--cifris_azure_transparent)">HOME</span>
+			</button>
+		</li>
+		<li>
+			<button mat-button [routerLink]="['/welcome']" routerLinkActive="active"
+				[routerLinkActiveOptions]="{exact: true}">
+				<mat-icon style="color:var(--cifris_azure_transparent)">emoji_people</mat-icon>
+				<span style="color:var(--cifris_azure_transparent)">Welcome!</span>
+			</button>
+		</li>
+		<li>
+			<button mat-button [routerLink]="['/welcome/ricercatori']" routerLinkActive="active"
+				[routerLinkActiveOptions]="{exact: true}">
+				<mat-icon>biotech</mat-icon>
+				<span>Fai ricerca?</span>
+			</button>
+		</li>
+		<li>
+			<button mat-button [routerLink]="['/welcome/azienda']" routerLinkActive="active"
+				[routerLinkActiveOptions]="{exact: true}">
+				<mat-icon>work</mat-icon>
+				<span>Lavori in azienda?</span>
+			</button>
+		</li>
+		<li>
+			<button mat-button [routerLink]="['/welcome/insegnanti']" routerLinkActive="active"
+				[routerLinkActiveOptions]="{exact: true}">
+				<mat-icon>square_foot</mat-icon>
+				<span>Insegni a scuola?</span>
+			</button>
+		</li>
+		<li>
+			<button mat-button [routerLink]="['/welcome/studenti']" routerLinkActive="active"
+				[routerLinkActiveOptions]="{exact: true}">
+				<mat-icon>school</mat-icon>
+				<span>Sei studente?</span>
+			</button>
+		</li>
+		<li>
+			<button mat-button [routerLink]="['/welcome/curiosi']" routerLinkActive="active"
+				[routerLinkActiveOptions]="{exact: true}">
+				<mat-icon>emoji_objects</mat-icon>
+				<span>Ti incuriosisce?</span>
+			</button>
+		</li>
+	</ul>
 </div>

@@ -124,3 +124,18 @@ a.download:hover {
 	background-color: var(--cifris_orange);
 	color: white;
 }
+
+
+/* Styles for smaller screens */
+@media all and (max-width: 991px) {
+    div.list_view {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    div.list_view img {
+        width: 100%!important;
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+}
