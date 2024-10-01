@@ -89,6 +89,10 @@ a[mat-raised-button] {
   position: absolute;
 }
 
+.content {
+  max-width: 100%;
+}
+
 .toolbar {
   z-index: 2;
 }

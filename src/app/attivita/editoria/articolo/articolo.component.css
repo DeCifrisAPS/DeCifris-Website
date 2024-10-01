@@ -4,7 +4,7 @@
   align-items: baseline;
 }
 
-ul#preamble {
+ul.preamble {
   padding: 0;
   list-style: none;
 }
