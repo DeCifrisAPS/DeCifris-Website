@@ -11,9 +11,9 @@ export const articoloGuard: CanMatchFn = (route, segments) => {
   return new Promise((res, rej) => {
     // const collanaReq: string = segments[0].path;
     const collanaReq: string = "koine";
-    articleService.getVolumes(collanaReq).subscribe((data: Volume[]) => {
-      const volumeReq: string = segments[0].path;
-      const volume: Volume = data.find((v) => v.id === volumeReq);
+    const volumeReq: string = segments[0].path;
+    articleService.getVolume(collanaReq, volumeReq).subscribe((volume: Volume) => {
+      // const volume: Volume = data.find((v) => v.id === volumeReq);
       if (!volume) {
         res(false);
         return;

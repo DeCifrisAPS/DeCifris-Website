@@ -17,17 +17,19 @@ import { MatIconModule } from '@angular/material/icon';
 export class ArticoloComponent {
 
   bibtex: string = "";
-  theVolume: Volume = { id: "", title: "", publisher: "", published: "", ISBN: "", ISSN: "", volumeLink: "", coverLink: "", articles: [] };
+  theVolume: Volume = { id: "", title: "", publisher: "", published: "", series: "", ISBN: "", ISSN: "", volumeLink: "", coverLink: "", articles: [] };
   theArticle: Articolo = { id: "", title: "", authors: [], pageRange: "", doi: "", pdfLink: "", abstract: "" };
 
   constructor(private metaService: Meta, private titleService: Title, private route: ActivatedRoute, private articoloService: ArticoloService) {}
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
-      this.articoloService.getVolumes("koine").subscribe((data: Volume[])  => {
-        const volumeReq = params.get('volume');
+      const volumeReq = params.get('volume');
+      this.articoloService.getVolume("koine", volumeReq).subscribe((volume: Volume)  => {
+        // const volumeReq = params.get('volume');
+        this.theVolume = volume;
         const articleReq = params.get('article');
-        this.theVolume = data.find((v) => v.id === volumeReq);
+        // this.theVolume = data.find((v) => v.id === volumeReq);
         this.theArticle = this.theVolume.articles.find((a) => a.id === articleReq);
         /* Indexing, inclusion, crawler and more
          *
@@ -102,20 +104,23 @@ export class ArticoloComponent {
         this.metaService.addTag({ name: 'citation_publication_date', content: this.theVolume.published });
 
         this.bibtex = '@incollection{' + this.generateHandle('KOINE', this.theVolume.published, this.theArticle.authors) + ','
-            + '\n  author = {' + this.theArticle.authors.map(a => a.surname + ", " + a.name).join(" and ") + '},'
+            + '\n  author = {' + this.theArticle.authors.map(a => a.surname + ", " + a.name[0] + ".").join(" and ") + '},'
             + '\n  title = {' + this.theArticle.title + '},'
             + '\n  booktitle = {' + this.theVolume.title + '},'
             + '\n  year = {' + this.theVolume.published.split(" ")[1] + '},'
             + '\n  month = {' + this.theVolume.published.split(" ")[0] + '},'
             + '\n  publisher = {' + this.theVolume.publisher + '},'
-            + '\n  series = {De Cifris Koine},'
+            + '\n  series = {' + this.theVolume.series + '},'
             + '\n  pages = {' + this.theArticle.pageRange.split("-").join("--") + '},'
             + '\n  volume = {' + this.theVolume.id.split("vol")[1] + '},'
             + '\n  url = {https://doi.org/' + this.theArticle.doi + '},'
             + '\n  DOI = {' + this.theArticle.doi + '},'
             + '\n  ISSN = {' + this.theVolume.ISSN + '},'
-            + '\n  ISBN = {' + this.theVolume.ISBN + '}'
-            + "\n}";
+            + '\n  ISBN = {' + this.theVolume.ISBN + '},'
+            + '\n  note = {' + this.theArticle.authors.map(a => a.name + ' ' + a.surname + (a.ORCID ? ', ' + a.ORCID : '')).join('; ')
+              + (this.theArticle.bibNotes !== undefined ? '\n   ' + this.theArticle.bibNotes : '')
+              + '}'
+            + '\n}';
       });
     });
   }

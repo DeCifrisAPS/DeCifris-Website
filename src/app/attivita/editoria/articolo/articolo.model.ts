@@ -3,6 +3,7 @@ export interface Volume {
   title: string;
   publisher: string;
   published: string;
+  series: string;
   ISBN: string;
   ISSN: string;
   volumeLink: string;
@@ -12,7 +13,7 @@ export interface Volume {
 
 export interface Author {
   name: string;
-  surname?: string;
+  surname: string;
   affiliation?: string;
   ORCID?: string;
 }
@@ -28,4 +29,5 @@ export interface Articolo {
   note?: string;
   keywords?: string[];
   pdfRevisedLink?: string;
+  bibNotes?: string;
 }
