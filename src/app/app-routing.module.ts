@@ -122,10 +122,11 @@ import { Vol4Component } from './attivita/editoria/koine/vol4/vol4.component';
 import { SitemapComponent } from './root-elements/sitemap/sitemap.component';
 import { SocialDinner24Component } from './attivita/eventi/cifris/cifris2024/social-dinner24/social-dinner24.component';
 import { TimelineComponent } from './associazione/organi-direttivi/timeline/timeline.component';
+import { Ixh24Component } from './root-elements/hosting/ixh24/ixh24.component';
 
 
 // importante mettere come children tutti quelli che condividono la stessa sidebar, dato
-// che viene gestita da <router-outlet> che ogni pagina parente ha
+// che viene gestita dal <router-outlet> che ogni pagina parente ha
 const routes: Routes = [
 	// home e miscellanea
 	{
@@ -137,6 +138,7 @@ const routes: Routes = [
 			{ path: "opera24", component: Opera24Component },
 			{ path: "combinatorics24", component: Combinatorics24Component },
 			{ path: "wcc24", component: WCC24Component },
+			{ path: "ixh24", component: Ixh24Component },
 			{ path: "sitemap", component: SitemapComponent },
 		]
 	},

@@ -138,6 +138,7 @@ import { SocialDinner24Component } from './attivita/eventi/cifris/cifris2024/soc
 import { ProceedingsButton24Component } from './attivita/eventi/cifris/cifris2024/proceedings/proceedings-button24/proceedings-button24.component';
 import { ProceedingsComponent24 } from './attivita/eventi/cifris/cifris2024/proceedings/proceedings.component';
 import { TimelineComponent } from './associazione/organi-direttivi/timeline/timeline.component';
+import { Ixh24Component } from './root-elements/hosting/ixh24/ixh24.component';
 
 // // ./hosting
 // import { Opera24Component } from './hosting/opera24/opera24.component';
@@ -219,6 +220,7 @@ import { TimelineComponent } from './associazione/organi-direttivi/timeline/time
         SocialDinner24Component,
         Trends24Component,
         TimelineComponent,
+        Ixh24Component,
         // MailingListComponent,
         // AttivitaComponent,
         // OpportunitaComponent,
