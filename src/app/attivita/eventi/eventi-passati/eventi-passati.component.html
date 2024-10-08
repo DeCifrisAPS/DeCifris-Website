@@ -1,6 +1,11 @@
 <h4>Conferenze CIFRIS</h4>
 <div class="cards">
-	<!-- Congresso CIFRIS24 -->
+	<mat-card class="card" [routerLink]="'/cifris24'">
+		<img mat-card-image src="../../../../assets/images/events/2024/cifris24/roma.webp" alt="Congresso CIFRIS24">
+		<div class="container">
+			<h1 class="mat-headline" style="background-color: var(--cifris_green);">Congresso CIFRIS24</h1>
+		</div>
+	</mat-card>
 	<mat-card class="card" [routerLink]="'/cifris23'">
 		<img mat-card-image src="../../../../assets/images/events/2024/cifris24/roma2.jpg" alt="Congresso CIFRIS23">
 		<div class="container">
@@ -10,6 +15,10 @@
 </div>
 <h4>EVENTI 2024</h4>
 <ul>
+	<li>
+		<a [routerLink]="['/cifris24']"> CIFRIS24</a>, il secondo congresso Italiano di crittografia.
+		Rivolto a tutta la comunità italiana: da esperti ad interessati.
+	</li>
 	<li>
 		<b> 15 Marzo 2024 - 10:00</b>, evento Eruditorum 2024 <i>"la Crittografia nella società, tra Storia e
 			Diritto"</i> <br>

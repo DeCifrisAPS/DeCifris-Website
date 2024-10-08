@@ -1,64 +1,98 @@
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.header-container {
+  text-align: center;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.title {
+  color: var(--cifris_scarlet)!important;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  display: inline-block;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  animation: fadeIn 1s ease forwards;
+}
+
+.subtitle {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  color: var(--cifris_purple);
+  transition: transform 0.3s ease;
+  animation: fadeIn 1s ease forwards;
+}
+
+hr {
+  margin-bottom: 30px !important;
+}
+
+/* Imposta il box-shadow attorno alla tabella per creare un effetto di elevazione */
 table.orari {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  width: 100%;
+  width: 80%;
   margin-bottom: 40px;
+  border-collapse: separate;
+  border-spacing: 10px 15px;
+  box-shadow: none;
+  background-color: transparent;
 }
 
-table.orari td {
-  background-color: white;
-  padding-left: 10px;
-  padding-right: 35px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  vertical-align: top;
-}
-
-table.orari tr {
-  background-color: white;
-  margin-left: 5px;
-  margin-right: 15px;
-  border-bottom: 1px solid var(--cifris_azure);
-}
-
+/* Intestazioni della tabella */
 table.orari th {
-  background-color: var(--cifris_azure);
-  padding-top: 20px;
-  padding-bottom: 15px;
-  font-weight: 500;
-  padding-left: 15px;
-  margin-right: 20px;
-  padding-right: 20px;
+  background-color: var(--cifris_purple);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: white;
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 600;
+  z-index: 1;
 }
 
+/* Celle della tabella */
+table.orari td {
+  margin: 20px;
+  padding: 20px;
+  vertical-align: top;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+/* Effetto hover sulle righe della tabella */
+table.orari tr:hover td {
+  background-color: var(--cifris_orange) !important;
+  color: white;
+}
+
+/* Righe alternate (stripe effect) */
+table.orari tr:nth-child(even) td {
+  background-color: #f9f9f9; 
+}
+
+/* Celle specifiche (es. orari) con sfondo personalizzato */
 td.schedule {
-  width: 60px !important;
-  background-color: var(--cifris_azure_transparent) !important;
-  margin: 0 !important;
-  padding-right: 10px !important;
-  padding-left: 15px !important;
-}
-
-.btn-showmore {
-  background-color: var(--cifris_azure_transparent);
-  color: var(--cifris_blue);
-  margin-bottom: 5px;
-}
-
-/*
-  Pensato per fare un'unica riga che spezzi tutta la tabella in un colspan=2 (e.g.).
-  Ad esempio, la stanza di un workshop, o il tema comune di una serie di interventi.
-  */
-tr h2 {
-  padding: 2px 0 2px 20px !important;
-  margin: 0 !important;
-  color: white !important;
-}
-
-tr:has(h2),
-td:has(h2) {
-  margin: 0 !important;
-  padding: 0 !important;
-  background-color: var(--cifris_blue) !important;
+  width: 100px !important;
+  background-color: var(--cifris_orange) !important;
+  text-align: center;
+  padding: 15px 10px;
+  font-weight: bold;
+  color: white; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /** 
@@ -89,27 +123,209 @@ div.disclaimer-box {
   font-weight: 450;
 }
 
-b.normal-speaker {
-  font-weight: normal !important;
-  font-style: italic !important;
-  color: var(--cifris_blue) !important;
-}
-b.invited-speaker {
-  color: var(--cifris_blue) !important;
-  font-weight: bold !important;
-  font-style: normal !important;
-}
-b.mini-session {
-  color: var(--cifris_orange) !important;
-  font-weight: bold !important;
-  font-style: italic !important;
+/* Contenitore verticale per i loghi */
+.image-container-vertical {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  gap: 20px; 
+  margin-bottom: 40px;
 }
 
-.image-container {
+/* Stile per i riquadri che contengono i loghi */
+.image-wrapper-vertical {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Stile per le immagini all'interno dei riquadri */
+.image-wrapper-vertical img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Effetto di zoom al passaggio del mouse */
+.image-wrapper-vertical:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Effetto di rotazione leggera */
+.image-wrapper-vertical:hover img {
+  transform: rotate(2deg);
+}
+
+.image-container-horizontal {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 20px;
   margin-bottom: 15px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Wrapper per le immagini per gestire dimensioni e effetti */
+.image-wrapper {
+  width: 45%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Effetto hover (quando l'utente passa il mouse sopra l'immagine) */
+.image-wrapper:hover img {
+  transform: scale(1.2);
+  border-radius: 10px;
+}
+
+/* Stile generale per l'intestazione delle regole */
+h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--cifris_purple) !important;
+  letter-spacing: 2px;
+}
+
+/* Stile dell'elenco ordinato (numerato) */
+ol {
+  counter-reset: section;
+  padding-left: 0;
+  list-style: none;
+  margin-top: 20px;
+}
+
+/* Stile per gli elementi numerati principali */
+ol > li {
+  counter-increment: section; /* Incrementa il contatore */
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 50px;
+  font-weight: bold;
+  color: var(--cifris_orange);
+}
+
+/* Stile per i numeri cerchiati */
+ol > li::before {
+  content: counter(section); /* Inserisce il contatore */
+  background-color: var(--cifris_orange);
+  color: white;
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+}
+
+/* Sottoliste (ul all'interno dei li) */
+ol li ul {
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+ol li p {
+  color: black;
+  font-weight: normal;
+}
+
+ol li ul li {
+  font-weight: normal;
+  color: black;
+  margin-bottom: 2px;
+  padding-left: 50px;
+  padding-right: 50px;
+  list-style: none;
+}
+
+/* Stile per le voci all'interno della sottolista */
+ol li ul li::before {
+  content: "-"; /* Usa una lineetta per gli elementi delle sottoliste */
+  margin-right: 10px;
+  color: var(--cifris_purple);
+}
+
+/* Contenitore del paragrafo */
+.intro-container {
+  background-color: var(--cifris_azure_transparent);
+  border-radius: 10px;
+  padding: 20px 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+/* Evidenziazione di parole chiave */
+.highlight {
+  font-weight: bold;
+  color: var(--cifris_blue);
+}
+
+/* Evidenziazione speciale per le date */
+.highlight-date {
+  color: var(--cifris_scarlet);
+  font-weight: 600;
+}
+
+/* Evidenziazione speciale per il premio */
+.highlight-prize {
+  color: var(--cifris_orange);
+  font-weight: 600;
+}
+
+/* Icona per data */
+.fa-calendar-alt {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+/* Contenitore dei pulsanti */
+.toc-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Stile generale dei pulsanti */
+.toc-buttons a {
+  padding: 10px 20px;
+  width: 150px;
+  background-color: var(--cifris_blue);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Effetto hover sui pulsanti */
+.toc-buttons a:hover {
+  background-color: var(--cifris_orange);
+  transform: translateY(-2px);
 }

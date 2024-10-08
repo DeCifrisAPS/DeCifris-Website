@@ -1,27 +1,50 @@
-<div style="text-align: center;padding:0; margin-bottom: 10px;">
-    <h1 style="color:var(--cifris_orange);font-size: larger; font-weight: bold;margin:0; display: inline;">
+<div class="header-container">
+    <h1 class="title">
         IXH24 - Italian XRPL Hackathon 2024
     </h1>
-    <p style="margin:0;font-size:smaller">
+    <p class="subtitle">
+        An event organised by De Cifris and XRPL Commons
+        <br>
         <b> Rome, November 21st, 22nd, 23rd </b>
     </p>
-    <hr style="width: 60%;margin-left: 20%;color:var(--cifris_blue)">
 </div>
 
-<p>
-    <b>IXH24</b> is a national hackathon focussed on cryptography and blockchain technology. This three-day event will
-    feature
-    a mix of insightful seminars, engaging discussions, and significant hands-on experience. It is jointly organized by
-    <b>XRPL Commons</b>, a leading blockchain community, and <b>De Componendis Cifris</b>, the Italian association of
-    cryptography.
-    <br>
-    The hackathon will bring together teams of students from Italian universities, with students from across Europe also
-    welcome to join and participate.
-    <br>
-    Set in the eternal city of Rome, the event will take place from November 21st to 23rd, 2024, with a total prize pool
-    of <b>€10,000</b>.
-</p>
-<hr>
+<div class="intro-container">
+    <p class="intro-text">
+        <span class="highlight">IXH24</span> is a national hackathon with a focus on cryptography and blockchain. This
+        three-day event
+        will feature a mix of insightful seminars, engaging discussions, and significant hands-on experience.
+        It is jointly organized by <span class="highlight">XRPL Commons</span>, a leading blockchain community, and
+        <span class="highlight">De Componendis Cifris</span>, the Italian association of cryptography, and <span class="highlight">Roma Tre University</span>.
+        <br><br>
+        The hackathon will bring together teams of students from Italian universities, with students from across
+        Europe also welcome to join and participate.
+        <br><br>
+        Set in the eternal city of <span class="highlight">Rome</span>, the event will take place from
+        <span class="highlight highlight-date"><i class="fa fa-calendar-alt"></i> November 21st to 23rd, 2024</span>,
+        with a total prize pool of <span class="highlight highlight-prize">€10,000</span>.
+    </p>
+    <div class="table-of-contents">
+        <div class="toc-buttons">
+            <a mat-button [routerLink]="['/ixh24']" fragment="schedule">Schedule</a>
+            <a mat-button [routerLink]="['/ixh24']" fragment="rules">Rules</a>
+            <a mat-button [routerLink]="['/ixh24']" fragment="organisers">Organisers</a>
+            <a mat-button [routerLink]="['/ixh24']" fragment="teams">Teams</a>
+        </div>
+    </div>
+</div>
+<div class="image-container-horizontal">
+    <div class="image-wrapper">
+        <img src="../../../../assets/images/events/2024/ixh24/sanpaolo.jpg">
+    </div>
+    <div class="image-wrapper">
+        <img src="../../../../assets/images/events/2024/ixh24/rettorato.jpg">
+    </div>
+</div>
+
+
+
+<hr id="schedule">
 <h2>Schedule</h2>
 
 <table class="orari" cellspacing="2" cellpadding="2">
@@ -76,7 +99,7 @@
             <i>
                 <b>Welcome speeches</b>
                 <ul>
-                    <li>University of Roma Tre</li>
+                    <li>Roma Tre University</li>
                     <li>De Componendis Cifris</li>
                     <li>XRPL Commons</li>
                 </ul>
@@ -173,20 +196,19 @@
     </tr>
 </table>
 
-<hr>
+<hr id="rules">
 <h2>Hackathon rules</h2>
 <ol>
     <li>
         <b>Coding your projects</b>
         <ul>
-            <li><b>Coding starts</b> at 13:00 (Rome) on November 22rd, 2024.</li>
-            <li><b>Project submissions</b> must be made by 11:30 (Rome) on November 23rd, 2024.</li>
-            <li><b>New work only:</b> coding, development, and design should be done during the hackathon. Any work on
-                your
-                project that was completed prior to the hackathon must be mentioned in your project
-                submission.Non-team-created software or intellectual property can be utilised if you have a licence
+            <li><b>Coding starts</b> at 13:00 on November 22rd and <b>submissions close</b> at 11:30 on November 23rd
+                (UTC+2).</li>
+            <li><b>New work only:</b> coding, development, and design should be done during the hackathon. Any work that
+                was completed prior to the hackathon must be mentioned in your submission. Non-team-created software or
+                intellectual property can be utilised if you have a licence
                 (e.g. software
-                libraries or design assets), but they must be mentioned in your project submission.</li>
+                libraries or design assets), but they must be mentioned in your submission.</li>
             <li><b>Project pitches</b> will be of three minutes, followed by two minutes for questions. You can include
                 a
                 PowerPoint/PDF presentation. A live demo is also accepted (and encouraged).</li>
@@ -207,46 +229,48 @@
         </ul>
     </li>
     <li>
-        <b>Tracks and themes</b>
+        <b>Tracks and themes</b> <br>
+        <p>
+            We will propose two tracks, which correspond to two different challenges. Each team
+            will select its own track.
+        </p>
         <ul>
-            <li>On November 22nd we will propose two tracks, which correspond to two different challenges. Each team
-                will select its own
-                track/challenge.</li>
-            <li><i>Track 1: Cryptography for blockchain</i>
+            <li><b>Track 1: Cryptography for blockchain</b>
                 <br>
-                Projects submitted under this track must demonstrate a clear application of cryptographic techniques to
+                Projects under this track must demonstrate a clear application of cryptographic techniques to
                 solve the
                 challenge. This can include, but is not limited to, encryption algorithms, zero-knowledge proofs,
                 digital signatures, or
                 other privacy-enhancing technologies.
             </li>
-            <li><i>Track 2: XRPL applications</i>Projects submitted must involve the XRP Ledger in some way, whether
+            <li><b>Track 2: XRPL applications</b>
+                <br>
+                Projects must involve the XRP Ledger in some way, whether
                 through integrations, apps, decentralised finance,
                 or smart contracts. Creativity and innovation in utilising XRPL to solve the challenge will be highly
-                encouraged.</li>
+                encouraged.
+            </li>
         </ul>
     </li>
     <li>
         <b>Judging criteria</b>
         <ul>
-            <li>Innovation & Creativity: How original is the idea? Does it bring new insights, solutions, or ways of
-                solving problems?
+            <li><b>Innovation</b>: How original is the idea? Does it bring new insights or solutions?
             </li>
-            <li>Technical Execution: How well was the project developed? Does it demonstrate technical complexity or
-                impressive
+            <li><b>Execution</b>: How well was it developed? Does it demonstrate technical complexity or impressive
                 engineering?</li>
-            <li>Impact & Usefulness: How impactful or useful is the project? Does it solve a real-world problem or add
-                value to a
-                particular community or industry?</li>
-            <li>Presentation & Pitch: Is the project clearly communicated through the pitch and presentation? Is the
-                demo (if present)
-                well-prepared and convincing?</li>
+            <li><b>Impact</b>: How impactful is the project? Does it add value to a particular community, scenario or
+                industry?</li>
+            <li><b>Pitch</b>: Is the project clearly communicated? Is the demo (if present) well-prepared and
+                convincing?</li>
         </ul>
     </li>
     <li>
         <b>Prizes and awards</b>
         <br>
-        Prizes will be awarded to the top 3 projects in each track:
+        <p>
+            Prizes will be awarded to the top 3 projects in each track:
+        </p>
         <ul>
             <li>1st winner: € 2500 (two thousands and five hundreds)</li>
             <li>2nd winner: € 1500 (one thousand and five hundreds)</li>
@@ -255,46 +279,47 @@
     </li>
     <li>
         <b>Disqualification and misconduct</b> <br>
-        Participants will be disqualified if they:
+        <p>Participants will be disqualified if they:</p>
         <ul>
             <li>Fail to comply with intellectual property or copyright rules.</li>
             <li>Submit projects containing offensive, discriminatory, or harmful content.</li>
-            <li>Exhibit any form of cheating, including unauthorised collaboration between teams or tampering with other
-                teams'
-                projects.</li>
+            <li>Exhibit any form of cheating, including tampering with other teams' projects.</li>
         </ul>
     </li>
     <li>
         <b>Miscellaneous</b>
         <ul>
-            <li><b>Funding for participants:</b> if you are an Italian student and one of our members, then you can ask
-                for a refund to cover
-                your travel and accommodation expenses. <br>
-                Young membership costs only 5 euros.
-                If you are eligible, please contact us at hack&#64;decifris.it.</li>
-            <li><b>Code of Conduct:</b> All participants are expected to adhere to a code of conduct that ensures a
-                respectful and inclusive
-                environment.</li>
-            <li><b>Support and Mentorship:</b> Mentors will be available during the hackathon to assist with technical
-                or project-related
+            <li><b>Funding for participants:</b> if you are an Italian student and <a href="/associazione/associarsi">a
+                    member</a>, you are eligible
+                for a refund of your travel & accommodation expenses. Young membership only costs 5 euros.
+                If you are eligible, contact us at <a href="mailto:hack@decifris.it">hack&#64;decifris.it</a>.
+            </li>
+            <li><b>Code of conduct:</b> All participants are expected to ensure a respectful environment.</li>
+            <li><b>Support and Mentorship:</b> Mentors will be available to assist with technical or project-related
                 queries.</li>
-            <li><b>FAQs:</b> a list of frequently asked questions will be provided, along with channels for participants
-                to ask any additional
+            <li><b>FAQs:</b> we will provide a list of FAQs, along with channels to ask any additional
                 questions during the event.</li>
         </ul>
     </li>
 </ol>
-<hr>
+<hr id="organisers">
 
 
 <h2>Organisers</h2>
 
-<div class="image-container">
-    <img src="../../../../assets/images/logos/logo.jpg" style="height: 120px;border-radius: 60px;">
-    <img src="../../../../assets/images/logos/roma3.png" style="height: 90px;">
-    <img src="../../../../assets/images/logos/xrplcommons.png" style="height: 100px;">
+<div class="image-container-horizontal">
+    <a href="https://www.decifris.it" target="_blank" class="image-wrapper-vertical">
+        <img src="../../../../assets/images/icons/decifris.svg" alt="Decifris logo">
+    </a>
+    <a href="https://www.uniroma3.it/" target="_blank" class="image-wrapper-vertical">
+        <img src="../../../../assets/images/logos/roma3_blue.png" alt="Roma Tre logo">
+    </a>
+    <a href="https://www.xrpl-commons.org/" target="_blank" class="image-wrapper-vertical">
+        <img src="../../../../assets/images/logos/xrplcommons.png" alt="XRPL Commons logo">
+    </a>
 </div>
-<hr>
+
+<hr id="teams">
 
 
 <h2>Confirmed teams</h2>
