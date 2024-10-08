@@ -74,7 +74,8 @@ table.orari td {
 
 /* Effetto hover sulle righe della tabella */
 table.orari tr:hover td {
-  background-color: var(--cifris_orange) !important;
+  background-color: var(--cifris_azure) !important;
+  color: var(--cifris_blue) !important;
   color: white;
 }
 
@@ -86,7 +87,7 @@ table.orari tr:nth-child(even) td {
 /* Celle specifiche (es. orari) con sfondo personalizzato */
 td.schedule {
   width: 100px !important;
-  background-color: var(--cifris_orange) !important;
+  background-color: var(--cifris_blue) !important;
   text-align: center;
   padding: 15px 10px;
   font-weight: bold;
@@ -136,7 +137,7 @@ div.disclaimer-box {
 /* Stile per i riquadri che contengono i loghi */
 .image-wrapper-vertical {
   width: 150px;
-  height: 150px;
+  height: 100px;
   background-color: white;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
