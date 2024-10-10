@@ -123,6 +123,7 @@ import { SitemapComponent } from './root-elements/sitemap/sitemap.component';
 import { SocialDinner24Component } from './attivita/eventi/cifris/cifris2024/social-dinner24/social-dinner24.component';
 import { TimelineComponent } from './associazione/organi-direttivi/timeline/timeline.component';
 import { Ixh24Component } from './root-elements/hosting/ixh24/ixh24.component';
+import { OpensourceStatementComponent } from './attivita/editoria/koine/opensource-statement/opensource-statement.component';
 
 
 // importante mettere come children tutti quelli che condividono la stessa sidebar, dato
@@ -263,6 +264,7 @@ const routes: Routes = [
 		path: "koine", component: KoineComponent, children: [
 			{ path: "", component: HomeKoineComponent },
 			{ path: "articles-and-volumes", component: ArticlesAndVolumesComponent },
+			{ path: "open-access-statement", component: OpensourceStatementComponent },
 			{ path: "editorial-board", component: EditorialBoardComponent },
 			{ path: "vol1", component: Vol1Component },
 			{ path: "vol2", component: Vol2Component },
