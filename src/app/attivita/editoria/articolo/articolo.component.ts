@@ -17,6 +17,7 @@ import { MatIconModule } from '@angular/material/icon';
 export class ArticoloComponent {
 
   bibtex: string = "";
+  monthPublished: string = "";
   theVolume: Volume = { id: "", title: "", publisher: "", published: "", series: "", ISBN: "", ISSN: "", volumeLink: "", coverLink: "", articles: [] };
   theArticle: Articolo = { id: "", title: "", language: "", authors: [], pageRange: "", doi: "", pdfLink: "", abstract: "" };
 
@@ -31,6 +32,8 @@ export class ArticoloComponent {
         const articleReq = params.get('article');
         // this.theVolume = data.find((v) => v.id === volumeReq);
         this.theArticle = this.theVolume.articles.find((a) => a.id === articleReq);
+        const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        this.monthPublished = monthNames[parseInt(this.theVolume.published.substring(4, 6)) - 1];
         /* Indexing, inclusion, crawler and more
          *
          * https://web.archive.org/web/20240420083327/https://help.scholasticahq.com/article/214-how-does-google-scholar-indexing-work-on-scholastica
@@ -100,15 +103,15 @@ export class ArticoloComponent {
         for (let author of this.theArticle.authors) {
           this.metaService.addTag({ name: 'citation_author', content: author.name + " " + author.surname });
         }
-        this.metaService.addTag({ name: 'citation_publication_date', content: this.theVolume.publisher });
+        this.metaService.addTag({ name: 'citation_publication_date', content: this.theVolume.publisher }); // FIXME: !!
         this.metaService.addTag({ name: 'citation_publication_date', content: this.theVolume.published });
 
         this.bibtex = '@incollection{' + this.generateHandle('KOINE', this.theVolume.published, this.theArticle.authors) + ','
             + '\n  author = {' + this.theArticle.authors.map(a => a.surname + ", " + a.name[0] + ".").join(" and ") + '},'
             + '\n  title = {' + this.theArticle.title.replace('\n', '') + '},'
             + '\n  booktitle = {' + this.theVolume.title + '},'
-            + '\n  year = {' + this.theVolume.published.split(" ")[1] + '},'
-            + '\n  month = {' + this.theVolume.published.split(" ")[0] + '},'
+            + '\n  year = {' + this.theVolume.published.substring(0, 4) + '},'
+            + '\n  month = {' + this.monthPublished + '},'
             + '\n  publisher = {' + this.theVolume.publisher + '},'
             + '\n  series = {' + this.theVolume.series + '},'
             + '\n  pages = {' + this.theArticle.pageRange.split("-").join("--") + '},'
@@ -127,7 +130,7 @@ export class ArticoloComponent {
 
   generateHandle(tag: string, published: string, authors: Author[]): string {
     let sep = ":";
-    let year = published.split(' ')[1].slice(2);
+    let year = published.substring(0, 4); //split(' ')[1].slice(2);
     if (authors.length === 1) {
       return tag + sep + authors[0].surname.replace('\'', '').split(' ').join('') + year;
     } else if (authors.length > 1 && authors.length < 4) {

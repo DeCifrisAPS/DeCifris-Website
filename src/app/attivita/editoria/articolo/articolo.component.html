@@ -35,7 +35,7 @@
       </p>
   <ul class="preamble">
     <li><a class="text-muted" title="doi" href="https://doi.org/{{ theArticle.doi }}">https://doi.org/{{ theArticle.doi }}</a></li>
-    <li>Published by De Cifris Press, {{ theVolume.published }}</li>
+    <li>Published by De Cifris Press, {{ monthPublished + ' ' + theVolume.published.substring(0, 4) }}</li>
   </ul>
   <p style="line-height: 3.5;">
     <a mat-raised-button title="pdf" href="{{ theArticle.pdfLink }}">Download official article (PDF), pp. {{ theArticle.pageRange }}</a>
