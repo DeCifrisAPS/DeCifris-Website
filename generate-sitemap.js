@@ -195,8 +195,11 @@ const pages = [
   { url: '/koine/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/koine/koine.component.html' },
   { url: '/koine/articles-and-volumes/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/koine/articles-and-volumes/articles-and-volumes.component.html' },
   { url: '/koine/editorial-board/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/koine/editorial-board/editorial-board.component.html' },
+  { url: '/koine/open-access-statement/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/koine/opensource-statement/opensource-statement.component.html' },
   { url: '/koine/vol1/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/koine/vol1/vol1.component.html' },
   { url: '/koine/vol2/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/koine/vol2/vol2.component.html' },
+  { url: '/koine/vol3/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/koine/vol3/vol3.component.html' },
+  { url: '/koine/vol4/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/koine/vol4/vol4.component.html' },
 
 ];
 

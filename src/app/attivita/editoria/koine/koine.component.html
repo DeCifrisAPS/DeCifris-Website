@@ -34,6 +34,14 @@
 					</button>
 				</li>
 				<li>
+					<button mat-button [routerLink]="['/koine/open-access-statement']" routerLinkActive="active"
+						(click)="toggleSidebar()" [routerLinkActiveOptions]="{exact: true}"
+						class="sidebar-image-button">
+						<mat-icon>diamond</mat-icon>
+						<span class="sidebar-text">Open Access</span>
+					</button>
+				</li>
+				<li>
 					<button mat-button [routerLink]="['/koine/editorial-board']" routerLinkActive="active"
 						(click)="toggleSidebar()" [routerLinkActiveOptions]="{exact: true}"
 						class="sidebar-image-button">
@@ -99,6 +107,13 @@
 				[routerLinkActiveOptions]="{exact: true}">
 				<mat-icon>library_books</mat-icon>
 				<span>Articles & volumes</span>
+			</button>
+		</li>
+		<li>
+			<button mat-button [routerLink]="['/koine/open-access-statement']" routerLinkActive="active"
+				[routerLinkActiveOptions]="{exact: true}">
+				<mat-icon>diamond</mat-icon>
+				<span>Open Access</span>
 			</button>
 		</li>
 		<li>
