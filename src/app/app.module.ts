@@ -1,7 +1,8 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, bootstrapApplication, provideClientHydration } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { NgModule } from '@angular/core';
-import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { provideHttpClient, withFetch } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 // import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -71,6 +72,7 @@ import { EditoriaComponent } from './attivita/editoria/editoria.component';
 import { DiconoDiNoiComponent } from './associazione/notizie/dicono-di-noi/dicono-di-noi.component';
 import { NotizieComponent } from './associazione/notizie/notizie.component';
 import { NewsComponent } from './root-elements/home/news/news.component';
+import { ArticoloComponent } from './attivita/editoria/articolo/articolo.component';
 
 // /cifris2024
 import { Cifris2024Component } from './attivita/eventi/cifris/cifris2024/cifris2024.component';
@@ -350,7 +352,7 @@ import { Ixh24Component } from './root-elements/hosting/ixh24/ixh24.component';
         Workshops24Component,
         WorkshopButtons24Component,
         ProceedingsButton24Component,
-        ProceedingsComponent24
+        ProceedingsComponent24,
         //Hosting
         // Opera24Component,
         // Combinatorics24Component,
@@ -358,9 +360,12 @@ import { Ixh24Component } from './root-elements/hosting/ixh24/ixh24.component';
         // NotizieComponent,
         // AgoraComponent,
         // Vol2Component,
+        //Koine
+        ArticoloComponent
     ],
     bootstrap: [AppComponent], imports: [BrowserModule,
         AppRoutingModule,
+        RouterModule,
         FormsModule,
         ReactiveFormsModule,
         MatSidenavModule,
@@ -371,7 +376,8 @@ import { Ixh24Component } from './root-elements/hosting/ixh24/ixh24.component';
         MatMenuModule,
         BrowserAnimationsModule,
         MatCardModule], providers: [
-            provideHttpClient(withInterceptorsFromDi())
+            provideHttpClient(withFetch()),
+            provideClientHydration()
         ]
 })
 export class AppModule { }

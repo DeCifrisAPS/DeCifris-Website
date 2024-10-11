@@ -101,6 +101,10 @@ a[mat-button]:hover {
   color: white;
 }
 
+a[mat-raised-button] {
+  background-color: var(--cifris_azure) !important;
+}
+
 .toolbar,
 .sidenav,
 .container,

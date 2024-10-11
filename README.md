@@ -188,3 +188,26 @@ In prima battuta probabilmente l'esecuzione di questo comando verrà interrotta 
 npm install --save-dev @angular-devkit/build-angular
 ```
 Una volta installati tutti i moduli richiesti e fatta la build, verrà automaticamente creata una nuova cartella, chiamata *dist*, all'interno del vostro progetto. All'interno di questa cartella ne trovate un'altra con il nome del progetto. All'interno di questa trovate una dozzina di file. Tutti questi file vanno spostati sul server affinché le modifiche diventino effettive.
+
+## Note versione settembre 2024
+Nell'installare nuove dipendenze si suggerisce di eseguire `npm install` con flag `--legacy-peer-deps`.
+
+Le pagine generate da dati (database oppure json) devono essere aggiunte al file `routes.txt`.
+Queste pagine verranno precompilate in modo che il risultato della compilazione sia una serie di pagine statiche.
+Compilare il progetto con
+```
+ng build --configuration production
+```
+Questo compilerà il sito sotto la cartella `dist/DeCifris/browser`.
+
+È consigliato validare il risultato procedendo nella cartella e lanciando il seguente comando per servire le pagine.
+```
+python3 -m http.server --bind 0.0.0.0 8000
+```
+Il sito compilato sarà raggiungibile all' indirizzo locale `http://127.0.0.1:8000` e dall'indirizzo esterno sempre sulla porta `8000`.
+
+Verificare prima gli aggiornamenti di angular con `ng update` e poi quelli di node con `npm outdated`.
+Per angular si può usare il comando `ng update --all=true`, per node il comando `npm update`.
+
+Si suggerisce di legare la versione di angular al progetto e quindi di avviare `ng` con `npx ng` seguito dai comandi necesari.
+In questo modo dovrebbe risultare possibile utilizzare `npm ci` e seguito solo dal comando di build per generare il sito.

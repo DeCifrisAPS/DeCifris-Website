@@ -124,6 +124,8 @@ import { SocialDinner24Component } from './attivita/eventi/cifris/cifris2024/soc
 import { TimelineComponent } from './associazione/organi-direttivi/timeline/timeline.component';
 import { Ixh24Component } from './root-elements/hosting/ixh24/ixh24.component';
 import { OpensourceStatementComponent } from './attivita/editoria/koine/opensource-statement/opensource-statement.component';
+import { ArticoloComponent } from './attivita/editoria/articolo/articolo.component';
+import { articoloGuard } from './attivita/editoria/articolo/articolo.guard';
 
 
 // importante mettere come children tutti quelli che condividono la stessa sidebar, dato
@@ -270,6 +272,7 @@ const routes: Routes = [
 			{ path: "vol2", component: Vol2Component },
 			{ path: "vol3", component: Vol3Component },
 			{ path: "vol4", component: Vol4Component },
+            { path: ":volume/:article", component: ArticoloComponent, canMatch: [articoloGuard], pathMatch: 'full' },
 		]
 	},
 

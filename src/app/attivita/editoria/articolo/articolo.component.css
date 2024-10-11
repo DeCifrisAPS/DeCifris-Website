@@ -1,0 +1,40 @@
+#action-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+ul.preamble {
+  padding: 0;
+  list-style: none;
+}
+
+/*
+ul#article-preamble {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  list-style: none;
+}
+
+ul#article-preamble > li {
+  display: inline-block;
+  margin: 0.3rem 1rem;
+  background-color: white;
+  border-radius: 0.375rem;
+  box-shadow: 0px 1px 10px #ccc;
+  box-sizing: border-box;
+}
+
+ul#article-preamble > li + span {
+  padding: 0.375rem;
+}
+
+ul#article-preamble > li > a {
+  background-color: red;
+  padding: 0.375rem;
+  border-radius: 0.375rem;
+  box-sizing: border-box;
+}
+*/
