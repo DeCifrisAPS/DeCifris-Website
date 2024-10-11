@@ -15,7 +15,7 @@ export class NotizieComponent implements OnInit {
   ngOnInit(): void {
     this.notizieService.getNotizie().subscribe(
       data => {
-        console.log('Notizie caricate:', data);
+        //console.log('Notizie caricate:', data);
         this.notizie = data;
       },
       error => {

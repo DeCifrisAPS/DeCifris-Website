@@ -103,7 +103,7 @@ export class ArticoloComponent {
         for (let author of this.theArticle.authors) {
           this.metaService.addTag({ name: 'citation_author', content: author.name + " " + author.surname });
         }
-        this.metaService.addTag({ name: 'citation_publication_date', content: this.theVolume.publisher }); // FIXME: !!
+        this.metaService.addTag({ name: 'citation_publisher', content: this.theVolume.publisher });
         this.metaService.addTag({ name: 'citation_publication_date', content: this.theVolume.published });
 
         this.bibtex = '@incollection{' + this.generateHandle('KOINE', this.theVolume.published, this.theArticle.authors) + ','

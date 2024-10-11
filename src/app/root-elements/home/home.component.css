@@ -2,6 +2,7 @@ img.mainlogo {
 	width: 30%;
 	border-radius: 50%;
 	margin-bottom: 0;
+	min-width: 200px;
 }
 /* Stile container */
 .iniziativecontainer {
@@ -36,7 +37,7 @@ img.mainlogo {
   }
   
   .txtbtn-txt {
-	font-size: 11px;
+	font-size: 10px;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 1px;

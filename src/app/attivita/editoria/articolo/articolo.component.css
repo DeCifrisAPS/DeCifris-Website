@@ -12,6 +12,7 @@ ul.preamble {
 a[mat-raised-button] {
   background-color: var(--cifris_blue)!important;
   color: white;
+  height: fit-content!important;
 }
 a[mat-raised-button]:hover {
   background-color: var(--cifris_orange)!important;
