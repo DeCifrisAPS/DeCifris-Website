@@ -111,7 +111,8 @@ h3 {
 a.download {
 	text-decoration: none;
 	text-align: left;
-	background: var(--cifris_azure_transparent);
+	background: var(--cifris_blue);
+	color: white;
 	padding: 8px 16px;
 	margin: 0px 10px 2px 10px;
 	width: 200px;
