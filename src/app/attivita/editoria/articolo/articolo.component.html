@@ -1,69 +1,72 @@
 <div class="article">
-  <hr />
-  <h1 class="" style="text-align: left !important; white-space: break-spaces; ">{{ theArticle.title }}</h1>
-  <p class="" style="font-size: 1.2rem">
-    @for (author of theArticle.authors; track author) {
+  <div class="text">
+    <h1 class="" style="text-align: left !important; white-space: break-spaces; ">{{ theArticle.title }}</h1>
+    <p class="" style="font-size: 1.2rem">
+      @for (author of theArticle.authors; track author) {
       @if ($index !== 0) {
-        <span>, </span>
+      <span>, </span>
       }
       <span>{{ author.name }} {{ author.surname }}</span>
       @if (author.ORCID || author.affiliation) {
-        <sup style="font-size: 0.8rem">{{ $index + 1 }}</sup>
+      <sup style="font-size: 0.8rem">{{ $index + 1 }}</sup>
       }
-    }
-  </p>
-  <ul class="preamble">
-    @for (author of theArticle.authors; track author) {
+      }
+    </p>
+    <ul class="preamble">
+      @for (author of theArticle.authors; track author) {
       @if (author.ORCID || author.affiliation) {
       <li>
         <sup>{{ $index + 1 }}</sup>
         <span>{{ author.ORCID }}</span>
         @if(author.ORCID && author.affiliation) {
-          <span>, </span>
+        <span>, </span>
         }
         <span>{{ author.affiliation }}</span>
       </li>
       }
-    }
-  </ul>
-  <p>
-    From the book series <a href="/koine" title="Koine">De Cifris Koine</a>.
-    In
-    <a [title]="theVolume.title"
-        href="/koine/{{theVolume.id}}">
-      {{ theVolume.title }}</a>.
-      </p>
-  <ul class="preamble">
-    <li><a class="text-muted" title="doi" href="https://doi.org/{{ theArticle.doi }}">https://doi.org/{{ theArticle.doi }}</a></li>
-    <li>Published by De Cifris Press, {{ monthPublished + ' ' + theVolume.published.substring(0, 4) }}</li>
-  </ul>
-  <p style="line-height: 3.5;">
-    <a mat-raised-button title="pdf" href="{{ theArticle.pdfLink }}">Download official article (PDF), pp. {{ theArticle.pageRange }}</a>
-    @if (theArticle.pdfRevisedLink !== undefined) {
+      }
+    </ul>
+    <p>
+      From the book series <a href="/koine" title="Koine">De Cifris Koine</a>.
+      In
+      <a [title]="theVolume.title" href="/koine/{{theVolume.id}}">
+        {{ theVolume.title }}</a>.
+    </p>
+    <ul class="preamble">
+      <li><a class="text-muted" title="doi" href="https://doi.org/{{ theArticle.doi }}">https://doi.org/{{
+          theArticle.doi }}</a></li>
+      <li>Published by De Cifris Press, {{ monthPublished + ' ' + theVolume.published.substring(0, 4) }}</li>
+    </ul>
+    <p style="line-height: 3.5;">
+      <a mat-raised-button title="pdf" href="{{ theArticle.pdfLink }}">Download official article (PDF), pp. {{
+        theArticle.pageRange }}</a>
+      @if (theArticle.pdfRevisedLink !== undefined) {
       &nbsp;
       <a mat-raised-button title="pdf" href="{{ theArticle.pdfLink }}">Download revised article with errata (PDF)</a>
-    }
-  </p>
+      }
+    </p>
+  </div>
   @if (theArticle.abstract !== undefined && theArticle.abstract !== "") {
-    <hr />
-    <h2>Abstract</h2>
-    <p style="white-space: pre-wrap; font-size: 1rem; line-height: 1.5 ">{{ theArticle.abstract }}</p>
+  <hr />
+  <h2>Abstract</h2>
+  <p style="white-space: pre-wrap; font-size: 1rem; line-height: 1.5 ">{{ theArticle.abstract }}</p>
   }
   @if (theArticle.keywords !== undefined) {
-    <p>
+  <p>
     Keywords:
     @for (keyword of theArticle.keywords; track keyword) {
-      @if ($index !== 0) {
-        <span>, </span>
-      }
-      <span>{{ keyword }}</span>
+    @if ($index !== 0) {
+    <span>, </span>
     }
-    </p>
+    <span>{{ keyword }}</span>
+    }
+  </p>
   }
   @if (theArticle.note !== undefined) {
-    <p><b>Note:</b> {{ theArticle.note }}</p>
+  <p><b>Note:</b> {{ theArticle.note }}</p>
   }
-  <h3>Cite this</h3>
-  <code class="card card-body" style="margin-top: 0.5rem; word-wrap: break-word; white-space pre; overflow: auto;"><pre style="word-wrap: break-word; white-space: pre; overflow: auto">{{ bibtex }}</pre></code>
+  <h2>Cite this</h2>
+  <code class="card card-body"
+    style="margin-top: 0.5rem; word-wrap: break-word; white-space: pre; overflow: auto;"><pre style="word-wrap: break-word; white-space: pre; overflow: auto">{{ bibtex }}</pre></code>
   <p>&nbsp;</p>
 </div>

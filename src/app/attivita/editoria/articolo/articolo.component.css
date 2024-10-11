@@ -9,6 +9,15 @@ ul.preamble {
   list-style: none;
 }
 
+a[mat-raised-button] {
+  background-color: var(--cifris_blue)!important;
+  color: white;
+}
+a[mat-raised-button]:hover {
+  background-color: var(--cifris_orange)!important;
+}
+
+
 /*
 ul#article-preamble {
   display: flex;
