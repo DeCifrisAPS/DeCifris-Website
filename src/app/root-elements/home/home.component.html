@@ -2,54 +2,100 @@
 	<img class="mainlogo" src="../../assets/images/logos/logo.jpg" alt="Logo De Cifris">
 </div>
 
-<h2>Chi siamo?</h2>
-<p>
-	L'associazione di promozione sociale <b>De Componendis Cifris</b>, in
-	forma abbreviata <i>De Cifris</i>, si propone di animare la comunità
-	crittografica italiana, sia nelle sue componenti accademiche,
-	che nelle sue ramificazioni nel mondo del lavoro e dell’impresa.
-</p>
-<p>
-	Tra gli obiettivi, si prefigge di:
-</p>
-<ol>
-	<li>
-		Incentivare in Italia lo studio e la ricerca nell'ambito
-		della crittografia a livello accademico e applicativo,
-		con particolare attenzione alle aree della
-		Matematica, dell'Informatica e dell'Ingegneria.
-	</li>
-	<li>
-		Sostenere la realizzazione di qualificati progetti di ricerca che
-		richiedano il coinvolgimento e la collaborazione di numerosi
-		studiosi appartenenti a discipline anche molto diverse.
-	</li>
-	<li>
-		Divulgare l'uso responsabile della crittografia, favorendo il
-		formarsi di una cultura propria e autonoma.
-	</li>
-	<li>
-		Contribuire al rafforzamento della cooperazione internazionale
-		in questo settore, in ambito scientifico e
-		del suo impiego, anche con principi di solidarietà.
-	</li>
-</ol>
-<p>
-	La De Cifris auspica che l'Italia possa sviluppare cifrari robusti e
-	flessibili, adatti all'era moderna, e che emergano talenti dedicati alle
-	scienze crittografiche. L'associazione intende coinvolgere enti del
-	mondo accademico, così come centri di ricerca, aziende, studenti
-	universitari, liberi professionisti, e più in generale tutti coloro che
-	condividono questa visione.
-</p>
-<mat-divider></mat-divider>
+<div class="toptext">
+	<h2>Chi siamo?</h2>
+	<p>
+		L'associazione di promozione sociale <b>De Componendis Cifris</b>, in
+		forma abbreviata <i>De Cifris</i>, si propone di animare la comunità
+		crittografica italiana, sia nelle sue componenti accademiche,
+		che nelle sue ramificazioni nel mondo del lavoro e dell’impresa.
+	</p>
+	<p>
+		Tra gli obiettivi, si prefigge di:
+	</p>
+	<ol>
+		<li>
+			Incentivare in Italia lo studio e la ricerca nell'ambito
+			della crittografia a livello accademico e applicativo,
+			con particolare attenzione alle aree della
+			Matematica, dell'Informatica e dell'Ingegneria.
+		</li>
+		<li>
+			Sostenere la realizzazione di qualificati progetti di ricerca che
+			richiedano il coinvolgimento e la collaborazione di numerosi
+			studiosi appartenenti a discipline anche molto diverse.
+		</li>
+		<li>
+			Divulgare l'uso responsabile della crittografia, favorendo il
+			formarsi di una cultura propria e autonoma.
+		</li>
+		<li>
+			Contribuire al rafforzamento della cooperazione internazionale
+			in questo settore, in ambito scientifico e
+			del suo impiego, anche con principi di solidarietà.
+		</li>
+	</ol>
+	<p>
+		La De Cifris auspica che l'Italia possa sviluppare cifrari robusti e
+		flessibili, adatti all'era moderna, e che emergano talenti dedicati alle
+		scienze crittografiche. L'associazione intende coinvolgere enti del
+		mondo accademico, così come centri di ricerca, aziende, studenti
+		universitari, liberi professionisti, e più in generale tutti coloro che
+		condividono questa visione.
+	</p>
+</div>
+<div class="text">
+	<h2>Attività e iniziative</h2>
+	<p>Le nostre attività:</p>
+	<div class="iniziativecontainer">
+		<mat-card mat-button routerLink="/attivita/eventi" class="txtbtn">
+			<mat-card-content class="txtbtn-txt">Eventi</mat-card-content>
+		</mat-card>
+		<mat-card mat-button routerLink="/attivita/corsi" class="txtbtn">
+			<mat-card-content class="txtbtn-txt">Corsi</mat-card-content>
+		</mat-card>
+		<mat-card mat-button routerLink="/attivita/seminari" class="txtbtn">
+			<mat-card-content class="txtbtn-txt">Seminari</mat-card-content>
+		</mat-card>
+		<mat-card mat-button routerLink="/attivita/editoria" class="txtbtn">
+			<mat-card-content class="txtbtn-txt">Editoria</mat-card-content>
+		</mat-card>
+		<mat-card mat-button routerLink="/attivita/gare-crittografiche" class="txtbtn">
+			<mat-card-content class="txtbtn-txt">Gare</mat-card-content>
+		</mat-card>
+		<mat-card mat-button routerLink="/attivita/iniziative-divulgative" class="txtbtn">
+			<mat-card-content class="txtbtn-txt">Iniziative divulgative</mat-card-content>
+		</mat-card>
+	</div>
+	<p>E tu che interessi hai?</p>
+	<div class="iniziativecontainer">
+		<mat-card mat-button routerLink="/welcome/ricercatori" class="txtbtn">
+			<mat-card-content class="txtbtn-txt">Faccio ricerca</mat-card-content>
+		</mat-card>
+		<mat-card mat-button routerLink="/welcome/azienda" class="txtbtn">
+			<mat-card-content class="txtbtn-txt">Lavoro in azienda</mat-card-content>
+		</mat-card>
+		<mat-card mat-button routerLink="/welcome/insegnanti" class="txtbtn">
+			<mat-card-content class="txtbtn-txt">Insegno</mat-card-content>
+		</mat-card>
+		<mat-card mat-button routerLink="/welcome/studenti" class="txtbtn">
+			<mat-card-content class="txtbtn-txt">Studio</mat-card-content>
+		</mat-card>
+		<mat-card mat-button routerLink="/welcome/curiosi" class="txtbtn">
+			<mat-card-content class="txtbtn-txt">Mi incuriosisce</mat-card-content>
+		</mat-card>
+	</div>
+</div>
 
-<h2>Attività e iniziative</h2>
-<app-home-attivita></app-home-attivita>
-<app-home-welcome></app-home-welcome>
-<mat-divider></mat-divider>
-
-<h2>Eventi in arrivo</h2>
-<app-eventi-futuri id="eventi"></app-eventi-futuri>
-<mat-divider></mat-divider>
-<app-news id="news"></app-news>
+<div class="text">
+	<h2>Eventi in arrivo</h2>
+	<app-eventi-futuri id="eventi"></app-eventi-futuri>
+</div>
+<div class="text">
+	<h2>News</h2>
+	<p style="margin-bottom: 20px;">
+		Puoi esplorare <a href="https://www.decifris.it/notizie">le nostre notizie</a> e
+		<a href="https://www.decifris.it/dicono-di-noi">gli articoli su di noi</a>. Una selezione:
+	</p>
+	<app-news id="news"></app-news>
+</div>

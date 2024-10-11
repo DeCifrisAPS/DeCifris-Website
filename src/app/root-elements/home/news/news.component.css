@@ -1,6 +1,8 @@
 mat-card {
 	margin-bottom: 10px;
 	border-radius: 10px;
+	background-color: transparent;
+	box-shadow: none;
 }
 
 mat-card-header {
@@ -59,7 +61,8 @@ img {
 	margin-left: 10px;
 	margin-right: 10px;
 	border-radius: 4px;
-	background-color: white;
+	background-color: var(--cifris_blue);
+	color: white;
 	transition: background-color 0.3s, color 0.3s;
 }
 

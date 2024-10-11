@@ -1,5 +1,5 @@
 div.iniziativecontainer {
-    display: flex;  /* Aggiunto display: flex */
+    display: flex; 
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -22,6 +22,8 @@ mat-card {
     margin: 10px;
     margin-bottom: 20px;
     background-color: var(--cifris_azure_transparent);
+    background-color: var(--cifris_blue);
+    color: white;
 }
 
 mat-card:hover {

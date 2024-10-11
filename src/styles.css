@@ -3,6 +3,7 @@
   --cifris_blue: #307580;
   --cifris_azure: #e6f4f1;
   --cifris_azure_transparent: #e6f4f190;
+  --cifris_azure_transparent2: #e6f4f166;
   --cifris_green: #54bf81;
   --cifris_darkgreen: #00501d;
   --cifris_pink: #f3e5ab;
@@ -29,13 +30,36 @@ body {
   overflow-x: hidden;
 }
 
-/* Other styles */
 div.zoomed {
   height: 100%;
   width: 100%;
   zoom: 1.1;
   transform: scale(1.1);
   transform-origin: 0 0;
+}
+
+/* Other styles */
+div.toptext {
+  /* contenitore per il testo in cima alle pagine */
+  background-color: var(--cifris_azure_transparent);
+  padding: 15px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+div.text {
+  /* contenitore per il testo in varie parti del sito, migliora grafica e leggibilità */
+  background-color: var(--cifris_azure_transparent2);
+  padding: 15px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 h2,
@@ -83,6 +107,11 @@ a[mat-button]:hover {
 .content {
   z-index: 0;
   position: absolute;
+}
+
+.content {
+  width: 100%;
+  max-width: 100%;
 }
 
 .toolbar {
@@ -177,8 +206,8 @@ a[mat-button]:hover {
   .bottomnav-menu {
     width: 100%;
     height: 170px;
-    left:0;
-    right:0;
+    left: 0;
+    right: 0;
     bottom: -100px;
     box-sizing: border-box;
     position: fixed;
@@ -192,9 +221,9 @@ a[mat-button]:hover {
     white-space: nowrap;
     list-style: none;
   }
-  .bottomnav-menu li{
-    padding:0;
-    margin:0;
+  .bottomnav-menu li {
+    padding: 0;
+    margin: 0;
     height: 90px;
   }
   .bottomnav-menu li button mat-icon {
@@ -213,16 +242,16 @@ a[mat-button]:hover {
     height: 90px;
     width: fit-content;
     margin: 0 5px;
-    box-sizing: border-box; 
-    overflow: hidden; 
-    text-align: center; 
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
   }
-  
+
   .bottomnav-menu button span {
     font-size: 11px;
     font-weight: bold;
     color: white;
-    line-height: 1; 
+    line-height: 1;
     display: flex;
     flex-wrap: wrap;
   }
@@ -281,6 +310,7 @@ a[mat-button]:hover {
   /* Content */
   .content {
     flex: 0 0 80%;
+    max-width: 100%;
     padding: 20px;
     box-sizing: border-box;
     align-items: center;
