@@ -134,149 +134,289 @@ const routes: Routes = [
 	// home e miscellanea
 	{
 		path: "", component: RootElementsComponent, children: [
-			{ path: "", component: HomeComponent },
-			{ path: "contatti", component: ContattiComponent },
-			{ path: "cookie-policy", component: CookiePolicyComponent },
-			{ path: "mailing-list", component: MailingListComponent },
-			{ path: "opera24", component: Opera24Component },
-			{ path: "combinatorics24", component: Combinatorics24Component },
-			{ path: "wcc24", component: WCC24Component },
-			{ path: "ixh24", component: Ixh24Component },
-			{ path: "sitemap", component: SitemapComponent },
+			{
+				path: "", component: HomeComponent, data: {
+					title: 'DeCifris home',
+					meta: [
+						{ name: 'description', content: 'De Cifris APS home page' },
+						{ property: 'og:title', content: 'De Cifris APS home page' }
+					]
+				}
+			},
+			{ path: "contatti", component: ContattiComponent, data: {
+				title: 'Contatti',
+				meta: [
+					{ name: 'description', content: 'Contattaci!' },
+					{ property: 'og:title', content: 'Contattaci!' }
+				]
+			} },
+			{ path: "cookie-policy", component: CookiePolicyComponent, data: {
+				title: 'Cookie policy',
+				meta: [
+					{ name: 'description', content: 'Cookie policy' },
+					{ property: 'og:title', content: 'Cookie policy' }
+				]
+			} },
+			{ path: "mailing-list", component: MailingListComponent, data: {
+				title: 'Mailing list',
+				meta: [
+					{ name: 'description', content: 'Le nostre mailing list' },
+					{ property: 'og:title', content: 'Le nostre mailing list' }
+				]
+			} },
+			{ path: "opera24", component: Opera24Component, data: {
+				title: 'Opera24',
+				meta: [
+					{ name: 'description', content: 'Opera 2024, sponsored by DeCifris' },
+					{ property: 'og:title', content: 'Opera 2024, sponsored by DeCifris' }
+				]
+			} },
+			{ path: "combinatorics24", component: Combinatorics24Component, data: {
+				title: 'Combinatorics24',
+				meta: [
+					{ name: 'description', content: 'Combinatorics 2024, sponsored by DeCifris' },
+					{ property: 'og:title', content: 'Combinatorics 2024, sponsored by DeCifris' }
+				]
+			}  },
+			{ path: "wcc24", component: WCC24Component, data: {
+				title: 'WCC24',
+				meta: [
+					{ name: 'description', content: 'WCC 2024, sponsored by DeCifris' },
+					{ property: 'og:title', content: 'WCC 2024, sponsored by DeCifris' }
+				]
+			}  },
+			{ path: "ixh24", component: Ixh24Component, data: {
+				title: 'IXH24 - Italian XRPL Hackathon 2024',
+				meta: [
+					{ name: 'description', content: 'IXH24: Italian XRPL Hackathon 2024, organised by DeCifris' },
+					{ property: 'og:title', content: 'IXH24: Italian XRPL Hackathon 2024, organised by DeCifris' }
+				]
+			}  },
+			{ path: "sitemap", component: SitemapComponent, data: {
+				title: 'Sitemap',
+				meta: [
+					{ name: 'description', content: 'Sitemap DeCifris' },
+					{ property: 'og:title', content: 'Sitemap DeCifris' }
+				]
+			}   },
 		]
 	},
 
 	// path ./associazione
 	{
 		path: "associazione", component: AssociazioneComponent, children: [
-			{ path: "", component: HomeAssociazioneComponent },
-			{ path: "statuto", component: StatutoComponent },
-			{ path: "regolamento", component: RegolamentoComponent },
-			{ path: "organi-direttivi", component: OrganiDirettiviComponent },
-			{ path: "advisory-board", component: AdvisoryBoardComponent },
-			{ path: "posizioni-ricerca", component: PosizioniRicercaComponent },
-			{ path: "stage-tirocini", component: StageTirociniComponent },
-			{ path: "associarsi-benemeriti", component: BenemeritiComponent },
-			{ path: "associarsi", component: AssociarsiComponent },
-			{ path: "obiettivi", component: ObiettiviComponent },
-			{ path: "dicono-di-noi", component: DiconoDiNoiComponent },
-			{ path: "notizie", component: NotizieComponent },
-			{ path: "timeline", component: TimelineComponent },
-		]
+			{ path: "", component: HomeAssociazioneComponent, data: {title: 'Associazione'} },
+			{ path: "statuto", component: StatutoComponent, data: {title: 'Statuto'} },
+			{ path: "regolamento", component: RegolamentoComponent, data: {title: 'Regolamento'} },
+			{ path: "organi-direttivi", component: OrganiDirettiviComponent, data: {title: 'Organi Direttivi'} },
+			{ path: "advisory-board", component: AdvisoryBoardComponent, data: {title: 'Advisory Board'} },
+			{ path: "posizioni-ricerca", component: PosizioniRicercaComponent, data: {title: 'Posizioni di ricerca'} },
+			{ path: "stage-tirocini", component: StageTirociniComponent, data: {title: 'Stage e tirocini'} },
+			{ path: "associarsi-benemeriti", component: BenemeritiComponent, data: {title: 'Associarsi come Benemeriti'} },
+			{ path: "associarsi", component: AssociarsiComponent, data: {title: 'Associarsi'} },
+			{ path: "obiettivi", component: ObiettiviComponent, data: {title: 'Obiettivi'} },
+			{ path: "dicono-di-noi", component: DiconoDiNoiComponent, data: {title: 'Dicono di noi'} },
+			{ path: "notizie", component: NotizieComponent, data: {title: 'Notizie'} },
+			{ path: "timeline", component: TimelineComponent, data: {title: 'TIMELINE'} },
+		], data: {
+			title: 'De Cifris APS',
+			meta: [
+				{ name: 'description', content: "De Componendis Cifris Associazione di Promozione Sociale" },
+				{ property: 'og:title', content: "De Componendis Cifris Associazione di Promozione Sociale" }
+			]
+		}
 	},
 
 	// path ./welcome
 	{
 		path: "welcome", component: WelcomeComponent, children: [
-			{ path: "", component: HomeWelcomeComponent },
-			{ path: "ricercatori", component: PerAccademiaComponent },
-			{ path: "azienda", component: PerAziendeComponent },
-			{ path: "insegnanti", component: PerInsegnantiComponent },
-			{ path: "curiosi", component: PerCuriosiComponent },
-			{ path: "studenti", component: PerStudentiComponent },
-		]
+			{ path: "", component: HomeWelcomeComponent, data: {title: 'Welcome!'} },
+			{ path: "ricercatori", component: PerAccademiaComponent, data: {title: 'Fai ricerca?'} },
+			{ path: "azienda", component: PerAziendeComponent, data: {title: 'Lavori in azienda?'} },
+			{ path: "insegnanti", component: PerInsegnantiComponent, data: {title: 'Sei insegnante?'} },
+			{ path: "curiosi", component: PerCuriosiComponent, data: {title: 'Ti incuriosisce?'} },
+			{ path: "studenti", component: PerStudentiComponent, data: {title: 'Studi?'} },
+		], data: {
+			title: 'Welcome!',
+			meta: [
+				{ name: 'description', content: "Welcome to De Cifris" },
+				{ property: 'og:title', content: "Welcome to De Cifris" }
+			]
+		}
 	},
 
 	// path ./attivita
 	{
 		path: "attivita", component: AttivitaComponent, children: [
-			{ path: "", component: HomeAttivitaComponent },
+			{ path: "", component: HomeAttivitaComponent, data: {title: 'Attività'} },
 			// editoria
-			{ path: "editoria", component: EditoriaComponent },
-			{ path: "centotesi-2008-2017", component: Centotesi20082017Component },
-			{ path: "centotesi-2014-2023", component: Centotesi20142023Component },
+			{ path: "editoria", component: EditoriaComponent, data: {title: 'Editoria'} },
+			{ path: "centotesi-2008-2017", component: Centotesi20082017Component, data: {title: 'Cento Tesi 2008-2017'} },
+			{ path: "centotesi-2014-2023", component: Centotesi20142023Component, data: {title: 'Cento TEsi 2014-2023'} },
 			// { path: 'koine', redirectTo: '/koine/home', pathMatch: 'full' },
 			// corsi
-			{ path: 'corsi', component: CorsiComponent },
-			{ path: 'trends24', component: Trends24Component },
-			{ path: 'trends23', component: Trends23Component },
-			{ path: 'trends22bis', component: Trends22bisComponent },
-			{ path: 'trends22', component: Trends22Component },
-			{ path: "y2y-blockchain", component: BlockchainSmartContractComponent },
-			{ path: "seminari", component: SeminariComponent },
-			{ path: "eruditorum", component: DecifrisEruditorumComponent },
-			{ path: "decifris-historiae", component: DecifrisHistoriaeComponent },
-			{ path: "decifris-athesis", component: DecifrisAthesisComponent },
-			{ path: "decifris-agora", component: AgoraComponent },
-			{ path: "decifris-augustaeTaurinorum", component: DecifrisAugustaeTaurinorumComponent },
-			{ path: "decifris-scholaLatina", component: DecifrisScholaLatinaComponent },
-			{ path: "decifris-mediolanensibus", component: DecifrisScholaMediolanensibusComponent },
-			{ path: 'cifrischain', component: CifrisChainComponent },
-			{ path: 'quantumcifris', component: QuantumCifrisComponent },
-			{ path: 'cifriscloud', component: CifrisCloudComponent },
-			{ path: 'mathcifris', component: MathCifrisComponent },
-			{ path: 'pqcifris', component: PqCifrisComponent },
+			{ path: 'corsi', component: CorsiComponent, data: {title: 'Corsi'} },
+			{ path: 'trends24', component: Trends24Component, data: {
+				title: 'De Cifris Trends 2024',
+				meta: [
+					{ name: 'description', content: "Trends24 - the French Magisterium, by De Cifris" },
+					{ property: 'og:title', content: "Trends24 - the French Magisterium, by De Cifris" }
+				]
+			} },
+			{ path: 'trends23', component: Trends23Component, data: {title: 'De Cifris Trends23'} },
+			{ path: 'trends22bis', component: Trends22bisComponent, data: {title: 'De Cifris Trends22 bis'} },
+			{ path: 'trends22', component: Trends22Component, data: {title: 'De Cifris Trends22'} },
+			{ path: "y2y-blockchain", component: BlockchainSmartContractComponent, data: {title: 'De Cifris Y2Y: Blockchain & Smart Contracts'} },
+			{ path: "seminari", component: SeminariComponent, data: {title: 'Seminari'} },
+			{ path: "eruditorum", component: DecifrisEruditorumComponent, data: {title: 'De Cifris Eruditorum'} },
+			{ path: "decifris-historiae", component: DecifrisHistoriaeComponent, data: {title: 'De Cifris Historiae'} },
+			{ path: "decifris-athesis", component: DecifrisAthesisComponent, data: {title: 'De Cifris Athesis'} },
+			{ path: "decifris-agora", component: AgoraComponent, data: {title: 'De Cifris Agora'} },
+			{ path: "decifris-augustaeTaurinorum", component: DecifrisAugustaeTaurinorumComponent, data: {title: 'De Cifris Augustae Taurinorum'} },
+			{ path: "decifris-scholaLatina", component: DecifrisScholaLatinaComponent, data: {title: 'De Cifris Schola Latina'} },
+			{ path: "decifris-mediolanensibus", component: DecifrisScholaMediolanensibusComponent, data: {title: 'De Cifris Schola Mediolanensibus'} },
+			{ path: 'cifrischain', component: CifrisChainComponent, data: {title: 'CifrisChain'} },
+			{ path: 'quantumcifris', component: QuantumCifrisComponent, data: {title: 'QuantumCifris'} },
+			{ path: 'cifriscloud', component: CifrisCloudComponent, data: {title: 'CifrisCloud'} },
+			{ path: 'mathcifris', component: MathCifrisComponent, data: {title: 'MathCifris'} },
+			{ path: 'pqcifris', component: PqCifrisComponent, data: {title: 'PQCifris'} },
 			// eventi
-			{ path: "eventi", component: EventiComponent },
+			{ path: "eventi", component: EventiComponent, data: {title: 'De Cifris: eventi'} },
 			{ path: 'cifris23', redirectTo: '/cifris23', pathMatch: 'full' },
 			{ path: 'cifris24', redirectTo: '/cifris24', pathMatch: 'full' },
 			{ path: "gare-crittografiche", component: GareCrittograficheComponent },
 			// miscellanea
-			{ path: "iniziative-divulgative", component: IniziativeDivulgativeComponent },
-			{ path: "didattica-universitaria", component: DidatticaUniversitariaComponent },
+			{ path: "iniziative-divulgative", component: IniziativeDivulgativeComponent, data: {title: 'Iniziative divulgative'} },
+			{ path: "didattica-universitaria", component: DidatticaUniversitariaComponent, data: {title: 'Didattica universitaria'} },
 
-		]
+		], data: {
+			title: 'Attività',
+			meta: [
+				{ name: 'description', content: "De Cifris: our activities" },
+				{ property: 'og:title', content: "De Cifris: our activities" }
+			]
+		}
 	},
 
 	// cifris 24
 	{
 		path: "cifris24", component: Cifris2024Component, children: [
-			{ path: "", component: HomeCifris24Component },
-			{ path: "venue", component: VenueAccomodationComponent24 },
-			{ path: "call-for-papers", component: CallForPapersComponent24 },
-			{ path: "call-for-workshops", component: CallForWorkshopsComponent24 },
-			{ path: "program-committee", component: ProgramCommitteeComponent24 },
-			{ path: "registration", component: RegistrationComponent24 },
-			{ path: "registration-details", component: RegistrationDetailsComponent24 },
-			{ path: "program", component: ProgramComponent24 },
-			{ path: "proceedings", component: ProceedingsComponent24 },
-			{ path: "payment-result", component: PaymentResultComponent24 },
-			{ path: "ntc24", component: Ntc24Component },
-			{ path: "symcrypt24", component: SymcryptComponent24 },
-			{ path: "workshops", component: Workshops24Component },
-			{ path: "fcir24", component: Fcr24Component },
-			{ path: "qcifris24", component: Qcifris24Component },
-			{ path: "readpqc24", component: Readpqc24Component },
-			{ path: "tac24", component: Tac24Component },
-			{ path: "codemath24", component: Codemath24Component },
-			{ path: "cpsid24", component: Cpsid24Component },
-			{ path: "cifriscloud24", component: Cifriscloud24Component },
-			{ path: "institutional-session", component: InstitutionalSession24Component },
-			{ path: "scientific-session", component: ScientificSession24Component },
-			{ path: "dinner", component: SocialDinner24Component },
-		]
+			{ path: "", component: HomeCifris24Component, data: {title: 'CIFRIS24'} },
+			{ path: "venue", component: VenueAccomodationComponent24, data: {title: 'CIFRIS24: Venue'} },
+			{ path: "call-for-papers", component: CallForPapersComponent24, data: {title: 'CIFRIS24: Call for papers'} },
+			{ path: "call-for-workshops", component: CallForWorkshopsComponent24, data: {title: 'CIFRIS24: Call for workshops'} },
+			{ path: "program-committee", component: ProgramCommitteeComponent24, data: {title: 'CIFRIS24: Program Committee'} },
+			{ path: "registration", component: RegistrationComponent24, data: {title: 'CIFRIS24: Registration'} },
+			{ path: "registration-details", component: RegistrationDetailsComponent24, data: {title: 'CIFRIS24: Registration'} },
+			{ path: "program", component: ProgramComponent24, data: {title: 'CIFRIS24: Program'} },
+			{ path: "proceedings", component: ProceedingsComponent24, data: {title: 'CIFRIS24: Proceedings'} },
+			{ path: "payment-result", component: PaymentResultComponent24, data: {title: 'Payment result'} },
+			{ path: "ntc24", component: Ntc24Component, data: {title: 'CIFRIS24: NTC24'} },
+			{ path: "symcrypt24", component: SymcryptComponent24, data: {title: 'CIFRIS24: Symcrypt24'} },
+			{ path: "workshops", component: Workshops24Component, data: {title: 'CIFRIS24:Workshops'} },
+			{ path: "fcir24", component: Fcr24Component, data: {title: 'CIFRIS24: FCR24'} },
+			{ path: "qcifris24", component: Qcifris24Component, data: {title: 'CIFRIS24: QCifris24'} },
+			{ path: "readpqc24", component: Readpqc24Component, data: {title: 'CIFRIS24: ReadPQC24'} },
+			{ path: "tac24", component: Tac24Component, data: {title: 'CIFRIS24: TAC24'} },
+			{ path: "codemath24", component: Codemath24Component, data: {title: 'CIFRIS24: Codemath24'} },
+			{ path: "cpsid24", component: Cpsid24Component, data: {title: 'CIFRIS24: CPSID24'} },
+			{ path: "cifriscloud24", component: Cifriscloud24Component, data: {title: 'CIFRIS24: CifrisCloud24'} },
+			{ path: "institutional-session", component: InstitutionalSession24Component, data: {title: 'CIFRIS24: Institutional Session'} },
+			{ path: "scientific-session", component: ScientificSession24Component, data: {title: 'CIFRIS24: Scientific Session'} },
+			{ path: "dinner", component: SocialDinner24Component, data: {title: 'CIFRIS24: Social Dinner'} },
+		], data: {
+			title: 'CIFRIS24',
+			meta: [
+				{ name: 'description', content: "CIFRIS24 - the Second Italian Conference, by De Cifris & Banca d'Italia" },
+				{ property: 'og:title', content: "CIFRIS24 - the Second Italian Conference, by De Cifris & Banca d'Italia" }
+			]
+		}
 	},
 
 	// cifris 23
 	{
 		path: "cifris23", component: Cifris2023Component, children: [
-			{ path: "", component: HomeCifris23Component },
-			{ path: "call-for-papers", component: CallForPapersComponent },
-			{ path: "call-for-workshops", component: CallForWorkshopsComponent },
-			{ path: "program-committee", component: ProgramCommitteeComponent },
-			{ path: "registration", component: RegistrationComponent },
-			{ path: "program", component: ProgramComponent },
-			{ path: "proceedings", component: ProceedingsComponent },
-			{ path: "payment-result", component: PaymentResultComponent },
-		]
+			{ path: "", component: HomeCifris23Component, data: {title: 'CIFRIS23'} },
+			{ path: "call-for-papers", component: CallForPapersComponent, data: {title: 'CIFRIS23: Call for papers'} },
+			{ path: "call-for-workshops", component: CallForWorkshopsComponent, data: {title: 'CIFRIS23: Call for workshops'} },
+			{ path: "program-committee", component: ProgramCommitteeComponent, data: {title: 'CIFRIS23: Program committee'} },
+			{ path: "registration", component: RegistrationComponent, data: {title: 'CIFRIS23: Registration'} },
+			{ path: "program", component: ProgramComponent, data: {title: 'CIFRIS23: Program'} },
+			{ path: "proceedings", component: ProceedingsComponent, data: {title: 'CIFRIS23: Proceedings'} },
+			{ path: "payment-result", component: PaymentResultComponent, data: {title: 'payment result'} },
+		], data: {
+			title: 'CIFRIS23',
+			meta: [
+				{ name: 'description', content: 'CIFRIS23 - the First Italian Conference, by De Cifris & CONSOB' },
+				{ property: 'og:title', content: 'CIFRIS23 - the First Italian Conference, by De Cifris & CONSOB' }
+			]
+		}   
 	},
 
 	// koine
 	{
 		path: "koine", component: KoineComponent, children: [
-			{ path: "", component: HomeKoineComponent },
-			{ path: "articles-and-volumes", component: ArticlesAndVolumesComponent },
-			{ path: "open-access-statement", component: OpensourceStatementComponent },
-			{ path: "editorial-board", component: EditorialBoardComponent },
-			{ path: "vol1", component: Vol1Component },
-			{ path: "vol2", component: Vol2Component },
-			{ path: "vol3", component: Vol3Component },
-			{ path: "vol4", component: Vol4Component },
-            { path: ":volume/:article", component: ArticoloComponent, canMatch: [articoloGuard], pathMatch: 'full' },
+			{ path: "", component: HomeKoineComponent, data: {
+				title: 'De Cifris Koine',
+				meta: [
+					{ name: 'description', content: 'De Cifris Koine, by De Cifris Press' },
+					{ property: 'og:title', content: 'De Cifris Koine, by De Cifris Press' }
+				]
+			}   },
+			{ path: "articles-and-volumes", component: ArticlesAndVolumesComponent, data: {
+				title: 'Volumes',
+				meta: [
+					{ name: 'description', content: 'De Cifris Koine: articles and volumes' },
+					{ property: 'og:title', content: 'De Cifris Koine: articles and volumes' }
+				]
+			}    },
+			{ path: "open-access-statement", component: OpensourceStatementComponent, data: {
+				title: 'Open source statement',
+				meta: [
+					{ name: 'description', content: 'De Cifris Koine: open source statement' },
+					{ property: 'og:title', content: 'De Cifris Koine: open source statement' }
+				]
+			}    },
+			{ path: "editorial-board", component: EditorialBoardComponent, data: {
+				title: 'Editorial board',
+				meta: [
+					{ name: 'description', content: 'De Cifris Koine: editorial board' },
+					{ property: 'og:title', content: 'De Cifris Koine: editorial board' }
+				]
+			}    },
+			{ path: "vol1", component: Vol1Component, data: {
+				title: 'Koine: Volume 1',
+				meta: [
+					{ name: 'description', content: 'De Cifris Koine, volume 1' },
+					{ property: 'og:title', content: 'De Cifris Koine, volume 1' }
+				]
+			}    },
+			{ path: "vol2", component: Vol2Component, data: {
+				title: 'Koine: Volume 2',
+				meta: [
+					{ name: 'description', content: 'De Cifris Koine, volume 2' },
+					{ property: 'og:title', content: 'De Cifris Koine, volume 2' }
+				]
+			}    },
+			{ path: "vol3", component: Vol3Component, data: {
+				title: 'Koine: Volume 3',
+				meta: [
+					{ name: 'description', content: 'De Cifris Koine, volume 3' },
+					{ property: 'og:title', content: 'De Cifris Koine, volume 3' }
+				]
+			}    },
+			{ path: "vol4", component: Vol4Component, data: {
+				title: 'Koine: Volume 4',
+				meta: [
+					{ name: 'description', content: 'De Cifris Koine, volume 4' },
+					{ property: 'og:title', content: 'De Cifris Koine, volume 4' }
+				]
+			}    },
+			{ path: ":volume/:article", component: ArticoloComponent, canMatch: [articoloGuard], pathMatch: 'full' },
 		]
 	},
 
-	{ path: 'cifris/test', component: TestComponent },
+	{ path: 'cifris/test', component: TestComponent, data: {title: 'GUAI CHI LEGGE'} },
 
 	// Redirect per i percorsi cambiati
 	{ path: 'dicono-di-noi', redirectTo: '/associazione/dicono-di-noi', pathMatch: 'full' },
@@ -328,9 +468,9 @@ const routes: Routes = [
 
 
 	// Rotte per gli errori
-	{ path: '403', component: Error403Component },
-	{ path: '418', component: Error418Component },
-	{ path: '**', component: Error404Component },
+	{ path: '403', component: Error403Component, data: {title: 'Error 403'} },
+	{ path: '418', component: Error418Component, data: {title: 'Error 418'} },
+	{ path: '**', component: Error404Component, data: {title: 'Error 404'} },
 ];
 const routerOptions: ExtraOptions = {
 	scrollPositionRestoration: 'enabled',
