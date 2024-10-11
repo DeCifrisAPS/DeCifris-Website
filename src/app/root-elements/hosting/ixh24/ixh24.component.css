@@ -72,13 +72,6 @@ table.orari td {
   transition: background-color 0.3s ease;
 }
 
-/* Effetto hover sulle righe della tabella */
-table.orari tr:hover td {
-  background-color: var(--cifris_azure) !important;
-  color: var(--cifris_blue) !important;
-  color: white;
-}
-
 /* Righe alternate (stripe effect) */
 table.orari tr:nth-child(even) td {
   background-color: #f9f9f9; 
@@ -181,8 +174,8 @@ div.disclaimer-box {
 
 /* Wrapper per le immagini per gestire dimensioni e effetti */
 .image-wrapper {
-  height: 300px;
-  height: 300px;
+  height: 200px;
+  width: 400px;
   overflow: hidden;
   position: relative;
   border-radius: 10px;
@@ -202,13 +195,19 @@ div.disclaimer-box {
   border-radius: 10px;
 }
 
-/* Stile generale per l'intestazione delle regole */
 h2 {
   font-size: 2rem;
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--cifris_purple) !important;
   letter-spacing: 2px;
+}
+h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: var(--cifris_purple) !important;
+  letter-spacing: 1px;
 }
 
 /* Stile dell'elenco ordinato (numerato) */
@@ -261,7 +260,7 @@ ol li ul li {
   color: black;
   margin-bottom: 2px;
   padding-right: 20px;
-  list-style: none;
+  list-style:square;
 }
 
 /* Stile per le voci all'interno della sottolista */
