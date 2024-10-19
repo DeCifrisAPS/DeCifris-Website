@@ -26,77 +26,68 @@
     </div>
 </div>
 <div>
+
+  @for (article of theVolume.articles.slice(0, 1); track article) {
     <div class="doi-item">
-        <a href="">
-            <p class="title">Introduction to Advanced Cryptographic Protocols</p>
+        <a routerLink="/koine/{{ theVolume.id }}/{{ article.id }}">
+            <p class="title">{{ article.title }}</p>
         </a>
-        <p class="desc">Elizabeth A. Quaglia, Daniele Venturi</p>
-        <p class="desc">Page range: 2-6</p>
-        <a href="https://doi.org/10.69091/koine/vol-4-I01">
-            <p class="desc">DOI: https://doi.org/10.69091/koine/vol-4-I01</p>
+        <p class="desc">
+          @for (author of article.authors; track author) {
+            @if ($index !== 0) {
+            <span>, </span>
+            }
+            <span>{{ author.name }} {{ author.surname }}</span>
+          }
+        </p>
+        <p class="desc">Page range: {{ article.pageRange }}</p>
+        <a href="https://doi.org/{{ article.doi }}">
+            <p class="desc">DOI: https://doi.org/{{ article.doi }}</p>
         </a>
     </div>
-    <h3>PRIMITIVES</h3>
+  }
+
+  <h3>PRIMITIVES</h3>
+  @for (article of theVolume.articles.slice(1, 4); track article) {
     <div class="doi-item">
-        <a href="">
-            <p class="title">Secret Sharing for Arithmetic Properties</p>
+        <a routerLink="/koine/{{ theVolume.id }}/{{ article.id }}">
+            <p class="title">{{ article.title }}</p>
         </a>
-        <p class="desc">Ignacio Cascudo</p>
-        <p class="desc">Page range: 8-27</p>
-        <a href="https://doi.org/10.69091/koine/vol-4-P01">
-            <p class="desc">DOI: https://doi.org/10.69091/koine/vol-4-P01</p>
+        <p class="desc">
+          @for (author of article.authors; track author) {
+            @if ($index !== 0) {
+            <span>, </span>
+            }
+            <span>{{ author.name }} {{ author.surname }}</span>
+          }
+        </p>
+        <p class="desc">Page range: {{ article.pageRange }}</p>
+        <a href="https://doi.org/{{ article.doi }}">
+            <p class="desc">DOI: https://doi.org/{{ article.doi }}</p>
         </a>
     </div>
+  }
+
+  <h3>PROTOCOLS</h3>
+  @for (article of theVolume.articles.slice(4); track article) {
     <div class="doi-item">
-        <a href="">
-            <p class="title">Vector Commitment and Verifiable Outsourced Computation</p>
+        <a routerLink="/koine/{{ theVolume.id }}/{{ article.id }}">
+            <p class="title">{{ article.title }}</p>
         </a>
-        <p class="desc">Dario Fiore</p>
-        <p class="desc">Page range: 28-44</p>
-        <a href="https://doi.org/10.69091/koine/vol-4-P02">
-            <p class="desc">DOI: https://doi.org/10.69091/koine/vol-4-P02</p>
+        <p class="desc">
+          @for (author of article.authors; track author) {
+            @if ($index !== 0) {
+            <span>, </span>
+            }
+            <span>{{ author.name }} {{ author.surname }}</span>
+          }
+        </p>
+        <p class="desc">Page range: {{ article.pageRange }}</p>
+        <a href="https://doi.org/{{ article.doi }}">
+            <p class="desc">DOI: https://doi.org/{{ article.doi }}</p>
         </a>
     </div>
-    <div class="doi-item">
-        <a href="">
-            <p class="title">SNARKs</p>
-        </a>
-        <p class="desc">Markhuf Kohlweiss and Anca Nitulescu</p>
-        <p class="desc">Page range: 45-71</p>
-        <a href="https://doi.org/10.69091/koine/vol-4-P03">
-            <p class="desc">DOI: https://doi.org/10.69091/koine/vol-4-P03</p>
-        </a>
-    </div>
-    <h3>PROTOCOLS</h3>
-    <div class="doi-item">
-        <a href="">
-            <p class="title">An Introduction to Key Establishment</p>
-        </a>
-        <p class="desc">Bertram Poettering</p>
-        <p class="desc">Page range: 73-99</p>
-        <a href="https://doi.org/10.69091/koine/vol-4-P04">
-            <p class="desc">DOI: https://doi.org/10.69091/koine/vol-4-P04</p>
-        </a>
-    </div>
-    <div class="doi-item">
-        <a href="">
-            <p class="title">Blockchains and Cryptography</p>
-        </a>
-        <p class="desc">Alessandra Scafuro</p>
-        <p class="desc">Page range: 100-130</p>
-        <a href="https://doi.org/10.69091/koine/vol-4-P05">
-            <p class="desc">DOI: https://doi.org/10.69091/koine/vol-4-P05</p>
-        </a>
-    </div>
-    <div class="doi-item">
-        <a href="">
-            <p class="title">An Introduction to Electronic Voting</p>
-        </a>
-        <p class="desc">Oliver Pereira</p>
-        <p class="desc">Page range: 131-156</p>
-        <a href="https://doi.org/10.69091/koine/vol-4-P06">
-            <p class="desc">DOI: https://doi.org/10.69091/koine/vol-4-P06</p>
-        </a>
-    </div>
+  }
+
 </div>
 <hr>
