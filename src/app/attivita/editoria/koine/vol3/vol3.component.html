@@ -23,66 +23,26 @@
     </div>
 </div>
 <div>
+
+  @for (article of theVolume.articles; track article) {
     <div class="doi-item">
-        <a href="https://drive.google.com/file/d/1EU-3DccJU7jkyAbFza8HBSbsYtAvsuqF">
-            <p class="title">Introduzione a De Cifris Eruditorum</p>
+        <a routerLink="/koine/{{ theVolume.id }}/{{ article.id }}">
+            <p class="title">{{ article.title }}</p>
         </a>
-        <p class="desc">Antonino Alì, Massimiliano Sala</p>
-        <p class="desc">Page range: 2-4</p>
-        <a href="https://doi.org/10.69091/koine/vol-3-I01">
-            <p class="desc">DOI: https://doi.org/10.69091/koine/vol-3-I01</p>
+        <p class="desc">
+          @for (author of article.authors; track author) {
+            @if ($index !== 0) {
+            <span>, </span>
+            }
+            <span>{{ author.name }} {{ author.surname }}</span>
+          }
+        </p>
+        <p class="desc">Page range: {{ article.pageRange }}</p>
+        <a href="https://doi.org/{{ article.doi }}">
+            <p class="desc">DOI: https://doi.org/{{ article.doi }}</p>
         </a>
     </div>
-    <div class="doi-item">
-        <a href="https://drive.google.com/file/d/1wy0Abhg0l1_QCViK5ty0hAbKkCUi1OT4">
-            <p class="title">Franceschi-Partenio, una disputa crittografica nel Rinascimento</p>
-        </a>
-        <p class="desc">Paolo Bonavoglia</p>
-        <p class="desc">Page range: 5-23</p>
-        <a href="https://doi.org/10.69091/koine/vol-3-E01">
-            <p class="desc">DOI: https://doi.org/10.69091/koine/vol-3-E01</p>
-        </a>
-    </div>
-    <div class="doi-item">
-        <a href="https://drive.google.com/file/d/1BXJAAZbEknqH8sxUDKC21Eovi-ciI_H9">
-            <p class="title">Scrivere per nascondere, leggere per scoprire. Le origini della crittografia</p>
-        </a>
-        <p class="desc">Marco Moraglio</p>
-        <p class="desc">Page range: 24-34</p>
-        <a href="https://doi.org/10.69091/koine/vol-3-E02">
-            <p class="desc">DOI: https://doi.org/10.69091/koine/vol-3-E02</p>
-        </a>
-    </div>
-    <div class="doi-item">
-        <a href="https://drive.google.com/file/d/1u8VbvL1FQFchUrpe4T9UXLpQ7428bOVe">
-            <p class="title">Epigrafi cifrate nelle chiese antiche</p>
-        </a>
-        <p class="desc">Cosimo Palma</p>
-        <p class="desc">Page range: 35-51</p>
-        <a href="https://doi.org/10.69091/koine/vol-3-E03">
-            <p class="desc">DOI: https://doi.org/10.69091/koine/vol-3-E03</p>
-        </a>
-    </div>
-    <div class="doi-item">
-        <a href="https://drive.google.com/file/d/1jZWPY32iGWw81o58CBmyx1vavr6w2beH">
-            <p class="title">Il nuovo framework giuridico cyber dell'Italia. <br> La crittografia come strumento di
-                cybersicurezza e per l'autonomia strategica nazionale</p>
-        </a>
-        <p class="desc">Marcello Albergoni</p>
-        <p class="desc">Page range: 52-58</p>
-        <a href="https://doi.org/10.69091/koine/vol-3-E04">
-            <p class="desc">DOI: https://doi.org/10.69091/koine/vol-3-E04</p>
-        </a>
-    </div>
-    <div class="doi-item">
-        <a href="https://drive.google.com/file/d/1WSvJW52DtrXJ4fsHKYvw2ofSxgio49tr">
-            <p class="title">Human Rights Implications of Encryption Backdoors</p>
-        </a>
-        <p class="desc">Antonino Alì</p>
-        <p class="desc">Page range: 59-72</p>
-        <a href="https://doi.org/10.69091/koine/vol-3-E05">
-            <p class="desc">DOI: https://doi.org/10.69091/koine/vol-3-E05</p>
-        </a>
-    </div>
+  }
+
 </div>
 <hr>
