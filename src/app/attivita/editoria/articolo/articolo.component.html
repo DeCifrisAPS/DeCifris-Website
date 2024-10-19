@@ -27,10 +27,10 @@
       }
     </ul>
     <p>
-      From the book series <a routerLink="/koine" title="Koine">De Cifris Koine</a>.
       In
       <a [title]="theVolume.title" routerLink="/koine/{{theVolume.id}}">
-        {{ theVolume.title }}</a>.
+        {{ theVolume.title }}</a>.<br />
+      From the book series <a routerLink="/koine" title="Koine">De Cifris Koine</a>.
     </p>
     <ul class="preamble">
       <li><a class="text-muted" title="doi" href="https://doi.org/{{ theArticle.doi }}">https://doi.org/{{
