@@ -49,7 +49,7 @@ const pages = [
   { url: '/attivita', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/home-attivita/home-attivita.component.html' },
   { url: '/attivita/editoria', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/editoria.component.html' },
   { url: '/attivita/centotesi-2008-2017', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/centotesi20082017/centotesi20082017.component.html' },
-  { url: '/attivita/centotesi-2014-2023', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/centotesi20142023/centotesi20142023.component.html' },
+  { url: '/attivita/centotesi-2017-2024', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/centotesi20142023/centotesi20142023.component.html' },
 
   { url: '/attivita/corsi', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/corsi/corsi.component.html' },
   { url: '/attivita/trends24', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/corsi/trends24/trends24.component.html' },
@@ -151,7 +151,7 @@ const pages = [
   { url: '/attivita/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/home-attivita/home-attivita.component.html' },
   { url: '/attivita/editoria/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/editoria.component.html' },
   { url: '/attivita/centotesi-2008-2017/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/centotesi20082017/centotesi20082017.component.html' },
-  { url: '/attivita/centotesi-2014-2023/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/centotesi20142023/centotesi20142023.component.html' },
+  { url: '/attivita/centotesi-2017-2024/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/centotesi20142023/centotesi20142023.component.html' },
   { url: '/attivita/corsi/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/corsi/corsi.component.html' },
   { url: '/attivita/trends24/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/corsi/trends24/trends24.component.html' },
   { url: '/attivita/trends23/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/corsi/trends23/trends23.component.html' },

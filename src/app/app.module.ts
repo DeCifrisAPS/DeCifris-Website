@@ -150,7 +150,7 @@ import { Vol4Component } from './attivita/editoria/koine/vol4/vol4.component';
 // import { NotizieComponent } from './associazione/notizie/notizie.component';
 // import { EventiPatrocinatiComponent } from './eventi/eventi-patrocinati/eventi-patrocinati/eventi-patrocinati.component';
 // import { VenueAccomodationComponent24 } from './cifris/cifris2024/venue-accomodation/venue-accomodation.component';
-// import { Centotesi20142023Component } from './attivita/centotesi20142023/centotesi20142023.component';
+// import { Centotesi20172024Component } from './attivita/centotesi20172024/centotesi20172024.component';
 // import { Vol2Component } from './attivita/editoria/koine/vol2/vol2.component';
 
 @NgModule({
@@ -325,7 +325,7 @@ import { Vol4Component } from './attivita/editoria/koine/vol4/vol4.component';
         // Vol1Component,
         // //Centotesi
         // Centotesi20082017Component,
-        // Centotesi20142023Component,
+        // Centotesi20172024Component,
         // //Trends
         // Trends24Component,
         // Trends23Component,

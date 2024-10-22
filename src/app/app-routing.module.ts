@@ -41,7 +41,7 @@ import { AttivitaComponent } from './attivita/attivita.component';
 import { HomeAttivitaComponent } from './attivita/home-attivita/home-attivita.component';
 import { EditoriaComponent } from './attivita/editoria/editoria.component';
 import { Centotesi20082017Component } from './attivita/editoria/centotesi20082017/centotesi20082017.component';
-import { Centotesi20142023Component } from './attivita/editoria/centotesi20142023/centotesi20142023.component';
+import { Centotesi20172024Component } from './attivita/editoria/centotesi20172024/centotesi20172024.component';
 import { BlockchainSmartContractComponent } from './attivita/corsi/blockchain-smart-contract/blockchain-smart-contract.component';
 import { Trends22Component } from './attivita/corsi/trends22/trends22.component';
 import { Trends22bisComponent } from './attivita/corsi/trends22/trends22bis/trends22bis.component';
@@ -252,7 +252,7 @@ const routes: Routes = [
 			// editoria
 			{ path: "editoria", component: EditoriaComponent, data: {title: 'Editoria'} },
 			{ path: "centotesi-2008-2017", component: Centotesi20082017Component, data: {title: 'Cento Tesi 2008-2017'} },
-			{ path: "centotesi-2014-2023", component: Centotesi20142023Component, data: {title: 'Cento TEsi 2014-2023'} },
+			{ path: "centotesi-2017-2024", component: Centotesi20172024Component, data: {title: 'Cento Tesi 2017-2024'} },
 			// { path: 'koine', redirectTo: '/koine/home', pathMatch: 'full' },
 			// corsi
 			{ path: 'corsi', component: CorsiComponent, data: {title: 'Corsi'} },
