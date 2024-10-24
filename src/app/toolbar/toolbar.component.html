@@ -12,9 +12,9 @@
         <ul class="navbar-nav">
             <!-- MENU WELCOME -->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" routerLink="/welcome" id="welcomeDropdownMenuLink" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false" aria-labelledby="welcomeDropdownMenuLink"
-                    style="color: white; font-weight: 600;">Welcome</a>
+                <a class="nav-link dropdown-toggle" routerLink="/welcome" id="welcomeDropdownMenuLink"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    aria-labelledby="welcomeDropdownMenuLink" style="color: white; font-weight: 600;">Welcome</a>
                 <div class="dropdown-menu" aria-labelledby="welcomeDropdownMenuLink">
                     <a class="dropdown-item" routerLink="/welcome/ricercatori" aria-labelledby="welcomeDropdownItem1"
                         data-toggle="collapse" data-target=".navbar-collapse.show">Fai ricerca?</a>
@@ -82,11 +82,22 @@
                         data-toggle="collapse" data-target=".navbar-collapse.show">Editoria</a>
                 </div>
             </li>
-            <!-- MENU CIFRIS23 -->
+            <!-- MENU IXH24 -->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" routerLink="/attivita/trends24" id="cifris23DropdownMenuLink"
+                <a class="nav-link dropdown-toggle" routerLink="/ixh24" id="ixh24DropdownMenuLink"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                    aria-labelledby="Trends24DropdownMenuLink" style="color: white; font-weight: 600;">TRENDS24</a>
+                    aria-labelledby="ixh24DropdownMenuLink" style="color: white; font-weight: 600;">IXH24</a>
+                <div class="dropdown-menu" aria-labelledby="cifris24DropdownMenuLink">
+                    <a class="dropdown-item" [routerLink]="['/ixh24']" fragment="schedule"
+                        aria-labelledby="cifris24DropdownItem1" data-toggle="collapse"
+                        data-target=".navbar-collapse.show">Schedule</a>
+                    <a class="dropdown-item" [routerLink]="['/ixh24']" fragment="rules"
+                        aria-labelledby="cifris24DropdownItem1" data-toggle="collapse"
+                        data-target=".navbar-collapse.show">Details</a>
+                    <a class="dropdown-item" [routerLink]="['/ixh24']" fragment="teams"
+                        aria-labelledby="cifris24DropdownItem1" data-toggle="collapse"
+                        data-target=".navbar-collapse.show">Teams</a>
+                </div>
             </li>
             <!-- MENU CIFRIS24 -->
             <li class="nav-item dropdown">
@@ -104,8 +115,8 @@
                         data-toggle="collapse" data-target=".navbar-collapse.show">Workshops</a>
                     <a class="dropdown-item" routerLink="/cifris24/venue" aria-labelledby="cifris24DropdownItem6"
                         data-toggle="collapse" data-target=".navbar-collapse.show">Venue & shuttles</a>
-                        <a class="dropdown-item" routerLink="/cifris24/dinner" aria-labelledby="cifris24DropdownItem7"
-                            data-toggle="collapse" data-target=".navbar-collapse.show">Social event</a>
+                    <a class="dropdown-item" routerLink="/cifris24/dinner" aria-labelledby="cifris24DropdownItem7"
+                        data-toggle="collapse" data-target=".navbar-collapse.show">Social event</a>
                     <a class="dropdown-item" routerLink="/cifris24/proceedings" aria-labelledby="cifris24DropdownItem8"
                         data-toggle="collapse" data-target=".navbar-collapse.show">Proceedings</a>
                     <mat-divider></mat-divider>
