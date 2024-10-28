@@ -15,14 +15,31 @@
         It is jointly organized by <span class="highlight">XRPL Commons</span>, a leading blockchain community,
         <span class="highlight">De Componendis Cifris</span>, the Italian association of cryptography, and <span
             class="highlight">Roma Tre University</span>.
-        <br><br>
+        <br>
         The hackathon will bring together teams of students from Italian universities, with students from across
         Europe also welcome to join and participate.
         <br><br>
         Set in the eternal city of <span class="highlight">Rome</span>, the event will take place from
         <span class="highlight highlight-date"><i class="fa fa-calendar-alt"></i> November 22nd to 23rd, 2024</span>,
         with a total prize pool of <span class="highlight highlight-prize">€10,000</span>.
+        <span class="highlight highlight-date"><i class="fa-solid fa-ticket"></i><a class="register-link"
+                [routerLink]="['/ixh24']" fragment="teams"> Register now!</a></span>
     </p>
+    <div class="image-container-horizontal" style="margin-bottom: 0;">
+        <a [routerLink]="['/ixh24']" fragment="tracks" class="track-wrapper">
+            <div class="track-overlay">
+                Cryptography Track
+            </div>
+            <img src="../../../../assets/images/events/2024/ixh24/CYPTO_track.jpg" alt="Cryptography">
+        </a>
+        <a [routerLink]="['/ixh24']" fragment="tracks" class="track-wrapper">
+            <div class="track-overlay">
+                XRPL Track
+            </div>
+            <img src="../../../../assets/images/events/2024/ixh24/XRPL_track.png" alt="XRPL">
+        </a>
+    </div>
+    <!--
     <div class="table-of-contents">
         <div class="toc-buttons">
             <a mat-button [routerLink]="['/ixh24']" fragment="schedule">Schedule</a>
@@ -30,6 +47,7 @@
             <a mat-button [routerLink]="['/ixh24']" fragment="teams">Teams</a>
         </div>
     </div>
+    -->
 </div>
 <div class="image-container-horizontal">
     <div class="image-wrapper">
@@ -246,37 +264,39 @@
         <li>
             <b>Team composition</b>
             <ul>
-                <li>Teams can consist of <b>3 to 7 participants</b>. Participants may only be part of <b>one</b> team
-                    during
-                    the hackathon.
+                <li>Teams can consist of <b>3 to 7 participants</b>. Participants may only be part of <b>one</b> team.
                 </li>
-                <li>Team leaders must register to the hackathon no later than November 11th.</li>
-                <li>Participants already affiliated to a team must register to the hackathon no later than November 15th.</li>
+                <li><b>Italian universities</b> will have an affiliated team. <br>
+                    Their team leaders must register to the hackathon no later than November 11th.<br>
+                    Their team members must register to the hackathon no later than November
+                    15th.</li>
+                <li>International teams do not need to follow the latter, but are encouraged to register all their
+                    members before November 15th.</li>
                 <li>Participants without a team will be assigned one during registration on November 22nd.</li>
             </ul>
         </li>
         <li>
-            <b>Tracks and themes</b> <br>
+            <b>Tracks and projects</b> <br>
             <p>
-                We will propose two tracks, which correspond to two different challenges. Each team
-                will select its own track.
+                The hackathon consists of two tracks, which correspond to two different challenges. Each team
+                will select its own track during the event and submit only one project. <br>
+                Details on the challenges will be given during the event.
             </p>
             <ul>
                 <li><b>Track 1: Cryptography for blockchain</b>
                     <br>
                     Projects under this track must demonstrate a clear application of cryptographic techniques to
                     solve the
-                    challenge. This can include, but is not limited to, encryption algorithms, zero-knowledge proofs,
-                    digital signatures, or
-                    other privacy-enhancing technologies.
+                    challenge. The challenge can include, but is not limited to, encryption algorithms, zero-knowledge
+                    proofs,
+                    digital signatures, or other privacy-enhancing technologies.
                 </li>
                 <li><b>Track 2: XRPL applications</b>
                     <br>
-                    Projects must involve the XRP Ledger in some way, whether
+                    Projects under this track must involve the XRP Ledger in some way, whether
                     through integrations, apps, decentralised finance,
-                    or smart contracts. Creativity and innovation in utilising XRPL to solve the challenge will be
-                    highly
-                    encouraged.
+                    or smart contracts. Creativity and innovation in utilising the XRP ledger to solve the challenge are
+                    highly encouraged.
                 </li>
             </ul>
         </li>
@@ -334,15 +354,60 @@
     </ol>
 </div>
 
+<hr id="tracks">
+
+<h2>Tracks</h2>
+<div class="text">
+    Details on the challenges of the two tracks will be given at the start of the event.
+    <br>
+    More information in the <a [routerLink]="['/ixh24']" fragment="rules">hackathon details</a>
+</div>
+
 <hr id="teams">
 
 
-<h2>Teams</h2>
-<div class="text">
-    <h3>Registration</h3>
-    Tickets for IXH24 are limited! Register now <a
-        href="https://www.eventbrite.fr/e/ixh24-italian-xrpl-hackathon-2024-tickets-1042856701467?aff=erelpanelorg">via
-        Eventbrite</a>.
-    <h3>Confirmed teams</h3>
-    <p>TBA.</p>
-</div>
+<section class="teams-section">
+    <h2>Teams</h2>
+    <div class="text">
+        <div class="registration-info">
+            <h3>Registration</h3>
+            <p>Tickets for <span class="highlight">IXH24</span> are limited,
+                <span class="highlight highlight-date"><i class="fa-solid fa-ticket"></i> register now
+                    <a href="https://www.eventbrite.fr/e/ixh24-italian-xrpl-hackathon-2024-tickets-1042856701467?aff=erelpanelorg"
+                        class="register-link">via Eventbrite</a>.
+                </span>
+                <br>
+                If you are an Italian university wishing to participate with your own team, or if you are an aspiring
+                team leader for an Italian university, write us at <a
+                    href="mailto:hack@decifris.it">hack&#64;decifris.it</a>. International teams are not required to
+                contact us via email.
+            </p>
+        </div>
+
+        <div class="teams-list">
+            <h3>Confirmed Teams</h3>
+            <ul>
+                <li>
+                    <i class="fa fa-graduation-cap"></i>
+                    <b class="university-name"> Università di Perugia</b>
+                    <span class="team-leader">Team leader: <i>Giacomo Brandi</i></span>
+                </li>
+                <li>
+                    <i class="fa fa-graduation-cap"></i>
+                    <b class="university-name"> Università di Bari</b>
+                    <span class="team-leader">Team leader: <i>Luca Nestore</i></span>
+                </li>
+                <li>
+                    <i class="fa fa-graduation-cap"></i>
+                    <b class="university-name"> Università di Milano</b>
+                    <span class="team-leader">Team leader: <i>Simone Pelizzola</i></span>
+                </li>
+                <li>
+                    <i class="fa fa-graduation-cap"></i>
+                    <b class="university-name"> Università di Trento</b>
+                    <span class="team-leader">Team leader: <i>Marco Marchesin</i></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
