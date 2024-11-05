@@ -289,7 +289,7 @@ li::before {
 }
 
 details[open] > *:not(summary) {
-  margin-left: 50px;
+  margin-left: 20px;
 }
 
 details[open] summary .rule-name {
@@ -463,12 +463,12 @@ details[open] summary::before {
 
 .team-leader {
   margin-top: 4px;
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: #555;
   font-style: italic;
 }
 
 .team-leader i{
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: #555;
 }
