@@ -56,9 +56,9 @@ export class AppComponent implements AfterViewInit, OnInit {
     });
   }
   onActivate(event) {
-    if (typeof window !== "undefined") {
-      window.scroll(0, 0);
-    }
+    //if (typeof window !== "undefined") {
+    //  window.scroll(0, 0);
+    //}
   }
   toggleSidebar() {
     const sidebar = document.getElementById('sidebar');

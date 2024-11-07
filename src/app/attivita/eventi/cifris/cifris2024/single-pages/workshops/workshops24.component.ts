@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './workshops24.component.html',
   styleUrl: './workshops24.component.css'
 })
+
 export class Workshops24Component {
 
 }

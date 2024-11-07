@@ -503,16 +503,17 @@ const routes: Routes = [
 	{ path: 'cryptowars/2011/pubblica', redirectTo: '/attivita/cryptowars/2011/pubblica', pathMatch: 'full' },
 	{ path: 'cryptowars/2011/simmetrica', redirectTo: '/attivita/cryptowars/2011/simmetrica', pathMatch: 'full' },
 
-
 	// Rotte per gli errori
 	{ path: '403', component: Error403Component, data: { title: 'Error 403' } },
 	{ path: '418', component: Error418Component, data: { title: 'Error 418' } },
 	{ path: '**', component: Error404Component, data: { title: 'Error 404' } },
 ];
+
 const routerOptions: ExtraOptions = {
 	scrollPositionRestoration: 'enabled',
 	anchorScrolling: 'enabled'
 };
+
 @NgModule({
 	imports: [RouterModule.forRoot(routes, routerOptions)],
 	exports: [RouterModule]

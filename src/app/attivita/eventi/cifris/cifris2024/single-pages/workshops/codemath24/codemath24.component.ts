@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './codemath24.component.html',
   styleUrl: '../../../../../../../../styles-tabelle-orari.css'
 })
+
 export class Codemath24Component {
 
 }
