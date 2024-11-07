@@ -35,7 +35,7 @@ Scaricare il codice da GitHub è semplice: è sufficiente cliccare sul menù dro
 ```
 git clone https://github.com/<username>/<indirizzoRepo>
 ```
-avendo cura di sostituire `<username>` e `<indirizzoRepo>` rispettivamente con il proprietario del progetto e l'effettivo indirizzo in cui si trova il progetto.  Ad oggi il progetto è reperibile all'indirizzo `https://github.com/triki96/de-cifris-site`. Sarà buona misura iniziare ogni futura operazione al codice con un 
+avendo cura di sostituire `<username>` e `<indirizzoRepo>` rispettivamente con il proprietario del progetto e l'effettivo indirizzo in cui si trova il progetto.  Ad oggi il progetto è reperibile all'indirizzo `https://github.com/DeCifrisAPS/DeCifris-Website` dell'organizzazione GitHub `DeCifrisAPS`. Sarà buona misura iniziare ogni futura operazione al codice con un 
 ```
 git pull
 ```
