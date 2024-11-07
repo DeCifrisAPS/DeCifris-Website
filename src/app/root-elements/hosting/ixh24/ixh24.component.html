@@ -23,7 +23,7 @@
         <span class="highlight highlight-date"><i class="fa fa-calendar-alt"></i> November 22nd to 23rd, 2024</span>,
         with a total prize pool of <span class="highlight highlight-prize">€10,000</span>.
         <span class="highlight highlight-date"><i class="fa-solid fa-ticket"></i><a class="register-link"
-                [routerLink]="['/ixh24']" fragment="teams"> Register now!</a></span>
+                [routerLink]="['/ixh24']" fragment="teams"> Register now, tickets are limited!</a></span>
     </p>
     <div class="image-container-horizontal" style="margin-bottom: 0;">
         <a [routerLink]="['/ixh24']" fragment="tracks" class="track-wrapper">
@@ -270,8 +270,10 @@
                 <ol>
                     <li>to have legal rights to be in Rome from the 21-st to the 23-rd of November 2024 (e.g., if you
                         are an EU
-                        citizen), and</li>
-                    <li>to be at least 18-year old on the 31-st of December 2024.</li>
+                        citizen),</li>
+                    <li>to be at least 18-year old on the 31-st of December 2024, and </li>
+                    <li>to register following the <a [routerLink]="['/ixh24']" fragment="teams">registration
+                            procedure</a>.</li>
                 </ol>
             </li>
             <li>
@@ -447,8 +449,12 @@
                 <br>
                 If you are an Italian university wishing to participate with your own team, or if you are an aspiring
                 team leader for an Italian university, write us at <a
-                    href="mailto:hack@decifris.it">hack&#64;decifris.it</a>. International teams are not required to
-                contact us via email.
+                    href="mailto:hack@decifris.it">hack&#64;decifris.it</a>
+                (
+                <span class="highlight highlight-date">
+                    
+                    <a class="register-link" [routerLink]="['/ixh24']" fragment="rules"><i class="fa-solid fa-list-ol"> </i> read more</a>
+                </span>).
             </p>
         </div>
 
