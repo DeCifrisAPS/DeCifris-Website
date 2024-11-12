@@ -12,14 +12,25 @@
                 Open webpage
             </a>
             <br>
-            <a class="download" mat-button href="https://drive.google.com/file/d/1t-IVZM1sTo2ADMnHIdGMnpwpc_8JGAwg">
+            <a class="download" mat-button href="{{ theVolume.volumeLink }}">
                 Download volume
             </a>
             <br>
-            <a class="download" mat-button href="https://drive.google.com/file/d/1SGAx1OPMQt3J52Hvip-9kSBF-OmPaSOT">
+            <a class="download" mat-button href="{{ theVolume.coverLink }}">
                 Download cover
             </a>
         </div>
+    </div>
+    <div class="edited-by">
+      <b>Edited by:&nbsp;</b>
+      @if (theVolume.articles.length > 0) {
+        @for (author of theVolume.articles[0].authors; track author) {
+          @if ($index !== 0) {
+          <span>, </span>
+          }
+          <span>{{ author.name }} {{ author.surname }}</span>
+        }
+      }
     </div>
 </div>
 <div>

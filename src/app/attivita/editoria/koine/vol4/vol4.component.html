@@ -14,15 +14,26 @@
                 Open webpage
             </a>
             <!--
-            <a class="download" mat-button href="">
+            <a class="download" mat-button href="{{ theVolume.volumeLink }}">
                 Download volume
             </a>
             <br>
-            <a class="download" mat-button href="">
+            <a class="download" mat-button href="{{ theVolume.coverLink }}">
                 Download cover
             </a>
             -->
         </div>
+    </div>
+    <div class="edited-by">
+      <b>Edited by:&nbsp;</b>
+      @if (theVolume.articles.length > 0) {
+        @for (author of theVolume.articles[0].authors; track author) {
+          @if ($index !== 0) {
+          <span>, </span>
+          }
+          <span>{{ author.name }} {{ author.surname }}</span>
+        }
+      }
     </div>
 </div>
 <div>
