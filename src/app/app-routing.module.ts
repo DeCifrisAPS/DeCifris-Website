@@ -126,6 +126,7 @@ import { Ixh24Component } from './root-elements/hosting/ixh24/ixh24.component';
 import { ArticoloComponent } from './attivita/editoria/articolo/articolo.component';
 import { articoloGuard } from './attivita/editoria/articolo/articolo.guard';
 import { LicenseComponent } from './attivita/editoria/koine/license/license.component';
+import { Fcir25Component } from './root-elements/hosting/fcir25/fcir25.component';
 
 
 // importante mettere come children tutti quelli che condividono la stessa sidebar, dato
@@ -176,6 +177,15 @@ const routes: Routes = [
 					meta: [
 						{ name: 'description', content: 'Opera 2024, sponsored by DeCifris' },
 						{ property: 'og:title', content: 'Opera 2024, sponsored by DeCifris' }
+					]
+				}
+			},
+			{
+				path: "fcir25", component: Fcir25Component, data: {
+					title: 'FCiR25',
+					meta: [
+						{ name: 'description', content: 'Financial Cryptography in Rome 2025' },
+						{ property: 'og:title', content: 'Financial Cryptography in Rome 2025' }
 					]
 				}
 			},

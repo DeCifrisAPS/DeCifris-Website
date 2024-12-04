@@ -1,0 +1,19 @@
+
+table {
+    width: 500px;
+    border-collapse: collapse;
+    margin: 10px 0;
+    border: 0px;
+}
+
+td {
+    padding: 3px;
+}
+
+.left-column {
+    text-align: left;
+}
+
+.right-column {
+    text-align: right;
+}
