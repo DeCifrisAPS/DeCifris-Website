@@ -1,15 +1,23 @@
 import { Component, OnInit } from '@angular/core';
+import { Title, Meta, MetaDefinition } from '@angular/platform-browser';
+import { ArticoloService } from '../../articolo/articolo.service';
+import { Volume, Articolo, Author } from '../../articolo/articolo.model';
 
 @Component({
   selector: 'app-vol2',
   templateUrl: './vol2.component.html',
-  styleUrls: ['../../../../../styles-koine-volumes.css']
+  styleUrl: '../../../../../styles-koine-volumes.css'
 })
-export class Vol2Component implements OnInit {
+export class Vol2Component {
 
-  constructor() { }
+  theVolume: Volume = { id: "", title: "", publisher: "", published: "", series: "", ISBN: "", ISSN: "", volumeLink: "", coverLink: "", articles: [] };
 
-  ngOnInit(): void {
+  constructor(private metaService: Meta, private titleService: Title, private articoloService: ArticoloService) {}
+
+  ngOnInit() {
+    this.articoloService.getVolume("koine", "vol2").subscribe((volume: Volume)  => {
+      this.theVolume = volume;
+    });
   }
 
 }
