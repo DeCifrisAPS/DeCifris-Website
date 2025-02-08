@@ -127,6 +127,7 @@ import { ArticoloComponent } from './attivita/editoria/articolo/articolo.compone
 import { articoloGuard } from './attivita/editoria/articolo/articolo.guard';
 import { LicenseComponent } from './attivita/editoria/koine/license/license.component';
 import { Fcir25Component } from './root-elements/hosting/fcir25/fcir25.component';
+import { W25Component } from './root-elements/w25/w25.component';
 
 
 // importante mettere come children tutti quelli che condividono la stessa sidebar, dato
@@ -186,6 +187,15 @@ const routes: Routes = [
 					meta: [
 						{ name: 'description', content: 'Financial Cryptography in Rome 2025' },
 						{ property: 'og:title', content: 'Financial Cryptography in Rome 2025' }
+					]
+				}
+			},
+			{
+				path: "w25", component: W25Component, data: {
+					title: 'w25',
+					meta: [
+						{ name: 'description', content: '2025 workshop on encryption techniques' },
+						{ property: 'og:title', content: '2025 workshop on encryption techniques' }
 					]
 				}
 			},
