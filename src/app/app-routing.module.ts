@@ -128,6 +128,7 @@ import { articoloGuard } from './attivita/editoria/articolo/articolo.guard';
 import { LicenseComponent } from './attivita/editoria/koine/license/license.component';
 import { Fcir25Component } from './root-elements/hosting/fcir25/fcir25.component';
 import { W25Component } from './root-elements/w25/w25.component';
+import { AziendeComponent } from './associazione/aziende/aziende.component';
 
 
 // importante mettere come children tutti quelli che condividono la stessa sidebar, dato
@@ -244,6 +245,7 @@ const routes: Routes = [
 			{ path: "", component: HomeAssociazioneComponent, data: { title: 'Associazione' } },
 			{ path: "statuto", component: StatutoComponent, data: { title: 'Statuto' } },
 			{ path: "regolamento", component: RegolamentoComponent, data: { title: 'Regolamento' } },
+			{ path: "affiliati-partner", component: AziendeComponent, data: { title: 'Affiliati e partner' } },
 			{ path: "organi-direttivi", component: OrganiDirettiviComponent, data: { title: 'Organi Direttivi' } },
 			{ path: "advisory-board", component: AdvisoryBoardComponent, data: { title: 'Advisory Board' } },
 			{ path: "posizioni-ricerca", component: PosizioniRicercaComponent, data: { title: 'Posizioni di ricerca' } },
