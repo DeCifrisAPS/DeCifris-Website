@@ -35,16 +35,14 @@
 
 .card .container {
   padding: 5px;
-  padding-top: 0px;
   left: 0;
   right: 0;
   margin: auto;
 }
 
 .card .container h1{
-  font-size: 1.25rem; /* Dimensione del titolo */
+  font-size: 1.25rem; 
   font-weight: 700;
-  margin-bottom: 8px;
   height: fit-content!important;
   background-color: var(--cifris_purple);
   color: white !important;
