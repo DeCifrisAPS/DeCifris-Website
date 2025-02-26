@@ -7,22 +7,29 @@
             <p class="desc">ISBN: 979-12-81863-03-3</p>
             <p class="desc">ISSN: 3034-9796</p>
             <br>
-            <i>coming soon</i>
-            <br>
-            <br>
             <a class="download" mat-button routerLink="/koine/vol4">
                 Open webpage
             </a>
-            <!--
-            <a class="download" mat-button href="">
+            <br>
+            <a class="download" mat-button href="{{ theVolume.volumeLink }}">
                 Download volume
             </a>
             <br>
-            <a class="download" mat-button href="">
+            <a class="download" mat-button href="{{ theVolume.coverLink }}">
                 Download cover
             </a>
-            -->
         </div>
+    </div>
+    <div class="edited-by">
+      <b>Edited by:&nbsp;</b>
+      @if (theVolume.articles.length > 0) {
+        @for (author of theVolume.articles[0].authors; track author) {
+          @if ($index !== 0) {
+          <span>, </span>
+          }
+          <span>{{ author.name }} {{ author.surname }}</span>
+        }
+      }
     </div>
 </div>
 <div>

@@ -126,6 +126,9 @@ import { Ixh24Component } from './root-elements/hosting/ixh24/ixh24.component';
 import { ArticoloComponent } from './attivita/editoria/articolo/articolo.component';
 import { articoloGuard } from './attivita/editoria/articolo/articolo.guard';
 import { LicenseComponent } from './attivita/editoria/koine/license/license.component';
+import { Fcir25Component } from './root-elements/hosting/fcir25/fcir25.component';
+import { W25Component } from './root-elements/w25/w25.component';
+import { AziendeComponent } from './associazione/aziende/aziende.component';
 
 
 // importante mettere come children tutti quelli che condividono la stessa sidebar, dato
@@ -180,6 +183,24 @@ const routes: Routes = [
 				}
 			},
 			{
+				path: "fcir25", component: Fcir25Component, data: {
+					title: 'FCiR25',
+					meta: [
+						{ name: 'description', content: 'Financial Cryptography in Rome 2025' },
+						{ property: 'og:title', content: 'Financial Cryptography in Rome 2025' }
+					]
+				}
+			},
+			{
+				path: "w25", component: W25Component, data: {
+					title: 'w25',
+					meta: [
+						{ name: 'description', content: '2025 workshop on encryption techniques' },
+						{ property: 'og:title', content: '2025 workshop on encryption techniques' }
+					]
+				}
+			},
+			{
 				path: "combinatorics24", component: Combinatorics24Component, data: {
 					title: 'Combinatorics24',
 					meta: [
@@ -224,6 +245,7 @@ const routes: Routes = [
 			{ path: "", component: HomeAssociazioneComponent, data: { title: 'Associazione' } },
 			{ path: "statuto", component: StatutoComponent, data: { title: 'Statuto' } },
 			{ path: "regolamento", component: RegolamentoComponent, data: { title: 'Regolamento' } },
+			{ path: "affiliati-partner", component: AziendeComponent, data: { title: 'Affiliati e partner' } },
 			{ path: "organi-direttivi", component: OrganiDirettiviComponent, data: { title: 'Organi Direttivi' } },
 			{ path: "advisory-board", component: AdvisoryBoardComponent, data: { title: 'Advisory Board' } },
 			{ path: "posizioni-ricerca", component: PosizioniRicercaComponent, data: { title: 'Posizioni di ricerca' } },
@@ -290,8 +312,8 @@ const routes: Routes = [
 			{ path: "decifris-historiae", component: DecifrisHistoriaeComponent, data: { title: 'De Cifris Historiae' } },
 			{ path: "decifris-athesis", component: DecifrisAthesisComponent, data: { title: 'De Cifris Athesis' } },
 			{ path: "decifris-agora", component: AgoraComponent, data: { title: 'De Cifris Agora' } },
-			{ path: "decifris-augustaeTaurinorum", component: DecifrisAugustaeTaurinorumComponent, data: { title: 'De Cifris Augustae Taurinorum' } },
-			{ path: "decifris-scholaLatina", component: DecifrisScholaLatinaComponent, data: { title: 'De Cifris Schola Latina' } },
+			{ path: "decifris-augustaetaurinorum", component: DecifrisAugustaeTaurinorumComponent, data: { title: 'De Cifris Augustae Taurinorum' } },
+			{ path: "decifris-scholalatina", component: DecifrisScholaLatinaComponent, data: { title: 'De Cifris Schola Latina' } },
 			{ path: "decifris-mediolanensibus", component: DecifrisScholaMediolanensibusComponent, data: { title: 'De Cifris Schola Mediolanensibus' } },
 			{ path: 'cifrischain', component: CifrisChainComponent, data: { title: 'CifrisChain' } },
 			{ path: 'quantumcifris', component: QuantumCifrisComponent, data: { title: 'QuantumCifris' } },

@@ -142,6 +142,8 @@ import { ProceedingsComponent24 } from './attivita/eventi/cifris/cifris2024/proc
 import { TimelineComponent } from './associazione/organi-direttivi/timeline/timeline.component';
 import { Ixh24Component } from './root-elements/hosting/ixh24/ixh24.component';
 import { Vol4Component } from './attivita/editoria/koine/vol4/vol4.component';
+import { Fcir25Component } from './root-elements/hosting/fcir25/fcir25.component';
+import { AziendeComponent } from './associazione/aziende/aziende.component';
 
 // // ./hosting
 // import { Opera24Component } from './hosting/opera24/opera24.component';
@@ -355,6 +357,7 @@ import { Vol4Component } from './attivita/editoria/koine/vol4/vol4.component';
         WorkshopButtons24Component,
         ProceedingsButton24Component,
         ProceedingsComponent24,
+        Fcir25Component,
         //Hosting
         // Opera24Component,
         // Combinatorics24Component,
@@ -363,7 +366,8 @@ import { Vol4Component } from './attivita/editoria/koine/vol4/vol4.component';
         // AgoraComponent,
         // Vol2Component,
         //Koine
-        ArticoloComponent
+        ArticoloComponent,
+        AziendeComponent
     ],
     bootstrap: [AppComponent], imports: [BrowserModule,
         AppRoutingModule,
