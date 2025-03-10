@@ -145,6 +145,18 @@ import { Vol4Component } from './attivita/editoria/koine/vol4/vol4.component';
 import { Fcir25Component } from './root-elements/hosting/fcir25/fcir25.component';
 import { AziendeComponent } from './associazione/aziende/aziende.component';
 import { GareCrittograficheComponent } from './attivita/gare-crittografiche/gare-crittografiche.component';
+import { Cryptowars2011Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/cryptowars2011.component';
+import { CryptowarsComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars.component';
+import { Cryptowars2014Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2014/cryptowars2014.component';
+import { Cryptowars2015Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2015/cryptowars2015.component';
+import { Cryptowars2016Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2016/cryptowars2016.component';
+import { Cryptowars2018Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2018/cryptowars2018.component';
+import { Cryptowars2019Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2019/cryptowars2019.component';
+import { Cryptowars2020Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2020/cryptowars2020.component';
+import { Cryptowars2021Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2021/cryptowars2021.component';
+import { ClassicaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-ita/classica/classica.component';
+import { SimmetricaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-ita/simmetrica/simmetrica.component';
+import { PubblicaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-ita/pubblica/pubblica.component';
 
 // // ./hosting
 // import { Opera24Component } from './hosting/opera24/opera24.component';
@@ -360,6 +372,18 @@ import { GareCrittograficheComponent } from './attivita/gare-crittografiche/gare
         ProceedingsComponent24,
         Fcir25Component,
         GareCrittograficheComponent,
+        Cryptowars2011Component,
+        ClassicaComponent,
+        SimmetricaComponent,
+        PubblicaComponent,
+        Cryptowars2014Component,
+        Cryptowars2015Component,
+        Cryptowars2016Component,
+        Cryptowars2018Component,
+        Cryptowars2019Component,
+        Cryptowars2020Component,
+        Cryptowars2021Component,
+        CryptowarsComponent,
         //Hosting
         // Opera24Component,
         // Combinatorics24Component,
