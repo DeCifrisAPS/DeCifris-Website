@@ -129,6 +129,15 @@ import { LicenseComponent } from './attivita/editoria/koine/license/license.comp
 import { Fcir25Component } from './root-elements/hosting/fcir25/fcir25.component';
 import { W25Component } from './root-elements/w25/w25.component';
 import { AziendeComponent } from './associazione/aziende/aziende.component';
+import { CryptowarsComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars.component';
+import { Cryptowars2011Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/cryptowars2011.component';
+import { Cryptowars2020Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2020/cryptowars2020.component';
+import { Cryptowars2021Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2021/cryptowars2021.component';
+import { Cryptowars2019Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2019/cryptowars2019.component';
+import { Cryptowars2018Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2018/cryptowars2018.component';
+import { Cryptowars2016Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2016/cryptowars2016.component';
+import { Cryptowars2015Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2015/cryptowars2015.component';
+import { Cryptowars2014Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2014/cryptowars2014.component';
 
 
 // importante mettere come children tutti quelli che condividono la stessa sidebar, dato
@@ -320,6 +329,16 @@ const routes: Routes = [
 			{ path: 'cifriscloud', component: CifrisCloudComponent, data: { title: 'CifrisCloud' } },
 			{ path: 'mathcifris', component: MathCifrisComponent, data: { title: 'MathCifris' } },
 			{ path: 'pqcifris', component: PqCifrisComponent, data: { title: 'PQCifris' } },
+			// cryptowars
+			{ path: 'cryptowars', component: CryptowarsComponent, data: { title: 'Cryptowars' } },
+			{ path: "cryptowars/2021", component: Cryptowars2021Component, data: { title: 'Cryptowars 2021' } },
+			{ path: "cryptowars/2020", component: Cryptowars2020Component, data: { title: 'Cryptowars 2020' } },
+			{ path: "cryptowars/2019", component: Cryptowars2019Component, data: { title: 'Cryptowars 2019' } },
+			{ path: "cryptowars/2018", component: Cryptowars2018Component, data: { title: 'Cryptowars 2018' } },
+			{ path: "cryptowars/2016", component: Cryptowars2016Component, data: { title: 'Cryptowars 2016' } },
+			{ path: "cryptowars/2015", component: Cryptowars2015Component, data: { title: 'Cryptowars 2015' } },
+			{ path: "cryptowars/2014", component: Cryptowars2014Component, data: { title: 'Cryptowars 2014' } },
+			{ path: "cryptowars/2011", component: Cryptowars2011Component, data: { title: 'Cryptowars 2011' } },
 			// eventi
 			{ path: "eventi", component: EventiComponent, data: { title: 'De Cifris: eventi' } },
 			{ path: 'cifris23', redirectTo: '/cifris23', pathMatch: 'full' },

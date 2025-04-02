@@ -1,157 +1,17 @@
-<ng-sidebar-container>
-	<ng-sidebar opened="true" position="left" id="right-sidebar" mode="push" [autoCollapseWidth]="799"> 
-		<ul *ngIf="lingua=='ita'" class="noIndent" align="left">
-			<!-- Utilizziamo questo trick per evitare di rendere visibile l'autofocus al lettore. -->
-			<li style="display:none">
-				<button autofocus="autofocus"></button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2021">
-					Edizione 2021
-				</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2020">
-					Edizione 2020
-				</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2019">
-					Edizione 2019
-				</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2018">
-					Edizione 2018
-				</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2016">
-					Edizione 2016
-				</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2015">
-					Edizione 2015
-				</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2014">
-					Edizione 2014
-				</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2011">
-					Edizione 2011
-				</button>
-			</li>
-		</ul>
-		<ul *ngIf="lingua=='eng'" class="noIndent" align="left">
-			<!-- Utilizziamo questo trick per evitare di rendere visibile l'autofocus al lettore. -->
-			<li style="display:none">
-				<button autofocus="autofocus"></button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2021">
-					2021 Edition
-				</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2020">
-					2020 Edition
-				</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2019">
-					2019 Edition
-				</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2018">
-					2018 Edition
-				</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2016">
-					2016 Edition
-				</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2015">
-					2015 Edition
-				</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2014">
-					2014 Edition
-				</button>
-			</li>
-			<li>
-				<button class="btn btn-outline-info" (click)="goTo('edizioneScelta')" routerLink="2011">
-					2011 Edition
-				</button>
-			</li>
-		</ul>
-	</ng-sidebar>
-	<div ng-sidebar-content class="container bottomExtra">
-		<br>
-		<div class="mt-3">
-			<h2 style="display: inline;">CRYPTOWARS</h2>
-			<a>
-				<button 
-					type="button" 
-					class="pull-right btn btn-info"
-					(click)="impostaLingua('ita')">
-					ITA</button>
-				<button 
-					type="button" 
-					class="pull-right btn btn-info"
-					(click)="impostaLingua('eng')">
-					ENG</button>
-			</a>
-			<div *ngIf="lingua=='ita'">
-				<p>
-					Ogni anno organizziamo le cryptowars, ovvero
-					delle gare crittografiche rivolte agli studenti.
-					Alcune di queste sono realizzate in collaborazione con altri enti,
-					come <a href="https://clusit.it/">CLUSIT</a> ed <a href="https://www.enisa.europa.eu/">ENISA</a>.
-				</p>
-				<p>Controlla <a (click)="goTo('edizioneScelta')" routerLink="2021">qua</a> 
-					i dettagli dell'ultima edizione della gara!</p>
-				<p>Le edizioni precedenti
-					delle cryptowars si sono svolte nel 
-					<a (click)="goTo('edizioneScelta')" routerLink="2021">2021</a>, 
-					<a (click)="goTo('edizioneScelta')" routerLink="2020">2020</a>, 
-					<a (click)="goTo('edizioneScelta')" routerLink="2019">2019</a>,
-					<a (click)="goTo('edizioneScelta')" routerLink="2018">2018</a>, 
-					<a (click)="goTo('edizioneScelta')" routerLink="2016">2016</a>, 
-					<a (click)="goTo('edizioneScelta')" routerLink="2015">2015</a>,
-					<a (click)="goTo('edizioneScelta')" routerLink="2014">2014</a> e 
-					<a (click)="goTo('edizioneScelta')" routerLink="2011">2011</a>.
-				</p>
-			</div>
-			<div *ngIf="lingua=='eng'">
-				<p>
-					Every year we organize the cryptowars, that is cryptographic competitions 
-					aimed to students. Some of these are carried out in collaboration 
-					with other entities, such as <a href="https://clusit.it/">CLUSIT</a> and 
-					<a href="https://www.enisa.europa.eu/">ENISA</a>.
-				</p>
-				<p>Click <a (click)="goTo('edizioneScelta')" routerLink="2020">here</a> for 
-					more details of this year's competition</p>
-				<p>Previous editions of cryptowars took place in
-					<a (click)="goTo('edizioneScelta')" routerLink="2021">2021</a>, 
-					<a (click)="goTo('edizioneScelta')" routerLink="2020">2020</a>, 
-					<a (click)="goTo('edizioneScelta')" routerLink="2019">2019</a>,
-					<a (click)="goTo('edizioneScelta')" routerLink="2018">2018</a>, 
-					<a (click)="goTo('edizioneScelta')" routerLink="2016">2016</a>, 
-					<a (click)="goTo('edizioneScelta')" routerLink="2015">2015</a>,
-					<a (click)="goTo('edizioneScelta')" routerLink="2014">2014</a> e 
-					<a (click)="goTo('edizioneScelta')" routerLink="2011">2011</a>.
-				</p>
-			</div>
-		</div>
-		<hr id="edizioneScelta">
-		<router-outlet></router-outlet>
-	</div>
-</ng-sidebar-container>
+<h2>Cryptowars</h2>
+<p>
+	Ogni anno organizziamo le cryptowars, ovvero
+	delle gare crittografiche rivolte agli studenti.
+	Alcune di queste sono realizzate in collaborazione con altri enti,
+	come <a href="https://clusit.it/">CLUSIT</a> ed <a href="https://www.enisa.europa.eu/">ENISA</a>.
+</p>
+<ul>
+	<li><a [routerLink]="['/attivita/cryptowars/2021']">Edizione 2021</a></li>
+	<li><a [routerLink]="['/attivita/cryptowars/2020']">Edizione 2020</a></li>
+	<li><a [routerLink]="['/attivita/cryptowars/2019']">Edizione 2019</a></li>
+	<li><a [routerLink]="['/attivita/cryptowars/2018']">Edizione 2018</a></li>
+	<li><a [routerLink]="['/attivita/cryptowars/2016']">Edizione 2016</a></li>
+	<li><a [routerLink]="['/attivita/cryptowars/2015']">Edizione 2015</a></li>
+	<li><a [routerLink]="['/attivita/cryptowars/2014']">Edizione 2014</a></li>
+	<li><a [routerLink]="['/attivita/cryptowars/2011']">Edizione 2011</a></li>
+</ul>
