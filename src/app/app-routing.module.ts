@@ -138,6 +138,17 @@ import { Cryptowars2018Component } from './attivita/gare-crittografiche/cryptowa
 import { Cryptowars2016Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2016/cryptowars2016.component';
 import { Cryptowars2015Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2015/cryptowars2015.component';
 import { Cryptowars2014Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2014/cryptowars2014.component';
+import { Cifris2025Component } from './attivita/eventi/cifris/cifris2025/cifris2025.component';
+import { HomeCifris25Component } from './attivita/eventi/cifris/cifris2025/home-cifris25/home-cifris25.component';
+import { VenueAccomodationComponent25 } from './attivita/eventi/cifris/cifris2025/venue-accomodation25/venue-accomodation25.component';
+import { CallForPapersComponent25 } from './attivita/eventi/cifris/cifris2025/call-for-papers/call-for-papers.component';
+import { CallForWorkshopsComponent25 } from './attivita/eventi/cifris/cifris2025/call-for-workshops/call-for-workshops.component';
+import { ProgramCommitteeComponent25 } from './attivita/eventi/cifris/cifris2025/program-committee/program-committee.component';
+import { RegistrationComponent25 } from './attivita/eventi/cifris/cifris2025/registration/registration.component';
+import { ProgramComponent25 } from './attivita/eventi/cifris/cifris2025/program/program.component';
+import { ProceedingsComponent25 } from './attivita/eventi/cifris/cifris2025/proceedings/proceedings.component';
+import { PaymentResultComponent25 } from './attivita/eventi/cifris/cifris2025/payment-result/payment-result.component';
+import { SocialDinner25Component } from './attivita/eventi/cifris/cifris2025/social-dinner25/social-dinner25.component';
 
 
 // importante mettere come children tutti quelli che condividono la stessa sidebar, dato
@@ -353,6 +364,28 @@ const routes: Routes = [
 			meta: [
 				{ name: 'description', content: "De Cifris: our activities" },
 				{ property: 'og:title', content: "De Cifris: our activities" }
+			]
+		}
+	},
+
+	// cifris 25
+	{
+		path: "test/cifris25", component: Cifris2025Component, children: [
+			{ path: "", component: HomeCifris25Component, data: { title: 'CIFRIS25' } },
+			{ path: "venue", component: VenueAccomodationComponent25, data: { title: 'CIFRIS25: Venue' } },
+			{ path: "call-for-papers", component: CallForPapersComponent25, data: { title: 'CIFRIS25: Call for papers' } },
+			{ path: "call-for-workshops", component: CallForWorkshopsComponent25, data: { title: 'CIFRIS25: Call for workshops' } },
+			{ path: "program-committee", component: ProgramCommitteeComponent25, data: { title: 'CIFRIS25: Program Committee' } },
+			{ path: "registration", component: RegistrationComponent25, data: { title: 'CIFRIS25: Registration' } },
+			{ path: "program", component: ProgramComponent25, data: { title: 'CIFRIS25: Program' } },
+			{ path: "proceedings", component: ProceedingsComponent25, data: { title: 'CIFRIS25: Proceedings' } },
+			{ path: "payment-result", component: PaymentResultComponent25, data: { title: 'Payment result' } },
+			{ path: "dinner", component: SocialDinner25Component, data: { title: 'CIFRIS25: Social Dinner' } },
+		], data: {
+			title: 'CIFRIS25',
+			meta: [
+				{ name: 'description', content: "CIFRIS25 - the Second Italian Conference, by De Cifris & Banca d'Italia" },
+				{ property: 'og:title', content: "CIFRIS25 - the Second Italian Conference, by De Cifris & Banca d'Italia" }
 			]
 		}
 	},

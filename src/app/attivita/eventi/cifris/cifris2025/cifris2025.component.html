@@ -1,1 +1,147 @@
+<div class="container">
+	<div class="sidenav">
+		<nav class="sidebar" id="sidebar">
+			<ul>
+				<li>
+					<button mat-button [routerLink]="['/']" routerLinkActive="active" (click)="toggleSidebar()"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>home</mat-icon>
+						<span class="sidebar-text">HOME</span>
+					</button>
+				</li>
+				<h5>CIFRIS 24 - ROME</h5>
+				<li>
+					<button mat-button [routerLink]="['/cifris24']" routerLinkActive="active" (click)="toggleSidebar()"
+						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
+						<mat-icon>stadium</mat-icon>
+						<span class="sidebar-text">CIFRIS24</span>
+					</button>
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/cifris24/registration']" routerLinkActive="active"
+						(click)="toggleSidebar()" [routerLinkActiveOptions]="{exact: true}"
+						class="sidebar-image-button">
+						<mat-icon>event_seat</mat-icon>
+						<span class="sidebar-text">Registration</span>
+					</button>
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/cifris24/program']" routerLinkActive="active"
+						(click)="toggleSidebar()" [routerLinkActiveOptions]="{exact: true}"
+						class="sidebar-image-button">
+						<mat-icon>date_range</mat-icon>
+						<span class="sidebar-text">Program</span>
+					</button>
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/cifris24/workshops']" routerLinkActive="active"
+						(click)="toggleSidebar()" [routerLinkActiveOptions]="{exact: true}"
+						class="sidebar-image-button">
+						<mat-icon>architecture</mat-icon>
+						<span class="sidebar-text">Workshops</span>
+					</button>
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/cifris24/venue']" routerLinkActive="active"
+						(click)="toggleSidebar()" [routerLinkActiveOptions]="{exact: true}"
+						class="sidebar-image-button">
+						<mat-icon>location_on</mat-icon>
+						<span class="sidebar-text">Venue & shuttles</span>
+					</button>
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/cifris24/dinner']" routerLinkActive="active"
+						(click)="toggleSidebar()" [routerLinkActiveOptions]="{exact: true}"
+						class="sidebar-image-button">
+						<mat-icon>restaurant</mat-icon>
+						<span class="sidebar-text">Social event</span>
+					</button>
+				</li>
+				<li>
+					<button mat-button [routerLink]="['/cifris24/proceedings']" routerLinkActive="active"
+						(click)="toggleSidebar()" [routerLinkActiveOptions]="{exact: true}"
+						class="sidebar-image-button">
+						<mat-icon>menu_book</mat-icon>
+						<span class="sidebar-text">Proceedings</span>
+					</button>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<div class="content" (click)="toggleSidebar(true)">
 
+		<div style="text-align: center;padding:0; margin-bottom: 10px;">
+			<p style="color:var(--cifris_blue);font-size: larger; font-weight: bold;margin:0; display: inline;">
+				CIFRIS24
+				-
+				<i style="font-weight: normal;">an event by De Cifris</i>
+			</p>
+			<p style="margin:0;font-size:smaller">
+				Venue: Banca d'Italia, <i>Centro D. Menichella</i>, Largo Guido Carli 1, Frascati (Roma)
+				<br>
+				Social dinner: September 25th, <i>Satiricus</i>, Via dei Corridori 58, Roma
+				<br>
+				<b> September 25th, 26th, 27th 2024 </b>
+			</p>
+			<hr style="width: 60%;margin-left: 20%;color:var(--cifris_blue)">
+		</div>
+		<router-outlet></router-outlet>
+	</div>
+	<ul class="bottomnav-menu">
+		<li>
+			<button mat-button [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+				<mat-icon style="color:var(--cifris_azure_transparent)">home</mat-icon>
+				<span style="color:var(--cifris_azure_transparent);">HOME</span>
+			</button>
+		</li>
+		<li>
+			<button mat-button [routerLink]="['/cifris24']" routerLinkActive="active"
+				[routerLinkActiveOptions]="{exact: true}">
+				<mat-icon style="color:var(--cifris_azure_transparent)">stadium</mat-icon>
+				<span style="color:var(--cifris_azure_transparent)">CIFRIS24</span>
+			</button>
+		</li>
+		<li>
+			<button mat-button [routerLink]="['/cifris24/registration']" routerLinkActive="active"
+				[routerLinkActiveOptions]="{exact: true}">
+				<mat-icon>event_seat</mat-icon>
+				<span>Registration</span>
+			</button>
+		</li>
+		<li>
+			<button mat-button [routerLink]="['/cifris24/program']" routerLinkActive="active"
+				[routerLinkActiveOptions]="{exact: true}">
+				<mat-icon>date_range</mat-icon>
+				<span>Program</span>
+			</button>
+		</li>
+		<li>
+			<button mat-button [routerLink]="['/cifris24/workshops']" routerLinkActive="active"
+				[routerLinkActiveOptions]="{exact: true}">
+				<mat-icon>architecture</mat-icon>
+				<span>Workshops</span>
+			</button>
+		</li>
+		<li>
+			<button mat-button [routerLink]="['/cifris24/venue']" routerLinkActive="active"
+				[routerLinkActiveOptions]="{exact: true}">
+				<mat-icon>location_on</mat-icon>
+				<span>Venue & shuttles</span>
+			</button>
+		</li>
+		<li>
+			<button mat-button [routerLink]="['/cifris24/dinner']" routerLinkActive="active"
+				[routerLinkActiveOptions]="{exact: true}">
+				<mat-icon>restaurant</mat-icon>
+				<span>Social event</span>
+			</button>
+		</li>
+		<li>
+			<button mat-button [routerLink]="['/cifris24/proceedings']" routerLinkActive="active"
+				[routerLinkActiveOptions]="{exact: true}">
+				<mat-icon>menu_book</mat-icon>
+				<span>Proceedings</span>
+			</button>
+		</li>
+	</ul>
+</div>

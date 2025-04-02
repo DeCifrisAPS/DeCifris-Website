@@ -157,6 +157,19 @@ import { Cryptowars2021Component } from './attivita/gare-crittografiche/cryptowa
 import { ClassicaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-ita/classica/classica.component';
 import { SimmetricaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-ita/simmetrica/simmetrica.component';
 import { PubblicaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-ita/pubblica/pubblica.component';
+import { Cifris2025Component } from './attivita/eventi/cifris/cifris2025/cifris2025.component';
+import { CallForPapersComponent25 } from './attivita/eventi/cifris/cifris2025/call-for-papers/call-for-papers.component';
+import { CallForWorkshopsComponent25 } from './attivita/eventi/cifris/cifris2025/call-for-workshops/call-for-workshops.component';
+import { ProgramCommitteeComponent } from './attivita/eventi/cifris/cifris2023/program-committee/program-committee.component';
+import { ProgramCommitteeComponent25 } from './attivita/eventi/cifris/cifris2025/program-committee/program-committee.component';
+import { ProgramComponent25 } from './attivita/eventi/cifris/cifris2025/program/program.component';
+import { SubmissionComponent25 } from './attivita/eventi/cifris/cifris2025/submission/submission.component';
+import { RegistrationComponent25 } from './attivita/eventi/cifris/cifris2025/registration/registration.component';
+import { VenueAccomodationComponent25 } from './attivita/eventi/cifris/cifris2025/venue-accomodation25/venue-accomodation25.component';
+import { ProceedingsComponent25 } from './attivita/eventi/cifris/cifris2025/proceedings/proceedings.component';
+import { SocialDinner25Component } from './attivita/eventi/cifris/cifris2025/social-dinner25/social-dinner25.component';
+import { HomeCifris25Component } from './attivita/eventi/cifris/cifris2025/home-cifris25/home-cifris25.component';
+import { PaymentResultComponent25 } from './attivita/eventi/cifris/cifris2025/payment-result/payment-result.component';
 
 // // ./hosting
 // import { Opera24Component } from './hosting/opera24/opera24.component';
@@ -371,6 +384,20 @@ import { PubblicaComponent } from './attivita/gare-crittografiche/cryptowars/cry
         ProceedingsButton24Component,
         ProceedingsComponent24,
         Fcir25Component,
+        //Cifris25
+        HomeCifris25Component,
+        Cifris2025Component,
+        CallForPapersComponent25,
+        CallForWorkshopsComponent25,
+        ProgramCommitteeComponent25,
+        ProgramComponent25,
+        SubmissionComponent25,
+        RegistrationComponent25,
+        VenueAccomodationComponent25,
+        ProceedingsComponent25,
+        SocialDinner25Component,
+        PaymentResultComponent25,
+        // Gare crittografiche
         GareCrittograficheComponent,
         Cryptowars2011Component,
         ClassicaComponent,
