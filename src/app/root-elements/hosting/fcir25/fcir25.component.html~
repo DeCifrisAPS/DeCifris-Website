@@ -28,7 +28,6 @@
         <b>Nigel Smart</b> (KU Leuven, Netherlands)
     </p>
 </div>
-
 <div class="toptext">
     <h2>Description</h2>
     <p>
@@ -44,21 +43,20 @@
         </a>
     </p>
 </div>
-
 <div class="toptext">
     <h2>Publications</h2>
-    
-      Talks presented at the conference FCiR25 will be published in two venues:
+    <p>
+      Talk presented at the conference FCiR25 will be published in two venues:
       <ul>
-	<li>a special issue of <a href="https://www.degruyterbrill.com/journal/key/jmc/html?lang=en">Journal of Mathematical Cryptology </a> </li>
-	<li>a volume of <a href="https://www.decifris.it/koine">De Cifris Koine</a> </li>
+	<li>a special issue of Journal of Mathematical Cryptology </li>
+	<li>a volume of De Cifris Koine </li>
 
       </ul>
-    
+    </p>
 </div>
 
 <div class="toptext">
-  <h2>Call for papers</h2>
+    <h2>Call for papers</h2>
     <h3>Important deadlines</h3>
     <table class="timeline" style="margin: auto;">
         <tr>
