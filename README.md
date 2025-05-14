@@ -98,6 +98,10 @@ nvm install <version>
 ```
 npm install -g @angular/cli@<version>
 ```
+nel nostro caso (vedasi dopo) la versione di Angular CLI è attualmente
+```
+Angular CLI: 18.1.3
+```
 
 #### Simulazione in locale del sito
 Spostiamoci nella cartella del progetto: ora lavoreremo qui. A questo punto siamo in grado di far girare localmente una copia del sito, con il comando
