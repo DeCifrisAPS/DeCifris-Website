@@ -170,6 +170,7 @@ import { ProceedingsComponent25 } from './attivita/eventi/cifris/cifris2025/proc
 import { SocialDinner25Component } from './attivita/eventi/cifris/cifris2025/social-dinner25/social-dinner25.component';
 import { HomeCifris25Component } from './attivita/eventi/cifris/cifris2025/home-cifris25/home-cifris25.component';
 import { PaymentResultComponent25 } from './attivita/eventi/cifris/cifris2025/payment-result/payment-result.component';
+import { ScolarshipsComponent } from './associazione/scolarships/scolarships.component';
 
 // // ./hosting
 // import { Opera24Component } from './hosting/opera24/opera24.component';
@@ -291,6 +292,7 @@ import { PaymentResultComponent25 } from './attivita/eventi/cifris/cifris2025/pa
         OrariInstitutionalSession24Component,
         OrariScientificSession24Component,
         OrariWorkshops24Component,
+        ScolarshipsComponent,
         // DidatticaUniversitariaComponent,
         // EventiPassatiComponent,
         // EventiFuturiComponent,

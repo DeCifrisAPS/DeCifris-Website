@@ -26,6 +26,7 @@ import { AssociarsiComponent } from './associazione/associarsi/associarsi.compon
 import { BenemeritiComponent } from './associazione/benemeriti/benemeriti.component';
 import { DiconoDiNoiComponent } from './associazione/notizie/dicono-di-noi/dicono-di-noi.component';
 import { NotizieComponent } from './associazione/notizie/notizie.component';
+import { ScolarshipsComponent } from './associazione/scolarships/scolarships.component';
 
 // welcome
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -263,6 +264,7 @@ const routes: Routes = [
 	{
 		path: "associazione", component: AssociazioneComponent, children: [
 			{ path: "", component: HomeAssociazioneComponent, data: { title: 'Associazione' } },
+			{ path: "scolarships", component: ScolarshipsComponent, data: { title: 'Scolarships' } },
 			{ path: "statuto", component: StatutoComponent, data: { title: 'Statuto' } },
 			{ path: "regolamento", component: RegolamentoComponent, data: { title: 'Regolamento' } },
 			{ path: "affiliati-partner", component: AziendeComponent, data: { title: 'Affiliati e partner' } },
