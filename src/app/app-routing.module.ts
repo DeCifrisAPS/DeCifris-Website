@@ -265,7 +265,7 @@ const routes: Routes = [
 	{
 		path: "associazione", component: AssociazioneComponent, children: [
 			{ path: "", component: HomeAssociazioneComponent, data: { title: 'Associazione' } },
-			{ path: "scolarships", component: ScolarshipsComponent, data: { title: 'Scolarships' } },
+			{ path: "scholarships", component: ScolarshipsComponent, data: { title: 'Scolarships' } },
 			{ path: "statuto", component: StatutoComponent, data: { title: 'Statuto' } },
 			{ path: "regolamento", component: RegolamentoComponent, data: { title: 'Regolamento' } },
 			{ path: "affiliati-partner", component: AziendeComponent, data: { title: 'Affiliati e partner' } },
