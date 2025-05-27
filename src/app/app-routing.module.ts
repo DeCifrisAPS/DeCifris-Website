@@ -150,6 +150,7 @@ import { ProgramComponent25 } from './attivita/eventi/cifris/cifris2025/program/
 import { ProceedingsComponent25 } from './attivita/eventi/cifris/cifris2025/proceedings/proceedings.component';
 import { PaymentResultComponent25 } from './attivita/eventi/cifris/cifris2025/payment-result/payment-result.component';
 import { SocialDinner25Component } from './attivita/eventi/cifris/cifris2025/social-dinner25/social-dinner25.component';
+import { Vol5Component } from './attivita/editoria/koine/vol5/vol5.component';
 
 
 // importante mettere come children tutti quelli che condividono la stessa sidebar, dato
@@ -519,6 +520,15 @@ const routes: Routes = [
 					meta: [
 						{ name: 'description', content: 'De Cifris Koine, volume 4' },
 						{ property: 'og:title', content: 'De Cifris Koine, volume 4' }
+					]
+				}
+			},
+			{
+				path: "vol5", component: Vol5Component, data: {
+					title: 'Koine: Volume 5',
+					meta: [
+						{ name: 'description', content: 'De Cifris Koine, volume 5' },
+						{ property: 'og:title', content: 'De Cifris Koine, volume 5' }
 					]
 				}
 			},
