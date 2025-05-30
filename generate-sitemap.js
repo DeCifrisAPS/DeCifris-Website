@@ -49,7 +49,7 @@ const pages = [
   { url: '/attivita', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/home-attivita/home-attivita.component.html' },
   { url: '/attivita/editoria', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/editoria.component.html' },
   { url: '/attivita/centotesi-2008-2017', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/centotesi20082017/centotesi20082017.component.html' },
-  { url: '/attivita/centotesi-2017-2024', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/centotesi20142023/centotesi20142023.component.html' },
+  { url: '/attivita/centotesi-2017-2024', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/centotesi20172024/centotesi20172024.component.html' },
 
   { url: '/attivita/corsi', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/corsi/corsi.component.html' },
   { url: '/attivita/trends24', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/corsi/trends24/trends24.component.html' },
@@ -90,7 +90,7 @@ const pages = [
   { url: '/cifris24/program', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2024/program/program.component.html' },
   { url: '/cifris24/proceedings', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2024/proceedings/proceedings.component.html' },
   { url: '/cifris24/workshops', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2024/single-pages/workshops/workshops24.component.html' },
-  { url: '/cifris24/codemath24', changefreq: 'always', priority: 1.0, filePath: '/home/stark/de-cifris-site/src/app/attivita/eventi/cifris/cifris2024/single-pages/workshops/codemath24/codemath24.component.html' },
+  { url: '/cifris24/codemath24', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2024/single-pages/workshops/codemath24/codemath24.component.html' },
   { url: '/cifris24/fcr24', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2024/single-pages/workshops/fcr24/fcr24.component.html' },
   { url: '/cifris24/ntc24', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2024/single-pages/workshops/ntc24/ntc24.component.html' },
   { url: '/cifris24/qcifris24', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/eventi/cifris/cifris2024/single-pages/workshops/qcifris24/qcifris24.component.html' },
@@ -151,7 +151,7 @@ const pages = [
   { url: '/attivita/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/home-attivita/home-attivita.component.html' },
   { url: '/attivita/editoria/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/editoria.component.html' },
   { url: '/attivita/centotesi-2008-2017/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/centotesi20082017/centotesi20082017.component.html' },
-  { url: '/attivita/centotesi-2017-2024/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/centotesi20142023/centotesi20142023.component.html' },
+  { url: '/attivita/centotesi-2017-2024/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/centotesi20172024/centotesi20172024.component.html' },
   { url: '/attivita/corsi/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/corsi/corsi.component.html' },
   { url: '/attivita/trends24/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/corsi/trends24/trends24.component.html' },
   { url: '/attivita/trends23/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/corsi/trends23/trends23.component.html' },
@@ -195,12 +195,12 @@ const pages = [
   { url: '/koine/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/koine/koine.component.html' },
   { url: '/koine/articles-and-volumes/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/koine/articles-and-volumes/articles-and-volumes.component.html' },
   { url: '/koine/editorial-board/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/koine/editorial-board/editorial-board.component.html' },
-  { url: '/koine/open-access-statement/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/koine/opensource-statement/opensource-statement.component.html' },
+  { url: '/koine/copyright-license/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/koine/license/license.component.html' },
   { url: '/koine/vol1/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/koine/vol1/vol1.component.html' },
   { url: '/koine/vol2/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/koine/vol2/vol2.component.html' },
   { url: '/koine/vol3/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/koine/vol3/vol3.component.html' },
   { url: '/koine/vol4/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/koine/vol4/vol4.component.html' },
-
+  { url: '/koine/vol5/', changefreq: 'always', priority: 1.0, filePath: 'src/app/attivita/editoria/koine/vol5/vol5.component.html' },
 ];
 
 // Aggiungi le pagine alla sitemap, inclusa la data di ultima modifica

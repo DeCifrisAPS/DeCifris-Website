@@ -67,6 +67,14 @@
 					</button>
 				</li>
 				<li>
+					<button mat-button [routerLink]="['/associazione/scholarships']" routerLinkActive="active"
+						(click)="toggleSidebar()" [routerLinkActiveOptions]="{exact: true}"
+						class="sidebar-image-button">
+						<mat-icon>school</mat-icon>
+						<span class="sidebar-text">Scholarships</span>
+					</button>
+				</li>
+				<li>
 					<button mat-button [routerLink]="['/associazione/stage-tirocini']" routerLinkActive="active"
 						(click)="toggleSidebar()" [routerLinkActiveOptions]="{exact: true}"
 						class="sidebar-image-button">
@@ -154,6 +162,13 @@
 				[routerLinkActiveOptions]="{exact: true}">
 				<mat-icon>work</mat-icon>
 				<span>Posizioni</span>
+			</button>
+		</li>
+		<li>
+			<button mat-button [routerLink]="['/associazione/scholarships']" routerLinkActive="active"
+				(click)="toggleSidebar()" [routerLinkActiveOptions]="{exact: true}">
+				<mat-icon>school</mat-icon>
+				<span>Scholarships</span>
 			</button>
 		</li>
 		<li>
