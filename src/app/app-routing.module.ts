@@ -373,7 +373,7 @@ const routes: Routes = [
 
 	// cifris 25
 	{
-		path: "test/cifris25", component: Cifris2025Component, children: [
+		path: "cifris25", component: Cifris2025Component, children: [
 			{ path: "", component: HomeCifris25Component, data: { title: 'CIFRIS25' } },
 			{ path: "venue", component: VenueAccomodationComponent25, data: { title: 'CIFRIS25: Venue' } },
 			{ path: "call-for-papers", component: CallForPapersComponent25, data: { title: 'CIFRIS25: Call for papers' } },
