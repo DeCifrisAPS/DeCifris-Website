@@ -40,6 +40,14 @@
                         <span class="sidebar-text">FCiR25</span>
                     </button>
                 </li>
+		   <li>
+                    <button mat-button [routerLink]="['/cifris25']" routerLinkActive="active"
+                        (click)="toggleSidebar()" [routerLinkActiveOptions]="{exact: true}"
+                        class="sidebar-image-button">
+                        <mat-icon>dashboard</mat-icon>
+                        <span class="sidebar-text">CIFRIS25</span>
+                    </button>
+                </li>
                 <h5> INFORMAZIONI </h5>
                 <li>
                     <button mat-button [routerLink]="['/contatti']" routerLinkActive="active" (click)="toggleSidebar()"
