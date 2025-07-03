@@ -34,67 +34,25 @@
 </div>
 <div>
 
-  @for (article of theVolume.articles.slice(0, 1); track article) {
+    @for (article of theVolume.articles; track article) {
     <div class="doi-item">
         <a routerLink="/koine/{{ theVolume.id }}/{{ article.id }}">
             <p class="title">{{ article.title }}</p>
         </a>
         <p class="desc">
-          @for (author of article.authors; track author) {
+            @for (author of article.authors; track author) {
             @if ($index !== 0) {
             <span>, </span>
             }
             <span>{{ author.name }} {{ author.surname }}</span>
-          }
+            }
         </p>
         <p class="desc">Page range: {{ article.pageRange }}</p>
         <a href="https://doi.org/{{ article.doi }}">
             <p class="desc">DOI: https://doi.org/{{ article.doi }}</p>
         </a>
     </div>
-  }
-
-  <h3>PRIMITIVES</h3>
-  @for (article of theVolume.articles.slice(1, 4); track article) {
-    <div class="doi-item">
-        <a routerLink="/koine/{{ theVolume.id }}/{{ article.id }}">
-            <p class="title">{{ article.title }}</p>
-        </a>
-        <p class="desc">
-          @for (author of article.authors; track author) {
-            @if ($index !== 0) {
-            <span>, </span>
-            }
-            <span>{{ author.name }} {{ author.surname }}</span>
-          }
-        </p>
-        <p class="desc">Page range: {{ article.pageRange }}</p>
-        <a href="https://doi.org/{{ article.doi }}">
-            <p class="desc">DOI: https://doi.org/{{ article.doi }}</p>
-        </a>
-    </div>
-  }
-
-  <h3>PROTOCOLS</h3>
-  @for (article of theVolume.articles.slice(4); track article) {
-    <div class="doi-item">
-        <a routerLink="/koine/{{ theVolume.id }}/{{ article.id }}">
-            <p class="title">{{ article.title }}</p>
-        </a>
-        <p class="desc">
-          @for (author of article.authors; track author) {
-            @if ($index !== 0) {
-            <span>, </span>
-            }
-            <span>{{ author.name }} {{ author.surname }}</span>
-          }
-        </p>
-        <p class="desc">Page range: {{ article.pageRange }}</p>
-        <a href="https://doi.org/{{ article.doi }}">
-            <p class="desc">DOI: https://doi.org/{{ article.doi }}</p>
-        </a>
-    </div>
-  }
+    }
 
 </div>
 <hr>
