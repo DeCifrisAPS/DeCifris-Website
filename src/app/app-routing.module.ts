@@ -149,7 +149,7 @@ import { RegistrationComponent25 } from './attivita/eventi/cifris/cifris2025/reg
 import { ProgramComponent25 } from './attivita/eventi/cifris/cifris2025/program/program.component';
 import { ProceedingsComponent25 } from './attivita/eventi/cifris/cifris2025/proceedings/proceedings.component';
 import { PaymentResultComponent25 } from './attivita/eventi/cifris/cifris2025/payment-result/payment-result.component';
-import { SocialDinner25Component } from './attivita/eventi/cifris/cifris2025/social-dinner25/social-dinner25.component';
+import { Workshops25Component } from './attivita/eventi/cifris/cifris2025/workshops/workshops.component';
 import { Vol5Component } from './attivita/editoria/koine/vol5/vol5.component';
 
 
@@ -383,7 +383,7 @@ const routes: Routes = [
 			{ path: "program", component: ProgramComponent25, data: { title: 'CIFRIS25: Program' } },
 			{ path: "proceedings", component: ProceedingsComponent25, data: { title: 'CIFRIS25: Proceedings' } },
 			{ path: "payment-result", component: PaymentResultComponent25, data: { title: 'Payment result' } },
-			{ path: "dinner", component: SocialDinner25Component, data: { title: 'CIFRIS25: Social Dinner' } },
+			{ path: "workshops", component: Workshops25Component, data: { title: 'CIFRIS25: Workshops' } },
 		], data: {
 			title: 'CIFRIS25',
 			meta: [

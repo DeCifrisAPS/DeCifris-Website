@@ -1,0 +1,56 @@
+/* Contenitore principale per le card */
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  padding: 30px;
+  width: 100%;
+}
+
+/* Stili per le card */
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 16px;
+  padding-top: 0px;
+  display: flex;
+  width: 100%;
+  left:0;
+  right:0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card h1 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 10px;
+  padding: 10px;
+  width: fit-content!important;
+  background-color: var(--cifris_purple);
+  color: white !important;
+  border-radius: 15px;
+  height: fit-content !important;
+}
+
+.card p {
+  margin: 10px;
+  font-size: 12pt;
+  padding: 10px;
+  width: fit-content;
+  background-color: var(--cifris_azure_transparent);
+  color: black !important;
+  border-radius: 15px;
+  height: fit-content !important;
+}
+
+.off{
+  width: 200px;
+  background-color: lightgray;
+  color: gray;
+  margin: 5px;
+  padding:2px;
+  padding-left:10px
+}
