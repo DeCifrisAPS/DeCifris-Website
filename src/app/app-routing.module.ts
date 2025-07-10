@@ -142,7 +142,7 @@ import { Cryptowars2014Component } from './attivita/gare-crittografiche/cryptowa
 import { Cifris2025Component } from './attivita/eventi/cifris/cifris2025/cifris2025.component';
 import { HomeCifris25Component } from './attivita/eventi/cifris/cifris2025/home-cifris25/home-cifris25.component';
 import { VenueAccomodationComponent25 } from './attivita/eventi/cifris/cifris2025/venue-accomodation25/venue-accomodation25.component';
-import { CallForPapersComponent25 } from './attivita/eventi/cifris/cifris2025/call-for-papers/call-for-papers.component';
+import { ReAdPQC25Component } from './attivita/eventi/cifris/cifris2025/ReAdPQC25/ReAdPQC25.component';
 import { CallForWorkshopsComponent25 } from './attivita/eventi/cifris/cifris2025/call-for-workshops/call-for-workshops.component';
 import { ProgramCommitteeComponent25 } from './attivita/eventi/cifris/cifris2025/program-committee/program-committee.component';
 import { RegistrationComponent25 } from './attivita/eventi/cifris/cifris2025/registration/registration.component';
@@ -376,7 +376,7 @@ const routes: Routes = [
 		path: "cifris25", component: Cifris2025Component, children: [
 			{ path: "", component: HomeCifris25Component, data: { title: 'CIFRIS25' } },
 			{ path: "venue", component: VenueAccomodationComponent25, data: { title: 'CIFRIS25: Venue' } },
-			{ path: "call-for-papers", component: CallForPapersComponent25, data: { title: 'CIFRIS25: Call for papers' } },
+			{ path: "ReAdPQC25", component: ReAdPQC25Component, data: { title: 'CIFRIS25: ReAdPQC25' } },
 			{ path: "call-for-workshops", component: CallForWorkshopsComponent25, data: { title: 'CIFRIS25: Call for workshops' } },
 			{ path: "program-committee", component: ProgramCommitteeComponent25, data: { title: 'CIFRIS25: Program Committee' } },
 			{ path: "registration", component: RegistrationComponent25, data: { title: 'CIFRIS25: Registration' } },
