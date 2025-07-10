@@ -1,0 +1,101 @@
+<div class="iniziativecontainer">
+    <a routerLink="/cifris24/cifriscloud24">
+        <mat-card mat-button class="txtbtn">
+            <mat-card-content class="txtbtn-txt">
+                <b>CifrisCloud24</b>
+                <br>
+                <i class="smaller">
+                    Cryptography for the Cloud 2024
+                </i>
+            </mat-card-content>
+        </mat-card>
+    </a>
+    <a routerLink="/cifris24/codemath24">
+        <mat-card mat-button class="txtbtn">
+            <mat-card-content class="txtbtn-txt">
+                <b>CodeMath24</b>
+                <br>
+                <i class="smaller">
+                    Coding Theory and Discrete Mathematics
+                </i>
+            </mat-card-content>
+        </mat-card>
+    </a>
+    <a routerLink="/cifris24/cpsid24">
+        <mat-card mat-button class="txtbtn">
+            <mat-card-content class="txtbtn-txt">
+                <b>CPSID24</b>
+                <br>
+                <i class="smaller">
+                    Cryptography, Protocols and Security in Digital Identity
+                </i>
+            </mat-card-content>
+        </mat-card>
+    </a>
+    <a routerLink="/cifris24/fcir24">
+        <mat-card mat-button class="txtbtn">
+            <mat-card-content class="txtbtn-txt">
+                <b>FCiR24</b>
+                <br>
+                <i class="smaller">
+                    Financial Cryptography <br> in Rome
+                </i>
+            </mat-card-content>
+        </mat-card>
+    </a>
+    <a routerLink="/cifris24/ntc24">
+        <mat-card mat-button class="txtbtn">
+            <mat-card-content class="txtbtn-txt">
+                <b>NTC24</b>
+                <br>
+                <i class="smaller">
+                    Number Theory <br> for Cryptography
+                </i>
+            </mat-card-content>
+        </mat-card>
+    </a>
+    <a routerLink="/cifris24/qcifris24">
+        <mat-card mat-button class="txtbtn">
+            <mat-card-content class="txtbtn-txt">
+                <b>QCifris24</b>
+                <br>
+                <i class="smaller">
+                    Quantum Cifris
+                </i>
+            </mat-card-content>
+        </mat-card>
+    </a>
+    <a routerLink="/cifris24/readpqc24">
+        <mat-card mat-button class="txtbtn">
+            <mat-card-content class="txtbtn-txt">
+                <b>ReAdPQC24</b>
+                <br>
+                <i class="smaller">
+                    Recent Advances in Post Quantum Cryptography
+                </i>
+            </mat-card-content>
+        </mat-card>
+    </a>
+    <a routerLink="/cifris24/symcrypt24">
+        <mat-card mat-button class="txtbtn">
+            <mat-card-content class="txtbtn-txt">
+                <b>SymCrypt24</b>
+                <br>
+                <i class="smaller">
+                    Symmetric Cryptography, Boolean Functions
+                </i>
+            </mat-card-content>
+        </mat-card>
+    </a>
+    <a routerLink="/cifris24/tac24">
+        <mat-card mat-button class="txtbtn">
+            <mat-card-content class="txtbtn-txt">
+                <b>TAC24</b>
+                <br>
+                <i class="smaller">
+                    Topics in Applied Cryptography
+                </i>
+            </mat-card-content>
+        </mat-card>
+    </a>
+</div>

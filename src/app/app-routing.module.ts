@@ -387,8 +387,8 @@ const routes: Routes = [
 		], data: {
 			title: 'CIFRIS25',
 			meta: [
-				{ name: 'description', content: "CIFRIS25 - the Second Italian Conference, by De Cifris & Banca d'Italia" },
-				{ property: 'og:title', content: "CIFRIS25 - the Second Italian Conference, by De Cifris & Banca d'Italia" }
+				{ name: 'description', content: "CIFRIS25 - the Third Italian Conference, by De Cifris & Banca d'Italia" },
+				{ property: 'og:title', content: "CIFRIS25 - the Third Italian Conference, by De Cifris & Banca d'Italia" }
 			]
 		}
 	},
