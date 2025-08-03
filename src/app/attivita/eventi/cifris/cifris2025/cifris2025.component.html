@@ -63,21 +63,29 @@
 	</div>
 	<div class="content" (click)="toggleSidebar(true)">
 
-		<div style="text-align: center;padding:0; margin-bottom: 10px;">
-			<p style="color:var(--cifris_blue);font-size: larger; font-weight: bold;margin:0; display: inline;">
-				CIFRIS25
-				-
-				<i style="font-weight: normal;">an event by De Cifris & Roma Tre University </i>
-			</p>
-			<p style="margin:0;font-size:smaller">
-			  Venue: Roma Tre University, <i>Dipartimento di Matematica e Fisica</i>, Largo S. Leonardo Murialdo, 1  Roma
-			  <br>
-			  <b>
-			  September 11th and 12th 2025
-                          </b>
-			</p>
-			<hr style="width: 60%;margin-left: 20%;color:var(--cifris_blue)">
-		</div>
+<div style="display: flex; justify-content: center; align-items: flex-start; margin-bottom: 10px;">
+  <!-- Immagine ACN a sinistra con margin-top negativo -->
+
+  <!-- Testo centrale -->
+  <div style="text-align: center;">
+    <p style="color: var(--cifris_blue); font-size: larger; font-weight: bold; margin: 0; display: inline;">
+      CIFRIS25 –
+      <i style="font-weight: normal;">an event by De Cifris & Roma Tre University</i>
+      <br>
+      <i style="font-weight: normal;">in cooperation with Agenzia per la Cybersicurezza Nazionale (ACN)</i>
+    </p>
+    <p style="margin: 0; font-size: smaller;">
+      Venue: Roma Tre University, <i>Dipartimento di Matematica e Fisica</i>, Largo S. Leonardo Murialdo, 1 Roma
+      <br>
+      <b>September 11th and 12th 2025</b>
+    </p>
+    <hr style="width: 60%; margin-left: auto; margin-right: auto; color: var(--cifris_blue);">
+  </div>
+
+
+</div>
+
+		
 		<router-outlet></router-outlet>
 	</div>
 	<ul class="bottomnav-menu">

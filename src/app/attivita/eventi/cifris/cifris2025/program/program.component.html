@@ -1,33 +1,153 @@
+
+<style>
+  .speaker-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-style: italic;
+    color: #2c3e46;
+    margin: 0.3rem 0 0.8rem 0;
+  }
+    .talk-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-style: italic;
+    color: #f39c12;
+    margin: 0.3rem 0 0.8rem 0;
+  }
+  .session-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 1.2rem 0 0.6rem 0;
+    }
+.time-slot {
+  font-size: 1.0rem;           /* più grande */
+  color: #2c3e50;              /* colore elegante */
+  font-weight: 700;            /* grassetto */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.05em;      /* spaziatura lettere */
+  white-space: nowrap;         /* non va a capo */
+
+  
+  }
+</style>
 <h1> PROGRAM </h1>
 
-Here you find a provisional agenda of CIFRIS25
+
+<div class="text">
   <h2 style="margin-top: 2.5rem; color: #2c3e50;">September 11th, 2025 - First Day</h2>
 
-  <div style="margin-bottom: 1.2rem;"><strong>09:00 - 09:30</strong> &nbsp; Registration and badge</div>
-  <div style="margin-bottom: 1.2rem;"><strong>09:30 - 09:45</strong> &nbsp; Welcome speech and introductions</div>
-  <div style="margin-bottom: 1.2rem;"><strong>09:45 - 10:30</strong> &nbsp; Institutional round table</div>
-  <div style="margin-bottom: 1.2rem;"><strong>10:00 - 10:15</strong> &nbsp; De Cifris</div>
-  <div style="margin-bottom: 1.2rem;"><strong>10:15 - 10:45</strong> &nbsp; Partners</div>
-  <div style="margin-bottom: 1.2rem;"><strong>10:45 - 11:00</strong> &nbsp; Coffee break</div>
-  <div style="margin-bottom: 1.2rem;"><strong>11:00 - 12:00</strong> &nbsp; <strong>Invited Speaker: Ludovic
-      Perret</strong></div>
-  <div style="margin-bottom: 1.2rem;"><strong>12:00 - 13:00</strong> &nbsp; Scientific talks</div>
-  <div style="margin-bottom: 1.2rem;"><strong>13:00 - 14:00</strong> &nbsp; Lunch break</div>
-  <div style="margin-bottom: 1.2rem;"><strong>14:00 - 15:20</strong> &nbsp; Scientific talks</div>
-  <div style="margin-bottom: 1.2rem;"><strong>15:20 - 15:40</strong> &nbsp; Coffee break</div>
-  <div style="margin-bottom: 1.2rem;"><strong>15:40 - 17:00</strong> &nbsp; Scientific talks</div>
+  <div style="margin-bottom: 1.2rem;"><p class="time-slot">09:00 - 09:30</p> <p class="speaker-title">Registration and badge </p></div>
+  <div style="margin-bottom: 1.2rem;"><p class="time-slot">09:30 - 09:45</p> <p class="speaker-title">Welcome speech and introductions</p></div>
+  <div style="margin-bottom: 1.2rem;"><p class="time-slot">09:45 - 10:30</p> <p class="speaker-title">Institutional round table</p></div>
+  <div style="margin-bottom: 1.2rem;"><p class="time-slot">10:00 - 10:15</p> <p class="speaker-title">De Cifris</p></div>
+  <div style="margin-bottom: 1.2rem;"><p class="time-slot">10:15 - 10:45</p> <p class="speaker-title">Partners</p></div>
+  <div style="margin-bottom: 1.2rem;"><p class="time-slot">10:45 - 11:00</p>  <p class="speaker-title">Coffee break</p></div>
+    <div style="margin-bottom: 1.2rem;">
+    <p class="time-slot">11:00 - 12:00</p> 
+    <h3 class="session-title"><b>Invited Speaker:</b></h3>
+    <p class="speaker-title">Ludovic Perret (Sorbonne University & LIP6) </p><p class="talk-title">Post-Quantum Transition : Challenges and Opportunities</p>
+    </div>
+    
+  <div style="margin-bottom: 1.2rem;">
+    <p class="time-slot">12:00 - 13:00</p>
+    <h3 class="session-title"><b> Symmetric Cryptography and Coding Theory </b></h3>
+    <p class="speaker-title">  <i>Roberto La Scala</i> (Università di Bari)</p><p class="talk-title">Oracle-Based Multistep Strategy for Solving Polynomial Systems Over Finite Fields and Algebraic Cryptanalysis of the Aradi Cipher  </p>
+    <details>
+<summary><b><i>Abstract</i></b></summary> 
+The multistep solving strategy consists in a divide-and-conquer approach: when a multivariate polynomial system is computationally infeasible to solve directly, one variable is assigned over the elements of the base finite field, and the procedure is recursively applied to the resulting simplified systems. This method already proved effective in attacking the Trivium cipher. In this talk, we present a new implementation of the corresponding algorithm based on a Depth-First Search strategy, along with a novel complexity analysis leveraging tree structures. We further introduce the notion of an "oracle function" as a general predictive tool for deciding whether the evaluation of a new variable is necessary to simplify the current polynomial system. This notion allows us to unify all previously proposed variants of the multistep strategy, including the classical hybrid approach, by appropriately selecting the oracle function. Finally, we apply the multistep solving strategy to the cryptanalysis of the low-latency block cipher Aradi, recently introduced by the NSA. We present the first full-round algebraic attack, raising concerns about the cipher’s actual security with respect to its key length.
+  </details>
+
+     <p class="speaker-title"><i>Francesco Ghiandoni</i>, (Università di Perugia)</p><p class="talk-title"> AG Codes for Secure and Private Information Retrieval </p>
+<details>
+    <summary><b><i>Abstract</i></b> </summary>
+    Private information retrieval (PIR) addresses the question of how to retrieve data items from a database without disclosing information about the identity of the data items retrieved. The rate of a PIR scheme is measured as the ratio of the gained information over the downloaded information. Secure PIR complements this problem by further requiring the contents of the data to be kept secure. In particular, X-secure and T-private information retrieval (XST-PIR) is a form of PIR where data security is guaranteed against collusion among up to X servers and the user’s privacy is ensured against collusion among up to T servers. Cross-subspace alignment (CSA) Reed-Solomon codes have been recently proposed by Jia, Sun, and Jafar (IEEE Trans. Inf. Theory, 65(9):5783–5798, 2019) as a means to construct XST-PIR schemes. Makkonen, Karpuk, and Hollanti reinterpret and generalize such CSA codes as algebraic geometric (AG) codes from curves of genus 0 and 1 (ISIT 2024, pp. 2874–2879), respectively, and from higher-genus hyperelliptic curves (arXiv:2408.00542, 2024). In this talk we show a XST-PIR scheme coming from Hermitian codes, i.e., AG codes over the Hermitian curve. Such a scheme offers interesting tradeoffs between the field size, file size, number of colluding servers, and the total number of servers. When the field size is fixed, this translates in some cases to higher retrieval rates than those of Makkonen et al. (2024). In addition, the new scheme exists also for some parameters where the original ones do not.
+  </details>
+
+  <p class="speaker-title"><i>Alessio Caminata</i>, (Università di Genova)</p><p class="talk-title"> Construction and cryptanalysis of a multivariate CCZ scheme a.k.a. do not bring your Pesto to Switzerland!</p>
+
+  <details>
+<summary><b><i>Abstract</i></b> </summary> 
+Multivariate cryptography is one of the main candidates for post-quantum cryptography. Traditional multivariate schemes are typically constructed by applying two secret affine invertible transformations to a set of secret multivariate polynomials, often quadratic. These secret polynomials contain a trapdoor that enables the legitimate user to solve the corresponding system efficiently, while the public polynomials appear indistinguishable from random ones. In this context, the secret and public key polynomials are said to be affine equivalent. In an effort to generalize this construction, we propose a new approach to construct a multivariate scheme by considering CCZ equivalence, a concept introduced and studied in the theory of vectorial Boolean functions. We explore the potential advantages and disadvantages of this construction. In particular, we present a cryptanalysis attempt aimed at assessing whether this approach indeed provides stronger or more general security guarantees compared to affine equivalence.
+The talk is based on joint works with Marco Calderini, Elisa Gorla, Madison Mabe, Martina Vigorito, and Irene Villa.
+</details>
+  </div>
+  <div style="margin-bottom: 1.2rem;"><p class="time-slot">13:00 - 14:00</p> <p class="speaker-title">Lunch break</p></div>
+  <div style="margin-bottom: 1.2rem;"><p class="time-slot">14:00 - 15:20</p>  <h3 class="session-title"><b> Applied Cryptography </b></h3>
+    <p class="speaker-title"> <i>Daniele Venturi</i> (Università La Sapienza)</p><p class="talk-title"> Evolving Secret Sharing</p>
+  <details>
+<summary><b><i>Abstract</i></b> </summary>
+Evolving secret sharing (Komargodski, Naor, and Yogev, TCC’16) generalizes the notion of secret sharing to the setting of evolving access structures, in which the shareholders are added to the system in an online manner, and where the dealer does not know neither the access structure nor the maximum number of parties in advance. Here, the main difficulty is to distribute shares to the new players without updating the shares of old players; moreover, one would like to minimize the share size as a function of the number of players. In this talk, I will review recent constructions of evolving secret sharing schemes for various access structures, with a particular focus on efficient and computationally secure schemes.
+  </details>
+  <p class="speaker-title"><i>Marco Rinaudo</i>, (Telsy)</p><p class="talk-title"> The critical role of acceleration in fully homomorphic encryption</p>
+
+  <details>
+<summary><b><i>Abstract</i></b> </summary>
+Fully Homomorphic Encryption (FHE) has attracted substantial attention from the international cryptographic community over the past decade, primarily due to its potential to safeguard data-in-use across a wide range of scenarios, with cloud computing being a leading example. However, the deployment of this technology in real-world applications remains limited by the considerable computational overhead inherent in current FHE schemes. One of the most promising approaches to reduce the computational cost of FHE and thereby broaden its applicability is the development of specialized accelerators for homomorphic encryption primitives. This talk will present the main techniques employed in this effort, with a particular focus on hardware acceleration, as well as some other key challenges that must be addressed to enable the widespread adoption of Fully Homomorphic Encryption.
+  </details>
+    <p class="speaker-title"> <i>Barbara Masucci</i>, (Università di Salerno)</p><p class="talk-title"> Design and Analysis of Distributed Schemes for Anonymous Access Control</p>
+  <details>
+<summary><b><i>Abstract</i></b> </summary>
+In this talk we consider the access control problem in a scenario where a set of dealers is responsible for user registration, while a set of guards is responsible for granting users with anonymous access to a restricted resource. More precisely, we consider access control schemes with decentralized user registration, where a set of dealers is responsible for the generation of access tokens assigned to users, while preserving user anonymity with respect to the guards. First, we propose an information-theoretic model for anonymous access schemes with distributed user registration; afterwards, we provide a lower bound on the size of the confidential information that each guard must store. Finally, we design a simple construction for anonymous access schemes with distributed registration, which is optimal with respect to the size of the private information distributed to the guards.
+  </details>
+
+     <p class="speaker-title"><i>Antonio Tortora</i>, (Università di Salerno)</p><p class="talk-title"> Using Homomorphic Encryption for Inner-Product Functional Encryption </p>
+  <details>
+<summary><b><i>Abstract</i></b> </summary>
+Homomorphic encryption schemes enable computations on encrypted data, producing an encrypted result that can only be decrypted by the owner of the corresponding decryption key. A completely different approach is provided by functional encryption, which gives access to a function of some plaintexts working only on ciphertexts. Nevertheless, as shown in 2015 by Abdalla, Bourse, De Caro and Pointcheval, any (additive) homomorphic encryption scheme can be used to instantiate a functional encryption scheme for inner-product functionality. In this context, we will consider Torus Fully Homomorphic Encryption to construct a functional encryption scheme supporting the inner product.
+
+  </details>
+
+  
+  </div>
+  
+  <div style="margin-bottom: 1.2rem;"><p class="time-slot">15:20 - 15:40</p>  <p class="speaker-title">Coffee break</p></div>
+  <div style="margin-bottom: 1.2rem;"><p class="time-slot">15:40 - 17:00</p>  <h3 class="session-title"><b> Post-quantum Cryptography </b> </h3>
+  <p class="speaker-title"><i>Michele Battagliola</i>, (Università Politecnica delle Marche)</p><p class="talk-title"> A Revision of CROSS Security: Proofs and Attacks for Multi-Round Fiat-Shamir Signatures</p>
+  <details>
+<summary><b><i>Abstract</i></b> </summary>
+In this talk, we first introduce CROSS, a digital signature scheme recently admitted to the second round of the NIST on-ramp standardization process for post-quantum digital signatures. We will discuss its construction and how it uses multi-round interactive proofs. 
+Subsequently, we will focus on the security proof of CROSS, in particular about how the fixed-weight parallel-repetition optimization employed in CROSS complicates its security analysis. We will present the first explicit proof of the EUF-CMA security of CROSS, demonstrating that the Fiat-Shamir transform of an HVZK and knowledge-sound multi-round interactive proof is EUF-CMA secure. Furthermore, we will present a novel forgery attack on signatures obtained from fixed-weight repetitions of 5-round interactive proofs, significantly improving upon previous results. As a consequence of this attack, CROSS parameters were modified between its first and second submissions.
+</details>
+  <p class="speaker-title"> <i> Giuseppe D'Alconzo</i> (Politecnico di Torino) </p> <p class="talk-title">Towards Post-Quantum Multi-Signatures from Group Action Assumptions</p>
+  <details>
+<summary><b><i>Abstract</i></b> </summary>
+In various scenarios, it is necessary for a set of N users, each possessing a private/public key pair, to jointly sign a common message. Instead of sending N individual signatures, a multi-signature scheme enables a group of signers to produce a single, compact signature on the shared message, significantly reducing the communication overhead. Numerous practical multi-signature schemes have been developed under
+pre-quantum assumptions. A notable example is MuSig2 (CRYPTO 2021), which builds upon Schnorr signatures based on the discrete logarithm problem. More recently, such efforts have been extended to the post-quantum setting, with lattice-based constructions like MuSig-L (CRYPTO 2022).
+With the growing interest in group action-based signatures, a natural question arises: can we construct an efficient multi-signature scheme based on group action assumptions? In this talk, we present the first construction of such a scheme, relying on group action-based cryptographic assumptions. Our protocol is a 3-round scheme that
+achieves concurrent security in the Random Oracle Model (ROM). We instantiate our construction using the three round-1 candidates from NIST’s additional call for post-quantum digital signatures: LESS, MEDS, and ALTEQ. Our implementation demonstrates favorable compression rates across various parameter sets.
+  </details>
+    <p class="speaker-title"> <i>Alessandro Barenghi</i> (Politecnico di Milano) </p> <p class="talk-title"> Moving to a Post-Quantum World: Challenges in Engineering and Deploying Quantum Resistant Cryptography</p>
+  <details>
+<summary><b><i>Abstract</i></b> </summary>
+The strong push for the construction of large scale quantum computers carries, along with the prospect of significant societal benefits, a threat to widespread asymmetric cryptographic techniques. This talk aims to provide a systematic outlook on the design, engineering and field deployment efforts for post-quantum asymmetric cryptographic solutions.
+  </details>
+    <p class="speaker-title"> <i>Walter Tiberti </i>, (Università dell'Aquila)</p> <p class="talk-title"> Post-Quantum Cryptography in Intra-Vehicle Networks</p>
+  <details>
+<summary>Abstract </summary>
+Quantum computing poses a significant threat to modern classical cryptography.
+To address this challenge, NIST has recently selected new standard protocols for post-quantum cryptography, specifically focusing on Key Encapsulation Mechanisms (KEMs) and post-quantum digital signatures.
+Some products and networking protocols — such as TLS and SSH — have already begun integrating these standards, with many more following by offering them as selectable alternatives to classical cryptographic solutions.
+However, there are contexts where even classical cryptography has faced persistent challenges due to constraints such as limited energy, real-time requirements, and low-latency demands. One such context is intra-vehicle communication, which involves the internal components of a vehicle (e.g., Electronic Control Units or ECUs).
+In this talk, we explore how classical cryptography has been applied within intra-vehicle networks and discuss the potential for adopting post-quantum cryptography standards in this specialized domain.
+Finally, we present a possible solution for implementing NIST's ML-KEM (Kyber) and Dilithium algorithms in CAN-based intra-vehicle communication systems.
+
+</details>
+  </div>
 
   <h2 style="margin-top: 2.5rem; color: #2c3e50;">September 12th, 2025 - Second Day</h2>
 
-  <div style="margin-bottom: 1.2rem;"><strong>10:00 - 11:00</strong> &nbsp; Workshops:<a href="/cifris25/workshops">TAC, Number Theory & Cryptography, Symmetric Cryptography & Coding Theory</a></div>
-  <div style="margin-bottom: 1.2rem;"><strong>11:00 - 11:30</strong> &nbsp; Coffee break</div>
-  <div style="margin-bottom: 1.2rem;"><strong>11:30 - 13:00</strong> &nbsp; Workshops:<a href="/cifris25/workshops">TAC, Number Theory & Cryptography, Symmetric Cryptography & Coding Theory</a></div>
-  <div style="margin-bottom: 1.2rem;"><strong>13:00 - 14:00</strong> &nbsp; Lunch break</div>
-  <div style="margin-bottom: 1.2rem;"><strong>14:00 - 15:30</strong> &nbsp; Workshop: <a href="/cifris25/ReAdPQC25">ReAdPQC25</a> </div>
-  <div style="margin-bottom: 1.2rem;"><strong>15:30 - 16:00</strong> &nbsp; Coffee break</div>
-  <div style="margin-bottom: 1.2rem;"><strong>16:00 - 17:00</strong> &nbsp; Workshop: <a href="/cifris25/ReAdPQC25">ReAdPQC25</a></div>
+  <div style="margin-bottom: 1.2rem;"><p class="time-slot">10:00 - 11:00</p> <p class="speaker-title">Workshops:<a href="/cifris25/workshops">TAC, Number Theory & Cryptography, Symmetric Cryptography & Coding Theory</a></p></div>
+  <div style="margin-bottom: 1.2rem;"><p class="time-slot">11:00 - 11:30</p> <p class="speaker-title">Coffee break</p></div>
+  <div style="margin-bottom: 1.2rem;"><p class="time-slot">11:30 - 13:00</p> <p class="speaker-title">Workshops:<a href="/cifris25/workshops">TAC, Number Theory & Cryptography, Symmetric Cryptography & Coding Theory</a></p></div>
+  <div style="margin-bottom: 1.2rem;"><p class="time-slot">13:00 - 14:00</p>  <p class="speaker-title">Lunch break</p></div>
+  <div style="margin-bottom: 1.2rem;"><p class="time-slot">14:00 - 15:30</p>  <p class="speaker-title">Workshop: <a href="/cifris25/ReAdPQC25">ReAdPQC25</a> </p></div>
+  <div style="margin-bottom: 1.2rem;"><p class="time-slot">15:30 - 16:00</p>  <p class="speaker-title">Coffee break</p></div>
+  <div style="margin-bottom: 1.2rem;"><p class="time-slot">16:00 - 17:00</p>  <p class="speaker-title">Workshop: <a href="/cifris25/ReAdPQC25">ReAdPQC25</a></p></div>
 
-  <p style="margin-top: 2rem;">
+  <div style="text-align: center">
+  <p class="speaker-title"> 
     <a href="/cifris25/registration" target="_blank">Click here to register</a>
   </p>
-
+</div>
+</div>
