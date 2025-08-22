@@ -47,8 +47,17 @@
     <p class="time-slot">11:00 - 12:00</p> 
     <h3 class="session-title"><b>Invited Speaker:</b></h3>
     <p class="speaker-title">Ludovic Perret (Sorbonne University & LIP6) </p><p class="talk-title">Post-Quantum Transition : Challenges and Opportunities</p>
-    </div>
-    
+   <details>
+     <summary><b><i>Abstract</i></b></summary>
+     Post-Quantum Cryptography (PQC) refers to cryptographic algorithms that  are, presumed, secure against quantum and classical computers.
+A first set of PQC standards have been finalized by NIST in 2024-2025, marking the first step of a major upgrade of digital infrastructures to
+these new standards.  It is, by far, the most important cryptographic transition ever performed, yet, and it needs to be completed as soon as 
+possible due to steady  progress in quantum computing. For example, the EU commission recommends members states finalize the transition 
+of critical infrastructures  by 2030-2035.
+In this talk, we will provide an overview of PQC standards, as well as alternative approaches such as Quantum Key Distribution (QKD), to protect against the quantum threat. We will review the regulatory frameworks governing the quantum-safe transition and describe the main organizational and technical approaches 
+developed so far to support this transition.
+   </details>
+   </div>
   <div style="margin-bottom: 1.2rem;">
     <p class="time-slot">12:00 - 13:00</p>
     <h3 class="session-title"><b> Symmetric Cryptography and Coding Theory </b></h3>
@@ -58,13 +67,13 @@
 The multistep solving strategy consists in a divide-and-conquer approach: when a multivariate polynomial system is computationally infeasible to solve directly, one variable is assigned over the elements of the base finite field, and the procedure is recursively applied to the resulting simplified systems. This method already proved effective in attacking the Trivium cipher. In this talk, we present a new implementation of the corresponding algorithm based on a Depth-First Search strategy, along with a novel complexity analysis leveraging tree structures. We further introduce the notion of an "oracle function" as a general predictive tool for deciding whether the evaluation of a new variable is necessary to simplify the current polynomial system. This notion allows us to unify all previously proposed variants of the multistep strategy, including the classical hybrid approach, by appropriately selecting the oracle function. Finally, we apply the multistep solving strategy to the cryptanalysis of the low-latency block cipher Aradi, recently introduced by the NSA. We present the first full-round algebraic attack, raising concerns about the cipher’s actual security with respect to its key length.
   </details>
 
-     <p class="speaker-title"><i>Francesco Ghiandoni</i>, (Università di Perugia)</p><p class="talk-title"> AG Codes for Secure and Private Information Retrieval </p>
+     <p class="speaker-title"><i>Francesco Ghiandoni</i> (Università di Perugia)</p><p class="talk-title"> AG Codes for Secure and Private Information Retrieval </p>
 <details>
     <summary><b><i>Abstract</i></b> </summary>
     Private information retrieval (PIR) addresses the question of how to retrieve data items from a database without disclosing information about the identity of the data items retrieved. The rate of a PIR scheme is measured as the ratio of the gained information over the downloaded information. Secure PIR complements this problem by further requiring the contents of the data to be kept secure. In particular, X-secure and T-private information retrieval (XST-PIR) is a form of PIR where data security is guaranteed against collusion among up to X servers and the user’s privacy is ensured against collusion among up to T servers. Cross-subspace alignment (CSA) Reed-Solomon codes have been recently proposed by Jia, Sun, and Jafar (IEEE Trans. Inf. Theory, 65(9):5783–5798, 2019) as a means to construct XST-PIR schemes. Makkonen, Karpuk, and Hollanti reinterpret and generalize such CSA codes as algebraic geometric (AG) codes from curves of genus 0 and 1 (ISIT 2024, pp. 2874–2879), respectively, and from higher-genus hyperelliptic curves (arXiv:2408.00542, 2024). In this talk we show a XST-PIR scheme coming from Hermitian codes, i.e., AG codes over the Hermitian curve. Such a scheme offers interesting tradeoffs between the field size, file size, number of colluding servers, and the total number of servers. When the field size is fixed, this translates in some cases to higher retrieval rates than those of Makkonen et al. (2024). In addition, the new scheme exists also for some parameters where the original ones do not.
   </details>
 
-  <p class="speaker-title"><i>Alessio Caminata</i>, (Università di Genova)</p><p class="talk-title"> Construction and cryptanalysis of a multivariate CCZ scheme a.k.a. do not bring your Pesto to Switzerland!</p>
+  <p class="speaker-title"><i>Alessio Caminata</i> (Università di Genova)</p><p class="talk-title"> Construction and cryptanalysis of a multivariate CCZ scheme a.k.a. do not bring your Pesto to Switzerland!</p>
 
   <details>
 <summary><b><i>Abstract</i></b> </summary> 
@@ -79,19 +88,19 @@ The talk is based on joint works with Marco Calderini, Elisa Gorla, Madison Mabe
 <summary><b><i>Abstract</i></b> </summary>
 Evolving secret sharing (Komargodski, Naor, and Yogev, TCC’16) generalizes the notion of secret sharing to the setting of evolving access structures, in which the shareholders are added to the system in an online manner, and where the dealer does not know neither the access structure nor the maximum number of parties in advance. Here, the main difficulty is to distribute shares to the new players without updating the shares of old players; moreover, one would like to minimize the share size as a function of the number of players. In this talk, I will review recent constructions of evolving secret sharing schemes for various access structures, with a particular focus on efficient and computationally secure schemes.
   </details>
-  <p class="speaker-title"><i>Marco Rinaudo</i>, (Telsy)</p><p class="talk-title"> The critical role of acceleration in fully homomorphic encryption</p>
+  <p class="speaker-title"><i>Marco Rinaudo</i> (Telsy)</p><p class="talk-title"> The critical role of acceleration in fully homomorphic encryption</p>
 
   <details>
 <summary><b><i>Abstract</i></b> </summary>
 Fully Homomorphic Encryption (FHE) has attracted substantial attention from the international cryptographic community over the past decade, primarily due to its potential to safeguard data-in-use across a wide range of scenarios, with cloud computing being a leading example. However, the deployment of this technology in real-world applications remains limited by the considerable computational overhead inherent in current FHE schemes. One of the most promising approaches to reduce the computational cost of FHE and thereby broaden its applicability is the development of specialized accelerators for homomorphic encryption primitives. This talk will present the main techniques employed in this effort, with a particular focus on hardware acceleration, as well as some other key challenges that must be addressed to enable the widespread adoption of Fully Homomorphic Encryption.
   </details>
-    <p class="speaker-title"> <i>Barbara Masucci</i>, (Università di Salerno)</p><p class="talk-title"> Design and Analysis of Distributed Schemes for Anonymous Access Control</p>
+    <p class="speaker-title"> <i>Barbara Masucci</i> (Università di Salerno)</p><p class="talk-title"> Anonymous Access Schemes with Distributed User Registration</p>
   <details>
 <summary><b><i>Abstract</i></b> </summary>
-In this talk we consider the access control problem in a scenario where a set of dealers is responsible for user registration, while a set of guards is responsible for granting users with anonymous access to a restricted resource. More precisely, we consider access control schemes with decentralized user registration, where a set of dealers is responsible for the generation of access tokens assigned to users, while preserving user anonymity with respect to the guards. First, we propose an information-theoretic model for anonymous access schemes with distributed user registration; afterwards, we provide a lower bound on the size of the confidential information that each guard must store. Finally, we design a simple construction for anonymous access schemes with distributed registration, which is optimal with respect to the size of the private information distributed to the guards.
+We address the problem of anonymous access to restricted resources via distributed user registration, where multiple dealers collaboratively issue access tokens without compromising user anonymity towards a set of guards. Prior work proposed protocols with informal security arguments but lacked a formal model. We introduce an information-theoretic framework that rigorously defines correctness and security properties for such schemes, prove a lower bound on the private information each guard must hold, and present a simple, optimal construction leveraging secret sharing. Our results advance the design of unconditionally secure anonymous access protocols, relevant in the post-quantum era.
   </details>
 
-     <p class="speaker-title"><i>Antonio Tortora</i>, (Università di Salerno)</p><p class="talk-title"> Using Homomorphic Encryption for Inner-Product Functional Encryption </p>
+     <p class="speaker-title"><i>Antonio Tortora</i> (Università di Salerno)</p><p class="talk-title"> Using Homomorphic Encryption for Inner-Product Functional Encryption </p>
   <details>
 <summary><b><i>Abstract</i></b> </summary>
 Homomorphic encryption schemes enable computations on encrypted data, producing an encrypted result that can only be decrypted by the owner of the corresponding decryption key. A completely different approach is provided by functional encryption, which gives access to a function of some plaintexts working only on ciphertexts. Nevertheless, as shown in 2015 by Abdalla, Bourse, De Caro and Pointcheval, any (additive) homomorphic encryption scheme can be used to instantiate a functional encryption scheme for inner-product functionality. In this context, we will consider Torus Fully Homomorphic Encryption to construct a functional encryption scheme supporting the inner product.
@@ -103,7 +112,7 @@ Homomorphic encryption schemes enable computations on encrypted data, producing 
   
   <div style="margin-bottom: 1.2rem;"><p class="time-slot">15:20 - 15:40</p>  <p class="speaker-title">Coffee break</p></div>
   <div style="margin-bottom: 1.2rem;"><p class="time-slot">15:40 - 17:00</p>  <h3 class="session-title"><b> Post-quantum Cryptography </b> </h3>
-  <p class="speaker-title"><i>Michele Battagliola</i>, (Università Politecnica delle Marche)</p><p class="talk-title"> A Revision of CROSS Security: Proofs and Attacks for Multi-Round Fiat-Shamir Signatures</p>
+  <p class="speaker-title"><i>Michele Battagliola</i> (Università Politecnica delle Marche)</p><p class="talk-title"> A Revision of CROSS Security: Proofs and Attacks for Multi-Round Fiat-Shamir Signatures</p>
   <details>
 <summary><b><i>Abstract</i></b> </summary>
 In this talk, we first introduce CROSS, a digital signature scheme recently admitted to the second round of the NIST on-ramp standardization process for post-quantum digital signatures. We will discuss its construction and how it uses multi-round interactive proofs. 
@@ -122,7 +131,7 @@ achieves concurrent security in the Random Oracle Model (ROM). We instantiate ou
 <summary><b><i>Abstract</i></b> </summary>
 The strong push for the construction of large scale quantum computers carries, along with the prospect of significant societal benefits, a threat to widespread asymmetric cryptographic techniques. This talk aims to provide a systematic outlook on the design, engineering and field deployment efforts for post-quantum asymmetric cryptographic solutions.
   </details>
-    <p class="speaker-title"> <i>Walter Tiberti </i>, (Università dell'Aquila)</p> <p class="talk-title"> Post-Quantum Cryptography in Intra-Vehicle Networks</p>
+    <p class="speaker-title"> <i>Walter Tiberti</i> (Università dell'Aquila)</p> <p class="talk-title"> Post-Quantum Cryptography in Intra-Vehicle Networks</p>
   <details>
 <summary>Abstract </summary>
 Quantum computing poses a significant threat to modern classical cryptography.
@@ -137,9 +146,9 @@ Finally, we present a possible solution for implementing NIST's ML-KEM (Kyber) a
 
   <h2 style="margin-top: 2.5rem; color: #2c3e50;">September 12th, 2025 - Second Day</h2>
 
-  <div style="margin-bottom: 1.2rem;"><p class="time-slot">10:00 - 11:00</p> <p class="speaker-title">Workshops:<a href="/cifris25/workshops">TAC, Number Theory & Cryptography, Symmetric Cryptography & Coding Theory</a></p></div>
+  <div style="margin-bottom: 1.2rem;"><p class="time-slot">10:00 - 11:00</p> <p class="speaker-title">Workshops: <a href="/cifris25/workshops">TAC, Number Theory & Cryptography, Symmetric Cryptography & Coding Theory</a></p></div>
   <div style="margin-bottom: 1.2rem;"><p class="time-slot">11:00 - 11:30</p> <p class="speaker-title">Coffee break</p></div>
-  <div style="margin-bottom: 1.2rem;"><p class="time-slot">11:30 - 13:00</p> <p class="speaker-title">Workshops:<a href="/cifris25/workshops">TAC, Number Theory & Cryptography, Symmetric Cryptography & Coding Theory</a></p></div>
+  <div style="margin-bottom: 1.2rem;"><p class="time-slot">11:30 - 13:00</p> <p class="speaker-title">Workshops: <a href="/cifris25/workshops">TAC, Number Theory & Cryptography, Symmetric Cryptography & Coding Theory</a></p></div>
   <div style="margin-bottom: 1.2rem;"><p class="time-slot">13:00 - 14:00</p>  <p class="speaker-title">Lunch break</p></div>
   <div style="margin-bottom: 1.2rem;"><p class="time-slot">14:00 - 15:30</p>  <p class="speaker-title">Workshop: <a href="/cifris25/ReAdPQC25">ReAdPQC25</a> </p></div>
   <div style="margin-bottom: 1.2rem;"><p class="time-slot">15:30 - 16:00</p>  <p class="speaker-title">Coffee break</p></div>
