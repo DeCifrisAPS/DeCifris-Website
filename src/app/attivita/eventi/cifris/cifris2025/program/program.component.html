@@ -100,7 +100,7 @@ Fully Homomorphic Encryption (FHE) has attracted substantial attention from the 
 We address the problem of anonymous access to restricted resources via distributed user registration, where multiple dealers collaboratively issue access tokens without compromising user anonymity towards a set of guards. Prior work proposed protocols with informal security arguments but lacked a formal model. We introduce an information-theoretic framework that rigorously defines correctness and security properties for such schemes, prove a lower bound on the private information each guard must hold, and present a simple, optimal construction leveraging secret sharing. Our results advance the design of unconditionally secure anonymous access protocols, relevant in the post-quantum era.
   </details>
 
-     <p class="speaker-title"><i>Antonio Tortora</i> (Università di Salerno)</p><p class="talk-title"> Using Homomorphic Encryption for Inner-Product Functional Encryption </p>
+     <p class="speaker-title"><i>Antonio Tortora</i> (Università della Campania "Luigi Vanvitelli")</p><p class="talk-title"> Using Homomorphic Encryption for Inner-Product Functional Encryption </p>
   <details>
 <summary><b><i>Abstract</i></b> </summary>
 Homomorphic encryption schemes enable computations on encrypted data, producing an encrypted result that can only be decrypted by the owner of the corresponding decryption key. A completely different approach is provided by functional encryption, which gives access to a function of some plaintexts working only on ciphertexts. Nevertheless, as shown in 2015 by Abdalla, Bourse, De Caro and Pointcheval, any (additive) homomorphic encryption scheme can be used to instantiate a functional encryption scheme for inner-product functionality. In this context, we will consider Torus Fully Homomorphic Encryption to construct a functional encryption scheme supporting the inner product.
@@ -144,15 +144,206 @@ Finally, we present a possible solution for implementing NIST's ML-KEM (Kyber) a
 </details>
   </div>
 
-  <h2 style="margin-top: 2.5rem; color: #2c3e50;">September 12th, 2025 - Second Day</h2>
+  <h2 style="margin-top: 2.5rem; color: #2c3e50;">September 12th, 2025 - Morning</h2>
 
-  <div style="margin-bottom: 1.2rem;"><p class="time-slot">10:00 - 11:00</p> <p class="speaker-title">Workshops: <a href="/cifris25/workshops">TAC, Number Theory & Cryptography, Symmetric Cryptography & Coding Theory</a></p></div>
-  <div style="margin-bottom: 1.2rem;"><p class="time-slot">11:00 - 11:30</p> <p class="speaker-title">Coffee break</p></div>
-  <div style="margin-bottom: 1.2rem;"><p class="time-slot">11:30 - 13:00</p> <p class="speaker-title">Workshops: <a href="/cifris25/workshops">TAC, Number Theory & Cryptography, Symmetric Cryptography & Coding Theory</a></p></div>
-  <div style="margin-bottom: 1.2rem;"><p class="time-slot">13:00 - 14:00</p>  <p class="speaker-title">Lunch break</p></div>
-  <div style="margin-bottom: 1.2rem;"><p class="time-slot">14:00 - 15:30</p>  <p class="speaker-title">Workshop: <a href="/cifris25/ReAdPQC25">ReAdPQC25</a> </p></div>
-  <div style="margin-bottom: 1.2rem;"><p class="time-slot">15:30 - 16:00</p>  <p class="speaker-title">Coffee break</p></div>
-  <div style="margin-bottom: 1.2rem;"><p class="time-slot">16:00 - 17:00</p>  <p class="speaker-title">Workshop: <a href="/cifris25/ReAdPQC25">ReAdPQC25</a></p></div>
+  <!-- SLOT 10:00 - 11:00 -->
+  <div style="border: 2px solid #2c3e50; border-radius: 12px; padding: 1rem; margin: 1.5rem 0; background-color: #f8f9fa;">
+  <h3 class="session-title"> <b>  Workshop: Topics in Applied Cryptography -- Room M1</b></h3>
+  <div style="margin-bottom: 1.2rem;">
+    <p class="time-slot">10:00 - 11:00</p>
+  <p class="speaker-title"><i>Francesco Stocco</i> (Telsy)</p><p class="talk-title"> QKD (Re)Initialization via PQC: An Industrial Security-Usability Trade-off </p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+    In the industrialization perspective of Quantum Key Distribution (QKD), it is required to evaluate the subtle interaction between its classical and quantum components.
+Among these, the classical authentication of QKD protocols respecting both the Information Theoretic Security (ITS) targeted by QKD and the usability required in concrete telecommunication networks is a major challenge.
+In this talk, we will focus on the possible security-usability trade-offs, involving also Post-Quantum Cryptography (PQC), to deal with authentication key (re)initialization.
+  </details>
+   <p class="speaker-title"><i>Massimo Caccia</i> (Random Power s.r.l. & University of Insubria)</p><p class="talk-title"> Quantum Root-of-Trust: Post-Quantum Security for Industrial IoT </p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+    In response to the growing threat posed by quantum computing to classical cryptographic schemes, this work presents the design of a proof-of-concept Quantum Root of Trust (QRoT) system.
+The solution integrates a quantum-entropy ASIC with the Nordic nRF9161 System-In-Package, one of the most advanced solutions for cellular IoT.
+The design and the state-of-play of an architecture focused on DECT nr+ networks to enable secure key generation, storage and distribution together with authentication and encryption for Industrial IoT in a post-quantum world is
+described.
+  </details>
+     <p class="speaker-title"><i>Carlo Brunetta</i> (Independent researcher)</p><p class="talk-title">Verifiable Computation Outsourcing via Contracts over Blockchain Transactions</p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+    We present a technique to obtain verifiable outsourcing of computation with a fair rewarding mechanism over a blockchain.
+Existing (cryptographic) solutions are often impractical due to either high computational overhead or independence from the economic layer required for achieving a fair rewarding mechanism.
+Our approach introduces a contract-based framework encoded as blockchain transactions which encode all the details for both outsourced computation, verification, and rewarding.
+This solution is particularly relevant in distributed AI marketplaces, where data owners and AI developers want to sell/buy data, outsource training/evaluation of models securely within the framework.
+  </details>
+  <div style="margin-bottom: 1.2rem;">
+  <p class="time-slot">11:00 - 11:30</p>
+  <p class="speaker-title">Coffee break</p>
+  </div>
+  <div style="margin-bottom: 1.2rem;">
+    <p class="time-slot">11:30 - 13:00</p>
+    <p class="speaker-title" style="font-size: 1.2rem; font-weight: bold; text-decoration: underline;">  <b>Invited talk: </b><i>Peter Rønne</i> (Université du Luxembourg)</p><p class="talk-title"> Transparent Verification in E-Voting</p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+    The main challenge in secure e-voting is to allow voters to verify their cast vote while preserving strong privacy notions, especially preventing vote-buying and coercion.
+We will introduce the electronic voting schemes Selene and Hyperion which offer a very transparent form of verifiability allowing voters to find and check their plaintext vote directly in the tally result while preserving coercion-mitigation.
+We will introduce new, more general security definitions to capture the context of these schemes and prove their security.  Finally, we will see how we can achieve both everlasting privacy and everlasting coercion-mitigation for Hyperion, as well as speculating on the post-quantum migration of the scheme.
+  </details>
+
+     <p class="speaker-title"><i>Laura Mattiuz</i> (Cybersecurity Center, FBK)</p><p class="talk-title"> A Review of Post-Quantum e-Voting</p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+    The adoption of e-voting in democratic elections has significantly increased in the recent years.
+E-voting offers a convenient alternative to postal or in-person paper voting, while further providing cryptographic privacy of the votes and public verifiability of the whole process.
+However, all currently deployed e-voting systems employ cryptographic protocols which will no longer be secure as soon as a powerful enough quantum computer becomes available.
+Hence, in order to guarantee secure voting, it is important to design e-voting schemes from quantum-secure cryptographic primitives.
+Due to the sensitivity of voting and the complexity of its infrastructures, this task poses a great challenge.
+This talk will provide an overview of post-quantum e-voting, focusing on the different constructions and illustrating the state of the art quantum-safe e-voting protocols.
+  </details>
+
+     <p class="speaker-title"><i>Lorenzo Rovida</i> (University of Milano-Bicocca, DISCo)</p><p class="talk-title"> Exploring blind signatures under FHE by combining GBFV and HAWK</p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+    Blind signatures allow signing an encrypted message without being able to see the content of the message itself.
+Many applications include signatures for encrypted votes or private transactions in a blockchain environment.
+This technique, though, is still far from being practical for real-world scenarios.
+In this proposal, we suggest an approach to perform blind signatures by combining three ingredients: a fully homomorphic encryption scheme, a hashing function, and a signature scheme.
+We will consider the new GBFV (Geelen and Vercauteren, Eurocrypt '25) scheme, which natively supports the Goldilocks field as a plaintext modulus.
+Moreover, the Poseidon2 hashing function performs computations in this field as well — this allows evaluating that circuit under GBFV naturally.
+Lastly, we propose to sign the hashed message using a very simple, yet powerful, signature scheme based on the Lattice isomorphism problem, namely HAWK.
+  </details>
+  </div>
+  </div>
+</div>
+<div style="border: 2px solid #2c3e50; border-radius: 12px; padding: 1rem; margin: 1.5rem 0; background-color: #f8f9fa;">
+  <h3 class="session-title"> <b>  Workshop: Number Theory & Cryptography -- Room M2</b></h3>
+  <p class="time-slot">10:00 - 11:00</p>
+     <p class="speaker-title"><i> Dimitry Koshelev </i> (Lleida University)</p><p class="talk-title"> Endomorphisms for Faster Cryptography on Elliptic Curves of Moderate CM Discriminants</p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+    The talk is devoted to generalization of the widely-used GLV decomposition for multi-scalar multiplication to a much broader range of elliptic curves with moderate CM discriminant D < 0. Previously, it was commonly believed that this technique can only be applied efficiently for small values of D, e.g., up to 100. In practice, curves with j-invariant 0 are most frequently employed, as they have the smallest possible D = -3. However, j = 0 curves are either too suspicious for conservative government regulators, e.g., for Russian ones, which prefer D = -619, or unavailable under imposed extra restrictions in a series of cryptographic settings. The new result thus contributes to the decade-long development of numerous curves with moderate D in the context of zk-SNARKs. Such curves are typically derived from others, which limits the ability to generate them while controlling the magnitude of D.
+  </details>
+  
+     <p class="speaker-title"><i>Pietro Mercuri</i> (Università di Trento)</p><p class="talk-title"> High order elements in finite fields arising from recursive towers</p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+    We describe a general method to produce high multiplicative order elements in finite fields of cardinality 4^(3^n) and q^(2^n), for q an odd prime power, and for each positive integer n. This can have coding theoretic and cryptographic applications when high order elements are required.
+  </details>
+ <div style="margin-bottom: 1.2rem;">
+  <p class="time-slot">11:00 - 11:30</p>
+  <p class="speaker-title">Coffee break</p>
+ </div>
+     <p class="time-slot">11:30 - 13:00</p>
+    <p class="speaker-title"><i>Lorenzo Romano</i> (Politecnico di Torino)</p><p class="talk-title"> One Reduction To Rule Them All. The Hidden Subgroup Problem and its role among post-quantum cryptographic assumptions</p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+    Public-key cryptography relies on computational assumptions that guarantee the security of a scheme up to a certain bound, determined by the complexity of solving the underlying mathematical problem; such a resource-dependent definition is severely damaged by the awakening of quantum computers, on which new algorithms are available and old computational assumptions no longer hold. 
+In this talk, we introduce the Hidden Subgroup Problem, which appears to be one of the minimal cryptographic assumptions, in the sense that most of the widely used assumptions can be efficiently recast as an instance thereof (e.g. discrete logarithm, integer factorization, but also shortest vector and others). 
+The post-quantum relevance of this assumption is motivated by Kitaev algorithm, a quantum routine which generalizes Shor algorithm and efficiently solves the problem for abelian groups, delimiting the area of post-quantum only to those assumptions which reduce to non-abelian cases or do not reduce at all.
+  </details>
+  
+     <p class="speaker-title"><i>Andrea Sanguineti</i> (Università di Genova)</p><p class="talk-title"> Algebraic modelings of the Supersingular Isogeny Problem</p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+     We construct algebraic models for the Supersingular Isogeny Problem, for isogenies of degree powers of 2 and 3, using modular polynomials and explicit formulas from the works of Burdges, DeFeo, Renes, Costello, and Hisil. These constructions yield multivariate polynomial systems which we study through tools from computational algebra, including Gröbner bases and related techniques in commutative algebra. We further present experimental results that estimate the maximum step degree observed during the solution process, providing insight into the complexity and feasibility of solving these systems in practice. This is an ongoing joint work with Alessio Caminata (Università di Genova) and Silvia Sconza (University of Zurich).
+  </details>
+
+     <p class="speaker-title"><i>Alessandro Zaccagnini </i> (Università di Parma)</p><p class="talk-title"> </p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+    </details>
+</div>
+<div style="border: 2px solid #2c3e50; border-radius: 12px; padding: 1rem; margin: 1.5rem 0; background-color: #f8f9fa;">
+  <h3 class="session-title"> <b>  Workshop: Symmetric Cryptography & Coding Theory  -- Room M3</b></h3>
+
+  <p class="time-slot">10:00 - 11:00</p>
+
+  <p class="speaker-title"><i>Enrico Piccione</i> (Universitetet i Bergen)</p><p class="talk-title"> Recent advancements on TI without on-line randomness</p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+    In 1999, Kocher et al. introduced Differential Power Analysis (DPA), an attack that uses the power consumption of a device to retrieve the secret key. As a result, side-channel countermeasures were developed, aiming for the secure implementation of symmetric primitives. In the same year, the masking technique was developed as a countermeasure, but the technique alone does not account for physical behaviours such as glitches. In 2006, Nikova et al. proposed a masking-based technique called Threshold Implementation (TI) to solve this issue. A common use of this technique is to decompose an encryption algorithm into components separated by registers, with the condition that each component satisfies the properties required by the TI technique. However, a naive application of this technique may result in implementations that are either too large to fit in the target device, are too slow to meet the required performance or do not meet the security requirements. So many designs use on-line randomness to meet those requirements. However, in practice, this procedure can be resource-demanding and introduce weaknesses if not done properly. In this talk, we present recent advancements on TI without on-line randomness and discuss future challenges.
+  </details>
+
+     <p class="speaker-title"><i>George Petrides</i></p><p class="talk-title"> Decomposing Permutation Polynomials for More Efficient Hardware Implementations </p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+    Modern symmetric ciphers commonly employ permutation polynomials as core components, AES being a prime example. The implementations of these ciphers in hardware need to provide resistance to side-channel analysis and physical tampering. In some of the techniques used for achieving this, such as masking, the algebraic degree of the permutation polynomial used in the cipher affects the hardware area of the implementation proportionally. At the same time, permutation polynomials suitable for cryptographic use are most often of high algebraic degree. To address this issue and reduce the hardware area while maintaining the security of the cipher, one can decompose high algebraic degree polynomials into polynomials of small algebraic degrees which can be implemented more efficiently. In this talk we will discuss the state of the art in this respect and provide directions for future research.
+  </details>
+  
+  
+   <div style="margin-bottom: 1.2rem;">
+  <p class="time-slot">11:00 - 11:30</p>
+  <p class="speaker-title">Coffee break</p>
+   </div>
+
+   
+      <p class="time-slot">11:30 - 13:00</p>
+   <p class="speaker-title"><i>Rocco Brunelli</i> (Università RomaTre)</p><p class="talk-title">Generic Partial Decryption as Feature Engineering for Neural Distinguishers</p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+    In Neural Cryptanalysis, a deep neural network is trained as a cryptographic distinguisher between pairs of ciphertexts (F(X), F(X + &delta; )), where F is either a random permutation or a block cipher, &delta; is a fixed difference. The AutoND framework aims to use neural distinguishers that are treated as a generic tool and discourages cipher-specific optimizations. On the other hand, other works obtain superior distinguishers by adding dedicated features, such as selected parts of the difference in the previous rounds, to the input of the neural distinguishers. In this paper, we study <b>Generic Partial Decryption</b> as a feature engineering technique and integrate it within a fully automated pipeline, where we evaluate its effect independently of the number of pairs per sample, with which feature engineering is often combined. We show that this technique matches state-of-the-art dedicated approaches on Simon and Simeck. Additionally, we apply it to Aradi and present a practical neural-assisted key recovery for 5 rounds, as well as a 7-rounds key recovery with 2^70 time complexity. Additionally, we derive useful information from the neural distinguishers and propose a non-neural version of our 5-round key recovery.
+  </details>
+  
+     <p class="speaker-title"><i>Alessandro Neri</i> (Università di Napoli)</p><p class="talk-title"> Coding Theory Meets Convex Geometry: The Etzion-Silberstein Conjecture</p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+In 2009 Etzion and Silberstein proved a combinatorial upper bound on the largest dimension of a rank-metric code over a finite field whose nonzero matrices are supported on a given Ferrers diagram and all have rank lower bounded by a fixed positive integer r. In the same paper, they also conjectured that such an upper bound is always tight: that is, for every r and Ferrers diagram D there exists an optimal rank-metric code supported on D. Since then, their conjecture has been verified in a number of cases, but as of today it still remains widely open. In this talk, we investigate the notion of reducibility of Ferrers diagrams: a diagram D reduces to D′ if an optimal code supported on D can be obtained by shortening or inclusion of an optimal code supported on D′.
+This induces a natural notion of irreducibility of Ferrers diagrams, and the validity of the conjecture for irreducible diagrams implies the validity of the full conjecture for all diagrams. Moreover, following the notion of irreducibility, we can provide the Hasse diagram of Young &#39; s lattice with an orientation. This produces a directed graph in which sources correspond to irreducible diagrams. As our main result, we give a combinatorial characterization of irreducible diagrams, as the integer points of aspecial polytope of dimension 2r-3. This talk is based on a joint work with Hugo Sauerbier Couvée.
+  </details>
+  
+     <p class="speaker-title"><i>Paolo Santonastaso</i> (Politecnico di Bari)</p><p class="talk-title"> Optimal Rank-Metric Codes from Skew Polynomial Rings: Constructions and a Welch–Berlekamp Like Algorithm </p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+    In recent years, rank-metric codes have attracted growing attention due to their numerous applications in practical scenarios and their deep connections with various algebraic and combinatorial structures. A particularly relevant class is that of Maximum Rank Distance (MRD) codes, which attain the largest possible size for a given minimum distance.
+In this talk, we introduce a new family of MRD codes, obtained from suitable subsets of quotient spaces of skew polynomial rings. This framework unifies several previously known constructions. We compute invariants for these codes and show that this family provides infinitely many new examples of MRD codes.
+Finally, we present a Welch–Berlekamp like algorithm for decoding MRD codes within these new families.
+This is joint work with Eimear Byrne, F. J. Lobillo, Arani Paul, and John Sheekey.
+    </details>
+
+
+</div>
+<div style="margin-bottom: 1.2rem;">
+  <p class="time-slot">13:00 - 14:00</p>
+  <p class="speaker-title">Lunch</p>
+</div>
+<h2 style="margin-top: 2.5rem; color: #2c3e50;">September 12th, 2025 - Afternoon</h2>
+<div style="border: 2px solid #2c3e50; border-radius: 12px; padding: 1rem; margin: 1.5rem 0; background-color: #f8f9fa;">
+  <h3 class="session-title"> <b>  Workshop: Recent Advances in Post-Quantum Cryptography  -- Room M1</b></h3>
+<p class="time-slot">14:00 - 15:30</p>
+<p class="speaker-title" style="font-size: 1.2rem; font-weight: bold; text-decoration: underline;">  <b>Invited talk: </b><i>Paolo Santini</i> (Università Politecnica delle Marche)</p><p class="talk-title">Riding a BIKE with failures (without falling down too many times)</p>   <details>
+<summary><b><i>Abstract</i></b> </summary>
+Quasi-Cyclic Moderate-Density Parity-Check (QC-MDPC) codes offer a very simple and competitive way to build post-quantum Key Encapsulation Mechanisms (KEMs). Examples of cryptosystems based on such codes are LEDAcrypt and BIKE, with the latter having been one of the finalists in the NIST competition, together with HQC and ClassicMcEliece. The fundamental issue with BIKE is in the difficulty of assessing the Decryption Failure Rate (DFR) and, in particular, in proving that the DFR can be negligible in the security parameter (say, less than 2^(-128) for NIST category 1). This comes from the difficulty of modeling the behaviour of the employed decoder, called Bit Flipping (BF). This may seem paradoxical since the BF is a very basic and simple decoder, still, despite many years of research, no appealing solution has been found. Solving the DFR issue, i.e., finding a good and reliable theoretical model for a competitive BF decoder would finalize the construction of a KEM based on QC-MDPC codes and, arguably, would represent a breakthrough in post-quantum cryptography.
+
+In this talk we recall how BIKE works and then focus on BF decoding, aiming to explain why estimating the DFR is so complicated. We will also briefly recall the most relevant approaches to model the DFR. The talk shall be intended as a high level discussion about the DFR issue, with the aim of raising interest and stimulating new and fresh ideas for this simple to describe, yet intrinsically difficult, open problem.
+</details>
+   <p class="speaker-title"><i>Rahmi El Mechri</i> (Università Politecnica delle Marche)</p><p class="talk-title"> SPECK: Signature from Permutation Equivalence of Codes and Kernel </p>
+    <a href="https://drive.google.com/file/d/1SSy22AOKfcX9CEbFtgOS_8Tlh2jdwmyd/view?usp=sharing">Abstract</a>
+   
+<div style="margin-bottom: 1.2rem;">
+  <p class="time-slot">15:30 - 16:00</p>
+  <p class="speaker-title">Coffee break</p>
+</div>
+  <p class="time-slot">16:00 - 17:00</p>
+
+       <p class="speaker-title"><i>Rosa Fera</i> (Università di Cassino e del Lazio meridionale)</p><p class="talk-title">Hilbert series and degrees of regularity of Oil & Vinegar and Mixed quadratic systems</p>
+   <a href="https://drive.google.com/file/d/1wn3JnmBCEszyJwds3C2t4I5sWEWvMqEG/view?usp=sharing">Abstract</a>
+
+
+     <p class="speaker-title"><i>Wissam Ghantous</i> (University of Central Florida)</p><p class="talk-title">Cycles in the generalized supersingular L-isogeny graph</p>
+   <a href="https://drive.google.com/file/d/16xPp_SE6MyuRJ46MJ2tn1jC92Hnofi32/view?usp=sharing">Abstract</a>
+
+      <p class="speaker-title"><i>Martina Vigorito</i> (EPITA Paris)</p><p class="talk-title">On the Security of MQ-based ZKPoK in the Multi-Instance Setting</p>
+<a href="https://drive.google.com/file/d/1NETk5dx-2PeR7ufkHElYoKyG2tMp9W47/view?usp=sharing">Abstract</a>
+
+</div>
+<div style="border: 2px solid #2c3e50; border-radius: 12px; padding: 1rem; margin: 1.5rem 0; background-color: #f8f9fa;">
+  <h3 class="session-title"> <b>  Mini-Workshops </b></h3>
+<ul>
+  <li><p class="talk-title">History of cryptography</p></li>
+  <li><p class="talk-title">Protocols, privacy and security in digital identity</p></li>
+  <li><p class="talk-title">Quantum Random Number Generators & Cryptography</p></li>
+  <li><p class="talk-title">A Journey into Bitcoin’s Cryptography</p></li>
+</ul>
+</div>
+
 
   <div style="text-align: center">
   <p class="speaker-title"> 
