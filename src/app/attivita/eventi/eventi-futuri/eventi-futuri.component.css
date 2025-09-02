@@ -54,3 +54,14 @@
   color: var(--cifris_orange);
   text-decoration: none;
 }
+
+.card .container h1 {
+  font-size: 1.25rem; 
+  font-weight: 700;     
+  display: flex;          
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cifris_purple);
+  color: white !important;
+  border-radius: 15px;
+}
