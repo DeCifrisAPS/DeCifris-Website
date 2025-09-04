@@ -19,7 +19,11 @@
     font-weight: bold;
     color: #2c3e50;
     margin: 1.2rem 0 0.6rem 0;
-    }
+ 
+  }
+  section {
+  scroll-margin-top: 80px; /* spazio per l’header */
+}
 .time-slot {
   font-size: 1.0rem;           /* più grande */
   color: #2c3e50;              /* colore elegante */
@@ -35,25 +39,46 @@
 
 
 <div class="text">
-  <h2 style="margin-top: 2.5rem; color: #2c3e50;">September 11th, 2025 - First Day</h2>
-
-  <div style="margin-bottom: 1.2rem;"><p class="time-slot">09:00 - 09:30</p> <p class="speaker-title">Registration and badge </p></div>
-  <div style="margin-bottom: 1.2rem;"><p class="time-slot">09:30 - 09:45</p> <p class="speaker-title">Welcome speech and introductions</p></div>
-  <div style="margin-bottom: 1.2rem;"><p class="time-slot">09:45 - 10:30</p> <p class="speaker-title">Institutional round table</p></div>
-  <div style="margin-bottom: 1.2rem;"><p class="time-slot">10:00 - 10:15</p> <p class="speaker-title">De Cifris</p></div>
-  <div style="margin-bottom: 1.2rem;"><p class="time-slot">10:15 - 10:45</p> <p class="speaker-title">Partners</p>
+  <h2 style="margin-top: 2.5rem; color: #2c3e50; font-size: 1.5rem;">
+    <b>September 11th, 2025 <br> Aula Magna, Dipartimento di Ingegneria, Via Vito Volterra 62</b>
+</h2>
+  <hr>
+  <div style="margin-bottom: 1.2rem;"><p class="time-slot">09:00 - 09:30</p> <h3 class="session-title">Registration and badge </h3></div>
+  <hr>
+  <div style="margin-bottom: 1.2rem;"><p class="time-slot">09:30 - 09:45</p> <h3 class="session-title">Welcome speech and introduction</h3> <i>(in italian)</i>
     <ul>
-      <li> <p class="talk-title">DataKrypto</p>
-      <li> <p class="talk-title">E4</p>
-      <li> <p class="talk-title">ForkBomb</p>
-      <li> <p class="talk-title">RandomPower</p>
+      <li><p class="speaker-title">Massimiliano Sala (Università di Trento)</p>
+      <li><p class="speaker-title">Marco Pedicini (Università RomaTre)</p>
+      <li><p class="speaker-title">Rappresentante ACN</p>
+</ul>
+  </div>
+  <hr>
+  <div style="margin-bottom: 1.2rem;"><p class="time-slot">09:45 - 10:00</p>  <h3 class="session-title"><b>Institutional round table</b></h3><i>(in italian)</i>
+    <p class="speaker-title">Moderatore: Rappresentante ACN </p>
+    <ul>
+      <li> <p class="speaker-title">Banca D&#39;Italia;<p>
+      <li> <p class="speaker-title">Cristiano Leggeri (Polizia Postale)<p>
       </ul>
   </div>
+  <hr>
+  <div style="margin-bottom: 1.2rem;"><p class="time-slot">10:00 - 10:15</p> <h3 class="session-title"><b>De Cifris</b></h3><i>(in italian)</i>
+    <p class="speaker-title">Roberto Civino (Università dell'Aquila);<p></div>
+  <hr>
+  <div style="margin-bottom: 1.2rem;"><p class="time-slot">10:15 - 10:45</p> <h3 class="session-title">Partners</h3><i>(in italian)</i>
+    <ul>
+      <li> <p class="speaker-title"><a href="https://datakrypto.ai/">DataKrypto s.r.l.</a></p>
+      <li> <p class="speaker-title"><a href="https://www.e4company.com/en/">E4 s.p.a.</a></p>
+      <li> <p class="speaker-title"><a href="https://forkbomb.solutions/">ForkBomb B.V.</a></p>
+      <li> <p class="speaker-title"><a href="https://www.randompower.eu/">RandomPower s.r.l. </a></p>
+      </ul>
+  </div>
+  <hr>
   <div style="margin-bottom: 1.2rem;"><p class="time-slot">10:45 - 11:00</p>  <p class="speaker-title">Coffee break</p></div>
-    <div style="margin-bottom: 1.2rem;">
+  <div style="margin-bottom: 1.2rem;">
+    <hr>
     <p class="time-slot">11:00 - 12:00</p> 
     <h3 class="session-title"><b>Invited Speaker:</b></h3>
-    <p class="speaker-title">Ludovic Perret (Sorbonne University & LIP6) </p><p class="talk-title">Post-Quantum Transition : Challenges and Opportunities</p>
+    <p class="speaker-title">Ludovic Perret (Sorbonne University -  EPITA) </p><p class="talk-title">Post-Quantum Transition: Challenges and Opportunities</p>
    <details>
      <summary><b><i>Abstract</i></b></summary>
      Post-Quantum Cryptography (PQC) refers to cryptographic algorithms that  are, presumed, secure against quantum and classical computers.
@@ -64,7 +89,8 @@ of critical infrastructures  by 2030-2035.
 In this talk, we will provide an overview of PQC standards, as well as alternative approaches such as Quantum Key Distribution (QKD), to protect against the quantum threat. We will review the regulatory frameworks governing the quantum-safe transition and describe the main organizational and technical approaches 
 developed so far to support this transition.
    </details>
-   </div>
+  </div>
+  <hr>
   <div style="margin-bottom: 1.2rem;">
     <p class="time-slot">12:00 - 13:00</p>
     <h3 class="session-title"><b> Symmetric Cryptography and Coding Theory </b></h3>
@@ -88,7 +114,9 @@ Multivariate cryptography is one of the main candidates for post-quantum cryptog
 The talk is based on joint works with Marco Calderini, Elisa Gorla, Madison Mabe, Martina Vigorito, and Irene Villa.
 </details>
   </div>
+  <hr>
   <div style="margin-bottom: 1.2rem;"><p class="time-slot">13:00 - 14:00</p> <p class="speaker-title">Lunch break</p></div>
+  <hr>
   <div style="margin-bottom: 1.2rem;"><p class="time-slot">14:00 - 15:20</p>  <h3 class="session-title"><b> Applied Cryptography </b></h3>
     <p class="speaker-title"> <i>Daniele Venturi</i> (Università La Sapienza)</p><p class="talk-title"> Evolving Secret Sharing</p>
   <details>
@@ -116,8 +144,9 @@ Homomorphic encryption schemes enable computations on encrypted data, producing 
 
   
   </div>
-  
+  <hr>
   <div style="margin-bottom: 1.2rem;"><p class="time-slot">15:20 - 15:40</p>  <p class="speaker-title">Coffee break</p></div>
+  <hr>
   <div style="margin-bottom: 1.2rem;"><p class="time-slot">15:40 - 17:00</p>  <h3 class="session-title"><b> Post-quantum Cryptography </b> </h3>
   <p class="speaker-title"><i>Michele Battagliola</i> (Università Politecnica delle Marche)</p><p class="talk-title"> A Revision of CROSS Security: Proofs and Attacks for Multi-Round Fiat-Shamir Signatures</p>
   <details>
@@ -150,10 +179,25 @@ Finally, we present a possible solution for implementing NIST's ML-KEM (Kyber) a
 
 </details>
   </div>
-
-  <h2 style="margin-top: 2.5rem; color: #2c3e50;">September 12th, 2025 - Morning</h2>
-
+<hr>
+  <h2 style="margin-top: 2.5rem; color: #2c3e50; font-size: 1.4rem;">September 12th, 2025 <br> Dipartimento di Matematica e Fisica, Largo S. Leonardo Murialdo, 1</h2>
+  <h3 class="session-title">Permanent Workshops</h3>
+  <ul>
+    <li> <p class="speaker-title"><a href="/cifris25/program/#TAC">Topics in Applied Cryptography</a></p>
+    <li> <p class="speaker-title"><a href="/cifris25/program/#NTC">Number Theory & Cryptography</a></p>
+    <li> <p class="speaker-title"><a href="/cifris25/program/#SCC">Symmetric Cryptography & Coding Theory</a></p>
+    <li> <p class="speaker-title"><a href="/cifris25/program/#RAP">Recent Advances in Post-Quantum Cryptography</a></p>
+  </ul>
+   <h3 class="session-title">Contributed Workshops</h3>
+  <ul>
+    <li> <p class="speaker-title"><a href="/cifris25/program/#PPS">Protocols, privacy and security in digital identity</a></p>
+    <li> <p class="speaker-title"><a href="/cifris25/program/#HIS">History of cryptography</a></p>
+    <li> <p class="speaker-title"><a href="/cifris25/program/#QRN">Quantum Random Number Generators & Cryptography</a></p>
+  </ul>
+  <h3 class="session-title">Community and Dissemination Workshop</h3>
+  <p class="speaker-title"><a href="/cifris25/program/#BIT">A Journey into Bitcoin’s Cryptography</a></p>
   <!-- SLOT 10:00 - 11:00 -->
+  <section id="TAC">
   <div style="border: 2px solid #2c3e50; border-radius: 12px; padding: 1rem; margin: 1.5rem 0; background-color: #f8f9fa;">
   <h3 class="session-title"> <b>  Workshop: Topics in Applied Cryptography -- Room M1</b></h3>
   <div style="margin-bottom: 1.2rem;">
@@ -165,7 +209,7 @@ Finally, we present a possible solution for implementing NIST's ML-KEM (Kyber) a
 Among these, the classical authentication of QKD protocols respecting both the Information Theoretic Security (ITS) targeted by QKD and the usability required in concrete telecommunication networks is a major challenge.
 In this talk, we will focus on the possible security-usability trade-offs, involving also Post-Quantum Cryptography (PQC), to deal with authentication key (re)initialization.
   </details>
-   <p class="speaker-title"><i>Massimo Caccia</i> (Random Power s.r.l. & University of Insubria)</p><p class="talk-title"> Quantum Root-of-Trust: Post-Quantum Security for Industrial IoT </p>
+   <p class="speaker-title"><i>Massimo Caccia</i> (RandomPower s.r.l. & University of Insubria)</p><p class="talk-title"> Quantum Root-of-Trust: Post-Quantum Security for Industrial IoT </p>
   <details>
     <summary><b><i>Abstract</i></b> </summary>
     In response to the growing threat posed by quantum computing to classical cryptographic schemes, this work presents the design of a proof-of-concept Quantum Root of Trust (QRoT) system.
@@ -219,7 +263,9 @@ Lastly, we propose to sign the hashed message using a very simple, yet powerful,
   </details>
   </div>
   </div>
-</div>
+  </div>
+  </section>
+  <section id="NTC">
 <div style="border: 2px solid #2c3e50; border-radius: 12px; padding: 1rem; margin: 1.5rem 0; background-color: #f8f9fa;">
   <h3 class="session-title"> <b>  Workshop: Number Theory & Cryptography -- Room M2</b></h3>
   <p class="time-slot">10:00 - 11:00</p>
@@ -259,6 +305,8 @@ The post-quantum relevance of this assumption is motivated by Kitaev algorithm, 
      We give an overview of modern algorithms for factoring integers.
     </details>
 </div>
+  </section>
+  <section id="SCC">
 <div style="border: 2px solid #2c3e50; border-radius: 12px; padding: 1rem; margin: 1.5rem 0; background-color: #f8f9fa;">
   <h3 class="session-title"> <b>  Workshop: Symmetric Cryptography & Coding Theory  -- Room M3</b></h3>
 
@@ -308,11 +356,13 @@ This is joint work with Eimear Byrne, F. J. Lobillo, Arani Paul, and John Sheeke
 
 
 </div>
+  </section>
+  
 <div style="margin-bottom: 1.2rem;">
   <p class="time-slot">13:00 - 14:00</p>
   <p class="speaker-title">Lunch</p>
 </div>
-<h2 style="margin-top: 2.5rem; color: #2c3e50;">September 12th, 2025 - Afternoon</h2>
+<section id="RAP"></section>
 <div style="border: 2px solid #2c3e50; border-radius: 12px; padding: 1rem; margin: 1.5rem 0; background-color: #f8f9fa;">
   <h3 class="session-title"> <b>  Workshop: Recent Advances in Post-Quantum Cryptography  -- Room M1</b></h3>
 <p class="time-slot">14:00 - 15:30</p>
@@ -342,17 +392,216 @@ In this talk we recall how BIKE works and then focus on BF decoding, aiming to e
 <a href="https://drive.google.com/file/d/1NETk5dx-2PeR7ufkHElYoKyG2tMp9W47/view?usp=sharing">Abstract</a>
 
 </div>
+<section id="PPS"></section>
 <div style="border: 2px solid #2c3e50; border-radius: 12px; padding: 1rem; margin: 1.5rem 0; background-color: #f8f9fa;">
-  <h3 class="session-title"> <b>  Mini-Workshops </b></h3>
+  <h3 class="session-title"> <b> Workshop: Protocols, Privacy and Security in Digital Identity -- Room M3</b></h3>
+  <p class="time-slot">14:30 - 15:30</p>
+   <p class="speaker-title"><i>Andrea D&#39;Intino</i> (Forkbomb BV)</p><p class="talk-title">Introduction</p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+    In this talk we provide an overview of the ongoing digital identity efforts, focusing on the cryptography but including context about the political standpoints as well as the institutional and industry actors involved, int the EU and USA/Canada. We will provide a comparative analysis of the main cryptographic scheme used, along with communication protocols and the data formats for both digital identities and verifiable credentials. Some of the discussed subjects are:
 <ul>
-  <li><p class="talk-title">History of cryptography</p></li>
-  <li><p class="talk-title">Protocols, privacy and security in digital identity</p></li>
-  <li><p class="talk-title">Quantum Random Number Generators & Cryptography</p></li>
-  <li><p class="talk-title">A Journey into Bitcoin’s Cryptography</p></li>
+<li>Identity and credential formats: SD-JWT and mDOC (EUDI-ARF), W3C-DID and W3C-VC 2.0, mobile driving licenses
+<li>Communication protocols: OpenID4VCI and OpenID4VP
+<li>Overview of accepted signatures schemes in EUDI-ARF and W3C-VC
+<li>TEE and cryptographic devices
+<li>ZKP in "Age Verification"
 </ul>
+    </details>
+
+     <p class="speaker-title"><i>Emiliano Vernini</i> (EY Italy)</p><p class="talk-title">State of the art: impact of eIDAS 2.0 for QTSPs, public and private sector.</p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+    We summarize the implications and impacts of eIDAS 2.0 for QTSPs, public and private organization. Market perspectives, main use cases, LSPs, main development efforts from members states and public/private organizations. Italian EUDI Wallet: actors, components and interoperability within the latest EUDI-ARF and beyond. Integration with legacy systems and the Italian electronic identity card.
+    </details>
+
+   <p class="speaker-title"><i>Denis "Jaromil" Roio</i> (Dyne.org foundation / W3C Security Interest Group)</p><p class="talk-title">Security analysis of EUDI</p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+We explore the security aspects of implementing protocols in EUDI wallet mobile apps, focusing on their connection, integration, and extension with web browsers. What threats could emerge, what mitigations should be applied, and what considerations must developers keep in mind? Additionally, what future developments and API standards could enhance browser security for online identity verification?
+  </details>
+  <div style="margin-bottom: 1.2rem;">
+  <p class="time-slot">15:30 - 16:00</p>
+  <p class="speaker-title">Coffee break</p>
+  </div>
+   <p class="time-slot">16:00 - 17:00</p>
+   <p class="speaker-title" style="font-size: 1.2rem; font-weight: bold; text-decoration: underline;">  <b>Invited talk: </b><i>Matteo Frigo</i> (Google, Inc.)</p><p class="talk-title">Zero-Knowledge Proofs in Identity Wallets.</p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+    We discuss the Google Longfellow-ZK system for generating zero-knowledge presentations of identity documents. The system is available as open source, it is integrated in the Google Wallet, and it is recommended for use in the forthcoming EU Age Verification application. Longfellow-ZK uses existing MDOC identity documents with no changes to either issuers or on-device hardware secure elements. A fresh zero-knowledge proof of possession of a document with the desired attributes can be generated in about one second on a mid-range mobile phone.
+  </details>
+
+    <p class="speaker-title"><i>Puria Nafisi Azizi</i> (Forkbomb BV)</p><p class="talk-title">Conformance, interoperability and security testing of EUDI</p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+    We explore the Conformance and Interoperability challenges in EUDI-ARF, analyzing the existing conformance test suits for the transport protocols and use-cases as well as the challenges in the Wallet cetrtification
+  </details>
+    <p class="speaker-title"><i>Harmen van der Kooij</i> (FIDES Community)</p><p class="talk-title">Interoperability Through Open Ecosystems</p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+    This talk will highlight the impact on interoperability of an open ecosystem, connecting sectors and countries.
+By advancing the global adoption of digital wallets and verifiable credentials for people, organizations, and products, such initiatives bring public and private actors together to collaborate on open, interoperable trust infrastructure. They enable scalable use cases across domains—from identity and organizational compliance to digital product passports and trade documents. FIDES plays a key role in providing the space, tools, and coordination needed to explore, align, and test real-world applications.
+  </details>  
 </div>
 
+<section id="HIS"></section>
+<div style="border: 2px solid #2c3e50; border-radius: 12px; padding: 1rem; margin: 1.5rem 0; background-color: #f8f9fa;">
+  <h3 class="session-title"> <b> Workshop: History of Cryptography -- Room M2</b></h3>
+  <i>(in italian)</i>
+  
+  <p class="time-slot">14:30 - 15:30</p>
+   <p class="speaker-title"><i>Paolo Bonavoglia</i> (Independent Researcher) </p><p class="talk-title">Do mathematicians win wars? The case of the Cambrai War</p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+    In 1500, after a century of wars, Venice annexed Romagna. Pope Julius II called for a Holy
+League with the Christian Kings and the Empire to stop Venice once and for all. In May
+1509, the Venetian army was defeated by the French and faced total ruin with the siege of
+Padua. But suddenly, the Papacy proposed a peace to join forces and expel the French from
+Italy. Venice just had to return Romagna and renounce all future claims on it.
+Several conjectures on this reversal have been proposed. We present the possibility it was
+made possible by Venetian cryptanalysis, in particular by the work of secretary Zuan Soro,
+renowned for decrypting all intercepted messages.
+  </details>
 
+     <p class="speaker-title"><i>Ivan Parisi</i> (Institut Internacional d’Estudis Borgians)</p><p class="talk-title">Federico da Montefeltro and the Art of Cryptography:
+between Practical Use, Experimentation, and
+Sublimation</p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+    During the Renaissance, the small Duchy of Urbino experienced a flourishing development
+of science and the arts thanks to the enlightened patronage of Federico da Montefeltro.
+Among the disciplines cultivated at his court, cryptography also found a significant place,
+not only as a practical tool but also as an object of reflection and experimentation.
+The daily use of ciphers is documented in Urbinate Latin Codex no. 998 from the duke’s
+renowned library today preserved in the Vatican Apostolic Library which gathers numerous cryptographic systems employed in correspondence with ambassadors and powerful figures of the time. In addition to this, two further manuscripts from the same collection, Urb. Lat. 948 and Urb. Lat. 949, although of still uncertain dating, might bear witness
+to a surprising precocity in the exploration of polyalphabetic systems, even anticipating
+    Trithemius’s famous tables.
+    Finally, Federico’s passion for cryptography also emerges on the symbolic and aesthetic
+level: in the studiolo of Gubbio, one of the highest expressions of the Italian Renaissance,
+a panel appears depicting a ciphered chart. This element may be interpreted as a true
+celebration of cryptography, ideally placed on the same level as the liberal arts.
+  </details>
+
+     <p class="speaker-title"><i>Marco Vito</i> (University of Wien & University of Salerno)</p><p class="talk-title">Italy and Florence: Cryptography in the 15th Century</p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+    Florence in the Late Middle Age is regarded by some historians as the political center of
+
+the time. The political strategies of Lorenzo de’ Medici, known as the Magnificent, positioned the Signoria as a mediator between the Papacy and various Italian political entities.
+
+Among the many rivalries at play was the competition to devise the most effective system
+of secret writing.
+
+From the Papal States, Leon Battista Alberti was commissioned to invent what would become the first Western polyalphabetic cipher system. Under Sforza rule, there were firstrate cryptographers, including Francesco Tranchedino, personal secretary to Cicco Simonetta and compiler of the Viennese Codex, a collection of Sforza ciphers used between 1450
+
+    and 1496.
+    Mantua, Lucca, and Naples—though the latter lost all direct evidence of its cryptographic
+
+practices during the Second World War—represented different expressions of a continuously evolving system of secret writing. Florence, for its part, appears to have adopted
+
+cryptography systematically somewhat later than other states, but it distinguished itself
+
+through the variety of systems employed, making use of monoalphabetic ciphers with homophones, as well as jargon-based and polyalphabetic systems throughout the course of the 15th century.
+  </details>
+     <p class="speaker-title"><i>Flavio Atzeni</i> (Senior Web Developer) <br>  <i>Francesco Cosimato</i> (Retired Army General)</p><p class="talk-title">Enigma in action</p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+    There are numerous studies on the Enigma machine, mostly focused on its operation, almost none on how it was actually used on the battlefield. Starting from this consideration,
+
+we conceived this Historical Workshop: ”Enigma in Action”, an in-depth look at the real-life use of the German cryptographic machine. From the transmission of a message actually
+
+sent during the Russian campaign to the forms used at the time.
+  </details>
+</div>
+<section id="QRN"></section>
+<div style="border: 2px solid #2c3e50; border-radius: 12px; padding: 1rem; margin: 1.5rem 0; background-color: #f8f9fa;">
+  <h3 class="session-title"> <b> Workshop: Quantum Random Number Generators & Cryptography -- Room M2</b></h3>
+  <p class="time-slot">16:00 - 17:00</p>
+   <p class="speaker-title"><i>Leonardo Errati</i> (Politecnico di Torino) <br> <i>Roberto La Scala</i> (Università di Bari) <br>  <i>Mauro Patano</i> (Istituto Nazionale di Fisica Nucleare) </p><p class="talk-title">Cryptographic Standards for Random Number
+Generation</p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+    Random number generation is an often overlooked cornerstone for secure communications, cryptographic protocols, and scientific simulations. We offer a concise overview
+
+of the NIST framework for random bit generation, highlighting how the construction of
+Quantum RNGs - from entropy sources to filters and test suites - is a multidisciplinary
+effort of engineers, physicists, and mathematicians. We then introduce the potential of
+quantum entropy sources through an integration project for distributed IT infrastructures.
+  </details>
+     <p class="speaker-title"><i>Valeria Rossi</i> (RandomPower s.r.l. & University of Insubria)</p><p class="talk-title">Introducing Quantum Random Number Generators, basic principles and technologies</p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+    Random numbers play a fundamental role in many sensitive applications, ranging from
+
+cryptography, to identity management, to MonteCarlo simulations. The quantum world,
+
+being intrinsically probabilistic, provides an ideal setting for their production. Further-
+more, quantum correlations can be exploited to certify unpredictability, even when the
+
+devices themselves are untrusted.
+
+We present the physical principles behind the main commercially available Quantum Ran-
+dom Number Generators and the biases that may affect their implementation, from self-
+testing to practical trusted systems.
+    </details>
+
+     <p class="speaker-title"><i>Nicola Massari</i> (Fondazione Bruno Kessler)</p><p class="talk-title">QRNG-on-a-chip: exemplary embodiments</p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+  </details>
+
+  <p class="speaker-title"><i>Massimo Caccia</i> (RandomPower s.r.l. & University of Insubria)</p><p class="talk-title">The Random Power FIPS compliant QRNG on-a-chip</p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+    Random Power is a company spinned off from Universita dell’Insubria and AGH-University `
+of Krakow, targeting the development of a platform of random bit streamers based on
+
+quantum tunneling in silicon structures. Thanks to the support by the European Commission and a collaborative effort at European Level, it rapidly managed to design, produce
+
+and qualify a series of FIPS compliant embodiments, included an Application Specific Integrated Circuit, a chip.
+
+The presentation will focus on the chip architecture, the main challenges to be faced, the
+state-of-play and the next steps.
+  </details>
+
+  <p class="speaker-title"><i>Cesare Caratozzolo</i> (RandomPower s.r.l. & University of Insubria)</p><p class="talk-title">Main drives and exemplary applications of QRNGs</p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+    Randomness is at the heart of to-
+day’s technology, powering everything from secure communications to data protection.
+
+We’ll discuss about why randomness is needed, where it’s applied, and how it’s generated
+
+with PRNGs and TRNGs. We’ll explore some case studies in Cryptography and Differential Privacy, like in the U.S. Census, that show why the quality of randomness really
+
+matters.
+  </details>
+</div>
+<section id="BIT"></section>
+<div style="border: 2px solid #2c3e50; border-radius: 12px; padding: 1rem; margin: 1.5rem 0; background-color: #f8f9fa;">
+  <h3 class="session-title"> <b> Workshop: A Journey into Bitcoin’s Cryptography -- Room M1</b></h3>
+  <p class="time-slot">17:00 - 18:00</p>
+  
+   <p class="speaker-title"><i>Gianluca Cappiello</i> (BitPolito, Politecnico di Torino)</p><p class="talk-title">Introduction to Bitcoin</p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+    This introductory section aims to outline the main features of the Bitcoin protocol that make
+it the only private and decentralized digital currency system, analyzing how it can be made
+scalable and more efficient.
+    </details>
+
+     <p class="speaker-title"><i>Bianca Rampazzo</i> (BitPolito, Politecnico di Torino)</p><p class="talk-title">ZK-STARKs on Bitcoin</p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+We will cover the basics of ZK-STARKs, exploring their transparency, post-quantum resilience, and why they might be a natural fit for Bitcoin and related protocols.  </details>
+
+     <p class="speaker-title"><i>Gianluca Cappiello</i> (BitPolito, Politecnico di Torino) <br> <i>Enrico Zangirolami</i> (BitPolito, Politecnico di Torino)</p><p class="talk-title">Schnorr digital signature protocols + Live Demo</p>
+  <details>
+    <summary><b><i>Abstract</i></b> </summary>
+    This presentation will emphasize the benefits of Schnorr signatures, highlighting their applications in multi-signature transactions through key aggregation, threshold signatures, and signature aggregation.
+    </details>
+ </div> 
+  
   <div style="text-align: center">
   <p class="speaker-title"> 
     <a href="/cifris25/registration" target="_blank">Click here to register</a>
