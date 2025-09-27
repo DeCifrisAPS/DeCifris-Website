@@ -556,6 +556,8 @@ const routes: Routes = [
 	{ path: 'stageTirocini', redirectTo: '/associazione/stage-tirocini', pathMatch: 'full' },
 	{ path: 'associarsi-benemeriti', redirectTo: '/associazione/associarsi-benemeriti', pathMatch: 'full' },
 	{ path: 'associarsi', redirectTo: '/associazione/associarsi', pathMatch: 'full' },
+	{ path: 'regolamento', redirectTo: '/associazione/regolamento', pathMatch: 'full' },
+	{ path: 'assets/associazione', redirectTo: '/associazione/regolamento', pathMatch: 'prefix' },
 	{ path: 'deCifrisHistoriae', redirectTo: '/attivita/decifris-historiae', pathMatch: 'full' },
 	{ path: 'deCifrisAthesis', redirectTo: '/attivita/decifris-athesis', pathMatch: 'full' },
 	{ path: 'deCifrisAgora', redirectTo: '/attivita/decifris-agora', pathMatch: 'full' },
