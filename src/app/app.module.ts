@@ -172,6 +172,7 @@ import { HomeCifris25Component } from './attivita/eventi/cifris/cifris2025/home-
 import { PaymentResultComponent25 } from './attivita/eventi/cifris/cifris2025/payment-result/payment-result.component';
 import { ScolarshipsComponent } from './associazione/scolarships/scolarships.component';
 import { Vol5Component } from './attivita/editoria/koine/vol5/vol5.component';
+import { Ixh25Component } from './root-elements/hosting/ixh25/ixh25.component';
 
 // // ./hosting
 // import { Opera24Component } from './hosting/opera24/opera24.component';
@@ -256,6 +257,7 @@ import { Vol5Component } from './attivita/editoria/koine/vol5/vol5.component';
         Trends24Component,
         TimelineComponent,
         Ixh24Component,
+        Ixh25Component,
         // MailingListComponent,
         // AttivitaComponent,
         // OpportunitaComponent,
