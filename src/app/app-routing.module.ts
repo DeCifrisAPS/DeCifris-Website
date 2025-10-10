@@ -152,6 +152,7 @@ import { PaymentResultComponent25 } from './attivita/eventi/cifris/cifris2025/pa
 import { Workshops25Component } from './attivita/eventi/cifris/cifris2025/workshops/workshops.component';
 import { Vol5Component } from './attivita/editoria/koine/vol5/vol5.component';
 import { Ixh25Component } from './root-elements/hosting/ixh25/ixh25.component';
+import { pqcifris25Component } from './root-elements/hosting/pqcifris25/pqcifris25.component';
 
 
 // importante mettere come children tutti quelli che condividono la stessa sidebar, dato
@@ -256,6 +257,15 @@ const routes: Routes = [
 					meta: [
 						{ name: 'description', content: 'IXH25: Italian XRPL Hackathon 2025, organised by DeCifris' },
 						{ property: 'og:title', content: 'IXH25: Italian XRPL Hackathon 2025, organised by DeCifris' }
+					]
+				}
+			},
+			{
+				path: "pqcifris25", component: pqcifris25Component, data: {
+					title: 'PQCifris25: migration to PQ cryptography',
+					meta: [
+						{ name: 'description', content: 'PQCifris25: migration to PQ cryptography' },
+						{ property: 'og:title', content: 'PQCifris25: migration to PQ cryptography' }
 					]
 				}
 			},
