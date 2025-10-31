@@ -1,5 +1,11 @@
 <h4>Conferenze CIFRIS</h4>
 <div class="cards">
+	<mat-card class="card" [routerLink]="'/cifris25'">
+		<img mat-card-image src="../../../../assets/images/events/2025/cifris25/roma.jpg" alt="Congresso CIFRIS25">
+		<div class="container">
+			<h1 class="mat-headline" style="background-color: var(--cifris_green);">Congresso CIFRIS25</h1>
+		</div>
+	</mat-card>
 	<mat-card class="card" [routerLink]="'/cifris24'">
 		<img mat-card-image src="../../../../assets/images/events/2024/cifris24/roma.webp" alt="Congresso CIFRIS24">
 		<div class="container">
@@ -13,6 +19,16 @@
 		</div>
 	</mat-card>
 </div>
+<h4>EVENTI 2025</h4>
+<ul>
+	<li>
+		<a [routerLink]="['/fcir25']"> FCIR25</a>, crittografia finanziaria a Roma.
+	</li>
+	<li>
+		<a [routerLink]="['/cifris25']"> CIFRIS25</a>, congresso Italiano di crittografia.
+		Rivolto a tutta la comunità italiana: da esperti ad interessati.
+	</li>
+</ul>
 <h4>EVENTI 2024</h4>
 <ul>
 	<li>
