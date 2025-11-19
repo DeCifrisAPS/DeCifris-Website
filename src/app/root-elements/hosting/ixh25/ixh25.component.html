@@ -351,3 +351,80 @@
         </div>
     </aside>
 </section>
+<section class="grid" id="winners">
+ <div class="card">
+    <h2 style="margin-bottom: 20px;">IXH25 Winners</h2>
+    <p>We are pleased to announce the winning teams of the IXH25 Hackathon. This year's competition featured two distinct tracks.</p>
+
+    <h3>Track 1 - Advanced Cryptography for Blockchain</h3>
+    <p>In this track, participants were asked to design and implement a cryptographic protocol enabling the secure execution of the F1-AI racing game. The challenge required ensuring that neither players nor the server could access or manipulate the secret car parameters or the speed formula, while still allowing races to be run fairly. Teams could use any cryptographic primitive or blockchain technology to build a privacy-preserving, verifiable, and secure solution.</p>
+    <p><a href="https://drive.google.com/file/d/1NkwMQN705u5xdYd7kk1a06ZXsT0FkGtH/view?usp=sharing" target="_blank">[track 1]</a></p>
+
+    <h4>🥇 1st Place - Unitn3 - 2500€</h4>
+    <p>Project: We (try to) play the racing game F1-AI &nbsp;<a href="https://drive.google.com/file/d/1zAnKcg4U77IxnHiJ00NIL9hIopZjE2B7/view?usp=sharing" target="_blank">[slides]</a><br>
+    Team members: Lorenzo Siriu, Lorenzo Viganò, Lorenzo Francini, Gabriele Radici, Matteo Sangalli, Luca Novità and Leonardo Rufini</p>
+    <details>
+        <summary>Description:</summary>
+        <p>This project presents a cryptographic protocol for F1-AI, a racing game in which each car is defined by ten hidden parameters (flags) and evaluated using a secret speed function. Neither the players nor the server should know the actual flag values, and yet the system must allow players to train their cars and fairly determine race outcomes.</p>
+        <p>To achieve this, we used cryptographic features together with the decentral- ized, public blockchain XRPL.</p>
+    </details>
+
+    <h4>🥈 2nd Place - UniCas - 1500€</h4>
+    <p>Project: F1-AI [πve] &nbsp;<a href="https://www.youtube.com/watch?v=CfjHgaJD_uc" target="_blank">[youtubevideo]</a><br>
+    Team members: Emanuele Nardone, Rosa Fera, Emanuele Vita, Gabriele Lozupone and Sara Marchetti</p>
+    <details>
+        <summary>Description:</summary>
+        <p>F1-AI is an innovative racing simulation system that leverages advanced cryptographic techniques to maintain complete privacy during computation. The system uses Fully Homomorphic Encryption (FHE) to enable Formula 1 race simulations where car characteristics and performance metrics remain encrypted throughout the entire computation process. Five independent judges collaboratively generate encrypted car data through distributed key generation, ensuring no single party can access sensitive information. The system computes car velocities using the quadratic form $S = t^T W t$ on encrypted data, then uses threshold decryption requiring all judges to reveal final race results. Cars can be "trained" through encrypted parameter updates to improve performance, all while maintaining cryptographic privacy guarantees.</p>
+    </details>
+
+    <h4>🥉 3rd Place - UniBa - 500€</h4>
+    <p>Project: ZK_F1 Protocol &nbsp;<a href="https://drive.google.com/file/d/1T1iAwwwqtlCCLhKWlJWwSFMIr409tnGb/view?usp=sharing" target="_blank">[slides]</a><br>
+    Team members: Luca Nestore, Giulia Verrigni, Giuseppe Scarfò, Mirra Carmine, Mohammed Rahmet Abdella and Abel Ataklti Belay</p>
+    <details>
+        <summary>Description:</summary>
+        <p>Our project solves the core problem of trust and privacy online gaming using blockchain technology. The ZK-proofs guarantee that the player followed the rules and the contracts verifies it impartially. We're combining the NFTs (for ownership) ZK-Snarks (for private game logic) and Commit-Reveal (for race strategy).</p>
+    </details>
+
+    <h3>Track 2 - XRPL Applications</h3>
+
+    <h4>🥇 1st Place - Epfl - 2500€</h4>
+    <p>Project: PermiX &nbsp;<a href="https://drive.google.com/file/d/1OGvKh7sw1Vlod32UoRJogBPFxXjkKwBJ/view" target="_blank">[youtubevideo]</a><br>
+    Team members: Stan Stelcher, Alexandre Mourot and Alexandre Huou</p>
+    <details>
+        <summary>Description:</summary>
+        <p>PermiX solves the real problem blocking institutional DeFi adoption: compliance. Banks and financial institutions can't use permissionless DEXs because they violate regulations like MiCA, AML requirements, and age restrictions. PermiX lets institutions create controlled trading environments where only users with verified credentials can trade, with every verification and transaction recorded on-chain for regulators.</p>
+    </details>
+
+    <h4>🥈 2nd Place - XPRL Commons 2 - 1500€</h4>
+    <p>Project: Agent Octopus &nbsp;<a href="https://www.youtube.com/watch?v=EmR_We0jAJg" target="_blank">[youtubevideo]</a><br>
+    Team members: Krzysztof, Andrew Kaskaniotis, Divgun Singh and April Walker</p>
+    <details>
+        <summary>Description:</summary>
+        <p>The future runs on energy, but the systems powering it are falling behind.</p>
+        <p>As AI, automation, and data demands surge, global energy infrastructure built for the last century can't keep up. We're building a protocol that enables Energy Agents, autonomous AI systems, to discover, negotiate, and pay for energy in real time through XRPL.</p>
+        <p>Today's energy networks are fragmented. Prices shift by the minute, settlements take days, and coordination between grids remains manual and inefficient. Our protocol allows intelligent agents to communicate directly, share data, and settle transactions instantly on-chain. This forms the foundation for a self-managing, intelligent energy network where AI systems, energy producers, and grids coordinate autonomously to make global energy smarter, faster, and more connected.</p>
+    </details>
+
+    <h4>🥉 3rd Place - ESCP Parigi - 500€</h4>
+    <p>Project: XTrace &nbsp;<a href="https://drive.google.com/file/d/1qatjjxttUFJRQHGLPvtvoAOqYVKIbiiO/view?usp=share_link" target="_blank">[slides]</a><br>
+    Team members: Samuel Kempf, Lennon Jeaugey and Daniel SK Tan</p>
+    <details>
+        <summary>Description:</summary>
+        <p>XTrace is a complete compliance and safety suite for commercial banks and financial institutions issuing tokenized assets (like stablecoins or tokenized deposits) on the XRP Ledger.</p>
+        <p>In an on-chain world where funds move 24/7, XTrace provides the tools to meet regulatory obligations (AML/KYC) and respond to fraud. It enables a seamless two-step workflow:</p>
+        <ul>
+            <li>Investigate: The XTrace Visualizer (a "bubble map") allows a compliance officer to trace the flow of funds in real-time. They can start with a central wallet and interactively follow the money trail by double-clicking nodes to "jump" to new accounts, instantly visualizing complex transaction networks.</li>
+            <li>Act: Once a suspicious account is identified in the visualizer, the officer uses the Compliance Dashboard. They paste the account address to view its KYC status, balance, and freeze status. With a single click, they can take immediate on-chain action to Freeze the account (preventing fund movement) or Claw back illicit funds in cases of confirmed fraud or theft.</li>
+        </ul>
+        <p>This loop from investigation to action gives institutions the power to operate safely and confidently on-chain.</p>
+    </details>
+
+    <h4>🥉 3rd Place - UniTn1 - 500€</h4>
+    <p>Project: Dungeon Ledger &nbsp;<a href="https://drive.google.com/file/d/1ETocWELhsEWfuJm--yS6SC93RphFhZNG/view?usp=sharing" target="_blank">[slides]</a><br>
+    Team members: Michele Panariello, Leonardo Russo, Elena Bortolameotti, Mattia Donati, Jacqueline Koch, Jacopo Elefante and Fabio Rem Picci</p>
+    <details>
+        <summary>Description:</summary>
+        <p>Dungeon Ledger is a roguelike adventure built on XRPL, where every hero and every piece of loot is a true digital asset you own. Battle through unpredictable dungeons, slay monsters, and upgrade your character using equipment you looted and now truly own, thanks to NFT based ownership. Designed with innovative features to enable feasible and sustainable play-to-earn without the need for any additional in-game token, Dungeon Ledger blends classic dungeon crawling gameplay with real rewards.</p>
+    </details>
+</div>
+</section>
