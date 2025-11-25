@@ -47,6 +47,7 @@ import { BlockchainSmartContractComponent } from './attivita/corsi/blockchain-sm
 import { Trends22Component } from './attivita/corsi/trends22/trends22.component';
 import { Trends22bisComponent } from './attivita/corsi/trends22/trends22bis/trends22bis.component';
 import { Trends24Component } from './attivita/corsi/trends24/trends24.component';
+import { Trends25Component } from './attivita/corsi/trends25/trends25.component';
 import { CorsiComponent } from './attivita/corsi/corsi.component';
 import { Trends23Component } from './attivita/corsi/trends23/trends23.component';
 import { SeminariComponent } from './attivita/seminari/seminari.component';
@@ -339,13 +340,10 @@ const routes: Routes = [
 			{ path: 'corsi', component: CorsiComponent, data: { title: 'Corsi' } },
 			{
 				path: 'trends24', component: Trends24Component, data: {
-					title: 'De Cifris Trends 2024',
-					meta: [
-						{ name: 'description', content: "Trends24 - the French Magisterium, by De Cifris" },
-						{ property: 'og:title', content: "Trends24 - the French Magisterium, by De Cifris" }
-					]
+					title: 'De Cifris Trends 2024'
 				}
 			},
+			{ path: 'trends25', component: Trends25Component, data: { title: 'De Cifris Trends25' } },
 			{ path: 'trends23', component: Trends23Component, data: { title: 'De Cifris Trends23' } },
 			{ path: 'trends22bis', component: Trends22bisComponent, data: { title: 'De Cifris Trends22 bis' } },
 			{ path: 'trends22', component: Trends22Component, data: { title: 'De Cifris Trends22' } },
@@ -605,6 +603,7 @@ const routes: Routes = [
 	{ path: 'trends22bis', redirectTo: '/attivita/trends22bis', pathMatch: 'full' },
 	{ path: 'trends23', redirectTo: '/attivita/trends23', pathMatch: 'full' },
 	{ path: 'trends24', redirectTo: '/attivita/trends24', pathMatch: 'full' },
+	{ path: 'trends25', redirectTo: '/attivita/trends25', pathMatch: 'full' },
 	{ path: 'cifris24/raipqc24', redirectTo: '/cifris24/readpqc24', pathMatch: 'full' },
 	{ path: 'cifris24/rapqc24', redirectTo: '/cifris24/readpqc24', pathMatch: 'full' },
 	{ path: 'cryptowars/2011/classica', redirectTo: '/attivita/cryptowars/2011/classica', pathMatch: 'full' },

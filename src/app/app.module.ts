@@ -174,6 +174,7 @@ import { ScolarshipsComponent } from './associazione/scolarships/scolarships.com
 import { Vol5Component } from './attivita/editoria/koine/vol5/vol5.component';
 import { Ixh25Component } from './root-elements/hosting/ixh25/ixh25.component';
 import { pqcifris25Component } from './root-elements/hosting/pqcifris25/pqcifris25.component';
+import { Trends25Component } from './attivita/corsi/trends25/trends25.component';
 
 // // ./hosting
 // import { Opera24Component } from './hosting/opera24/opera24.component';
@@ -256,6 +257,7 @@ import { pqcifris25Component } from './root-elements/hosting/pqcifris25/pqcifris
         PaymentResultComponent24,
         SocialDinner24Component,
         Trends24Component,
+        Trends25Component,
         TimelineComponent,
         Ixh24Component,
         pqcifris25Component,
