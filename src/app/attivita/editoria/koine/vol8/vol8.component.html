@@ -1,0 +1,58 @@
+<div class="toptext">
+    <div class="list_view">
+        <img src="../../../../../assets/images/koine/Koine placeholder full.png" style="width: 40%;padding-right:20px;" />
+        <div class="doi-item">
+            <p class="title">FCiR25 Acta</p>
+            <p class="desc">De Cifris Press, November 2025</p>
+            <p class="desc">ISBN: 979-12-81863-07-1</p>
+            <p class="desc">ISSN: 3034-9796</p>
+            <br>
+            <a class="download" mat-button routerLink="/koine/vol8">
+                Open webpage
+            </a>
+            <br>
+            <a class="download" mat-button href="{{ theVolume.volumeLink }}">
+                Download volume
+            </a>
+            <br>
+            <a class="download" mat-button href="{{ theVolume.coverLink }}">
+                Download cover
+            </a>
+        </div>
+    </div>
+    <div class="edited-by">
+        <b>Edited by:&nbsp;</b>
+        @if (theVolume.articles.length > 0) {
+        @for (author of theVolume.articles[0].authors; track author) {
+        @if ($index !== 0) {
+        <span>, </span>
+        }
+        <span>{{ author.name }} {{ author.surname }}</span>
+        }
+        }
+    </div>
+</div>
+<div>
+
+    @for (article of theVolume.articles; track article) {
+    <div class="doi-item">
+        <a routerLink="/koine/{{ theVolume.id }}/{{ article.id }}">
+            <p class="title">{{ article.title }}</p>
+        </a>
+        <p class="desc">
+            @for (author of article.authors; track author) {
+            @if ($index !== 0) {
+            <span>, </span>
+            }
+            <span>{{ author.name }} {{ author.surname }}</span>
+            }
+        </p>
+        <p class="desc">Page range: {{ article.pageRange }}</p>
+        <a href="https://doi.org/{{ article.doi }}">
+            <p class="desc">DOI: https://doi.org/{{ article.doi }}</p>
+        </a>
+    </div>
+    }
+
+</div>
+<hr>

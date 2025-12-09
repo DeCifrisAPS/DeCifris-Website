@@ -172,6 +172,9 @@ import { HomeCifris25Component } from './attivita/eventi/cifris/cifris2025/home-
 import { PaymentResultComponent25 } from './attivita/eventi/cifris/cifris2025/payment-result/payment-result.component';
 import { ScolarshipsComponent } from './associazione/scolarships/scolarships.component';
 import { Vol5Component } from './attivita/editoria/koine/vol5/vol5.component';
+import { Vol6Component } from './attivita/editoria/koine/vol6/vol6.component';
+import { Vol7Component } from './attivita/editoria/koine/vol7/vol7.component';
+import { Vol8Component } from './attivita/editoria/koine/vol8/vol8.component';
 import { Ixh25Component } from './root-elements/hosting/ixh25/ixh25.component';
 import { pqcifris25Component } from './root-elements/hosting/pqcifris25/pqcifris25.component';
 import { Trends25Component } from './attivita/corsi/trends25/trends25.component';
@@ -251,6 +254,9 @@ import { Trends25Component } from './attivita/corsi/trends25/trends25.component'
         Vol3Component,
         Vol4Component,
         Vol5Component,
+        Vol6Component,
+        Vol7Component,
+        Vol8Component,
         ArticlesAndVolumesComponent,
         HomeKoineComponent,
         KoineComponent,

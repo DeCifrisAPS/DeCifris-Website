@@ -154,6 +154,9 @@ import { Workshops25Component } from './attivita/eventi/cifris/cifris2025/worksh
 import { Vol5Component } from './attivita/editoria/koine/vol5/vol5.component';
 import { Ixh25Component } from './root-elements/hosting/ixh25/ixh25.component';
 import { pqcifris25Component } from './root-elements/hosting/pqcifris25/pqcifris25.component';
+import { Vol8Component } from './attivita/editoria/koine/vol8/vol8.component';
+import { Vol7Component } from './attivita/editoria/koine/vol7/vol7.component';
+import { Vol6Component } from './attivita/editoria/koine/vol6/vol6.component';
 
 
 // importante mettere come children tutti quelli che condividono la stessa sidebar, dato
@@ -547,6 +550,33 @@ const routes: Routes = [
 					meta: [
 						{ name: 'description', content: 'De Cifris Koine, volume 5' },
 						{ property: 'og:title', content: 'De Cifris Koine, volume 5' }
+					]
+				}
+			},
+			{
+				path: "vol6", component: Vol6Component, data: {
+					title: 'Koine: Volume 6',
+					meta: [
+						{ name: 'description', content: 'De Cifris Koine, volume 6' },
+						{ property: 'og:title', content: 'De Cifris Koine, volume 6' }
+					]
+				}
+			},
+			{
+				path: "vol7", component: Vol7Component, data: {
+					title: 'Koine: Volume 7',
+					meta: [
+						{ name: 'description', content: 'De Cifris Koine, volume 7' },
+						{ property: 'og:title', content: 'De Cifris Koine, volume 7' }
+					]
+				}
+			},
+			{
+				path: "vol8", component: Vol8Component, data: {
+					title: 'Koine: Volume 8',
+					meta: [
+						{ name: 'description', content: 'De Cifris Koine, volume 8' },
+						{ property: 'og:title', content: 'De Cifris Koine, volume 8' }
 					]
 				}
 			},
