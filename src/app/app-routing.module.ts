@@ -68,6 +68,9 @@ import { GareCrittograficheComponent } from './attivita/gare-crittografiche/gare
 import { EventiComponent } from './attivita/eventi/eventi.component';
 // import { EventiPubbliciComponent } from './attivita/eventi/eventi-pubblici/eventi-pubblici.component';
 import { DidatticaUniversitariaComponent } from './attivita/didattica-universitaria/didattica-universitaria.component';
+import { YamcComponent } from './attivita/eventi/yamc/yamc.component'; // <-----
+import { Magic2026Component } from './attivita/eventi/magic2026/magic2026.component';
+import { Histo26Component } from './attivita/eventi/histo26/histo26.component';
 
 // errori e simili
 import { Error403Component } from './errors/error403/error403.component';
@@ -157,6 +160,7 @@ import { pqcifris25Component } from './root-elements/hosting/pqcifris25/pqcifris
 import { Vol8Component } from './attivita/editoria/koine/vol8/vol8.component';
 import { Vol7Component } from './attivita/editoria/koine/vol7/vol7.component';
 import { Vol6Component } from './attivita/editoria/koine/vol6/vol6.component';
+import { title } from 'process';
 
 
 // importante mettere come children tutti quelli che condividono la stessa sidebar, dato
@@ -376,6 +380,9 @@ const routes: Routes = [
 			{ path: "cryptowars/2011", component: Cryptowars2011Component, data: { title: 'Cryptowars 2011' } },
 			// eventi
 			{ path: "eventi", component: EventiComponent, data: { title: 'De Cifris: eventi' } },
+			{ path: "eventi/yamc", component: YamcComponent, data: { title: 'YAMC 2026' } },
+			{ path: "eventi/magic2026", component: Magic2026Component, data: {title: 'Magic 2026'}},
+			{ path: "eventi/histo26", component: Histo26Component, data: {title: 'HisTO26'}},
 			{ path: 'cifris23', redirectTo: '/cifris23', pathMatch: 'full' },
 			{ path: 'cifris24', redirectTo: '/cifris24', pathMatch: 'full' },
 			{ path: "gare-crittografiche", component: GareCrittograficheComponent },
