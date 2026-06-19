@@ -178,6 +178,7 @@ import { Vol8Component } from './attivita/editoria/koine/vol8/vol8.component';
 import { Ixh25Component } from './root-elements/hosting/ixh25/ixh25.component';
 import { pqcifris25Component } from './root-elements/hosting/pqcifris25/pqcifris25.component';
 import { Trends25Component } from './attivita/corsi/trends25/trends25.component';
+import { SummerSchoolComponent } from './attivita/eventi/eventi-pubblici/summer-school/summer-school.component';
 
 // // ./hosting
 // import { Opera24Component } from './hosting/opera24/opera24.component';
@@ -355,7 +356,7 @@ import { Trends25Component } from './attivita/corsi/trends25/trends25.component'
         // Crypto2021ItaComponent,
         // DecifrisHistoriaeComponent,
         // DecifrisTrendComponent,
-        // SummerSchoolComponent,
+        SummerSchoolComponent
         // ConvegnoUmiComponent,
         // AssociazioneComponent,
         // DiconoDiNoiComponent,

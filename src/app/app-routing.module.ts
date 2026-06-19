@@ -162,6 +162,7 @@ import { Vol8Component } from './attivita/editoria/koine/vol8/vol8.component';
 import { Vol7Component } from './attivita/editoria/koine/vol7/vol7.component';
 import { Vol6Component } from './attivita/editoria/koine/vol6/vol6.component';
 import { title } from 'process';
+import { SummerSchoolComponent } from './attivita/eventi/eventi-pubblici/summer-school/summer-school.component';
 
 
 // importante mettere come children tutti quelli che condividono la stessa sidebar, dato
@@ -370,6 +371,7 @@ const routes: Routes = [
 			{ path: 'cifriscloud', component: CifrisCloudComponent, data: { title: 'CifrisCloud' } },
 			{ path: 'mathcifris', component: MathCifrisComponent, data: { title: 'MathCifris' } },
 			{ path: 'pqcifris', component: PqCifrisComponent, data: { title: 'PQCifris' } },
+			{ path: 'pqcifris-summer22', component: SummerSchoolComponent, data: { title: 'Summer School 2022' } },
 			// cryptowars
 			{ path: 'cryptowars', component: CryptowarsComponent, data: { title: 'Cryptowars' } },
 			{ path: "cryptowars/2021", component: Cryptowars2021Component, data: { title: 'Cryptowars 2021' } },
