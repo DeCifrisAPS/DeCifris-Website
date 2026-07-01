@@ -356,7 +356,7 @@ import { SummerSchoolComponent } from './attivita/eventi/eventi-pubblici/summer-
         // Crypto2021ItaComponent,
         // DecifrisHistoriaeComponent,
         // DecifrisTrendComponent,
-        SummerSchoolComponent
+        SummerSchoolComponent,
         // ConvegnoUmiComponent,
         // AssociazioneComponent,
         // DiconoDiNoiComponent,
