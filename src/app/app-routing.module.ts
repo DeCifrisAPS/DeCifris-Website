@@ -79,6 +79,19 @@ import { Error418Component } from './errors/error418/error418.component';
 import { Error404Component } from './errors/error404/error404.component';
 import { TestComponent } from './test/test.component';
 
+// cifris26
+import { Cifris2026Component } from './attivita/eventi/cifris/cifris2026/cifris2026.component';
+import { CallForPapersComponent26 } from './attivita/eventi/cifris/cifris2026/call-for-papers/call-for-papers.component';
+import { CallForWorkshopsComponent26 } from './attivita/eventi/cifris/cifris2026/call-for-workshops/call-for-workshops.component';
+import { HomeCifris26Component } from './attivita/eventi/cifris/cifris2026/home-cifris26/home-cifris26.component';
+import { PaymentResultComponent26 } from './attivita/eventi/cifris/cifris2026/payment-result/payment-result.component';
+import { ProceedingsComponent26 } from './attivita/eventi/cifris/cifris2026/proceedings/proceedings.component';
+import { ProgramCommitteeComponent26 } from './attivita/eventi/cifris/cifris2026/program-committee/program-committee.component';
+import { ProgramComponent26 } from './attivita/eventi/cifris/cifris2026/program/program.component';
+import { RegistrationComponent26 } from './attivita/eventi/cifris/cifris2026/registration/registration.component';
+import { VenueAccomodationComponent26 } from './attivita/eventi/cifris/cifris2026/venue-accomodation26/venue-accomodation26.component';
+import { Workshops26Component } from './attivita/eventi/cifris/cifris2026/workshops/workshops.component';
+
 // cifris24
 import { Cifris2024Component } from './attivita/eventi/cifris/cifris2024/cifris2024.component';
 import { CallForPapersComponent24 } from './attivita/eventi/cifris/cifris2024/call-for-papers/call-for-papers.component';
@@ -399,6 +412,27 @@ const routes: Routes = [
 			meta: [
 				{ name: 'description', content: "De Cifris: our activities" },
 				{ property: 'og:title', content: "De Cifris: our activities" }
+			]
+		}
+	},
+
+	// cifris 26
+	{
+		path: "cifris26", component: Cifris2026Component, children: [
+			{ path: "", component: HomeCifris26Component, data: { title: 'CIFRIS26' } },
+			{ path: "venue", component: VenueAccomodationComponent26, data: { title: 'CIFRIS26: Venue' } },
+			{ path: "call-for-workshops", component: CallForWorkshopsComponent26, data: { title: 'CIFRIS26: Call for workshops' } },
+			{ path: "program-committee", component: ProgramCommitteeComponent26, data: { title: 'CIFRIS26: Program Committee' } },
+			{ path: "registration", component: RegistrationComponent26, data: { title: 'CIFRIS26: Registration' } },
+			{ path: "program", component: ProgramComponent26, data: { title: 'CIFRIS26: Program' } },
+			{ path: "proceedings", component: ProceedingsComponent26, data: { title: 'CIFRIS26: Proceedings' } },
+			{ path: "payment-result", component: PaymentResultComponent26, data: { title: 'Payment result' } },
+			{ path: "workshops", component: Workshops26Component, data: { title: 'CIFRIS26: Workshops' } },
+		], data: {
+			title: 'CIFRIS26',
+			meta: [
+				{ name: 'description', content: "CIFRIS26 - the Fourth Italian Conference, by De Cifris & Banca d'Italia" },
+				{ property: 'og:title', content: "CIFRIS26 - the Fourth Italian Conference, by De Cifris & Banca d'Italia" }
 			]
 		}
 	},

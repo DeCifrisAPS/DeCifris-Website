@@ -170,6 +170,19 @@ import { ProceedingsComponent25 } from './attivita/eventi/cifris/cifris2025/proc
 import { SocialDinner25Component } from './attivita/eventi/cifris/cifris2025/social-dinner25/social-dinner25.component';
 import { HomeCifris25Component } from './attivita/eventi/cifris/cifris2025/home-cifris25/home-cifris25.component';
 import { PaymentResultComponent25 } from './attivita/eventi/cifris/cifris2025/payment-result/payment-result.component';
+// Cifris26
+import { Cifris2026Component } from './attivita/eventi/cifris/cifris2026/cifris2026.component';
+import { CallForPapersComponent26 } from './attivita/eventi/cifris/cifris2026/call-for-papers/call-for-papers.component';
+import { CallForWorkshopsComponent26 } from './attivita/eventi/cifris/cifris2026/call-for-workshops/call-for-workshops.component';
+import { ProgramCommitteeComponent26 } from './attivita/eventi/cifris/cifris2026/program-committee/program-committee.component';
+import { ProgramComponent26 } from './attivita/eventi/cifris/cifris2026/program/program.component';
+import { SubmissionComponent26 } from './attivita/eventi/cifris/cifris2026/submission/submission.component';
+import { RegistrationComponent26 } from './attivita/eventi/cifris/cifris2026/registration/registration.component';
+import { VenueAccomodationComponent26 } from './attivita/eventi/cifris/cifris2026/venue-accomodation26/venue-accomodation26.component';
+import { ProceedingsComponent26 } from './attivita/eventi/cifris/cifris2026/proceedings/proceedings.component';
+import { SocialDinner26Component } from './attivita/eventi/cifris/cifris2026/social-dinner26/social-dinner26.component';
+import { HomeCifris26Component } from './attivita/eventi/cifris/cifris2026/home-cifris26/home-cifris26.component';
+import { PaymentResultComponent26 } from './attivita/eventi/cifris/cifris2026/payment-result/payment-result.component';
 import { ScolarshipsComponent } from './associazione/scolarships/scolarships.component';
 import { Vol5Component } from './attivita/editoria/koine/vol5/vol5.component';
 import { Vol6Component } from './attivita/editoria/koine/vol6/vol6.component';
@@ -414,6 +427,19 @@ import { SummerSchoolComponent } from './attivita/eventi/eventi-pubblici/summer-
         ProceedingsComponent25,
         SocialDinner25Component,
         PaymentResultComponent25,
+        //Cifris26
+        HomeCifris26Component,
+        Cifris2026Component,
+        CallForPapersComponent26,
+        CallForWorkshopsComponent26,
+        ProgramCommitteeComponent26,
+        ProgramComponent26,
+        SubmissionComponent26,
+        RegistrationComponent26,
+        VenueAccomodationComponent26,
+        ProceedingsComponent26,
+        SocialDinner26Component,
+        PaymentResultComponent26,
         // Gare crittografiche
         GareCrittograficheComponent,
         Cryptowars2011Component,
