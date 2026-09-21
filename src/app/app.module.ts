@@ -143,6 +143,7 @@ import { TimelineComponent } from './associazione/organi-direttivi/timeline/time
 import { Ixh24Component } from './root-elements/hosting/ixh24/ixh24.component';
 import { Vol4Component } from './attivita/editoria/koine/vol4/vol4.component';
 import { Fcir25Component } from './root-elements/hosting/fcir25/fcir25.component';
+import { Fcir26Component } from './root-elements/hosting/fcir26/fcir26.component';
 import { AziendeComponent } from './associazione/aziende/aziende.component';
 import { GareCrittograficheComponent } from './attivita/gare-crittografiche/gare-crittografiche.component';
 import { Cryptowars2011Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/cryptowars2011.component';
@@ -414,6 +415,7 @@ import { SummerSchoolComponent } from './attivita/eventi/eventi-pubblici/summer-
         ProceedingsButton24Component,
         ProceedingsComponent24,
         Fcir25Component,
+        Fcir26Component,
         //Cifris25
         HomeCifris25Component,
         Cifris2025Component,

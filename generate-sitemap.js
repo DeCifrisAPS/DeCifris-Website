@@ -17,6 +17,7 @@ function getLastModified(filePath) {
 // Creazione dello stream per la sitemap
 const sitemap = new SitemapStream({ hostname: 'https://www.decifris.it' });
 const pages = [
+  { url: '/fcir26', changefreq: 'monthly', priority: 0.8, filePath: 'src/app/root-elements/hosting/fcir26/fcir26.component.html' },
   
   { url: '/', changefreq: 'always', priority: 1.0, filePath: 'src/app/root-elements/home/home.component.html' },
   { url: '/contatti', changefreq: 'always', priority: 1.0, filePath: 'src/app/root-elements/contatti/contatti.component.html' },

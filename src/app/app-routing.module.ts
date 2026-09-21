@@ -146,6 +146,7 @@ import { ArticoloComponent } from './attivita/editoria/articolo/articolo.compone
 import { articoloGuard } from './attivita/editoria/articolo/articolo.guard';
 import { LicenseComponent } from './attivita/editoria/koine/license/license.component';
 import { Fcir25Component } from './root-elements/hosting/fcir25/fcir25.component';
+import { Fcir26Component } from './root-elements/hosting/fcir26/fcir26.component';
 import { W25Component } from './root-elements/w25/w25.component';
 import { AziendeComponent } from './associazione/aziende/aziende.component';
 import { CryptowarsComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars.component';
@@ -229,6 +230,15 @@ const routes: Routes = [
 					]
 				}
 			},
+			{
+                path: "fcir26", component: Fcir26Component, data: {
+                    title: 'FCiR26',
+                    meta: [
+                        { name: 'description', content: 'Financial Cryptography in Rome 2026 – October 6th, Centro Convegni Carlo A. Ciampi, Rome.' },
+                        { property: 'og:title', content: 'Financial Cryptography in Rome 2026' }
+                    ]
+                }
+            },
 			{
 				path: "fcir25", component: Fcir25Component, data: {
 					title: 'FCiR25',

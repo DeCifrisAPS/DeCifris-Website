@@ -1,0 +1,36 @@
+.event-heading {
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 95%;
+    text-align: left;
+}
+
+th, td {
+    padding: 6px;
+    vertical-align: top;
+}
+
+th {
+    width: 130px;
+    white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+
+    th {
+        width: 100px;
+        white-space: normal;
+    }
+
+    th, td {
+        padding: 6px 4px;
+        overflow-wrap: anywhere;
+    }
+}
