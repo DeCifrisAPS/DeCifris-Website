@@ -441,8 +441,8 @@ const routes: Routes = [
 		], data: {
 			title: 'CIFRIS26',
 			meta: [
-				{ name: 'description', content: "CIFRIS26 - the Fourth Italian Conference, by De Cifris & Banca d'Italia" },
-				{ property: 'og:title', content: "CIFRIS26 - the Fourth Italian Conference, by De Cifris & Banca d'Italia" }
+				{ name: 'description', content: "CIFRIS26 - the Fourth Italian Conference, by De Cifris & Roma Tre University" },
+				{ property: 'og:title', content: "CIFRIS26 - the Fourth Italian Conference, by De Cifris & Roma Tre University" }
 			]
 		}
 	},
