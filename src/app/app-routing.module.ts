@@ -171,6 +171,7 @@ import { PaymentResultComponent25 } from './attivita/eventi/cifris/cifris2025/pa
 import { Workshops25Component } from './attivita/eventi/cifris/cifris2025/workshops/workshops.component';
 import { Vol5Component } from './attivita/editoria/koine/vol5/vol5.component';
 import { Ixh25Component } from './root-elements/hosting/ixh25/ixh25.component';
+import { Ixh26Component } from './root-elements/hosting/ixh26/ixh26.component';
 import { pqcifris25Component } from './root-elements/hosting/pqcifris25/pqcifris25.component';
 import { Vol8Component } from './attivita/editoria/koine/vol8/vol8.component';
 import { Vol7Component } from './attivita/editoria/koine/vol7/vol7.component';
@@ -290,6 +291,15 @@ const routes: Routes = [
 					meta: [
 						{ name: 'description', content: 'IXH25: Italian XRPL Hackathon 2025, organised by DeCifris' },
 						{ property: 'og:title', content: 'IXH25: Italian XRPL Hackathon 2025, organised by DeCifris' }
+					]
+				}
+			},
+			{
+				path: "ixh26", component: Ixh26Component, data: {
+					title: 'IXH26 - Italian XRPL Hackathon 2026',
+					meta: [
+						{ name: 'description', content: 'IXH26: Italian XRPL Hackathon 2026, organised by DeCifris' },
+						{ property: 'og:title', content: 'IXH26: Italian XRPL Hackathon 2026, organised by DeCifris' }
 					]
 				}
 			},

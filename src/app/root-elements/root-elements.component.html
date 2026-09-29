@@ -48,6 +48,14 @@
                         <span class="sidebar-text">FCIR26</span>
                     </button>
                 </li>
+                <li>
+                    <button mat-button [routerLink]="['/ixh26']" routerLinkActive="active"
+                        (click)="toggleSidebar()" [routerLinkActiveOptions]="{exact: true}"
+                        class="sidebar-image-button">
+                        <mat-icon>code</mat-icon>
+                        <span class="sidebar-text">IXH26</span>
+                    </button>
+                </li>
                 <h5> INFORMAZIONI </h5>
                 <li>
                     <button mat-button [routerLink]="['/contatti']" routerLinkActive="active" (click)="toggleSidebar()"

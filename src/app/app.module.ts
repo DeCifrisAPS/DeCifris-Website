@@ -190,6 +190,7 @@ import { Vol6Component } from './attivita/editoria/koine/vol6/vol6.component';
 import { Vol7Component } from './attivita/editoria/koine/vol7/vol7.component';
 import { Vol8Component } from './attivita/editoria/koine/vol8/vol8.component';
 import { Ixh25Component } from './root-elements/hosting/ixh25/ixh25.component';
+import { Ixh26Component } from './root-elements/hosting/ixh26/ixh26.component';
 import { pqcifris25Component } from './root-elements/hosting/pqcifris25/pqcifris25.component';
 import { Trends25Component } from './attivita/corsi/trends25/trends25.component';
 import { SummerSchoolComponent } from './attivita/eventi/eventi-pubblici/summer-school/summer-school.component';
@@ -283,6 +284,7 @@ import { SummerSchoolComponent } from './attivita/eventi/eventi-pubblici/summer-
         Ixh24Component,
         pqcifris25Component,
         Ixh25Component,
+        Ixh26Component,
         // MailingListComponent,
         // AttivitaComponent,
         // OpportunitaComponent,
