@@ -70,11 +70,14 @@ td {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .image-wrapper-vertical img {
+  display: block;
+  width: 130px;
+  height: 60px;
   max-width: 100%;
-  max-height: 100%;
   object-fit: contain;
 }
 
