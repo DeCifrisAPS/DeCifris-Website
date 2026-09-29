@@ -44,6 +44,25 @@ a {
 
 /* Schermi sopra 992 px */
 @media all and (min-width: 992px) {
+    .logo-container {
+        margin-right: 2%;
+        flex-shrink: 0;
+    }
+
+    .navbar-collapse {
+        gap: 16px;
+    }
+
+    .navbar-nav {
+        flex-wrap: wrap;
+    }
+
+    .navbar-contacts {
+        margin-left: auto;
+        margin-right: 30px;
+        flex-shrink: 0;
+    }
+
     .navbar .nav-item .dropdown-menu {
         display: none;
         margin-top: 0;
@@ -63,7 +82,7 @@ a {
 
     .dropdown {
         color: white !important;
-        margin-right: 3%;
+        margin-right: 8px;
     }
 
     .dropdown-item:hover {

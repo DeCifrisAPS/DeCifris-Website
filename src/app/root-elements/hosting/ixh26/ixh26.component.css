@@ -81,6 +81,27 @@ td {
   object-fit: contain;
 }
 
+.uniba-partner {
+  gap: 6px;
+  color: #003b5c;
+  text-decoration: none;
+}
+
+.uniba-partner img {
+  width: 45px;
+  flex: 0 0 45px;
+}
+
+.uniba-partner span {
+  font-family: Georgia, serif;
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+.uniba-partner strong {
+  display: block;
+}
+
 @media (max-width: 900px) {
   .grid {
     grid-template-columns: minmax(0, 1fr);
