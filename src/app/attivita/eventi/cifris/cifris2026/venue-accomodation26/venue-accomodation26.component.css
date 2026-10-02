@@ -56,3 +56,11 @@ img.venue {
     display: inline-block;
     border: 2px solid var(--cifris_blue);
 }
+
+.venue-map {
+    display: block;
+    width: 100%;
+    max-width: 836px;
+    height: auto;
+    margin: 0 auto;
+}
