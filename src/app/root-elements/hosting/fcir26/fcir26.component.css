@@ -34,3 +34,20 @@ th {
         overflow-wrap: anywhere;
     }
 }
+
+.program-session th {
+    padding-top: 20px;
+    white-space: normal;
+}
+
+.program-session h3 {
+    margin: 0;
+    color: #38761d;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.slides-link {
+    margin-left: 0.4em;
+    white-space: nowrap;
+}
