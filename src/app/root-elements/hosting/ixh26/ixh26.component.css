@@ -81,25 +81,20 @@ td {
   object-fit: contain;
 }
 
-.uniba-partner {
-  gap: 6px;
-  color: #003b5c;
-  text-decoration: none;
+.uniba-partner,
+.science-school-partner {
+  width: 90px;
+  height: auto;
+  aspect-ratio: 1;
+}
+
+.uniba-partner img,
+.science-school-partner img {
+  height: auto;
 }
 
 .uniba-partner img {
-  width: 45px;
-  flex: 0 0 45px;
-}
-
-.uniba-partner span {
-  font-family: Georgia, serif;
-  font-size: 11px;
-  line-height: 1.2;
-}
-
-.uniba-partner strong {
-  display: block;
+  width: 75px;
 }
 
 @media (max-width: 900px) {
