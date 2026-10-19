@@ -2,7 +2,7 @@ import { BrowserModule, bootstrapApplication, provideClientHydration } from '@an
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { NgModule } from '@angular/core';
 import { provideHttpClient, withFetch } from '@angular/common/http';
-import { RouterModule } from '@angular/router';
+import { RouterModule, UrlSerializer } from '@angular/router';
 // import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -18,6 +18,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { TrailingSlashUrlSerializer } from './trailing-slash-url-serializer';
 
 // root
 import { RootElementsComponent } from './root-elements/root-elements.component';
@@ -483,7 +484,8 @@ import { SummerSchoolComponent } from './attivita/eventi/eventi-pubblici/summer-
         BrowserAnimationsModule,
         MatCardModule], providers: [
             provideHttpClient(withFetch()),
-            provideClientHydration()
+            provideClientHydration(),
+            { provide: UrlSerializer, useClass: TrailingSlashUrlSerializer }
         ]
 })
 export class AppModule { }
