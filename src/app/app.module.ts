@@ -190,6 +190,7 @@ import { Vol5Component } from './attivita/editoria/koine/vol5/vol5.component';
 import { Vol6Component } from './attivita/editoria/koine/vol6/vol6.component';
 import { Vol7Component } from './attivita/editoria/koine/vol7/vol7.component';
 import { Vol8Component } from './attivita/editoria/koine/vol8/vol8.component';
+import { Vol10Component } from './attivita/editoria/koine/vol10/vol10.component';
 import { Ixh25Component } from './root-elements/hosting/ixh25/ixh25.component';
 import { Ixh26Component } from './root-elements/hosting/ixh26/ixh26.component';
 import { pqcifris25Component } from './root-elements/hosting/pqcifris25/pqcifris25.component';
@@ -274,6 +275,7 @@ import { SummerSchoolComponent } from './attivita/eventi/eventi-pubblici/summer-
         Vol6Component,
         Vol7Component,
         Vol8Component,
+        Vol10Component,
         ArticlesAndVolumesComponent,
         HomeKoineComponent,
         KoineComponent,
