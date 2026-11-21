@@ -1,3 +1,5 @@
+import { SessioniDeCifrisComponent } from './attivita/eventi/eventi-pubblici/sessioni-de-cifris/sessioni-de-cifris.component';
+import { ConvegnoUmiComponent } from './attivita/eventi/eventi-pubblici/convegno-umi/convegno-umi.component';
 import { BrowserModule, bootstrapApplication, provideClientHydration } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { NgModule } from '@angular/core';
@@ -450,6 +452,8 @@ import { SummerSchoolComponent } from './attivita/eventi/eventi-pubblici/summer-
         // Gare crittografiche
         GareCrittograficheComponent,
         Cryptowars2011Component,
+        ConvegnoUmiComponent,
+        SessioniDeCifrisComponent,
         ClassicaComponent,
         SimmetricaComponent,
         PubblicaComponent,

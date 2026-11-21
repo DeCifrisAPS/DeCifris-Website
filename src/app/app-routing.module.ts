@@ -1,3 +1,8 @@
+import { PubblicaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-ita/pubblica/pubblica.component';
+import { SimmetricaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-ita/simmetrica/simmetrica.component';
+import { ClassicaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-ita/classica/classica.component';
+import { SessioniDeCifrisComponent } from './attivita/eventi/eventi-pubblici/sessioni-de-cifris/sessioni-de-cifris.component';
+import { ConvegnoUmiComponent } from './attivita/eventi/eventi-pubblici/convegno-umi/convegno-umi.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 import { HttpErrorInterceptor } from './errors/http-error-interceptor.service';
@@ -417,6 +422,11 @@ const routes: Routes = [
 			{ path: "cryptowars/2014", component: Cryptowars2014Component, data: { title: 'Cryptowars 2014' } },
 			{ path: "cryptowars/2011", component: Cryptowars2011Component, data: { title: 'Cryptowars 2011' } },
 			// eventi
+			{ path: "eventi/convegno-umi", component: ConvegnoUmiComponent, data: { title: "Convegno UMI" } },
+			{ path: "eventi/sessioni", component: SessioniDeCifrisComponent, data: { title: "Sessioni De Cifris" } },
+			{ path: "cryptowars/2011/classica", component: ClassicaComponent, data: { title: "Cryptowars 2011: Classica" } },
+			{ path: "cryptowars/2011/simmetrica", component: SimmetricaComponent, data: { title: "Cryptowars 2011: Simmetrica" } },
+			{ path: "cryptowars/2011/pubblica", component: PubblicaComponent, data: { title: "Cryptowars 2011: Pubblica" } },
 			{ path: "eventi", component: EventiComponent, data: { title: 'De Cifris: eventi' } },
 			{ path: "eventi/yamc", component: YamcComponent, data: { title: 'YAMC 2026' } },
 			{ path: "eventi/magic2026", component: Magic2026Component, data: {title: 'Magic 2026'}},
@@ -662,17 +672,29 @@ const routes: Routes = [
 	{ path: 'cifris/test', component: TestComponent, data: { title: 'GUAI CHI LEGGE' } },
 
 	// Redirect per i percorsi cambiati
+	{ path: 'attivita/deCifris-scholalatina', redirectTo: '/attivita/decifris-scholalatina', pathMatch: 'full' },
+	{ path: 'attivita/decifris-scholaLatina', redirectTo: '/attivita/decifris-scholalatina', pathMatch: 'full' },
+	{ path: 'attivita/decifris-augustaeTaurinorum', redirectTo: '/attivita/decifris-augustaetaurinorum', pathMatch: 'full' },
+	{ path: 'blockchain-smart-contract', redirectTo: '/attivita/y2y-blockchain', pathMatch: 'full' },
+	{ path: 'convegnoUmi', redirectTo: '/attivita/eventi/convegno-umi', pathMatch: 'full' },
+	{ path: 'seminariLocali', redirectTo: '/attivita/seminari', pathMatch: 'full' },
+	{ path: 'statuto', redirectTo: '/associazione/statuto', pathMatch: 'full' },
+	{ path: 'trends', redirectTo: '/attivita/corsi', pathMatch: 'full' },
+	{ path: 'cryptowars/2018', redirectTo: '/attivita/cryptowars/2018', pathMatch: 'full' },
+	{ path: 'cryptowars/2019', redirectTo: '/attivita/cryptowars/2019', pathMatch: 'full' },
+	{ path: 'cryptowars/2020', redirectTo: '/attivita/cryptowars/2020', pathMatch: 'full' },
+	{ path: 'cryptowars/2021', redirectTo: '/attivita/cryptowars/2021', pathMatch: 'full' },
 	{ path: 'dicono-di-noi', redirectTo: '/associazione/dicono-di-noi', pathMatch: 'full' },
-	{ path: 'attivita/centotesi-2014-2023', redirectTo: 'attivita/centotesi-2017-2024', pathMatch: 'full' },
+	{ path: 'attivita/centotesi-2014-2023', redirectTo: '/attivita/centotesi-2017-2024', pathMatch: 'full' },
 	{ path: 'koine/open-access-statement', redirectTo: '/koine/copyright-license', pathMatch: 'full' },
 	{ path: 'koine/license', redirectTo: '/koine/copyright-license', pathMatch: 'full' },
 	{ path: 'notizie', redirectTo: '/associazione/notizie', pathMatch: 'full' },
 	{ path: 'cifris23/homeCifris23', redirectTo: '/cifris23', pathMatch: 'full' },
 	{ path: 'cifris24/homeCifris24', redirectTo: '/cifris24', pathMatch: 'full' },
-	{ path: 'cifris24/fcr24', redirectTo: 'cifris24/fcir24', pathMatch: 'full' },
-	{ path: 'advisoryboard/borse', redirectTo: '/opportunita', pathMatch: 'full' },
+	{ path: 'cifris24/fcr24', redirectTo: '/cifris24/fcir24', pathMatch: 'full' },
+	{ path: 'advisoryboard/borse', redirectTo: '/associazione/scholarships', pathMatch: 'full' },
 	{ path: 'centotesi2008-2017', redirectTo: '/attivita/centotesi-2008-2017', pathMatch: 'full' },
-	{ path: 'centotesi2014-2023', redirectTo: '/attivita/centotesi-2014-2023', pathMatch: 'full' },
+	{ path: 'centotesi2014-2023', redirectTo: '/attivita/centotesi-2017-2024', pathMatch: 'full' },
 	{ path: 'organiDirettivi', redirectTo: '/associazione/organi-direttivi', pathMatch: 'full' },
 	{ path: 'advisoryBoard', redirectTo: '/associazione/advisory-board', pathMatch: 'full' },
 	{ path: 'posizioniRicerca', redirectTo: '/associazione/posizioni-ricerca', pathMatch: 'full' },
@@ -680,7 +702,6 @@ const routes: Routes = [
 	{ path: 'associarsi-benemeriti', redirectTo: '/associazione/associarsi-benemeriti', pathMatch: 'full' },
 	{ path: 'associarsi', redirectTo: '/associazione/associarsi', pathMatch: 'full' },
 	{ path: 'regolamento', redirectTo: '/associazione/regolamento', pathMatch: 'full' },
-	{ path: 'assets/associazione', redirectTo: '/associazione/regolamento', pathMatch: 'prefix' },
 	{ path: 'deCifrisHistoriae', redirectTo: '/attivita/decifris-historiae', pathMatch: 'full' },
 	{ path: 'deCifrisAthesis', redirectTo: '/attivita/decifris-athesis', pathMatch: 'full' },
 	{ path: 'deCifrisAgora', redirectTo: '/attivita/decifris-agora', pathMatch: 'full' },
@@ -695,9 +716,9 @@ const routes: Routes = [
 	{ path: 'iniziativeDivulgative', redirectTo: '/attivita/iniziative-divulgative', pathMatch: 'full' },
 	{ path: 'gareCrittografiche', redirectTo: '/attivita/gare-crittografiche', pathMatch: 'full' },
 	{ path: 'didatticaUniversitaria', redirectTo: '/attivita/didattica-universitaria', pathMatch: 'full' },
-	{ path: 'opportunita', redirectTo: '/attivita/opportunita', pathMatch: 'full' },
-	{ path: 'eventiPubblici', redirectTo: '/attivita/eventiPubblici', pathMatch: 'full' },
-	{ path: 'sessioni', redirectTo: '/attivita/sessioni', pathMatch: 'full' },
+	{ path: 'opportunita', redirectTo: '/associazione/scholarships', pathMatch: 'full' },
+	{ path: 'eventiPubblici', redirectTo: '/attivita/eventi', pathMatch: 'full' },
+	{ path: 'sessioni', redirectTo: '/attivita/eventi/sessioni', pathMatch: 'full' },
 	{ path: 'curiosi', redirectTo: '/welcome/curiosi', pathMatch: 'full' },
 	{ path: 'scuola', redirectTo: '/welcome/insegnanti', pathMatch: 'full' },
 	{ path: 'studenti', redirectTo: '/welcome/studenti', pathMatch: 'full' },
