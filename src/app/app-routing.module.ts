@@ -702,6 +702,7 @@ const routes: Routes = [
 	{ path: 'associarsi-benemeriti', redirectTo: '/associazione/associarsi-benemeriti', pathMatch: 'full' },
 	{ path: 'associarsi', redirectTo: '/associazione/associarsi', pathMatch: 'full' },
 	{ path: 'regolamento', redirectTo: '/associazione/regolamento', pathMatch: 'full' },
+	{ path: 'assets/associazione', redirectTo: '/associazione/regolamento', pathMatch: 'full' },
 	{ path: 'deCifrisHistoriae', redirectTo: '/attivita/decifris-historiae', pathMatch: 'full' },
 	{ path: 'deCifrisAthesis', redirectTo: '/attivita/decifris-athesis', pathMatch: 'full' },
 	{ path: 'deCifrisAgora', redirectTo: '/attivita/decifris-agora', pathMatch: 'full' },
