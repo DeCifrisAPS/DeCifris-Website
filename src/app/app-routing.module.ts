@@ -740,6 +740,7 @@ const routes: Routes = [
 	// Rotte per gli errori
 	{ path: '403', component: Error403Component, data: { title: 'Error 403' } },
 	{ path: '418', component: Error418Component, data: { title: 'Error 418' } },
+	{ path: '404', component: Error404Component, data: { title: 'Error 404' } },
 	{ path: '**', component: Error404Component, data: { title: 'Error 404' } },
 ];
 
