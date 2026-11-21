@@ -14,6 +14,7 @@
 /koine/vol1/M11
 /koine/vol1/M12
 /koine/vol1/M13
+/koine/vol1/M14
 /koine/vol1/W01
 /koine/vol1/W02
 /koine/vol1/W03
@@ -141,6 +142,7 @@
 /koine/vol5/W45
 /koine/vol5/W46
 
+/koine/vol6/B00
 /koine/vol6/B01
 /koine/vol6/B02
 /koine/vol6/B03

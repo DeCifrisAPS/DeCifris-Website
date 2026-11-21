@@ -94,9 +94,10 @@ export class ArticoloComponent {
          * og:image
          *
          */
-        this.titleService.setTitle(this.theArticle.title.replace('\n', ''));
+        const articleTitle = this.theArticle.title.replace(/\s+/g, ' ').trim();
+        this.titleService.setTitle(articleTitle);
         this.metaService.addTag({ name: 'citation_pdf_url', content: this.theArticle.pdfLink });
-        this.metaService.addTag({ name: 'citation_title', content: this.theArticle.title });
+        this.metaService.addTag({ name: 'citation_title', content: articleTitle });
         this.metaService.addTag({ name: 'citation_doi', content: this.theArticle.doi });
         this.metaService.addTag({ name: 'citation_issn', content: this.theVolume.ISSN });
         this.metaService.addTag({ name: 'citation_isbn', content: this.theVolume.ISBN });
@@ -108,7 +109,7 @@ export class ArticoloComponent {
 
         this.bibtex = '@incollection{' + this.generateHandle('KOINE', this.theVolume.published, this.theArticle.authors) + ','
             + '\n  author = {' + this.theArticle.authors.map(a => a.surname + ", " + a.name[0] + ".").join(" and ") + '},'
-            + '\n  title = {' + this.theArticle.title.replace('\n', '') + '},'
+            + '\n  title = {' + articleTitle + '},'
             + '\n  booktitle = {' + this.theVolume.title + '},'
             + '\n  year = {' + this.theVolume.published.substring(0, 4) + '},'
             + '\n  month = {' + this.monthPublished + '},'
