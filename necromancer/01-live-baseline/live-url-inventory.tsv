@@ -1,0 +1,1092 @@
+path	sources	expected_kind	expected_title_or_target	http_status	final_url	observed_title_or_type	outcome
+/	angular-route,local-build,rendered-link,source-sitemap	page	DeCifris home	200	/	DeCifris home	ok
+/403	angular-route,local-build	page	Error 403	200	/403/	Error 403	ok
+/418	angular-route,local-build	page	Error 418	200	/418/	Error 418	ok
+/PQCifris	angular-route	redirect	/attivita/pqcifris	200	/PQCifris/	DeCifris home	review-redirect
+/accademia	angular-route	redirect	/welcome/ricercatori	200	/accademia/	DeCifris home	review-redirect
+/advisoryBoard	angular-route	redirect	/associazione/advisory-board	200	/advisoryBoard/	DeCifris home	review-redirect
+/advisoryboard/borse	angular-route	redirect	/opportunita	200	/advisoryboard/borse/	DeCifris home	review-redirect
+/assets/associazione	angular-route	redirect	/associazione/regolamento	403	/assets/associazione/	DeCifris home	review-redirect
+/assets/associazione/Informativa_privacy.pdf	rendered-download	download	file response	206	/assets/associazione/Informativa_privacy.pdf	DeCifris home	review-download
+/assets/attivita/100Tesi/documento-100tesi-stud1.pdf	rendered-download	download	file response	206	/assets/attivita/100Tesi/documento-100tesi-stud1.pdf	DeCifris home	review-download
+/assets/attivita/PQCifris2022/LocandinaPQCifris.pdf	rendered-download	download	file response	206	/assets/attivita/PQCifris2022/LocandinaPQCifris.pdf	DeCifris home	review-download
+/assets/attivita/Trends23/Lecture1.pdf	rendered-download	download	file response	206	/assets/attivita/Trends23/Lecture1.pdf	DeCifris home	review-download
+/assets/attivita/Trends23/Lecture10.pdf	rendered-download	download	file response	206	/assets/attivita/Trends23/Lecture10.pdf	DeCifris home	review-download
+/assets/attivita/Trends23/Lecture2.pdf	rendered-download	download	file response	206	/assets/attivita/Trends23/Lecture2.pdf	DeCifris home	review-download
+/assets/attivita/Trends23/Lecture3.pdf	rendered-download	download	file response	206	/assets/attivita/Trends23/Lecture3.pdf	DeCifris home	review-download
+/assets/attivita/Trends23/Lecture4.pdf	rendered-download	download	file response	206	/assets/attivita/Trends23/Lecture4.pdf	DeCifris home	review-download
+/assets/attivita/Trends23/Lecture5.pdf	rendered-download	download	file response	206	/assets/attivita/Trends23/Lecture5.pdf	DeCifris home	review-download
+/assets/attivita/Trends23/Lecture6.pdf	rendered-download	download	file response	206	/assets/attivita/Trends23/Lecture6.pdf	DeCifris home	review-download
+/assets/attivita/Trends23/Lecture7.pdf	rendered-download	download	file response	206	/assets/attivita/Trends23/Lecture7.pdf	DeCifris home	review-download
+/assets/attivita/Trends23/Lecture8.pdf	rendered-download	download	file response	206	/assets/attivita/Trends23/Lecture8.pdf	DeCifris home	review-download
+/assets/attivita/Trends23/Lecture9.pdf	rendered-download	download	file response	206	/assets/attivita/Trends23/Lecture9.pdf	DeCifris home	review-download
+/assets/attivita/cryptowars/2011/BunnyTN_Cipher.rar	rendered-download	download	file response	206	/assets/attivita/cryptowars/2011/BunnyTN_Cipher.rar	DeCifris home	review-download
+/assets/attivita/cryptowars/2011/BunnyTN_Cipher.tar.gz	rendered-download	download	file response	206	/assets/attivita/cryptowars/2011/BunnyTN_Cipher.tar.gz	DeCifris home	review-download
+/assets/attivita/cryptowars/2011/loc.pdf	rendered-download	download	file response	206	/assets/attivita/cryptowars/2011/loc.pdf	DeCifris home	review-download
+/assets/attivita/cryptowars/2014RSAcontest.publicKeys.txt	rendered-download	download	file response	206	/assets/attivita/cryptowars/2014RSAcontest.publicKeys.txt	DeCifris home	review-download
+/assets/attivita/cryptowars/2015contest.publicKeys.txt	rendered-download	download	file response	206	/assets/attivita/cryptowars/2015contest.publicKeys.txt	DeCifris home	review-download
+/assets/attivita/cryptowars/2015contest.solution.txt	rendered-download	download	file response	206	/assets/attivita/cryptowars/2015contest.solution.txt	DeCifris home	review-download
+/assets/attivita/cryptowars/2015example.publicKeys.txt	rendered-download	download	file response	206	/assets/attivita/cryptowars/2015example.publicKeys.txt	DeCifris home	review-download
+/assets/attivita/cryptowars/2015example.solution.txt	rendered-download	download	file response	206	/assets/attivita/cryptowars/2015example.solution.txt	DeCifris home	review-download
+/assets/attivita/cryptowars/contest2016.zip	rendered-download	download	file response	206	/assets/attivita/cryptowars/contest2016.zip	DeCifris home	review-download
+/assets/attivita/cryptowars/contest_2016.private-keys.txt	rendered-download	download	file response	206	/assets/attivita/cryptowars/contest_2016.private-keys.txt	DeCifris home	review-download
+/assets/attivita/cryptowars/example_2016.solution.txt	rendered-download	download	file response	206	/assets/attivita/cryptowars/example_2016.solution.txt	DeCifris home	review-download
+/assets/attivita/cryptowars/example_2016.zip	rendered-download	download	file response	206	/assets/attivita/cryptowars/example_2016.zip	DeCifris home	review-download
+/assets/attivita/deCifrisTrends/SlidesTrendsinModernCrypto.zip	rendered-download	download	file response	206	/assets/attivita/deCifrisTrends/SlidesTrendsinModernCrypto.zip	DeCifris home	review-download
+/assets/attivita/divulgazione/Gnosis-CrittografiaAntica.pdf	rendered-download	download	file response	206	/assets/attivita/divulgazione/Gnosis-CrittografiaAntica.pdf	DeCifris home	review-download
+/assets/attivita/divulgazione/Gnosis-CrittografiaEnigmaI.pdf	rendered-download	download	file response	206	/assets/attivita/divulgazione/Gnosis-CrittografiaEnigmaI.pdf	DeCifris home	review-download
+/assets/attivita/divulgazione/Gnosis-CrittografiaFutura.pdf	rendered-download	download	file response	206	/assets/attivita/divulgazione/Gnosis-CrittografiaFutura.pdf	DeCifris home	review-download
+/assets/attivita/divulgazione/Gnosis-CrittografiaIntroduzione.pdf	rendered-download	download	file response	206	/assets/attivita/divulgazione/Gnosis-CrittografiaIntroduzione.pdf	DeCifris home	review-download
+/assets/attivita/divulgazione/Gnosis-CrittografiaPrebellica.pdf	rendered-download	download	file response	206	/assets/attivita/divulgazione/Gnosis-CrittografiaPrebellica.pdf	DeCifris home	review-download
+/assets/attivita/divulgazione/Gnosis-CrittografiaPubblica.pdf	rendered-download	download	file response	206	/assets/attivita/divulgazione/Gnosis-CrittografiaPubblica.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/PQCifris/04.2022-ShiBai.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/PQCifris/04.2022-ShiBai.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/PQCifris/05.2022-Mari.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/PQCifris/05.2022-Mari.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/PQCifris/06.2022-Persichetti (1).pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/PQCifris/06.2022-Persichetti%20%281%29.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/PQCifris/11.2021-SantiniSlide.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/PQCifris/11.2021-SantiniSlide.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/PQCifris/11.2021_Santini.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/PQCifris/11.2021_Santini.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/PQCifris/12.2021_Boschini.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/PQCifris/12.2021_Boschini.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/PQCifris/12.2022-Meneghetti_Tognolini.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/PQCifris/12.2022-Meneghetti_Tognolini.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/PQCifris/Allegato1_Slide_Mari.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/PQCifris/Allegato1_Slide_Mari.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/PQCifris/Allegato2_PQCifris_ShiBai.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/PQCifris/Allegato2_PQCifris_ShiBai.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/PQCifris/Boschini.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/PQCifris/Boschini.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/PQCifris/OrsiniSlide.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/PQCifris/OrsiniSlide.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/PQCifris/PersichettiLocandina.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/PQCifris/PersichettiLocandina.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/PQCifris/PersichettiSlide.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/PQCifris/PersichettiSlide.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/PQCifris/Persichetti_9 giugno.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/PQCifris/Persichetti_9%20giugno.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/PQCifris/tognolini_slide.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/PQCifris/tognolini_slide.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/cifrisChain/Allegato1_CifrisChain_SLIDE_Barbara.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/cifrisChain/Allegato1_CifrisChain_SLIDE_Barbara.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/cifrisChain/CChain_Casati.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/cifrisChain/CChain_Casati.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/cifrisChain/Casati_locandina.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/cifrisChain/Casati_locandina.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/cifrisChain/CifrisChain_DeCaro_19_ottobre_2020.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/cifrisChain/CifrisChain_DeCaro_19_ottobre_2020.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/cifrisChain/Cortese.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/cifrisChain/Cortese.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/cifrisChain/CorteseSlide.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/cifrisChain/CorteseSlide.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/cifrisChain/FadiBarbara.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/cifrisChain/FadiBarbara.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/cifrisChain/Filecoin_Luca_CifrisChain 2021Slide.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/cifrisChain/Filecoin_Luca_CifrisChain%202021Slide.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/cifrisChain/Locandina_Ciampi.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/cifrisChain/Locandina_Ciampi.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/cifrisChain/LucaNizzardoLocandina.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/cifrisChain/LucaNizzardoLocandina.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/cifrisChain/SogiornoSlide.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/cifrisChain/SogiornoSlide.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/cifrisChain/Sogiorno_Locandina.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/cifrisChain/Sogiorno_Locandina.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/cifrisChain/StrategiaBlockchain-CifrisChain2020.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/cifrisChain/StrategiaBlockchain-CifrisChain2020.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/cifrisCloud/31.05.2022-Ballo.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/cifrisCloud/31.05.2022-Ballo.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/cifrisCloud/Ballo_31_Maggio.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/cifrisCloud/Ballo_31_Maggio.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/cifrisCloud/CarlaIrene.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/cifrisCloud/CarlaIrene.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/cifrisCloud/CarlaIreneSlide.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/cifrisCloud/CarlaIreneSlide.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/cifrisCloud/CifrisCloud-annuncio002.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/cifrisCloud/CifrisCloud-annuncio002.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/cifrisCloud/CloudDeCifris-annuncio001.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/cifrisCloud/CloudDeCifris-annuncio001.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/cifrisCloud/CloudDeCifris-annuncio003.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/cifrisCloud/CloudDeCifris-annuncio003.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/cifrisCloud/Gaboardi.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/cifrisCloud/Gaboardi.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/cifrisCloud/Paris.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/cifrisCloud/Paris.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/cifrisCloud/ParisSlide.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/cifrisCloud/ParisSlide.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/mathCifris/03.2022-Martino-Borello.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/mathCifris/03.2022-Martino-Borello.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/mathCifris/04.2022-Marzio-Mula.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/mathCifris/04.2022-Marzio-Mula.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/mathCifris/11.2021_Ilaria_Zappatore.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/mathCifris/11.2021_Ilaria_Zappatore.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/mathCifris/AlessandroNeriLocandina.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/mathCifris/AlessandroNeriLocandina.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/mathCifris/Allegato 1_SLIDE_MathCifrisMula_6Aprile.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/mathCifris/Allegato%201_SLIDE_MathCifrisMula_6Aprile.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/mathCifris/Allegato2_Zini_MathCifris.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/mathCifris/Allegato2_Zini_MathCifris.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/mathCifris/Allegato4_MathCifris_Locandina_05.2022-Giovanni-Zini.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/mathCifris/Allegato4_MathCifris_Locandina_05.2022-Giovanni-Zini.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/mathCifris/BartoliSlide.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/mathCifris/BartoliSlide.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/mathCifris/Bartoli_Locandina.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/mathCifris/Bartoli_Locandina.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/mathCifris/DeFeo.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/mathCifris/DeFeo.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/mathCifris/DeFeoSlide.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/mathCifris/DeFeoSlide.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/mathCifris/IreneVillaLocandina.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/mathCifris/IreneVillaLocandina.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/mathCifris/IreneVillaSlide.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/mathCifris/IreneVillaSlide.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/mathCifris/LaScalaLocandina.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/mathCifris/LaScalaLocandina.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/mathCifris/LaScalaSlide.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/mathCifris/LaScalaSlide.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/mathCifris/Locandina-Sica.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/mathCifris/Locandina-Sica.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/mathCifris/MARIOT.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/mathCifris/MARIOT.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/mathCifris/Mariot_talk_2022.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/mathCifris/Mariot_talk_2022.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/mathCifris/Orsini.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/mathCifris/Orsini.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/mathCifris/PQOT.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/mathCifris/PQOT.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/mathCifris/Presentazione_Borello.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/mathCifris/Presentazione_Borello.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/mathCifris/Ravagnani.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/mathCifris/Ravagnani.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/mathCifris/RavagnaniSlides.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/mathCifris/RavagnaniSlides.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/mathCifris/Slide_Sica.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/mathCifris/Slide_Sica.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/mathCifris/SlidesUMI_Neri.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/mathCifris/SlidesUMI_Neri.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/mathCifris/Zappatore_Slide.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/mathCifris/Zappatore_Slide.pdf	DeCifris home	review-download
+/assets/attivita/gruppi/mathCifris/censimento.pdf	rendered-download	download	file response	206	/assets/attivita/gruppi/mathCifris/censimento.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAthesis/04.2022 Zaccagnini.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAthesis/04.2022%20Zaccagnini.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAthesis/05.2022 Martinoli.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAthesis/05.2022%20Martinoli.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAthesis/11.2021_DeCian.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAthesis/11.2021_DeCian.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAthesis/12.2022 Giunta.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAthesis/12.2022%20Giunta.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAthesis/Allegato1_Athesis_Zaccagnini.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAthesis/Allegato1_Athesis_Zaccagnini.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAthesis/Allegato1_Martinoli.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAthesis/Allegato1_Martinoli.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAthesis/CalderiniLocandina.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAthesis/CalderiniLocandina.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAthesis/DeCian-slide.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAthesis/DeCian-slide.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAthesis/Iezzi.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAthesis/Iezzi.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAthesis/IezziIsogeny.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAthesis/IezziIsogeny.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAthesis/Longo.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAthesis/Longo.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAthesis/LongoDCA.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAthesis/LongoDCA.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAthesis/OrruLocandina.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAthesis/OrruLocandina.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAthesis/SCIARRETTA.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAthesis/SCIARRETTA.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAthesis/SciarrettaSlide.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAthesis/SciarrettaSlide.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAthesis/calderiniSlide.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAthesis/calderiniSlide.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAthesis/orru-athesis.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAthesis/orru-athesis.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/01.2022-Javier Verbel.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/01.2022-Javier%20Verbel.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/12.2021-Gangemi-Guggino.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/12.2021-Gangemi-Guggino.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/ALLEGATO1_Slide_Verbel.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/ALLEGATO1_Slide_Verbel.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/Alellegato2_ Alecci.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/Alellegato2_%20Alecci.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/Allegato 1 - Cristiano.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/Allegato%201%20-%20Cristiano.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/Allegato 1_Alecci_Taurinorum.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/Allegato%201_Alecci_Taurinorum.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/Barbara2020.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/Barbara2020.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/Gangemi2020.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/Gangemi2020.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/LaScala.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/LaScala.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/MURGIA.locandina.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/MURGIA.locandina.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/MarcollaLocandina.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/MarcollaLocandina.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/MarcollaSlide.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/MarcollaSlide.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/MorgariLocandina.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/MorgariLocandina.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/SAETTONE-slide.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/SAETTONE-slide.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/SAETTONE_locandina.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/SAETTONE_locandina.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/Sanna_Intro_MVC.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/Sanna_Intro_MVC.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/Stocco.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/Stocco.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/barbara-slide.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/barbara-slide.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/barbero-locandina.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/barbero-locandina.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/dalconzo-locandina.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/dalconzo-locandina.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/dalconzo-slide.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/dalconzo-slide.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/dutto-locandina.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/dutto-locandina.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/dutto-slide.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/dutto-slide.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/elia-locandinaTO.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/elia-locandinaTO.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/fiori-locandina.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/fiori-locandina.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/fiori-slide.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/fiori-slide.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/locandina_Gsantilli.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/locandina_Gsantilli.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/locandina_Sanna.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/locandina_Sanna.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/presentazione_Santilli.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/presentazione_Santilli.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/slideGangemi.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/slideGangemi.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/veronicaCristiano.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/veronicaCristiano.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/visconti-locandina.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/visconti-locandina.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/visconti-slide.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisAugustaeTaurinorum/visconti-slide.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisEruditorum/11.2022-Bonavoglia.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisEruditorum/11.2022-Bonavoglia.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisEruditorum/11.2022-SLIDE_Bonavoglia.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisEruditorum/11.2022-SLIDE_Bonavoglia.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisEruditorum/AntoninoSlide.key.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisEruditorum/AntoninoSlide.key.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisEruditorum/Monti.Ali.docx.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisEruditorum/Monti.Ali.docx.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisHistoriae/MORAGLIO-slide.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisHistoriae/MORAGLIO-slide.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisHistoriae/Moraglio_Locandina.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisHistoriae/Moraglio_Locandina.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisMediolanensibus/09.12.2020-Grassi.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisMediolanensibus/09.12.2020-Grassi.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisMediolanensibus/Allegato 3_Ceria_Mediolanesibus.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisMediolanensibus/Allegato%203_Ceria_Mediolanesibus.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisMediolanensibus/Ceria_24_maggio.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisMediolanensibus/Ceria_24_maggio.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisMediolanensibus/EnricoZimuel.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisMediolanensibus/EnricoZimuel.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisMediolanensibus/Zimuel12102021.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisMediolanensibus/Zimuel12102021.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisMediolanensibus/slide_Grassi.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisMediolanensibus/slide_Grassi.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/11.2022-Bonavoglia.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/11.2022-Bonavoglia.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/13.10.2020-BRIAN-1.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/13.10.2020-BRIAN-1.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/14.10.2020-BRIAN-2.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/14.10.2020-BRIAN-2.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/14.12.2020-Persichetti.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/14.12.2020-Persichetti.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/25.09.2020_Bologna.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/25.09.2020_Bologna.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/ALLEGATO 1-DE FEO-2022-02-15-rome.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/ALLEGATO%201-DE%20FEO-2022-02-15-rome.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/ALLEGATO 4_Iezzi-ScholaLatina.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/ALLEGATO%204_Iezzi-ScholaLatina.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/AVISCONTI-slide.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/AVISCONTI-slide.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/Allegato2_ScholaLatina_SLIDE_Cesati_1304.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/Allegato2_ScholaLatina_SLIDE_Cesati_1304.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/Allegato3_ScholaLatina_SLIDE_Pintore - Tor Vergata 31-11-2021.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/Allegato3_ScholaLatina_SLIDE_Pintore%20-%20Tor%20Vergata%2031-11-2021.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/Cesati-ScholaLatina-13.04.2022.docx-3.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/Cesati-ScholaLatina-13.04.2022.docx-3.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/Chillotti_Locandina.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/Chillotti_Locandina.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/CiroBologna_locandina.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/CiroBologna_locandina.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/Civino_Sinopsi.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/Civino_Sinopsi.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/DeFeo15Febbraio.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/DeFeo15Febbraio.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/F_Pasquale-slide.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/F_Pasquale-slide.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/Gianira.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/Gianira.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/Gianira2.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/Gianira2.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/GianlucaBrian_locandina.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/GianlucaBrian_locandina.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/Iezzi_31_maggio.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/Iezzi_31_maggio.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/Pintore_Locandina_11.2021.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/Pintore_Locandina_11.2021.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/Roberto-Civino-ScholaLatina.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/Roberto-Civino-ScholaLatina.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/RobertoCivino-ScholaLatina.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/RobertoCivino-ScholaLatina.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/VISCONTI-slide.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/VISCONTI-slide.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/Visconti-27.01.2020.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/Visconti-27.01.2020.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/cappetta-slide.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/cappetta-slide.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/carolla-slide.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/carolla-slide.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/defeo-locandina.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/defeo-locandina.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/defeo-slide.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/defeo-slide.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/errico-locandina.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/errico-locandina.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/fontana-slide.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/fontana-slide.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/friolo-locandina.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/friolo-locandina.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/friolo-slide.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/friolo-slide.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/grassi-locandina1.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/grassi-locandina1.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/grassi-locandina2.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/grassi-locandina2.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/grassi-slide1.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/grassi-slide1.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/grassi-slide2.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/grassi-slide2.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/locandina_Alberico.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/locandina_Alberico.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/locandina_Pasquale.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/locandina_Pasquale.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/rosati-slide.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/rosati-slide.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/slide_Alberico.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/slide_Alberico.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/slide_Chillotti.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/slide_Chillotti.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/slide_Persichetti.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/slide_Persichetti.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/tarquini-slide.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/tarquini-slide.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/workshop-AQ.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/workshop-AQ.pdf	DeCifris home	review-download
+/assets/attivita/seminariLocali/deCifrisScholaLatina/workshop-locandina.pdf	rendered-download	download	file response	206	/assets/attivita/seminariLocali/deCifrisScholaLatina/workshop-locandina.pdf	DeCifris home	review-download
+/assets/eventi/2020/RomaAntica/DC-Historiae-Moraglio.pdf	rendered-download	download	file response	206	/assets/eventi/2020/RomaAntica/DC-Historiae-Moraglio.pdf	DeCifris home	review-download
+/assets/eventi/2020/RomaAntica/MORAGLIO-slide.pdf	rendered-download	download	file response	206	/assets/eventi/2020/RomaAntica/MORAGLIO-slide.pdf	DeCifris home	review-download
+/assets/eventi/2024/Eruditorum 2024/Franceschi vs Partenio-1.pdf	rendered-download	download	file response	206	/assets/eventi/2024/Eruditorum%202024/Franceschi%20vs%20Partenio-1.pdf	DeCifris home	review-download
+/assets/eventi/2024/Eruditorum 2024/Scrivere per nascondere, leggere per scoprire.pdf	rendered-download	download	file response	206	/assets/eventi/2024/Eruditorum%202024/Scrivere%20per%20nascondere%2C%20leggere%20per%20scoprire.pdf	DeCifris home	review-download
+/assets/eventi/2024/Eruditorum 2024/Telegram - crittografia.pdf	rendered-download	download	file response	206	/assets/eventi/2024/Eruditorum%202024/Telegram%20-%20crittografia.pdf	DeCifris home	review-download
+/assets/eventi/2024/Eruditorum 2024/presentazioneDeCiphrisEruditorum2024_Palma.pdf	rendered-download	download	file response	206	/assets/eventi/2024/Eruditorum%202024/presentazioneDeCiphrisEruditorum2024_Palma.pdf	DeCifris home	review-download
+/assets/images/editoria/CollectioCiphrarum.pdf	download-file	download	file response	206	/assets/images/editoria/CollectioCiphrarum.pdf	application/pdf	ok
+/assets/images/events/2018/100Tesi/documento-100tesi-stud1.pdf	download-file	download	file response	206	/assets/images/events/2018/100Tesi/documento-100tesi-stud1.pdf	application/pdf	ok
+/assets/images/events/2018/CifrisChain/Slide_ADiNenno.pdf	download-file	download	file response	206	/assets/images/events/2018/CifrisChain/Slide_ADiNenno.pdf	application/pdf	ok
+/assets/images/events/2018/CifrisChain/Slide_AMeneghetti.pdf	download-file	download	file response	206	/assets/images/events/2018/CifrisChain/Slide_AMeneghetti.pdf	application/pdf	ok
+/assets/images/events/2018/CifrisChain/Slide_AVisconti.pdf	download-file	download	file response	206	/assets/images/events/2018/CifrisChain/Slide_AVisconti.pdf	application/pdf	ok
+/assets/images/events/2018/CifrisChain/Slide_Benedetti.pdf	download-file	download	file response	206	/assets/images/events/2018/CifrisChain/Slide_Benedetti.pdf	application/pdf	ok
+/assets/images/events/2018/CifrisChain/Slide_DVenturi.pdf	download-file	download	file response	206	/assets/images/events/2018/CifrisChain/Slide_DVenturi.pdf	application/pdf	ok
+/assets/images/events/2018/CifrisChain/Slide_IVisconti.pdf	download-file	download	file response	206	/assets/images/events/2018/CifrisChain/Slide_IVisconti.pdf	application/pdf	ok
+/assets/images/events/2018/CifrisChain/Slide_MBartoletti.pdf	download-file	download	file response	206	/assets/images/events/2018/CifrisChain/Slide_MBartoletti.pdf	application/pdf	ok
+/assets/images/events/2018/CifrisChain/Slide_MSala.pdf	download-file	download	file response	206	/assets/images/events/2018/CifrisChain/Slide_MSala.pdf	application/pdf	ok
+/assets/images/events/2018/CifrisChain/Slide_PCampegiani.pdf	download-file	download	file response	206	/assets/images/events/2018/CifrisChain/Slide_PCampegiani.pdf	application/pdf	ok
+/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_A_Tortora.pdf	download-file	download	file response	206	/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_A_Tortora.pdf	application/pdf	ok
+/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_A_Visconti.pdf	download-file	download	file response	206	/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_A_Visconti.pdf	application/pdf	ok
+/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_D_Catalano.pdf	download-file	download	file response	206	/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_D_Catalano.pdf	application/pdf	ok
+/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_D_Taufer.pdf	download-file	download	file response	206	/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_D_Taufer.pdf	application/pdf	ok
+/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_D_Venturi.pdf	download-file	download	file response	206	/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_D_Venturi.pdf	application/pdf	ok
+/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_G_Korchmaros.pdf	download-file	download	file response	206	/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_G_Korchmaros.pdf	application/pdf	ok
+/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_G_Schmid.pdf	download-file	download	file response	206	/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_G_Schmid.pdf	application/pdf	ok
+/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_I_Visconti.pdf	download-file	download	file response	206	/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_I_Visconti.pdf	application/pdf	ok
+/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_M_Baldi.pdf	download-file	download	file response	206	/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_M_Baldi.pdf	application/pdf	ok
+/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_M_Giulietti.pdf	download-file	download	file response	206	/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_M_Giulietti.pdf	application/pdf	ok
+/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_M_Pedicini.pdf	download-file	download	file response	206	/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_M_Pedicini.pdf	application/pdf	ok
+/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_N_Gavioli.pdf	download-file	download	file response	206	/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_N_Gavioli.pdf	application/pdf	ok
+/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_N_Laurenti.pdf	download-file	download	file response	206	/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_N_Laurenti.pdf	application/pdf	ok
+/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_N_Mainardi.pdf	download-file	download	file response	206	/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_N_Mainardi.pdf	application/pdf	ok
+/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_N_Murru.pdf	download-file	download	file response	206	/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_N_Murru.pdf	application/pdf	ok
+/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_Telsy.pdf	download-file	download	file response	206	/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_Telsy.pdf	application/pdf	ok
+/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_V_Talamanca.pdf	download-file	download	file response	206	/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_V_Talamanca.pdf	application/pdf	ok
+/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_V_Vespri.pdf	download-file	download	file response	206	/assets/images/events/2018/EventoConoscitivo/20180122_DeCifris_V_Vespri.pdf	application/pdf	ok
+/assets/images/events/2018/EventoConoscitivo/Locandina_Evento_DeCifris_22.01.2018.pdf	download-file	download	file response	206	/assets/images/events/2018/EventoConoscitivo/Locandina_Evento_DeCifris_22.01.2018.pdf	application/pdf	ok
+/assets/images/events/2018/ITASEC/20180208_DeCifris_A_Barenghi.pdf	download-file	download	file response	206	/assets/images/events/2018/ITASEC/20180208_DeCifris_A_Barenghi.pdf	application/pdf	ok
+/assets/images/events/2018/ITASEC/20180208_DeCifris_C_Boschini.pdf	download-file	download	file response	206	/assets/images/events/2018/ITASEC/20180208_DeCifris_C_Boschini.pdf	application/pdf	ok
+/assets/images/events/2018/ITASEC/20180208_DeCifris_F_Chiaraluce.pdf	download-file	download	file response	206	/assets/images/events/2018/ITASEC/20180208_DeCifris_F_Chiaraluce.pdf	application/pdf	ok
+/assets/images/events/2018/ITASEC/20180208_DeCifris_F_Pintore.pdf	download-file	download	file response	206	/assets/images/events/2018/ITASEC/20180208_DeCifris_F_Pintore.pdf	application/pdf	ok
+/assets/images/events/2018/ITASEC/20180208_DeCifris_M_Giulietti.pdf	download-file	download	file response	206	/assets/images/events/2018/ITASEC/20180208_DeCifris_M_Giulietti.pdf	application/pdf	ok
+/assets/images/events/2018/Milano/DeCifris_Sept2018.pdf	download-file	download	file response	206	/assets/images/events/2018/Milano/DeCifris_Sept2018.pdf	application/pdf	ok
+/assets/images/events/2018/Milano/Kanagala.pdf	download-file	download	file response	206	/assets/images/events/2018/Milano/Kanagala.pdf	application/pdf	ok
+/assets/images/events/2018/Milano/Locandina.pdf	download-file	download	file response	206	/assets/images/events/2018/Milano/Locandina.pdf	application/pdf	ok
+/assets/images/events/2018/Milano/Slide_AlbertoLeporati.pdf	download-file	download	file response	206	/assets/images/events/2018/Milano/Slide_AlbertoLeporati.pdf	application/pdf	ok
+/assets/images/events/2018/Milano/Slide_AlessandroBarenghi.pdf	download-file	download	file response	206	/assets/images/events/2018/Milano/Slide_AlessandroBarenghi.pdf	application/pdf	ok
+/assets/images/events/2018/Milano/Slide_AndreaVisconti.pdf	download-file	download	file response	206	/assets/images/events/2018/Milano/Slide_AndreaVisconti.pdf	application/pdf	ok
+/assets/images/events/2018/Milano/Slide_FrancescaDallaVolta.pdf	download-file	download	file response	206	/assets/images/events/2018/Milano/Slide_FrancescaDallaVolta.pdf	application/pdf	ok
+/assets/images/events/2018/Milano/Slide_GerardoPelosi.pdf	download-file	download	file response	206	/assets/images/events/2018/Milano/Slide_GerardoPelosi.pdf	application/pdf	ok
+/assets/images/events/2018/Milano/Slide_OttavioGiulioRizzo.pdf	download-file	download	file response	206	/assets/images/events/2018/Milano/Slide_OttavioGiulioRizzo.pdf	application/pdf	ok
+/assets/images/events/2018/Milano/Slide_PaoloAmato.pdf	download-file	download	file response	206	/assets/images/events/2018/Milano/Slide_PaoloAmato.pdf	application/pdf	ok
+/assets/images/events/2018/Milano/Slide_SAP_AndreaBarri.pdf	download-file	download	file response	206	/assets/images/events/2018/Milano/Slide_SAP_AndreaBarri.pdf	application/pdf	ok
+/assets/images/events/2018/Milano/Slide_Symbolic_LuigiPugnetti.pdf	download-file	download	file response	206	/assets/images/events/2018/Milano/Slide_Symbolic_LuigiPugnetti.pdf	application/pdf	ok
+/assets/images/events/2018/Roma/Slide_DVenturi.pdf	download-file	download	file response	206	/assets/images/events/2018/Roma/Slide_DVenturi.pdf	application/pdf	ok
+/assets/images/events/2018/Roma/Slide_EBultrini.pptx	download-file	download	file response	206	/assets/images/events/2018/Roma/Slide_EBultrini.pptx	application/vnd.openxmlformats-officedocument.presentationml.presentation	ok
+/assets/images/events/2018/Roma/Slide_FMignosi.pdf	download-file	download	file response	206	/assets/images/events/2018/Roma/Slide_FMignosi.pdf	application/pdf	ok
+/assets/images/events/2018/Roma/Slide_FRenzi-CBoschini.pptx	download-file	download	file response	206	/assets/images/events/2018/Roma/Slide_FRenzi-CBoschini.pptx	application/vnd.openxmlformats-officedocument.presentationml.presentation	ok
+/assets/images/events/2018/Roma/Slide_IngCivino.pptx	download-file	download	file response	206	/assets/images/events/2018/Roma/Slide_IngCivino.pptx	application/vnd.openxmlformats-officedocument.presentationml.presentation	ok
+/assets/images/events/2018/Roma/Slide_MGiulietti.pdf	download-file	download	file response	206	/assets/images/events/2018/Roma/Slide_MGiulietti.pdf	application/pdf	ok
+/assets/images/events/2018/Roma/Slide_MLiverani.pptx	download-file	download	file response	206	/assets/images/events/2018/Roma/Slide_MLiverani.pptx	application/vnd.openxmlformats-officedocument.presentationml.presentation	ok
+/assets/images/events/2018/Roma/Slide_MMonsurro.pdf	download-file	download	file response	206	/assets/images/events/2018/Roma/Slide_MMonsurro.pdf	application/pdf	ok
+/assets/images/events/2018/Roma/Slide_MPedicini.pdf	download-file	download	file response	206	/assets/images/events/2018/Roma/Slide_MPedicini.pdf	application/pdf	ok
+/assets/images/events/2018/Roma/Slide_MSala.pdf	download-file	download	file response	206	/assets/images/events/2018/Roma/Slide_MSala.pdf	application/pdf	ok
+/assets/images/events/2018/Roma/Slide_PMenesatti-DDelVecchio.pdf	download-file	download	file response	206	/assets/images/events/2018/Roma/Slide_PMenesatti-DDelVecchio.pdf	application/pdf	ok
+/assets/images/events/2018/Roma/Slide_PRacca-CRosati.pptx	download-file	download	file response	206	/assets/images/events/2018/Roma/Slide_PRacca-CRosati.pptx	application/vnd.openxmlformats-officedocument.presentationml.presentation	ok
+/assets/images/events/2018/Roma/Slide_RCivino.pdf	download-file	download	file response	206	/assets/images/events/2018/Roma/Slide_RCivino.pdf	application/pdf	ok
+/assets/images/events/2018/Roma/Slide_SFontana.pdf	download-file	download	file response	206	/assets/images/events/2018/Roma/Slide_SFontana.pdf	application/pdf	ok
+/assets/images/events/2018/Roma/programma.pdf	download-file	download	file response	206	/assets/images/events/2018/Roma/programma.pdf	application/pdf	ok
+/assets/images/events/2018/Salerno/DeCifris_May2018.pdf	download-file	download	file response	206	/assets/images/events/2018/Salerno/DeCifris_May2018.pdf	application/pdf	ok
+/assets/images/events/2018/Salerno/locandina_May2018.pdf	download-file	download	file response	206	/assets/images/events/2018/Salerno/locandina_May2018.pdf	application/pdf	ok
+/assets/images/events/2019/Hackaton/DeCifris_Hackathon_2019.pdf	download-file	download	file response	206	/assets/images/events/2019/Hackaton/DeCifris_Hackathon_2019.pdf	application/pdf	ok
+/assets/images/events/2019/Perugia/Locandina-Perugia.pdf	download-file	download	file response	206	/assets/images/events/2019/Perugia/Locandina-Perugia.pdf	application/pdf	ok
+/assets/images/events/2019/Perugia/Slide_AndreaDiCesare.pdf	download-file	download	file response	206	/assets/images/events/2019/Perugia/Slide_AndreaDiCesare.pdf	application/pdf	ok
+/assets/images/events/2019/Perugia/Slide_DanieleBartoli.pdf	download-file	download	file response	206	/assets/images/events/2019/Perugia/Slide_DanieleBartoli.pdf	application/pdf	ok
+/assets/images/events/2019/Perugia/Slide_DiegoMonorchio.pptx	download-file	download	file response	206	/assets/images/events/2019/Perugia/Slide_DiegoMonorchio.pptx	application/vnd.openxmlformats-officedocument.presentationml.presentation	ok
+/assets/images/events/2019/Perugia/Slide_DonatoCappetta.pdf	download-file	download	file response	206	/assets/images/events/2019/Perugia/Slide_DonatoCappetta.pdf	application/pdf	ok
+/assets/images/events/2019/Perugia/Slide_MarcoPedicini.pdf	download-file	download	file response	206	/assets/images/events/2019/Perugia/Slide_MarcoPedicini.pdf	application/pdf	ok
+/assets/images/events/2019/Perugia/Slide_MarcoTimpanella.pdf	download-file	download	file response	206	/assets/images/events/2019/Perugia/Slide_MarcoTimpanella.pdf	application/pdf	ok
+/assets/images/events/2019/Perugia/Slide_MassimilianoSala_Perugia.pdf	download-file	download	file response	206	/assets/images/events/2019/Perugia/Slide_MassimilianoSala_Perugia.pdf	application/pdf	ok
+/assets/images/events/2019/Perugia/Slide_RobertoLaScala.pdf	download-file	download	file response	206	/assets/images/events/2019/Perugia/Slide_RobertoLaScala.pdf	application/pdf	ok
+/assets/images/events/2019/Perugia/Slide_SandroFontana.pdf	download-file	download	file response	206	/assets/images/events/2019/Perugia/Slide_SandroFontana.pdf	application/pdf	ok
+/assets/images/events/2019/Perugia/Slide_StefanoBistarelli.pdf	download-file	download	file response	206	/assets/images/events/2019/Perugia/Slide_StefanoBistarelli.pdf	application/pdf	ok
+/assets/images/events/2019/Perugia/Slide_StefanoGuarino.pdf	download-file	download	file response	206	/assets/images/events/2019/Perugia/Slide_StefanoGuarino.pdf	application/pdf	ok
+/assets/images/events/2019/Perugia/Slide_VincenzoIucci.pdf	download-file	download	file response	206	/assets/images/events/2019/Perugia/Slide_VincenzoIucci.pdf	application/pdf	ok
+/assets/images/events/2019/Perugia/Slide_VincenzoMafrica.pdf	download-file	download	file response	206	/assets/images/events/2019/Perugia/Slide_VincenzoMafrica.pdf	application/pdf	ok
+/assets/images/events/2019/RomaCifrisChain/ABRACCIALI.pdf	download-file	download	file response	206	/assets/images/events/2019/RomaCifrisChain/ABRACCIALI.pdf	application/pdf	ok
+/assets/images/events/2019/RomaCifrisChain/ANGELODECARO.pdf	download-file	download	file response	206	/assets/images/events/2019/RomaCifrisChain/ANGELODECARO.pdf	application/pdf	ok
+/assets/images/events/2019/RomaCifrisChain/CifrisChain.pdf	download-file	download	file response	206	/assets/images/events/2019/RomaCifrisChain/CifrisChain.pdf	application/pdf	ok
+/assets/images/events/2019/RomaCifrisChain/IVISCONTI.pdf	download-file	download	file response	206	/assets/images/events/2019/RomaCifrisChain/IVISCONTI.pdf	application/pdf	ok
+/assets/images/events/2019/RomaCifrisChain/LCERMELLI.pdf	download-file	download	file response	206	/assets/images/events/2019/RomaCifrisChain/LCERMELLI.pdf	application/pdf	ok
+/assets/images/events/2019/RomaCifrisChain/MSALA_CifrisChain.pdf	download-file	download	file response	206	/assets/images/events/2019/RomaCifrisChain/MSALA_CifrisChain.pdf	application/pdf	ok
+/assets/images/events/2019/RomaCifrisChain/NGAVIOLI.pdf	download-file	download	file response	206	/assets/images/events/2019/RomaCifrisChain/NGAVIOLI.pdf	application/pdf	ok
+/assets/images/events/2019/RomaPQCifris/GMORGARI.pdf	download-file	download	file response	206	/assets/images/events/2019/RomaPQCifris/GMORGARI.pdf	application/pdf	ok
+/assets/images/events/2019/RomaPQCifris/GPELOSI.pdf	download-file	download	file response	206	/assets/images/events/2019/RomaPQCifris/GPELOSI.pdf	application/pdf	ok
+/assets/images/events/2019/RomaPQCifris/GTRAVERSO.pdf	download-file	download	file response	206	/assets/images/events/2019/RomaPQCifris/GTRAVERSO.pdf	application/pdf	ok
+/assets/images/events/2019/RomaPQCifris/Gagliardoni_Tommaso.pdf	download-file	download	file response	206	/assets/images/events/2019/RomaPQCifris/Gagliardoni_Tommaso.pdf	application/pdf	ok
+/assets/images/events/2019/RomaPQCifris/MBALDI.pdf	download-file	download	file response	206	/assets/images/events/2019/RomaPQCifris/MBALDI.pdf	application/pdf	ok
+/assets/images/events/2019/RomaPQCifris/MSALA_PQCifris.pdf	download-file	download	file response	206	/assets/images/events/2019/RomaPQCifris/MSALA_PQCifris.pdf	application/pdf	ok
+/assets/images/events/2019/RomaPQCifris/NMURRU.pdf	download-file	download	file response	206	/assets/images/events/2019/RomaPQCifris/NMURRU.pdf	application/pdf	ok
+/assets/images/events/2019/RomaPQCifris/PQCifris.pdf	download-file	download	file response	206	/assets/images/events/2019/RomaPQCifris/PQCifris.pdf	application/pdf	ok
+/assets/images/events/2019/Torino/Locandina-Torino.pdf	download-file	download	file response	206	/assets/images/events/2019/Torino/Locandina-Torino.pdf	application/pdf	ok
+/assets/images/events/2019/Torino/Slide_AlbertoLeporati.pdf	download-file	download	file response	206	/assets/images/events/2019/Torino/Slide_AlbertoLeporati.pdf	application/pdf	ok
+/assets/images/events/2019/Torino/Slide_AndreaMolino.pdf	download-file	download	file response	206	/assets/images/events/2019/Torino/Slide_AndreaMolino.pdf	application/pdf	ok
+/assets/images/events/2019/Torino/Slide_AndreaVisconti.pdf	download-file	download	file response	206	/assets/images/events/2019/Torino/Slide_AndreaVisconti.pdf	application/pdf	ok
+/assets/images/events/2019/Torino/Slide_DaniloBazzanella.pdf	download-file	download	file response	206	/assets/images/events/2019/Torino/Slide_DaniloBazzanella.pdf	application/pdf	ok
+/assets/images/events/2019/Torino/Slide_FabioFiori.pdf	download-file	download	file response	206	/assets/images/events/2019/Torino/Slide_FabioFiori.pdf	application/pdf	ok
+/assets/images/events/2019/Torino/Slide_GiacomoVerticale.pdf	download-file	download	file response	206	/assets/images/events/2019/Torino/Slide_GiacomoVerticale.pdf	application/pdf	ok
+/assets/images/events/2019/Torino/Slide_GuidoBertoni.pdf	download-file	download	file response	206	/assets/images/events/2019/Torino/Slide_GuidoBertoni.pdf	application/pdf	ok
+/assets/images/events/2019/Torino/Slide_MarcoBaldi.pdf	download-file	download	file response	206	/assets/images/events/2019/Torino/Slide_MarcoBaldi.pdf	application/pdf	ok
+/assets/images/events/2019/Torino/Slide_MassimilianoSala.pdf	download-file	download	file response	206	/assets/images/events/2019/Torino/Slide_MassimilianoSala.pdf	application/pdf	ok
+/assets/images/events/2019/Torino/Slide_NadirMurru.pdf	download-file	download	file response	206	/assets/images/events/2019/Torino/Slide_NadirMurru.pdf	application/pdf	ok
+/assets/images/events/2019/Torino/Slide_PietroBianchi.pdf	download-file	download	file response	206	/assets/images/events/2019/Torino/Slide_PietroBianchi.pdf	application/pdf	ok
+/assets/images/events/2019/Torino/Slide_SimoneDutto.pdf	download-file	download	file response	206	/assets/images/events/2019/Torino/Slide_SimoneDutto.pdf	application/pdf	ok
+/assets/images/events/2019/Torino/Slide_VincenzoDiNicola.pdf	download-file	download	file response	206	/assets/images/events/2019/Torino/Slide_VincenzoDiNicola.pdf	application/pdf	ok
+/assets/images/events/2020/CrittografiaInsicura/Crittografia-insicura.pdf	download-file	download	file response	206	/assets/images/events/2020/CrittografiaInsicura/Crittografia-insicura.pdf	application/pdf	ok
+/assets/images/events/2020/RomaAntica/DC-Historiae-Moraglio.pdf	download-file	download	file response	206	/assets/images/events/2020/RomaAntica/DC-Historiae-Moraglio.pdf	application/pdf	ok
+/assets/images/events/2020/RomaAntica/MORAGLIO-slide.pdf	download-file	download	file response	206	/assets/images/events/2020/RomaAntica/MORAGLIO-slide.pdf	application/pdf	ok
+/assets/images/events/2020/Workshop/AVisconti-slide.pdf	download-file	download	file response	206	/assets/images/events/2020/Workshop/AVisconti-slide.pdf	application/pdf	ok
+/assets/images/events/2020/Workshop/Barbero-slide.pdf	download-file	download	file response	206	/assets/images/events/2020/Workshop/Barbero-slide.pdf	application/pdf	ok
+/assets/images/events/2020/Workshop/Cianfriglia-slide.pdf	download-file	download	file response	206	/assets/images/events/2020/Workshop/Cianfriglia-slide.pdf	application/pdf	ok
+/assets/images/events/2020/Workshop/LaScala-slide.pdf	download-file	download	file response	206	/assets/images/events/2020/Workshop/LaScala-slide.pdf	application/pdf	ok
+/assets/images/events/2020/Workshop/Murru-slide.pdf	download-file	download	file response	206	/assets/images/events/2020/Workshop/Murru-slide.pdf	application/pdf	ok
+/assets/images/events/2020/Workshop/Santilli-slide.pdf	download-file	download	file response	206	/assets/images/events/2020/Workshop/Santilli-slide.pdf	application/pdf	ok
+/assets/images/events/2020/Workshop/Sogiorno-slide.pdf	download-file	download	file response	206	/assets/images/events/2020/Workshop/Sogiorno-slide.pdf	application/pdf	ok
+/assets/images/events/2021/locandina2021.pdf	download-file	download	file response	206	/assets/images/events/2021/locandina2021.pdf	application/pdf	ok
+/assets/images/events/2022/PQCifris2022/LocandinaPQCifris.pdf	download-file	download	file response	206	/assets/images/events/2022/PQCifris2022/LocandinaPQCifris.pdf	application/pdf	ok
+/assets/images/events/2022/trends/25_02_trends-in-modern-cryptography.docx	download-file	download	file response	206	/assets/images/events/2022/trends/25_02_trends-in-modern-cryptography.docx	application/vnd.openxmlformats-officedocument.wordprocessingml.document	ok
+/assets/images/events/2022/trends/SlidesTrendsinModernCrypto.zip	download-file	download	file response	206	/assets/images/events/2022/trends/SlidesTrendsinModernCrypto.zip	application/zip	ok
+/assets/images/events/2022/trends/Trend_Locandina.pdf	download-file	download	file response	206	/assets/images/events/2022/trends/Trend_Locandina.pdf	application/pdf	ok
+/assets/images/events/2022/trends/allegato2.pdf	download-file	download	file response	206	/assets/images/events/2022/trends/allegato2.pdf	application/pdf	ok
+/assets/images/events/2022/trends/allegato3.pdf	download-file	download	file response	206	/assets/images/events/2022/trends/allegato3.pdf	application/pdf	ok
+/assets/images/events/2023/Trends23/Lecture1.pdf	download-file	download	file response	206	/assets/images/events/2023/Trends23/Lecture1.pdf	application/pdf	ok
+/assets/images/events/2023/Trends23/Lecture10.pdf	download-file	download	file response	206	/assets/images/events/2023/Trends23/Lecture10.pdf	application/pdf	ok
+/assets/images/events/2023/Trends23/Lecture2.pdf	download-file	download	file response	206	/assets/images/events/2023/Trends23/Lecture2.pdf	application/pdf	ok
+/assets/images/events/2023/Trends23/Lecture3.pdf	download-file	download	file response	206	/assets/images/events/2023/Trends23/Lecture3.pdf	application/pdf	ok
+/assets/images/events/2023/Trends23/Lecture4.pdf	download-file	download	file response	206	/assets/images/events/2023/Trends23/Lecture4.pdf	application/pdf	ok
+/assets/images/events/2023/Trends23/Lecture5.pdf	download-file	download	file response	206	/assets/images/events/2023/Trends23/Lecture5.pdf	application/pdf	ok
+/assets/images/events/2023/Trends23/Lecture6.pdf	download-file	download	file response	206	/assets/images/events/2023/Trends23/Lecture6.pdf	application/pdf	ok
+/assets/images/events/2023/Trends23/Lecture7.pdf	download-file	download	file response	206	/assets/images/events/2023/Trends23/Lecture7.pdf	application/pdf	ok
+/assets/images/events/2023/Trends23/Lecture8.pdf	download-file	download	file response	206	/assets/images/events/2023/Trends23/Lecture8.pdf	application/pdf	ok
+/assets/images/events/2023/Trends23/Lecture9.pdf	download-file	download	file response	206	/assets/images/events/2023/Trends23/Lecture9.pdf	application/pdf	ok
+/assets/images/events/2023/y2y/Blocco1.pdf	download-file,rendered-download	download	file response	206	/assets/images/events/2023/y2y/Blocco1.pdf	application/pdf	ok
+/assets/images/events/2023/y2y/Blocco2.pdf	download-file,rendered-download	download	file response	206	/assets/images/events/2023/y2y/Blocco2.pdf	application/pdf	ok
+/assets/images/events/2023/y2y/Blocco3.pdf	download-file,rendered-download	download	file response	206	/assets/images/events/2023/y2y/Blocco3.pdf	application/pdf	ok
+/assets/images/events/2023/y2y/Blocco4.pdf	download-file,rendered-download	download	file response	206	/assets/images/events/2023/y2y/Blocco4.pdf	application/pdf	ok
+/assets/images/events/2023/y2y/Blocco5.pdf	download-file,rendered-download	download	file response	206	/assets/images/events/2023/y2y/Blocco5.pdf	application/pdf	ok
+/assets/images/events/2024/Eruditorum 2024/Franceschi vs Partenio-1.pdf	download-file	download	file response	206	/assets/images/events/2024/Eruditorum%202024/Franceschi%20vs%20Partenio-1.pdf	application/pdf	ok
+/assets/images/events/2024/Eruditorum 2024/Scrivere per nascondere, leggere per scoprire.pdf	download-file	download	file response	206	/assets/images/events/2024/Eruditorum%202024/Scrivere%20per%20nascondere%2C%20leggere%20per%20scoprire.pdf	application/pdf	ok
+/assets/images/events/2024/Eruditorum 2024/Telegram - crittografia.pdf	download-file	download	file response	206	/assets/images/events/2024/Eruditorum%202024/Telegram%20-%20crittografia.pdf	application/pdf	ok
+/assets/images/events/2024/Eruditorum 2024/presentazioneDeCiphrisEruditorum2024_Palma.pdf	download-file	download	file response	206	/assets/images/events/2024/Eruditorum%202024/presentazioneDeCiphrisEruditorum2024_Palma.pdf	application/pdf	ok
+/assets/images/events/2026/cifris26/CIFRIS26-Locandina.pdf	download-file	download	file response	206	/assets/images/events/2026/cifris26/CIFRIS26-Locandina.pdf	application/pdf	ok
+/assets/images/events/2026/cifris26/cifris26.pdf	download-file,rendered-download	download	file response	206	/assets/images/events/2026/cifris26/cifris26.pdf	application/pdf	ok
+/assets/images/events/cryptowars/2011/BunnyTN_Cipher.rar	download-file	download	file response	206	/assets/images/events/cryptowars/2011/BunnyTN_Cipher.rar	application/application/x-rar-compressed	ok
+/assets/images/events/cryptowars/2011/BunnyTN_Cipher.tar.gz	download-file	download	file response	206	/assets/images/events/cryptowars/2011/BunnyTN_Cipher.tar.gz	application/x-tar	ok
+/assets/images/events/cryptowars/2011/loc.pdf	download-file	download	file response	206	/assets/images/events/cryptowars/2011/loc.pdf	application/pdf	ok
+/assets/images/events/cryptowars/2014RSAcontest.publicKeys.txt	download-file	download	file response	206	/assets/images/events/cryptowars/2014RSAcontest.publicKeys.txt	text/plain	ok
+/assets/images/events/cryptowars/2015contest.publicKeys.txt	download-file	download	file response	206	/assets/images/events/cryptowars/2015contest.publicKeys.txt	text/plain	ok
+/assets/images/events/cryptowars/2015contest.solution.txt	download-file	download	file response	206	/assets/images/events/cryptowars/2015contest.solution.txt	text/plain	ok
+/assets/images/events/cryptowars/2015example.publicKeys.txt	download-file	download	file response	206	/assets/images/events/cryptowars/2015example.publicKeys.txt	text/plain	ok
+/assets/images/events/cryptowars/2015example.solution.txt	download-file	download	file response	206	/assets/images/events/cryptowars/2015example.solution.txt	text/plain	ok
+/assets/images/events/cryptowars/2021/Cryptowars2021.zip	download-file	download	file response	206	/assets/images/events/cryptowars/2021/Cryptowars2021.zip	application/zip	ok
+/assets/images/events/cryptowars/2021/cryptowars2021.pdf	download-file	download	file response	206	/assets/images/events/cryptowars/2021/cryptowars2021.pdf	application/pdf	ok
+/assets/images/events/cryptowars/Cryptowars2018Inf.zip	download-file	download	file response	206	/assets/images/events/cryptowars/Cryptowars2018Inf.zip	application/zip	ok
+/assets/images/events/cryptowars/Cryptowars2018Mat.zip	download-file	download	file response	206	/assets/images/events/cryptowars/Cryptowars2018Mat.zip	application/zip	ok
+/assets/images/events/cryptowars/Cryptowars2019.zip	download-file	download	file response	206	/assets/images/events/cryptowars/Cryptowars2019.zip	application/zip	ok
+/assets/images/events/cryptowars/Cryptowars2020.zip	download-file	download	file response	206	/assets/images/events/cryptowars/Cryptowars2020.zip	application/zip	ok
+/assets/images/events/cryptowars/contest2016.zip	download-file	download	file response	206	/assets/images/events/cryptowars/contest2016.zip	application/zip	ok
+/assets/images/events/cryptowars/contest_2016.private-keys.txt	download-file	download	file response	206	/assets/images/events/cryptowars/contest_2016.private-keys.txt	text/plain	ok
+/assets/images/events/cryptowars/example_2016.solution.txt	download-file	download	file response	206	/assets/images/events/cryptowars/example_2016.solution.txt	text/plain	ok
+/assets/images/events/cryptowars/example_2016.zip	download-file	download	file response	206	/assets/images/events/cryptowars/example_2016.zip	application/zip	ok
+/assets/images/events/gnosis/Gnosis-CrittografiaAntica.pdf	download-file	download	file response	206	/assets/images/events/gnosis/Gnosis-CrittografiaAntica.pdf	application/pdf	ok
+/assets/images/events/gnosis/Gnosis-CrittografiaEnigmaI.pdf	download-file	download	file response	206	/assets/images/events/gnosis/Gnosis-CrittografiaEnigmaI.pdf	application/pdf	ok
+/assets/images/events/gnosis/Gnosis-CrittografiaFutura.pdf	download-file	download	file response	206	/assets/images/events/gnosis/Gnosis-CrittografiaFutura.pdf	application/pdf	ok
+/assets/images/events/gnosis/Gnosis-CrittografiaIntroduzione.pdf	download-file	download	file response	206	/assets/images/events/gnosis/Gnosis-CrittografiaIntroduzione.pdf	application/pdf	ok
+/assets/images/events/gnosis/Gnosis-CrittografiaPrebellica.pdf	download-file	download	file response	206	/assets/images/events/gnosis/Gnosis-CrittografiaPrebellica.pdf	application/pdf	ok
+/assets/images/events/gnosis/Gnosis-CrittografiaPubblica.pdf	download-file	download	file response	206	/assets/images/events/gnosis/Gnosis-CrittografiaPubblica.pdf	application/pdf	ok
+/assets/images/events/gruppi/PQCifris/04.2022-ShiBai.pdf	download-file	download	file response	206	/assets/images/events/gruppi/PQCifris/04.2022-ShiBai.pdf	application/pdf	ok
+/assets/images/events/gruppi/PQCifris/05.2022-Mari.pdf	download-file	download	file response	206	/assets/images/events/gruppi/PQCifris/05.2022-Mari.pdf	application/pdf	ok
+/assets/images/events/gruppi/PQCifris/06.2022-Persichetti (1).pdf	download-file	download	file response	206	/assets/images/events/gruppi/PQCifris/06.2022-Persichetti%20%281%29.pdf	application/pdf	ok
+/assets/images/events/gruppi/PQCifris/11.2021-SantiniSlide.pdf	download-file	download	file response	206	/assets/images/events/gruppi/PQCifris/11.2021-SantiniSlide.pdf	application/pdf	ok
+/assets/images/events/gruppi/PQCifris/11.2021_Santini.pdf	download-file	download	file response	206	/assets/images/events/gruppi/PQCifris/11.2021_Santini.pdf	application/pdf	ok
+/assets/images/events/gruppi/PQCifris/12.2021_Boschini.pdf	download-file	download	file response	206	/assets/images/events/gruppi/PQCifris/12.2021_Boschini.pdf	application/pdf	ok
+/assets/images/events/gruppi/PQCifris/12.2022-Meneghetti_Tognolini.pdf	download-file	download	file response	206	/assets/images/events/gruppi/PQCifris/12.2022-Meneghetti_Tognolini.pdf	application/pdf	ok
+/assets/images/events/gruppi/PQCifris/Allegato1_Slide_Mari.pdf	download-file	download	file response	206	/assets/images/events/gruppi/PQCifris/Allegato1_Slide_Mari.pdf	application/pdf	ok
+/assets/images/events/gruppi/PQCifris/Allegato2_PQCifris_ShiBai.pdf	download-file	download	file response	206	/assets/images/events/gruppi/PQCifris/Allegato2_PQCifris_ShiBai.pdf	application/pdf	ok
+/assets/images/events/gruppi/PQCifris/Boschini.pdf	download-file	download	file response	206	/assets/images/events/gruppi/PQCifris/Boschini.pdf	application/pdf	ok
+/assets/images/events/gruppi/PQCifris/OrsiniSlide.pdf	download-file	download	file response	206	/assets/images/events/gruppi/PQCifris/OrsiniSlide.pdf	application/pdf	ok
+/assets/images/events/gruppi/PQCifris/PersichettiLocandina.pdf	download-file	download	file response	206	/assets/images/events/gruppi/PQCifris/PersichettiLocandina.pdf	application/pdf	ok
+/assets/images/events/gruppi/PQCifris/PersichettiSlide.pdf	download-file	download	file response	206	/assets/images/events/gruppi/PQCifris/PersichettiSlide.pdf	application/pdf	ok
+/assets/images/events/gruppi/PQCifris/Persichetti_9 giugno.pdf	download-file	download	file response	206	/assets/images/events/gruppi/PQCifris/Persichetti_9%20giugno.pdf	application/pdf	ok
+/assets/images/events/gruppi/PQCifris/tognolini_slide.pdf	download-file	download	file response	206	/assets/images/events/gruppi/PQCifris/tognolini_slide.pdf	application/pdf	ok
+/assets/images/events/gruppi/cifrisChain/Allegato1_CifrisChain_SLIDE_Barbara.pdf	download-file	download	file response	206	/assets/images/events/gruppi/cifrisChain/Allegato1_CifrisChain_SLIDE_Barbara.pdf	application/pdf	ok
+/assets/images/events/gruppi/cifrisChain/CChain_Casati (1).pdf	download-file	download	file response	206	/assets/images/events/gruppi/cifrisChain/CChain_Casati%20%281%29.pdf	application/pdf	ok
+/assets/images/events/gruppi/cifrisChain/CChain_Casati.pdf	download-file	download	file response	206	/assets/images/events/gruppi/cifrisChain/CChain_Casati.pdf	application/pdf	ok
+/assets/images/events/gruppi/cifrisChain/Casati_locandina.pdf	download-file	download	file response	206	/assets/images/events/gruppi/cifrisChain/Casati_locandina.pdf	application/pdf	ok
+/assets/images/events/gruppi/cifrisChain/CifrisChain_DeCaro_19_ottobre_2020.pdf	download-file	download	file response	206	/assets/images/events/gruppi/cifrisChain/CifrisChain_DeCaro_19_ottobre_2020.pdf	application/pdf	ok
+/assets/images/events/gruppi/cifrisChain/Cortese.pdf	download-file	download	file response	206	/assets/images/events/gruppi/cifrisChain/Cortese.pdf	application/pdf	ok
+/assets/images/events/gruppi/cifrisChain/CorteseSlide.pdf	download-file	download	file response	206	/assets/images/events/gruppi/cifrisChain/CorteseSlide.pdf	application/pdf	ok
+/assets/images/events/gruppi/cifrisChain/FadiBarbara.pdf	download-file	download	file response	206	/assets/images/events/gruppi/cifrisChain/FadiBarbara.pdf	application/pdf	ok
+/assets/images/events/gruppi/cifrisChain/Filecoin_Luca_CifrisChain 2021Slide.pdf	download-file	download	file response	206	/assets/images/events/gruppi/cifrisChain/Filecoin_Luca_CifrisChain%202021Slide.pdf	application/pdf	ok
+/assets/images/events/gruppi/cifrisChain/Locandina_Ciampi.pdf	download-file	download	file response	206	/assets/images/events/gruppi/cifrisChain/Locandina_Ciampi.pdf	application/pdf	ok
+/assets/images/events/gruppi/cifrisChain/LucaNizzardoLocandina.pdf	download-file	download	file response	206	/assets/images/events/gruppi/cifrisChain/LucaNizzardoLocandina.pdf	application/pdf	ok
+/assets/images/events/gruppi/cifrisChain/SogiornoSlide.pdf	download-file	download	file response	206	/assets/images/events/gruppi/cifrisChain/SogiornoSlide.pdf	application/pdf	ok
+/assets/images/events/gruppi/cifrisChain/Sogiorno_Locandina.pdf	download-file	download	file response	206	/assets/images/events/gruppi/cifrisChain/Sogiorno_Locandina.pdf	application/pdf	ok
+/assets/images/events/gruppi/cifrisChain/StrategiaBlockchain-CifrisChain2020.pdf	download-file	download	file response	206	/assets/images/events/gruppi/cifrisChain/StrategiaBlockchain-CifrisChain2020.pdf	application/pdf	ok
+/assets/images/events/gruppi/cifrisCloud/31.05.2022-Ballo.pdf	download-file	download	file response	206	/assets/images/events/gruppi/cifrisCloud/31.05.2022-Ballo.pdf	application/pdf	ok
+/assets/images/events/gruppi/cifrisCloud/Ballo_31_Maggio.pdf	download-file	download	file response	206	/assets/images/events/gruppi/cifrisCloud/Ballo_31_Maggio.pdf	application/pdf	ok
+/assets/images/events/gruppi/cifrisCloud/CarlaIrene.pdf	download-file	download	file response	206	/assets/images/events/gruppi/cifrisCloud/CarlaIrene.pdf	application/pdf	ok
+/assets/images/events/gruppi/cifrisCloud/CarlaIreneSlide.pdf	download-file	download	file response	206	/assets/images/events/gruppi/cifrisCloud/CarlaIreneSlide.pdf	application/pdf	ok
+/assets/images/events/gruppi/cifrisCloud/CifrisCloud-annuncio002.pdf	download-file	download	file response	206	/assets/images/events/gruppi/cifrisCloud/CifrisCloud-annuncio002.pdf	application/pdf	ok
+/assets/images/events/gruppi/cifrisCloud/CloudDeCifris-annuncio001.pdf	download-file	download	file response	206	/assets/images/events/gruppi/cifrisCloud/CloudDeCifris-annuncio001.pdf	application/pdf	ok
+/assets/images/events/gruppi/cifrisCloud/CloudDeCifris-annuncio003.pdf	download-file	download	file response	206	/assets/images/events/gruppi/cifrisCloud/CloudDeCifris-annuncio003.pdf	application/pdf	ok
+/assets/images/events/gruppi/cifrisCloud/Gaboardi.pdf	download-file	download	file response	206	/assets/images/events/gruppi/cifrisCloud/Gaboardi.pdf	application/pdf	ok
+/assets/images/events/gruppi/cifrisCloud/Paris.pdf	download-file	download	file response	206	/assets/images/events/gruppi/cifrisCloud/Paris.pdf	application/pdf	ok
+/assets/images/events/gruppi/cifrisCloud/ParisSlide.pdf	download-file	download	file response	206	/assets/images/events/gruppi/cifrisCloud/ParisSlide.pdf	application/pdf	ok
+/assets/images/events/gruppi/mathCifris/02.2022-Irene-Villa.pdf	download-file	download	file response	206	/assets/images/events/gruppi/mathCifris/02.2022-Irene-Villa.pdf	application/pdf	ok
+/assets/images/events/gruppi/mathCifris/03.2022-Martino-Borello.pdf	download-file	download	file response	206	/assets/images/events/gruppi/mathCifris/03.2022-Martino-Borello.pdf	application/pdf	ok
+/assets/images/events/gruppi/mathCifris/04.2022-Marzio-Mula.pdf	download-file	download	file response	206	/assets/images/events/gruppi/mathCifris/04.2022-Marzio-Mula.pdf	application/pdf	ok
+/assets/images/events/gruppi/mathCifris/11.2021_Ilaria_Zappatore.pdf	download-file	download	file response	206	/assets/images/events/gruppi/mathCifris/11.2021_Ilaria_Zappatore.pdf	application/pdf	ok
+/assets/images/events/gruppi/mathCifris/AlessandroNeriLocandina.pdf	download-file	download	file response	206	/assets/images/events/gruppi/mathCifris/AlessandroNeriLocandina.pdf	application/pdf	ok
+/assets/images/events/gruppi/mathCifris/Allegato 1_SLIDE_MathCifrisMula_6Aprile.pdf	download-file	download	file response	206	/assets/images/events/gruppi/mathCifris/Allegato%201_SLIDE_MathCifrisMula_6Aprile.pdf	application/pdf	ok
+/assets/images/events/gruppi/mathCifris/Allegato2_Zini_MathCifris.pdf	download-file	download	file response	206	/assets/images/events/gruppi/mathCifris/Allegato2_Zini_MathCifris.pdf	application/pdf	ok
+/assets/images/events/gruppi/mathCifris/Allegato4_MathCifris_Locandina_05.2022-Giovanni-Zini.pdf	download-file	download	file response	206	/assets/images/events/gruppi/mathCifris/Allegato4_MathCifris_Locandina_05.2022-Giovanni-Zini.pdf	application/pdf	ok
+/assets/images/events/gruppi/mathCifris/BartoliSlide.pdf	download-file	download	file response	206	/assets/images/events/gruppi/mathCifris/BartoliSlide.pdf	application/pdf	ok
+/assets/images/events/gruppi/mathCifris/Bartoli_Locandina.pdf	download-file	download	file response	206	/assets/images/events/gruppi/mathCifris/Bartoli_Locandina.pdf	application/pdf	ok
+/assets/images/events/gruppi/mathCifris/DeFeo.pdf	download-file	download	file response	206	/assets/images/events/gruppi/mathCifris/DeFeo.pdf	application/pdf	ok
+/assets/images/events/gruppi/mathCifris/DeFeoSlide.pdf	download-file	download	file response	206	/assets/images/events/gruppi/mathCifris/DeFeoSlide.pdf	application/pdf	ok
+/assets/images/events/gruppi/mathCifris/IreneVillaLocandina.pdf	download-file	download	file response	206	/assets/images/events/gruppi/mathCifris/IreneVillaLocandina.pdf	application/pdf	ok
+/assets/images/events/gruppi/mathCifris/IreneVillaSlide.pdf	download-file	download	file response	206	/assets/images/events/gruppi/mathCifris/IreneVillaSlide.pdf	application/pdf	ok
+/assets/images/events/gruppi/mathCifris/LaScalaLocandina.pdf	download-file	download	file response	206	/assets/images/events/gruppi/mathCifris/LaScalaLocandina.pdf	application/pdf	ok
+/assets/images/events/gruppi/mathCifris/LaScalaSlide.pdf	download-file	download	file response	206	/assets/images/events/gruppi/mathCifris/LaScalaSlide.pdf	application/pdf	ok
+/assets/images/events/gruppi/mathCifris/Locandina-Sica.pdf	download-file	download	file response	206	/assets/images/events/gruppi/mathCifris/Locandina-Sica.pdf	application/pdf	ok
+/assets/images/events/gruppi/mathCifris/MARIOT.pdf	download-file	download	file response	206	/assets/images/events/gruppi/mathCifris/MARIOT.pdf	application/pdf	ok
+/assets/images/events/gruppi/mathCifris/Mariot_talk_2022.pdf	download-file	download	file response	206	/assets/images/events/gruppi/mathCifris/Mariot_talk_2022.pdf	application/pdf	ok
+/assets/images/events/gruppi/mathCifris/Orsini.pdf	download-file	download	file response	206	/assets/images/events/gruppi/mathCifris/Orsini.pdf	application/pdf	ok
+/assets/images/events/gruppi/mathCifris/PQOT.pdf	download-file	download	file response	206	/assets/images/events/gruppi/mathCifris/PQOT.pdf	application/pdf	ok
+/assets/images/events/gruppi/mathCifris/Presentazione_Borello.pdf	download-file	download	file response	206	/assets/images/events/gruppi/mathCifris/Presentazione_Borello.pdf	application/pdf	ok
+/assets/images/events/gruppi/mathCifris/Ravagnani.pdf	download-file	download	file response	206	/assets/images/events/gruppi/mathCifris/Ravagnani.pdf	application/pdf	ok
+/assets/images/events/gruppi/mathCifris/RavagnaniSlides.pdf	download-file	download	file response	206	/assets/images/events/gruppi/mathCifris/RavagnaniSlides.pdf	application/pdf	ok
+/assets/images/events/gruppi/mathCifris/Slide_Sica.pdf	download-file	download	file response	206	/assets/images/events/gruppi/mathCifris/Slide_Sica.pdf	application/pdf	ok
+/assets/images/events/gruppi/mathCifris/SlidesUMI_Neri.pdf	download-file	download	file response	206	/assets/images/events/gruppi/mathCifris/SlidesUMI_Neri.pdf	application/pdf	ok
+/assets/images/events/gruppi/mathCifris/Zappatore_Slide.pdf	download-file	download	file response	206	/assets/images/events/gruppi/mathCifris/Zappatore_Slide.pdf	application/pdf	ok
+/assets/images/events/gruppi/mathCifris/censimento.pdf	download-file	download	file response	206	/assets/images/events/gruppi/mathCifris/censimento.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/01.2021-VENTURI.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/01.2021-VENTURI.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/04.2022 Zaccagnini.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/04.2022%20Zaccagnini.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/05.2022 Martinoli.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/05.2022%20Martinoli.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/11.2021_DeCian.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/11.2021_DeCian.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/12.2022 Giunta.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/12.2022%20Giunta.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/18.11.2020_TAPP.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/18.11.2020_TAPP.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/3.12.2020-Lusini.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/3.12.2020-Lusini.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/Allegato1_Athesis_Zaccagnini.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/Allegato1_Athesis_Zaccagnini.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/Allegato1_Martinoli.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/Allegato1_Martinoli.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/Allegato3_05.2022 Martinoli.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/Allegato3_05.2022%20Martinoli.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/CalderiniLocandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/CalderiniLocandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/Darren_Tapp.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/Darren_Tapp.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/DeCian-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/DeCian-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/DeCifrisAthesis_Pintore2019.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/DeCifrisAthesis_Pintore2019.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/Iezzi.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/Iezzi.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/IezziIsogeny.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/IezziIsogeny.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/Longo.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/Longo.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/LongoDCA.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/LongoDCA.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/OrruLocandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/OrruLocandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/SCIARRETTA.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/SCIARRETTA.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/SPADAFORA-locandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/SPADAFORA-locandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/SciarrettaSlide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/SciarrettaSlide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/TOMASI-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/TOMASI-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/Tomasi_23.01.2020.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/Tomasi_23.01.2020.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/antino-locandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/antino-locandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/antino-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/antino-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/blundo-locandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/blundo-locandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/blundo-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/blundo-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/bodei-locandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/bodei-locandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/bodei-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/bodei-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/bonini-locandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/bonini-locandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/bonini-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/bonini-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/calderini-locandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/calderini-locandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/calderini-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/calderini-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/calderiniSlide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/calderiniSlide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/ceccato-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/ceccato-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/elia-locandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/elia-locandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/elia-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/elia-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/ireneVilla.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/ireneVilla.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/ireneVillaSlide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/ireneVillaSlide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/ivanvisconti-locandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/ivanvisconti-locandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/ivanvisconti-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/ivanvisconti-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/locandina_MAZZONE.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/locandina_MAZZONE.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/locandina_Venturi.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/locandina_Venturi.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/mariot-locandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/mariot-locandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/mariot-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/mariot-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/michele2elia-locandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/michele2elia-locandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/michele2elia-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/michele2elia-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/murgia-locandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/murgia-locandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/murgia-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/murgia-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/orlandi-locandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/orlandi-locandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/orlandi-slide.gz	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/orlandi-slide.gz		ok
+/assets/images/events/seminariLocali/deCifrisAthesis/orru-athesis.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/orru-athesis.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/pintore-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/pintore-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/rizzo-locandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/rizzo-locandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/rizzo-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/rizzo-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/schmid-locandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/schmid-locandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/schmid-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/schmid-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/slide_Lusini.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/slide_Lusini.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/slide_Mazzone.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/slide_Mazzone.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAthesis/slides_spadafora.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAthesis/slides_spadafora.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/01.2022-Javier Verbel.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/01.2022-Javier%20Verbel.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/12.2021-Gangemi-Guggino.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/12.2021-Gangemi-Guggino.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/ALLEGATO 4_Iezzi-ScholaLatina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/ALLEGATO%204_Iezzi-ScholaLatina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/ALLEGATO1_Slide_Verbel.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/ALLEGATO1_Slide_Verbel.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/Alellegato2_ Alecci.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/Alellegato2_%20Alecci.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/Allegato 1 - Cristiano.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/Allegato%201%20-%20Cristiano.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/Allegato 1_Alecci_Taurinorum.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/Allegato%201_Alecci_Taurinorum.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/Barbara2020.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/Barbara2020.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/Ceria2020.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/Ceria2020.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/ELIA-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/ELIA-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/Gangemi2020.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/Gangemi2020.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/LaScala.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/LaScala.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/MURGIA.locandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/MURGIA.locandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/MarcollaLocandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/MarcollaLocandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/MarcollaSlide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/MarcollaSlide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/MorgariLocandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/MorgariLocandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/SAETTONE-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/SAETTONE-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/SAETTONE_locandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/SAETTONE_locandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/Sanna_Intro_MVC.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/Sanna_Intro_MVC.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/Stocco.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/Stocco.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/barbara-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/barbara-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/barbero-locandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/barbero-locandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/barbero-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/barbero-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/dalconzo-locandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/dalconzo-locandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/dalconzo-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/dalconzo-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/dutto-locandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/dutto-locandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/dutto-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/dutto-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/elia-locandinaTO.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/elia-locandinaTO.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/fiori-locandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/fiori-locandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/fiori-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/fiori-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/locandina_Gsantilli.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/locandina_Gsantilli.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/locandina_Sanna.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/locandina_Sanna.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/presentazione_Santilli.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/presentazione_Santilli.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/slideCeria.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/slideCeria.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/slideGangemi.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/slideGangemi.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/veronicaCristiano.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/veronicaCristiano.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/visconti-locandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/visconti-locandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/visconti-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisAugustaeTaurinorum/visconti-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisEruditorum/11.2022-Bonavoglia.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisEruditorum/11.2022-Bonavoglia.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisEruditorum/11.2022-SLIDE_Bonavoglia.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisEruditorum/11.2022-SLIDE_Bonavoglia.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisEruditorum/AntoninoSlide.key.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisEruditorum/AntoninoSlide.key.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisEruditorum/Monti.Ali.docx.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisEruditorum/Monti.Ali.docx.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisEruditorum/presentazioneEruditorum.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisEruditorum/presentazioneEruditorum.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisHistoriae/MORAGLIO-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisHistoriae/MORAGLIO-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisHistoriae/Moraglio_Locandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisHistoriae/Moraglio_Locandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisMediolanensibus/09.12.2020-Grassi.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisMediolanensibus/09.12.2020-Grassi.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisMediolanensibus/Allegato 3_Ceria_Mediolanesibus.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisMediolanensibus/Allegato%203_Ceria_Mediolanesibus.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisMediolanensibus/Ceria_24_maggio.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisMediolanensibus/Ceria_24_maggio.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisMediolanensibus/EnricoZimuel.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisMediolanensibus/EnricoZimuel.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisMediolanensibus/Zimuel12102021.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisMediolanensibus/Zimuel12102021.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisMediolanensibus/slide_Grassi.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisMediolanensibus/slide_Grassi.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/13.10.2020-BRIAN-1.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/13.10.2020-BRIAN-1.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/14.10.2020-BRIAN-2.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/14.10.2020-BRIAN-2.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/14.12.2020-Persichetti.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/14.12.2020-Persichetti.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/25.09.2020_Bologna.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/25.09.2020_Bologna.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/ALLEGATO 1-DE FEO-2022-02-15-rome.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/ALLEGATO%201-DE%20FEO-2022-02-15-rome.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/ALLEGATO 4_Iezzi-ScholaLatina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/ALLEGATO%204_Iezzi-ScholaLatina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/AVISCONTI-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/AVISCONTI-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/Allegato2_ScholaLatina_SLIDE_Cesati_1304.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/Allegato2_ScholaLatina_SLIDE_Cesati_1304.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/Allegato3_ScholaLatina_SLIDE_Pintore - Tor Vergata 31-11-2021.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/Allegato3_ScholaLatina_SLIDE_Pintore%20-%20Tor%20Vergata%2031-11-2021.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/Cesati-ScholaLatina-13.04.2022.docx-3.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/Cesati-ScholaLatina-13.04.2022.docx-3.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/Chillotti_Locandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/Chillotti_Locandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/CiroBologna_locandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/CiroBologna_locandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/Civino_Sinopsi.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/Civino_Sinopsi.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/DeFeo15Febbraio.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/DeFeo15Febbraio.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/F_Pasquale-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/F_Pasquale-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/Gianira.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/Gianira.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/Gianira2.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/Gianira2.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/GianlucaBrian_locandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/GianlucaBrian_locandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/Iezzi_31_maggio.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/Iezzi_31_maggio.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/Pintore_Locandina_11.2021.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/Pintore_Locandina_11.2021.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/Roberto-Civino-ScholaLatina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/Roberto-Civino-ScholaLatina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/RobertoCivino-ScholaLatina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/RobertoCivino-ScholaLatina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/VISCONTI-slide (1).pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/VISCONTI-slide%20%281%29.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/VISCONTI-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/VISCONTI-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/Visconti-27.01.2020.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/Visconti-27.01.2020.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/cappetta-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/cappetta-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/carolla-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/carolla-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/defeo-locandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/defeo-locandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/defeo-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/defeo-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/errico-locandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/errico-locandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/fontana-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/fontana-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/friolo-locandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/friolo-locandina.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/friolo-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/friolo-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/grassi-locandina1.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/grassi-locandina1.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/grassi-locandina2.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/grassi-locandina2.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/grassi-slide1.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/grassi-slide1.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/grassi-slide2.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/grassi-slide2.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/locandina_Alberico.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/locandina_Alberico.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/locandina_Pasquale.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/locandina_Pasquale.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/rosati-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/rosati-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/slide_Alberico.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/slide_Alberico.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/slide_Chillotti.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/slide_Chillotti.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/slide_Persichetti.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/slide_Persichetti.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/tarquini-slide.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/tarquini-slide.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/workshop-AQ.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/workshop-AQ.pdf	application/pdf	ok
+/assets/images/events/seminariLocali/deCifrisScholaLatina/workshop-locandina.pdf	download-file	download	file response	206	/assets/images/events/seminariLocali/deCifrisScholaLatina/workshop-locandina.pdf	application/pdf	ok
+/assets/opportunità/advisoryBoard/manifestoAB2021.pdf	rendered-download	download	file response	206	/assets/opportunit%C3%A0/advisoryBoard/manifestoAB2021.pdf	DeCifris home	review-download
+/assets/pdf/associarsi/Informativa_privacy.pdf	download-file	download	file response	206	/assets/pdf/associarsi/Informativa_privacy.pdf	application/pdf	ok
+/assets/pdf/associarsi/Koine-License-Agreement-2026.pdf	download-file	download	file response	206	/assets/pdf/associarsi/Koine-License-Agreement-2026.pdf	application/pdf	ok
+/assets/pdf/associarsi/Membership_application_form.pdf	download-file	download	file response	206	/assets/pdf/associarsi/Membership_application_form.pdf	application/pdf	ok
+/assets/pdf/associarsi/Modulo_domanda_ammissione_associati.pdf	download-file	download	file response	206	/assets/pdf/associarsi/Modulo_domanda_ammissione_associati.pdf	application/pdf	ok
+/assets/pdf/associarsi/Privacy_notice_for_members.pdf	download-file	download	file response	206	/assets/pdf/associarsi/Privacy_notice_for_members.pdf	application/pdf	ok
+/assets/pdf/associarsi/vantaggi_associarsi_DC.pdf	download-file,rendered-download	download	file response	206	/assets/pdf/associarsi/vantaggi_associarsi_DC.pdf	application/pdf	ok
+/assets/pdf/associarsi/vantaggi_associarsi_DC_giovani.pdf	download-file,rendered-download	download	file response	206	/assets/pdf/associarsi/vantaggi_associarsi_DC_giovani.pdf	application/pdf	ok
+/assets/pdf/statuto/DocumentoNotarileRedatto2.pdf	download-file,rendered-download	download	file response	206	/assets/pdf/statuto/DocumentoNotarileRedatto2.pdf	application/pdf	ok
+/assets/pdf/statuto/statuto.pdf	download-file,rendered-download	download	file response	206	/assets/pdf/statuto/statuto.pdf	application/pdf	ok
+/associarsi	angular-route,rendered-link	redirect	/associazione/associarsi	200	/associarsi/	DeCifris home	review-redirect
+/associarsi-benemeriti	angular-route	redirect	/associazione/associarsi-benemeriti	200	/associarsi-benemeriti/	DeCifris home	review-redirect
+/associazione	angular-route,local-build,rendered-link,source-sitemap	page	Associazione	200	/associazione/	Associazione	ok
+/associazione/advisory-board	angular-route,local-build,rendered-link,source-sitemap	page	Advisory Board	200	/associazione/advisory-board/	Advisory Board	ok
+/associazione/affiliati-partner	angular-route,local-build,rendered-link	page	Affiliati e partner	200	/associazione/affiliati-partner/	Affiliati e partner	ok
+/associazione/associarsi	angular-route,local-build,rendered-link,source-sitemap	page	Associarsi	200	/associazione/associarsi/	Associarsi	ok
+/associazione/associarsi-benemeriti	angular-route,local-build,rendered-link,source-sitemap	page	Associarsi come Benemeriti	200	/associazione/associarsi-benemeriti/	Associarsi come Benemeriti	ok
+/associazione/dicono-di-noi	angular-route,local-build,rendered-link,source-sitemap	page	Dicono di noi	200	/associazione/dicono-di-noi/	Dicono di noi	ok
+/associazione/notizie	angular-route,local-build,rendered-link,source-sitemap	page	Notizie	200	/associazione/notizie/	Notizie	ok
+/associazione/obiettivi	angular-route,local-build,source-sitemap	page	Obiettivi	200	/associazione/obiettivi/	Obiettivi	ok
+/associazione/organi-direttivi	angular-route,local-build,rendered-link,source-sitemap	page	Organi Direttivi	200	/associazione/organi-direttivi/	Organi Direttivi	ok
+/associazione/posizioni-ricerca	angular-route,local-build,rendered-link,source-sitemap	page	Posizioni di ricerca	200	/associazione/posizioni-ricerca/	Posizioni di ricerca	ok
+/associazione/regolamento	angular-route,local-build,rendered-link,source-sitemap	page	Regolamento	200	/associazione/regolamento/	Regolamento	ok
+/associazione/scholarships	angular-route,local-build,rendered-link	page	Scolarships	200	/associazione/scholarships/	Scolarships	ok
+/associazione/stage-tirocini	angular-route,local-build,rendered-link,source-sitemap	page	Stage e tirocini	200	/associazione/stage-tirocini/	Stage e tirocini	ok
+/associazione/statuto	angular-route,local-build,rendered-link,source-sitemap	page	Statuto	200	/associazione/statuto/	Statuto	ok
+/associazione/timeline	angular-route,local-build	page	TIMELINE	200	/associazione/timeline/	TIMELINE	ok
+/attivita	angular-route,local-build,rendered-link,source-sitemap	page	Attività	200	/attivita/	Attività	ok
+/attivita/centotesi-2008-2017	angular-route,local-build,rendered-link,source-sitemap	page	Cento Tesi 2008-2017	200	/attivita/centotesi-2008-2017/	Cento Tesi 2008-2017	ok
+/attivita/centotesi-2014-2023	angular-route	redirect	/attivita/centotesi-2017-2024	200	/attivita/centotesi-2014-2023/	Cento TEsi 2014-2023	review-redirect
+/attivita/centotesi-2017-2024	angular-route,local-build,rendered-link,source-sitemap	page	Cento Tesi 2017-2024	200	/attivita/centotesi-2017-2024/	Cento Tesi 2017-2024	ok
+/attivita/cifris23	angular-route	redirect	/cifris23	200	/attivita/cifris23/	DeCifris home	review-redirect
+/attivita/cifris24	angular-route	redirect	/cifris24	200	/attivita/cifris24/	DeCifris home	review-redirect
+/attivita/cifrischain	angular-route,local-build,rendered-link,source-sitemap	page	CifrisChain	200	/attivita/cifrischain/	CifrisChain	ok
+/attivita/cifriscloud	angular-route,local-build,rendered-link,source-sitemap	page	CifrisCloud	200	/attivita/cifriscloud/	CifrisCloud	ok
+/attivita/corsi	angular-route,local-build,rendered-link,source-sitemap	page	Corsi	200	/attivita/corsi/	Corsi	ok
+/attivita/cryptowars	angular-route,local-build,rendered-link	page	Cryptowars	200	/attivita/cryptowars/	Cryptowars	ok
+/attivita/cryptowars/2011	angular-route,local-build,rendered-link	page	Cryptowars 2011	200	/attivita/cryptowars/2011/	Cryptowars 2011	ok
+/attivita/cryptowars/2014	angular-route,local-build,rendered-link	page	Cryptowars 2014	200	/attivita/cryptowars/2014/	Cryptowars 2014	ok
+/attivita/cryptowars/2015	angular-route,local-build,rendered-link	page	Cryptowars 2015	200	/attivita/cryptowars/2015/	Cryptowars 2015	ok
+/attivita/cryptowars/2016	angular-route,local-build,rendered-link	page	Cryptowars 2016	200	/attivita/cryptowars/2016/	Cryptowars 2016	ok
+/attivita/cryptowars/2018	angular-route,local-build,rendered-link	page	Cryptowars 2018	200	/attivita/cryptowars/2018/	Cryptowars 2018	ok
+/attivita/cryptowars/2019	angular-route,local-build,rendered-link	page	Cryptowars 2019	200	/attivita/cryptowars/2019/	Cryptowars 2019	ok
+/attivita/cryptowars/2020	angular-route,local-build,rendered-link	page	Cryptowars 2020	200	/attivita/cryptowars/2020/	Cryptowars 2020	ok
+/attivita/cryptowars/2021	angular-route,local-build,rendered-link	page	Cryptowars 2021	200	/attivita/cryptowars/2021/	Cryptowars 2021	ok
+/attivita/deCifris-scholalatina	rendered-link	review	confirm intended page or retire URL	200	/attivita/deCifris-scholalatina/	DeCifris home	review-intent
+/attivita/decifris-agora	angular-route,local-build,rendered-link,source-sitemap	page	De Cifris Agora	200	/attivita/decifris-agora/	De Cifris Agora	ok
+/attivita/decifris-athesis	angular-route,local-build,rendered-link,source-sitemap	page	De Cifris Athesis	200	/attivita/decifris-athesis/	De Cifris Athesis	ok
+/attivita/decifris-augustaeTaurinorum	source-sitemap	review	confirm intended page or retire URL	200	/attivita/decifris-augustaeTaurinorum/	De Cifris Augustae Taurinorum	review-intent
+/attivita/decifris-augustaetaurinorum	angular-route,local-build,rendered-link	page	De Cifris Augustae Taurinorum	200	/attivita/decifris-augustaetaurinorum/	De Cifris Augustae Taurinorum	ok
+/attivita/decifris-historiae	angular-route,local-build,rendered-link,source-sitemap	page	De Cifris Historiae	200	/attivita/decifris-historiae/	De Cifris Historiae	ok
+/attivita/decifris-mediolanensibus	angular-route,local-build,rendered-link,source-sitemap	page	De Cifris Schola Mediolanensibus	200	/attivita/decifris-mediolanensibus/	De Cifris Schola Mediolanensibus	ok
+/attivita/decifris-scholaLatina	source-sitemap	review	confirm intended page or retire URL	200	/attivita/decifris-scholaLatina/	De Cifris Schola Latina	review-intent
+/attivita/decifris-scholalatina	angular-route,local-build	page	De Cifris Schola Latina	200	/attivita/decifris-scholalatina/	De Cifris Schola Latina	ok
+/attivita/didattica-universitaria	angular-route,local-build,source-sitemap	page	Didattica universitaria	200	/attivita/didattica-universitaria/	Didattica universitaria	ok
+/attivita/editoria	angular-route,local-build,rendered-link,source-sitemap	page	Editoria	200	/attivita/editoria/	Editoria	ok
+/attivita/eruditorum	angular-route,local-build,rendered-link,source-sitemap	page	De Cifris Eruditorum	200	/attivita/eruditorum/	De Cifris Eruditorum	ok
+/attivita/eventi	angular-route,local-build,rendered-link,source-sitemap	page	De Cifris: eventi	200	/attivita/eventi/	De Cifris: eventi	ok
+/attivita/eventi/histo26	angular-route,local-build,rendered-link	page	HisTO26	200	/attivita/eventi/histo26/	HisTO26	ok
+/attivita/eventi/magic2026	angular-route,local-build,rendered-link	page	Magic 2026	200	/attivita/eventi/magic2026/	Magic 2026	ok
+/attivita/eventi/yamc	angular-route,local-build,rendered-link	page	YAMC 2026	200	/attivita/eventi/yamc/	YAMC 2026	ok
+/attivita/gare-crittografiche	angular-route,local-build,rendered-link,source-sitemap	page	DeCifris.it	200	/attivita/gare-crittografiche/	DeCifris.it	ok
+/attivita/iniziative-divulgative	angular-route,local-build,rendered-link,source-sitemap	page	Iniziative divulgative	200	/attivita/iniziative-divulgative/	Iniziative divulgative	ok
+/attivita/mathcifris	angular-route,local-build,rendered-link,source-sitemap	page	MathCifris	200	/attivita/mathcifris/	MathCifris	ok
+/attivita/modcrypto26	angular-route,local-build,rendered-link	page	ModCrypto26: Crittografia Moderna 2026	200	/attivita/modcrypto26/	ModCrypto26: Crittografia Moderna 2026	ok
+/attivita/pqcifris	angular-route,local-build,rendered-link,source-sitemap	page	PQCifris	200	/attivita/pqcifris/	PQCifris	ok
+/attivita/pqcifris-summer22	angular-route,local-build,rendered-link	page	Summer School 2022	200	/attivita/pqcifris-summer22/	Summer School 2022	ok
+/attivita/quantumcifris	angular-route,local-build,rendered-link,source-sitemap	page	QuantumCifris	200	/attivita/quantumcifris/	QuantumCifris	ok
+/attivita/seminari	angular-route,local-build,rendered-link,source-sitemap	page	Seminari	200	/attivita/seminari/	Seminari	ok
+/attivita/trends22	angular-route,local-build,rendered-link,source-sitemap	page	De Cifris Trends22	200	/attivita/trends22/	De Cifris Trends22	ok
+/attivita/trends22bis	angular-route,local-build,rendered-link,source-sitemap	page	De Cifris Trends22 bis	200	/attivita/trends22bis/	De Cifris Trends22 bis	ok
+/attivita/trends23	angular-route,local-build,rendered-link,source-sitemap	page	De Cifris Trends23	200	/attivita/trends23/	De Cifris Trends23	ok
+/attivita/trends24	angular-route,local-build,rendered-link,source-sitemap	page	De Cifris Trends 2024	200	/attivita/trends24/	De Cifris Trends 2024	ok
+/attivita/trends25	angular-route,local-build,rendered-link	page	De Cifris Trends25	200	/attivita/trends25/	De Cifris Trends25	ok
+/attivita/y2y-blockchain	angular-route,local-build,rendered-link,source-sitemap	page	De Cifris Y2Y: Blockchain & Smart Contracts	200	/attivita/y2y-blockchain/	De Cifris Y2Y: Blockchain & Smart Contracts	ok
+/azienda	angular-route	redirect	/welcome/azienda	200	/azienda/	DeCifris home	review-redirect
+/aziende	angular-route	redirect	/welcome/azienda	200	/aziende/	DeCifris home	review-redirect
+/blockchain-smart-contract	rendered-link	review	confirm intended page or retire URL	200	/blockchain-smart-contract/	DeCifris home	review-intent
+/centotesi2008-2017	angular-route	redirect	/attivita/centotesi-2008-2017	200	/centotesi2008-2017/	DeCifris home	review-redirect
+/centotesi2014-2023	angular-route,rendered-link	redirect	/attivita/centotesi-2014-2023	200	/centotesi2014-2023/	DeCifris home	review-redirect
+/cifris/test	angular-route,local-build	page	GUAI CHI LEGGE	200	/cifris/test/	GUAI CHI LEGGE	ok
+/cifris23	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS23	200	/cifris23/	CIFRIS23	ok
+/cifris23/call-for-papers	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS23: Call for papers	200	/cifris23/call-for-papers/	CIFRIS23: Call for papers	ok
+/cifris23/call-for-workshops	angular-route,local-build,source-sitemap	page	CIFRIS23: Call for workshops	200	/cifris23/call-for-workshops/	CIFRIS23: Call for workshops	ok
+/cifris23/homeCifris23	angular-route	redirect	/cifris23	200	/cifris23/homeCifris23/	DeCifris home	review-redirect
+/cifris23/payment-result	angular-route,local-build	page	payment result	200	/cifris23/payment-result/	payment result	ok
+/cifris23/proceedings	angular-route,local-build,source-sitemap	page	CIFRIS23: Proceedings	200	/cifris23/proceedings/	CIFRIS23: Proceedings	ok
+/cifris23/program	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS23: Program	200	/cifris23/program/	CIFRIS23: Program	ok
+/cifris23/program-committee	angular-route,local-build,source-sitemap	page	CIFRIS23: Program committee	200	/cifris23/program-committee/	CIFRIS23: Program committee	ok
+/cifris23/registration	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS23: Registration	200	/cifris23/registration/	CIFRIS23: Registration	ok
+/cifris24	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS24	200	/cifris24/	CIFRIS24	ok
+/cifris24/call-for-papers	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS24: Call for papers	200	/cifris24/call-for-papers/	CIFRIS24: Call for papers	ok
+/cifris24/call-for-workshops	angular-route,local-build,source-sitemap	page	CIFRIS24: Call for workshops	200	/cifris24/call-for-workshops/	CIFRIS24: Call for workshops	ok
+/cifris24/cifriscloud24	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS24: CifrisCloud24	200	/cifris24/cifriscloud24/	CIFRIS24: CifrisCloud24	ok
+/cifris24/codemath24	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS24: Codemath24	200	/cifris24/codemath24/	CIFRIS24: Codemath24	ok
+/cifris24/cpsid24	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS24: CPSID24	200	/cifris24/cpsid24/	CIFRIS24: CPSID24	ok
+/cifris24/dinner	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS24: Social Dinner	200	/cifris24/dinner/	CIFRIS24: Social Dinner	ok
+/cifris24/fcir24	angular-route,local-build,rendered-link	page	CIFRIS24: FCR24	200	/cifris24/fcir24/	CIFRIS24: FCR24	ok
+/cifris24/fcr24	angular-route,source-sitemap	redirect	/cifris24/fcir24	200	/cifris24/fcr24/	DeCifris home	review-redirect
+/cifris24/homeCifris24	angular-route	redirect	/cifris24	200	/cifris24/homeCifris24/	DeCifris home	review-redirect
+/cifris24/institutional-session	angular-route,local-build,rendered-link	page	CIFRIS24: Institutional Session	200	/cifris24/institutional-session/	CIFRIS24: Institutional Session	ok
+/cifris24/ntc24	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS24: NTC24	200	/cifris24/ntc24/	CIFRIS24: NTC24	ok
+/cifris24/payment-result	angular-route,local-build	page	Payment result	200	/cifris24/payment-result/	Payment result	ok
+/cifris24/proceedings	angular-route,local-build,source-sitemap	page	CIFRIS24: Proceedings	200	/cifris24/proceedings/	CIFRIS24: Proceedings	ok
+/cifris24/program	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS24: Program	200	/cifris24/program/	CIFRIS24: Program	ok
+/cifris24/program-committee	angular-route,local-build,source-sitemap	page	CIFRIS24: Program Committee	200	/cifris24/program-committee/	CIFRIS24: Program Committee	ok
+/cifris24/qcifris24	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS24: QCifris24	200	/cifris24/qcifris24/	CIFRIS24: QCifris24	ok
+/cifris24/raipqc24	angular-route	redirect	/cifris24/readpqc24	200	/cifris24/raipqc24/	DeCifris home	review-redirect
+/cifris24/rapqc24	angular-route	redirect	/cifris24/readpqc24	200	/cifris24/rapqc24/	DeCifris home	review-redirect
+/cifris24/readpqc24	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS24: ReadPQC24	200	/cifris24/readpqc24/	CIFRIS24: ReadPQC24	ok
+/cifris24/registration	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS24: Registration	200	/cifris24/registration/	CIFRIS24: Registration	ok
+/cifris24/registration-details	angular-route,local-build	page	CIFRIS24: Registration	200	/cifris24/registration-details/	CIFRIS24: Registration	ok
+/cifris24/scientific-session	angular-route,local-build,rendered-link	page	CIFRIS24: Scientific Session	200	/cifris24/scientific-session/	CIFRIS24: Scientific Session	ok
+/cifris24/symcrypt24	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS24: Symcrypt24	200	/cifris24/symcrypt24/	CIFRIS24: Symcrypt24	ok
+/cifris24/tac24	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS24: TAC24	200	/cifris24/tac24/	CIFRIS24: TAC24	ok
+/cifris24/venue	angular-route,local-build,source-sitemap	page	CIFRIS24: Venue	200	/cifris24/venue/	CIFRIS24: Venue	ok
+/cifris24/workshops	angular-route,local-build,source-sitemap	page	CIFRIS24:Workshops	200	/cifris24/workshops/	CIFRIS24:Workshops	ok
+/cifris25	angular-route,local-build,rendered-link	page	CIFRIS25	200	/cifris25/	CIFRIS25	ok
+/cifris25/ReAdPQC25	angular-route,local-build,rendered-link	page	CIFRIS25: ReAdPQC25	200	/cifris25/ReAdPQC25/	CIFRIS25: ReAdPQC25	ok
+/cifris25/call-for-workshops	angular-route,local-build	page	CIFRIS25: Call for workshops	200	/cifris25/call-for-workshops/	CIFRIS25: Call for workshops	ok
+/cifris25/payment-result	angular-route,local-build	page	Payment result	200	/cifris25/payment-result/	Payment result	ok
+/cifris25/proceedings	angular-route,local-build	page	CIFRIS25: Proceedings	200	/cifris25/proceedings/	CIFRIS25: Proceedings	ok
+/cifris25/program	angular-route,local-build,rendered-link	page	CIFRIS25: Program	200	/cifris25/program/	CIFRIS25: Program	ok
+/cifris25/program-committee	angular-route,local-build	page	CIFRIS25: Program Committee	200	/cifris25/program-committee/	CIFRIS25: Program Committee	ok
+/cifris25/registration	angular-route,local-build	page	CIFRIS25: Registration	200	/cifris25/registration/	CIFRIS25: Registration	ok
+/cifris25/venue	angular-route,local-build	page	CIFRIS25: Venue	200	/cifris25/venue/	CIFRIS25: Venue	ok
+/cifris25/workshops	angular-route,local-build,rendered-link	page	CIFRIS25: Workshops	200	/cifris25/workshops/	CIFRIS25: Workshops	ok
+/cifris26	angular-route,local-build,rendered-link	page	CIFRIS26	200	/cifris26/	CIFRIS26	ok
+/cifris26/call-for-workshops	angular-route,local-build	page	CIFRIS26: Call for workshops	200	/cifris26/call-for-workshops/	CIFRIS26: Call for workshops	ok
+/cifris26/payment-result	angular-route,local-build	page	Payment result	200	/cifris26/payment-result/	Payment result	ok
+/cifris26/proceedings	angular-route,local-build,rendered-link	page	CIFRIS26: Proceedings	200	/cifris26/proceedings/	CIFRIS26: Proceedings	ok
+/cifris26/program	angular-route,local-build,rendered-link	page	CIFRIS26: Program	200	/cifris26/program/	CIFRIS26: Program	ok
+/cifris26/program-committee	angular-route,local-build	page	CIFRIS26: Program Committee	200	/cifris26/program-committee/	CIFRIS26: Program Committee	ok
+/cifris26/registration	angular-route,local-build,rendered-link	page	CIFRIS26: Registration	200	/cifris26/registration/	CIFRIS26: Registration	ok
+/cifris26/venue	angular-route,local-build,rendered-link	page	CIFRIS26: Venue	200	/cifris26/venue/	CIFRIS26: Venue	ok
+/cifris26/workshops	angular-route,local-build,rendered-link	page	CIFRIS26: Workshops	200	/cifris26/workshops/	CIFRIS26: Workshops	ok
+/cifrisChain	angular-route	redirect	/attivita/cifrischain	200	/cifrisChain/	DeCifris home	review-redirect
+/cifrisCloud	angular-route	redirect	/attivita/cifriscloud	200	/cifrisCloud/	DeCifris home	review-redirect
+/combinatorics24	angular-route,local-build,source-sitemap	page	Combinatorics24	200	/combinatorics24/	Combinatorics24	ok
+/contatti	angular-route,local-build,rendered-link,source-sitemap	page	Contatti	200	/contatti/	Contatti	ok
+/convegnoUmi	rendered-link	review	confirm intended page or retire URL	200	/convegnoUmi/	DeCifris home	review-intent
+/cookie-policy	angular-route,local-build,rendered-link,source-sitemap	page	Cookie policy	200	/cookie-policy/	Cookie policy	ok
+/cryptowars/2011/classica	angular-route	redirect	/attivita/cryptowars/2011/classica	200	/cryptowars/2011/classica/	DeCifris home	review-redirect
+/cryptowars/2011/pubblica	angular-route	redirect	/attivita/cryptowars/2011/pubblica	200	/cryptowars/2011/pubblica/	DeCifris home	review-redirect
+/cryptowars/2011/simmetrica	angular-route	redirect	/attivita/cryptowars/2011/simmetrica	200	/cryptowars/2011/simmetrica/	DeCifris home	review-redirect
+/cryptowars/2018	rendered-link	review	confirm intended page or retire URL	200	/cryptowars/2018/	DeCifris home	review-intent
+/cryptowars/2019	rendered-link	review	confirm intended page or retire URL	200	/cryptowars/2019/	DeCifris home	review-intent
+/cryptowars/2020	rendered-link	review	confirm intended page or retire URL	200	/cryptowars/2020/	DeCifris home	review-intent
+/cryptowars/2021	rendered-link	review	confirm intended page or retire URL	200	/cryptowars/2021/	DeCifris home	review-intent
+/curiosi	angular-route	redirect	/welcome/curiosi	200	/curiosi/	DeCifris home	review-redirect
+/deCifrisAgora	angular-route	redirect	/attivita/decifris-agora	200	/deCifrisAgora/	DeCifris home	review-redirect
+/deCifrisAthesis	angular-route	redirect	/attivita/decifris-athesis	200	/deCifrisAthesis/	DeCifris home	review-redirect
+/deCifrisAugustaeTaurinorum	angular-route	redirect	/attivita/decifris-augustaeTaurinorum	200	/deCifrisAugustaeTaurinorum/	DeCifris home	review-redirect
+/deCifrisHistoriae	angular-route	redirect	/attivita/decifris-historiae	200	/deCifrisHistoriae/	DeCifris home	review-redirect
+/deCifrisMediolanensibus	angular-route	redirect	/attivita/decifris-mediolanensibus	200	/deCifrisMediolanensibus/	DeCifris home	review-redirect
+/deCifrisScholaLatina	angular-route	redirect	/attivita/decifris-scholaLatina	200	/deCifrisScholaLatina/	DeCifris home	review-redirect
+/dicono-di-noi	angular-route,rendered-link	redirect	/associazione/dicono-di-noi	200	/dicono-di-noi/	DeCifris home	review-redirect
+/didatticaUniversitaria	angular-route	redirect	/attivita/didattica-universitaria	200	/didatticaUniversitaria/	DeCifris home	review-redirect
+/eventiPubblici	angular-route	redirect	/attivita/eventiPubblici	200	/eventiPubblici/	DeCifris home	review-redirect
+/fcir25	angular-route,local-build,rendered-link	page	FCiR25	200	/fcir25/	FCiR25	ok
+/fcir26	angular-route,local-build,rendered-link	page	FCiR26				not-checked
+/gareCrittografiche	angular-route	redirect	/attivita/gare-crittografiche				not-checked
+/iniziativeDivulgative	angular-route	redirect	/attivita/iniziative-divulgative				not-checked
+/ixh24	angular-route,local-build,rendered-link	page	IXH24 - Italian XRPL Hackathon 2024				not-checked
+/ixh25	angular-route,local-build,rendered-link	page	IXH25 - Italian XRPL Hackathon 2024				not-checked
+/ixh26	angular-route,local-build,rendered-link,source-sitemap	page	IXH26 - Italian XRPL Hackathon 2026				not-checked
+/koine	angular-route,local-build,rendered-link,source-sitemap	page	De Cifris Koine				not-checked
+/koine/articles-and-volumes	angular-route,local-build,rendered-link,source-sitemap	page	Volumes				not-checked
+/koine/copyright-license	angular-route,local-build,source-sitemap	page	Copyright and licensing				not-checked
+/koine/editorial-board	angular-route,local-build,rendered-link,source-sitemap	page	Editorial board				not-checked
+/koine/license	angular-route	redirect	/koine/copyright-license				not-checked
+/koine/open-access-statement	angular-route,rendered-link	redirect	/koine/copyright-license				not-checked
+/koine/vol1	angular-route,koine-json,local-build,rendered-link,source-sitemap	page	Koine: Volume 1				not-checked
+/koine/vol1/I01	koine-json,local-build,prerender-input,rendered-link	page	Introduction to CIFRIS23 ACTA				not-checked
+/koine/vol1/I02	koine-json,local-build,prerender-input,rendered-link	page	Cryptography and its Applications in the Italian Scenario				not-checked
+/koine/vol1/I03	koine-json,local-build,prerender-input,rendered-link	page	La visione di De Cifris: partnership con le aziende leader				not-checked
+/koine/vol1/M01	koine-json,local-build,prerender-input,rendered-link	page	Introduction to the Scientific Session				not-checked
+/koine/vol1/M02	koine-json,local-build,prerender-input,rendered-link	page	Keynote: MPC in the head for isomorphisms and group action				not-checked
+/koine/vol1/M03	koine-json,local-build,prerender-input,rendered-link	page	Efficiency of SIDH-based signatures (yes, SIDH)				not-checked
+/koine/vol1/M04	koine-json,local-build,prerender-input,rendered-link	page	The group structure of elliptic curves over Z/NZ				not-checked
+/koine/vol1/M05	koine-json,local-build,prerender-input,rendered-link	page	FPGA And Software Acceleration of Multi-Scalar Multiplication: CycloneMSM				not-checked
+/koine/vol1/M06	koine-json,local-build,prerender-input,rendered-link	page	On Linear Codes with Random Multiplier Vectors and the Maximum Trace Dimension Property				not-checked
+/koine/vol1/M07	koine-json,local-build,prerender-input,rendered-link	page	On a generalization of the Deligne-Lustzig curve of Suzuki type and application to AG codes				not-checked
+/koine/vol1/M08	koine-json,local-build,prerender-input,rendered-link	page	On the Black-Box Impossibility of Multi-Designated Verifiers Signature Schemes from Ring Signature Schemes				not-checked
+/koine/vol1/M09	koine-json,local-build,prerender-input,rendered-link	page	Keynote: Threshold Implementations: Securing Implementations of Symmetric-Key Algorithms				not-checked
+/koine/vol1/M10	koine-json,local-build,prerender-input,rendered-link	page	Differential experiments using parallel alternative operations				not-checked
+/koine/vol1/M11	koine-json,local-build,prerender-input,rendered-link	page	Automatic Boomerang Attacks Search on Rijndael				not-checked
+/koine/vol1/M12	koine-json,local-build,prerender-input,rendered-link	page	Searchable Encryption with randomized ciphertext and randomized keyword search				not-checked
+/koine/vol1/M13	koine-json,local-build,prerender-input,rendered-link	page	Cryptanalysis of a privacy-preserving authentication scheme				not-checked
+/koine/vol1/M14	koine-json,rendered-link	page	mRLWE-CP-ABE: a revocable CP-ABE for post-quantum cryptography				not-checked
+/koine/vol1/W01	koine-json,local-build,prerender-input,rendered-link	page	Introduction to CBDCs Workshop				not-checked
+/koine/vol1/W02	koine-json,local-build,prerender-input,rendered-link	page	Crypto assets' value and investor protection				not-checked
+/koine/vol1/W03	koine-json,local-build,prerender-input,rendered-link	page	What consensus mechanism will be used for Central Bank Digital Currencies (CBDCs)?				not-checked
+/koine/vol1/W04	koine-json,local-build,prerender-input,rendered-link	page	CBDCs: A new generation of digital cash				not-checked
+/koine/vol1/W05	koine-json,local-build,prerender-input,rendered-link	page	Introduction to PQ Workshop				not-checked
+/koine/vol1/W06	koine-json,local-build,prerender-input,rendered-link	page	SQIsign The new herald of isogeny based crypto				not-checked
+/koine/vol1/W07	koine-json,local-build,prerender-input,rendered-link	page	No one should learn from these errors: surveying fault attack resistance of post quantum cryptosystems				not-checked
+/koine/vol1/W08	koine-json,local-build,prerender-input,rendered-link	page	MCE and MEDS: From Group Actions to Signatures				not-checked
+/koine/vol1/W09	koine-json,local-build,prerender-input,rendered-link	page	Signatures from Five-Pass Zero-Knowledge Protocols and the Curious Case of CROSS				not-checked
+/koine/vol1/W10	koine-json,local-build,prerender-input,rendered-link	page	Introduction to TAC Workshop				not-checked
+/koine/vol1/W11	koine-json,local-build,prerender-input,rendered-link	page	Royal Rumbles in Cryptography: the NIST PQC Competition				not-checked
+/koine/vol1/W12	koine-json,local-build,prerender-input,rendered-link	page	The Zencode Whitepaper				not-checked
+/koine/vol1/W13	koine-json,local-build,prerender-input,rendered-link	page	Multiparty Class Group Encryption and Applications to E-Voting				not-checked
+/koine/vol1/W14	koine-json,local-build,prerender-input,rendered-link	page	Vote App: Verifiable and Coercion-Resistant I-Voting				not-checked
+/koine/vol1/W15	koine-json,local-build,prerender-input,rendered-link	page	OpenABE Bindings for Kotlin				not-checked
+/koine/vol1/W16	koine-json,local-build,prerender-input,rendered-link	page	Cryptographic Enforcement of Attribute-based Access Control Policies				not-checked
+/koine/vol1/W17	koine-json,local-build,prerender-input,rendered-link	page	Privacy Preserving Machine Learning with TFHE				not-checked
+/koine/vol1/W18	koine-json,local-build,prerender-input,rendered-link	page	PPML: Machine learning on data you cannot see				not-checked
+/koine/vol1/W19	koine-json,local-build,prerender-input,rendered-link	page	Introduction to Group-based Workshop				not-checked
+/koine/vol1/W20	koine-json,local-build,prerender-input,rendered-link	page	The Impact of the Semidirect Discrete Logarithm Problem (SDLP) in Post-quantum Cryptography PQC				not-checked
+/koine/vol1/W21	koine-json,local-build,prerender-input,rendered-link	page	Some results on the groups generated by round functions				not-checked
+/koine/vol1/W22	koine-json,local-build,prerender-input,rendered-link	page	A method to cryptanalyze (Simultaneous) Conjugacy Search Problem in certain Metabelian Platform Groups				not-checked
+/koine/vol1/W23	koine-json,local-build,prerender-input,rendered-link	page	Linearization of hard problems via right-angled Artin groups				not-checked
+/koine/vol1/W24	koine-json,local-build,prerender-input,rendered-link	page	A “smart” application of homomorphic encryption				not-checked
+/koine/vol10	angular-route,koine-json,local-build,rendered-link	page	Koine: Volume 10				not-checked
+/koine/vol10/H00	koine-json,local-build,prerender-input,rendered-link	page	IXH24: Italian XRPL Hackathon 2024				not-checked
+/koine/vol10/H01	koine-json,local-build,prerender-input,rendered-link	page	x-Stake: Cross-Chain Staking and Shared Security on the XRP Ledger				not-checked
+/koine/vol10/H02	koine-json,local-build,prerender-input,rendered-link	page	decID: Decentralized Identity on XRPL				not-checked
+/koine/vol10/H03	koine-json,local-build,prerender-input,rendered-link	page	XRPL Secure Self Check-in				not-checked
+/koine/vol10/H04	koine-json,local-build,prerender-input,rendered-link	page	Federated Elections with Encrypted Local Tallies and Verifiable On-Chain Aggregation				not-checked
+/koine/vol10/H05	koine-json,local-build,prerender-input,rendered-link	page	Prototyping a Tamper-Proof Blockchain Voting System				not-checked
+/koine/vol10/H06	koine-json,local-build,prerender-input,rendered-link	page	IXH25: Italian XRPL Hackathon 2025				not-checked
+/koine/vol10/H07	koine-json,local-build,prerender-input,rendered-link	page	ZK-F1-AI: A Trustless Protocol for a Zero-Knowledge Racing Game via ZK-SNARKs and Commit-Reveal				not-checked
+/koine/vol10/H08	koine-json,local-build,prerender-input,rendered-link	page	We (try to) play the racing game F1-AI				not-checked
+/koine/vol10/H09	koine-json,local-build,prerender-input,rendered-link	page	PermiX: Building a Permissioned DEX on the XRP Ledger for Institutional Compliance				not-checked
+/koine/vol10/H10	koine-json,local-build,prerender-input,rendered-link	page	F1-AI πve: Privacy-Preserving F1 Racing with FHE and XRP Ledger				not-checked
+/koine/vol10/H11	koine-json,local-build,prerender-input,rendered-link	page	Agent Octopus: An A2A Protocol for Autonomous Energy Agents on XRPL				not-checked
+/koine/vol10/H12	koine-json,local-build,prerender-input,rendered-link	page	XTrace: XRPL Compliance & Visualization Suite				not-checked
+/koine/vol10/H13	koine-json,local-build,prerender-input,rendered-link	page	Dungeon Ledger: A Sustainable Play-to-Earn Model on the XRP Ledger				not-checked
+/koine/vol10/W00	koine-json,local-build,prerender-input,rendered-link	page	Cryptography at Work for Blockchain				not-checked
+/koine/vol10/W01	koine-json,local-build,prerender-input,rendered-link	page	Cryptographic Signatures and Cryptocurrency Custodians				not-checked
+/koine/vol10/W02	koine-json,local-build,prerender-input,rendered-link	page	Post-Quantum Signatures for Blockchain				not-checked
+/koine/vol10/W03	koine-json,local-build,prerender-input,rendered-link	page	Palliora: Share and train AI securely				not-checked
+/koine/vol10/W04	koine-json,local-build,prerender-input,rendered-link	page	Decrypting Ransomware: Cryptography to the Rescue				not-checked
+/koine/vol10/W05	koine-json,local-build,prerender-input,rendered-link	page	Cryptography at Work for Blockchain II				not-checked
+/koine/vol10/W06	koine-json,local-build,prerender-input,rendered-link	page	Impact of Quantum to Cybersecurity: The Case of Blockchain				not-checked
+/koine/vol10/W07	koine-json,local-build,prerender-input,rendered-link	page	Integrating Post-Quantum Cryptography into the XRP Ledger				not-checked
+/koine/vol10/W08	koine-json,local-build,prerender-input,rendered-link	page	Designing Partitioned Digital Asset Infrastructure				not-checked
+/koine/vol10/W09	koine-json,local-build,prerender-input,rendered-link	page	Applications of Cryptography at TCD Crypto Lab				not-checked
+/koine/vol10/W10	koine-json,local-build,prerender-input,rendered-link	page	Computable Contracts on Blockchain				not-checked
+/koine/vol10/W11	koine-json,local-build,prerender-input,rendered-link	page	Protecting Data Privacy in the AI Era: An Introduction to DESILO FHE				not-checked
+/koine/vol10/W12	koine-json,local-build,prerender-input,rendered-link	page	The Key to Not Losing Your Keys: A Security Overview of Multi-Signature and MPC/TSS Wallets for Crypto Asset Custody				not-checked
+/koine/vol2	angular-route,koine-json,local-build,rendered-link,source-sitemap	page	Koine: Volume 2				not-checked
+/koine/vol2/A01	koine-json,local-build,prerender-input,rendered-link	page	Non-interactive time-based proof-of-stake finality				not-checked
+/koine/vol2/A02	koine-json,local-build,prerender-input,rendered-link	page	Privacy-preserving Information Sharing				not-checked
+/koine/vol2/A03	koine-json,local-build,prerender-input,rendered-link	page	The Links between Machine Learning and Blockchain				not-checked
+/koine/vol2/A04	koine-json,local-build,prerender-input,rendered-link	page	Post-quantum cryptography and the automotive industry				not-checked
+/koine/vol2/A05	koine-json,local-build,prerender-input,rendered-link	page	Digital Identity - modern tools and perspectives				not-checked
+/koine/vol2/A06	koine-json,local-build,prerender-input,rendered-link	page	KDFs: an essential (and usually transparent) component of real-world applications				not-checked
+/koine/vol2/I01	koine-json,local-build,prerender-input,rendered-link	page	Introduction to De Cifris Seminars				not-checked
+/koine/vol2/R01	koine-json,local-build,prerender-input,rendered-link	page	Isogenies Demystified				not-checked
+/koine/vol2/R02	koine-json,local-build,prerender-input,rendered-link	page	Continued Fractions, Quadratic Fields, and Factoring: Some Computational Aspects				not-checked
+/koine/vol2/T01	koine-json,local-build,prerender-input,rendered-link	page	Group Theoretical Approach for Symmetric Encryption				not-checked
+/koine/vol2/T02	koine-json,local-build,prerender-input,rendered-link	page	An overview on cryptanalysis of ARX ciphers				not-checked
+/koine/vol2/T03	koine-json,local-build,prerender-input,rendered-link	page	Efficient cryptanalysis over multivariate Ore extensions				not-checked
+/koine/vol2/T04	koine-json,local-build,prerender-input,rendered-link	page	On adapting NTRU for Post-Quantum Public-Key Encryption				not-checked
+/koine/vol2/T05	koine-json,local-build,prerender-input,rendered-link	page	Cryptanalysis of round-reduced AES				not-checked
+/koine/vol2/T06	koine-json,local-build,prerender-input,rendered-link	page	Shift Invariance in Symmetric Cryptography				not-checked
+/koine/vol2/T07	koine-json,local-build,prerender-input,rendered-link	page	An investigation on integer factorization applied to public-key cryptography				not-checked
+/koine/vol3	angular-route,koine-json,local-build,rendered-link,source-sitemap	page	Koine: Volume 3				not-checked
+/koine/vol3/E01	koine-json,local-build,prerender-input,rendered-link	page	Francesci-Partenio, una disputa crittografica nel Rinascimento				not-checked
+/koine/vol3/E02	koine-json,local-build,prerender-input,rendered-link	page	Scrivere per nascondere, leggere per scoprire. Le origini della crittografia				not-checked
+/koine/vol3/E03	koine-json,local-build,prerender-input,rendered-link	page	Epigrafi cifrate nelle chiese antiche				not-checked
+/koine/vol3/E04	koine-json,local-build,prerender-input,rendered-link	page	Il nuovo framework giuridico cyber dell’Italia. La crittografia come strumento di cybersicurezza e per l’autonomia strategica nazionale				not-checked
+/koine/vol3/E05	koine-json,local-build,prerender-input,rendered-link	page	Human Rights Implications of Encryption Backdoors				not-checked
+/koine/vol3/I01	koine-json,local-build,prerender-input,rendered-link	page	Introduzione a De Cifris Eruditorum				not-checked
+/koine/vol4	angular-route,koine-json,local-build,rendered-link,source-sitemap	page	Koine: Volume 4				not-checked
+/koine/vol4/I01	koine-json,local-build,prerender-input,rendered-link	page	Introduction to Advanced Cryptographic Protocols				not-checked
+/koine/vol4/P01	koine-json,local-build,prerender-input,rendered-link	page	Secret Sharing with Arithmetic Properties				not-checked
+/koine/vol4/P02	koine-json,local-build,prerender-input,rendered-link	page	Vector Commitment and Verifiable Outsourced Storage				not-checked
+/koine/vol4/P03	koine-json,local-build,prerender-input,rendered-link	page	SNARKs				not-checked
+/koine/vol4/P04	koine-json,local-build,prerender-input,rendered-link	page	An Introduction to Key Establishment				not-checked
+/koine/vol4/P05	koine-json,local-build,prerender-input,rendered-link	page	Blockchains and Cryptography				not-checked
+/koine/vol4/P06	koine-json,local-build,prerender-input,rendered-link	page	An Introduction to Electronic Voting				not-checked
+/koine/vol5	angular-route,koine-json,local-build,rendered-link,source-sitemap	page	Koine: Volume 5				not-checked
+/koine/vol5/I00	koine-json,local-build,prerender-input,rendered-link	page	Introduction to CIFRIS24 ACTA				not-checked
+/koine/vol5/I01	koine-json,local-build,prerender-input,rendered-link	page	La De Cifris e la crittografia italiana				not-checked
+/koine/vol5/I02	koine-json,local-build,prerender-input,rendered-link	page	De Cifris Partners: Athilab				not-checked
+/koine/vol5/I03	koine-json,local-build,prerender-input,rendered-link	page	De Cifris Partners: Random Power				not-checked
+/koine/vol5/I04	koine-json,local-build,prerender-input,rendered-link	page	De Cifris Partners: ThinkQuantum				not-checked
+/koine/vol5/I05	koine-json,local-build,prerender-input,rendered-link	page	De Cifris Partners: FORKBOMB BV				not-checked
+/koine/vol5/I06	koine-json,local-build,prerender-input,rendered-link	page	De Cifris Partners: QTI SRL				not-checked
+/koine/vol5/S01	koine-json,local-build,prerender-input,rendered-link	page	Introduction to the scientific session				not-checked
+/koine/vol5/S02	koine-json,local-build,prerender-input,rendered-link	page	Quadratic-like balanced functions and permutations				not-checked
+/koine/vol5/S03	koine-json,local-build,prerender-input,rendered-link	page	On second-order derivatives of Boolean functions and cubic APN permutations in even dimension				not-checked
+/koine/vol5/S04	koine-json,local-build,prerender-input,rendered-link	page	20 Years of Leakage-Resilient Cryptography				not-checked
+/koine/vol5/S05	koine-json,local-build,prerender-input,rendered-link	page	Security Analysis of ZKPoK based on MQ problem in the Multi-Instance Setting				not-checked
+/koine/vol5/S06	koine-json,local-build,prerender-input,rendered-link	page	Algorithms for solving the matrix code equivalence problem				not-checked
+/koine/vol5/S07	koine-json,local-build,prerender-input,rendered-link	page	Smaller public-keys for MinRank-based schemes				not-checked
+/koine/vol5/S08	koine-json,local-build,prerender-input,rendered-link	page	Investigation of Metabelian Platform Groups for Protocols Based on the (Simultaneous) Conjugacy Search Problem				not-checked
+/koine/vol5/S09	koine-json,local-build,prerender-input,rendered-link	page	First-degree prime ideals of composite extensions				not-checked
+/koine/vol5/S10	koine-json,local-build,prerender-input,rendered-link	page	A Novel Related Nonce Attack for ECDSA .				not-checked
+/koine/vol5/S11	koine-json,local-build,prerender-input,rendered-link	page	Application of Mordell–Weil lattices with large kissing numbers to acceleration of multi-scalar multiplication on elliptic curves				not-checked
+/koine/vol5/S12	koine-json,local-build,prerender-input,rendered-link	page	Low Latency Designs: Primitives and Beyond				not-checked
+/koine/vol5/S13	koine-json,local-build,prerender-input,rendered-link	page	Polynomial functional encryption schemes				not-checked
+/koine/vol5/S14	koine-json,local-build,prerender-input,rendered-link	page	Modern Techniques in Somewhat Homomorphic Encryption Schemes				not-checked
+/koine/vol5/S15	koine-json,local-build,prerender-input,rendered-link	page	Dynamic-FROST: Schnorr Threshold Signatures with a Flexible Committee				not-checked
+/koine/vol5/S16	koine-json,local-build,prerender-input,rendered-link	page	BTLE: Atomic Swaps with Time-Lock Puzzles				not-checked
+/koine/vol5/W01	koine-json,local-build,prerender-input,rendered-link	page	Introduction to FCIR24				not-checked
+/koine/vol5/W02	koine-json,local-build,prerender-input,rendered-link	page	Secure and Private Data Sharing in Financial Institutions				not-checked
+/koine/vol5/W03	koine-json,local-build,prerender-input,rendered-link	page	Progress on Private Computation				not-checked
+/koine/vol5/W04	koine-json,local-build,prerender-input,rendered-link	page	Layer-2 Innovations for Scalable Blockchain Payments				not-checked
+/koine/vol5/W05	koine-json,local-build,prerender-input,rendered-link	page	Decentralized Finance: Labyrinth				not-checked
+/koine/vol5/W06	koine-json,local-build,prerender-input,rendered-link	page	Confidential Knowledge Graphs through Synthetic Augmentation				not-checked
+/koine/vol5/W07	koine-json,local-build,prerender-input,rendered-link	page	Introduction to ReAdPQC24				not-checked
+/koine/vol5/W08	koine-json,local-build,prerender-input,rendered-link	page	Post-Quantum Signatures from Secure Multiparty Computation				not-checked
+/koine/vol5/W09	koine-json,local-build,prerender-input,rendered-link	page	The Regular Multivariate Quadratic Problem				not-checked
+/koine/vol5/W10	koine-json,local-build,prerender-input,rendered-link	page	MinRank Attacks in Multivariate Cryptography				not-checked
+/koine/vol5/W11	koine-json,local-build,prerender-input,rendered-link	page	Attack-based encryption using isogenies .				not-checked
+/koine/vol5/W12	koine-json,local-build,prerender-input,rendered-link	page	SQIsign2D-West: The Fast, the Small, and the Safer				not-checked
+/koine/vol5/W13	koine-json,local-build,prerender-input,rendered-link	page	Introduction to TAC24				not-checked
+/koine/vol5/W14	koine-json,local-build,prerender-input,rendered-link	page	Transparency, trust and accountability				not-checked
+/koine/vol5/W15	koine-json,local-build,prerender-input,rendered-link	page	Lova - A Novel Framework for Verifying Mathematical Proofs with Incrementally Verifiable Computation				not-checked
+/koine/vol5/W16	koine-json,local-build,prerender-input,rendered-link	page	Work in progress: HASHTA AI - Share and compute securely your data				not-checked
+/koine/vol5/W17	koine-json,local-build,prerender-input,rendered-link	page	Work in progress: Extensible Decentralized Verifiable Refreshable Secret Sharing Protocol with Extension to Threshold Access Trees for Wallet Key Recovery				not-checked
+/koine/vol5/W18	koine-json,local-build,prerender-input,rendered-link	page	Improving Security and Performance of Cryptographic Access Control with Trusted Execution Environments				not-checked
+/koine/vol5/W19	koine-json,local-build,prerender-input,rendered-link	page	Work in progress: On the combination of Searchable Encryption and Attribute-based encryption				not-checked
+/koine/vol5/W20	koine-json,local-build,prerender-input,rendered-link	page	Introduction to NTC24				not-checked
+/koine/vol5/W21	koine-json,local-build,prerender-input,rendered-link	page	Hessians of elliptic curves: isogenies and graphs				not-checked
+/koine/vol5/W22	koine-json,local-build,prerender-input,rendered-link	page	Proving knowledge of an isogeny using modular polynomials				not-checked
+/koine/vol5/W23	koine-json,local-build,prerender-input,rendered-link	page	Lattices and Cryptography, an Overview				not-checked
+/koine/vol5/W24	koine-json,local-build,prerender-input,rendered-link	page	A Note on the P-values Distribution in NIST SP 800-22 Rev. 1a Statistical Tests				not-checked
+/koine/vol5/W25	koine-json,local-build,prerender-input,rendered-link	page	Introduction to CPSID24				not-checked
+/koine/vol5/W26	koine-json,local-build,prerender-input,rendered-link	page	Overview of the current digital identity standards				not-checked
+/koine/vol5/W27	koine-json,local-build,prerender-input,rendered-link	page	Current status of the implementation of the Italian Wallet and Trust Framework Infrastructure .				not-checked
+/koine/vol5/W28	koine-json,local-build,prerender-input,rendered-link	page	Challenges and upcoming standards				not-checked
+/koine/vol5/W29	koine-json,local-build,prerender-input,rendered-link	page	Introduction to SymCrypt				not-checked
+/koine/vol5/W30	koine-json,local-build,prerender-input,rendered-link	page	Stream ciphers encoded by difference equations over finite fields and their cryptanalysis				not-checked
+/koine/vol5/W31	koine-json,local-build,prerender-input,rendered-link	page	On the computation of the Walsh-Hadamard Transform using Binomial Trees				not-checked
+/koine/vol5/W32	koine-json,local-build,prerender-input,rendered-link	page	(Cryptographic) Functions for Designing Locally Recoverable Codes in Distributed Storag				not-checked
+/koine/vol5/W33	koine-json,local-build,prerender-input,rendered-link	page	Introduction to CodeMath24				not-checked
+/koine/vol5/W34	koine-json,local-build,prerender-input,rendered-link	page	Hadamard products of codes: an Additive Combinatorics perspective				not-checked
+/koine/vol5/W35	koine-json,local-build,prerender-input,rendered-link	page	Recent results on scattered spaces and MRD codes				not-checked
+/koine/vol5/W36	koine-json,local-build,prerender-input,rendered-link	page	Cryptographic uses of (polar) Grassmannians				not-checked
+/koine/vol5/W37	koine-json,local-build,prerender-input,rendered-link	page	CROSS: a signature scheme with restricted errors				not-checked
+/koine/vol5/W38	koine-json,local-build,prerender-input,rendered-link	page	Introduction to QCifris24				not-checked
+/koine/vol5/W39	koine-json,local-build,prerender-input,rendered-link	page	Introduction to Quantum Technologies for secure information from an Italian perspectives Abstract				not-checked
+/koine/vol5/W40	koine-json,local-build,prerender-input,rendered-link	page	Entanglement for quantum key distribution				not-checked
+/koine/vol5/W41	koine-json,local-build,prerender-input,rendered-link	page	Genuine random numbers from quantum processes for cybersecurity				not-checked
+/koine/vol5/W42	koine-json,local-build,prerender-input,rendered-link	page	National and European Quantum Communications for Enhanced Security: Technology and Applications				not-checked
+/koine/vol5/W43	koine-json,local-build,prerender-input,rendered-link	page	Introduction to CifrisCloud				not-checked
+/koine/vol5/W44	koine-json,local-build,prerender-input,rendered-link	page	ANTI-fraud: ABE Solutions				not-checked
+/koine/vol5/W45	koine-json,local-build,prerender-input,rendered-link	page	An introduction to Functional Encryption with multivariate algebra				not-checked
+/koine/vol5/W46	koine-json,local-build,prerender-input,rendered-link	page	Registered Functional Encryption				not-checked
+/koine/vol6	angular-route,koine-json,local-build,rendered-link	page	Koine: Volume 6				not-checked
+/koine/vol6/B00	koine-json,rendered-link	page	Introduzione				not-checked
+/koine/vol6/B01	koine-json,local-build,prerender-input,rendered-link	page	Bitcoin and Cryptography				not-checked
+/koine/vol6/B02	koine-json,local-build,prerender-input,rendered-link	page	Bitcoin oltre il denaro: genealogia tecnopolitica e ambivalenza della sovranità algoritmica				not-checked
+/koine/vol6/B03	koine-json,local-build,prerender-input,rendered-link	page	Scalare Bitcoin oltre la Timechain				not-checked
+/koine/vol6/B04	koine-json,local-build,prerender-input,rendered-link	page	Wallet e Indirizzi in Bitcoin				not-checked
+/koine/vol6/B05	koine-json,local-build,prerender-input,rendered-link	page	zk-STARKs and Computational Integrity in Bitcoin Layer-2 Protocols				not-checked
+/koine/vol6/B06	koine-json,local-build,prerender-input,rendered-link	page	Attacco ad un sottogruppo di chiavi del sistema Bitcoin				not-checked
+/koine/vol6/B07	koine-json,local-build,prerender-input,rendered-link	page	Le stablecoin nella rivoluzione silenziosa del denaro: tra geopolitica e finanza				not-checked
+/koine/vol6/B08	koine-json,local-build,prerender-input,rendered-link	page	Civic blockchain: tokenized economies supporting local communities				not-checked
+/koine/vol6/B09	koine-json,local-build,prerender-input,rendered-link	page	AI e Blockchain: convergenza tra intelligenza e fiducia digitale				not-checked
+/koine/vol6/B10	koine-json,local-build,prerender-input,rendered-link	page	La disciplina delle cripto-attività nell'UE e nel Regno Unito: Scenari Regolatori a Confronto				not-checked
+/koine/vol7	angular-route,koine-json,local-build,rendered-link	page	Koine: Volume 7				not-checked
+/koine/vol7/I00	koine-json,local-build,prerender-input,rendered-link	page	Introduction to CIFRIS25 ACTA				not-checked
+/koine/vol7/I01	koine-json,local-build,prerender-input,rendered-link	page	Presentazione di De Cifris				not-checked
+/koine/vol7/I02	koine-json,local-build,prerender-input,rendered-link	page	De Cifris Partners: DataKrypto				not-checked
+/koine/vol7/I03	koine-json,local-build,prerender-input,rendered-link	page	De Cifris Partners: E4				not-checked
+/koine/vol7/I04	koine-json,local-build,prerender-input,rendered-link	page	De Cifris Partners: ForkBomb				not-checked
+/koine/vol7/I05	koine-json,local-build,prerender-input,rendered-link	page	De Cifris Partners: Athilab				not-checked
+/koine/vol7/I06	koine-json,local-build,prerender-input,rendered-link	page	De Cifris Partners: RandomPower				not-checked
+/koine/vol7/S01	koine-json,local-build,prerender-input,rendered-link	page	Introduction to the Scientific Session				not-checked
+/koine/vol7/S02	koine-json,local-build,prerender-input,rendered-link	page	Post-Quantum Transition: Challenges and Opportunities				not-checked
+/koine/vol7/S03	koine-json,local-build,prerender-input,rendered-link	page	Oracle-Based Multistep Strategy for Solving Polynomial Systems Over Finite Fields and Algebraic Cryptanalysis of Aradi				not-checked
+/koine/vol7/S04	koine-json,local-build,prerender-input,rendered-link	page	AG codes for Secure and Private Information Retrieval				not-checked
+/koine/vol7/S05	koine-json,local-build,prerender-input,rendered-link	page	Construction and cryptanalysis of a multivariate CCZ scheme a.k.a. do not bring your Pesto to Switzerland!				not-checked
+/koine/vol7/S06	koine-json,local-build,prerender-input,rendered-link	page	Evolving Secret Sharing				not-checked
+/koine/vol7/S07	koine-json,local-build,prerender-input,rendered-link	page	The critical role of acceleration in Fully Homomorphic Encryption				not-checked
+/koine/vol7/S08	koine-json,local-build,prerender-input,rendered-link	page	Anonymous Access Schemes with Distributed User Registration				not-checked
+/koine/vol7/S09	koine-json,local-build,prerender-input,rendered-link	page	Using Homomorphic Encryption for Inner-Product Functional Encryption				not-checked
+/koine/vol7/S10	koine-json,local-build,prerender-input,rendered-link	page	A Revision of CROSS Security: Proofs and Attacks for Multi-Round Fiat-Shamir Signatures				not-checked
+/koine/vol7/S11	koine-json,local-build,prerender-input,rendered-link	page	Towards Post-Quantum Multi-Signatures from Group Actions Assumptions				not-checked
+/koine/vol7/S12	koine-json,local-build,prerender-input,rendered-link	page	Moving to a Post-Quantum World				not-checked
+/koine/vol7/S13	koine-json,local-build,prerender-input,rendered-link	page	Post-Quantum Cryptography in In-Vehicle networks				not-checked
+/koine/vol7/W01	koine-json,local-build,prerender-input,rendered-link	page	Introduction to TAC25				not-checked
+/koine/vol7/W02	koine-json,local-build,prerender-input,rendered-link	page	QKD (Re)Initialization via PQC: An Industrial Security-Usability Trade-off				not-checked
+/koine/vol7/W03	koine-json,local-build,prerender-input,rendered-link	page	Quantum Root-of-Trust: Post-Quantum Security for Industrial IoT				not-checked
+/koine/vol7/W04	koine-json,local-build,prerender-input,rendered-link	page	Verifiable Computation Outsourcing via Contracts over Blockchain Transactions				not-checked
+/koine/vol7/W05	koine-json,local-build,prerender-input,rendered-link	page	Transparent Verification in E-Voting				not-checked
+/koine/vol7/W06	koine-json,local-build,prerender-input,rendered-link	page	A Review of Post-Quantum E-Voting				not-checked
+/koine/vol7/W07	koine-json,local-build,prerender-input,rendered-link	page	Exploring blind signatures under FHE by combining GBFV and HAWK				not-checked
+/koine/vol7/W08	koine-json,local-build,prerender-input,rendered-link	page	Introduction to NTC25				not-checked
+/koine/vol7/W09	koine-json,local-build,prerender-input,rendered-link	page	Endomorphisms for Faster Cryptography on Elliptic Curves of Moderate CM Discriminants				not-checked
+/koine/vol7/W10	koine-json,local-build,prerender-input,rendered-link	page	High order elements in finite fields arising from recursive towers				not-checked
+/koine/vol7/W11	koine-json,local-build,prerender-input,rendered-link	page	One Reduction to Rule Them All. The Hidden Subgroup Problem and its role among post-quantum cryptographic assumptions				not-checked
+/koine/vol7/W12	koine-json,local-build,prerender-input,rendered-link	page	Algebraic Modelings of the Supersingular Isogeny Problem				not-checked
+/koine/vol7/W13	koine-json,local-build,prerender-input,rendered-link	page	Integer Factorization				not-checked
+/koine/vol7/W14	koine-json,local-build,prerender-input,rendered-link	page	Introduction to SymCode				not-checked
+/koine/vol7/W15	koine-json,local-build,prerender-input,rendered-link	page	Recent advancements on TI without on-line randomness				not-checked
+/koine/vol7/W16	koine-json,local-build,prerender-input,rendered-link	page	Decomposing Permutation Polynomials for More Efficient Hardware Implementations				not-checked
+/koine/vol7/W17	koine-json,local-build,prerender-input,rendered-link	page	Generic Partial Decryption as Feature Engineering for Neural Distinguishers				not-checked
+/koine/vol7/W18	koine-json,local-build,prerender-input,rendered-link	page	Coding Theory Meets Convex Geometry: The Etzion-Silberstein Conjecture				not-checked
+/koine/vol7/W19	koine-json,local-build,prerender-input,rendered-link	page	Optimal Rank-Metric Codes from Skew Polynomial Rings				not-checked
+/koine/vol7/W20	koine-json,local-build,prerender-input,rendered-link	page	Introduction to ReAdPQC25				not-checked
+/koine/vol7/W21	koine-json,local-build,prerender-input,rendered-link	page	Riding a BIKE with Failures (Without Falling Down Too Many Times)				not-checked
+/koine/vol7/W22	koine-json,local-build,prerender-input,rendered-link	page	SPECK: Signature from Permutation Equivalence of Codes and Kernels				not-checked
+/koine/vol7/W23	koine-json,local-build,prerender-input,rendered-link	page	Hilbert series and degrees of regularity of Oil and Vinegar and Mixed quadratic systems				not-checked
+/koine/vol7/W24	koine-json,local-build,prerender-input,rendered-link	page	Cycles in the generalized supersingular L-isogeny graph				not-checked
+/koine/vol7/W25	koine-json,local-build,prerender-input,rendered-link	page	On the Security of MQ-based ZKPoK in the Multi-Instance Setting				not-checked
+/koine/vol7/W26	koine-json,local-build,prerender-input,rendered-link	page	Introduction to PPSDI				not-checked
+/koine/vol7/W27	koine-json,local-build,prerender-input,rendered-link	page	Protocols, Privacy and Security in Digital Identity				not-checked
+/koine/vol7/W28	koine-json,local-build,prerender-input,rendered-link	page	State of the art: impact of eIDAS 2.0 for QTSPs, public and private sector				not-checked
+/koine/vol7/W29	koine-json,local-build,prerender-input,rendered-link	page	Security analysis of EUDI				not-checked
+/koine/vol7/W30	koine-json,local-build,prerender-input,rendered-link	page	Zero-Knowledge Proofs in Identity Wallets				not-checked
+/koine/vol7/W31	koine-json,local-build,prerender-input,rendered-link	page	Conformance, interoperability and security testing of EUDI				not-checked
+/koine/vol7/W32	koine-json,local-build,prerender-input,rendered-link	page	Interoperability Through Open Ecosystems				not-checked
+/koine/vol7/W33	koine-json,local-build,prerender-input,rendered-link	page	Introduction to HoC				not-checked
+/koine/vol7/W34	koine-json,local-build,prerender-input,rendered-link	page	Do mahematicians win the wars? The case of the Cambrai War				not-checked
+/koine/vol7/W35	koine-json,local-build,prerender-input,rendered-link	page	La cultura crittografica nel ducato di Urbino al tempo di Federico da Montefeltro: tra uso corrente, sperimentazione e sublimazione				not-checked
+/koine/vol7/W36	koine-json,local-build,prerender-input,rendered-link	page	Italy and Florence: Cryptography in the 15th Century				not-checked
+/koine/vol7/W37	koine-json,local-build,prerender-input,rendered-link	page	ENIGMA in ACTION				not-checked
+/koine/vol7/W38	koine-json,local-build,prerender-input,rendered-link	page	Introduction to QRNG				not-checked
+/koine/vol7/W39	koine-json,local-build,prerender-input,rendered-link	page	Cryptographic Standards for Random Number Generation				not-checked
+/koine/vol7/W40	koine-json,local-build,prerender-input,rendered-link	page	Introducing Quantum Random Number Generators: basic principles and technologies				not-checked
+/koine/vol7/W41	koine-json,local-build,prerender-input,rendered-link	page	QRNG-on-a-chip: exemplary embodiments				not-checked
+/koine/vol7/W42	koine-json,local-build,prerender-input,rendered-link	page	The Random Power FIPS compliant QRNG on-a-chip				not-checked
+/koine/vol7/W43	koine-json,local-build,prerender-input,rendered-link	page	Main Drives and Exemplary Applications of QRNGs				not-checked
+/koine/vol7/W44	koine-json,local-build,prerender-input,rendered-link	page	Introduction to BTC				not-checked
+/koine/vol7/W45	koine-json,local-build,prerender-input,rendered-link	page	A Journey into Bitcoin’s Cryptography: Introduction and Scalability				not-checked
+/koine/vol7/W46	koine-json,local-build,prerender-input,rendered-link	page	ZK and STARKs on Bitcoin: Consensus Hurdles and Layer 2 Possibilities				not-checked
+/koine/vol7/W47	koine-json,local-build,prerender-input,rendered-link	page	Schnorr Digital Signature Protocols				not-checked
+/koine/vol8	angular-route,koine-json,local-build,rendered-link	page	Koine: Volume 8				not-checked
+/koine/vol8/I01	koine-json,local-build,prerender-input,rendered-link	page	Introduction to FCiR25 ACTA				not-checked
+/koine/vol8/P01	koine-json,local-build,prerender-input,rendered-link	page	Welcome Address by Giuseppe Zingrillo				not-checked
+/koine/vol8/P02	koine-json,local-build,prerender-input,rendered-link	page	Balancing Privacy and Regulation in the Design of Future Digital Payment Systems				not-checked
+/koine/vol8/P03	koine-json,local-build,prerender-input,rendered-link	page	Achieving Digital Self-Custody				not-checked
+/koine/vol8/P04	koine-json,local-build,prerender-input,rendered-link	page	Cryptographic Algorithms and Protocols for Financial Data Analysis				not-checked
+/koine/vol8/P05	koine-json,local-build,prerender-input,rendered-link	page	Cloud Encryption and Blockchain				not-checked
+/koine/vol8/P06	koine-json,local-build,prerender-input,rendered-link	page	Decentralization: A Qualitative Survey of Node Operators				not-checked
+/koine/vol8/P07	koine-json,local-build,prerender-input,rendered-link	page	Regulation (EU) 2023/1114 (MiCAR): in light of the division of responsibilities established by Legislative Decree no. 129/2024 between Bank of Italy and Italian Companies and Stock Exchange Commission				not-checked
+/koine/vol8/P08	koine-json,local-build,prerender-input,rendered-link	page	SwissLedger and the Finternet Vision: The Path for a Unified Financial Ecosystem				not-checked
+/koine/vol8/P09	koine-json,local-build,prerender-input,rendered-link	page	How to (not) use symmetric polynomials for digital signature				not-checked
+/koine/vol8/P10	koine-json,local-build,prerender-input,rendered-link	page	Comparing Lattices and Bilinear Parings in CP-ABE				not-checked
+/koine/vol8/P11	koine-json,local-build,prerender-input,rendered-link	page	Credential Loss Problem for Cryptowallet Custodians				not-checked
+/koine/vol8/P12	koine-json,local-build,prerender-input,rendered-link	page	Designs, Efficiency and Decentralised Applications of Threshold Schnorr Signatures				not-checked
+/koine/vol8/P13	koine-json,local-build,prerender-input,rendered-link	page	Approaches to MEV in DAG-based DLTs: A Short Version				not-checked
+/koine/vol8/P14	koine-json,local-build,prerender-input,rendered-link	page	Classification of Attribute-Based Encryption Based on Access Policy Contents				not-checked
+/koine/vol8/P15	koine-json,local-build,prerender-input,rendered-link	page	Empirical Evidence of Spillover Effects Between Bank and Crypto Market Bubbles				not-checked
+/koine/vol8/P16	koine-json,local-build,prerender-input,rendered-link	page	Analysis of collision probability in Merkle trees in the Random Oracle Model				not-checked
+/koine/vol8/P17	koine-json,local-build,prerender-input,rendered-link	page	Rayls II: Fast, Private, and Compliant CBDCs				not-checked
+/koine/vol8/P18	koine-json,local-build,prerender-input,rendered-link	page	A Practical Encrypted Cloud for Financial Data				not-checked
+/mailing-list	angular-route,local-build,rendered-link,source-sitemap	page	Mailing list				not-checked
+/mathCifris	angular-route	redirect	/attivita/mathcifris				not-checked
+/modcrypto26	angular-route,rendered-link	redirect	/attivita/modcrypto26				not-checked
+/necromancer-baseline-missing-page	missing-page-control	error	HTTP 404				not-checked
+/notizie	angular-route,rendered-link	redirect	/associazione/notizie				not-checked
+/opera24	angular-route,local-build,source-sitemap	page	Opera24				not-checked
+/opportunita	angular-route,rendered-link	redirect	/attivita/opportunita				not-checked
+/organiDirettivi	angular-route	redirect	/associazione/organi-direttivi				not-checked
+/posizioniRicerca	angular-route	redirect	/associazione/posizioni-ricerca				not-checked
+/pqcifris25	angular-route,local-build,rendered-link	page	PQCifris25: migration to PQ cryptography				not-checked
+/quantumCifris	angular-route	redirect	/attivita/quantumcifris				not-checked
+/regolamento	angular-route	redirect	/associazione/regolamento				not-checked
+/scuola	angular-route	redirect	/welcome/insegnanti				not-checked
+/seminariLocali	rendered-link	review	confirm intended page or retire URL				not-checked
+/sessioni	angular-route	redirect	/attivita/sessioni				not-checked
+/sitemap	angular-route,local-build	page	Sitemap				not-checked
+/stageTirocini	angular-route	redirect	/associazione/stage-tirocini				not-checked
+/statuto	rendered-link	review	confirm intended page or retire URL				not-checked
+/studenti	angular-route	redirect	/welcome/studenti				not-checked
+/trends	rendered-link	review	confirm intended page or retire URL				not-checked
+/trends22	angular-route,rendered-link	redirect	/attivita/trends22				not-checked
+/trends22bis	angular-route,rendered-link	redirect	/attivita/trends22bis				not-checked
+/trends23	angular-route,rendered-link	redirect	/attivita/trends23				not-checked
+/trends24	angular-route,rendered-link	redirect	/attivita/trends24				not-checked
+/trends25	angular-route	redirect	/attivita/trends25				not-checked
+/w25	angular-route,local-build	page	w25				not-checked
+/wcc24	angular-route,local-build,source-sitemap	page	WCC24				not-checked
+/welcome	angular-route,local-build,rendered-link,source-sitemap	page	Welcome!				not-checked
+/welcome/azienda	angular-route,local-build,rendered-link,source-sitemap	page	Lavori in azienda?				not-checked
+/welcome/curiosi	angular-route,local-build,rendered-link,source-sitemap	page	Ti incuriosisce?				not-checked
+/welcome/insegnanti	angular-route,local-build,rendered-link,source-sitemap	page	Sei insegnante?				not-checked
+/welcome/ricercatori	angular-route,local-build,rendered-link,source-sitemap	page	Fai ricerca?				not-checked
+/welcome/studenti	angular-route,local-build,rendered-link,source-sitemap	page	Studi?				not-checked

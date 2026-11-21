@@ -8,6 +8,8 @@ Build a URL inventory from navigation, Angular routes, prerender inputs, the sit
 
 **Done when.** The team has a prioritised repair list, a baseline for later migration and an identified deployment it can restore.
 
+[Baseline, URL inventory and repair priorities](01-live-baseline/README.md). The remaining live checks and restore confirmation are recorded there.
+
 ## 1.2 - Fix navigation and legacy aliases
 
 Start with unwired pages, broken internal links and redirect targets. Compare the legacy Taurinorum and Schola Latina aliases with their declared route casing. Repair a small batch, then verify those URLs directly on the host. Use a permanent redirect where an obsolete URL has a genuine replacement.
