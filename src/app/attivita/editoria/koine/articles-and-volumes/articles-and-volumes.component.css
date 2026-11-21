@@ -1,51 +1,25 @@
-.collapsible {
-    border-bottom: 1px solid #ccc;
-    margin: 10px;
+.volume-index {
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0;
 }
 
-.collapsible-btn {
-    background-color: var(--cifris_blue);
-    color: white;
-    padding: 10px;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    font-size: 1.1em;
-    position: relative;
-	display: flex;
-    align-items: center;
+.volume-index li + li {
+    margin-top: 0.625rem;
+}
+
+.volume-index a {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-	user-select: none;
-}
-
-.collapsible-btn:hover {
-    background-color: var(--cifris_green)
-}
-
-.meta {
-    font-weight: normal;
-    font-size: 0.9em;
+    gap: 0.25rem 1rem;
+    padding: 0.625rem 0.75rem;
     color: white;
-    margin-left: auto; 
-    padding-right: 10px; 
-	width: 120px;
+    background: var(--cifris_blue);
 }
 
-b {
-    margin-right: auto; 
-	width: 350px;
-}
-
-.arrow {
-    float: right;
-    transition: transform 0.3s ease;
-}
-
-[open] .arrow {
-    transform: rotate(180deg);
-}
-
-.collapsible-content {
-    padding: 10px;
-    margin-top: 1em;
+.volume-index a:hover,
+.volume-index a:focus-visible {
+    color: var(--cifris_darkgray);
+    background: var(--cifris_azure);
 }
