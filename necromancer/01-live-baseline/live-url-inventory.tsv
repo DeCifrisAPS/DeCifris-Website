@@ -1,5 +1,5 @@
 path	sources	expected_kind	expected_title_or_target	http_status	final_url	observed_title_or_type	outcome
-/	angular-route,local-build,rendered-link,source-sitemap	page	DeCifris home	200	/	DeCifris home	ok
+/	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	DeCifris home	200	/	DeCifris home	ok
 /403	angular-route,local-build	page	Error 403	200	/403/	Error 403	ok
 /418	angular-route,local-build	page	Error 418	200	/418/	Error 418	ok
 /PQCifris	angular-route	redirect	/attivita/pqcifris	200	/PQCifris/	DeCifris home	review-redirect
@@ -625,30 +625,30 @@ path	sources	expected_kind	expected_title_or_target	http_status	final_url	observ
 /assets/pdf/statuto/statuto.pdf	download-file,rendered-download	download	file response	206	/assets/pdf/statuto/statuto.pdf	application/pdf	ok
 /associarsi	angular-route,rendered-link	redirect	/associazione/associarsi	200	/associarsi/	DeCifris home	review-redirect
 /associarsi-benemeriti	angular-route	redirect	/associazione/associarsi-benemeriti	200	/associarsi-benemeriti/	DeCifris home	review-redirect
-/associazione	angular-route,local-build,rendered-link,source-sitemap	page	Associazione	200	/associazione/	Associazione	ok
-/associazione/advisory-board	angular-route,local-build,rendered-link,source-sitemap	page	Advisory Board	200	/associazione/advisory-board/	Advisory Board	ok
+/associazione	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	Associazione	200	/associazione/	Associazione	ok
+/associazione/advisory-board	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	Advisory Board	200	/associazione/advisory-board/	Advisory Board	ok
 /associazione/affiliati-partner	angular-route,local-build,rendered-link	page	Affiliati e partner	200	/associazione/affiliati-partner/	Affiliati e partner	ok
-/associazione/associarsi	angular-route,local-build,rendered-link,source-sitemap	page	Associarsi	200	/associazione/associarsi/	Associarsi	ok
-/associazione/associarsi-benemeriti	angular-route,local-build,rendered-link,source-sitemap	page	Associarsi come Benemeriti	200	/associazione/associarsi-benemeriti/	Associarsi come Benemeriti	ok
-/associazione/dicono-di-noi	angular-route,local-build,rendered-link,source-sitemap	page	Dicono di noi	200	/associazione/dicono-di-noi/	Dicono di noi	ok
-/associazione/notizie	angular-route,local-build,rendered-link,source-sitemap	page	Notizie	200	/associazione/notizie/	Notizie	ok
-/associazione/obiettivi	angular-route,local-build,source-sitemap	page	Obiettivi	200	/associazione/obiettivi/	Obiettivi	ok
-/associazione/organi-direttivi	angular-route,local-build,rendered-link,source-sitemap	page	Organi Direttivi	200	/associazione/organi-direttivi/	Organi Direttivi	ok
-/associazione/posizioni-ricerca	angular-route,local-build,rendered-link,source-sitemap	page	Posizioni di ricerca	200	/associazione/posizioni-ricerca/	Posizioni di ricerca	ok
-/associazione/regolamento	angular-route,local-build,rendered-link,source-sitemap	page	Regolamento	200	/associazione/regolamento/	Regolamento	ok
+/associazione/associarsi	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	Associarsi	200	/associazione/associarsi/	Associarsi	ok
+/associazione/associarsi-benemeriti	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	Associarsi come Benemeriti	200	/associazione/associarsi-benemeriti/	Associarsi come Benemeriti	ok
+/associazione/dicono-di-noi	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	Dicono di noi	200	/associazione/dicono-di-noi/	Dicono di noi	ok
+/associazione/notizie	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	Notizie	200	/associazione/notizie/	Notizie	ok
+/associazione/obiettivi	angular-route,live-sitemap,local-build,source-sitemap	page	Obiettivi	200	/associazione/obiettivi/	Obiettivi	ok
+/associazione/organi-direttivi	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	Organi Direttivi	200	/associazione/organi-direttivi/	Organi Direttivi	ok
+/associazione/posizioni-ricerca	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	Posizioni di ricerca	200	/associazione/posizioni-ricerca/	Posizioni di ricerca	ok
+/associazione/regolamento	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	Regolamento	200	/associazione/regolamento/	Regolamento	ok
 /associazione/scholarships	angular-route,local-build,rendered-link	page	Scolarships	200	/associazione/scholarships/	Scolarships	ok
-/associazione/stage-tirocini	angular-route,local-build,rendered-link,source-sitemap	page	Stage e tirocini	200	/associazione/stage-tirocini/	Stage e tirocini	ok
-/associazione/statuto	angular-route,local-build,rendered-link,source-sitemap	page	Statuto	200	/associazione/statuto/	Statuto	ok
+/associazione/stage-tirocini	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	Stage e tirocini	200	/associazione/stage-tirocini/	Stage e tirocini	ok
+/associazione/statuto	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	Statuto	200	/associazione/statuto/	Statuto	ok
 /associazione/timeline	angular-route,local-build	page	TIMELINE	200	/associazione/timeline/	TIMELINE	ok
-/attivita	angular-route,local-build,rendered-link,source-sitemap	page	Attività	200	/attivita/	Attività	ok
-/attivita/centotesi-2008-2017	angular-route,local-build,rendered-link,source-sitemap	page	Cento Tesi 2008-2017	200	/attivita/centotesi-2008-2017/	Cento Tesi 2008-2017	ok
+/attivita	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	Attività	200	/attivita/	Attività	ok
+/attivita/centotesi-2008-2017	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	Cento Tesi 2008-2017	200	/attivita/centotesi-2008-2017/	Cento Tesi 2008-2017	ok
 /attivita/centotesi-2014-2023	angular-route	redirect	/attivita/centotesi-2017-2024	200	/attivita/centotesi-2014-2023/	Cento TEsi 2014-2023	review-redirect
-/attivita/centotesi-2017-2024	angular-route,local-build,rendered-link,source-sitemap	page	Cento Tesi 2017-2024	200	/attivita/centotesi-2017-2024/	Cento Tesi 2017-2024	ok
+/attivita/centotesi-2017-2024	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	Cento Tesi 2017-2024	200	/attivita/centotesi-2017-2024/	Cento Tesi 2017-2024	ok
 /attivita/cifris23	angular-route	redirect	/cifris23	200	/attivita/cifris23/	DeCifris home	review-redirect
 /attivita/cifris24	angular-route	redirect	/cifris24	200	/attivita/cifris24/	DeCifris home	review-redirect
-/attivita/cifrischain	angular-route,local-build,rendered-link,source-sitemap	page	CifrisChain	200	/attivita/cifrischain/	CifrisChain	ok
-/attivita/cifriscloud	angular-route,local-build,rendered-link,source-sitemap	page	CifrisCloud	200	/attivita/cifriscloud/	CifrisCloud	ok
-/attivita/corsi	angular-route,local-build,rendered-link,source-sitemap	page	Corsi	200	/attivita/corsi/	Corsi	ok
+/attivita/cifrischain	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	CifrisChain	200	/attivita/cifrischain/	CifrisChain	ok
+/attivita/cifriscloud	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	CifrisCloud	200	/attivita/cifriscloud/	CifrisCloud	ok
+/attivita/corsi	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	Corsi	200	/attivita/corsi/	Corsi	ok
 /attivita/cryptowars	angular-route,local-build,rendered-link	page	Cryptowars	200	/attivita/cryptowars/	Cryptowars	ok
 /attivita/cryptowars/2011	angular-route,local-build,rendered-link	page	Cryptowars 2011	200	/attivita/cryptowars/2011/	Cryptowars 2011	ok
 /attivita/cryptowars/2014	angular-route,local-build,rendered-link	page	Cryptowars 2014	200	/attivita/cryptowars/2014/	Cryptowars 2014	ok
@@ -659,77 +659,77 @@ path	sources	expected_kind	expected_title_or_target	http_status	final_url	observ
 /attivita/cryptowars/2020	angular-route,local-build,rendered-link	page	Cryptowars 2020	200	/attivita/cryptowars/2020/	Cryptowars 2020	ok
 /attivita/cryptowars/2021	angular-route,local-build,rendered-link	page	Cryptowars 2021	200	/attivita/cryptowars/2021/	Cryptowars 2021	ok
 /attivita/deCifris-scholalatina	rendered-link	review	confirm intended page or retire URL	200	/attivita/deCifris-scholalatina/	DeCifris home	review-intent
-/attivita/decifris-agora	angular-route,local-build,rendered-link,source-sitemap	page	De Cifris Agora	200	/attivita/decifris-agora/	De Cifris Agora	ok
-/attivita/decifris-athesis	angular-route,local-build,rendered-link,source-sitemap	page	De Cifris Athesis	200	/attivita/decifris-athesis/	De Cifris Athesis	ok
-/attivita/decifris-augustaeTaurinorum	source-sitemap	review	confirm intended page or retire URL	200	/attivita/decifris-augustaeTaurinorum/	De Cifris Augustae Taurinorum	review-intent
+/attivita/decifris-agora	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	De Cifris Agora	200	/attivita/decifris-agora/	De Cifris Agora	ok
+/attivita/decifris-athesis	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	De Cifris Athesis	200	/attivita/decifris-athesis/	De Cifris Athesis	ok
+/attivita/decifris-augustaeTaurinorum	live-sitemap,source-sitemap	review	confirm intended page or retire URL	200	/attivita/decifris-augustaeTaurinorum/	De Cifris Augustae Taurinorum	review-intent
 /attivita/decifris-augustaetaurinorum	angular-route,local-build,rendered-link	page	De Cifris Augustae Taurinorum	200	/attivita/decifris-augustaetaurinorum/	De Cifris Augustae Taurinorum	ok
-/attivita/decifris-historiae	angular-route,local-build,rendered-link,source-sitemap	page	De Cifris Historiae	200	/attivita/decifris-historiae/	De Cifris Historiae	ok
-/attivita/decifris-mediolanensibus	angular-route,local-build,rendered-link,source-sitemap	page	De Cifris Schola Mediolanensibus	200	/attivita/decifris-mediolanensibus/	De Cifris Schola Mediolanensibus	ok
-/attivita/decifris-scholaLatina	source-sitemap	review	confirm intended page or retire URL	200	/attivita/decifris-scholaLatina/	De Cifris Schola Latina	review-intent
+/attivita/decifris-historiae	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	De Cifris Historiae	200	/attivita/decifris-historiae/	De Cifris Historiae	ok
+/attivita/decifris-mediolanensibus	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	De Cifris Schola Mediolanensibus	200	/attivita/decifris-mediolanensibus/	De Cifris Schola Mediolanensibus	ok
+/attivita/decifris-scholaLatina	live-sitemap,source-sitemap	review	confirm intended page or retire URL	200	/attivita/decifris-scholaLatina/	De Cifris Schola Latina	review-intent
 /attivita/decifris-scholalatina	angular-route,local-build	page	De Cifris Schola Latina	200	/attivita/decifris-scholalatina/	De Cifris Schola Latina	ok
-/attivita/didattica-universitaria	angular-route,local-build,source-sitemap	page	Didattica universitaria	200	/attivita/didattica-universitaria/	Didattica universitaria	ok
-/attivita/editoria	angular-route,local-build,rendered-link,source-sitemap	page	Editoria	200	/attivita/editoria/	Editoria	ok
-/attivita/eruditorum	angular-route,local-build,rendered-link,source-sitemap	page	De Cifris Eruditorum	200	/attivita/eruditorum/	De Cifris Eruditorum	ok
-/attivita/eventi	angular-route,local-build,rendered-link,source-sitemap	page	De Cifris: eventi	200	/attivita/eventi/	De Cifris: eventi	ok
+/attivita/didattica-universitaria	angular-route,live-sitemap,local-build,source-sitemap	page	Didattica universitaria	200	/attivita/didattica-universitaria/	Didattica universitaria	ok
+/attivita/editoria	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	Editoria	200	/attivita/editoria/	Editoria	ok
+/attivita/eruditorum	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	De Cifris Eruditorum	200	/attivita/eruditorum/	De Cifris Eruditorum	ok
+/attivita/eventi	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	De Cifris: eventi	200	/attivita/eventi/	De Cifris: eventi	ok
 /attivita/eventi/histo26	angular-route,local-build,rendered-link	page	HisTO26	200	/attivita/eventi/histo26/	HisTO26	ok
 /attivita/eventi/magic2026	angular-route,local-build,rendered-link	page	Magic 2026	200	/attivita/eventi/magic2026/	Magic 2026	ok
 /attivita/eventi/yamc	angular-route,local-build,rendered-link	page	YAMC 2026	200	/attivita/eventi/yamc/	YAMC 2026	ok
-/attivita/gare-crittografiche	angular-route,local-build,rendered-link,source-sitemap	page	DeCifris.it	200	/attivita/gare-crittografiche/	DeCifris.it	ok
-/attivita/iniziative-divulgative	angular-route,local-build,rendered-link,source-sitemap	page	Iniziative divulgative	200	/attivita/iniziative-divulgative/	Iniziative divulgative	ok
-/attivita/mathcifris	angular-route,local-build,rendered-link,source-sitemap	page	MathCifris	200	/attivita/mathcifris/	MathCifris	ok
+/attivita/gare-crittografiche	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	DeCifris.it	200	/attivita/gare-crittografiche/	DeCifris.it	ok
+/attivita/iniziative-divulgative	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	Iniziative divulgative	200	/attivita/iniziative-divulgative/	Iniziative divulgative	ok
+/attivita/mathcifris	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	MathCifris	200	/attivita/mathcifris/	MathCifris	ok
 /attivita/modcrypto26	angular-route,local-build,rendered-link	page	ModCrypto26: Crittografia Moderna 2026	200	/attivita/modcrypto26/	ModCrypto26: Crittografia Moderna 2026	ok
-/attivita/pqcifris	angular-route,local-build,rendered-link,source-sitemap	page	PQCifris	200	/attivita/pqcifris/	PQCifris	ok
+/attivita/pqcifris	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	PQCifris	200	/attivita/pqcifris/	PQCifris	ok
 /attivita/pqcifris-summer22	angular-route,local-build,rendered-link	page	Summer School 2022	200	/attivita/pqcifris-summer22/	Summer School 2022	ok
-/attivita/quantumcifris	angular-route,local-build,rendered-link,source-sitemap	page	QuantumCifris	200	/attivita/quantumcifris/	QuantumCifris	ok
-/attivita/seminari	angular-route,local-build,rendered-link,source-sitemap	page	Seminari	200	/attivita/seminari/	Seminari	ok
-/attivita/trends22	angular-route,local-build,rendered-link,source-sitemap	page	De Cifris Trends22	200	/attivita/trends22/	De Cifris Trends22	ok
-/attivita/trends22bis	angular-route,local-build,rendered-link,source-sitemap	page	De Cifris Trends22 bis	200	/attivita/trends22bis/	De Cifris Trends22 bis	ok
-/attivita/trends23	angular-route,local-build,rendered-link,source-sitemap	page	De Cifris Trends23	200	/attivita/trends23/	De Cifris Trends23	ok
-/attivita/trends24	angular-route,local-build,rendered-link,source-sitemap	page	De Cifris Trends 2024	200	/attivita/trends24/	De Cifris Trends 2024	ok
+/attivita/quantumcifris	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	QuantumCifris	200	/attivita/quantumcifris/	QuantumCifris	ok
+/attivita/seminari	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	Seminari	200	/attivita/seminari/	Seminari	ok
+/attivita/trends22	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	De Cifris Trends22	200	/attivita/trends22/	De Cifris Trends22	ok
+/attivita/trends22bis	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	De Cifris Trends22 bis	200	/attivita/trends22bis/	De Cifris Trends22 bis	ok
+/attivita/trends23	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	De Cifris Trends23	200	/attivita/trends23/	De Cifris Trends23	ok
+/attivita/trends24	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	De Cifris Trends 2024	200	/attivita/trends24/	De Cifris Trends 2024	ok
 /attivita/trends25	angular-route,local-build,rendered-link	page	De Cifris Trends25	200	/attivita/trends25/	De Cifris Trends25	ok
-/attivita/y2y-blockchain	angular-route,local-build,rendered-link,source-sitemap	page	De Cifris Y2Y: Blockchain & Smart Contracts	200	/attivita/y2y-blockchain/	De Cifris Y2Y: Blockchain & Smart Contracts	ok
+/attivita/y2y-blockchain	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	De Cifris Y2Y: Blockchain & Smart Contracts	200	/attivita/y2y-blockchain/	De Cifris Y2Y: Blockchain & Smart Contracts	ok
 /azienda	angular-route	redirect	/welcome/azienda	200	/azienda/	DeCifris home	review-redirect
 /aziende	angular-route	redirect	/welcome/azienda	200	/aziende/	DeCifris home	review-redirect
 /blockchain-smart-contract	rendered-link	review	confirm intended page or retire URL	200	/blockchain-smart-contract/	DeCifris home	review-intent
 /centotesi2008-2017	angular-route	redirect	/attivita/centotesi-2008-2017	200	/centotesi2008-2017/	DeCifris home	review-redirect
 /centotesi2014-2023	angular-route,rendered-link	redirect	/attivita/centotesi-2014-2023	200	/centotesi2014-2023/	DeCifris home	review-redirect
 /cifris/test	angular-route,local-build	page	GUAI CHI LEGGE	200	/cifris/test/	GUAI CHI LEGGE	ok
-/cifris23	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS23	200	/cifris23/	CIFRIS23	ok
-/cifris23/call-for-papers	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS23: Call for papers	200	/cifris23/call-for-papers/	CIFRIS23: Call for papers	ok
-/cifris23/call-for-workshops	angular-route,local-build,source-sitemap	page	CIFRIS23: Call for workshops	200	/cifris23/call-for-workshops/	CIFRIS23: Call for workshops	ok
+/cifris23	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	CIFRIS23	200	/cifris23/	CIFRIS23	ok
+/cifris23/call-for-papers	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	CIFRIS23: Call for papers	200	/cifris23/call-for-papers/	CIFRIS23: Call for papers	ok
+/cifris23/call-for-workshops	angular-route,live-sitemap,local-build,source-sitemap	page	CIFRIS23: Call for workshops	200	/cifris23/call-for-workshops/	CIFRIS23: Call for workshops	ok
 /cifris23/homeCifris23	angular-route	redirect	/cifris23	200	/cifris23/homeCifris23/	DeCifris home	review-redirect
 /cifris23/payment-result	angular-route,local-build	page	payment result	200	/cifris23/payment-result/	payment result	ok
-/cifris23/proceedings	angular-route,local-build,source-sitemap	page	CIFRIS23: Proceedings	200	/cifris23/proceedings/	CIFRIS23: Proceedings	ok
-/cifris23/program	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS23: Program	200	/cifris23/program/	CIFRIS23: Program	ok
-/cifris23/program-committee	angular-route,local-build,source-sitemap	page	CIFRIS23: Program committee	200	/cifris23/program-committee/	CIFRIS23: Program committee	ok
-/cifris23/registration	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS23: Registration	200	/cifris23/registration/	CIFRIS23: Registration	ok
-/cifris24	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS24	200	/cifris24/	CIFRIS24	ok
-/cifris24/call-for-papers	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS24: Call for papers	200	/cifris24/call-for-papers/	CIFRIS24: Call for papers	ok
-/cifris24/call-for-workshops	angular-route,local-build,source-sitemap	page	CIFRIS24: Call for workshops	200	/cifris24/call-for-workshops/	CIFRIS24: Call for workshops	ok
-/cifris24/cifriscloud24	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS24: CifrisCloud24	200	/cifris24/cifriscloud24/	CIFRIS24: CifrisCloud24	ok
-/cifris24/codemath24	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS24: Codemath24	200	/cifris24/codemath24/	CIFRIS24: Codemath24	ok
-/cifris24/cpsid24	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS24: CPSID24	200	/cifris24/cpsid24/	CIFRIS24: CPSID24	ok
-/cifris24/dinner	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS24: Social Dinner	200	/cifris24/dinner/	CIFRIS24: Social Dinner	ok
+/cifris23/proceedings	angular-route,live-sitemap,local-build,source-sitemap	page	CIFRIS23: Proceedings	200	/cifris23/proceedings/	CIFRIS23: Proceedings	ok
+/cifris23/program	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	CIFRIS23: Program	200	/cifris23/program/	CIFRIS23: Program	ok
+/cifris23/program-committee	angular-route,live-sitemap,local-build,source-sitemap	page	CIFRIS23: Program committee	200	/cifris23/program-committee/	CIFRIS23: Program committee	ok
+/cifris23/registration	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	CIFRIS23: Registration	200	/cifris23/registration/	CIFRIS23: Registration	ok
+/cifris24	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	CIFRIS24	200	/cifris24/	CIFRIS24	ok
+/cifris24/call-for-papers	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	CIFRIS24: Call for papers	200	/cifris24/call-for-papers/	CIFRIS24: Call for papers	ok
+/cifris24/call-for-workshops	angular-route,live-sitemap,local-build,source-sitemap	page	CIFRIS24: Call for workshops	200	/cifris24/call-for-workshops/	CIFRIS24: Call for workshops	ok
+/cifris24/cifriscloud24	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	CIFRIS24: CifrisCloud24	200	/cifris24/cifriscloud24/	CIFRIS24: CifrisCloud24	ok
+/cifris24/codemath24	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	CIFRIS24: Codemath24	200	/cifris24/codemath24/	CIFRIS24: Codemath24	ok
+/cifris24/cpsid24	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	CIFRIS24: CPSID24	200	/cifris24/cpsid24/	CIFRIS24: CPSID24	ok
+/cifris24/dinner	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	CIFRIS24: Social Dinner	200	/cifris24/dinner/	CIFRIS24: Social Dinner	ok
 /cifris24/fcir24	angular-route,local-build,rendered-link	page	CIFRIS24: FCR24	200	/cifris24/fcir24/	CIFRIS24: FCR24	ok
-/cifris24/fcr24	angular-route,source-sitemap	redirect	/cifris24/fcir24	200	/cifris24/fcr24/	DeCifris home	review-redirect
+/cifris24/fcr24	angular-route,live-sitemap,source-sitemap	redirect	/cifris24/fcir24	200	/cifris24/fcr24/	DeCifris home	review-redirect
 /cifris24/homeCifris24	angular-route	redirect	/cifris24	200	/cifris24/homeCifris24/	DeCifris home	review-redirect
 /cifris24/institutional-session	angular-route,local-build,rendered-link	page	CIFRIS24: Institutional Session	200	/cifris24/institutional-session/	CIFRIS24: Institutional Session	ok
-/cifris24/ntc24	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS24: NTC24	200	/cifris24/ntc24/	CIFRIS24: NTC24	ok
+/cifris24/ntc24	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	CIFRIS24: NTC24	200	/cifris24/ntc24/	CIFRIS24: NTC24	ok
 /cifris24/payment-result	angular-route,local-build	page	Payment result	200	/cifris24/payment-result/	Payment result	ok
-/cifris24/proceedings	angular-route,local-build,source-sitemap	page	CIFRIS24: Proceedings	200	/cifris24/proceedings/	CIFRIS24: Proceedings	ok
-/cifris24/program	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS24: Program	200	/cifris24/program/	CIFRIS24: Program	ok
-/cifris24/program-committee	angular-route,local-build,source-sitemap	page	CIFRIS24: Program Committee	200	/cifris24/program-committee/	CIFRIS24: Program Committee	ok
-/cifris24/qcifris24	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS24: QCifris24	200	/cifris24/qcifris24/	CIFRIS24: QCifris24	ok
+/cifris24/proceedings	angular-route,live-sitemap,local-build,source-sitemap	page	CIFRIS24: Proceedings	200	/cifris24/proceedings/	CIFRIS24: Proceedings	ok
+/cifris24/program	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	CIFRIS24: Program	200	/cifris24/program/	CIFRIS24: Program	ok
+/cifris24/program-committee	angular-route,live-sitemap,local-build,source-sitemap	page	CIFRIS24: Program Committee	200	/cifris24/program-committee/	CIFRIS24: Program Committee	ok
+/cifris24/qcifris24	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	CIFRIS24: QCifris24	200	/cifris24/qcifris24/	CIFRIS24: QCifris24	ok
 /cifris24/raipqc24	angular-route	redirect	/cifris24/readpqc24	200	/cifris24/raipqc24/	DeCifris home	review-redirect
 /cifris24/rapqc24	angular-route	redirect	/cifris24/readpqc24	200	/cifris24/rapqc24/	DeCifris home	review-redirect
-/cifris24/readpqc24	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS24: ReadPQC24	200	/cifris24/readpqc24/	CIFRIS24: ReadPQC24	ok
-/cifris24/registration	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS24: Registration	200	/cifris24/registration/	CIFRIS24: Registration	ok
+/cifris24/readpqc24	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	CIFRIS24: ReadPQC24	200	/cifris24/readpqc24/	CIFRIS24: ReadPQC24	ok
+/cifris24/registration	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	CIFRIS24: Registration	200	/cifris24/registration/	CIFRIS24: Registration	ok
 /cifris24/registration-details	angular-route,local-build	page	CIFRIS24: Registration	200	/cifris24/registration-details/	CIFRIS24: Registration	ok
 /cifris24/scientific-session	angular-route,local-build,rendered-link	page	CIFRIS24: Scientific Session	200	/cifris24/scientific-session/	CIFRIS24: Scientific Session	ok
-/cifris24/symcrypt24	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS24: Symcrypt24	200	/cifris24/symcrypt24/	CIFRIS24: Symcrypt24	ok
-/cifris24/tac24	angular-route,local-build,rendered-link,source-sitemap	page	CIFRIS24: TAC24	200	/cifris24/tac24/	CIFRIS24: TAC24	ok
-/cifris24/venue	angular-route,local-build,source-sitemap	page	CIFRIS24: Venue	200	/cifris24/venue/	CIFRIS24: Venue	ok
-/cifris24/workshops	angular-route,local-build,source-sitemap	page	CIFRIS24:Workshops	200	/cifris24/workshops/	CIFRIS24:Workshops	ok
+/cifris24/symcrypt24	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	CIFRIS24: Symcrypt24	200	/cifris24/symcrypt24/	CIFRIS24: Symcrypt24	ok
+/cifris24/tac24	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	CIFRIS24: TAC24	200	/cifris24/tac24/	CIFRIS24: TAC24	ok
+/cifris24/venue	angular-route,live-sitemap,local-build,source-sitemap	page	CIFRIS24: Venue	200	/cifris24/venue/	CIFRIS24: Venue	ok
+/cifris24/workshops	angular-route,live-sitemap,local-build,source-sitemap	page	CIFRIS24:Workshops	200	/cifris24/workshops/	CIFRIS24:Workshops	ok
 /cifris25	angular-route,local-build,rendered-link	page	CIFRIS25	200	/cifris25/	CIFRIS25	ok
 /cifris25/ReAdPQC25	angular-route,local-build,rendered-link	page	CIFRIS25: ReAdPQC25	200	/cifris25/ReAdPQC25/	CIFRIS25: ReAdPQC25	ok
 /cifris25/call-for-workshops	angular-route,local-build	page	CIFRIS25: Call for workshops	200	/cifris25/call-for-workshops/	CIFRIS25: Call for workshops	ok
@@ -751,10 +751,10 @@ path	sources	expected_kind	expected_title_or_target	http_status	final_url	observ
 /cifris26/workshops	angular-route,local-build,rendered-link	page	CIFRIS26: Workshops	200	/cifris26/workshops/	CIFRIS26: Workshops	ok
 /cifrisChain	angular-route	redirect	/attivita/cifrischain	200	/cifrisChain/	DeCifris home	review-redirect
 /cifrisCloud	angular-route	redirect	/attivita/cifriscloud	200	/cifrisCloud/	DeCifris home	review-redirect
-/combinatorics24	angular-route,local-build,source-sitemap	page	Combinatorics24	200	/combinatorics24/	Combinatorics24	ok
-/contatti	angular-route,local-build,rendered-link,source-sitemap	page	Contatti	200	/contatti/	Contatti	ok
+/combinatorics24	angular-route,live-sitemap,local-build,source-sitemap	page	Combinatorics24	200	/combinatorics24/	Combinatorics24	ok
+/contatti	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	Contatti	200	/contatti/	Contatti	ok
 /convegnoUmi	rendered-link	review	confirm intended page or retire URL	200	/convegnoUmi/	DeCifris home	review-intent
-/cookie-policy	angular-route,local-build,rendered-link,source-sitemap	page	Cookie policy	200	/cookie-policy/	Cookie policy	ok
+/cookie-policy	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	Cookie policy	200	/cookie-policy/	Cookie policy	ok
 /cryptowars/2011/classica	angular-route	redirect	/attivita/cryptowars/2011/classica	200	/cryptowars/2011/classica/	DeCifris home	review-redirect
 /cryptowars/2011/pubblica	angular-route	redirect	/attivita/cryptowars/2011/pubblica	200	/cryptowars/2011/pubblica/	DeCifris home	review-redirect
 /cryptowars/2011/simmetrica	angular-route	redirect	/attivita/cryptowars/2011/simmetrica	200	/cryptowars/2011/simmetrica/	DeCifris home	review-redirect
@@ -773,320 +773,320 @@ path	sources	expected_kind	expected_title_or_target	http_status	final_url	observ
 /didatticaUniversitaria	angular-route	redirect	/attivita/didattica-universitaria	200	/didatticaUniversitaria/	DeCifris home	review-redirect
 /eventiPubblici	angular-route	redirect	/attivita/eventiPubblici	200	/eventiPubblici/	DeCifris home	review-redirect
 /fcir25	angular-route,local-build,rendered-link	page	FCiR25	200	/fcir25/	FCiR25	ok
-/fcir26	angular-route,local-build,rendered-link	page	FCiR26				not-checked
-/gareCrittografiche	angular-route	redirect	/attivita/gare-crittografiche				not-checked
-/iniziativeDivulgative	angular-route	redirect	/attivita/iniziative-divulgative				not-checked
-/ixh24	angular-route,local-build,rendered-link	page	IXH24 - Italian XRPL Hackathon 2024				not-checked
-/ixh25	angular-route,local-build,rendered-link	page	IXH25 - Italian XRPL Hackathon 2024				not-checked
-/ixh26	angular-route,local-build,rendered-link,source-sitemap	page	IXH26 - Italian XRPL Hackathon 2026				not-checked
-/koine	angular-route,local-build,rendered-link,source-sitemap	page	De Cifris Koine				not-checked
-/koine/articles-and-volumes	angular-route,local-build,rendered-link,source-sitemap	page	Volumes				not-checked
-/koine/copyright-license	angular-route,local-build,source-sitemap	page	Copyright and licensing				not-checked
-/koine/editorial-board	angular-route,local-build,rendered-link,source-sitemap	page	Editorial board				not-checked
-/koine/license	angular-route	redirect	/koine/copyright-license				not-checked
-/koine/open-access-statement	angular-route,rendered-link	redirect	/koine/copyright-license				not-checked
-/koine/vol1	angular-route,koine-json,local-build,rendered-link,source-sitemap	page	Koine: Volume 1				not-checked
-/koine/vol1/I01	koine-json,local-build,prerender-input,rendered-link	page	Introduction to CIFRIS23 ACTA				not-checked
-/koine/vol1/I02	koine-json,local-build,prerender-input,rendered-link	page	Cryptography and its Applications in the Italian Scenario				not-checked
-/koine/vol1/I03	koine-json,local-build,prerender-input,rendered-link	page	La visione di De Cifris: partnership con le aziende leader				not-checked
-/koine/vol1/M01	koine-json,local-build,prerender-input,rendered-link	page	Introduction to the Scientific Session				not-checked
-/koine/vol1/M02	koine-json,local-build,prerender-input,rendered-link	page	Keynote: MPC in the head for isomorphisms and group action				not-checked
-/koine/vol1/M03	koine-json,local-build,prerender-input,rendered-link	page	Efficiency of SIDH-based signatures (yes, SIDH)				not-checked
-/koine/vol1/M04	koine-json,local-build,prerender-input,rendered-link	page	The group structure of elliptic curves over Z/NZ				not-checked
-/koine/vol1/M05	koine-json,local-build,prerender-input,rendered-link	page	FPGA And Software Acceleration of Multi-Scalar Multiplication: CycloneMSM				not-checked
-/koine/vol1/M06	koine-json,local-build,prerender-input,rendered-link	page	On Linear Codes with Random Multiplier Vectors and the Maximum Trace Dimension Property				not-checked
-/koine/vol1/M07	koine-json,local-build,prerender-input,rendered-link	page	On a generalization of the Deligne-Lustzig curve of Suzuki type and application to AG codes				not-checked
-/koine/vol1/M08	koine-json,local-build,prerender-input,rendered-link	page	On the Black-Box Impossibility of Multi-Designated Verifiers Signature Schemes from Ring Signature Schemes				not-checked
-/koine/vol1/M09	koine-json,local-build,prerender-input,rendered-link	page	Keynote: Threshold Implementations: Securing Implementations of Symmetric-Key Algorithms				not-checked
-/koine/vol1/M10	koine-json,local-build,prerender-input,rendered-link	page	Differential experiments using parallel alternative operations				not-checked
-/koine/vol1/M11	koine-json,local-build,prerender-input,rendered-link	page	Automatic Boomerang Attacks Search on Rijndael				not-checked
-/koine/vol1/M12	koine-json,local-build,prerender-input,rendered-link	page	Searchable Encryption with randomized ciphertext and randomized keyword search				not-checked
-/koine/vol1/M13	koine-json,local-build,prerender-input,rendered-link	page	Cryptanalysis of a privacy-preserving authentication scheme				not-checked
-/koine/vol1/M14	koine-json,rendered-link	page	mRLWE-CP-ABE: a revocable CP-ABE for post-quantum cryptography				not-checked
-/koine/vol1/W01	koine-json,local-build,prerender-input,rendered-link	page	Introduction to CBDCs Workshop				not-checked
-/koine/vol1/W02	koine-json,local-build,prerender-input,rendered-link	page	Crypto assets' value and investor protection				not-checked
-/koine/vol1/W03	koine-json,local-build,prerender-input,rendered-link	page	What consensus mechanism will be used for Central Bank Digital Currencies (CBDCs)?				not-checked
-/koine/vol1/W04	koine-json,local-build,prerender-input,rendered-link	page	CBDCs: A new generation of digital cash				not-checked
-/koine/vol1/W05	koine-json,local-build,prerender-input,rendered-link	page	Introduction to PQ Workshop				not-checked
-/koine/vol1/W06	koine-json,local-build,prerender-input,rendered-link	page	SQIsign The new herald of isogeny based crypto				not-checked
-/koine/vol1/W07	koine-json,local-build,prerender-input,rendered-link	page	No one should learn from these errors: surveying fault attack resistance of post quantum cryptosystems				not-checked
-/koine/vol1/W08	koine-json,local-build,prerender-input,rendered-link	page	MCE and MEDS: From Group Actions to Signatures				not-checked
-/koine/vol1/W09	koine-json,local-build,prerender-input,rendered-link	page	Signatures from Five-Pass Zero-Knowledge Protocols and the Curious Case of CROSS				not-checked
-/koine/vol1/W10	koine-json,local-build,prerender-input,rendered-link	page	Introduction to TAC Workshop				not-checked
-/koine/vol1/W11	koine-json,local-build,prerender-input,rendered-link	page	Royal Rumbles in Cryptography: the NIST PQC Competition				not-checked
-/koine/vol1/W12	koine-json,local-build,prerender-input,rendered-link	page	The Zencode Whitepaper				not-checked
-/koine/vol1/W13	koine-json,local-build,prerender-input,rendered-link	page	Multiparty Class Group Encryption and Applications to E-Voting				not-checked
-/koine/vol1/W14	koine-json,local-build,prerender-input,rendered-link	page	Vote App: Verifiable and Coercion-Resistant I-Voting				not-checked
-/koine/vol1/W15	koine-json,local-build,prerender-input,rendered-link	page	OpenABE Bindings for Kotlin				not-checked
-/koine/vol1/W16	koine-json,local-build,prerender-input,rendered-link	page	Cryptographic Enforcement of Attribute-based Access Control Policies				not-checked
-/koine/vol1/W17	koine-json,local-build,prerender-input,rendered-link	page	Privacy Preserving Machine Learning with TFHE				not-checked
-/koine/vol1/W18	koine-json,local-build,prerender-input,rendered-link	page	PPML: Machine learning on data you cannot see				not-checked
-/koine/vol1/W19	koine-json,local-build,prerender-input,rendered-link	page	Introduction to Group-based Workshop				not-checked
-/koine/vol1/W20	koine-json,local-build,prerender-input,rendered-link	page	The Impact of the Semidirect Discrete Logarithm Problem (SDLP) in Post-quantum Cryptography PQC				not-checked
-/koine/vol1/W21	koine-json,local-build,prerender-input,rendered-link	page	Some results on the groups generated by round functions				not-checked
-/koine/vol1/W22	koine-json,local-build,prerender-input,rendered-link	page	A method to cryptanalyze (Simultaneous) Conjugacy Search Problem in certain Metabelian Platform Groups				not-checked
-/koine/vol1/W23	koine-json,local-build,prerender-input,rendered-link	page	Linearization of hard problems via right-angled Artin groups				not-checked
-/koine/vol1/W24	koine-json,local-build,prerender-input,rendered-link	page	A “smart” application of homomorphic encryption				not-checked
-/koine/vol10	angular-route,koine-json,local-build,rendered-link	page	Koine: Volume 10				not-checked
-/koine/vol10/H00	koine-json,local-build,prerender-input,rendered-link	page	IXH24: Italian XRPL Hackathon 2024				not-checked
-/koine/vol10/H01	koine-json,local-build,prerender-input,rendered-link	page	x-Stake: Cross-Chain Staking and Shared Security on the XRP Ledger				not-checked
-/koine/vol10/H02	koine-json,local-build,prerender-input,rendered-link	page	decID: Decentralized Identity on XRPL				not-checked
-/koine/vol10/H03	koine-json,local-build,prerender-input,rendered-link	page	XRPL Secure Self Check-in				not-checked
-/koine/vol10/H04	koine-json,local-build,prerender-input,rendered-link	page	Federated Elections with Encrypted Local Tallies and Verifiable On-Chain Aggregation				not-checked
-/koine/vol10/H05	koine-json,local-build,prerender-input,rendered-link	page	Prototyping a Tamper-Proof Blockchain Voting System				not-checked
-/koine/vol10/H06	koine-json,local-build,prerender-input,rendered-link	page	IXH25: Italian XRPL Hackathon 2025				not-checked
-/koine/vol10/H07	koine-json,local-build,prerender-input,rendered-link	page	ZK-F1-AI: A Trustless Protocol for a Zero-Knowledge Racing Game via ZK-SNARKs and Commit-Reveal				not-checked
-/koine/vol10/H08	koine-json,local-build,prerender-input,rendered-link	page	We (try to) play the racing game F1-AI				not-checked
-/koine/vol10/H09	koine-json,local-build,prerender-input,rendered-link	page	PermiX: Building a Permissioned DEX on the XRP Ledger for Institutional Compliance				not-checked
-/koine/vol10/H10	koine-json,local-build,prerender-input,rendered-link	page	F1-AI πve: Privacy-Preserving F1 Racing with FHE and XRP Ledger				not-checked
-/koine/vol10/H11	koine-json,local-build,prerender-input,rendered-link	page	Agent Octopus: An A2A Protocol for Autonomous Energy Agents on XRPL				not-checked
-/koine/vol10/H12	koine-json,local-build,prerender-input,rendered-link	page	XTrace: XRPL Compliance & Visualization Suite				not-checked
-/koine/vol10/H13	koine-json,local-build,prerender-input,rendered-link	page	Dungeon Ledger: A Sustainable Play-to-Earn Model on the XRP Ledger				not-checked
-/koine/vol10/W00	koine-json,local-build,prerender-input,rendered-link	page	Cryptography at Work for Blockchain				not-checked
-/koine/vol10/W01	koine-json,local-build,prerender-input,rendered-link	page	Cryptographic Signatures and Cryptocurrency Custodians				not-checked
-/koine/vol10/W02	koine-json,local-build,prerender-input,rendered-link	page	Post-Quantum Signatures for Blockchain				not-checked
-/koine/vol10/W03	koine-json,local-build,prerender-input,rendered-link	page	Palliora: Share and train AI securely				not-checked
-/koine/vol10/W04	koine-json,local-build,prerender-input,rendered-link	page	Decrypting Ransomware: Cryptography to the Rescue				not-checked
-/koine/vol10/W05	koine-json,local-build,prerender-input,rendered-link	page	Cryptography at Work for Blockchain II				not-checked
-/koine/vol10/W06	koine-json,local-build,prerender-input,rendered-link	page	Impact of Quantum to Cybersecurity: The Case of Blockchain				not-checked
-/koine/vol10/W07	koine-json,local-build,prerender-input,rendered-link	page	Integrating Post-Quantum Cryptography into the XRP Ledger				not-checked
-/koine/vol10/W08	koine-json,local-build,prerender-input,rendered-link	page	Designing Partitioned Digital Asset Infrastructure				not-checked
-/koine/vol10/W09	koine-json,local-build,prerender-input,rendered-link	page	Applications of Cryptography at TCD Crypto Lab				not-checked
-/koine/vol10/W10	koine-json,local-build,prerender-input,rendered-link	page	Computable Contracts on Blockchain				not-checked
-/koine/vol10/W11	koine-json,local-build,prerender-input,rendered-link	page	Protecting Data Privacy in the AI Era: An Introduction to DESILO FHE				not-checked
-/koine/vol10/W12	koine-json,local-build,prerender-input,rendered-link	page	The Key to Not Losing Your Keys: A Security Overview of Multi-Signature and MPC/TSS Wallets for Crypto Asset Custody				not-checked
-/koine/vol2	angular-route,koine-json,local-build,rendered-link,source-sitemap	page	Koine: Volume 2				not-checked
-/koine/vol2/A01	koine-json,local-build,prerender-input,rendered-link	page	Non-interactive time-based proof-of-stake finality				not-checked
-/koine/vol2/A02	koine-json,local-build,prerender-input,rendered-link	page	Privacy-preserving Information Sharing				not-checked
-/koine/vol2/A03	koine-json,local-build,prerender-input,rendered-link	page	The Links between Machine Learning and Blockchain				not-checked
-/koine/vol2/A04	koine-json,local-build,prerender-input,rendered-link	page	Post-quantum cryptography and the automotive industry				not-checked
-/koine/vol2/A05	koine-json,local-build,prerender-input,rendered-link	page	Digital Identity - modern tools and perspectives				not-checked
-/koine/vol2/A06	koine-json,local-build,prerender-input,rendered-link	page	KDFs: an essential (and usually transparent) component of real-world applications				not-checked
-/koine/vol2/I01	koine-json,local-build,prerender-input,rendered-link	page	Introduction to De Cifris Seminars				not-checked
-/koine/vol2/R01	koine-json,local-build,prerender-input,rendered-link	page	Isogenies Demystified				not-checked
-/koine/vol2/R02	koine-json,local-build,prerender-input,rendered-link	page	Continued Fractions, Quadratic Fields, and Factoring: Some Computational Aspects				not-checked
-/koine/vol2/T01	koine-json,local-build,prerender-input,rendered-link	page	Group Theoretical Approach for Symmetric Encryption				not-checked
-/koine/vol2/T02	koine-json,local-build,prerender-input,rendered-link	page	An overview on cryptanalysis of ARX ciphers				not-checked
-/koine/vol2/T03	koine-json,local-build,prerender-input,rendered-link	page	Efficient cryptanalysis over multivariate Ore extensions				not-checked
-/koine/vol2/T04	koine-json,local-build,prerender-input,rendered-link	page	On adapting NTRU for Post-Quantum Public-Key Encryption				not-checked
-/koine/vol2/T05	koine-json,local-build,prerender-input,rendered-link	page	Cryptanalysis of round-reduced AES				not-checked
-/koine/vol2/T06	koine-json,local-build,prerender-input,rendered-link	page	Shift Invariance in Symmetric Cryptography				not-checked
-/koine/vol2/T07	koine-json,local-build,prerender-input,rendered-link	page	An investigation on integer factorization applied to public-key cryptography				not-checked
-/koine/vol3	angular-route,koine-json,local-build,rendered-link,source-sitemap	page	Koine: Volume 3				not-checked
-/koine/vol3/E01	koine-json,local-build,prerender-input,rendered-link	page	Francesci-Partenio, una disputa crittografica nel Rinascimento				not-checked
-/koine/vol3/E02	koine-json,local-build,prerender-input,rendered-link	page	Scrivere per nascondere, leggere per scoprire. Le origini della crittografia				not-checked
-/koine/vol3/E03	koine-json,local-build,prerender-input,rendered-link	page	Epigrafi cifrate nelle chiese antiche				not-checked
-/koine/vol3/E04	koine-json,local-build,prerender-input,rendered-link	page	Il nuovo framework giuridico cyber dell’Italia. La crittografia come strumento di cybersicurezza e per l’autonomia strategica nazionale				not-checked
-/koine/vol3/E05	koine-json,local-build,prerender-input,rendered-link	page	Human Rights Implications of Encryption Backdoors				not-checked
-/koine/vol3/I01	koine-json,local-build,prerender-input,rendered-link	page	Introduzione a De Cifris Eruditorum				not-checked
-/koine/vol4	angular-route,koine-json,local-build,rendered-link,source-sitemap	page	Koine: Volume 4				not-checked
-/koine/vol4/I01	koine-json,local-build,prerender-input,rendered-link	page	Introduction to Advanced Cryptographic Protocols				not-checked
-/koine/vol4/P01	koine-json,local-build,prerender-input,rendered-link	page	Secret Sharing with Arithmetic Properties				not-checked
-/koine/vol4/P02	koine-json,local-build,prerender-input,rendered-link	page	Vector Commitment and Verifiable Outsourced Storage				not-checked
-/koine/vol4/P03	koine-json,local-build,prerender-input,rendered-link	page	SNARKs				not-checked
-/koine/vol4/P04	koine-json,local-build,prerender-input,rendered-link	page	An Introduction to Key Establishment				not-checked
-/koine/vol4/P05	koine-json,local-build,prerender-input,rendered-link	page	Blockchains and Cryptography				not-checked
-/koine/vol4/P06	koine-json,local-build,prerender-input,rendered-link	page	An Introduction to Electronic Voting				not-checked
-/koine/vol5	angular-route,koine-json,local-build,rendered-link,source-sitemap	page	Koine: Volume 5				not-checked
-/koine/vol5/I00	koine-json,local-build,prerender-input,rendered-link	page	Introduction to CIFRIS24 ACTA				not-checked
-/koine/vol5/I01	koine-json,local-build,prerender-input,rendered-link	page	La De Cifris e la crittografia italiana				not-checked
-/koine/vol5/I02	koine-json,local-build,prerender-input,rendered-link	page	De Cifris Partners: Athilab				not-checked
-/koine/vol5/I03	koine-json,local-build,prerender-input,rendered-link	page	De Cifris Partners: Random Power				not-checked
-/koine/vol5/I04	koine-json,local-build,prerender-input,rendered-link	page	De Cifris Partners: ThinkQuantum				not-checked
-/koine/vol5/I05	koine-json,local-build,prerender-input,rendered-link	page	De Cifris Partners: FORKBOMB BV				not-checked
-/koine/vol5/I06	koine-json,local-build,prerender-input,rendered-link	page	De Cifris Partners: QTI SRL				not-checked
-/koine/vol5/S01	koine-json,local-build,prerender-input,rendered-link	page	Introduction to the scientific session				not-checked
-/koine/vol5/S02	koine-json,local-build,prerender-input,rendered-link	page	Quadratic-like balanced functions and permutations				not-checked
-/koine/vol5/S03	koine-json,local-build,prerender-input,rendered-link	page	On second-order derivatives of Boolean functions and cubic APN permutations in even dimension				not-checked
-/koine/vol5/S04	koine-json,local-build,prerender-input,rendered-link	page	20 Years of Leakage-Resilient Cryptography				not-checked
-/koine/vol5/S05	koine-json,local-build,prerender-input,rendered-link	page	Security Analysis of ZKPoK based on MQ problem in the Multi-Instance Setting				not-checked
-/koine/vol5/S06	koine-json,local-build,prerender-input,rendered-link	page	Algorithms for solving the matrix code equivalence problem				not-checked
-/koine/vol5/S07	koine-json,local-build,prerender-input,rendered-link	page	Smaller public-keys for MinRank-based schemes				not-checked
-/koine/vol5/S08	koine-json,local-build,prerender-input,rendered-link	page	Investigation of Metabelian Platform Groups for Protocols Based on the (Simultaneous) Conjugacy Search Problem				not-checked
-/koine/vol5/S09	koine-json,local-build,prerender-input,rendered-link	page	First-degree prime ideals of composite extensions				not-checked
-/koine/vol5/S10	koine-json,local-build,prerender-input,rendered-link	page	A Novel Related Nonce Attack for ECDSA .				not-checked
-/koine/vol5/S11	koine-json,local-build,prerender-input,rendered-link	page	Application of Mordell–Weil lattices with large kissing numbers to acceleration of multi-scalar multiplication on elliptic curves				not-checked
-/koine/vol5/S12	koine-json,local-build,prerender-input,rendered-link	page	Low Latency Designs: Primitives and Beyond				not-checked
-/koine/vol5/S13	koine-json,local-build,prerender-input,rendered-link	page	Polynomial functional encryption schemes				not-checked
-/koine/vol5/S14	koine-json,local-build,prerender-input,rendered-link	page	Modern Techniques in Somewhat Homomorphic Encryption Schemes				not-checked
-/koine/vol5/S15	koine-json,local-build,prerender-input,rendered-link	page	Dynamic-FROST: Schnorr Threshold Signatures with a Flexible Committee				not-checked
-/koine/vol5/S16	koine-json,local-build,prerender-input,rendered-link	page	BTLE: Atomic Swaps with Time-Lock Puzzles				not-checked
-/koine/vol5/W01	koine-json,local-build,prerender-input,rendered-link	page	Introduction to FCIR24				not-checked
-/koine/vol5/W02	koine-json,local-build,prerender-input,rendered-link	page	Secure and Private Data Sharing in Financial Institutions				not-checked
-/koine/vol5/W03	koine-json,local-build,prerender-input,rendered-link	page	Progress on Private Computation				not-checked
-/koine/vol5/W04	koine-json,local-build,prerender-input,rendered-link	page	Layer-2 Innovations for Scalable Blockchain Payments				not-checked
-/koine/vol5/W05	koine-json,local-build,prerender-input,rendered-link	page	Decentralized Finance: Labyrinth				not-checked
-/koine/vol5/W06	koine-json,local-build,prerender-input,rendered-link	page	Confidential Knowledge Graphs through Synthetic Augmentation				not-checked
-/koine/vol5/W07	koine-json,local-build,prerender-input,rendered-link	page	Introduction to ReAdPQC24				not-checked
-/koine/vol5/W08	koine-json,local-build,prerender-input,rendered-link	page	Post-Quantum Signatures from Secure Multiparty Computation				not-checked
-/koine/vol5/W09	koine-json,local-build,prerender-input,rendered-link	page	The Regular Multivariate Quadratic Problem				not-checked
-/koine/vol5/W10	koine-json,local-build,prerender-input,rendered-link	page	MinRank Attacks in Multivariate Cryptography				not-checked
-/koine/vol5/W11	koine-json,local-build,prerender-input,rendered-link	page	Attack-based encryption using isogenies .				not-checked
-/koine/vol5/W12	koine-json,local-build,prerender-input,rendered-link	page	SQIsign2D-West: The Fast, the Small, and the Safer				not-checked
-/koine/vol5/W13	koine-json,local-build,prerender-input,rendered-link	page	Introduction to TAC24				not-checked
-/koine/vol5/W14	koine-json,local-build,prerender-input,rendered-link	page	Transparency, trust and accountability				not-checked
-/koine/vol5/W15	koine-json,local-build,prerender-input,rendered-link	page	Lova - A Novel Framework for Verifying Mathematical Proofs with Incrementally Verifiable Computation				not-checked
-/koine/vol5/W16	koine-json,local-build,prerender-input,rendered-link	page	Work in progress: HASHTA AI - Share and compute securely your data				not-checked
-/koine/vol5/W17	koine-json,local-build,prerender-input,rendered-link	page	Work in progress: Extensible Decentralized Verifiable Refreshable Secret Sharing Protocol with Extension to Threshold Access Trees for Wallet Key Recovery				not-checked
-/koine/vol5/W18	koine-json,local-build,prerender-input,rendered-link	page	Improving Security and Performance of Cryptographic Access Control with Trusted Execution Environments				not-checked
-/koine/vol5/W19	koine-json,local-build,prerender-input,rendered-link	page	Work in progress: On the combination of Searchable Encryption and Attribute-based encryption				not-checked
-/koine/vol5/W20	koine-json,local-build,prerender-input,rendered-link	page	Introduction to NTC24				not-checked
-/koine/vol5/W21	koine-json,local-build,prerender-input,rendered-link	page	Hessians of elliptic curves: isogenies and graphs				not-checked
-/koine/vol5/W22	koine-json,local-build,prerender-input,rendered-link	page	Proving knowledge of an isogeny using modular polynomials				not-checked
-/koine/vol5/W23	koine-json,local-build,prerender-input,rendered-link	page	Lattices and Cryptography, an Overview				not-checked
-/koine/vol5/W24	koine-json,local-build,prerender-input,rendered-link	page	A Note on the P-values Distribution in NIST SP 800-22 Rev. 1a Statistical Tests				not-checked
-/koine/vol5/W25	koine-json,local-build,prerender-input,rendered-link	page	Introduction to CPSID24				not-checked
-/koine/vol5/W26	koine-json,local-build,prerender-input,rendered-link	page	Overview of the current digital identity standards				not-checked
-/koine/vol5/W27	koine-json,local-build,prerender-input,rendered-link	page	Current status of the implementation of the Italian Wallet and Trust Framework Infrastructure .				not-checked
-/koine/vol5/W28	koine-json,local-build,prerender-input,rendered-link	page	Challenges and upcoming standards				not-checked
-/koine/vol5/W29	koine-json,local-build,prerender-input,rendered-link	page	Introduction to SymCrypt				not-checked
-/koine/vol5/W30	koine-json,local-build,prerender-input,rendered-link	page	Stream ciphers encoded by difference equations over finite fields and their cryptanalysis				not-checked
-/koine/vol5/W31	koine-json,local-build,prerender-input,rendered-link	page	On the computation of the Walsh-Hadamard Transform using Binomial Trees				not-checked
-/koine/vol5/W32	koine-json,local-build,prerender-input,rendered-link	page	(Cryptographic) Functions for Designing Locally Recoverable Codes in Distributed Storag				not-checked
-/koine/vol5/W33	koine-json,local-build,prerender-input,rendered-link	page	Introduction to CodeMath24				not-checked
-/koine/vol5/W34	koine-json,local-build,prerender-input,rendered-link	page	Hadamard products of codes: an Additive Combinatorics perspective				not-checked
-/koine/vol5/W35	koine-json,local-build,prerender-input,rendered-link	page	Recent results on scattered spaces and MRD codes				not-checked
-/koine/vol5/W36	koine-json,local-build,prerender-input,rendered-link	page	Cryptographic uses of (polar) Grassmannians				not-checked
-/koine/vol5/W37	koine-json,local-build,prerender-input,rendered-link	page	CROSS: a signature scheme with restricted errors				not-checked
-/koine/vol5/W38	koine-json,local-build,prerender-input,rendered-link	page	Introduction to QCifris24				not-checked
-/koine/vol5/W39	koine-json,local-build,prerender-input,rendered-link	page	Introduction to Quantum Technologies for secure information from an Italian perspectives Abstract				not-checked
-/koine/vol5/W40	koine-json,local-build,prerender-input,rendered-link	page	Entanglement for quantum key distribution				not-checked
-/koine/vol5/W41	koine-json,local-build,prerender-input,rendered-link	page	Genuine random numbers from quantum processes for cybersecurity				not-checked
-/koine/vol5/W42	koine-json,local-build,prerender-input,rendered-link	page	National and European Quantum Communications for Enhanced Security: Technology and Applications				not-checked
-/koine/vol5/W43	koine-json,local-build,prerender-input,rendered-link	page	Introduction to CifrisCloud				not-checked
-/koine/vol5/W44	koine-json,local-build,prerender-input,rendered-link	page	ANTI-fraud: ABE Solutions				not-checked
-/koine/vol5/W45	koine-json,local-build,prerender-input,rendered-link	page	An introduction to Functional Encryption with multivariate algebra				not-checked
-/koine/vol5/W46	koine-json,local-build,prerender-input,rendered-link	page	Registered Functional Encryption				not-checked
-/koine/vol6	angular-route,koine-json,local-build,rendered-link	page	Koine: Volume 6				not-checked
-/koine/vol6/B00	koine-json,rendered-link	page	Introduzione				not-checked
-/koine/vol6/B01	koine-json,local-build,prerender-input,rendered-link	page	Bitcoin and Cryptography				not-checked
-/koine/vol6/B02	koine-json,local-build,prerender-input,rendered-link	page	Bitcoin oltre il denaro: genealogia tecnopolitica e ambivalenza della sovranità algoritmica				not-checked
-/koine/vol6/B03	koine-json,local-build,prerender-input,rendered-link	page	Scalare Bitcoin oltre la Timechain				not-checked
-/koine/vol6/B04	koine-json,local-build,prerender-input,rendered-link	page	Wallet e Indirizzi in Bitcoin				not-checked
-/koine/vol6/B05	koine-json,local-build,prerender-input,rendered-link	page	zk-STARKs and Computational Integrity in Bitcoin Layer-2 Protocols				not-checked
-/koine/vol6/B06	koine-json,local-build,prerender-input,rendered-link	page	Attacco ad un sottogruppo di chiavi del sistema Bitcoin				not-checked
-/koine/vol6/B07	koine-json,local-build,prerender-input,rendered-link	page	Le stablecoin nella rivoluzione silenziosa del denaro: tra geopolitica e finanza				not-checked
-/koine/vol6/B08	koine-json,local-build,prerender-input,rendered-link	page	Civic blockchain: tokenized economies supporting local communities				not-checked
-/koine/vol6/B09	koine-json,local-build,prerender-input,rendered-link	page	AI e Blockchain: convergenza tra intelligenza e fiducia digitale				not-checked
-/koine/vol6/B10	koine-json,local-build,prerender-input,rendered-link	page	La disciplina delle cripto-attività nell'UE e nel Regno Unito: Scenari Regolatori a Confronto				not-checked
-/koine/vol7	angular-route,koine-json,local-build,rendered-link	page	Koine: Volume 7				not-checked
-/koine/vol7/I00	koine-json,local-build,prerender-input,rendered-link	page	Introduction to CIFRIS25 ACTA				not-checked
-/koine/vol7/I01	koine-json,local-build,prerender-input,rendered-link	page	Presentazione di De Cifris				not-checked
-/koine/vol7/I02	koine-json,local-build,prerender-input,rendered-link	page	De Cifris Partners: DataKrypto				not-checked
-/koine/vol7/I03	koine-json,local-build,prerender-input,rendered-link	page	De Cifris Partners: E4				not-checked
-/koine/vol7/I04	koine-json,local-build,prerender-input,rendered-link	page	De Cifris Partners: ForkBomb				not-checked
-/koine/vol7/I05	koine-json,local-build,prerender-input,rendered-link	page	De Cifris Partners: Athilab				not-checked
-/koine/vol7/I06	koine-json,local-build,prerender-input,rendered-link	page	De Cifris Partners: RandomPower				not-checked
-/koine/vol7/S01	koine-json,local-build,prerender-input,rendered-link	page	Introduction to the Scientific Session				not-checked
-/koine/vol7/S02	koine-json,local-build,prerender-input,rendered-link	page	Post-Quantum Transition: Challenges and Opportunities				not-checked
-/koine/vol7/S03	koine-json,local-build,prerender-input,rendered-link	page	Oracle-Based Multistep Strategy for Solving Polynomial Systems Over Finite Fields and Algebraic Cryptanalysis of Aradi				not-checked
-/koine/vol7/S04	koine-json,local-build,prerender-input,rendered-link	page	AG codes for Secure and Private Information Retrieval				not-checked
-/koine/vol7/S05	koine-json,local-build,prerender-input,rendered-link	page	Construction and cryptanalysis of a multivariate CCZ scheme a.k.a. do not bring your Pesto to Switzerland!				not-checked
-/koine/vol7/S06	koine-json,local-build,prerender-input,rendered-link	page	Evolving Secret Sharing				not-checked
-/koine/vol7/S07	koine-json,local-build,prerender-input,rendered-link	page	The critical role of acceleration in Fully Homomorphic Encryption				not-checked
-/koine/vol7/S08	koine-json,local-build,prerender-input,rendered-link	page	Anonymous Access Schemes with Distributed User Registration				not-checked
-/koine/vol7/S09	koine-json,local-build,prerender-input,rendered-link	page	Using Homomorphic Encryption for Inner-Product Functional Encryption				not-checked
-/koine/vol7/S10	koine-json,local-build,prerender-input,rendered-link	page	A Revision of CROSS Security: Proofs and Attacks for Multi-Round Fiat-Shamir Signatures				not-checked
-/koine/vol7/S11	koine-json,local-build,prerender-input,rendered-link	page	Towards Post-Quantum Multi-Signatures from Group Actions Assumptions				not-checked
-/koine/vol7/S12	koine-json,local-build,prerender-input,rendered-link	page	Moving to a Post-Quantum World				not-checked
-/koine/vol7/S13	koine-json,local-build,prerender-input,rendered-link	page	Post-Quantum Cryptography in In-Vehicle networks				not-checked
-/koine/vol7/W01	koine-json,local-build,prerender-input,rendered-link	page	Introduction to TAC25				not-checked
-/koine/vol7/W02	koine-json,local-build,prerender-input,rendered-link	page	QKD (Re)Initialization via PQC: An Industrial Security-Usability Trade-off				not-checked
-/koine/vol7/W03	koine-json,local-build,prerender-input,rendered-link	page	Quantum Root-of-Trust: Post-Quantum Security for Industrial IoT				not-checked
-/koine/vol7/W04	koine-json,local-build,prerender-input,rendered-link	page	Verifiable Computation Outsourcing via Contracts over Blockchain Transactions				not-checked
-/koine/vol7/W05	koine-json,local-build,prerender-input,rendered-link	page	Transparent Verification in E-Voting				not-checked
-/koine/vol7/W06	koine-json,local-build,prerender-input,rendered-link	page	A Review of Post-Quantum E-Voting				not-checked
-/koine/vol7/W07	koine-json,local-build,prerender-input,rendered-link	page	Exploring blind signatures under FHE by combining GBFV and HAWK				not-checked
-/koine/vol7/W08	koine-json,local-build,prerender-input,rendered-link	page	Introduction to NTC25				not-checked
-/koine/vol7/W09	koine-json,local-build,prerender-input,rendered-link	page	Endomorphisms for Faster Cryptography on Elliptic Curves of Moderate CM Discriminants				not-checked
-/koine/vol7/W10	koine-json,local-build,prerender-input,rendered-link	page	High order elements in finite fields arising from recursive towers				not-checked
-/koine/vol7/W11	koine-json,local-build,prerender-input,rendered-link	page	One Reduction to Rule Them All. The Hidden Subgroup Problem and its role among post-quantum cryptographic assumptions				not-checked
-/koine/vol7/W12	koine-json,local-build,prerender-input,rendered-link	page	Algebraic Modelings of the Supersingular Isogeny Problem				not-checked
-/koine/vol7/W13	koine-json,local-build,prerender-input,rendered-link	page	Integer Factorization				not-checked
-/koine/vol7/W14	koine-json,local-build,prerender-input,rendered-link	page	Introduction to SymCode				not-checked
-/koine/vol7/W15	koine-json,local-build,prerender-input,rendered-link	page	Recent advancements on TI without on-line randomness				not-checked
-/koine/vol7/W16	koine-json,local-build,prerender-input,rendered-link	page	Decomposing Permutation Polynomials for More Efficient Hardware Implementations				not-checked
-/koine/vol7/W17	koine-json,local-build,prerender-input,rendered-link	page	Generic Partial Decryption as Feature Engineering for Neural Distinguishers				not-checked
-/koine/vol7/W18	koine-json,local-build,prerender-input,rendered-link	page	Coding Theory Meets Convex Geometry: The Etzion-Silberstein Conjecture				not-checked
-/koine/vol7/W19	koine-json,local-build,prerender-input,rendered-link	page	Optimal Rank-Metric Codes from Skew Polynomial Rings				not-checked
-/koine/vol7/W20	koine-json,local-build,prerender-input,rendered-link	page	Introduction to ReAdPQC25				not-checked
-/koine/vol7/W21	koine-json,local-build,prerender-input,rendered-link	page	Riding a BIKE with Failures (Without Falling Down Too Many Times)				not-checked
-/koine/vol7/W22	koine-json,local-build,prerender-input,rendered-link	page	SPECK: Signature from Permutation Equivalence of Codes and Kernels				not-checked
-/koine/vol7/W23	koine-json,local-build,prerender-input,rendered-link	page	Hilbert series and degrees of regularity of Oil and Vinegar and Mixed quadratic systems				not-checked
-/koine/vol7/W24	koine-json,local-build,prerender-input,rendered-link	page	Cycles in the generalized supersingular L-isogeny graph				not-checked
-/koine/vol7/W25	koine-json,local-build,prerender-input,rendered-link	page	On the Security of MQ-based ZKPoK in the Multi-Instance Setting				not-checked
-/koine/vol7/W26	koine-json,local-build,prerender-input,rendered-link	page	Introduction to PPSDI				not-checked
-/koine/vol7/W27	koine-json,local-build,prerender-input,rendered-link	page	Protocols, Privacy and Security in Digital Identity				not-checked
-/koine/vol7/W28	koine-json,local-build,prerender-input,rendered-link	page	State of the art: impact of eIDAS 2.0 for QTSPs, public and private sector				not-checked
-/koine/vol7/W29	koine-json,local-build,prerender-input,rendered-link	page	Security analysis of EUDI				not-checked
-/koine/vol7/W30	koine-json,local-build,prerender-input,rendered-link	page	Zero-Knowledge Proofs in Identity Wallets				not-checked
-/koine/vol7/W31	koine-json,local-build,prerender-input,rendered-link	page	Conformance, interoperability and security testing of EUDI				not-checked
-/koine/vol7/W32	koine-json,local-build,prerender-input,rendered-link	page	Interoperability Through Open Ecosystems				not-checked
-/koine/vol7/W33	koine-json,local-build,prerender-input,rendered-link	page	Introduction to HoC				not-checked
-/koine/vol7/W34	koine-json,local-build,prerender-input,rendered-link	page	Do mahematicians win the wars? The case of the Cambrai War				not-checked
-/koine/vol7/W35	koine-json,local-build,prerender-input,rendered-link	page	La cultura crittografica nel ducato di Urbino al tempo di Federico da Montefeltro: tra uso corrente, sperimentazione e sublimazione				not-checked
-/koine/vol7/W36	koine-json,local-build,prerender-input,rendered-link	page	Italy and Florence: Cryptography in the 15th Century				not-checked
-/koine/vol7/W37	koine-json,local-build,prerender-input,rendered-link	page	ENIGMA in ACTION				not-checked
-/koine/vol7/W38	koine-json,local-build,prerender-input,rendered-link	page	Introduction to QRNG				not-checked
-/koine/vol7/W39	koine-json,local-build,prerender-input,rendered-link	page	Cryptographic Standards for Random Number Generation				not-checked
-/koine/vol7/W40	koine-json,local-build,prerender-input,rendered-link	page	Introducing Quantum Random Number Generators: basic principles and technologies				not-checked
-/koine/vol7/W41	koine-json,local-build,prerender-input,rendered-link	page	QRNG-on-a-chip: exemplary embodiments				not-checked
-/koine/vol7/W42	koine-json,local-build,prerender-input,rendered-link	page	The Random Power FIPS compliant QRNG on-a-chip				not-checked
-/koine/vol7/W43	koine-json,local-build,prerender-input,rendered-link	page	Main Drives and Exemplary Applications of QRNGs				not-checked
-/koine/vol7/W44	koine-json,local-build,prerender-input,rendered-link	page	Introduction to BTC				not-checked
-/koine/vol7/W45	koine-json,local-build,prerender-input,rendered-link	page	A Journey into Bitcoin’s Cryptography: Introduction and Scalability				not-checked
-/koine/vol7/W46	koine-json,local-build,prerender-input,rendered-link	page	ZK and STARKs on Bitcoin: Consensus Hurdles and Layer 2 Possibilities				not-checked
-/koine/vol7/W47	koine-json,local-build,prerender-input,rendered-link	page	Schnorr Digital Signature Protocols				not-checked
-/koine/vol8	angular-route,koine-json,local-build,rendered-link	page	Koine: Volume 8				not-checked
-/koine/vol8/I01	koine-json,local-build,prerender-input,rendered-link	page	Introduction to FCiR25 ACTA				not-checked
-/koine/vol8/P01	koine-json,local-build,prerender-input,rendered-link	page	Welcome Address by Giuseppe Zingrillo				not-checked
-/koine/vol8/P02	koine-json,local-build,prerender-input,rendered-link	page	Balancing Privacy and Regulation in the Design of Future Digital Payment Systems				not-checked
-/koine/vol8/P03	koine-json,local-build,prerender-input,rendered-link	page	Achieving Digital Self-Custody				not-checked
-/koine/vol8/P04	koine-json,local-build,prerender-input,rendered-link	page	Cryptographic Algorithms and Protocols for Financial Data Analysis				not-checked
-/koine/vol8/P05	koine-json,local-build,prerender-input,rendered-link	page	Cloud Encryption and Blockchain				not-checked
-/koine/vol8/P06	koine-json,local-build,prerender-input,rendered-link	page	Decentralization: A Qualitative Survey of Node Operators				not-checked
-/koine/vol8/P07	koine-json,local-build,prerender-input,rendered-link	page	Regulation (EU) 2023/1114 (MiCAR): in light of the division of responsibilities established by Legislative Decree no. 129/2024 between Bank of Italy and Italian Companies and Stock Exchange Commission				not-checked
-/koine/vol8/P08	koine-json,local-build,prerender-input,rendered-link	page	SwissLedger and the Finternet Vision: The Path for a Unified Financial Ecosystem				not-checked
-/koine/vol8/P09	koine-json,local-build,prerender-input,rendered-link	page	How to (not) use symmetric polynomials for digital signature				not-checked
-/koine/vol8/P10	koine-json,local-build,prerender-input,rendered-link	page	Comparing Lattices and Bilinear Parings in CP-ABE				not-checked
-/koine/vol8/P11	koine-json,local-build,prerender-input,rendered-link	page	Credential Loss Problem for Cryptowallet Custodians				not-checked
-/koine/vol8/P12	koine-json,local-build,prerender-input,rendered-link	page	Designs, Efficiency and Decentralised Applications of Threshold Schnorr Signatures				not-checked
-/koine/vol8/P13	koine-json,local-build,prerender-input,rendered-link	page	Approaches to MEV in DAG-based DLTs: A Short Version				not-checked
-/koine/vol8/P14	koine-json,local-build,prerender-input,rendered-link	page	Classification of Attribute-Based Encryption Based on Access Policy Contents				not-checked
-/koine/vol8/P15	koine-json,local-build,prerender-input,rendered-link	page	Empirical Evidence of Spillover Effects Between Bank and Crypto Market Bubbles				not-checked
-/koine/vol8/P16	koine-json,local-build,prerender-input,rendered-link	page	Analysis of collision probability in Merkle trees in the Random Oracle Model				not-checked
-/koine/vol8/P17	koine-json,local-build,prerender-input,rendered-link	page	Rayls II: Fast, Private, and Compliant CBDCs				not-checked
-/koine/vol8/P18	koine-json,local-build,prerender-input,rendered-link	page	A Practical Encrypted Cloud for Financial Data				not-checked
-/mailing-list	angular-route,local-build,rendered-link,source-sitemap	page	Mailing list				not-checked
-/mathCifris	angular-route	redirect	/attivita/mathcifris				not-checked
-/modcrypto26	angular-route,rendered-link	redirect	/attivita/modcrypto26				not-checked
-/necromancer-baseline-missing-page	missing-page-control	error	HTTP 404				not-checked
-/notizie	angular-route,rendered-link	redirect	/associazione/notizie				not-checked
-/opera24	angular-route,local-build,source-sitemap	page	Opera24				not-checked
-/opportunita	angular-route,rendered-link	redirect	/attivita/opportunita				not-checked
-/organiDirettivi	angular-route	redirect	/associazione/organi-direttivi				not-checked
-/posizioniRicerca	angular-route	redirect	/associazione/posizioni-ricerca				not-checked
-/pqcifris25	angular-route,local-build,rendered-link	page	PQCifris25: migration to PQ cryptography				not-checked
-/quantumCifris	angular-route	redirect	/attivita/quantumcifris				not-checked
-/regolamento	angular-route	redirect	/associazione/regolamento				not-checked
-/scuola	angular-route	redirect	/welcome/insegnanti				not-checked
-/seminariLocali	rendered-link	review	confirm intended page or retire URL				not-checked
-/sessioni	angular-route	redirect	/attivita/sessioni				not-checked
-/sitemap	angular-route,local-build	page	Sitemap				not-checked
-/stageTirocini	angular-route	redirect	/associazione/stage-tirocini				not-checked
-/statuto	rendered-link	review	confirm intended page or retire URL				not-checked
-/studenti	angular-route	redirect	/welcome/studenti				not-checked
-/trends	rendered-link	review	confirm intended page or retire URL				not-checked
-/trends22	angular-route,rendered-link	redirect	/attivita/trends22				not-checked
-/trends22bis	angular-route,rendered-link	redirect	/attivita/trends22bis				not-checked
-/trends23	angular-route,rendered-link	redirect	/attivita/trends23				not-checked
-/trends24	angular-route,rendered-link	redirect	/attivita/trends24				not-checked
-/trends25	angular-route	redirect	/attivita/trends25				not-checked
-/w25	angular-route,local-build	page	w25				not-checked
-/wcc24	angular-route,local-build,source-sitemap	page	WCC24				not-checked
-/welcome	angular-route,local-build,rendered-link,source-sitemap	page	Welcome!				not-checked
-/welcome/azienda	angular-route,local-build,rendered-link,source-sitemap	page	Lavori in azienda?				not-checked
-/welcome/curiosi	angular-route,local-build,rendered-link,source-sitemap	page	Ti incuriosisce?				not-checked
-/welcome/insegnanti	angular-route,local-build,rendered-link,source-sitemap	page	Sei insegnante?				not-checked
-/welcome/ricercatori	angular-route,local-build,rendered-link,source-sitemap	page	Fai ricerca?				not-checked
-/welcome/studenti	angular-route,local-build,rendered-link,source-sitemap	page	Studi?				not-checked
+/fcir26	angular-route,local-build,rendered-link	page	FCiR26	200	/fcir26/	FCiR26	ok
+/gareCrittografiche	angular-route	redirect	/attivita/gare-crittografiche	200	/gareCrittografiche/	DeCifris home	review-redirect
+/iniziativeDivulgative	angular-route	redirect	/attivita/iniziative-divulgative	200	/iniziativeDivulgative/	DeCifris home	review-redirect
+/ixh24	angular-route,local-build,rendered-link	page	IXH24 - Italian XRPL Hackathon 2024	200	/ixh24/	IXH24 - Italian XRPL Hackathon 2024	ok
+/ixh25	angular-route,local-build,rendered-link	page	IXH25 - Italian XRPL Hackathon 2024	200	/ixh25/	IXH25 - Italian XRPL Hackathon 2024	ok
+/ixh26	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	IXH26 - Italian XRPL Hackathon 2026	200	/ixh26/	IXH26 - Italian XRPL Hackathon 2026	ok
+/koine	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	De Cifris Koine	200	/koine/	De Cifris Koine	ok
+/koine/articles-and-volumes	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	Volumes	200	/koine/articles-and-volumes/	Volumes	ok
+/koine/copyright-license	angular-route,live-sitemap,local-build,source-sitemap	page	Copyright and licensing	200	/koine/copyright-license/	Copyright and licensing	ok
+/koine/editorial-board	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	Editorial board	200	/koine/editorial-board/	Editorial board	ok
+/koine/license	angular-route	redirect	/koine/copyright-license	200	/koine/license/	DeCifris home	review-redirect
+/koine/open-access-statement	angular-route,rendered-link	redirect	/koine/copyright-license	200	/koine/open-access-statement/	Open source statement	review-redirect
+/koine/vol1	angular-route,koine-json,live-sitemap,local-build,rendered-link,source-sitemap	page	Koine: Volume 1	200	/koine/vol1/	Koine: Volume 1	ok
+/koine/vol1/I01	koine-json,local-build,prerender-input,rendered-link	page	Introduction to CIFRIS23 ACTA	200	/koine/vol1/I01/	Introduction to CIFRIS23 ACTA	ok
+/koine/vol1/I02	koine-json,local-build,prerender-input,rendered-link	page	Cryptography and its Applications in the Italian Scenario	200	/koine/vol1/I02/	Cryptography and its Applications in the Italian Scenario	ok
+/koine/vol1/I03	koine-json,local-build,prerender-input,rendered-link	page	La visione di De Cifris: partnership con le aziende leader	200	/koine/vol1/I03/	La visione di De Cifris: partnership con le aziende leader	ok
+/koine/vol1/M01	koine-json,local-build,prerender-input,rendered-link	page	Introduction to the Scientific Session	200	/koine/vol1/M01/	Introduction to the Scientific Session	ok
+/koine/vol1/M02	koine-json,local-build,prerender-input,rendered-link	page	Keynote: MPC in the head for isomorphisms and group action	200	/koine/vol1/M02/	Keynote: MPC in the head for isomorphisms and group action	ok
+/koine/vol1/M03	koine-json,local-build,prerender-input,rendered-link	page	Efficiency of SIDH-based signatures (yes, SIDH)	200	/koine/vol1/M03/	Efficiency of SIDH-based signatures (yes, SIDH)	ok
+/koine/vol1/M04	koine-json,local-build,prerender-input,rendered-link	page	The group structure of elliptic curves over Z/NZ	200	/koine/vol1/M04/	The group structure of elliptic curves over Z/NZ	ok
+/koine/vol1/M05	koine-json,local-build,prerender-input,rendered-link	page	FPGA And Software Acceleration of Multi-Scalar Multiplication: CycloneMSM	200	/koine/vol1/M05/	FPGA And Software Acceleration of Multi-Scalar Multiplication: CycloneMSM	ok
+/koine/vol1/M06	koine-json,local-build,prerender-input,rendered-link	page	On Linear Codes with Random Multiplier Vectors and the Maximum Trace Dimension Property	200	/koine/vol1/M06/	On Linear Codes with Random Multiplier Vectors and the Maximum Trace Dimension Property	ok
+/koine/vol1/M07	koine-json,local-build,prerender-input,rendered-link	page	On a generalization of the Deligne-Lustzig curve of Suzuki type and application to AG codes	200	/koine/vol1/M07/	On a generalization of the Deligne-Lustzig curve of Suzuki type and application to AG codes	ok
+/koine/vol1/M08	koine-json,local-build,prerender-input,rendered-link	page	On the Black-Box Impossibility of Multi-Designated Verifiers Signature Schemes from Ring Signature Schemes	200	/koine/vol1/M08/	On the Black-Box Impossibility of Multi-Designated Verifiers Signature Schemes from Ring Signature Schemes	ok
+/koine/vol1/M09	koine-json,local-build,prerender-input,rendered-link	page	Keynote: Threshold Implementations: Securing Implementations of Symmetric-Key Algorithms	200	/koine/vol1/M09/	Keynote: Threshold Implementations: Securing Implementations of Symmetric-Key Algorithms	ok
+/koine/vol1/M10	koine-json,local-build,prerender-input,rendered-link	page	Differential experiments using parallel alternative operations	200	/koine/vol1/M10/	Differential experiments using parallel alternative operations	ok
+/koine/vol1/M11	koine-json,local-build,prerender-input,rendered-link	page	Automatic Boomerang Attacks Search on Rijndael	200	/koine/vol1/M11/	Automatic Boomerang Attacks Search on Rijndael	ok
+/koine/vol1/M12	koine-json,local-build,prerender-input,rendered-link	page	Searchable Encryption with randomized ciphertext and randomized keyword search	200	/koine/vol1/M12/	Searchable Encryption with randomized ciphertext and randomized keyword search	ok
+/koine/vol1/M13	koine-json,local-build,prerender-input,rendered-link	page	Cryptanalysis of a privacy-preserving authentication scheme	200	/koine/vol1/M13/	Cryptanalysis of a privacy-preserving authentication scheme	ok
+/koine/vol1/M14	koine-json,rendered-link	page	mRLWE-CP-ABE: a revocable CP-ABE for post-quantum cryptography	200	/koine/vol1/M14/	DeCifris home	review-page
+/koine/vol1/W01	koine-json,local-build,prerender-input,rendered-link	page	Introduction to CBDCs Workshop	200	/koine/vol1/W01/	Introduction to CBDCs Workshop	ok
+/koine/vol1/W02	koine-json,local-build,prerender-input,rendered-link	page	Crypto assets' value and investor protection	200	/koine/vol1/W02/	Crypto assets' value and investor protection	ok
+/koine/vol1/W03	koine-json,local-build,prerender-input,rendered-link	page	What consensus mechanism will be used for Central Bank Digital Currencies (CBDCs)?	200	/koine/vol1/W03/	What consensus mechanism will be used for Central Bank Digital Currencies (CBDCs)?	ok
+/koine/vol1/W04	koine-json,local-build,prerender-input,rendered-link	page	CBDCs: A new generation of digital cash	200	/koine/vol1/W04/	CBDCs: A new generation of digital cash	ok
+/koine/vol1/W05	koine-json,local-build,prerender-input,rendered-link	page	Introduction to PQ Workshop	200	/koine/vol1/W05/	Introduction to PQ Workshop	ok
+/koine/vol1/W06	koine-json,local-build,prerender-input,rendered-link	page	SQIsign The new herald of isogeny based crypto	200	/koine/vol1/W06/	SQIsign The new herald of isogeny based crypto	ok
+/koine/vol1/W07	koine-json,local-build,prerender-input,rendered-link	page	No one should learn from these errors: surveying fault attack resistance of post quantum cryptosystems	200	/koine/vol1/W07/	No one should learn from these errors: surveying fault attack resistance of post quantum cryptosystems	ok
+/koine/vol1/W08	koine-json,local-build,prerender-input,rendered-link	page	MCE and MEDS: From Group Actions to Signatures	200	/koine/vol1/W08/	MCE and MEDS: From Group Actions to Signatures	ok
+/koine/vol1/W09	koine-json,local-build,prerender-input,rendered-link	page	Signatures from Five-Pass Zero-Knowledge Protocols and the Curious Case of CROSS	200	/koine/vol1/W09/	Signatures from Five-Pass Zero-Knowledge Protocols and the Curious Case of CROSS	ok
+/koine/vol1/W10	koine-json,local-build,prerender-input,rendered-link	page	Introduction to TAC Workshop	200	/koine/vol1/W10/	Introduction to TAC Workshop	ok
+/koine/vol1/W11	koine-json,local-build,prerender-input,rendered-link	page	Royal Rumbles in Cryptography: the NIST PQC Competition	200	/koine/vol1/W11/	Royal Rumbles in Cryptography: the NIST PQC Competition	ok
+/koine/vol1/W12	koine-json,local-build,prerender-input,rendered-link	page	The Zencode Whitepaper	200	/koine/vol1/W12/	The Zencode Whitepaper	ok
+/koine/vol1/W13	koine-json,local-build,prerender-input,rendered-link	page	Multiparty Class Group Encryption and Applications to E-Voting	200	/koine/vol1/W13/	Multiparty Class Group Encryption and Applications to E-Voting	ok
+/koine/vol1/W14	koine-json,local-build,prerender-input,rendered-link	page	Vote App: Verifiable and Coercion-Resistant I-Voting	200	/koine/vol1/W14/	Vote App: Verifiable and Coercion-Resistant I-Voting	ok
+/koine/vol1/W15	koine-json,local-build,prerender-input,rendered-link	page	OpenABE Bindings for Kotlin	200	/koine/vol1/W15/	OpenABE Bindings for Kotlin	ok
+/koine/vol1/W16	koine-json,local-build,prerender-input,rendered-link	page	Cryptographic Enforcement of Attribute-based Access Control Policies	200	/koine/vol1/W16/	Cryptographic Enforcement of Attribute-based Access Control Policies	ok
+/koine/vol1/W17	koine-json,local-build,prerender-input,rendered-link	page	Privacy Preserving Machine Learning with TFHE	200	/koine/vol1/W17/	Privacy Preserving Machine Learning with TFHE	ok
+/koine/vol1/W18	koine-json,local-build,prerender-input,rendered-link	page	PPML: Machine learning on data you cannot see	200	/koine/vol1/W18/	PPML: Machine learning on data you cannot see	ok
+/koine/vol1/W19	koine-json,local-build,prerender-input,rendered-link	page	Introduction to Group-based Workshop	200	/koine/vol1/W19/	Introduction to Group-based Workshop	ok
+/koine/vol1/W20	koine-json,local-build,prerender-input,rendered-link	page	The Impact of the Semidirect Discrete Logarithm Problem (SDLP) in Post-quantum Cryptography PQC	200	/koine/vol1/W20/	The Impact of the Semidirect Discrete Logarithm Problem (SDLP) in Post-quantum Cryptography PQC	ok
+/koine/vol1/W21	koine-json,local-build,prerender-input,rendered-link	page	Some results on the groups generated by round functions	200	/koine/vol1/W21/	Some results on the groups generated by round functions	ok
+/koine/vol1/W22	koine-json,local-build,prerender-input,rendered-link	page	A method to cryptanalyze (Simultaneous) Conjugacy Search Problem in certain Metabelian Platform Groups	200	/koine/vol1/W22/	A method to cryptanalyze (Simultaneous) Conjugacy Search Problem in certain Metabelian Platform Groups	ok
+/koine/vol1/W23	koine-json,local-build,prerender-input,rendered-link	page	Linearization of hard problems via right-angled Artin groups	200	/koine/vol1/W23/	Linearization of hard problems via right-angled Artin groups	ok
+/koine/vol1/W24	koine-json,local-build,prerender-input,rendered-link	page	A “smart” application of homomorphic encryption	200	/koine/vol1/W24/	A “smart” application of homomorphic encryption	ok
+/koine/vol10	angular-route,koine-json,local-build,rendered-link	page	Koine: Volume 10	200	/koine/vol10/	Koine: Volume 10	ok
+/koine/vol10/H00	koine-json,local-build,prerender-input,rendered-link	page	IXH24: Italian XRPL Hackathon 2024	200	/koine/vol10/H00/	IXH24: Italian XRPL Hackathon 2024	ok
+/koine/vol10/H01	koine-json,local-build,prerender-input,rendered-link	page	x-Stake: Cross-Chain Staking and Shared Security on the XRP Ledger	200	/koine/vol10/H01/	x-Stake: Cross-Chain Staking and Shared Security on the XRP Ledger	ok
+/koine/vol10/H02	koine-json,local-build,prerender-input,rendered-link	page	decID: Decentralized Identity on XRPL	200	/koine/vol10/H02/	decID: Decentralized Identity on XRPL	ok
+/koine/vol10/H03	koine-json,local-build,prerender-input,rendered-link	page	XRPL Secure Self Check-in	200	/koine/vol10/H03/	XRPL Secure Self Check-in	ok
+/koine/vol10/H04	koine-json,local-build,prerender-input,rendered-link	page	Federated Elections with Encrypted Local Tallies and Verifiable On-Chain Aggregation	200	/koine/vol10/H04/	Federated Elections with Encrypted Local Tallies and Verifiable On-Chain Aggregation	ok
+/koine/vol10/H05	koine-json,local-build,prerender-input,rendered-link	page	Prototyping a Tamper-Proof Blockchain Voting System	200	/koine/vol10/H05/	Prototyping a Tamper-Proof Blockchain Voting System	ok
+/koine/vol10/H06	koine-json,local-build,prerender-input,rendered-link	page	IXH25: Italian XRPL Hackathon 2025	200	/koine/vol10/H06/	IXH25: Italian XRPL Hackathon 2025	ok
+/koine/vol10/H07	koine-json,local-build,prerender-input,rendered-link	page	ZK-F1-AI: A Trustless Protocol for a Zero-Knowledge Racing Game via ZK-SNARKs and Commit-Reveal	200	/koine/vol10/H07/	ZK-F1-AI: A Trustless Protocol for a Zero-Knowledge Racing Game via ZK-SNARKs and Commit-Reveal	ok
+/koine/vol10/H08	koine-json,local-build,prerender-input,rendered-link	page	We (try to) play the racing game F1-AI	200	/koine/vol10/H08/	We (try to) play the racing game F1-AI	ok
+/koine/vol10/H09	koine-json,local-build,prerender-input,rendered-link	page	PermiX: Building a Permissioned DEX on the XRP Ledger for Institutional Compliance	200	/koine/vol10/H09/	PermiX: Building a Permissioned DEX on the XRP Ledger for Institutional Compliance	ok
+/koine/vol10/H10	koine-json,local-build,prerender-input,rendered-link	page	F1-AI πve: Privacy-Preserving F1 Racing with FHE and XRP Ledger	200	/koine/vol10/H10/	F1-AI πve: Privacy-Preserving F1 Racing with FHE and XRP Ledger	ok
+/koine/vol10/H11	koine-json,local-build,prerender-input,rendered-link	page	Agent Octopus: An A2A Protocol for Autonomous Energy Agents on XRPL	200	/koine/vol10/H11/	Agent Octopus: An A2A Protocol for Autonomous Energy Agents on XRPL	ok
+/koine/vol10/H12	koine-json,local-build,prerender-input,rendered-link	page	XTrace: XRPL Compliance & Visualization Suite	200	/koine/vol10/H12/	XTrace: XRPL Compliance & Visualization Suite	ok
+/koine/vol10/H13	koine-json,local-build,prerender-input,rendered-link	page	Dungeon Ledger: A Sustainable Play-to-Earn Model on the XRP Ledger	200	/koine/vol10/H13/	Dungeon Ledger: A Sustainable Play-to-Earn Model on the XRP Ledger	ok
+/koine/vol10/W00	koine-json,local-build,prerender-input,rendered-link	page	Cryptography at Work for Blockchain	200	/koine/vol10/W00/	Cryptography at Work for Blockchain	ok
+/koine/vol10/W01	koine-json,local-build,prerender-input,rendered-link	page	Cryptographic Signatures and Cryptocurrency Custodians	200	/koine/vol10/W01/	Cryptographic Signatures and Cryptocurrency Custodians	ok
+/koine/vol10/W02	koine-json,local-build,prerender-input,rendered-link	page	Post-Quantum Signatures for Blockchain	200	/koine/vol10/W02/	Post-Quantum Signatures for Blockchain	ok
+/koine/vol10/W03	koine-json,local-build,prerender-input,rendered-link	page	Palliora: Share and train AI securely	200	/koine/vol10/W03/	Palliora: Share and train AI securely	ok
+/koine/vol10/W04	koine-json,local-build,prerender-input,rendered-link	page	Decrypting Ransomware: Cryptography to the Rescue	200	/koine/vol10/W04/	Decrypting Ransomware: Cryptography to the Rescue	ok
+/koine/vol10/W05	koine-json,local-build,prerender-input,rendered-link	page	Cryptography at Work for Blockchain II	200	/koine/vol10/W05/	Cryptography at Work for Blockchain II	ok
+/koine/vol10/W06	koine-json,local-build,prerender-input,rendered-link	page	Impact of Quantum to Cybersecurity: The Case of Blockchain	200	/koine/vol10/W06/	Impact of Quantum to Cybersecurity: The Case of Blockchain	ok
+/koine/vol10/W07	koine-json,local-build,prerender-input,rendered-link	page	Integrating Post-Quantum Cryptography into the XRP Ledger	200	/koine/vol10/W07/	Integrating Post-Quantum Cryptography into the XRP Ledger	ok
+/koine/vol10/W08	koine-json,local-build,prerender-input,rendered-link	page	Designing Partitioned Digital Asset Infrastructure	200	/koine/vol10/W08/	Designing Partitioned Digital Asset Infrastructure	ok
+/koine/vol10/W09	koine-json,local-build,prerender-input,rendered-link	page	Applications of Cryptography at TCD Crypto Lab	200	/koine/vol10/W09/	Applications of Cryptography at TCD Crypto Lab	ok
+/koine/vol10/W10	koine-json,local-build,prerender-input,rendered-link	page	Computable Contracts on Blockchain	200	/koine/vol10/W10/	Computable Contracts on Blockchain	ok
+/koine/vol10/W11	koine-json,local-build,prerender-input,rendered-link	page	Protecting Data Privacy in the AI Era: An Introduction to DESILO FHE	200	/koine/vol10/W11/	Protecting Data Privacy in the AI Era: An Introduction to DESILO FHE	ok
+/koine/vol10/W12	koine-json,local-build,prerender-input,rendered-link	page	The Key to Not Losing Your Keys: A Security Overview of Multi-Signature and MPC/TSS Wallets for Crypto Asset Custody	200	/koine/vol10/W12/	The Key to Not Losing Your Keys: A Security Overview of Multi-Signature and MPC/TSS Wallets for Crypto Asset Custody	ok
+/koine/vol2	angular-route,koine-json,live-sitemap,local-build,rendered-link,source-sitemap	page	Koine: Volume 2	200	/koine/vol2/	Koine: Volume 2	ok
+/koine/vol2/A01	koine-json,local-build,prerender-input,rendered-link	page	Non-interactive time-based proof-of-stake finality	200	/koine/vol2/A01/	Non-interactive time-based proof-of-stake finality	ok
+/koine/vol2/A02	koine-json,local-build,prerender-input,rendered-link	page	Privacy-preserving Information Sharing	200	/koine/vol2/A02/	Privacy-preserving Information Sharing	ok
+/koine/vol2/A03	koine-json,local-build,prerender-input,rendered-link	page	The Links between Machine Learning and Blockchain	200	/koine/vol2/A03/	The Links between Machine Learning and Blockchain	ok
+/koine/vol2/A04	koine-json,local-build,prerender-input,rendered-link	page	Post-quantum cryptography and the automotive industry	200	/koine/vol2/A04/	Post-quantum cryptography and the automotive industry	ok
+/koine/vol2/A05	koine-json,local-build,prerender-input,rendered-link	page	Digital Identity - modern tools and perspectives	200	/koine/vol2/A05/	Digital Identity - modern tools and perspectives	ok
+/koine/vol2/A06	koine-json,local-build,prerender-input,rendered-link	page	KDFs: an essential (and usually transparent) component of real-world applications	200	/koine/vol2/A06/	KDFs: an essential (and usually transparent) component of real-world applications	ok
+/koine/vol2/I01	koine-json,local-build,prerender-input,rendered-link	page	Introduction to De Cifris Seminars	200	/koine/vol2/I01/	Introduction to De Cifris Seminars	ok
+/koine/vol2/R01	koine-json,local-build,prerender-input,rendered-link	page	Isogenies Demystified	200	/koine/vol2/R01/	Isogenies Demystified	ok
+/koine/vol2/R02	koine-json,local-build,prerender-input,rendered-link	page	Continued Fractions, Quadratic Fields, and Factoring: Some Computational Aspects	200	/koine/vol2/R02/	Continued Fractions, Quadratic Fields, and Factoring: Some Computational Aspects	ok
+/koine/vol2/T01	koine-json,local-build,prerender-input,rendered-link	page	Group Theoretical Approach for Symmetric Encryption	200	/koine/vol2/T01/	Group Theoretical Approach for Symmetric Encryption	ok
+/koine/vol2/T02	koine-json,local-build,prerender-input,rendered-link	page	An overview on cryptanalysis of ARX ciphers	200	/koine/vol2/T02/	An overview on cryptanalysis of ARX ciphers	ok
+/koine/vol2/T03	koine-json,local-build,prerender-input,rendered-link	page	Efficient cryptanalysis over multivariate Ore extensions	200	/koine/vol2/T03/	Efficient cryptanalysis over multivariate Ore extensions	ok
+/koine/vol2/T04	koine-json,local-build,prerender-input,rendered-link	page	On adapting NTRU for Post-Quantum Public-Key Encryption	200	/koine/vol2/T04/	On adapting NTRU for Post-Quantum Public-Key Encryption	ok
+/koine/vol2/T05	koine-json,local-build,prerender-input,rendered-link	page	Cryptanalysis of round-reduced AES	200	/koine/vol2/T05/	Cryptanalysis of round-reduced AES	ok
+/koine/vol2/T06	koine-json,local-build,prerender-input,rendered-link	page	Shift Invariance in Symmetric Cryptography	200	/koine/vol2/T06/	Shift Invariance in Symmetric Cryptography	ok
+/koine/vol2/T07	koine-json,local-build,prerender-input,rendered-link	page	An investigation on integer factorization applied to public-key cryptography	200	/koine/vol2/T07/	An investigation on integer factorization applied to public-key cryptography	ok
+/koine/vol3	angular-route,koine-json,live-sitemap,local-build,rendered-link,source-sitemap	page	Koine: Volume 3	200	/koine/vol3/	Koine: Volume 3	ok
+/koine/vol3/E01	koine-json,local-build,prerender-input,rendered-link	page	Francesci-Partenio, una disputa crittografica nel Rinascimento	200	/koine/vol3/E01/	Francesci-Partenio, una disputa crittografica nel Rinascimento	ok
+/koine/vol3/E02	koine-json,local-build,prerender-input,rendered-link	page	Scrivere per nascondere, leggere per scoprire. Le origini della crittografia	200	/koine/vol3/E02/	Scrivere per nascondere, leggere per scoprire. Le origini della crittografia	ok
+/koine/vol3/E03	koine-json,local-build,prerender-input,rendered-link	page	Epigrafi cifrate nelle chiese antiche	200	/koine/vol3/E03/	Epigrafi cifrate nelle chiese antiche	ok
+/koine/vol3/E04	koine-json,local-build,prerender-input,rendered-link	page	Il nuovo framework giuridico cyber dell’Italia. La crittografia come strumento di cybersicurezza e per l’autonomia strategica nazionale	200	/koine/vol3/E04/	Il nuovo framework giuridico cyber dell’Italia.La crittografia come strumento di cybersicurezza e per l’autonomia strategica nazionale	review-page
+/koine/vol3/E05	koine-json,local-build,prerender-input,rendered-link	page	Human Rights Implications of Encryption Backdoors	200	/koine/vol3/E05/	Human Rights Implications of Encryption Backdoors	ok
+/koine/vol3/I01	koine-json,local-build,prerender-input,rendered-link	page	Introduzione a De Cifris Eruditorum	200	/koine/vol3/I01/	Introduzione a De Cifris Eruditorum	ok
+/koine/vol4	angular-route,koine-json,live-sitemap,local-build,rendered-link,source-sitemap	page	Koine: Volume 4	200	/koine/vol4/	Koine: Volume 4	ok
+/koine/vol4/I01	koine-json,local-build,prerender-input,rendered-link	page	Introduction to Advanced Cryptographic Protocols	200	/koine/vol4/I01/	Introduction to Advanced Cryptographic Protocols	ok
+/koine/vol4/P01	koine-json,local-build,prerender-input,rendered-link	page	Secret Sharing with Arithmetic Properties	200	/koine/vol4/P01/	Secret Sharing with Arithmetic Properties	ok
+/koine/vol4/P02	koine-json,local-build,prerender-input,rendered-link	page	Vector Commitment and Verifiable Outsourced Storage	200	/koine/vol4/P02/	Vector Commitment and Verifiable Outsourced Storage	ok
+/koine/vol4/P03	koine-json,local-build,prerender-input,rendered-link	page	SNARKs	200	/koine/vol4/P03/	SNARKs	ok
+/koine/vol4/P04	koine-json,local-build,prerender-input,rendered-link	page	An Introduction to Key Establishment	200	/koine/vol4/P04/	An Introduction to Key Establishment	ok
+/koine/vol4/P05	koine-json,local-build,prerender-input,rendered-link	page	Blockchains and Cryptography	200	/koine/vol4/P05/	Blockchains and Cryptography	ok
+/koine/vol4/P06	koine-json,local-build,prerender-input,rendered-link	page	An Introduction to Electronic Voting	200	/koine/vol4/P06/	An Introduction to Electronic Voting	ok
+/koine/vol5	angular-route,koine-json,live-sitemap,local-build,rendered-link,source-sitemap	page	Koine: Volume 5	200	/koine/vol5/	Koine: Volume 5	ok
+/koine/vol5/I00	koine-json,local-build,prerender-input,rendered-link	page	Introduction to CIFRIS24 ACTA	200	/koine/vol5/I00/	Introduction to CIFRIS24 ACTA	ok
+/koine/vol5/I01	koine-json,local-build,prerender-input,rendered-link	page	La De Cifris e la crittografia italiana	200	/koine/vol5/I01/	La De Cifris e la crittografia italiana	ok
+/koine/vol5/I02	koine-json,local-build,prerender-input,rendered-link	page	De Cifris Partners: Athilab	200	/koine/vol5/I02/	De Cifris Partners: Athilab	ok
+/koine/vol5/I03	koine-json,local-build,prerender-input,rendered-link	page	De Cifris Partners: Random Power	200	/koine/vol5/I03/	De Cifris Partners: Random Power	ok
+/koine/vol5/I04	koine-json,local-build,prerender-input,rendered-link	page	De Cifris Partners: ThinkQuantum	200	/koine/vol5/I04/	De Cifris Partners: ThinkQuantum	ok
+/koine/vol5/I05	koine-json,local-build,prerender-input,rendered-link	page	De Cifris Partners: FORKBOMB BV	200	/koine/vol5/I05/	De Cifris Partners: FORKBOMB BV	ok
+/koine/vol5/I06	koine-json,local-build,prerender-input,rendered-link	page	De Cifris Partners: QTI SRL	200	/koine/vol5/I06/	De Cifris Partners: QTI SRL	ok
+/koine/vol5/S01	koine-json,local-build,prerender-input,rendered-link	page	Introduction to the scientific session	200	/koine/vol5/S01/	Introduction to the scientific session	ok
+/koine/vol5/S02	koine-json,local-build,prerender-input,rendered-link	page	Quadratic-like balanced functions and permutations	200	/koine/vol5/S02/	Quadratic-like balanced functions and permutations	ok
+/koine/vol5/S03	koine-json,local-build,prerender-input,rendered-link	page	On second-order derivatives of Boolean functions and cubic APN permutations in even dimension	200	/koine/vol5/S03/	On second-order derivatives of Boolean functions and cubic APN permutations in even dimension	ok
+/koine/vol5/S04	koine-json,local-build,prerender-input,rendered-link	page	20 Years of Leakage-Resilient Cryptography	200	/koine/vol5/S04/	20 Years of Leakage-Resilient Cryptography	ok
+/koine/vol5/S05	koine-json,local-build,prerender-input,rendered-link	page	Security Analysis of ZKPoK based on MQ problem in the Multi-Instance Setting	200	/koine/vol5/S05/	Security Analysis of ZKPoK based on MQ problem in the Multi-Instance Setting	ok
+/koine/vol5/S06	koine-json,local-build,prerender-input,rendered-link	page	Algorithms for solving the matrix code equivalence problem	200	/koine/vol5/S06/	Algorithms for solving the matrix code equivalence problem	ok
+/koine/vol5/S07	koine-json,local-build,prerender-input,rendered-link	page	Smaller public-keys for MinRank-based schemes	200	/koine/vol5/S07/	Smaller public-keys for MinRank-based schemes	ok
+/koine/vol5/S08	koine-json,local-build,prerender-input,rendered-link	page	Investigation of Metabelian Platform Groups for Protocols Based on the (Simultaneous) Conjugacy Search Problem	200	/koine/vol5/S08/	Investigation of Metabelian Platform Groups for Protocols Based on the (Simultaneous) Conjugacy Search Problem	ok
+/koine/vol5/S09	koine-json,local-build,prerender-input,rendered-link	page	First-degree prime ideals of composite extensions	200	/koine/vol5/S09/	First-degree prime ideals of composite extensions	ok
+/koine/vol5/S10	koine-json,local-build,prerender-input,rendered-link	page	A Novel Related Nonce Attack for ECDSA .	200	/koine/vol5/S10/	A Novel Related Nonce Attack for ECDSA .	ok
+/koine/vol5/S11	koine-json,local-build,prerender-input,rendered-link	page	Application of Mordell–Weil lattices with large kissing numbers to acceleration of multi-scalar multiplication on elliptic curves	200	/koine/vol5/S11/	Application of Mordell–Weil lattices with large kissing numbers to acceleration of multi-scalar multiplication on elliptic curves	ok
+/koine/vol5/S12	koine-json,local-build,prerender-input,rendered-link	page	Low Latency Designs: Primitives and Beyond	200	/koine/vol5/S12/	Low Latency Designs: Primitives and Beyond	ok
+/koine/vol5/S13	koine-json,local-build,prerender-input,rendered-link	page	Polynomial functional encryption schemes	200	/koine/vol5/S13/	Polynomial functional encryption schemes	ok
+/koine/vol5/S14	koine-json,local-build,prerender-input,rendered-link	page	Modern Techniques in Somewhat Homomorphic Encryption Schemes	200	/koine/vol5/S14/	Modern Techniques in Somewhat Homomorphic Encryption Schemes	ok
+/koine/vol5/S15	koine-json,local-build,prerender-input,rendered-link	page	Dynamic-FROST: Schnorr Threshold Signatures with a Flexible Committee	200	/koine/vol5/S15/	Dynamic-FROST: Schnorr Threshold Signatures with a Flexible Committee	ok
+/koine/vol5/S16	koine-json,local-build,prerender-input,rendered-link	page	BTLE: Atomic Swaps with Time-Lock Puzzles	200	/koine/vol5/S16/	BTLE: Atomic Swaps with Time-Lock Puzzles	ok
+/koine/vol5/W01	koine-json,local-build,prerender-input,rendered-link	page	Introduction to FCIR24	200	/koine/vol5/W01/	Introduction to FCIR24	ok
+/koine/vol5/W02	koine-json,local-build,prerender-input,rendered-link	page	Secure and Private Data Sharing in Financial Institutions	200	/koine/vol5/W02/	Secure and Private Data Sharing in Financial Institutions	ok
+/koine/vol5/W03	koine-json,local-build,prerender-input,rendered-link	page	Progress on Private Computation	200	/koine/vol5/W03/	Progress on Private Computation	ok
+/koine/vol5/W04	koine-json,local-build,prerender-input,rendered-link	page	Layer-2 Innovations for Scalable Blockchain Payments	200	/koine/vol5/W04/	Layer-2 Innovations for Scalable Blockchain Payments	ok
+/koine/vol5/W05	koine-json,local-build,prerender-input,rendered-link	page	Decentralized Finance: Labyrinth	200	/koine/vol5/W05/	Decentralized Finance: Labyrinth	ok
+/koine/vol5/W06	koine-json,local-build,prerender-input,rendered-link	page	Confidential Knowledge Graphs through Synthetic Augmentation	200	/koine/vol5/W06/	Confidential Knowledge Graphs through Synthetic Augmentation	ok
+/koine/vol5/W07	koine-json,local-build,prerender-input,rendered-link	page	Introduction to ReAdPQC24	200	/koine/vol5/W07/	Introduction to ReAdPQC24	ok
+/koine/vol5/W08	koine-json,local-build,prerender-input,rendered-link	page	Post-Quantum Signatures from Secure Multiparty Computation	200	/koine/vol5/W08/	Post-Quantum Signatures from Secure Multiparty Computation	ok
+/koine/vol5/W09	koine-json,local-build,prerender-input,rendered-link	page	The Regular Multivariate Quadratic Problem	200	/koine/vol5/W09/	The Regular Multivariate Quadratic Problem	ok
+/koine/vol5/W10	koine-json,local-build,prerender-input,rendered-link	page	MinRank Attacks in Multivariate Cryptography	200	/koine/vol5/W10/	MinRank Attacks in Multivariate Cryptography	ok
+/koine/vol5/W11	koine-json,local-build,prerender-input,rendered-link	page	Attack-based encryption using isogenies .	200	/koine/vol5/W11/	Attack-based encryption using isogenies .	ok
+/koine/vol5/W12	koine-json,local-build,prerender-input,rendered-link	page	SQIsign2D-West: The Fast, the Small, and the Safer	200	/koine/vol5/W12/	SQIsign2D-West: The Fast, the Small, and the Safer	ok
+/koine/vol5/W13	koine-json,local-build,prerender-input,rendered-link	page	Introduction to TAC24	200	/koine/vol5/W13/	Introduction to TAC24	ok
+/koine/vol5/W14	koine-json,local-build,prerender-input,rendered-link	page	Transparency, trust and accountability	200	/koine/vol5/W14/	Transparency, trust and accountability	ok
+/koine/vol5/W15	koine-json,local-build,prerender-input,rendered-link	page	Lova - A Novel Framework for Verifying Mathematical Proofs with Incrementally Verifiable Computation	200	/koine/vol5/W15/	Lova - A Novel Framework for Verifying Mathematical Proofs with Incrementally Verifiable Computation	ok
+/koine/vol5/W16	koine-json,local-build,prerender-input,rendered-link	page	Work in progress: HASHTA AI - Share and compute securely your data	200	/koine/vol5/W16/	Work in progress: HASHTA AI - Share and compute securely your data	ok
+/koine/vol5/W17	koine-json,local-build,prerender-input,rendered-link	page	Work in progress: Extensible Decentralized Verifiable Refreshable Secret Sharing Protocol with Extension to Threshold Access Trees for Wallet Key Recovery	200	/koine/vol5/W17/	Work in progress: Extensible Decentralized Verifiable Refreshable Secret Sharing Protocol with Extension to Threshold Access Trees for Wallet Key Recovery	ok
+/koine/vol5/W18	koine-json,local-build,prerender-input,rendered-link	page	Improving Security and Performance of Cryptographic Access Control with Trusted Execution Environments	200	/koine/vol5/W18/	Improving Security and Performance of Cryptographic Access Control with Trusted Execution Environments	ok
+/koine/vol5/W19	koine-json,local-build,prerender-input,rendered-link	page	Work in progress: On the combination of Searchable Encryption and Attribute-based encryption	200	/koine/vol5/W19/	Work in progress: On the combination of Searchable Encryption and Attribute-based encryption	ok
+/koine/vol5/W20	koine-json,local-build,prerender-input,rendered-link	page	Introduction to NTC24	200	/koine/vol5/W20/	Introduction to NTC24	ok
+/koine/vol5/W21	koine-json,local-build,prerender-input,rendered-link	page	Hessians of elliptic curves: isogenies and graphs	200	/koine/vol5/W21/	Hessians of elliptic curves: isogenies and graphs	ok
+/koine/vol5/W22	koine-json,local-build,prerender-input,rendered-link	page	Proving knowledge of an isogeny using modular polynomials	200	/koine/vol5/W22/	Proving knowledge of an isogeny using modular polynomials	ok
+/koine/vol5/W23	koine-json,local-build,prerender-input,rendered-link	page	Lattices and Cryptography, an Overview	200	/koine/vol5/W23/	Lattices and Cryptography, an Overview	ok
+/koine/vol5/W24	koine-json,local-build,prerender-input,rendered-link	page	A Note on the P-values Distribution in NIST SP 800-22 Rev. 1a Statistical Tests	200	/koine/vol5/W24/	A Note on the P-values Distribution in NIST SP 800-22 Rev. 1a Statistical Tests	ok
+/koine/vol5/W25	koine-json,local-build,prerender-input,rendered-link	page	Introduction to CPSID24	200	/koine/vol5/W25/	Introduction to CPSID24	ok
+/koine/vol5/W26	koine-json,local-build,prerender-input,rendered-link	page	Overview of the current digital identity standards	200	/koine/vol5/W26/	Overview of the current digital identity standards	ok
+/koine/vol5/W27	koine-json,local-build,prerender-input,rendered-link	page	Current status of the implementation of the Italian Wallet and Trust Framework Infrastructure .	200	/koine/vol5/W27/	Current status of the implementation of the Italian Wallet and Trust Framework Infrastructure .	ok
+/koine/vol5/W28	koine-json,local-build,prerender-input,rendered-link	page	Challenges and upcoming standards	200	/koine/vol5/W28/	Challenges and upcoming standards	ok
+/koine/vol5/W29	koine-json,local-build,prerender-input,rendered-link	page	Introduction to SymCrypt	200	/koine/vol5/W29/	Introduction to SymCrypt	ok
+/koine/vol5/W30	koine-json,local-build,prerender-input,rendered-link	page	Stream ciphers encoded by difference equations over finite fields and their cryptanalysis	200	/koine/vol5/W30/	Stream ciphers encoded by difference equations over finite fields and their cryptanalysis	ok
+/koine/vol5/W31	koine-json,local-build,prerender-input,rendered-link	page	On the computation of the Walsh-Hadamard Transform using Binomial Trees	200	/koine/vol5/W31/	On the computation of the Walsh-Hadamard Transform using Binomial Trees	ok
+/koine/vol5/W32	koine-json,local-build,prerender-input,rendered-link	page	(Cryptographic) Functions for Designing Locally Recoverable Codes in Distributed Storag	200	/koine/vol5/W32/	(Cryptographic) Functions for Designing Locally Recoverable Codes in Distributed Storag	ok
+/koine/vol5/W33	koine-json,local-build,prerender-input,rendered-link	page	Introduction to CodeMath24	200	/koine/vol5/W33/	Introduction to CodeMath24	ok
+/koine/vol5/W34	koine-json,local-build,prerender-input,rendered-link	page	Hadamard products of codes: an Additive Combinatorics perspective	200	/koine/vol5/W34/	Hadamard products of codes: an Additive Combinatorics perspective	ok
+/koine/vol5/W35	koine-json,local-build,prerender-input,rendered-link	page	Recent results on scattered spaces and MRD codes	200	/koine/vol5/W35/	Recent results on scattered spaces and MRD codes	ok
+/koine/vol5/W36	koine-json,local-build,prerender-input,rendered-link	page	Cryptographic uses of (polar) Grassmannians	200	/koine/vol5/W36/	Cryptographic uses of (polar) Grassmannians	ok
+/koine/vol5/W37	koine-json,local-build,prerender-input,rendered-link	page	CROSS: a signature scheme with restricted errors	200	/koine/vol5/W37/	CROSS: a signature scheme with restricted errors	ok
+/koine/vol5/W38	koine-json,local-build,prerender-input,rendered-link	page	Introduction to QCifris24	200	/koine/vol5/W38/	Introduction to QCifris24	ok
+/koine/vol5/W39	koine-json,local-build,prerender-input,rendered-link	page	Introduction to Quantum Technologies for secure information from an Italian perspectives Abstract	200	/koine/vol5/W39/	Introduction to Quantum Technologies for secure information from an Italian perspectives Abstract	ok
+/koine/vol5/W40	koine-json,local-build,prerender-input,rendered-link	page	Entanglement for quantum key distribution	200	/koine/vol5/W40/	Entanglement for quantum key distribution	ok
+/koine/vol5/W41	koine-json,local-build,prerender-input,rendered-link	page	Genuine random numbers from quantum processes for cybersecurity	200	/koine/vol5/W41/	Genuine random numbers from quantum processes for cybersecurity	ok
+/koine/vol5/W42	koine-json,local-build,prerender-input,rendered-link	page	National and European Quantum Communications for Enhanced Security: Technology and Applications	200	/koine/vol5/W42/	National and European Quantum Communications for Enhanced Security: Technology and Applications	ok
+/koine/vol5/W43	koine-json,local-build,prerender-input,rendered-link	page	Introduction to CifrisCloud	200	/koine/vol5/W43/	Introduction to CifrisCloud	ok
+/koine/vol5/W44	koine-json,local-build,prerender-input,rendered-link	page	ANTI-fraud: ABE Solutions	200	/koine/vol5/W44/	ANTI-fraud: ABE Solutions	ok
+/koine/vol5/W45	koine-json,local-build,prerender-input,rendered-link	page	An introduction to Functional Encryption with multivariate algebra	200	/koine/vol5/W45/	An introduction to Functional Encryption with multivariate algebra	ok
+/koine/vol5/W46	koine-json,local-build,prerender-input,rendered-link	page	Registered Functional Encryption	200	/koine/vol5/W46/	Registered Functional Encryption	ok
+/koine/vol6	angular-route,koine-json,local-build,rendered-link	page	Koine: Volume 6	200	/koine/vol6/	Koine: Volume 6	ok
+/koine/vol6/B00	koine-json,rendered-link	page	Introduzione	200	/koine/vol6/B00/	DeCifris home	review-page
+/koine/vol6/B01	koine-json,local-build,prerender-input,rendered-link	page	Bitcoin and Cryptography	200	/koine/vol6/B01/	Bitcoin and Cryptography	ok
+/koine/vol6/B02	koine-json,local-build,prerender-input,rendered-link	page	Bitcoin oltre il denaro: genealogia tecnopolitica e ambivalenza della sovranità algoritmica	200	/koine/vol6/B02/	Bitcoin oltre il denaro: genealogia tecnopolitica e ambivalenza della sovranità algoritmica	ok
+/koine/vol6/B03	koine-json,local-build,prerender-input,rendered-link	page	Scalare Bitcoin oltre la Timechain	200	/koine/vol6/B03/	Scalare Bitcoin oltre la Timechain	ok
+/koine/vol6/B04	koine-json,local-build,prerender-input,rendered-link	page	Wallet e Indirizzi in Bitcoin	200	/koine/vol6/B04/	Wallet e Indirizzi in Bitcoin	ok
+/koine/vol6/B05	koine-json,local-build,prerender-input,rendered-link	page	zk-STARKs and Computational Integrity in Bitcoin Layer-2 Protocols	200	/koine/vol6/B05/	zk-STARKs and Computational Integrity in Bitcoin Layer-2 Protocols	ok
+/koine/vol6/B06	koine-json,local-build,prerender-input,rendered-link	page	Attacco ad un sottogruppo di chiavi del sistema Bitcoin	200	/koine/vol6/B06/	Attacco ad un sottogruppo di chiavi del sistema Bitcoin	ok
+/koine/vol6/B07	koine-json,local-build,prerender-input,rendered-link	page	Le stablecoin nella rivoluzione silenziosa del denaro: tra geopolitica e finanza	200	/koine/vol6/B07/	Le stablecoin nella rivoluzione silenziosa del denaro: tra geopolitica e finanza	ok
+/koine/vol6/B08	koine-json,local-build,prerender-input,rendered-link	page	Civic blockchain: tokenized economies supporting local communities	200	/koine/vol6/B08/	Civic blockchain: tokenized economies supporting local communities	ok
+/koine/vol6/B09	koine-json,local-build,prerender-input,rendered-link	page	AI e Blockchain: convergenza tra intelligenza e fiducia digitale	200	/koine/vol6/B09/	AI e Blockchain: convergenza tra intelligenza e fiducia digitale	ok
+/koine/vol6/B10	koine-json,local-build,prerender-input,rendered-link	page	La disciplina delle cripto-attività nell'UE e nel Regno Unito: Scenari Regolatori a Confronto	200	/koine/vol6/B10/	La disciplina delle cripto-attività nell'UE e nel Regno Unito: Scenari Regolatori a Confronto	ok
+/koine/vol7	angular-route,koine-json,local-build,rendered-link	page	Koine: Volume 7	200	/koine/vol7/	Koine: Volume 7	ok
+/koine/vol7/I00	koine-json,local-build,prerender-input,rendered-link	page	Introduction to CIFRIS25 ACTA	200	/koine/vol7/I00/	Introduction to CIFRIS25 ACTA	ok
+/koine/vol7/I01	koine-json,local-build,prerender-input,rendered-link	page	Presentazione di De Cifris	200	/koine/vol7/I01/	Presentazione di De Cifris	ok
+/koine/vol7/I02	koine-json,local-build,prerender-input,rendered-link	page	De Cifris Partners: DataKrypto	200	/koine/vol7/I02/	De Cifris Partners: DataKrypto	ok
+/koine/vol7/I03	koine-json,local-build,prerender-input,rendered-link	page	De Cifris Partners: E4	200	/koine/vol7/I03/	De Cifris Partners: E4	ok
+/koine/vol7/I04	koine-json,local-build,prerender-input,rendered-link	page	De Cifris Partners: ForkBomb	200	/koine/vol7/I04/	De Cifris Partners: ForkBomb	ok
+/koine/vol7/I05	koine-json,local-build,prerender-input,rendered-link	page	De Cifris Partners: Athilab	200	/koine/vol7/I05/	De Cifris Partners: Athilab	ok
+/koine/vol7/I06	koine-json,local-build,prerender-input,rendered-link	page	De Cifris Partners: RandomPower	200	/koine/vol7/I06/	De Cifris Partners: RandomPower	ok
+/koine/vol7/S01	koine-json,local-build,prerender-input,rendered-link	page	Introduction to the Scientific Session	200	/koine/vol7/S01/	Introduction to the Scientific Session	ok
+/koine/vol7/S02	koine-json,local-build,prerender-input,rendered-link	page	Post-Quantum Transition: Challenges and Opportunities	200	/koine/vol7/S02/	Post-Quantum Transition: Challenges and Opportunities	ok
+/koine/vol7/S03	koine-json,local-build,prerender-input,rendered-link	page	Oracle-Based Multistep Strategy for Solving Polynomial Systems Over Finite Fields and Algebraic Cryptanalysis of Aradi	200	/koine/vol7/S03/	Oracle-Based Multistep Strategy for Solving Polynomial Systems Over Finite Fields and Algebraic Cryptanalysis of Aradi	ok
+/koine/vol7/S04	koine-json,local-build,prerender-input,rendered-link	page	AG codes for Secure and Private Information Retrieval	200	/koine/vol7/S04/	AG codes for Secure and Private Information Retrieval	ok
+/koine/vol7/S05	koine-json,local-build,prerender-input,rendered-link	page	Construction and cryptanalysis of a multivariate CCZ scheme a.k.a. do not bring your Pesto to Switzerland!	200	/koine/vol7/S05/	Construction and cryptanalysis of a multivariate CCZ scheme a.k.a. do not bring your Pesto to Switzerland!	ok
+/koine/vol7/S06	koine-json,local-build,prerender-input,rendered-link	page	Evolving Secret Sharing	200	/koine/vol7/S06/	Evolving Secret Sharing	ok
+/koine/vol7/S07	koine-json,local-build,prerender-input,rendered-link	page	The critical role of acceleration in Fully Homomorphic Encryption	200	/koine/vol7/S07/	The critical role of acceleration in Fully Homomorphic Encryption	ok
+/koine/vol7/S08	koine-json,local-build,prerender-input,rendered-link	page	Anonymous Access Schemes with Distributed User Registration	200	/koine/vol7/S08/	Anonymous Access Schemes with Distributed User Registration	ok
+/koine/vol7/S09	koine-json,local-build,prerender-input,rendered-link	page	Using Homomorphic Encryption for Inner-Product Functional Encryption	200	/koine/vol7/S09/	Using Homomorphic Encryption for Inner-Product Functional Encryption	ok
+/koine/vol7/S10	koine-json,local-build,prerender-input,rendered-link	page	A Revision of CROSS Security: Proofs and Attacks for Multi-Round Fiat-Shamir Signatures	200	/koine/vol7/S10/	A Revision of CROSS Security: Proofs and Attacks for Multi-Round Fiat-Shamir Signatures	ok
+/koine/vol7/S11	koine-json,local-build,prerender-input,rendered-link	page	Towards Post-Quantum Multi-Signatures from Group Actions Assumptions	200	/koine/vol7/S11/	Towards Post-Quantum Multi-Signatures from Group Actions Assumptions	ok
+/koine/vol7/S12	koine-json,local-build,prerender-input,rendered-link	page	Moving to a Post-Quantum World	200	/koine/vol7/S12/	Moving to a Post-Quantum World	ok
+/koine/vol7/S13	koine-json,local-build,prerender-input,rendered-link	page	Post-Quantum Cryptography in In-Vehicle networks	200	/koine/vol7/S13/	Post-Quantum Cryptography in In-Vehicle networks	ok
+/koine/vol7/W01	koine-json,local-build,prerender-input,rendered-link	page	Introduction to TAC25	200	/koine/vol7/W01/	Introduction to TAC25	ok
+/koine/vol7/W02	koine-json,local-build,prerender-input,rendered-link	page	QKD (Re)Initialization via PQC: An Industrial Security-Usability Trade-off	200	/koine/vol7/W02/	QKD (Re)Initialization via PQC: An Industrial Security-Usability Trade-off	ok
+/koine/vol7/W03	koine-json,local-build,prerender-input,rendered-link	page	Quantum Root-of-Trust: Post-Quantum Security for Industrial IoT	200	/koine/vol7/W03/	Quantum Root-of-Trust: Post-Quantum Security for Industrial IoT	ok
+/koine/vol7/W04	koine-json,local-build,prerender-input,rendered-link	page	Verifiable Computation Outsourcing via Contracts over Blockchain Transactions	200	/koine/vol7/W04/	Verifiable Computation Outsourcing via Contracts over Blockchain Transactions	ok
+/koine/vol7/W05	koine-json,local-build,prerender-input,rendered-link	page	Transparent Verification in E-Voting	200	/koine/vol7/W05/	Transparent Verification in E-Voting	ok
+/koine/vol7/W06	koine-json,local-build,prerender-input,rendered-link	page	A Review of Post-Quantum E-Voting	200	/koine/vol7/W06/	A Review of Post-Quantum E-Voting	ok
+/koine/vol7/W07	koine-json,local-build,prerender-input,rendered-link	page	Exploring blind signatures under FHE by combining GBFV and HAWK	200	/koine/vol7/W07/	Exploring blind signatures under FHE by combining GBFV and HAWK	ok
+/koine/vol7/W08	koine-json,local-build,prerender-input,rendered-link	page	Introduction to NTC25	200	/koine/vol7/W08/	Introduction to NTC25	ok
+/koine/vol7/W09	koine-json,local-build,prerender-input,rendered-link	page	Endomorphisms for Faster Cryptography on Elliptic Curves of Moderate CM Discriminants	200	/koine/vol7/W09/	Endomorphisms for Faster Cryptography on Elliptic Curves of Moderate CM Discriminants	ok
+/koine/vol7/W10	koine-json,local-build,prerender-input,rendered-link	page	High order elements in finite fields arising from recursive towers	200	/koine/vol7/W10/	High order elements in finite fields arising from recursive towers	ok
+/koine/vol7/W11	koine-json,local-build,prerender-input,rendered-link	page	One Reduction to Rule Them All. The Hidden Subgroup Problem and its role among post-quantum cryptographic assumptions	200	/koine/vol7/W11/	One Reduction to Rule Them All. The Hidden Subgroup Problem and its role among post-quantum cryptographic assumptions	ok
+/koine/vol7/W12	koine-json,local-build,prerender-input,rendered-link	page	Algebraic Modelings of the Supersingular Isogeny Problem	200	/koine/vol7/W12/	Algebraic Modelings of the Supersingular Isogeny Problem	ok
+/koine/vol7/W13	koine-json,local-build,prerender-input,rendered-link	page	Integer Factorization	200	/koine/vol7/W13/	Integer Factorization	ok
+/koine/vol7/W14	koine-json,local-build,prerender-input,rendered-link	page	Introduction to SymCode	200	/koine/vol7/W14/	Introduction to SymCode	ok
+/koine/vol7/W15	koine-json,local-build,prerender-input,rendered-link	page	Recent advancements on TI without on-line randomness	200	/koine/vol7/W15/	Recent advancements on TI without on-line randomness	ok
+/koine/vol7/W16	koine-json,local-build,prerender-input,rendered-link	page	Decomposing Permutation Polynomials for More Efficient Hardware Implementations	200	/koine/vol7/W16/	Decomposing Permutation Polynomials for More Efficient Hardware Implementations	ok
+/koine/vol7/W17	koine-json,local-build,prerender-input,rendered-link	page	Generic Partial Decryption as Feature Engineering for Neural Distinguishers	200	/koine/vol7/W17/	Generic Partial Decryption as Feature Engineering for Neural Distinguishers	ok
+/koine/vol7/W18	koine-json,local-build,prerender-input,rendered-link	page	Coding Theory Meets Convex Geometry: The Etzion-Silberstein Conjecture	200	/koine/vol7/W18/	Coding Theory Meets Convex Geometry: The Etzion-Silberstein Conjecture	ok
+/koine/vol7/W19	koine-json,local-build,prerender-input,rendered-link	page	Optimal Rank-Metric Codes from Skew Polynomial Rings	200	/koine/vol7/W19/	Optimal Rank-Metric Codes from Skew Polynomial Rings	ok
+/koine/vol7/W20	koine-json,local-build,prerender-input,rendered-link	page	Introduction to ReAdPQC25	200	/koine/vol7/W20/	Introduction to ReAdPQC25	ok
+/koine/vol7/W21	koine-json,local-build,prerender-input,rendered-link	page	Riding a BIKE with Failures (Without Falling Down Too Many Times)	200	/koine/vol7/W21/	Riding a BIKE with Failures (Without Falling Down Too Many Times)	ok
+/koine/vol7/W22	koine-json,local-build,prerender-input,rendered-link	page	SPECK: Signature from Permutation Equivalence of Codes and Kernels	200	/koine/vol7/W22/	SPECK: Signature from Permutation Equivalence of Codes and Kernels	ok
+/koine/vol7/W23	koine-json,local-build,prerender-input,rendered-link	page	Hilbert series and degrees of regularity of Oil and Vinegar and Mixed quadratic systems	200	/koine/vol7/W23/	Hilbert series and degrees of regularity of Oil and Vinegar and Mixed quadratic systems	ok
+/koine/vol7/W24	koine-json,local-build,prerender-input,rendered-link	page	Cycles in the generalized supersingular L-isogeny graph	200	/koine/vol7/W24/	Cycles in the generalized supersingular L-isogeny graph	ok
+/koine/vol7/W25	koine-json,local-build,prerender-input,rendered-link	page	On the Security of MQ-based ZKPoK in the Multi-Instance Setting	200	/koine/vol7/W25/	On the Security of MQ-based ZKPoK in the Multi-Instance Setting	ok
+/koine/vol7/W26	koine-json,local-build,prerender-input,rendered-link	page	Introduction to PPSDI	200	/koine/vol7/W26/	Introduction to PPSDI	ok
+/koine/vol7/W27	koine-json,local-build,prerender-input,rendered-link	page	Protocols, Privacy and Security in Digital Identity	200	/koine/vol7/W27/	Protocols, Privacy and Security in Digital Identity	ok
+/koine/vol7/W28	koine-json,local-build,prerender-input,rendered-link	page	State of the art: impact of eIDAS 2.0 for QTSPs, public and private sector	200	/koine/vol7/W28/	State of the art: impact of eIDAS 2.0 for QTSPs, public and private sector	ok
+/koine/vol7/W29	koine-json,local-build,prerender-input,rendered-link	page	Security analysis of EUDI	200	/koine/vol7/W29/	Security analysis of EUDI	ok
+/koine/vol7/W30	koine-json,local-build,prerender-input,rendered-link	page	Zero-Knowledge Proofs in Identity Wallets	200	/koine/vol7/W30/	Zero-Knowledge Proofs in Identity Wallets	ok
+/koine/vol7/W31	koine-json,local-build,prerender-input,rendered-link	page	Conformance, interoperability and security testing of EUDI	200	/koine/vol7/W31/	Conformance, interoperability and security testing of EUDI	ok
+/koine/vol7/W32	koine-json,local-build,prerender-input,rendered-link	page	Interoperability Through Open Ecosystems	200	/koine/vol7/W32/	Interoperability Through Open Ecosystems	ok
+/koine/vol7/W33	koine-json,local-build,prerender-input,rendered-link	page	Introduction to HoC	200	/koine/vol7/W33/	Introduction to HoC	ok
+/koine/vol7/W34	koine-json,local-build,prerender-input,rendered-link	page	Do mahematicians win the wars? The case of the Cambrai War	200	/koine/vol7/W34/	Do mahematicians win the wars? The case of the Cambrai War	ok
+/koine/vol7/W35	koine-json,local-build,prerender-input,rendered-link	page	La cultura crittografica nel ducato di Urbino al tempo di Federico da Montefeltro: tra uso corrente, sperimentazione e sublimazione	200	/koine/vol7/W35/	La cultura crittografica nel ducato di Urbino al tempo di Federico da Montefeltro: tra uso corrente, sperimentazione e sublimazione	ok
+/koine/vol7/W36	koine-json,local-build,prerender-input,rendered-link	page	Italy and Florence: Cryptography in the 15th Century	200	/koine/vol7/W36/	Italy and Florence: Cryptography in the 15th Century	ok
+/koine/vol7/W37	koine-json,local-build,prerender-input,rendered-link	page	ENIGMA in ACTION	200	/koine/vol7/W37/	ENIGMA in ACTION	ok
+/koine/vol7/W38	koine-json,local-build,prerender-input,rendered-link	page	Introduction to QRNG	200	/koine/vol7/W38/	Introduction to QRNG	ok
+/koine/vol7/W39	koine-json,local-build,prerender-input,rendered-link	page	Cryptographic Standards for Random Number Generation	200	/koine/vol7/W39/	Cryptographic Standards for Random Number Generation	ok
+/koine/vol7/W40	koine-json,local-build,prerender-input,rendered-link	page	Introducing Quantum Random Number Generators: basic principles and technologies	200	/koine/vol7/W40/	Introducing Quantum Random Number Generators: basic principles and technologies	ok
+/koine/vol7/W41	koine-json,local-build,prerender-input,rendered-link	page	QRNG-on-a-chip: exemplary embodiments	200	/koine/vol7/W41/	QRNG-on-a-chip: exemplary embodiments	ok
+/koine/vol7/W42	koine-json,local-build,prerender-input,rendered-link	page	The Random Power FIPS compliant QRNG on-a-chip	200	/koine/vol7/W42/	The Random Power FIPS compliant QRNG on-a-chip	ok
+/koine/vol7/W43	koine-json,local-build,prerender-input,rendered-link	page	Main Drives and Exemplary Applications of QRNGs	200	/koine/vol7/W43/	Main Drives and Exemplary Applications of QRNGs	ok
+/koine/vol7/W44	koine-json,local-build,prerender-input,rendered-link	page	Introduction to BTC	200	/koine/vol7/W44/	Introduction to BTC	ok
+/koine/vol7/W45	koine-json,local-build,prerender-input,rendered-link	page	A Journey into Bitcoin’s Cryptography: Introduction and Scalability	200	/koine/vol7/W45/	A Journey into Bitcoin’s Cryptography: Introduction and Scalability	ok
+/koine/vol7/W46	koine-json,local-build,prerender-input,rendered-link	page	ZK and STARKs on Bitcoin: Consensus Hurdles and Layer 2 Possibilities	200	/koine/vol7/W46/	ZK and STARKs on Bitcoin: Consensus Hurdles and Layer 2 Possibilities	ok
+/koine/vol7/W47	koine-json,local-build,prerender-input,rendered-link	page	Schnorr Digital Signature Protocols	200	/koine/vol7/W47/	Schnorr Digital Signature Protocols	ok
+/koine/vol8	angular-route,koine-json,local-build,rendered-link	page	Koine: Volume 8	200	/koine/vol8/	Koine: Volume 8	ok
+/koine/vol8/I01	koine-json,local-build,prerender-input,rendered-link	page	Introduction to FCiR25 ACTA	200	/koine/vol8/I01/	Introduction to FCiR25 ACTA	ok
+/koine/vol8/P01	koine-json,local-build,prerender-input,rendered-link	page	Welcome Address by Giuseppe Zingrillo	200	/koine/vol8/P01/	Welcome Address by Giuseppe Zingrillo	ok
+/koine/vol8/P02	koine-json,local-build,prerender-input,rendered-link	page	Balancing Privacy and Regulation in the Design of Future Digital Payment Systems	200	/koine/vol8/P02/	Balancing Privacy and Regulation in the Design of Future Digital Payment Systems	ok
+/koine/vol8/P03	koine-json,local-build,prerender-input,rendered-link	page	Achieving Digital Self-Custody	200	/koine/vol8/P03/	Achieving Digital Self-Custody	ok
+/koine/vol8/P04	koine-json,local-build,prerender-input,rendered-link	page	Cryptographic Algorithms and Protocols for Financial Data Analysis	200	/koine/vol8/P04/	Cryptographic Algorithms and Protocols for Financial Data Analysis	ok
+/koine/vol8/P05	koine-json,local-build,prerender-input,rendered-link	page	Cloud Encryption and Blockchain	200	/koine/vol8/P05/	Cloud Encryption and Blockchain	ok
+/koine/vol8/P06	koine-json,local-build,prerender-input,rendered-link	page	Decentralization: A Qualitative Survey of Node Operators	200	/koine/vol8/P06/	Decentralization: A Qualitative Survey of Node Operators	ok
+/koine/vol8/P07	koine-json,local-build,prerender-input,rendered-link	page	Regulation (EU) 2023/1114 (MiCAR): in light of the division of responsibilities established by Legislative Decree no. 129/2024 between Bank of Italy and Italian Companies and Stock Exchange Commission	200	/koine/vol8/P07/	Regulation (EU) 2023/1114 (MiCAR): in light of the division of responsibilities established by Legislative Decree no. 129/2024 between Bank of Italy and Italian Companies and Stock Exchange Commission	ok
+/koine/vol8/P08	koine-json,local-build,prerender-input,rendered-link	page	SwissLedger and the Finternet Vision: The Path for a Unified Financial Ecosystem	200	/koine/vol8/P08/	SwissLedger and the Finternet Vision: The Path for a Unified Financial Ecosystem	ok
+/koine/vol8/P09	koine-json,local-build,prerender-input,rendered-link	page	How to (not) use symmetric polynomials for digital signature	200	/koine/vol8/P09/	How to (not) use symmetric polynomials for digital signature	ok
+/koine/vol8/P10	koine-json,local-build,prerender-input,rendered-link	page	Comparing Lattices and Bilinear Parings in CP-ABE	200	/koine/vol8/P10/	Comparing Lattices and Bilinear Parings in CP-ABE	ok
+/koine/vol8/P11	koine-json,local-build,prerender-input,rendered-link	page	Credential Loss Problem for Cryptowallet Custodians	200	/koine/vol8/P11/	Credential Loss Problem for Cryptowallet Custodians	ok
+/koine/vol8/P12	koine-json,local-build,prerender-input,rendered-link	page	Designs, Efficiency and Decentralised Applications of Threshold Schnorr Signatures	200	/koine/vol8/P12/	Designs, Efficiency and Decentralised Applications of Threshold Schnorr Signatures	ok
+/koine/vol8/P13	koine-json,local-build,prerender-input,rendered-link	page	Approaches to MEV in DAG-based DLTs: A Short Version	200	/koine/vol8/P13/	Approaches to MEV in DAG-based DLTs: A Short Version	ok
+/koine/vol8/P14	koine-json,local-build,prerender-input,rendered-link	page	Classification of Attribute-Based Encryption Based on Access Policy Contents	200	/koine/vol8/P14/	Classification of Attribute-Based Encryption Based on Access Policy Contents	ok
+/koine/vol8/P15	koine-json,local-build,prerender-input,rendered-link	page	Empirical Evidence of Spillover Effects Between Bank and Crypto Market Bubbles	200	/koine/vol8/P15/	Empirical Evidence of Spillover Effects Between Bank and Crypto Market Bubbles	ok
+/koine/vol8/P16	koine-json,local-build,prerender-input,rendered-link	page	Analysis of collision probability in Merkle trees in the Random Oracle Model	200	/koine/vol8/P16/	Analysis of collision probability in Merkle trees in the Random Oracle Model	ok
+/koine/vol8/P17	koine-json,local-build,prerender-input,rendered-link	page	Rayls II: Fast, Private, and Compliant CBDCs	200	/koine/vol8/P17/	Rayls II: Fast, Private, and Compliant CBDCs	ok
+/koine/vol8/P18	koine-json,local-build,prerender-input,rendered-link	page	A Practical Encrypted Cloud for Financial Data	200	/koine/vol8/P18/	A Practical Encrypted Cloud for Financial Data	ok
+/mailing-list	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	Mailing list	200	/mailing-list/	Mailing list	ok
+/mathCifris	angular-route	redirect	/attivita/mathcifris	200	/mathCifris/	DeCifris home	review-redirect
+/modcrypto26	angular-route,rendered-link	redirect	/attivita/modcrypto26	200	/modcrypto26/	DeCifris home	review-redirect
+/necromancer-baseline-missing-page	missing-page-control	error	HTTP 404	200	/necromancer-baseline-missing-page	DeCifris home	wrong-error-status
+/notizie	angular-route,rendered-link	redirect	/associazione/notizie	200	/notizie/	DeCifris home	review-redirect
+/opera24	angular-route,live-sitemap,local-build,source-sitemap	page	Opera24	200	/opera24/	Opera24	ok
+/opportunita	angular-route,rendered-link	redirect	/attivita/opportunita	200	/opportunita/	DeCifris home	review-redirect
+/organiDirettivi	angular-route	redirect	/associazione/organi-direttivi	200	/organiDirettivi/	DeCifris home	review-redirect
+/posizioniRicerca	angular-route	redirect	/associazione/posizioni-ricerca	200	/posizioniRicerca/	DeCifris home	review-redirect
+/pqcifris25	angular-route,local-build,rendered-link	page	PQCifris25: migration to PQ cryptography	200	/pqcifris25/	PQCifris25: migration to PQ cryptography	ok
+/quantumCifris	angular-route	redirect	/attivita/quantumcifris	200	/quantumCifris/	DeCifris home	review-redirect
+/regolamento	angular-route	redirect	/associazione/regolamento	200	/regolamento/	DeCifris home	review-redirect
+/scuola	angular-route	redirect	/welcome/insegnanti	200	/scuola/	DeCifris home	review-redirect
+/seminariLocali	rendered-link	review	confirm intended page or retire URL	200	/seminariLocali/	DeCifris home	review-intent
+/sessioni	angular-route	redirect	/attivita/sessioni	200	/sessioni/	DeCifris home	review-redirect
+/sitemap	angular-route,local-build	page	Sitemap	200	/sitemap/	Sitemap	ok
+/stageTirocini	angular-route	redirect	/associazione/stage-tirocini	200	/stageTirocini/	DeCifris home	review-redirect
+/statuto	rendered-link	review	confirm intended page or retire URL	200	/statuto/	DeCifris home	review-intent
+/studenti	angular-route	redirect	/welcome/studenti	200	/studenti/	DeCifris home	review-redirect
+/trends	rendered-link	review	confirm intended page or retire URL	200	/trends/	DeCifris home	review-intent
+/trends22	angular-route,rendered-link	redirect	/attivita/trends22	200	/trends22/	DeCifris home	review-redirect
+/trends22bis	angular-route,rendered-link	redirect	/attivita/trends22bis	200	/trends22bis/	DeCifris home	review-redirect
+/trends23	angular-route,rendered-link	redirect	/attivita/trends23	200	/trends23/	DeCifris home	review-redirect
+/trends24	angular-route,rendered-link	redirect	/attivita/trends24	200	/trends24/	DeCifris home	review-redirect
+/trends25	angular-route	redirect	/attivita/trends25	200	/trends25/	De Cifris Trends25	review-redirect
+/w25	angular-route,local-build	page	w25	200	/w25/	w25	ok
+/wcc24	angular-route,live-sitemap,local-build,source-sitemap	page	WCC24	200	/wcc24/	WCC24	ok
+/welcome	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	Welcome!	200	/welcome/	Welcome!	ok
+/welcome/azienda	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	Lavori in azienda?	200	/welcome/azienda/	Lavori in azienda?	ok
+/welcome/curiosi	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	Ti incuriosisce?	200	/welcome/curiosi/	Ti incuriosisce?	ok
+/welcome/insegnanti	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	Sei insegnante?	200	/welcome/insegnanti/	Sei insegnante?	ok
+/welcome/ricercatori	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	Fai ricerca?	200	/welcome/ricercatori/	Fai ricerca?	ok
+/welcome/studenti	angular-route,live-sitemap,local-build,rendered-link,source-sitemap	page	Studi?	200	/welcome/studenti/	Studi?	ok

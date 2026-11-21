@@ -8,7 +8,7 @@ Build a URL inventory from navigation, Angular routes, prerender inputs, the sit
 
 **Done when.** The team has a prioritised repair list, a baseline for later migration and an identified deployment it can restore.
 
-[Baseline, URL inventory and repair priorities](01-live-baseline/README.md). The remaining live checks and restore confirmation are recorded there.
+[Baseline, URL inventory and repair priorities](01-live-baseline/README.md). All inventoried same-origin paths were checked. Full Aruba restore confirmation is pending.
 
 ## 1.2 - Fix navigation and legacy aliases
 
