@@ -674,7 +674,6 @@ const routes: Routes = [
 	},
 
 	// Redirect per i percorsi cambiati
-	{ path: 'attivita/deCifris-scholalatina', redirectTo: '/attivita/decifris-scholalatina', pathMatch: 'full' },
 	{ path: 'attivita/decifris-scholaLatina', redirectTo: '/attivita/decifris-scholalatina', pathMatch: 'full' },
 	{ path: 'attivita/decifris-augustaeTaurinorum', redirectTo: '/attivita/decifris-augustaetaurinorum', pathMatch: 'full' },
 	{ path: 'blockchain-smart-contract', redirectTo: '/attivita/y2y-blockchain', pathMatch: 'full' },
@@ -704,7 +703,6 @@ const routes: Routes = [
 	{ path: 'associarsi-benemeriti', redirectTo: '/associazione/associarsi-benemeriti', pathMatch: 'full' },
 	{ path: 'associarsi', redirectTo: '/associazione/associarsi', pathMatch: 'full' },
 	{ path: 'regolamento', redirectTo: '/associazione/regolamento', pathMatch: 'full' },
-	{ path: 'assets/associazione', redirectTo: '/associazione/regolamento', pathMatch: 'full' },
 	{ path: 'deCifrisHistoriae', redirectTo: '/attivita/decifris-historiae', pathMatch: 'full' },
 	{ path: 'deCifrisAthesis', redirectTo: '/attivita/decifris-athesis', pathMatch: 'full' },
 	{ path: 'deCifrisAgora', redirectTo: '/attivita/decifris-agora', pathMatch: 'full' },
