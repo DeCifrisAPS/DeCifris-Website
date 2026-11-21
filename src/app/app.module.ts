@@ -96,7 +96,6 @@ import { Error404Component } from './errors/error404/error404.component';
 import { Error403Component } from './errors/error403/error403.component';
 import { Error418Component } from './errors/error418/error418.component';
 import { HttpErrorInterceptor } from './errors/http-error-interceptor.service';
-import { TestComponent } from './test/test.component';
 import { VenueAccomodationComponent24 } from './attivita/eventi/cifris/cifris2024/venue-accomodation/venue-accomodation.component';
 import { Trends23Component } from './attivita/corsi/trends23/trends23.component';
 import { ProgramButtonsComponent } from './attivita/eventi/cifris/cifris2024/program/program-buttons/program-buttons.component';
@@ -151,7 +150,6 @@ import { Fcir26Component } from './root-elements/hosting/fcir26/fcir26.component
 import { AziendeComponent } from './associazione/aziende/aziende.component';
 import { GareCrittograficheComponent } from './attivita/gare-crittografiche/gare-crittografiche.component';
 import { Cryptowars2011Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/cryptowars2011.component';
-import { CryptowarsComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars.component';
 import { Cryptowars2014Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2014/cryptowars2014.component';
 import { Cryptowars2015Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2015/cryptowars2015.component';
 import { Cryptowars2016Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2016/cryptowars2016.component';
@@ -267,7 +265,6 @@ import { SummerSchoolComponent } from './attivita/eventi/eventi-pubblici/summer-
         ProgramCommitteeComponent24,
         SubmissionComponent24,
         Cifris2024Component,
-        TestComponent,
         Cifris2023Component,
         HomeCifris23Component,
         Vol1Component,
@@ -343,7 +340,6 @@ import { SummerSchoolComponent } from './attivita/eventi/eventi-pubblici/summer-
         // CounterpartyHomeComponent,
         // RulesComponent,
         // SpecsComponent,
-        // CryptowarsComponent,
         // Cryptowars2020Component,
         // Cryptowars2019Component,
         // Cryptowars2018Component,
@@ -465,7 +461,6 @@ import { SummerSchoolComponent } from './attivita/eventi/eventi-pubblici/summer-
         Cryptowars2019Component,
         Cryptowars2020Component,
         Cryptowars2021Component,
-        CryptowarsComponent,
         //Hosting
         // Opera24Component,
         // Combinatorics24Component,

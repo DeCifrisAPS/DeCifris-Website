@@ -82,7 +82,7 @@ async function main() {
   if (!routes.has('/404')) throw new Error('Missing prerendered 404 document');
   validateKoine(routes);
 
-  const excluded = new Set(['/403', '/404', '/418', '/cifris/test']);
+  const excluded = new Set(['/403', '/404', '/418']);
   const pages = [...routes].sort().filter((path) =>
     !excluded.has(path) && !redirects.has(path) && !path.endsWith('/payment-result'));
   const sitemap = new SitemapStream({ hostname });

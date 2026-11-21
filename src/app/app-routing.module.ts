@@ -21,7 +21,6 @@ import { WCC24Component } from './root-elements/hosting/wcc24/wcc24.component';
 // associazione
 import { AssociazioneComponent } from './associazione/associazione.component';
 import { HomeAssociazioneComponent } from './associazione/home-associazione/home-associazione.component';
-import { ObiettiviComponent } from './associazione/obiettivi/obiettivi.component';
 import { StatutoComponent } from './associazione/statuto/statuto.component';
 import { RegolamentoComponent } from './associazione/regolamento/regolamento.component';
 import { OrganiDirettiviComponent } from './associazione/organi-direttivi/organi-direttivi.component';
@@ -83,7 +82,6 @@ import { Histo26Component } from './attivita/eventi/histo26/histo26.component';
 import { Error403Component } from './errors/error403/error403.component';
 import { Error418Component } from './errors/error418/error418.component';
 import { Error404Component } from './errors/error404/error404.component';
-import { TestComponent } from './test/test.component';
 
 // cifris26
 import { Cifris2026Component } from './attivita/eventi/cifris/cifris2026/cifris2026.component';
@@ -109,7 +107,6 @@ import { ProgramCommitteeComponent24 } from './attivita/eventi/cifris/cifris2024
 import { ProgramComponent24 } from './attivita/eventi/cifris/cifris2024/program/program.component';
 import { RegistrationComponent24 } from './attivita/eventi/cifris/cifris2024/registration/registration.component';
 import { VenueAccomodationComponent24 } from './attivita/eventi/cifris/cifris2024/venue-accomodation/venue-accomodation.component';
-import { RegistrationDetailsComponent24 } from './attivita/eventi/cifris/cifris2024/registration-details/registration-details.component';
 
 // cifris23
 import { Cifris2023Component } from './attivita/eventi/cifris/cifris2023/cifris2023.component';
@@ -155,7 +152,6 @@ import { Fcir25Component } from './root-elements/hosting/fcir25/fcir25.component
 import { Fcir26Component } from './root-elements/hosting/fcir26/fcir26.component';
 import { W25Component } from './root-elements/w25/w25.component';
 import { AziendeComponent } from './associazione/aziende/aziende.component';
-import { CryptowarsComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars.component';
 import { Cryptowars2011Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/cryptowars2011.component';
 import { Cryptowars2020Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2020/cryptowars2020.component';
 import { Cryptowars2021Component } from './attivita/gare-crittografiche/cryptowars/cryptowars2021/cryptowars2021.component';
@@ -345,7 +341,7 @@ const routes: Routes = [
 			{ path: "stage-tirocini", component: StageTirociniComponent, data: { title: 'Stage e tirocini' } },
 			{ path: "associarsi-benemeriti", component: BenemeritiComponent, data: { title: 'Associarsi come Benemeriti' } },
 			{ path: "associarsi", component: AssociarsiComponent, data: { title: 'Associarsi' } },
-			{ path: "obiettivi", component: ObiettiviComponent, data: { title: 'Obiettivi' } },
+			{ path: "obiettivi", redirectTo: '/associazione', pathMatch: 'full' },
 			{ path: "dicono-di-noi", component: DiconoDiNoiComponent, data: { title: 'Dicono di noi' } },
 			{ path: "notizie", component: NotizieComponent, data: { title: 'Notizie' } },
 			{ path: "timeline", component: TimelineComponent, data: { title: 'TIMELINE' } },
@@ -415,7 +411,7 @@ const routes: Routes = [
 			{ path: 'pqcifris', component: PqCifrisComponent, data: { title: 'PQCifris' } },
 			{ path: 'pqcifris-summer22', component: SummerSchoolComponent, data: { title: 'Summer School 2022' } },
 			// cryptowars
-			{ path: 'cryptowars', component: CryptowarsComponent, data: { title: 'Cryptowars' } },
+			{ path: 'cryptowars', redirectTo: '/attivita/gare-crittografiche', pathMatch: 'full' },
 			{ path: "cryptowars/2021", component: Cryptowars2021Component, data: { title: 'Cryptowars 2021' } },
 			{ path: "cryptowars/2020", component: Cryptowars2020Component, data: { title: 'Cryptowars 2020' } },
 			{ path: "cryptowars/2019", component: Cryptowars2019Component, data: { title: 'Cryptowars 2019' } },
@@ -505,7 +501,7 @@ const routes: Routes = [
 			{ path: "call-for-workshops", component: CallForWorkshopsComponent24, data: { title: 'CIFRIS24: Call for workshops' } },
 			{ path: "program-committee", component: ProgramCommitteeComponent24, data: { title: 'CIFRIS24: Program Committee' } },
 			{ path: "registration", component: RegistrationComponent24, data: { title: 'CIFRIS24: Registration' } },
-			{ path: "registration-details", component: RegistrationDetailsComponent24, data: { title: 'CIFRIS24: Registration' } },
+			{ path: "registration-details", redirectTo: '/cifris24/registration', pathMatch: 'full' },
 			{ path: "program", component: ProgramComponent24, data: { title: 'CIFRIS24: Program' } },
 			{ path: "proceedings", component: ProceedingsComponent24, data: { title: 'CIFRIS24: Proceedings' } },
 			{ path: "payment-result", component: PaymentResultComponent24, data: { title: 'Payment result' } },
@@ -676,8 +672,6 @@ const routes: Routes = [
 			{ path: ":volume/:article", component: ArticoloComponent, canMatch: [articoloGuard], pathMatch: 'full' },
 		]
 	},
-
-	{ path: 'cifris/test', component: TestComponent, data: { title: 'GUAI CHI LEGGE' } },
 
 	// Redirect per i percorsi cambiati
 	{ path: 'attivita/deCifris-scholalatina', redirectTo: '/attivita/decifris-scholalatina', pathMatch: 'full' },
