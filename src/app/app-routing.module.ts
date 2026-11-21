@@ -1,3 +1,4 @@
+import { sectionNavigation } from './section-layout/section-navigation';
 import { PubblicaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-ita/pubblica/pubblica.component';
 import { SimmetricaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-ita/simmetrica/simmetrica.component';
 import { ClassicaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-ita/classica/classica.component';
@@ -191,7 +192,7 @@ import { SummerSchoolComponent } from './attivita/eventi/eventi-pubblici/summer-
 const routes: Routes = [
 	// home e miscellanea
 	{
-		path: "", component: RootElementsComponent, children: [
+		path: "", component: RootElementsComponent, data: { sectionNavigation: sectionNavigation['root-elements'] }, children: [
 			{
 				path: "", component: HomeComponent, data: {
 					title: 'DeCifris home',
@@ -349,6 +350,7 @@ const routes: Routes = [
 			{ path: "notizie", component: NotizieComponent, data: { title: 'Notizie' } },
 			{ path: "timeline", component: TimelineComponent, data: { title: 'TIMELINE' } },
 		], data: {
+			sectionNavigation: sectionNavigation['associazione'],
 			title: 'De Cifris APS',
 			meta: [
 				{ name: 'description', content: "De Componendis Cifris Associazione di Promozione Sociale" },
@@ -367,6 +369,7 @@ const routes: Routes = [
 			{ path: "curiosi", component: PerCuriosiComponent, data: { title: 'Ti incuriosisce?' } },
 			{ path: "studenti", component: PerStudentiComponent, data: { title: 'Studi?' } },
 		], data: {
+			sectionNavigation: sectionNavigation['welcome'],
 			title: 'Welcome!',
 			meta: [
 				{ name: 'description', content: "Welcome to De Cifris" },
@@ -439,6 +442,7 @@ const routes: Routes = [
 			{ path: "didattica-universitaria", component: DidatticaUniversitariaComponent, data: { title: 'Didattica universitaria' } },
 
 		], data: {
+			sectionNavigation: sectionNavigation['attivita'],
 			title: 'Attività',
 			meta: [
 				{ name: 'description', content: "De Cifris: our activities" },
@@ -460,6 +464,7 @@ const routes: Routes = [
 			{ path: "payment-result", component: PaymentResultComponent26, data: { title: 'Payment result' } },
 			{ path: "workshops", component: Workshops26Component, data: { title: 'CIFRIS26: Workshops' } },
 		], data: {
+			sectionNavigation: sectionNavigation['cifris2026'],
 			title: 'CIFRIS26',
 			meta: [
 				{ name: 'description', content: "CIFRIS26 - the Fourth Italian Conference, by De Cifris & Roma Tre University" },
@@ -482,6 +487,7 @@ const routes: Routes = [
 			{ path: "payment-result", component: PaymentResultComponent25, data: { title: 'Payment result' } },
 			{ path: "workshops", component: Workshops25Component, data: { title: 'CIFRIS25: Workshops' } },
 		], data: {
+			sectionNavigation: sectionNavigation['cifris2025'],
 			title: 'CIFRIS25',
 			meta: [
 				{ name: 'description', content: "CIFRIS25 - the Third Italian Conference, by De Cifris & Banca d'Italia" },
@@ -517,6 +523,7 @@ const routes: Routes = [
 			{ path: "scientific-session", component: ScientificSession24Component, data: { title: 'CIFRIS24: Scientific Session' } },
 			{ path: "dinner", component: SocialDinner24Component, data: { title: 'CIFRIS24: Social Dinner' } },
 		], data: {
+			sectionNavigation: sectionNavigation['cifris2024'],
 			title: 'CIFRIS24',
 			meta: [
 				{ name: 'description', content: "CIFRIS24 - the Second Italian Conference, by De Cifris & Banca d'Italia" },
@@ -537,6 +544,7 @@ const routes: Routes = [
 			{ path: "proceedings", component: ProceedingsComponent, data: { title: 'CIFRIS23: Proceedings' } },
 			{ path: "payment-result", component: PaymentResultComponent, data: { title: 'payment result' } },
 		], data: {
+			sectionNavigation: sectionNavigation['cifris2023'],
 			title: 'CIFRIS23',
 			meta: [
 				{ name: 'description', content: 'CIFRIS23 - the First Italian Conference, by De Cifris & CONSOB' },
@@ -547,7 +555,7 @@ const routes: Routes = [
 
 	// koine
 	{
-		path: "koine", component: KoineComponent, children: [
+		path: "koine", component: KoineComponent, data: { sectionNavigation: sectionNavigation['koine'] }, children: [
 			{
 				path: "", component: HomeKoineComponent, data: {
 					title: 'De Cifris Koine',

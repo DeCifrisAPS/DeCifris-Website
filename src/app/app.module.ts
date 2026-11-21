@@ -1,3 +1,4 @@
+import { SectionLayoutComponent } from './section-layout/section-layout.component';
 import { SessioniDeCifrisComponent } from './attivita/eventi/eventi-pubblici/sessioni-de-cifris/sessioni-de-cifris.component';
 import { ConvegnoUmiComponent } from './attivita/eventi/eventi-pubblici/convegno-umi/convegno-umi.component';
 import { BrowserModule, bootstrapApplication, provideClientHydration } from '@angular/platform-browser';
@@ -476,7 +477,7 @@ import { SummerSchoolComponent } from './attivita/eventi/eventi-pubblici/summer-
         ArticoloComponent,
         AziendeComponent
     ],
-    bootstrap: [AppComponent], imports: [BrowserModule,
+    bootstrap: [AppComponent], imports: [BrowserModule, SectionLayoutComponent,
         AppRoutingModule,
         RouterModule,
         FormsModule,

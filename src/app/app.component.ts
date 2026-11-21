@@ -60,13 +60,4 @@ export class AppComponent implements AfterViewInit, OnInit {
     //  window.scroll(0, 0);
     //}
   }
-  toggleSidebar() {
-    const sidebar = document.getElementById('sidebar');
-    if (sidebar) {
-      sidebar.classList.toggle('open');
-    } else {
-      sidebar.classList.toggle('closed');
-    }
-  }
-
 }

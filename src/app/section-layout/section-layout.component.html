@@ -1,0 +1,41 @@
+<ng-template #navigationLink let-link let-shortcut="shortcut">
+  <a class="section-link" [routerLink]="link.path" routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }" ariaCurrentWhenActive="page"
+    (click)="sidebar.close(true)">
+    <mat-icon aria-hidden="true">{{ link.icon }}</mat-icon>
+    <span>{{ shortcut ? (link.shortcut ?? link.label) : link.label }}</span>
+  </a>
+</ng-template>
+
+<nav #navigation id="section-sidebar" class="section-sidebar" [class.is-open]="sidebar.open()"
+  [attr.aria-label]="groups[0].heading">
+  <ul>
+    <li><ng-container *ngTemplateOutlet="navigationLink; context: { $implicit: home }"></ng-container></li>
+  </ul>
+  @for (group of groups; track group.heading) {
+    <h5>{{ group.heading }}</h5>
+    <ul>
+      @for (link of group.links; track link.path) {
+        @if (link.sidebar !== false) {
+          <li><ng-container *ngTemplateOutlet="navigationLink; context: { $implicit: link }"></ng-container></li>
+        }
+      }
+    </ul>
+  }
+</nav>
+
+<div class="section-content" [attr.inert]="sidebar.open() ? '' : null">
+  <ng-content></ng-content>
+</div>
+
+<nav class="section-shortcuts" [attr.aria-label]="groups[0].heading" [attr.inert]="sidebar.open() ? '' : null">
+  <ul>
+    @for (link of shortcuts; track link.path) {
+      <li><ng-container *ngTemplateOutlet="navigationLink; context: { $implicit: link, shortcut: true }"></ng-container></li>
+    }
+  </ul>
+</nav>
+
+@if (sidebar.open()) {
+  <div class="section-backdrop" aria-hidden="true" (click)="sidebar.close(true)"></div>
+}

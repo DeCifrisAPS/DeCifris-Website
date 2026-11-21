@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { AppComponent } from '../app.component';
+import { Component, HostListener, inject } from '@angular/core';
+import { SidebarService } from '../section-layout/sidebar.service';
 
 @Component({
   selector: 'app-toolbar',
@@ -7,9 +7,17 @@ import { AppComponent } from '../app.component';
   styleUrls: ['./toolbar.component.css']
 })
 export class ToolbarComponent {
-  constructor(private appComponent: AppComponent) {}
+  readonly sidebar = inject(SidebarService);
 
-  toggleSidebar() {
-    this.appComponent.toggleSidebar();
+  @HostListener('window:resize')
+  dismissDesktopNavigation(): void {
+    if (this.sidebar.open() && window.matchMedia('(min-width: 992px)').matches) {
+      this.sidebar.close();
+    }
+  }
+
+  @HostListener('document:keydown.escape')
+  closeNavigation(): void {
+    if (this.sidebar.open()) this.sidebar.close(true);
   }
 }

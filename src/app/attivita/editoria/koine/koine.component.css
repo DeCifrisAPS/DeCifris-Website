@@ -1,0 +1,19 @@
+
+.koine-heading {
+  padding: 4% 0 0 1%;
+  background: url('/assets/images/koine/dancing_15perc.png') left top / contain no-repeat;
+}
+
+.koine-heading p {
+  margin: 0 0 10px;
+  color: var(--cifris_darkgray);
+  font-size: larger;
+  font-weight: bold;
+}
+
+.koine-footer p {
+  padding: 0;
+  color: gray;
+  font-size: 10pt;
+  font-style: italic;
+}

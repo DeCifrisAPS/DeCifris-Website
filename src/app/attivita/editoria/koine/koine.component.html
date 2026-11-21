@@ -1,127 +1,19 @@
-<div class="container">
-	<div class="sidenav">
-		<nav class="sidebar" id="sidebar">
-			<ul>
-				<li>
-					<button mat-button [routerLink]="['/']" routerLinkActive="active" (click)="toggleSidebar()"
-						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
-						<mat-icon>home</mat-icon>
-						<span class="sidebar-text">HOME</span>
-					</button>
-				</li>
-				<h5>DE CIFRIS KOINE</h5>
-				<li>
-					<button mat-button [routerLink]="['/koine']" routerLinkActive="active" (click)="toggleSidebar()"
-						[routerLinkActiveOptions]="{exact: true}" class="sidebar-image-button">
-						<mat-icon>menu_book</mat-icon>
-						<span class="sidebar-text">Koine</span>
-					</button>
-				</li>
-				<li>
-					<button mat-button [routerLink]="['/koine/vol10']" routerLinkActive="active"
-						(click)="toggleSidebar()" [routerLinkActiveOptions]="{exact: true}"
-						class="sidebar-image-button">
-						<mat-icon>schedule</mat-icon>
-						<span class="sidebar-text">Latest issue</span>
-					</button>
-				</li>
-				<li>
-					<button mat-button [routerLink]="['/koine/articles-and-volumes']" routerLinkActive="active"
-						(click)="toggleSidebar()" [routerLinkActiveOptions]="{exact: true}"
-						class="sidebar-image-button">
-						<mat-icon>library_books</mat-icon>
-						<span class="sidebar-text">Articles & volumes</span>
-					</button>
-				</li>
-				<li>
-					<button mat-button [routerLink]="['/koine/copyright-license']" routerLinkActive="active"
-						(click)="toggleSidebar()" [routerLinkActiveOptions]="{exact: true}"
-						class="sidebar-image-button">
-						<mat-icon>copyright</mat-icon>
-						<span class="sidebar-text">Copyright & license</span>
-					</button>
-				</li>
-				<li>
-					<button mat-button [routerLink]="['/koine/editorial-board']" routerLinkActive="active"
-						(click)="toggleSidebar()" [routerLinkActiveOptions]="{exact: true}"
-						class="sidebar-image-button">
-						<mat-icon>groups</mat-icon>
-						<span class="sidebar-text">Editorial board</span>
-					</button>
-				</li>
-			</ul>
-		</nav>
-	</div>
-	<div class="content" (click)="toggleSidebar(true)">
-		<div style="
-				display: flex;
-  				align-items: center; 
-				background: url('../../../../assets/images/koine/dancing_15perc.png');
-				background-size: contain;
-				background-repeat: no-repeat;
-				padding-top: 4%;
-				padding-left: 1%;">
-			<div style="text-align: center;padding:0; margin-bottom: 10px;">
-				<p style="color:var(--cifris_darkgray);font-size: larger; font-weight: bold;margin:0; display: inline;">
-					DE CIFRIS KOINE </p>
-			</div>
-		</div>
+<app-section-layout>
+	<header class="koine-heading">
+		<p>DE CIFRIS KOINE </p>
+	</header>
 
-		<router-outlet></router-outlet>
+	<router-outlet></router-outlet>
 
-		<footer>
-			<p style="color: gray;font-style: italic; font-size: 10pt; padding: 0;">
-				<b>ISSN: 3034-9796</b>
-				<br>
-				Authorised by Tribunale di Milano, 23-02-2024, R.G. 1315/2024. R.S. 22.
-				<br>
-				Published by De Cifris Press, all rights reserved
-				<br>
-				Via Gianfranco Zuretti 34, 20125 Milano (IT)
-			</p>
-		</footer>
-	</div>
-	<ul class="bottomnav-menu">
-		<li>
-			<button mat-button [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-				<mat-icon style="color:var(--cifris_azure_transparent);">home</mat-icon>
-				<span style="color:var(--cifris_azure_transparent);">HOME</span>
-			</button>
-		</li>
-		<li>
-			<button mat-button [routerLink]="['/koine']" routerLinkActive="active"
-				[routerLinkActiveOptions]="{exact: true}">
-				<mat-icon style="color:var(--cifris_azure_transparent);">menu_book</mat-icon>
-				<span style="color:var(--cifris_azure_transparent);">Koine</span>
-			</button>
-		</li>
-		<li>
-			<button mat-button [routerLink]="['/koine/vol10']" routerLinkActive="active"
-				[routerLinkActiveOptions]="{exact: true}">
-				<mat-icon>schedule</mat-icon>
-				<span>Latest issue</span>
-			</button>
-		</li>
-		<li>
-			<button mat-button [routerLink]="['/koine/articles-and-volumes']" routerLinkActive="active"
-				[routerLinkActiveOptions]="{exact: true}">
-				<mat-icon>library_books</mat-icon>
-				<span>Articles & volumes</span>
-			</button>
-		</li>
-		<li>
-			<button mat-button [routerLink]="['/koine/license']" routerLinkActive="active"
-				[routerLinkActiveOptions]="{exact: true}">
-				<mat-icon>copyright</mat-icon>
-				<span>License</span>
-			</button>
-		</li>
-		<li>
-			<button mat-button [routerLink]="['/koine/editorial-board']" routerLinkActive="active"
-				[routerLinkActiveOptions]="{exact: true}">
-				<mat-icon>groups</mat-icon>
-				<span>Editorial board</span>
-			</button>
-		</li>
-	</ul>
-</div>
+	<footer class="koine-footer">
+		<p>
+			<b>ISSN: 3034-9796</b>
+			<br>
+			Authorised by Tribunale di Milano, 23-02-2024, R.G. 1315/2024. R.S. 22.
+			<br>
+			Published by De Cifris Press, all rights reserved
+			<br>
+			Via Gianfranco Zuretti 34, 20125 Milano (IT)
+		</p>
+	</footer>
+</app-section-layout>

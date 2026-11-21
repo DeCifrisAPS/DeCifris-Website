@@ -1,16 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-cifris2023',
   templateUrl: './cifris2023.component.html',
   styleUrls: ['./cifris2023.component.css']
 })
-export class Cifris2023Component implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+export class Cifris2023Component {
 
   sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -21,18 +16,6 @@ export class Cifris2023Component implements OnInit {
   async goTo(s: string) {
     await this.sleep(10);
     document.getElementById(s).scrollIntoView({ behavior: 'smooth' });
-  }
-  toggleSidebar(forceClose?: boolean) {
-    const sidebar = document.getElementById('sidebar');
-    if (sidebar) {
-      if (forceClose) {
-        sidebar.classList.remove('open');
-        sidebar.classList.add('closed');
-      } else {
-        sidebar.classList.toggle('open');
-        sidebar.classList.toggle('closed');
-      }
-    }
   }
 
 }

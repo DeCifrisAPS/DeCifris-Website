@@ -3,12 +3,15 @@
         routerLinkActive="active">
         <img class="pr-2 noFocus" src="../assets/images/icons/decifris.svg" alt="Logo De Cifris">
     </a>
-    <button mat-icon-button class="navbar-toggler" type="button" (click)="toggleSidebar()"
-        aria-labelledby="dropdownMenuTogglerButton">
-        <mat-icon style="color: white!important;">menu</mat-icon>
+    <button #navigationToggle class="navbar-toggler" type="button"
+        (click)="sidebar.toggle(navigationToggle)" aria-label="Main navigation"
+        [attr.aria-expanded]="sidebar.open()"
+        [attr.aria-controls]="sidebar.hasSection() ? 'section-sidebar' : 'navbarSupportedContent'">
+        <mat-icon aria-hidden="true">menu</mat-icon>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent"
+        [class.mobile-menu-open]="sidebar.open() && !sidebar.hasSection()">
         <ul class="navbar-nav">
             <!-- MENU WELCOME -->
             <li class="nav-item dropdown">

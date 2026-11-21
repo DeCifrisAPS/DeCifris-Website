@@ -330,3 +330,15 @@ a[mat-raised-button] {
     box-sizing: border-box !important;
   }
 }
+
+.section-heading {
+  margin: 0 0 10px;
+  color: var(--cifris_blue);
+  font-size: larger;
+  font-weight: bold;
+  text-align: center;
+}
+
+.section-heading i {
+  font-weight: normal;
+}
