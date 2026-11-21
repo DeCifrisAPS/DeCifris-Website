@@ -33,3 +33,5 @@ Use a shared inventory for sitemap generation and publication. Include canonical
 Record which batches were released, compare them with the baseline and verify the rollback procedure on a preview copy. Start the editorial pilot from this release.
 
 **Done when.** The team has a verified live release, a concise record of changes and a known deployment to restore.
+
+[Release candidate, verification and Aruba rollout](01-release.md).
