@@ -11,9 +11,10 @@ export class NotizieService {
 
     constructor(private http: HttpClient) { }
 
-    getNotizie(): Observable<Notizia[]> {
-        // Aggiungi qui tutti i nomi dei file
+    getNotizie(limit?: number): Observable<Notizia[]> {
         const notiziaFiles = [
+            '2026-11-22-ixh26.json',
+            '2026-06-30-koine10.json',
             '2024-06-07.json',
             '2024-06-04.json',
             '2024-05-10.json',
@@ -27,7 +28,7 @@ export class NotizieService {
             '2023-02-14.json',
             '2022-12-21.json'
         ]; 
-        const requests = notiziaFiles.map(file => this.http.get<Notizia>(`${this.basePath}${file}`));
+        const requests = notiziaFiles.slice(0, limit).map(file => this.http.get<Notizia>(`${this.basePath}${file}`));
 
         return forkJoin(requests);
     }

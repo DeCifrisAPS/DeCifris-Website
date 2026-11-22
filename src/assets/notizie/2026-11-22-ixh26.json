@@ -1,0 +1,17 @@
+{
+  "id": 14,
+  "titolo": "IXH26 a Bari",
+  "contenuto": "Il 20 e 21 novembre si è tenuto a Bari IXH26, l’hackathon dedicato alla crittografia e alle applicazioni dell’XRP Ledger.",
+  "autore": "",
+  "dataPubblicazione": "22 novembre 2026",
+  "links": [
+    {
+      "nome": "Programma e materiali di IXH26",
+      "routerLink": "/ixh26"
+    },
+    {
+      "nome": "Scheda dell’evento di XRPL Commons",
+      "url": "https://website.xrpl-commons.org/participate/events/ixh26-italian-xrpl-hackathon"
+    }
+  ]
+}

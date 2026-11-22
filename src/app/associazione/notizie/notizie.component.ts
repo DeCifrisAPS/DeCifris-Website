@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { NotizieService } from './notizie.service';
 import { Notizia } from './notizia.model';
 
@@ -8,14 +8,14 @@ import { Notizia } from './notizia.model';
   styleUrls: ['./notizie.component.css']
 })
 export class NotizieComponent implements OnInit {
+  @Input() limit?: number;
   notizie: Notizia[] = [];
 
   constructor(private notizieService: NotizieService) {}
 
   ngOnInit(): void {
-    this.notizieService.getNotizie().subscribe(
+    this.notizieService.getNotizie(this.limit).subscribe(
       data => {
-        //console.log('Notizie caricate:', data);
         this.notizie = data;
       },
       error => {

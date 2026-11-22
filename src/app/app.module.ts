@@ -75,7 +75,6 @@ import { SeminariComponent } from './attivita/seminari/seminari.component';
 import { EditoriaComponent } from './attivita/editoria/editoria.component';
 import { DiconoDiNoiComponent } from './associazione/notizie/dicono-di-noi/dicono-di-noi.component';
 import { NotizieComponent } from './associazione/notizie/notizie.component';
-import { NewsComponent } from './root-elements/home/news/news.component';
 import { ArticoloComponent } from './attivita/editoria/articolo/articolo.component';
 
 // /cifris2024
@@ -100,7 +99,6 @@ import { VenueAccomodationComponent24 } from './attivita/eventi/cifris/cifris202
 import { Trends23Component } from './attivita/corsi/trends23/trends23.component';
 import { ProgramButtonsComponent } from './attivita/eventi/cifris/cifris2024/program/program-buttons/program-buttons.component';
 
-// import { NewsComponent } from './news/news.component';
 // import { AderentiComponent } from './aderenti/aderenti.component';
 
 
@@ -246,7 +244,6 @@ import { SummerSchoolComponent } from './attivita/eventi/eventi-pubblici/summer-
         EditoriaComponent,
         DiconoDiNoiComponent,
         NotizieComponent,
-        NewsComponent,
         CallForPapersComponent24,
         CallForWorkshopsComponent24,
         ProgramCommitteeComponent24,
@@ -284,7 +281,6 @@ import { SummerSchoolComponent } from './attivita/eventi/eventi-pubblici/summer-
         // PqCifrisComponent,
         // CifrisCloudComponent,
         // MathCifrisComponent,
-        // NewsComponent,
         // AderentiComponent,
         // DecifrisAthesisComponent,
         // DecifrisAugustaeTaurinorumComponent,

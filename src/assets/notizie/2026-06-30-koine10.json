@@ -1,0 +1,13 @@
+{
+  "id": 13,
+  "titolo": "De Cifris Koine, volume 10",
+  "contenuto": "È disponibile 2024-25: XRPL-Cifris, il decimo volume di De Cifris Koine, dedicato alle edizioni 2024 e 2025. Il volume e i singoli articoli sono consultabili in accesso aperto.",
+  "autore": "",
+  "dataPubblicazione": "30 giugno 2026",
+  "links": [
+    {
+      "nome": "Consulta il volume 10",
+      "routerLink": "/koine/vol10"
+    }
+  ]
+}
