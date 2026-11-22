@@ -13,8 +13,9 @@ The current branch has passed the 1,091-URL local Apache check. The remaining re
 ### 1. Make Editoria a short publications hub
 
 - [ ] Keep clear links to Koine and the two Aracne series. Keep the Cento Tesi pages as the destinations for each edition. Review the 2017–2024 page and confirm whether its call is open, closed or superseded before changing the status shown on the hub.
-- [ ] Remove the Koine volume cards from the Editoria inventories and use the Koine volume index as their shared destination. In particular, the current “Libri in preparazione” panel links to the published volume 4. Keep a compact selection of non-Koine books with publisher links where those links add something readers cannot find in Koine.
-- [ ] Replace the repeated placeholder covers with compact text links where a cover adds no information. Correct the Cento Tesi 2017–2024 alternative text, which currently says 2014–2023. Give each public item one maintained title and status.
+- [x] Replace the duplicate Koine volume cards with a link to the volume index. Volume 4 is listed with the published volumes. Retain a compact selection of other books and their publisher links.
+- [x] Replace the placeholder covers with text links and use small thumbnails for the remaining actual covers. The mismatched Cento Tesi placeholder alternative text is gone.
+- [ ] Give each public item one maintained title and status.
 
 ### 2. Make important pages easy to reach
 

@@ -1,47 +1,11 @@
-img.mainlogo {
-	width: 30%;
-	border-radius: 50%;
-	margin-bottom: 0;
-	min-width: 200px;
-}
-/* Stile container */
-.iniziativecontainer {
+.home-brand {
 	display: flex;
-	flex-wrap: wrap;
-	gap: 5px;
 	justify-content: center;
-	padding: 20px;
-  }
-  
-  /* Stile dei pulsanti */
-  .txtbtn {
-	display: inline-block;
-	background-color: var(--cifris_blue);
-	color: white;
-	display: flex; 
-	align-items: center; 
-	justify-content: center;
-	text-align: center;
-	border-radius: 8px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	transition: transform 0.2s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-	cursor: pointer;
-	text-decoration: none;
-	width: 110px;
-  }
-  
-  .txtbtn:hover {
-	transform: translateY(-5px);
-	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-	background-color: var(--cifris_purple);
-  }
-  
-  .txtbtn-txt {
-	font-size: 10px;
-	font-weight: bold;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	color: inherit; 
-	margin: 0;
-	display: block;
-  }
+	margin: 0 0 1.5rem;
+}
+
+.home-brand img {
+	width: clamp(8.5rem, 14vw, 11rem);
+	height: auto;
+	border-radius: 50%;
+}

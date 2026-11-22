@@ -1,9 +1,9 @@
-<h1 align="center">ATTIVITÀ EDITORIALI</h1>
-<div class="text">
+<h1 class="editorial-title">ATTIVITÀ EDITORIALI</h1>
+<section class="text editorial-section">
   <h2>COLLANE E RIVISTE</h2>
   <ul>
     <li>
-      la nostra collana <a routerLink="/koine">De Cifris Koine</a>, pubblicata da De Cifris Press
+      la nostra collana <a routerLink="/koine">De Cifris Koine</a>, pubblicata da De Cifris Press (<a routerLink="/koine/articles-and-volumes">volumi e articoli</a>)
     </li>
     <li>
       la collana <a target="_blank"
@@ -17,109 +17,60 @@
       in collaborazione con Aracne
     </li>
   </ul>
-</div>
-<div class="text">
+</section>
+
+<section class="text editorial-section">
   <h2>LIBRI IN PREPARAZIONE</h2>
-  <div class="bookcontainer">
-    <a [routerLink]="'/attivita/centotesi-2017-2024'" style="text-decoration: none;">
-      <mat-card class="book">
-        <img mat-card-image src="../../../assets/images/editoria/Koine placeholder.png"
-          alt="Cento tesi di crittografia e codici in Italia, dal 2014 al 2023">
-        <div class="book-details">
-          <p class="title">Cento tesi di crittografia e codici in Italia, 2017-2024</p>
-          <p class="author">AA VV</p>
-        </div>
-      </mat-card>
-    </a>
+  <ul class="publication-list">
+    <li>
+      <a class="publication-link" routerLink="/attivita/centotesi-2017-2024">
+        <span>
+          <strong>Cento tesi di crittografia e codici in Italia, 2017-2024</strong>
+          <span class="publication-author">AA VV</span>
+        </span>
+      </a>
+    </li>
+  </ul>
+</section>
 
-    <a [routerLink]="'/koine/vol4'">
-      <mat-card class="book">
-        <img mat-card-image src="../../../assets/images/editoria/Koine placeholder.png" alt="Advanced Cryptographic Protocols">
-        <div class="book-details">
-          <p class="title">Advanced Cryptographic Protocols</p>
-          <p class="author">AA VV</p>
-        </div>
-      </mat-card>
-    </a>
-  </div>
-</div>
-<div class="text">
+<section class="text editorial-section">
   <h2>LIBRI IN EVIDENZA</h2>
-  <div class="bookcontainer">
-    <a [routerLink]="'/koine/vol3'" style="text-decoration: none;">
-      <mat-card class="book">
-        <img mat-card-image src="../../../assets/images/editoria/aavv_eruditorumacta24.png" alt="Eruditorum Acta 2024">
-        <div class="book-details">
-          <p class="title">Eruditorum Acta</p>
-          <p class="author">AA VV</p>
-        </div>
-      </mat-card>
-    </a>
-
-    <a href="https://www.aracne-editrice.it/index.php/pubblicazione.html?item=9788825510737" target="_blank"
-      style="text-decoration: none;">
-      <mat-card class="book">
-        <img mat-card-image src="../../../assets/images/editoria/elia_intro_classic_crypto.jpg"
-          alt="An introduction to Classic Cryptography">
-        <div class="book-details">
-          <p class="title">An introduction to Classic Cryptography</p>
-          <p class="author">Michele ELIA</p>
-        </div>
-      </mat-card>
-    </a>
-
-    <a [routerLink]="'/koine/vol1'" style="text-decoration: none;">
-      <mat-card class="book">
-        <img mat-card-image src="../../../assets/images/editoria/aavv_cifris23acta.png" alt="CIFRIS23 Acta">
-        <div class="book-details">
-          <p class="title">CIFRIS23 Acta</p>
-          <p class="author">AA VV</p>
-        </div>
-      </mat-card>
-    </a>
-
-    <a [routerLink]="'/attivita/centotesi-2008-2017'" style="text-decoration: none;">
-      <mat-card class="book">
-        <img mat-card-image src="../../../assets/images/editoria/aavv_100tesi.jpg"
-          alt="Cento tesi di crittografia e codici in Italia, dal 2008 al 2017">
-        <div class="book-details">
-          <p class="title">Cento tesi di crittografia e codici in Italia, 2008-2017</p>
-          <p class="author">AA VV</p>
-        </div>
-      </mat-card>
-    </a>
-
-    <a href="https://www.aracneeditrice.eu/it/pubblicazioni/de-cifris-cryptanalysis-roberto-la-scala-marco-pedicini-andrea-visconti-stefano-barbero-marco-cianfriglia-marco-pedicini-michele-elia-roberto-la-scala-nadir-murru-giordano-sa-9791259948656.html"
-      target="_blank" style="text-decoration: none;">
-      <mat-card class="book">
-        <img mat-card-image src="../../../assets/images/editoria/aavv_cryptanalysis.jpg" alt="De Cifris Cryptanalysis">
-        <div class="book-details">
-          <p class="title">De Cifris Cryptanalysis</p>
-          <p class="author">AA VV</p>
-        </div>
-      </mat-card>
-    </a>
-
-    <a href="https://www.aracneeditrice.eu/it/pubblicazioni/la-crittografia-della-repubblica-di-venezia-paolo-bonavoglia-9791221807202.html"
-      target="_blank" style="text-decoration: none;">
-      <mat-card class="book">
-        <img mat-card-image src="../../../assets/images/editoria/bonavoglia_crypto_venezia.jpg"
-          alt="La crittografia della Repubblica di Venezia">
-        <div class="book-details">
-          <p class="title">La crittografia della Repubblica di Venezia</p>
-          <p class="author">Paolo BONAVOGLIA</p>
-        </div>
-      </mat-card>
-    </a>
-
-    <a [routerLink]="'/koine/vol2'" style="text-decoration: none;">
-      <mat-card class="book">
-        <img mat-card-image src="../../../assets/images/editoria/aavv_cifrisseminars.png" alt="De Cifris Seminars">
-        <div class="book-details">
-          <p class="title">De Cifris Seminars</p>
-          <p class="author">AA VV</p>
-        </div>
-      </mat-card>
-    </a>
-  </div>
-</div>
+  <ul class="publication-list">
+    <li>
+      <a class="publication-link" href="https://www.aracne-editrice.it/index.php/pubblicazione.html?item=9788825510737" target="_blank" rel="noopener">
+        <img src="/assets/images/editoria/elia_intro_classic_crypto.jpg" width="48" height="64" loading="lazy" alt="">
+        <span>
+          <strong>An introduction to Classic Cryptography</strong>
+          <span class="publication-author">Michele ELIA</span>
+        </span>
+      </a>
+    </li>
+    <li>
+      <a class="publication-link" routerLink="/attivita/centotesi-2008-2017">
+        <img src="/assets/images/editoria/aavv_100tesi.jpg" width="48" height="64" loading="lazy" alt="">
+        <span>
+          <strong>Cento tesi di crittografia e codici in Italia, 2008-2017</strong>
+          <span class="publication-author">AA VV</span>
+        </span>
+      </a>
+    </li>
+    <li>
+      <a class="publication-link" href="https://www.aracneeditrice.eu/it/pubblicazioni/de-cifris-cryptanalysis-roberto-la-scala-marco-pedicini-andrea-visconti-stefano-barbero-marco-cianfriglia-marco-pedicini-michele-elia-roberto-la-scala-nadir-murru-giordano-sa-9791259948656.html" target="_blank" rel="noopener">
+        <img src="/assets/images/editoria/aavv_cryptanalysis.jpg" width="48" height="64" loading="lazy" alt="">
+        <span>
+          <strong>De Cifris Cryptanalysis</strong>
+          <span class="publication-author">AA VV</span>
+        </span>
+      </a>
+    </li>
+    <li>
+      <a class="publication-link" href="https://www.aracneeditrice.eu/it/pubblicazioni/la-crittografia-della-repubblica-di-venezia-paolo-bonavoglia-9791221807202.html" target="_blank" rel="noopener">
+        <img src="/assets/images/editoria/bonavoglia_crypto_venezia.jpg" width="48" height="64" loading="lazy" alt="">
+        <span>
+          <strong>La crittografia della Repubblica di Venezia</strong>
+          <span class="publication-author">Paolo BONAVOGLIA</span>
+        </span>
+      </a>
+    </li>
+  </ul>
+</section>

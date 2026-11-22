@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home-attivita',
-  templateUrl: './home-attivita.component.html',
-  styleUrls: ['./home-attivita.component.css']
+  templateUrl: './home-attivita.component.html'
 })
 export class HomeAttivitaComponent {
 
