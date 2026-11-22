@@ -12,5 +12,6 @@ export interface Notizia {
   autore: string;
   dataPubblicazione: string;
   immagine?: string; // URL dell'immagine opzionale
+  immagineAlt?: string;
   links?: Link[]; // Lista di link opzionali
 }

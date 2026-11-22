@@ -1,0 +1,23 @@
+{
+  "id": 16,
+  "titolo": "CIFRIS25, la terza Conferenza Nazionale di Crittografia",
+  "contenuto": "L’11 e 12 settembre 2025 De Cifris e l’Università Roma Tre, in collaborazione con l’Agenzia per la Cybersicurezza Nazionale, hanno organizzato la terza Conferenza Nazionale di Crittografia. La prima giornata ha ospitato sessioni istituzionali, industriali e scientifiche. La seconda è stata dedicata ai workshop tematici. Gli atti sono disponibili in accesso aperto su De Cifris Koine.",
+  "autore": "",
+  "dataPubblicazione": "12 settembre 2025",
+  "immagine": "/assets/images/koine/Vol7 - CIFRIS25 ACTA.png",
+  "immagineAlt": "Copertina degli atti di CIFRIS25",
+  "links": [
+    {
+      "nome": "Programma di CIFRIS25",
+      "routerLink": "/cifris25/program"
+    },
+    {
+      "nome": "Consulta gli atti",
+      "routerLink": "/koine/vol7"
+    },
+    {
+      "nome": "L’annuncio di Roma Tre",
+      "url": "https://www.uniroma3.it/articoli/cifris25-terza-conferenza-nazionale-di-crittografia-527861/"
+    }
+  ]
+}

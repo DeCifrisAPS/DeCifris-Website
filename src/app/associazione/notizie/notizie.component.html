@@ -9,7 +9,7 @@
 			<mat-card-subtitle>{{ notizia.dataPubblicazione }}</mat-card-subtitle>
 		</mat-card-header>
 		<div *ngIf="notizia.immagine" class="img-container">
-			<img mat-card-image [src]="notizia.immagine" alt="Immagine di {{ notizia.titolo }}" class="card-img-right">
+			<img mat-card-image [src]="notizia.immagine" [alt]="notizia.immagineAlt ?? ('Immagine di ' + notizia.titolo)" class="card-img-right">
 		</div>
 		<mat-card-content>
 			{{ notizia.contenuto }}

@@ -15,6 +15,8 @@ export class NotizieService {
         const notiziaFiles = [
             '2026-11-22-ixh26.json',
             '2026-06-30-koine10.json',
+            '2025-11-08-ixh25.json',
+            '2025-09-12-cifris25.json',
             '2024-06-07.json',
             '2024-06-04.json',
             '2024-05-10.json',
