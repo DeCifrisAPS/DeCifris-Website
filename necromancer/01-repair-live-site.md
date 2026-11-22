@@ -35,3 +35,5 @@ Record which batches were released, compare them with the baseline and verify th
 **Done when.** The team has a verified live release, a concise record of changes and a known deployment to restore.
 
 [Release candidate, verification and Aruba rollout](01-release.md).
+
+[Remaining release work and prioritised improvements](01-remaining-work.md).

@@ -2,6 +2,8 @@
 
 The Necromancer branch contains a repaired Angular release. The candidate was built from the code at fe0cf55a1 and passed the original URL inventory on a local Apache 2.4 server. The public site is still on its previous deployment.
 
+The checks below describe the initial candidate. Rebuild the latest branch before staging. The [remaining Phase 1 work](01-remaining-work.md) records the outstanding rollout checks and the next content, navigation and language improvements.
+
 ## Changes
 
 - Restored the Cryptowars 2011 subpages, the historical Convegno UMI and regional sessions pages, and aliases with confirmed destinations. The association assets alias is exact so it does not swallow file URLs. Unknown pages and downloads return the existing styled 404 document with HTTP 404.
