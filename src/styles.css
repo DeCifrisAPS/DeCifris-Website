@@ -1,5 +1,6 @@
 /* generati in palette partendo da cifris_blue */
 :root {
+  --mobile-toolbar-height: 64px;
   --cifris_blue: #307580;
   --cifris_azure: #e6f4f1;
   --cifris_azure_transparent: #e6f4f190;
