@@ -13,16 +13,16 @@ function readJson(file) {
 }
 
 function property(node, name) {
-  return node.properties.find((entry) => entry.name?.text === name)?.initializer;
+  return node?.properties?.find((entry) => entry.name?.text === name)?.initializer;
 }
 
 function readRedirects() {
   const file = join(project, 'src', 'app', 'app-routing.module.ts');
   const source = ts.createSourceFile(file, readFileSync(file, 'utf8'), ts.ScriptTarget.Latest);
-  const routes = source.statements
+  const declarations = source.statements
     .filter(ts.isVariableStatement)
-    .flatMap((statement) => [...statement.declarationList.declarations])
-    .find((declaration) => declaration.name.text === 'routes');
+    .flatMap((statement) => [...statement.declarationList.declarations]);
+  const routes = declarations.find((declaration) => declaration.name.text === 'routes');
 
   const redirects = new Map();
   function visit(array, parent) {
@@ -34,9 +34,15 @@ function readRedirects() {
         if (property(route, 'pathMatch')?.text !== 'full' || /[:*]/.test(path)) {
           throw new Error('Unsupported legacy redirect /' + path);
         }
-        const target = redirect.text.startsWith('/') ? redirect.text : '/' + [parent, redirect.text].filter(Boolean).join('/');
-        if (redirects.has('/' + path)) throw new Error('Duplicate legacy redirect /' + path);
-        redirects.set('/' + path, target);
+        const value = ts.isIdentifier(redirect)
+          ? declarations.find((declaration) => declaration.name.text === redirect.text)?.initializer
+          : redirect;
+        if (!value || !ts.isStringLiteral(value)) throw new Error('Redirect target for /' + path + ' must be a string');
+        const target = value.text.startsWith('/') ? value.text : '/' + [parent, value.text].filter(Boolean).join('/');
+        const status = Number(property(property(route, 'data'), 'redirectStatus')?.text ?? 301);
+        if (status !== 301 && status !== 302) throw new Error('Unsupported redirect status for /' + path);
+        if (redirects.has('/' + path)) throw new Error('Duplicate redirect /' + path);
+        redirects.set('/' + path, { target, status });
       }
       const children = property(route, 'children');
       if (children) visit(children, path);
@@ -69,10 +75,10 @@ function validateKoine(routes) {
   }
 }
 
-function legacyRule(source, target, optionalSlash) {
+function redirectRule(source, target, status, optionalSlash = false) {
   const literal = source.replace(/[.*+?^$()|[\]\\]/g, '\\$&');
   const suffix = optionalSlash ? '/?$' : '$';
-  return 'RedirectMatch 301 "^' + literal + suffix + '" "' + hostname + target + '"';
+  return 'RedirectMatch ' + status + ' "^' + literal + suffix + '" "' + hostname + target + '"';
 }
 
 async function main() {
@@ -94,11 +100,11 @@ async function main() {
   sitemap.end();
 
   const rules = [];
-  for (const [source, target] of redirects) {
+  for (const [source, { target, status }] of redirects) {
     if (!routes.has(target) || redirects.has(target)) {
       throw new Error('Legacy route ' + source + ' has no prerendered destination: ' + target);
     }
-    rules.push(legacyRule(source, pagePath(target), true));
+    rules.push(redirectRule(source, pagePath(target), status, true));
   }
   const downloads = readJson(join(project, 'legacy-downloads.json'));
   for (const [source, target] of Object.entries(downloads)) {
@@ -106,12 +112,12 @@ async function main() {
     if (!existsSync(file) || !statSync(file).isFile() || source === target) {
       throw new Error('Legacy download ' + source + ' has no release file: ' + target);
     }
-    rules.push(legacyRule(source, target, false));
+    rules.push(redirectRule(source, target, 301));
   }
   const config = readFileSync(join(project, 'src', '.htaccess'), 'utf8').trimEnd();
   writeFileSync(join(browser, 'sitemap.xml'), await xml);
   writeFileSync(join(browser, '.htaccess'), config + '\n\n' + rules.join('\n') + '\n');
-  console.log('Published ' + pages.length + ' sitemap entries and ' + rules.length + ' legacy redirects.');
+  console.log('Published ' + pages.length + ' sitemap entries and ' + rules.length + ' redirects.');
 }
 
 main().catch((error) => {

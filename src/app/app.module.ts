@@ -115,7 +115,6 @@ import { ProgramButtonsComponent } from './attivita/eventi/cifris/cifris2024/pro
 
 // // ./attivita/editoria/koine
 // import { KoineComponent } from './attivita/editoria/koine/koine.component';
-// import { HomeKoineComponent } from './attivita/editoria/koine/home-koine/home-koine.component';
 // import { ArticlesAndVolumesComponent } from './attivita/editoria/koine/articles-and-volumes/articles-and-volumes.component';
 // import { EditorialBoardComponent } from './attivita/editoria/koine/editorial-board/editorial-board.component';
 // import { Vol1Component } from './attivita/editoria/koine/vol1/vol1.component';
@@ -126,7 +125,6 @@ import { HomeCifris23Component } from './attivita/eventi/cifris/cifris2023/home-
 import { Vol1Component } from './attivita/editoria/koine/vol1/vol1.component';
 import { Vol2Component } from './attivita/editoria/koine/vol2/vol2.component';
 import { ArticlesAndVolumesComponent } from './attivita/editoria/koine/articles-and-volumes/articles-and-volumes.component';
-import { HomeKoineComponent } from './attivita/editoria/koine/home-koine/home-koine.component';
 import { KoineComponent } from './attivita/editoria/koine/koine.component';
 import { PaymentResultComponent24 } from './attivita/eventi/cifris/cifris2024/payment-result/payment-result.component';
 import { Trends24Component } from './attivita/corsi/trends24/trends24.component';
@@ -277,7 +275,6 @@ import { SummerSchoolComponent } from './attivita/eventi/eventi-pubblici/summer-
         Vol8Component,
         Vol10Component,
         ArticlesAndVolumesComponent,
-        HomeKoineComponent,
         KoineComponent,
         PaymentResultComponent24,
         SocialDinner24Component,
@@ -383,7 +380,6 @@ import { SummerSchoolComponent } from './attivita/eventi/eventi-pubblici/summer-
         // EventiPatrocinatiComponent,
         // //Koine
         // KoineComponent,
-        // HomeKoineComponent,
         // ArticlesAndVolumesComponent,
         // Vol1Component,
         // //Centotesi

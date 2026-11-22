@@ -1,4 +1,4 @@
-import { sectionNavigation } from './section-layout/section-navigation';
+import { koineNavigation, sectionNavigation } from './section-layout/section-navigation';
 import { PubblicaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-ita/pubblica/pubblica.component';
 import { SimmetricaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-ita/simmetrica/simmetrica.component';
 import { ClassicaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-ita/classica/classica.component';
@@ -120,7 +120,6 @@ import { ProgramComponent } from './attivita/eventi/cifris/cifris2023/program/pr
 import { RegistrationComponent } from './attivita/eventi/cifris/cifris2023/registration/registration.component';
 
 // koine
-import { HomeKoineComponent } from './attivita/editoria/koine/home-koine/home-koine.component';
 import { KoineComponent } from './attivita/editoria/koine/koine.component';
 import { Vol1Component } from './attivita/editoria/koine/vol1/vol1.component';
 import { Vol2Component } from './attivita/editoria/koine/vol2/vol2.component';
@@ -185,6 +184,8 @@ import { SummerSchoolComponent } from './attivita/eventi/eventi-pubblici/summer-
 
 // importante mettere come children tutti quelli che condividono la stessa sidebar, dato
 // che viene gestita dal <router-outlet> che ogni pagina parente ha
+const latestKoineIssue = '/koine/vol10';
+
 const routes: Routes = [
 	// home e miscellanea
 	{
@@ -551,16 +552,8 @@ const routes: Routes = [
 
 	// koine
 	{
-		path: "koine", component: KoineComponent, data: { sectionNavigation: sectionNavigation['koine'] }, children: [
-			{
-				path: "", component: HomeKoineComponent, data: {
-					title: 'De Cifris Koine',
-					meta: [
-						{ name: 'description', content: 'De Cifris Koine, by De Cifris Press' },
-						{ property: 'og:title', content: 'De Cifris Koine, by De Cifris Press' }
-					]
-				}
-			},
+		path: "koine", component: KoineComponent, data: { sectionNavigation: koineNavigation(latestKoineIssue) }, children: [
+			{ path: "", redirectTo: latestKoineIssue, pathMatch: "full", data: { redirectStatus: 302 } },
 			{
 				path: "articles-and-volumes", component: ArticlesAndVolumesComponent, data: {
 					title: 'Volumes',
@@ -581,10 +574,10 @@ const routes: Routes = [
 			},
 			{
 				path: "editorial-board", component: EditorialBoardComponent, data: {
-					title: 'Editorial board',
+					title: 'About and editorial board',
 					meta: [
-						{ name: 'description', content: 'De Cifris Koine: editorial board' },
-						{ property: 'og:title', content: 'De Cifris Koine: editorial board' }
+						{ name: 'description', content: 'De Cifris Koine: about and editorial board' },
+						{ property: 'og:title', content: 'De Cifris Koine: about and editorial board' }
 					]
 				}
 			},

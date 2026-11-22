@@ -13,6 +13,18 @@ export interface SectionGroup {
 
 export const homeLink: SectionLink = { path: '/', label: 'HOME', icon: 'home' };
 
+export function koineNavigation(latestIssue: string): SectionGroup[] {
+  return [{
+    heading: 'DE CIFRIS KOINE',
+    links: [
+      { path: latestIssue, label: 'Latest issue', icon: 'schedule' },
+      { path: '/koine/articles-and-volumes', label: 'Articles & volumes', icon: 'library_books' },
+      { path: '/koine/copyright-license', label: 'Copyright & license', icon: 'copyright', shortcut: 'License' },
+      { path: '/koine/editorial-board', label: 'About & editorial board', icon: 'groups' },
+    ],
+  }];
+}
+
 export const sectionNavigation = {
   'associazione': [
     {
@@ -44,18 +56,6 @@ export const sectionNavigation = {
         { path: '/attivita/editoria', label: 'Editoria', icon: 'menu_book' },
         { path: '/attivita/gare-crittografiche', label: 'Gare crittografiche', icon: 'emoji_events' },
         { path: '/attivita/iniziative-divulgative', label: 'Divulgazione', icon: 'campaign' },
-      ],
-    },
-  ],
-  'koine': [
-    {
-      heading: 'DE CIFRIS KOINE',
-      links: [
-        { path: '/koine', label: 'Koine', icon: 'menu_book' },
-        { path: '/koine/vol10', label: 'Latest issue', icon: 'schedule' },
-        { path: '/koine/articles-and-volumes', label: 'Articles & volumes', icon: 'library_books' },
-        { path: '/koine/copyright-license', label: 'Copyright & license', icon: 'copyright', shortcut: 'License' },
-        { path: '/koine/editorial-board', label: 'Editorial board', icon: 'groups' },
       ],
     },
   ],
@@ -117,6 +117,7 @@ export const sectionNavigation = {
         { path: '/welcome', label: 'Welcome', icon: 'emoji_people', shortcut: 'Welcome!' },
         { path: '/associazione', label: 'Associazione', icon: 'groups' },
         { path: '/attivita', label: 'Attività', icon: 'public' },
+        { path: '/koine', label: 'Koine', icon: 'menu_book' },
         { path: '/cifris26', label: 'CIFRIS26', icon: 'auto_stories' },
         { path: '/fcir26', label: 'FCIR26', icon: 'dashboard', shortcut: false },
         { path: '/ixh26', label: 'IXH26', icon: 'code', shortcut: false },
