@@ -8,7 +8,6 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
 import { RouterModule, UrlSerializer } from '@angular/router';
 // import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
-import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -473,7 +472,6 @@ import { SummerSchoolComponent } from './attivita/eventi/eventi-pubblici/summer-
         RouterModule,
         FormsModule,
         ReactiveFormsModule,
-        MatSidenavModule,
         MatButtonModule,
         MatListModule,
         MatToolbarModule,
