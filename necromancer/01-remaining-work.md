@@ -32,5 +32,7 @@ The current branch has passed the 1,091-URL local Apache check. The remaining re
 
 ### 4. Review further consolidation with evidence
 
+The [current site structure and URL tree](01-site-structure.md) identify the source folders, public paths and suggested order for these changes.
+
 - [ ] Check which overview pages duplicate their menu or the homepage. Start with the Welcome and Activities entry points. Keep an overview where it provides a useful introduction or helps users choose a destination. Where an overview only repeats links, move the links into the nearest useful hub and keep a direct redirect for any genuine public replacement.
 - [ ] Review historical conference calls and committees in batches. Preserve programmes, proceedings, distinct workshop records, stable Koine article and DOI destinations, and the webmaster timeline at /associazione/timeline/. Keep canonical internal links and retire further aliases only when their history and current references support it.

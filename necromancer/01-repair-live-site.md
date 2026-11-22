@@ -37,3 +37,5 @@ Record which batches were released, compare them with the baseline and verify th
 [Release candidate, verification and Aruba rollout](01-release.md).
 
 [Remaining release work and prioritised improvements](01-remaining-work.md).
+
+[Site structure, URL tree and consolidation priorities](01-site-structure.md).
