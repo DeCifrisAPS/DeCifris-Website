@@ -146,3 +146,21 @@ export const sectionNavigation = {
     },
   ],
 } satisfies Record<string, SectionGroup[]>;
+
+const rootLinks = sectionNavigation['root-elements'].flatMap(group => group.links);
+const primarySections = ['welcome', 'associazione', 'attivita', 'cifris2026'] as const;
+const sectionChildren = new Map(primarySections.map(key => {
+  const [landing, ...links] = sectionNavigation[key][0].links;
+  return [landing.path, links] as const;
+}));
+
+export const mainNavigation = rootLinks.slice(0, sectionNavigation['root-elements'][0].links.length).map(link => ({
+  path: link.path,
+  label: link.label,
+  links: sectionChildren.get(link.path) ?? [],
+}));
+
+export const contactNavigation = [
+  { path: '/mailing-list', label: 'Mailing List' },
+  rootLinks.find(link => link.path === '/contatti')!,
+];

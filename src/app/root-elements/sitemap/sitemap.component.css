@@ -1,28 +1,17 @@
-a:not(b) {
-    text-decoration-color: black;
-    color: black;
+.sitemap-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+  gap: 1rem 2rem;
 }
 
-b {
-    color: var(--cifris_orange);
-}
-a:has(b) {
-    text-decoration-color: var(--cifris_orange);
+.sitemap-groups a {
+  color: var(--cifris_blue);
 }
 
-ul {
-    column-width: 150px; /* Larghezza minima di una colonna */
-    column-gap: 20px; /* Spazio tra le colonne */
+.sitemap-groups ul {
+  padding-inline-start: 1.25rem;
 }
 
-li {
-    break-inside: avoid;
-}
-ul.main-list { /* Aggiungi una classe al <ul> principale */
-    column-count: 3;
-    column-gap: 20px;
-}
-
-ul.main-list > li {
-    break-inside: avoid;
+.sitemap-groups li + li {
+  margin-top: 0.35rem;
 }
