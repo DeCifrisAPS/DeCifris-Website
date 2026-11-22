@@ -81,6 +81,23 @@ function redirectRule(source, target, status, optionalSlash = false) {
   return 'RedirectMatch ' + status + ' "^' + literal + suffix + '" "' + hostname + target + '"';
 }
 
+function writeRedirectPage(source, target) {
+  const file = join(browser, source, 'index.html');
+  if (!existsSync(file)) return;
+
+  const url = encodeURI(pagePath(target)).replaceAll('&', '&amp;');
+  writeFileSync(file, [
+    '<!doctype html>',
+    '<html lang="en">',
+    '<meta charset="utf-8">',
+    '<title>Redirecting</title>',
+    '<meta name="robots" content="noindex">',
+    '<meta http-equiv="refresh" content="0; url=' + url + '">',
+    '<a href="' + url + '">Continue</a>',
+    '</html>',
+  ].join('\n') + '\n');
+}
+
 async function main() {
   const manifest = readJson(join(output, 'prerendered-routes.json'));
   const routes = new Set(manifest.routes.map((path) => path.replace(/\/$/, '') || '/'));
@@ -117,6 +134,7 @@ async function main() {
   const config = readFileSync(join(project, 'src', '.htaccess'), 'utf8').trimEnd();
   writeFileSync(join(browser, 'sitemap.xml'), await xml);
   writeFileSync(join(browser, '.htaccess'), config + '\n\n' + rules.join('\n') + '\n');
+  for (const [source, { target }] of redirects) writeRedirectPage(source, target);
   console.log('Published ' + pages.length + ' sitemap entries and ' + rules.length + ' redirects.');
 }
 
