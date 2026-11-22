@@ -8,6 +8,26 @@ import { Component } from '@angular/core';
 export class DiconoDiNoiComponent {
   articoli = [
     {
+      title: 'QWERTYmag, CIFRIS26 e la strategia digitale italiana',
+      subtitle: '8 ottobre 2026',
+      content: 'Il resoconto di Giuseppe Attardi racconta il confronto tra ricerca, istituzioni e industria alla quarta Conferenza Nazionale di Crittografia, ospitata dall’Università Roma Tre.',
+      link: 'https://www.qwertymag.it/articoli/cifris26-spinge-la-crittografia-al-centro-della-strategia-digitale-italiana-105460/'
+    },
+    {
+      title: 'Banca d’Italia, la conferenza Financial Cryptography in Rome',
+      subtitle: '1 ottobre 2025',
+      content: 'La Banca d’Italia raccoglie le foto di FCiR25, organizzata con De Cifris, e pubblica l’intervento di apertura di Giuseppe Zingrillo sulle applicazioni della crittografia nel settore finanziario.',
+      link: 'https://www.bancaditalia.it/media/notizia/conferenza-financial-cryptography-in-rome-fcir25/?com.dotmarketing.htmlpage.language=102'
+    },
+    {
+      title: 'Radio Radicale, Crittografia e imprese per il Paese',
+      subtitle: '10 maggio 2024',
+      image: '/assets/images/notizie/fotoCamera10maggio.jpeg',
+      imageAlt: 'Il convegno Crittografia e imprese per il Paese alla Camera dei deputati',
+      content: 'La registrazione integrale del convegno alla Camera dei deputati documenta il confronto tra De Cifris, istituzioni e imprese italiane sulle applicazioni della crittografia.',
+      link: 'https://www.radioradicale.it/scheda/728189/crittografia-e-imprese-per-il-paese'
+    },
+    {
       title: 'Formiche, “La sfida della minaccia quantistica spiegata dal prof. Giulietti”',
       subtitle: '23 aprile 2023',
       image: '../../../../assets/images/notizie/articolo-formiche-postquantum-crypto.jpg',
