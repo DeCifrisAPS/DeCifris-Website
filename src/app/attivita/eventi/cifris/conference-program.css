@@ -1,0 +1,43 @@
+.program-slot {
+	margin-block: 1rem 1.25rem;
+}
+
+.program-slot :is(.time-slot, .session-title) {
+	margin-top: 0.5rem !important;
+}
+
+.speaker-title,
+.talk-title {
+	margin: 0.3rem 0 0.8rem;
+	color: var(--cifris_darkgray);
+	font-size: 1.1rem;
+	font-style: italic;
+	font-weight: 600;
+}
+
+.talk-title,
+.time-slot {
+	color: var(--cifris_blue);
+}
+
+.session-title {
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+.session-subtitle {
+	display: block;
+	margin-top: 0.25rem;
+	font-size: 1rem;
+	font-weight: normal;
+	line-height: 1.4;
+}
+
+.time-slot {
+	margin-bottom: 0.25rem;
+	font-weight: 700;
+}
+
+section {
+	scroll-margin-top: 80px;
+}
