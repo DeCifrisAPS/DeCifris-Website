@@ -1,0 +1,41 @@
+@if (volume(); as issue) {
+  <div class="toptext">
+    <div class="list_view">
+      <img [src]="cover" alt="" style="width: 40%; padding-right: 20px;">
+      <div class="doi-item">
+        <p class="title">{{ displayTitle ?? issue.title }}</p>
+        <p class="desc">{{ issue.publisher }}, {{ publicationDate() }}</p>
+        <p class="desc">ISBN: {{ issue.ISBN }}</p>
+        <p class="desc">ISSN: {{ issue.ISSN }}</p>
+        <a class="download" mat-button [href]="issue.volumeLink">Download volume</a>
+        <br>
+        <a class="download" mat-button [href]="issue.coverLink">Download cover</a>
+      </div>
+    </div>
+    @if (issue.articles.length) {
+      <div class="edited-by">
+        <b>Edited by:&nbsp;</b>
+        @for (author of issue.articles[0].authors; track $index) {
+          @if (!$first) {<span>, </span>}
+          <span>{{ author.name }} {{ author.surname }}</span>
+        }
+      </div>
+    }
+  </div>
+  @for (section of sections(); track section.heading) {
+    @if (section.heading) {<h3>{{ section.heading }}</h3>}
+    @for (article of section.articles; track article.id) {
+      <div class="doi-item">
+        <a [routerLink]="['/koine', issue.id, article.id]"><p class="title">{{ article.title }}</p></a>
+        <p class="desc">
+          @for (author of article.authors; track $index) {
+            @if (!$first) {<span>, </span>}
+            <span>{{ author.name }} {{ author.surname }}</span>
+          }
+        </p>
+        <p class="desc">Page range: {{ article.pageRange }}</p>
+        <a [href]="'https://doi.org/' + article.doi"><p class="desc">DOI: https://doi.org/{{ article.doi }}</p></a>
+      </div>
+    }
+  }
+}

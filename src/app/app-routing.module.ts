@@ -1,3 +1,4 @@
+import { KoineVolumeComponent } from './attivita/editoria/koine/volume.component';
 import { koineNavigation, sectionNavigation } from './section-layout/section-navigation';
 import { PubblicaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-ita/pubblica/pubblica.component';
 import { SimmetricaComponent } from './attivita/gare-crittografiche/cryptowars/cryptowars2011/crypto2011-ita/simmetrica/simmetrica.component';
@@ -121,8 +122,6 @@ import { RegistrationComponent } from './attivita/eventi/cifris/cifris2023/regis
 
 // koine
 import { KoineComponent } from './attivita/editoria/koine/koine.component';
-import { Vol1Component } from './attivita/editoria/koine/vol1/vol1.component';
-import { Vol2Component } from './attivita/editoria/koine/vol2/vol2.component';
 import { ArticlesAndVolumesComponent } from './attivita/editoria/koine/articles-and-volumes/articles-and-volumes.component';
 import { EditorialBoardComponent } from './attivita/editoria/koine/editorial-board/editorial-board.component';
 import { Ntc24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/ntc24/ntc24.component';
@@ -138,8 +137,6 @@ import { MainConference24Component } from './attivita/eventi/cifris/cifris2024/s
 import { ScientificSession24Component } from './attivita/eventi/cifris/cifris2024/single-pages/main-conference24/scientific-session24/scientific-session24.component';
 import { Cpsid24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/cpsid24/cpsid24.component';
 import { Cifriscloud24Component } from './attivita/eventi/cifris/cifris2024/single-pages/workshops/cifriscloud24/cifriscloud24.component';
-import { Vol3Component } from './attivita/editoria/koine/vol3/vol3.component';
-import { Vol4Component } from './attivita/editoria/koine/vol4/vol4.component';
 import { SitemapComponent } from './root-elements/sitemap/sitemap.component';
 import { SocialDinner24Component } from './attivita/eventi/cifris/cifris2024/social-dinner24/social-dinner24.component';
 import { TimelineComponent } from './associazione/organi-direttivi/timeline/timeline.component';
@@ -170,14 +167,9 @@ import { ProgramComponent25 } from './attivita/eventi/cifris/cifris2025/program/
 import { ProceedingsComponent25 } from './attivita/eventi/cifris/cifris2025/proceedings/proceedings.component';
 import { PaymentResultComponent25 } from './attivita/eventi/cifris/cifris2025/payment-result/payment-result.component';
 import { Workshops25Component } from './attivita/eventi/cifris/cifris2025/workshops/workshops.component';
-import { Vol5Component } from './attivita/editoria/koine/vol5/vol5.component';
 import { Ixh25Component } from './root-elements/hosting/ixh25/ixh25.component';
 import { Ixh26Component } from './root-elements/hosting/ixh26/ixh26.component';
 import { pqcifris25Component } from './root-elements/hosting/pqcifris25/pqcifris25.component';
-import { Vol8Component } from './attivita/editoria/koine/vol8/vol8.component';
-import { Vol10Component } from './attivita/editoria/koine/vol10/vol10.component';
-import { Vol7Component } from './attivita/editoria/koine/vol7/vol7.component';
-import { Vol6Component } from './attivita/editoria/koine/vol6/vol6.component';
 import { title } from 'process';
 import { SummerSchoolComponent } from './attivita/eventi/eventi-pubblici/summer-school/summer-school.component';
 
@@ -582,7 +574,8 @@ const routes: Routes = [
 				}
 			},
 			{
-				path: "vol1", component: Vol1Component, data: {
+				path: "vol1", component: KoineVolumeComponent, data: {
+						cover: "/assets/images/koine/Vol1 - CIFRIS23 ACTA.png",
 					title: 'Koine: Volume 1',
 					meta: [
 						{ name: 'description', content: 'De Cifris Koine, volume 1' },
@@ -591,7 +584,8 @@ const routes: Routes = [
 				}
 			},
 			{
-				path: "vol2", component: Vol2Component, data: {
+				path: "vol2", component: KoineVolumeComponent, data: {
+						cover: "/assets/images/koine/Vol2 - De Cifris Seminars.png",
 					title: 'Koine: Volume 2',
 					meta: [
 						{ name: 'description', content: 'De Cifris Koine, volume 2' },
@@ -600,7 +594,8 @@ const routes: Routes = [
 				}
 			},
 			{
-				path: "vol3", component: Vol3Component, data: {
+				path: "vol3", component: KoineVolumeComponent, data: {
+						cover: "/assets/images/koine/Vol3 - De Cifris Eruditorum 2024.png",
 					title: 'Koine: Volume 3',
 					meta: [
 						{ name: 'description', content: 'De Cifris Koine, volume 3' },
@@ -609,7 +604,9 @@ const routes: Routes = [
 				}
 			},
 			{
-				path: "vol4", component: Vol4Component, data: {
+				path: "vol4", component: KoineVolumeComponent, data: {
+						cover: "/assets/images/koine/Vol4 - De Cifris Protocols.png",
+						displayTitle: "ADVANCED CRYPTOGRAPHIC PROTOCOLS",
 					title: 'Koine: Volume 4',
 					meta: [
 						{ name: 'description', content: 'De Cifris Koine, volume 4' },
@@ -618,7 +615,8 @@ const routes: Routes = [
 				}
 			},
 			{
-				path: "vol5", component: Vol5Component, data: {
+				path: "vol5", component: KoineVolumeComponent, data: {
+						cover: "/assets/images/koine/Vol5 - CIFRIS24 ACTA.png",
 					title: 'Koine: Volume 5',
 					meta: [
 						{ name: 'description', content: 'De Cifris Koine, volume 5' },
@@ -627,7 +625,9 @@ const routes: Routes = [
 				}
 			},
 			{
-				path: "vol6", component: Vol6Component, data: {
+				path: "vol6", component: KoineVolumeComponent, data: {
+						cover: "/assets/images/koine/Vol6 - Bitcoin Blockchain.png",
+						displayTitle: "BITCOIN & BLOCKCHAIN",
 					title: 'Koine: Volume 6',
 					meta: [
 						{ name: 'description', content: 'De Cifris Koine, volume 6' },
@@ -636,7 +636,8 @@ const routes: Routes = [
 				}
 			},
 			{
-				path: "vol7", component: Vol7Component, data: {
+				path: "vol7", component: KoineVolumeComponent, data: {
+						cover: "/assets/images/koine/Vol7 - CIFRIS25 ACTA.png",
 					title: 'Koine: Volume 7',
 					meta: [
 						{ name: 'description', content: 'De Cifris Koine, volume 7' },
@@ -645,7 +646,8 @@ const routes: Routes = [
 				}
 			},
 			{
-				path: "vol8", component: Vol8Component, data: {
+				path: "vol8", component: KoineVolumeComponent, data: {
+						cover: "/assets/images/koine/Vol8 - FCIR25 ACTA.png",
 					title: 'Koine: Volume 8',
 					meta: [
 						{ name: 'description', content: 'De Cifris Koine, volume 8' },
@@ -654,7 +656,8 @@ const routes: Routes = [
 				}
 			},
 			{
-				path: "vol10", component: Vol10Component, data: {
+				path: "vol10", component: KoineVolumeComponent, data: {
+						cover: "/assets/images/koine/Vol10 - 2024-25-XC.png",
 					title: 'Koine: Volume 10',
 					meta: [
 						{ name: 'description', content: 'De Cifris Koine, volume 10' },

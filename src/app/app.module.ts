@@ -1,3 +1,4 @@
+import { KoineVolumeComponent } from './attivita/editoria/koine/volume.component';
 import { SectionLayoutComponent } from './section-layout/section-layout.component';
 import { SessioniDeCifrisComponent } from './attivita/eventi/eventi-pubblici/sessioni-de-cifris/sessioni-de-cifris.component';
 import { ConvegnoUmiComponent } from './attivita/eventi/eventi-pubblici/convegno-umi/convegno-umi.component';
@@ -116,19 +117,15 @@ import { ProgramButtonsComponent } from './attivita/eventi/cifris/cifris2024/pro
 // import { KoineComponent } from './attivita/editoria/koine/koine.component';
 // import { ArticlesAndVolumesComponent } from './attivita/editoria/koine/articles-and-volumes/articles-and-volumes.component';
 // import { EditorialBoardComponent } from './attivita/editoria/koine/editorial-board/editorial-board.component';
-// import { Vol1Component } from './attivita/editoria/koine/vol1/vol1.component';
 
 // // ./cifris/cifris2023
 import { Cifris2023Component } from './attivita/eventi/cifris/cifris2023/cifris2023.component';
 import { HomeCifris23Component } from './attivita/eventi/cifris/cifris2023/home-cifris23/home-cifris23.component';
-import { Vol1Component } from './attivita/editoria/koine/vol1/vol1.component';
-import { Vol2Component } from './attivita/editoria/koine/vol2/vol2.component';
 import { ArticlesAndVolumesComponent } from './attivita/editoria/koine/articles-and-volumes/articles-and-volumes.component';
 import { KoineComponent } from './attivita/editoria/koine/koine.component';
 import { PaymentResultComponent24 } from './attivita/eventi/cifris/cifris2024/payment-result/payment-result.component';
 import { Trends24Component } from './attivita/corsi/trends24/trends24.component';
 import { WorkshopButtons24Component } from './attivita/eventi/cifris/cifris2024/program/workshop-buttons24/workshop-buttons24.component';
-import { Vol3Component } from './attivita/editoria/koine/vol3/vol3.component';
 import { InstitutionalSession24Component } from './attivita/eventi/cifris/cifris2024/single-pages/main-conference24/institutional-session24/institutional-session24.component';
 import { ScientificSession24Component } from './attivita/eventi/cifris/cifris2024/single-pages/main-conference24/scientific-session24/scientific-session24.component';
 import { MainConference24Component } from './attivita/eventi/cifris/cifris2024/single-pages/main-conference24/main-conference24.component';
@@ -141,7 +138,6 @@ import { ProceedingsButton24Component } from './attivita/eventi/cifris/cifris202
 import { ProceedingsComponent24 } from './attivita/eventi/cifris/cifris2024/proceedings/proceedings.component';
 import { TimelineComponent } from './associazione/organi-direttivi/timeline/timeline.component';
 import { Ixh24Component } from './root-elements/hosting/ixh24/ixh24.component';
-import { Vol4Component } from './attivita/editoria/koine/vol4/vol4.component';
 import { Fcir25Component } from './root-elements/hosting/fcir25/fcir25.component';
 import { Fcir26Component } from './root-elements/hosting/fcir26/fcir26.component';
 import { AziendeComponent } from './associazione/aziende/aziende.component';
@@ -184,11 +180,6 @@ import { SocialDinner26Component } from './attivita/eventi/cifris/cifris2026/soc
 import { HomeCifris26Component } from './attivita/eventi/cifris/cifris2026/home-cifris26/home-cifris26.component';
 import { PaymentResultComponent26 } from './attivita/eventi/cifris/cifris2026/payment-result/payment-result.component';
 import { ScolarshipsComponent } from './associazione/scolarships/scolarships.component';
-import { Vol5Component } from './attivita/editoria/koine/vol5/vol5.component';
-import { Vol6Component } from './attivita/editoria/koine/vol6/vol6.component';
-import { Vol7Component } from './attivita/editoria/koine/vol7/vol7.component';
-import { Vol8Component } from './attivita/editoria/koine/vol8/vol8.component';
-import { Vol10Component } from './attivita/editoria/koine/vol10/vol10.component';
 import { Ixh25Component } from './root-elements/hosting/ixh25/ixh25.component';
 import { Ixh26Component } from './root-elements/hosting/ixh26/ixh26.component';
 import { pqcifris25Component } from './root-elements/hosting/pqcifris25/pqcifris25.component';
@@ -203,7 +194,6 @@ import { SummerSchoolComponent } from './attivita/eventi/eventi-pubblici/summer-
 // import { EventiPatrocinatiComponent } from './eventi/eventi-patrocinati/eventi-patrocinati/eventi-patrocinati.component';
 // import { VenueAccomodationComponent24 } from './cifris/cifris2024/venue-accomodation/venue-accomodation.component';
 // import { Centotesi20172024Component } from './attivita/centotesi20172024/centotesi20172024.component';
-// import { Vol2Component } from './attivita/editoria/koine/vol2/vol2.component';
 
 @NgModule({
     declarations: [
@@ -264,17 +254,18 @@ import { SummerSchoolComponent } from './attivita/eventi/eventi-pubblici/summer-
         Cifris2024Component,
         Cifris2023Component,
         HomeCifris23Component,
-        Vol1Component,
-        Vol2Component,
-        Vol3Component,
-        Vol4Component,
-        Vol5Component,
-        Vol6Component,
-        Vol7Component,
-        Vol8Component,
-        Vol10Component,
+
+
+
+
+
+
+
+
+
         ArticlesAndVolumesComponent,
         KoineComponent,
+        KoineVolumeComponent,
         PaymentResultComponent24,
         SocialDinner24Component,
         Trends24Component,
@@ -380,7 +371,7 @@ import { SummerSchoolComponent } from './attivita/eventi/eventi-pubblici/summer-
         // //Koine
         // KoineComponent,
         // ArticlesAndVolumesComponent,
-        // Vol1Component,
+
         // //Centotesi
         // Centotesi20082017Component,
         // Centotesi20172024Component,
@@ -462,7 +453,7 @@ import { SummerSchoolComponent } from './attivita/eventi/eventi-pubblici/summer-
         // WCC24Component,
         // NotizieComponent,
         // AgoraComponent,
-        // Vol2Component,
+
         //Koine
         ArticoloComponent,
         AziendeComponent
