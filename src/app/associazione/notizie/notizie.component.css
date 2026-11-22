@@ -52,18 +52,29 @@ img {
 	/* Aggiunge un'ombra leggera */
 }
 
-.news-btn {
-	text-decoration: none;
+.links-container {
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.links-container .news-btn {
+	min-width: 0;
+	max-width: 100%;
+	height: auto;
+	min-height: 36px;
+	margin: 0;
+	padding: 6px 12px;
 	color: var(--cifris_blue);
-	padding: 8px 16px;
-	margin-left: 10px;
-	margin-right: 10px;
+	text-align: center;
+	text-decoration: none;
+	white-space: normal;
+	overflow-wrap: anywhere;
 	border-radius: 4px;
 	background-color: white;
 	transition: background-color 0.3s, color 0.3s;
 }
 
-.news-btn:hover {
+.links-container .news-btn:hover {
 	background-color: var(--cifris_orange);
 	color: white;
 }

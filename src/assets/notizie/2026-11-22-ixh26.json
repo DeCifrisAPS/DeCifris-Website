@@ -6,11 +6,11 @@
   "dataPubblicazione": "22 novembre 2026",
   "links": [
     {
-      "nome": "Programma e materiali di IXH26",
+      "nome": "Programma e materiali",
       "routerLink": "/ixh26"
     },
     {
-      "nome": "Scheda dell’evento di XRPL Commons",
+      "nome": "XRPL Commons",
       "url": "https://website.xrpl-commons.org/participate/events/ixh26-italian-xrpl-hackathon"
     }
   ]

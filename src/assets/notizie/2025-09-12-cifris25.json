@@ -8,15 +8,15 @@
   "immagineAlt": "Copertina degli atti di CIFRIS25",
   "links": [
     {
-      "nome": "Programma di CIFRIS25",
+      "nome": "Programma",
       "routerLink": "/cifris25/program"
     },
     {
-      "nome": "Consulta gli atti",
+      "nome": "Atti",
       "routerLink": "/koine/vol7"
     },
     {
-      "nome": "L’annuncio di Roma Tre",
+      "nome": "Roma Tre",
       "url": "https://www.uniroma3.it/articoli/cifris25-terza-conferenza-nazionale-di-crittografia-527861/"
     }
   ]
